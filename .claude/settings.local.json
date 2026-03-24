@@ -1,0 +1,6 @@
+{
+  "enabledMcpjsonServers": [
+    "jira-secure"
+  ],
+  "enableAllProjectMcpServers": true
+}
