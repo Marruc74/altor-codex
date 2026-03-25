@@ -1785,6 +1785,110 @@ body {
   line-height: 1.4;
 }
 
+/* Image carousel */
+.codex-carousel {
+  margin: 0 0 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.codex-carousel__track {
+  display: grid;
+  grid-template-columns: 2rem 1fr 2rem;
+  align-items: center;
+  gap: 0;
+}
+
+.codex-carousel__arrow {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0;
+  height: 100%;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.codex-carousel__arrow:first-child {
+  border-radius: 2px 0 0 2px;
+  border-right: none;
+}
+
+.codex-carousel__arrow:last-child {
+  border-radius: 0 2px 2px 0;
+  border-left: none;
+}
+
+.codex-carousel__arrow:hover:not(:disabled) {
+  color: var(--text-primary, #e8d8b8);
+  border-color: var(--border-light);
+}
+
+.codex-carousel__arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.codex-carousel__image {
+  width: 100%;
+  display: block;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.codex-carousel__footer {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-top: none;
+  padding: 0.35rem 0.75rem 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  min-height: 1.6rem;
+}
+
+.codex-carousel__caption {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-style: italic;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.codex-carousel__dots {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.codex-carousel__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid var(--border-light);
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.codex-carousel__dot--active {
+  background: var(--text-muted);
+  border-color: var(--text-muted);
+}
+
+.codex-carousel__dot:hover:not(.codex-carousel__dot--active) {
+  border-color: var(--text-muted);
+}
+
 /* Related entries */
 .codex-panel__related {
   margin-top: 0.5rem;

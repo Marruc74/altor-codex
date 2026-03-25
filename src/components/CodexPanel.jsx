@@ -2,11 +2,58 @@ import { useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { entries } from "../data/codex/index.js";
 
-function MarkdownImage({ src, alt, title }) {
+const IMAGE_RE = /!\[([^\]]*)\]\(([^")]+?)(?:\s+"([^"]*)")?\)/g;
+
+function extractImages(markdown) {
+  const images = [];
+  let m;
+  IMAGE_RE.lastIndex = 0;
+  while ((m = IMAGE_RE.exec(markdown)) !== null) {
+    images.push({ alt: m[1], src: m[2], caption: m[3] || null });
+  }
+  return images;
+}
+
+function stripImages(markdown) {
+  return markdown.replace(IMAGE_RE, "").replace(/\n{3,}/g, "\n\n").trim();
+}
+
+function ImageCarousel({ images }) {
+  const [idx, setIdx] = useState(0);
+  const img = images[idx];
+
   return (
-    <figure className="codex-panel__figure">
-      <img src={src} alt={alt} className="codex-panel__image" />
-      {title && <figcaption className="codex-panel__caption">{title}</figcaption>}
+    <figure className="codex-carousel">
+      <div className="codex-carousel__track">
+        <button
+          className="codex-carousel__arrow"
+          onClick={() => setIdx((i) => (i - 1 + images.length) % images.length)}
+          aria-label="Previous image"
+          disabled={images.length === 1}
+        >‹</button>
+        <img src={img.src} alt={img.alt} className="codex-carousel__image" />
+        <button
+          className="codex-carousel__arrow"
+          onClick={() => setIdx((i) => (i + 1) % images.length)}
+          aria-label="Next image"
+          disabled={images.length === 1}
+        >›</button>
+      </div>
+      <div className="codex-carousel__footer">
+        {img.caption && <figcaption className="codex-carousel__caption">{img.caption}</figcaption>}
+        {images.length > 1 && (
+          <div className="codex-carousel__dots">
+            {images.map((_, i) => (
+              <button
+                key={i}
+                className={`codex-carousel__dot${i === idx ? " codex-carousel__dot--active" : ""}`}
+                onClick={() => setIdx(i)}
+                aria-label={`Image ${i + 1}`}
+              />
+            ))}
+          </div>
+        )}
+      </div>
     </figure>
   );
 }
@@ -73,26 +120,33 @@ export default function CodexPanel({ entry, onClose, onTagClick, onEntrySelect }
             <p className="location-panel__loading">Consulting the codex…</p>
           ) : content === "" ? (
             <p className="location-panel__loading">No further information recorded.</p>
-          ) : (
-            <div className="codex-panel__markdown">
-              <ReactMarkdown
-                components={{
-                  img: MarkdownImage,
-                  h2: ({ children }) => <h2 className="codex-panel__h2">{children}</h2>,
-                  h3: ({ children }) => <h3 className="codex-panel__h3">{children}</h3>,
-                  p:  ({ children }) => <p  className="codex-panel__para">{children}</p>,
-                  ul: ({ children }) => <ul className="codex-panel__list">{children}</ul>,
-                  ol: ({ children }) => <ol className="codex-panel__list codex-panel__list--ol">{children}</ol>,
-                  li: ({ children }) => <li className="codex-panel__li">{children}</li>,
-                  strong: ({ children }) => <strong className="codex-panel__strong">{children}</strong>,
-                  em:     ({ children }) => <em     className="codex-panel__em">{children}</em>,
-                  hr: () => <hr className="codex-panel__hr" />,
-                }}
-              >
-                {content}
-              </ReactMarkdown>
-            </div>
-          )}
+          ) : (() => {
+            const imgs = extractImages(content);
+            const body = stripImages(content);
+            return (
+              <>
+                {imgs.length > 0 && <ImageCarousel images={imgs} />}
+                <div className="codex-panel__markdown">
+                  <ReactMarkdown
+                    components={{
+                      img: () => null,
+                      h2: ({ children }) => <h2 className="codex-panel__h2">{children}</h2>,
+                      h3: ({ children }) => <h3 className="codex-panel__h3">{children}</h3>,
+                      p:  ({ children }) => <p  className="codex-panel__para">{children}</p>,
+                      ul: ({ children }) => <ul className="codex-panel__list">{children}</ul>,
+                      ol: ({ children }) => <ol className="codex-panel__list codex-panel__list--ol">{children}</ol>,
+                      li: ({ children }) => <li className="codex-panel__li">{children}</li>,
+                      strong: ({ children }) => <strong className="codex-panel__strong">{children}</strong>,
+                      em:     ({ children }) => <em     className="codex-panel__em">{children}</em>,
+                      hr: () => <hr className="codex-panel__hr" />,
+                    }}
+                  >
+                    {body}
+                  </ReactMarkdown>
+                </div>
+              </>
+            );
+          })()}
 
           {content !== null && relatedEntries.length > 0 && (
             <div className="codex-panel__related">
