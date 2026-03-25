@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { id: "chronicles",label: "Chronicles" },
-  { id: "catalog",   label: "Compendium" },
+  { id: "codex",      label: "Codex"      },
+  { id: "chronicles", label: "Chronicles" },
+  { id: "catalog",    label: "Compendium" },
 ];
 
 export default function Navbar({ activeSection }) {

@@ -2,18 +2,19 @@ import { useState, useEffect, useCallback } from "react";
 import Navbar from "./components/Navbar";
 import InteractiveMap from "./components/InteractiveMap";
 import LocationPanel from "./components/LocationPanel";
+import CodexSection from "./components/CodexSection";
 import MediaSection from "./components/MediaSection";
 import VideoCatalog from "./components/VideoCatalog";
 import "./App.css";
 
 export default function App() {
-  const [activeSection, setActiveSection] = useState("chronicles");
+  const [activeSection, setActiveSection] = useState("codex");
   const [selectedLocation, setSelectedLocation] = useState(null);
   const handleLocationSelect = useCallback((loc) => setSelectedLocation(loc), []);
   const handlePanelClose = useCallback(() => setSelectedLocation(null), []);
 
   useEffect(() => {
-    const sections = ["chronicles", "catalog"];
+    const sections = ["codex", "chronicles", "catalog"];
     const observers = sections.map((id) => {
       const el = document.getElementById(id);
       if (!el) return null;
@@ -66,6 +67,8 @@ export default function App() {
       </section>
 
       <LocationPanel location={selectedLocation} onClose={handlePanelClose} />
+
+      <CodexSection />
 
       <MediaSection />
       <VideoCatalog />
