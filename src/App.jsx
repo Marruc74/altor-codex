@@ -1,11 +1,16 @@
 import { useState, useEffect, useCallback } from "react";
 import Navbar from "./components/Navbar";
+import InteractiveMap from "./components/InteractiveMap";
+import LocationPanel from "./components/LocationPanel";
 import MediaSection from "./components/MediaSection";
 import VideoCatalog from "./components/VideoCatalog";
 import "./App.css";
 
 export default function App() {
   const [activeSection, setActiveSection] = useState("chronicles");
+  const [selectedLocation, setSelectedLocation] = useState(null);
+  const handleLocationSelect = useCallback((loc) => setSelectedLocation(loc), []);
+  const handlePanelClose = useCallback(() => setSelectedLocation(null), []);
 
   useEffect(() => {
     const sections = ["chronicles", "catalog"];
@@ -48,6 +53,19 @@ export default function App() {
         </div>
         <div className="hero__scroll-hint">✦ Scroll to explore ✦</div>
       </header>
+
+      {/* Map Section */}
+      <section id="map" className="map-section">
+        <div className="section-header">
+          <h2 className="section-title">The Known World</h2>
+          <p className="section-sub">Pan and zoom to explore. Click a marker to open its codex entry.</p>
+        </div>
+        <div className="map-container">
+          <InteractiveMap onLocationSelect={handleLocationSelect} />
+        </div>
+      </section>
+
+      <LocationPanel location={selectedLocation} onClose={handlePanelClose} />
 
       <MediaSection />
       <VideoCatalog />

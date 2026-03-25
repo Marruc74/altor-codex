@@ -17,11 +17,21 @@ export default function LocationPanel({ location, onClose }) {
 
   if (!location) return null;
 
-  const typeLabel = location.type === "capital"
-    ? "Capital City"
-    : location.type === "city"
-    ? "City"
-    : "Region";
+  const TYPE_LABELS = {
+    capital: "Capital City",
+    city:    "City",
+    country: "Country",
+    region:  "Region",
+    water:   "Body of Water",
+    continent: "Continent",
+    mountain:  "Mountain",
+    forest:   "Forest",
+    site:     "Site",
+    ruin:    "Ruins",
+    dungeon: "Dungeon",
+    shrine:  "Shrine",
+  };
+  const typeLabel = TYPE_LABELS[location.type] ?? location.type;
 
   return (
     <>
@@ -48,9 +58,15 @@ export default function LocationPanel({ location, onClose }) {
         <div className="location-panel__divider" />
 
         <div className="location-panel__body">
-          <p className="location-panel__description">{location.description}</p>
+          {location.loading ? (
+            <p className="location-panel__loading">Consulting the codex…</p>
+          ) : location.description ? (
+            <p className="location-panel__description">{location.description}</p>
+          ) : (
+            <p className="location-panel__loading">No further information recorded.</p>
+          )}
 
-          {location.youtubeId && (
+          {!location.loading && location.youtubeId && (
             <div className="location-panel__video">
               <p className="location-panel__section-label">Chronicle</p>
               <div className="location-panel__embed">
@@ -65,7 +81,7 @@ export default function LocationPanel({ location, onClose }) {
             </div>
           )}
 
-          {!location.youtubeId && (
+          {!location.loading && !location.youtubeId && (
             <div className="location-panel__placeholder-video">
               <div className="placeholder-video__icon">▶</div>
               <p>Chronicle coming soon</p>
