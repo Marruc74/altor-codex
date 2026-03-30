@@ -6,6 +6,7 @@ export const entries = [
     tags: ["gems", "erebos", "beyural"],
     image: "/codex/Sunstone.jpg",
     related: ["beyural", "erebos"],
+    relatedVideos: ["hBVMZKASM_s", "WIm8eZ6Cn-U"],
   }, {
     id: "hornox",
     title: "Hornox",
@@ -13,6 +14,7 @@ export const entries = [
     tags: ["creature", "beyural", "erebos"],
     image: "/codex/Hornox.jpg",
     related: ["beyural", "erebos"],
+    relatedVideos: ["hBVMZKASM_s", "WIm8eZ6Cn-U"],
   }, {
     id: "hersch",
     title: "Hersch",
@@ -20,6 +22,7 @@ export const entries = [
     tags: ["plant", "food", "beyural", "erebos"],
     image: "/codex/Hersch.jpg",
     related: ["beyural", "hornox"],
+    relatedVideos: ["hBVMZKASM_s", "WIm8eZ6Cn-U"],
   }, {
     id: "lullad",
     title: "Lullad",
@@ -27,5 +30,6 @@ export const entries = [
     tags: ["plant", "food", "beyural", "erebos"],
     image: "/codex/Lullad.jpg",
     related: ["beyural", "hersch"],
+    relatedVideos: ["hBVMZKASM_s", "WIm8eZ6Cn-U"],
   },
 ];

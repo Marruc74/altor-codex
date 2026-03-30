@@ -1,10 +1,11 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import Navbar from "./components/Navbar";
 import InteractiveMap from "./components/InteractiveMap";
 import LocationPanel from "./components/LocationPanel";
 import CodexSection from "./components/CodexSection";
 import MediaSection from "./components/MediaSection";
 import VideoCatalog from "./components/VideoCatalog";
+import VideoModal from "./components/VideoModal";
 import "./App.css";
 
 export default function App() {
@@ -13,8 +14,18 @@ export default function App() {
   const handleLocationSelect = useCallback((loc) => setSelectedLocation(loc), []);
   const handlePanelClose = useCallback(() => setSelectedLocation(null), []);
 
+  const mapRef = useRef(null);
+  const [selectedVideo, setSelectedVideo] = useState(null);
+  const handleVideoSelect = useCallback((video) => setSelectedVideo(video), []);
+  const handleVideoClose = useCallback(() => setSelectedVideo(null), []);
+  const handlePinSelect = useCallback((pinId) => {
+    setSelectedVideo(null);
+    document.getElementById("map")?.scrollIntoView({ behavior: "smooth" });
+    setTimeout(() => mapRef.current?.selectPin(pinId), 600);
+  }, []);
+
   useEffect(() => {
-    const sections = ["codex", "chronicles", "catalog"];
+    const sections = ["map", "codex", "chronicles", "catalog"];
     const observers = sections.map((id) => {
       const el = document.getElementById(id);
       if (!el) return null;
@@ -62,16 +73,26 @@ export default function App() {
           <p className="section-sub">Pan and zoom to explore. Click a marker to open its codex entry.</p>
         </div>
         <div className="map-container">
-          <InteractiveMap onLocationSelect={handleLocationSelect} />
+          <InteractiveMap ref={mapRef} onLocationSelect={handleLocationSelect} />
         </div>
       </section>
 
-      <LocationPanel location={selectedLocation} onClose={handlePanelClose} />
+      <LocationPanel
+        location={selectedLocation}
+        onClose={handlePanelClose}
+        onVideoSelect={handleVideoSelect}
+      />
 
       <CodexSection />
 
       <MediaSection />
-      <VideoCatalog />
+      <VideoCatalog onVideoSelect={handleVideoSelect} />
+
+      <VideoModal
+        video={selectedVideo}
+        onClose={handleVideoClose}
+        onPinSelect={handlePinSelect}
+      />
 
       {/* Footer */}
       <footer className="footer">

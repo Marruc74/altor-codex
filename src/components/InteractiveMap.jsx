@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useImperativeHandle, forwardRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { pins } from "../data/locations";
@@ -40,9 +40,10 @@ const TYPE_LABELS = {
   shrine:  "Shrines",
 };
 
-function makePinIcon(type) {
+function makePinIcon(type, selected = false) {
   const style = PIN_STYLES[type] ?? PIN_STYLES.city;
-  const { fill, size, ring } = style;
+  const { fill, ring } = style;
+  const size = selected ? Math.round(style.size * 1.6) : style.size;
   const total = size * 2;
   const stem = 7;
   const svg = `
@@ -64,16 +65,21 @@ function makePinIcon(type) {
 // Derive the types actually present in the pin data
 const ACTIVE_TYPES = [...new Set(pins.map((p) => p.type))];
 
-export default function InteractiveMap({ onLocationSelect }) {
-  const containerRef   = useRef(null);
-  const mapRef         = useRef(null);
-  const layerGroupsRef = useRef({});
-  const onSelectRef    = useRef(onLocationSelect);
-  onSelectRef.current  = onLocationSelect;
+const InteractiveMap = forwardRef(function InteractiveMap({ onLocationSelect }, ref) {
+  const containerRef  = useRef(null);
+  const mapRef        = useRef(null);
+  const markersRef    = useRef({}); // { [pin.id]: { marker, pin } }
+  const onSelectRef   = useRef(onLocationSelect);
+  onSelectRef.current = onLocationSelect;
 
   const [visibleTypes, setVisibleTypes] = useState(() =>
     Object.fromEntries(ACTIVE_TYPES.map((t) => [t, true]))
   );
+
+  const [searchQuery, setSearchQuery] = useState("");
+  const [searchOpen, setSearchOpen]   = useState(false);
+  const searchRef = useRef(null);
+  const selectedPinRef = useRef(null); // id of currently selected pin
 
   // Build map once
   useEffect(() => {
@@ -96,13 +102,6 @@ export default function InteractiveMap({ onLocationSelect }) {
     map.fitBounds(bounds);
     L.control.zoom({ position: "bottomright" }).addTo(map);
 
-    // Create one LayerGroup per type
-    const groups = {};
-    ACTIVE_TYPES.forEach((type) => {
-      groups[type] = L.layerGroup().addTo(map);
-    });
-    layerGroupsRef.current = groups;
-
     pins.forEach((pin) => {
       const marker = L.marker(toLatLng(pin.x, pin.y), {
         icon: makePinIcon(pin.type),
@@ -115,6 +114,14 @@ export default function InteractiveMap({ onLocationSelect }) {
       );
 
       marker.on("click", async () => {
+        // Restore previous selected pin to normal size
+        if (selectedPinRef.current && selectedPinRef.current !== pin.id) {
+          const prev = markersRef.current[selectedPinRef.current];
+          if (prev) prev.marker.setIcon(makePinIcon(prev.pin.type, false));
+        }
+        selectedPinRef.current = pin.id;
+        marker.setIcon(makePinIcon(pin.type, true));
+
         onSelectRef.current({ ...pin, loading: true });
         try {
           const detail = await import(`../data/locations/${pin.id}.js`);
@@ -124,32 +131,83 @@ export default function InteractiveMap({ onLocationSelect }) {
         }
       });
 
-      const group = groups[pin.type] ?? groups[ACTIVE_TYPES[0]];
-      marker.addTo(group);
+      marker.addTo(map);
+      markersRef.current[pin.id] = { marker, pin };
     });
 
     mapRef.current = map;
     return () => {
       map.remove();
       mapRef.current = null;
+      markersRef.current = {};
     };
   }, []);
 
-  // Show/hide layer groups when visibleTypes changes
+  // Unified visibility: type toggles + search filtering
   useEffect(() => {
     const map = mapRef.current;
     if (!map) return;
-    Object.entries(layerGroupsRef.current).forEach(([type, group]) => {
-      if (visibleTypes[type]) {
-        if (!map.hasLayer(group)) group.addTo(map);
-      } else {
-        if (map.hasLayer(group)) group.remove();
-      }
+    const q = searchQuery.trim().toLowerCase();
+
+    Object.values(markersRef.current).forEach(({ marker, pin }) => {
+      const typeVisible   = visibleTypes[pin.type] ?? true;
+      const searchVisible = !q || pin.name.toLowerCase().includes(q);
+      const show = typeVisible && searchVisible;
+
+      if (show && !map.hasLayer(marker)) marker.addTo(map);
+      if (!show && map.hasLayer(marker)) marker.remove();
     });
-  }, [visibleTypes]);
+  }, [visibleTypes, searchQuery]);
+
+  // Close dropdown on outside click
+  useEffect(() => {
+    if (!searchOpen) return;
+    const onDown = (e) => {
+      if (!searchRef.current?.contains(e.target)) setSearchOpen(false);
+    };
+    document.addEventListener("mousedown", onDown);
+    return () => document.removeEventListener("mousedown", onDown);
+  }, [searchOpen]);
+
+  const flyToPin = async (pin) => {
+    setSearchQuery("");
+    setSearchOpen(false);
+    const map = mapRef.current;
+
+    // Update selected pin icon
+    if (selectedPinRef.current && selectedPinRef.current !== pin.id) {
+      const prev = markersRef.current[selectedPinRef.current];
+      if (prev) prev.marker.setIcon(makePinIcon(prev.pin.type, false));
+    }
+    selectedPinRef.current = pin.id;
+    const entry = markersRef.current[pin.id];
+    if (entry) entry.marker.setIcon(makePinIcon(pin.type, true));
+
+    if (map) map.flyTo(toLatLng(pin.x, pin.y), 1, { duration: 1 });
+    onSelectRef.current({ ...pin, loading: true });
+    try {
+      const detail = await import(`../data/locations/${pin.id}.js`);
+      onSelectRef.current({ ...pin, ...detail.default, loading: false });
+    } catch {
+      onSelectRef.current({ ...pin, loading: false });
+    }
+  };
+
+  useImperativeHandle(ref, () => ({
+    selectPin: (pinId) => {
+      const entry = markersRef.current[pinId];
+      if (entry) flyToPin(entry.pin);
+    },
+  }));
 
   const toggleType = (type) =>
     setVisibleTypes((prev) => ({ ...prev, [type]: !prev[type] }));
+
+  const searchResults = searchQuery.trim()
+    ? pins.filter((p) =>
+        p.name.toLowerCase().includes(searchQuery.trim().toLowerCase())
+      ).slice(0, 8)
+    : [];
 
   return (
     <div className="map-frame">
@@ -176,8 +234,51 @@ export default function InteractiveMap({ onLocationSelect }) {
         })}
       </div>
 
+      <div className="map-search" ref={searchRef}>
+        <div className="map-search__wrap">
+          <span className="map-search__icon">⌕</span>
+          <input
+            className="map-search__input"
+            type="search"
+            placeholder="Filter locations…"
+            value={searchQuery}
+            onChange={(e) => { setSearchQuery(e.target.value); setSearchOpen(true); }}
+            onFocus={() => setSearchOpen(true)}
+            aria-label="Filter locations"
+          />
+          {searchQuery && (
+            <button
+              className="map-search__clear"
+              onClick={() => { setSearchQuery(""); setSearchOpen(false); }}
+              aria-label="Clear search"
+            >✕</button>
+          )}
+        </div>
+        {searchOpen && searchResults.length > 0 && (
+          <ul className="map-search__dropdown" role="listbox">
+            {searchResults.map((pin) => {
+              const style = PIN_STYLES[pin.type] ?? PIN_STYLES.city;
+              return (
+                <li key={pin.id} role="option">
+                  <button
+                    className="map-search__result"
+                    onClick={() => flyToPin(pin)}
+                  >
+                    <span className="map-search__result-dot" style={{ background: style.fill }} />
+                    <span className="map-search__result-name">{pin.name}</span>
+                    <span className="map-search__result-type">{TYPE_LABELS[pin.type] ?? pin.type}</span>
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        )}
+      </div>
+
       <div ref={containerRef} className="leaflet-map" />
       <div className="map-label-bottom">✦ Click any marker to learn more ✦</div>
     </div>
   );
-}
+});
+
+export default InteractiveMap;

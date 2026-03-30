@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
+import { videosForPin } from "../data/crossLinks";
 
-export default function LocationPanel({ location, onClose }) {
+export default function LocationPanel({ location, onClose, onVideoSelect }) {
   const panelRef = useRef(null);
 
   useEffect(() => {
@@ -16,6 +17,9 @@ export default function LocationPanel({ location, onClose }) {
   }, [onClose]);
 
   if (!location) return null;
+
+  const relatedVideos = (videosForPin[location.id] ?? [])
+    .filter((v) => v.id !== location.youtubeId);
 
   const TYPE_LABELS = {
     capital: "Capital City",
@@ -86,6 +90,29 @@ export default function LocationPanel({ location, onClose }) {
               <div className="placeholder-video__icon">▶</div>
               <p>Chronicle coming soon</p>
               <span>Add a YouTube ID to display a video here</span>
+            </div>
+          )}
+
+          {!location.loading && relatedVideos.length > 0 && (
+            <div className="location-panel__related-videos">
+              <p className="location-panel__section-label">Related Compendium Entries</p>
+              <div className="location-panel__video-strip">
+                {relatedVideos.map((video) => (
+                  <button
+                    key={video.id}
+                    className="location-panel__video-thumb"
+                    onClick={() => onVideoSelect?.(video)}
+                    title={video.name}
+                  >
+                    <img
+                      src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`}
+                      alt={video.name}
+                    />
+                    <div className="location-panel__video-thumb-overlay">▶</div>
+                    <span className="location-panel__video-thumb-label">{video.name}</span>
+                  </button>
+                ))}
+              </div>
             </div>
           )}
         </div>

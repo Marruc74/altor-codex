@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
+import { pinForVideo } from "../data/crossLinks";
 
-export default function VideoModal({ video, onClose }) {
+export default function VideoModal({ video, onClose, onPinSelect }) {
   const ref = useRef(null);
   const label = video?.title ?? video?.name ?? "";
 
@@ -15,6 +16,8 @@ export default function VideoModal({ video, onClose }) {
   }, [onClose]);
 
   if (!video) return null;
+
+  const linkedPin = pinForVideo[video.id];
 
   return (
     <>
@@ -43,6 +46,14 @@ export default function VideoModal({ video, onClose }) {
             <span className="video-modal__group">{video.label ?? video.group}</span>
           )}
           <h2 className="video-modal__title">{label}</h2>
+          {linkedPin && onPinSelect && (
+            <button
+              className="video-modal__map-link"
+              onClick={() => { onClose(); onPinSelect(linkedPin.id); }}
+            >
+              ◉ View on Map — {linkedPin.name}
+            </button>
+          )}
         </div>
       </aside>
     </>

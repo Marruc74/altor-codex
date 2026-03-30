@@ -2,6 +2,7 @@ import { useState, useMemo } from "react";
 import { entries } from "../data/codex/index.js";
 import CodexCard from "./CodexCard";
 import CodexPanel from "./CodexPanel";
+import VideoModal from "./VideoModal";
 
 // Derive sorted tag list with counts
 function buildTagList(allEntries) {
@@ -18,6 +19,7 @@ export default function CodexSection() {
   const [query, setQuery]         = useState("");
   const [activeTag, setActiveTag] = useState(null);
   const [selected, setSelected]   = useState(null);
+  const [activeVideo, setActiveVideo] = useState(null);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -121,7 +123,10 @@ export default function CodexSection() {
         onClose={() => setSelected(null)}
         onTagClick={handleTagClick}
         onEntrySelect={setSelected}
+        onVideoSelect={setActiveVideo}
       />
+
+      <VideoModal video={activeVideo} onClose={() => setActiveVideo(null)} />
     </section>
   );
 }

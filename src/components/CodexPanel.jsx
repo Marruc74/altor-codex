@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { entries } from "../data/codex/index.js";
+import { videos } from "../data/videoData.js";
 
 const IMAGE_RE = /!\[([^\]]*)\]\(([^")]+?)(?:\s+"([^"]*)")?\)/g;
 
@@ -58,7 +59,7 @@ function ImageCarousel({ images }) {
   );
 }
 
-export default function CodexPanel({ entry, onClose, onTagClick, onEntrySelect }) {
+export default function CodexPanel({ entry, onClose, onTagClick, onEntrySelect, onVideoSelect }) {
   const panelRef = useRef(null);
   const [content, setContent] = useState(null);
 
@@ -83,6 +84,10 @@ export default function CodexPanel({ entry, onClose, onTagClick, onEntrySelect }
   const relatedEntries = entry.related
     ?.map((id) => entries.find((e) => e.id === id))
     .filter(Boolean) ?? [];
+
+  const relatedVideos = (entry.relatedVideos ?? [])
+    .map((id) => videos.find((v) => v.id === id))
+    .filter(Boolean);
 
   return (
     <>
@@ -147,6 +152,33 @@ export default function CodexPanel({ entry, onClose, onTagClick, onEntrySelect }
               </>
             );
           })()}
+
+          {content !== null && relatedVideos.length > 0 && (
+            <div className="codex-panel__related">
+              <p className="location-panel__section-label">Related Videos</p>
+              <div className="codex-panel__video-list">
+                {relatedVideos.map((v) => (
+                  <button
+                    key={v.id}
+                    className="codex-panel__video-card"
+                    onClick={() => onVideoSelect(v)}
+                  >
+                    <div className="codex-panel__video-thumb">
+                      <img
+                        src={`https://img.youtube.com/vi/${v.id}/mqdefault.jpg`}
+                        alt={v.name}
+                      />
+                      <span className="codex-panel__video-play">▶</span>
+                    </div>
+                    <div className="codex-panel__video-info">
+                      {v.group && <span className="codex-panel__video-group">{v.group}</span>}
+                      <span className="codex-panel__video-name">{v.name}</span>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
 
           {content !== null && relatedEntries.length > 0 && (
             <div className="codex-panel__related">
