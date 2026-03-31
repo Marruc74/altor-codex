@@ -1,6 +1,6 @@
 # The Hersch
 
-![Fields of hersch on the slopes of Beyural](/codex/Hersch.jpg "Fields of hersch on the slopes of Beyural")
+![Fields of hersch on the slopes of Beyural](/codex/Geography/Ereb/Countries/Erebos/Hersch.jpg "Fields of hersch on the slopes of Beyural")
 
 #### Of Its Nature
 The hersch is a grain unique to Beyural, growing tall in dense golden fields across the island's fertile slopes. It is related to wheat, yet hardier, shaped by the heavy volcanic soil from which it rises.

@@ -1,3 +1,5 @@
+import { eras } from "./timeline.js";
+
 // All YouTube videos parsed from channel data
 // id = YouTube video ID, title = full title, views = view count
 export const rawVideos = [
@@ -329,8 +331,22 @@ const _bySection = videos.filter((v) => !CHRONICLE_IDS.has(v.id)).reduce((acc, v
   return acc;
 }, {});
 
+const _historyById = Object.fromEntries(
+  videos
+    .filter((v) => v.section === "history" && !CHRONICLE_IDS.has(v.id))
+    .map((v) => [v.id, v])
+);
+
+const _historyByTimeline = eras
+  .map((era) => ({
+    group: era.label,
+    videos: era.videoIds.map((id) => _historyById[id]).filter(Boolean),
+  }))
+  .filter((g) => g.videos.length > 0);
+
 export const videosBySection = Object.fromEntries(
   Object.entries(_bySection).map(([sec, map]) => {
+    if (sec === "history") return [sec, _historyByTimeline];
     const ungrouped = (map["__none__"] || []).slice().sort((a, b) => a.name.localeCompare(b.name));
     const named = Object.entries(map)
       .filter(([k]) => k !== "__none__")

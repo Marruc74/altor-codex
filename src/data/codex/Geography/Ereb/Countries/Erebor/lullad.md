@@ -1,6 +1,6 @@
 # The Lullad
 
-![Lullad trees on the dry slopes of Beyural](/codex/Lullad.jpg "Lullad trees on the dry slopes of Beyural")
+![Lullad trees on the dry slopes of Beyural](/codex/Geography/Ereb/Countries/Erebos/Lullad.jpg "Lullad trees on the dry slopes of Beyural")
 
 #### Of Its Nature
 The lullad is a small stonefruit grown across the dry slopes of Beyural. Its trees are low and gnarled, shaped by wind and poor soil, yet they bear fruit in steady abundance.

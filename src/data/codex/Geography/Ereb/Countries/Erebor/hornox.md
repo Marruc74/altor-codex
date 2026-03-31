@@ -1,6 +1,6 @@
 # The Hornox
 
-![A hornox on a field in Beyural](/codex/Hornox.jpg "A hornox on a field in Beyural")
+![A hornox on a field in Beyural](/codex/Geography/Ereb/Countries/Erebos/Hornox.jpg "A hornox on a field in Beyural")
 
 #### Of Its Nature
 The hornox is a great beast of Beyural, broad and heavy, built for endurance rather than speed. Its thick hide bears the marks of labor, and its single forward horn is worn from use. It resembles cattle, yet carries itself with a quiet weight that sets it apart.

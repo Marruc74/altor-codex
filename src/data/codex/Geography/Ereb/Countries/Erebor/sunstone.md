@@ -1,6 +1,6 @@
 # The Sunstone
 
-![A sunstone from the hills of Beyural](/codex/Sunstone.jpg "A sunstone specimen from the hills of Beyural")
+![A sunstone from the hills of Beyural](/codex/Geography/Ereb/Countries/Erebos/Sunstone.jpg "A sunstone specimen from the hills of Beyural")
 
 #### Of Its Nature
 
