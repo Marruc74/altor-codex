@@ -25,7 +25,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    const sections = ["map", "codex", "chronicles", "catalog"];
+    const sections = ["about", "map", "codex", "chronicles", "catalog"];
     const observers = sections.map((id) => {
       const el = document.getElementById(id);
       if (!el) return null;
@@ -65,6 +65,46 @@ export default function App() {
         </div>
         <div className="hero__scroll-hint">✦ Scroll to explore ✦</div>
       </header>
+
+      {/* About Section */}
+      <section id="about" className="about-section">
+        <div className="section-header">
+          <p className="section-eyebrow">The Setting</p>
+          <h2 className="section-title">About this World</h2>
+        </div>
+        <div className="about-body">
+          <p>
+            Ereb Altor is the classic campaign setting for the Swedish roleplaying game{" "}
+            <em>Drakar och Demoner</em>. Altor is the world, while Ereb is the main continent
+            where most adventures take place.
+          </p>
+          <p>
+            Created in 1989, Ereb Altor was designed to unify earlier standalone adventures
+            into a shared world. Rather than being built from a single plan, it grew gradually
+            through many authors and modules. This gives the setting a varied and flexible
+            nature, where different cultures, time periods, and tones exist side by side.
+          </p>
+          <p>
+            The world of Ereb is diverse and expansive. It contains kingdoms, city-states,
+            tribal lands, and remote frontiers, each with its own identity. Landscapes range
+            from frozen northern regions and dense forests to fertile inland seas and harsh
+            coastal territories. No single empire dominates the continent, and power is often
+            fragmented and contested.
+          </p>
+          <p>
+            Magic, gods, and ancient history play an important role. Ruins of lost
+            civilizations are common, and the past often influences the present. Different
+            regions interpret religion, magic, and knowledge in their own ways, adding to the
+            world's depth.
+          </p>
+          <p>
+            Ereb Altor supports many styles of play, from classic heroic adventures to
+            political intrigue, exploration, and darker, more mysterious stories. Its open and
+            modular design encourages expansion, making it a flexible setting where new ideas
+            and stories can easily be added.
+          </p>
+        </div>
+      </section>
 
       {/* Map Section */}
       <section id="map" className="map-section">

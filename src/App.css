@@ -341,6 +341,37 @@ body {
   50%       { opacity: 0.9; }
 }
 
+/* ─── About Section ─────────────────────────────────────── */
+.about-section {
+  padding: 5rem 2rem 4rem;
+  position: relative;
+}
+
+.about-body {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.about-body p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.about-body p:first-child {
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+.about-body em {
+  color: var(--gold-light);
+  font-style: italic;
+}
+
 /* ─── Map Section ────────────────────────────────────────── */
 .map-section {
   padding: 5rem 2rem;
@@ -2319,6 +2350,43 @@ body {
 
   .map-frame {
     padding: 1.5rem 0.75rem 2rem;
+  }
+
+  .about-section {
+    padding: 2.5rem 1rem 2rem;
+  }
+
+  .map-section {
+    padding: 2.5rem 1rem;
+  }
+
+  /* Shrink the map canvas on phones */
+  .leaflet-map {
+    height: 350px;
+  }
+
+  /* Horizontal-scroll filter strip — no wrapping */
+  .map-filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 0.5rem;
+  }
+  .map-filters::-webkit-scrollbar {
+    display: none;
+  }
+  .map-filter-btn {
+    flex-shrink: 0;
+  }
+
+  /* Full-width search on mobile */
+  .map-search {
+    max-width: 100%;
+  }
+
+  .codex-section {
+    padding: 2.5rem 1rem 3.5rem;
   }
 
   .lore-grid {
