@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback, forwardRef, useImperativeHandle } from "react";
 import { entries } from "../data/codex/index.js";
 import CodexCard from "./CodexCard";
 import CodexPanel from "./CodexPanel";
@@ -15,11 +15,26 @@ function buildTagList(allEntries) {
 
 const ALL_TAGS = buildTagList(entries);
 
-export default function CodexSection() {
+const CodexSection = forwardRef(function CodexSection({ initialEntryId, onEntryOpen, onEntryClose }, ref) {
   const [query, setQuery]         = useState("");
   const [activeTag, setActiveTag] = useState(null);
-  const [selected, setSelected]   = useState(null);
+  const [selected, setSelected]   = useState(
+    () => initialEntryId ? (entries.find((e) => e.id === initialEntryId) ?? null) : null
+  );
   const [activeVideo, setActiveVideo] = useState(null);
+
+  const handleSelect = useCallback((entry) => {
+    setSelected(entry);
+    if (entry) onEntryOpen?.(entry.id);
+    else onEntryClose?.();
+  }, [onEntryOpen, onEntryClose]);
+
+  useImperativeHandle(ref, () => ({
+    openEntry: (id) => {
+      const entry = entries.find((e) => e.id === id);
+      if (entry) handleSelect(entry);
+    },
+  }), [handleSelect]);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -111,7 +126,7 @@ export default function CodexSection() {
             <CodexCard
               key={entry.id}
               entry={entry}
-              onSelect={setSelected}
+              onSelect={handleSelect}
               onTagClick={handleTagClick}
             />
           ))}
@@ -120,13 +135,15 @@ export default function CodexSection() {
 
       <CodexPanel
         entry={selected}
-        onClose={() => setSelected(null)}
+        onClose={() => handleSelect(null)}
         onTagClick={handleTagClick}
-        onEntrySelect={setSelected}
+        onEntrySelect={handleSelect}
         onVideoSelect={setActiveVideo}
       />
 
       <VideoModal video={activeVideo} onClose={() => setActiveVideo(null)} />
     </section>
   );
-}
+});
+
+export default CodexSection;

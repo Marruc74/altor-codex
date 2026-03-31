@@ -2,11 +2,30 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import Navbar from "./components/Navbar";
 import InteractiveMap from "./components/InteractiveMap";
 import LocationPanel from "./components/LocationPanel";
+import Timeline from "./components/Timeline";
 import CodexSection from "./components/CodexSection";
 import MediaSection from "./components/MediaSection";
 import VideoCatalog from "./components/VideoCatalog";
 import VideoModal from "./components/VideoModal";
+import GlobalSearch from "./components/GlobalSearch";
+import { entries } from "./data/codex/index.js";
+import { pins } from "./data/locations";
 import "./App.css";
+
+// ── URL helpers ──────────────────────────────────────────────
+function getParam(key) {
+  return new URLSearchParams(window.location.search).get(key);
+}
+function setParam(key, value) {
+  const url = new URL(window.location);
+  if (value) {
+    url.searchParams.set(key, value);
+    url.searchParams.delete(key === "pin" ? "entry" : "pin");
+  } else {
+    url.searchParams.delete(key);
+  }
+  history.replaceState(null, "", url);
+}
 
 export default function App() {
   const [activeSection, setActiveSection] = useState("codex");
@@ -14,7 +33,28 @@ export default function App() {
   const handleLocationSelect = useCallback((loc) => setSelectedLocation(loc), []);
   const handlePanelClose = useCallback(() => setSelectedLocation(null), []);
 
-  const mapRef = useRef(null);
+  const mapRef   = useRef(null);
+  const codexRef = useRef(null);
+
+  const [searchOpen, setSearchOpen] = useState(false);
+
+  // Ctrl+K / Cmd+K opens global search
+  useEffect(() => {
+    const onKey = (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
+        e.preventDefault();
+        setSearchOpen(true);
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
+  const handleGlobalEntrySelect = useCallback((id) => {
+    codexRef.current?.openEntry(id);
+    document.getElementById("codex")?.scrollIntoView({ behavior: "smooth" });
+  }, []);
+
   const [selectedVideo, setSelectedVideo] = useState(null);
   const handleVideoSelect = useCallback((video) => setSelectedVideo(video), []);
   const handleVideoClose = useCallback(() => setSelectedVideo(null), []);
@@ -24,8 +64,46 @@ export default function App() {
     setTimeout(() => mapRef.current?.selectPin(pinId), 600);
   }, []);
 
+  const handleSurprise = useCallback(() => {
+    if (Math.random() < 0.5) {
+      const entry = entries[Math.floor(Math.random() * entries.length)];
+      codexRef.current?.openEntry(entry.id);
+      document.getElementById("codex")?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      const pin = pins[Math.floor(Math.random() * pins.length)];
+      handlePinSelect(pin.id);
+    }
+  }, [handlePinSelect]);
+
+  // Read URL params once, synchronously, before any effect can modify them
+  const [initialPinId]   = useState(() => getParam("pin"));
+  const [initialEntryId] = useState(() => getParam("entry"));
+
+  // Deep-link on page load
   useEffect(() => {
-    const sections = ["about", "map", "codex", "chronicles", "catalog"];
+    if (initialPinId) {
+      document.getElementById("map")?.scrollIntoView({ block: "start" });
+      const t = setTimeout(() => mapRef.current?.selectPin(initialPinId), 300);
+      return () => clearTimeout(t);
+    }
+    if (initialEntryId) {
+      document.getElementById("codex")?.scrollIntoView({ block: "start" });
+    }
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Sync selected pin → URL (skip first render to avoid clobbering deep-link params)
+  const didMountRef = useRef(false);
+  useEffect(() => {
+    if (!didMountRef.current) { didMountRef.current = true; return; }
+    if (selectedLocation) setParam("pin", selectedLocation.id);
+    else setParam("pin", null);
+  }, [selectedLocation]);
+
+  const handleEntryOpen  = useCallback((id) => setParam("entry", id), []);
+  const handleEntryClose = useCallback(() => setParam("entry", null), []);
+
+  useEffect(() => {
+    const sections = ["about", "history", "map", "codex", "chronicles", "catalog"];
     const observers = sections.map((id) => {
       const el = document.getElementById(id);
       if (!el) return null;
@@ -41,7 +119,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <Navbar activeSection={activeSection} />
+      <Navbar activeSection={activeSection} onSearchOpen={() => setSearchOpen(true)} />
 
       {/* Hero */}
       <header className="hero">
@@ -61,6 +139,9 @@ export default function App() {
           >
             Open the Codex
             <span className="hero__cta-arrow">↓</span>
+          </button>
+          <button className="hero__surprise" onClick={handleSurprise}>
+            ✦ Surprise me
           </button>
         </div>
         <div className="hero__scroll-hint">✦ Scroll to explore ✦</div>
@@ -106,6 +187,8 @@ export default function App() {
         </div>
       </section>
 
+      <Timeline onVideoSelect={handleVideoSelect} />
+
       {/* Map Section */}
       <section id="map" className="map-section">
         <div className="section-header">
@@ -123,7 +206,12 @@ export default function App() {
         onVideoSelect={handleVideoSelect}
       />
 
-      <CodexSection />
+      <CodexSection
+        ref={codexRef}
+        initialEntryId={initialEntryId}
+        onEntryOpen={handleEntryOpen}
+        onEntryClose={handleEntryClose}
+      />
 
       <MediaSection />
       <VideoCatalog onVideoSelect={handleVideoSelect} />
@@ -133,6 +221,15 @@ export default function App() {
         onClose={handleVideoClose}
         onPinSelect={handlePinSelect}
       />
+
+      {searchOpen && (
+        <GlobalSearch
+          onPinSelect={handlePinSelect}
+          onEntrySelect={handleGlobalEntrySelect}
+          onVideoSelect={handleVideoSelect}
+          onClose={() => setSearchOpen(false)}
+        />
+      )}
 
       {/* Footer */}
       <footer className="footer">

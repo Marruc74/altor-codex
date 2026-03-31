@@ -1,5 +1,8 @@
 import { useEffect, useRef } from "react";
 import { videosForPin } from "../data/crossLinks";
+import { videos } from "../data/videoData";
+
+const videoById = Object.fromEntries(videos.map((v) => [v.id, v]));
 
 export default function LocationPanel({ location, onClose, onVideoSelect }) {
   const panelRef = useRef(null);
@@ -20,6 +23,10 @@ export default function LocationPanel({ location, onClose, onVideoSelect }) {
 
   const relatedVideos = (videosForPin[location.id] ?? [])
     .filter((v) => v.id !== location.youtubeId);
+
+  const mainVideo = location.youtubeId
+    ? (videoById[location.youtubeId] ?? { id: location.youtubeId, title: `Chronicle: ${location.name}` })
+    : null;
 
   const TYPE_LABELS = {
     capital: "Capital City",
@@ -70,18 +77,23 @@ export default function LocationPanel({ location, onClose, onVideoSelect }) {
             <p className="location-panel__loading">No further information recorded.</p>
           )}
 
-          {!location.loading && location.youtubeId && (
+          {!location.loading && mainVideo && (
             <div className="location-panel__video">
               <p className="location-panel__section-label">Chronicle</p>
-              <div className="location-panel__embed">
-                <iframe
-                  src={`https://www.youtube.com/embed/${location.youtubeId}`}
-                  title={`Chronicle: ${location.name}`}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
+              <button
+                className="location-panel__watch-btn"
+                onClick={() => onVideoSelect?.(mainVideo)}
+                aria-label={`Watch ${mainVideo.title}`}
+              >
+                <img
+                  src={`https://img.youtube.com/vi/${mainVideo.id}/mqdefault.jpg`}
+                  alt={mainVideo.title}
                 />
-              </div>
+                <div className="location-panel__watch-overlay">
+                  <span className="location-panel__watch-play">▶</span>
+                  <span className="location-panel__watch-label">Watch</span>
+                </div>
+              </button>
             </div>
           )}
 

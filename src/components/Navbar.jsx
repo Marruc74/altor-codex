@@ -2,13 +2,14 @@ import { useState, useEffect } from "react";
 
 const navLinks = [
   { id: "about",      label: "About"      },
+  { id: "history",    label: "History"    },
   { id: "map",        label: "Map"        },
   { id: "codex",      label: "Codex"      },
   { id: "chronicles", label: "Chronicles" },
   { id: "catalog",    label: "Compendium" },
 ];
 
-export default function Navbar({ activeSection }) {
+export default function Navbar({ activeSection, onSearchOpen }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -42,6 +43,13 @@ export default function Navbar({ activeSection }) {
           </li>
         ))}
       </ul>
+
+      <button
+        className="navbar__search"
+        onClick={onSearchOpen}
+        aria-label="Search"
+        title="Search (Ctrl+K)"
+      >⌕</button>
 
       <button
         className="navbar__burger"
