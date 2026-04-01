@@ -76,6 +76,8 @@ const InteractiveMap = forwardRef(function InteractiveMap({ onLocationSelect }, 
     Object.fromEntries(ACTIVE_TYPES.map((t) => [t, true]))
   );
 
+  const [miniRect, setMiniRect] = useState(null);
+
   const [searchQuery, setSearchQuery] = useState("");
   const [searchOpen, setSearchOpen]   = useState(false);
   const searchRef = useRef(null);
@@ -136,6 +138,28 @@ const InteractiveMap = forwardRef(function InteractiveMap({ onLocationSelect }, 
     });
 
     mapRef.current = map;
+
+    const updateMini = () => {
+      const b = map.getBounds();
+      const n = Math.min(b.getNorth(), IMG_H);
+      const s = Math.max(b.getSouth(), 0);
+      const w = Math.max(b.getWest(),  0);
+      const e = Math.min(b.getEast(),  IMG_W);
+      // Hide when showing ≥ 75% of the full image
+      if ((e - w) / IMG_W > 0.75 && (n - s) / IMG_H > 0.75) {
+        setMiniRect(null);
+      } else {
+        setMiniRect({
+          top:    (IMG_H - n) / IMG_H * 100,
+          left:   w          / IMG_W * 100,
+          width:  (e - w)    / IMG_W * 100,
+          height: (n - s)    / IMG_H * 100,
+        });
+      }
+    };
+    map.on("moveend zoomend", updateMini);
+    setTimeout(updateMini, 200);
+
     return () => {
       map.remove();
       mapRef.current = null;
@@ -198,6 +222,7 @@ const InteractiveMap = forwardRef(function InteractiveMap({ onLocationSelect }, 
       const entry = markersRef.current[pinId];
       if (entry) flyToPin(entry.pin);
     },
+    invalidateSize: () => mapRef.current?.invalidateSize(),
   }));
 
   const toggleType = (type) =>
@@ -276,6 +301,22 @@ const InteractiveMap = forwardRef(function InteractiveMap({ onLocationSelect }, 
       </div>
 
       <div ref={containerRef} className="leaflet-map" />
+
+      {miniRect && (
+        <div className="minimap">
+          <img src="/Altor.jpg" className="minimap__img" alt="Overview" />
+          <div
+            className="minimap__rect"
+            style={{
+              top:    `${miniRect.top}%`,
+              left:   `${miniRect.left}%`,
+              width:  `${miniRect.width}%`,
+              height: `${miniRect.height}%`,
+            }}
+          />
+        </div>
+      )}
+
       <div className="map-label-bottom">✦ Click any marker to learn more ✦</div>
     </div>
   );

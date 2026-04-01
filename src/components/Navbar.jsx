@@ -5,28 +5,22 @@ const navLinks = [
   { id: "history",    label: "History"    },
   { id: "map",        label: "Map"        },
   { id: "codex",      label: "Codex"      },
+  { id: "countries",  label: "Countries"  },
   { id: "chronicles", label: "Chronicles" },
   { id: "catalog",    label: "Compendium" },
 ];
 
-export default function Navbar({ activeSection, onSearchOpen }) {
-  const [scrolled, setScrolled] = useState(false);
+export default function Navbar({ activePage, onNavigate, onSearchOpen }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  const scrollTo = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  const navigate = (id) => {
+    onNavigate(id);
     setMenuOpen(false);
   };
 
   return (
-    <nav className={`navbar ${scrolled ? "navbar--scrolled" : ""}`}>
-      <div className="navbar__brand" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+    <nav className="navbar navbar--scrolled">
+      <div className="navbar__brand" onClick={() => navigate(null)}>
         <span className="navbar__sigil">✦</span>
         <span className="navbar__title">The Altor Codex</span>
       </div>
@@ -35,8 +29,8 @@ export default function Navbar({ activeSection, onSearchOpen }) {
         {navLinks.map((link) => (
           <li key={link.id}>
             <button
-              className={`navbar__link ${activeSection === link.id ? "navbar__link--active" : ""}`}
-              onClick={() => scrollTo(link.id)}
+              className={`navbar__link ${activePage === link.id ? "navbar__link--active" : ""}`}
+              onClick={() => navigate(link.id)}
             >
               {link.label}
             </button>

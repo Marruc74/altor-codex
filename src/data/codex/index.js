@@ -35,19 +35,5 @@ export const entries = [
     detail: "Geography/Ereb/Countries/Erebor/lullad.md",
     related: ["beyural", "hersch"],
     relatedVideos: ["hBVMZKASM_s", "WIm8eZ6Cn-U"],
-  }, {
-    id: "klomellien",
-    title: "Klomellien",
-    summary: "",
-    tags: ["country", "ereb"],
-    image: "/codex/Geography/Ereb/Countries/Klomellien/Klomellien1.jpg",
-    detail: "Geography/Ereb/Countries/Klomellien/klomellien.md",
-  }, {
-    id: "montures",
-    title: "Montures",
-    summary: "",
-    tags: ["country", "ereb"],
-    image: "/codex/Geography/Ereb/Countries/Montures/Montures1.jpg",
-    detail: "Geography/Ereb/Countries/Montures/montures.md",
   }
 ];

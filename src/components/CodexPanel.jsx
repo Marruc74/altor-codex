@@ -67,7 +67,8 @@ export default function CodexPanel({ entry, onClose, onTagClick, onEntrySelect, 
     if (entry) {
       panelRef.current?.focus();
       setContent(null);
-      import(`../data/codex/${entry.detail ?? entry.id + ".md"}?raw`)
+      const detailPath = entry.detail ?? `${entry.id}.md`;
+      import(`../data/codex/${detailPath}?raw`)
         .then((m) => setContent(m.default))
         .catch(() => setContent(""));
     }
