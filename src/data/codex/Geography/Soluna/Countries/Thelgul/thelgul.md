@@ -12,33 +12,21 @@ Even their ancient enemies, the Nivralans, rarely meet them in open war. Distanc
 
 ## Overview
 
-### Trade Between Niferland and Thelgul
+- **Government:** Priest state
+- **Religion:** Worship of celestial bodies: stars, planets, the sun, and the moon
 
-The text first concludes a description of the relationship between two realms:
+## Geography
 
-- Niferland has a strong galley fleet.
-- They control the northern Orm Sea and thus much of the maritime trade toward the Copper Sea.
-- Thelgul contributes through caravan trade from the interior of Soluna.
+Thelgul lies on the mainland of Soluna, at roughly the same latitude as the Nivralans.
 
-This means that the realms are economically dependent on each other, despite their rivalry.
+## Economy
 
----
+Thelgul controls key caravan routes from the interior of Soluna. Together with Niferland's galley fleet dominating the northern Orm Sea, the two realms are economically dependent on each other despite their rivalry: Thelgul feeds trade with goods from the inland while Niferland carries them across the sea.
 
-### Thelgul
+## Religion
 
-Thelgul is described as:
+Thelgul is a priest state whose people worship celestial bodies: stars, planets, the sun, and the moon. The movements of the heavens are believed to guide the fate of all things.
 
-- A priest state on the mainland of Soluna, at roughly the same latitude as the Nivralans.
-- Its people worship celestial bodies such as stars, planets, the sun, and the moon.
-- Thelgul and the Nivralans are hereditary enemies.
+## Foreign Relations
 
-Despite this:
-
-- They rarely engage in large-scale wars.
-- The conflict appears to be more political, religious, or historical in nature rather than constant military confrontation.
-
----
-
-### Summary
-
-Thelgul is a religious priest state on the mainland of Soluna that worships celestial bodies and maintains a long-standing rivalry with the Nivralans. Despite this hostility, large wars are uncommon, partly because trade in the region creates mutual dependence. Niferland dominates maritime trade with its fleet, while Thelgul controls key caravan routes from the inland.
+Thelgul and the Nivralans are hereditary enemies, though they rarely engage in large-scale wars. The conflict is more political, religious, and historical in nature than one of constant military confrontation. Trade in the region creates mutual dependence that limits open warfare.

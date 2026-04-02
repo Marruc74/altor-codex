@@ -17,6 +17,7 @@ export const pins = [
   { id: "krun",                    name: "Krun",                    type: "country",   continent: "ereb",     tagline: "", x: 1600, y: 982  },
   { id: "magilre",                 name: "Magilre",                 type: "country",   continent: "ereb",     tagline: "", x: 989,  y: 732  },
   { id: "jih-pun",                 name: "Jih Pun",                 type: "country",   continent: "other",    tagline: "", x: 12,   y: 1100 },
+  { id: "niferland",               name: "Niferland",               type: "country",   continent: "other",    tagline: "", x: 1378, y: 1345 },
   { id: "sombatze",                name: "Sombatze",                type: "country",   continent: "soluna",   tagline: "", x: 1800, y: 1250 },
   { id: "klomellien",              name: "Klomellien",              type: "country",   continent: "ereb",     tagline: "", x: 1027, y: 759  },
   { id: "kardien",                 name: "Kardien",                 type: "country",   continent: "ereb",     tagline: "", x: 912,  y: 913  },

@@ -30,17 +30,17 @@ Notable regions:
 
 ## Climate
 
-- **Highlands** — colder and windier
-- **Lowlands** — milder climate
-- **Winters** — snow and harsh cold
-- **Summers** — dry and relatively warm
+- **Highlands**: colder and windier
+- **Lowlands**: milder climate
+- **Winters**: snow and harsh cold
+- **Summers**: dry and relatively warm
 
 ## People
 
-- **Northern Barbarians** — nomadic warriors, livestock herding, strong tribal culture
-- **People of Babor** — more organized society, developed cities, trade focused
-- **Forest Folk** — live in forests and mountains, more isolated
-- **Habulers** — seafaring and trading people
+- **Northern Barbarians**: nomadic warriors, livestock herding, strong tribal culture
+- **People of Babor**: more organized society, developed cities, trade focused
+- **Forest Folk**: live in forests and mountains, more isolated
+- **Habulers**: seafaring and trading people
 
 ## Culture
 
@@ -63,14 +63,14 @@ Around year 610:
 
 ## History
 
-- **Prehistoric Era** — early inhabitants lived as hunters and nomads, later followed by pastoral tribes
-- **Bronze Age** — migration from other regions, Barbian tribes spread across the land
-- **Rise of Babor** — around 2400 years ago, the people of Babor emerge
-- **Formation of Kingdoms** — small kingdoms and tribal domains form, trade and contact with other civilizations increase
-- **Imperial Era** — Barbia unified under an emperor from Babor, stronger rule, expansion, and warfare
-- **Dark Age** — fragmentation, invasions, and internal conflict, decline of royal authority
+- **Prehistoric Era**: early inhabitants lived as hunters and nomads, later followed by pastoral tribes
+- **Bronze Age**: migration from other regions, Barbian tribes spread across the land
+- **Rise of Babor**: around 2400 years ago, the people of Babor emerge
+- **Formation of Kingdoms**: small kingdoms and tribal domains form, trade and contact with other civilizations increase
+- **Imperial Era**: Barbia unified under an emperor from Babor, stronger rule, expansion, and warfare
+- **Dark Age**: fragmentation, invasions, and internal conflict, decline of royal authority
 
 ## Major Conflicts
 
-- **Conflicts with the Howathens** — trade wars and political struggles, competition over trade routes
-- **The War of Yddris** — major war against Yddris, internal divisions weakened Barbia
+- **Conflicts with the Howathens**: trade wars and political struggles, competition over trade routes
+- **The War of Yddris**: major war against Yddris, internal divisions weakened Barbia

@@ -2478,7 +2478,7 @@ body {
   color: var(--gold);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin: 2rem 0 0;
+  margin: 3.5rem 0 0;
   padding-bottom: 0.35rem;
   border-bottom: 1px solid var(--border);
 }
@@ -3043,7 +3043,7 @@ body {
   color: var(--gold);
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  margin: 2.5rem 0 0.75rem;
+  margin: 3.5rem 0 0.75rem;
   padding-bottom: 0.4rem;
   border-bottom: 1px solid var(--border);
 }

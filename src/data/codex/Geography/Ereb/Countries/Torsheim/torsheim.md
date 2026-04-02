@@ -6,7 +6,7 @@
 ![Torsheim female](/codex/Geography/Ereb/Countries/Torsheim/Female1.jpg "Torsheim female")
 ![Howath male](/codex/Geography/Ereb/Countries/Torsheim/HowathMale1.jpg "Howath male")
 
-Torsheim lies in the heart of Ereb, where deep forests press against the rising walls of the Nida Mountains. It is a land shaped by old paths and older grudges. The Howather clans move through the woods with quiet authority, while the Jorer tend their fields at the forest’s edge. In the mountains, dwarves carve halls from stone and trade iron for grain and timber.
+Torsheim lies in the heart of Ereb, where deep forests press against the rising walls of the Nida Mountains. It is a land shaped by old paths and older grudges. The Howather clans move through the woods with quiet authority, while the Jorer tend their fields at the forest's edge. In the mountains, dwarves carve halls from stone and trade iron for grain and timber.
 
 Two faiths divide the people. Wegil brings law and light, while Kashim calls for strength and dominance. Their followers rarely agree, and their temples rarely stand close.
 
@@ -14,190 +14,67 @@ Rivers carry life from the mountains toward the Silver River, and with them come
 
 Beyond the roads, the forests remain vast and untamed. Wolves hunt in the dark, troll lands are avoided, and not all who enter return. Torsheim is a place of opportunity, but also of tension, where every path leads to a story waiting to unfold.
 
-# Overview – Torsheim
+## Geography
 
-## 1. Religion and Gods
+Torsheim is a vast forested region between the Nida Mountains and the Copper Sea. The Nida Mountains lie to the north, rich in minerals and home to dwarven settlements. Three major rivers flow from the mountains into the Silver River: the **Giplur**, the **Hrid**, and the **Hróhnfleden**. Extensive woodland covers much of the land, and the Troll Forest is especially dangerous.
 
-The region is shaped by two major deities.
+Common flora includes beech, oak, and maple forests with meadows and grazing lands. Wildlife includes deer, bears, wolves, and wild boar, and hunting is common.
 
-### Wegil
+## Climate
 
-- Lord of Light and a benevolent god
-- Seeks to spread civilization, law, and order
-- Followers fight darkness, barbarism, and chaos
-- Supported by knightly orders and temples
-- Emphasizes discipline, morality, and protecting the weak
+Summer is mild and stable. Winter brings cold and snow. Spring and autumn are marked by heavy rainfall, and weather can change rapidly.
 
-### Kashim
-
-- Ruling Flame and lord of life
-- More aggressive and power-driven faith
-- Demands universal worship
-- In conflict with Wegil’s religion
-- Followers seek strength and dominance
-
-These opposing beliefs create strong religious tension, often central to adventures.
-
----
-
-## 2. Geography of Torsheim
-
-Torsheim is a vast forested region between the Nida Mountains and the Copper Sea.
-
-### Mountains
-
-- The Nida Mountains lie to the north
-- Rich in minerals and mining
-- Crucial to dwarven settlements
-
-### Rivers
-
-Three major rivers flow from the mountains into the Silver River:
-
-- Giplur
-- Hrid
-- Hróhnfleden
-
-### Forests
-
-- Extensive woodland covers much of the land
-- The Troll Forest is especially dangerous
-- Home to many wild creatures
-
----
-
-## 3. Nature
-
-### Flora
-
-- Beech, oak, and maple forests
-- Meadows and grazing lands
-
-### Fauna
-
-- Deer
-- Bears
-- Wolves
-- Wild boar
-
-Torsheim is rich in game, and hunting is common.
-
----
-
-## 4. Climate
-
-- Summer: mild and stable
-- Winter: cold with snow
-- Spring and autumn: heavy rainfall
-
-Weather can change rapidly.
-
----
-
-## 5. History
-
-Torsheim’s history spans from the Bronze Age to the present.
-
-### Key Events
-
-- Arrival of the Howather from the north
-- Wars with the Jorer (agricultural people)
-- Dwarven influence from the Nida Mountains
-- Founding of Torsborg as a fortified trade center
-
-The region’s past is marked by war, migration, and religious conflict.
-
----
-
-## 6. Peoples of Torsheim
+## People
 
 ### Howather
 
-- Warrior forest clans
-- Clan-based society
-- Value strength and loyalty
+Warrior forest clans with a clan-based society that values strength and loyalty.
 
 ### Jorer
 
-- Agricultural people
-- More settled and civilized
+An agricultural people, more settled and civilized than the Howather.
 
 ### Dwarves
 
-- Live in the Nida Mountains
-- Known for smithing and trade
+Live in the Nida Mountains and are known for smithing and trade.
 
 ### Wolfmen
 
-- Nomadic, wolf-like beings
-- Live in packs
-- Occasionally trade with humans
-
-### Elves
-
-- Very few in the region
+Nomadic, wolf-like beings who live in packs and occasionally trade with humans.
 
 ### Darkfolk
 
-- Orc-like tribes in the mountains
+Orc-like tribes in the mountains.
 
----
+Elves are present in the region but in very small numbers.
 
-## 7. Conflicts in the Region
+## Economy
 
-Torsheim is shaped by ongoing tensions:
+The key industries are trade, agriculture, mining, and hunting. Dwarves sell metal goods and buy food from humans.
 
-- Hostility between Howather and dwarves
-- Rivalries between merchant families
-- Threats from wolfmen and darkfolk
-- Religious conflict
+## Religion
 
-These make the region ideal for adventure.
+The region is shaped by two major deities in conflict.
 
----
+### Wegil
 
-## 8. The City of Torsborg
+Lord of Light and a benevolent god who seeks to spread civilization, law, and order. Followers fight darkness, barbarism, and chaos. Supported by knightly orders and temples, emphasizing discipline, morality, and protecting the weak.
 
-Torsborg is the most important city in Torsheim.
+### Kashim
 
-### Role
+The Ruling Flame and lord of life: a more aggressive and power-driven faith. Demands universal worship, in conflict with Wegil's religion. Followers seek strength and dominance.
 
-- Major trade hub
-- Meeting place for Jorer, dwarves, and Howather
+## History
 
-### Governance
+- Arrival of the Howather from the north
+- Wars with the Jorer
+- Dwarven influence from the Nida Mountains
+- Founding of Torsborg as a fortified trade center
 
-- Led by a city master
-- Supported by a council of merchants and leaders
+The region's past is marked by war, migration, and religious conflict.
 
-### City Watch
+## The City of Torsborg
 
-- Around 30 guards
-- Gates are closed at night
-- Magic is forbidden within the walls
+Torsborg is the most important city in Torsheim: a major trade hub and meeting place for the Jorer, dwarves, and Howather. It is led by a city master supported by a council of merchants and leaders. The city watch numbers around 30 guards, gates are closed at night, and magic is forbidden within the walls.
 
----
-
-## 9. Economy
-
-Key industries:
-
-- Trade
-- Agriculture
-- Mining
-- Hunting
-
-Dwarves sell metal goods and buy food from humans.
-
----
-
-## 10. Locations in the City
-
-Important places include:
-
-- Town Hall
-- Trading Houses (Sagbon & Vedort)
-- Inns
-- Temples
-- Jail
-- City Watch Barracks
+Key locations include the Town Hall, the trading houses of Sagbon and Vedort, inns, temples, a jail, and city watch barracks.

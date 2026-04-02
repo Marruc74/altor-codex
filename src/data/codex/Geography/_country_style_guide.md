@@ -52,21 +52,21 @@ One or two prose sentences describing the country in broad strokes.
 
 ## Named Groups, Eras, Conflicts
 
-For items with 1–2 descriptors: use `- **Name** — desc, desc` on a single line.
+For items with 1–2 descriptors: use `- **Name**: desc, desc` on a single line.
 
 ```markdown
 ## People
 
-- **Northern Barbarians** — nomadic warriors, livestock herding, strong tribal culture
-- **People of Babor** — more organized society, developed cities, trade focused
+- **Northern Barbarians**: nomadic warriors, livestock herding, strong tribal culture
+- **People of Babor**: more organized society, developed cities, trade focused
 ```
 
 ```markdown
 ## History
 
-- **Prehistoric Era** — early inhabitants lived as hunters and nomads, later pastoral tribes
-- **Bronze Age** — migration from other regions, tribes spread across the land
-- **Dark Age** — fragmentation, invasions, decline of royal authority
+- **Prehistoric Era**: early inhabitants lived as hunters and nomads, later pastoral tribes
+- **Bronze Age**: migration from other regions, tribes spread across the land
+- **Dark Age**: fragmentation, invasions, decline of royal authority
 ```
 
 For items with 3+ sub-points: use a `### Name` subsection instead.
@@ -98,8 +98,8 @@ Typical peacetime forces:
 ```
 
 ```markdown
-- **Noble Cities** — governed by bailiffs, pay taxes to the nobility
-- **Free Cities** — have bought their independence, governed by city councils
+- **Noble Cities**: governed by bailiffs, pay taxes to the nobility
+- **Free Cities**: have bought their independence, governed by city councils
 ```
 
 ---
@@ -121,7 +121,7 @@ Common crops include:
 
 ## Bold in Prose
 
-Only use bold for **proper nouns and named terms** being introduced for the first time — god names, ship types, special materials, named institutions.
+Only use bold for **proper nouns and named terms** being introduced for the first time: god names, ship types, special materials, named institutions.
 
 ```markdown
 The primary religion is the worship of **Fraschikel**.
@@ -135,7 +135,7 @@ Do **not** use bold for general emphasis (`**Women often hold leading roles**`) 
 
 ---
 
-## Inline Bold Headers — Forbidden
+## Inline Bold Headers: Forbidden
 
 Never use bold as a substitute for a heading.
 
@@ -151,7 +151,7 @@ Never use bold as a substitute for a heading.
 
 ---
 
-## Line-Break Lists — Forbidden
+## Line-Break Lists: Forbidden
 
 Never use trailing-space soft breaks (`word  \n`) to fake a list.
 
@@ -214,9 +214,9 @@ Prefer the named-era format. If eras don't have clear names, plain bullets work.
 ```markdown
 ## History (named eras)
 
-- **The Age of Kings** — a king attempts to rule, central power remains weak
-- **The Age of Trade** — trade expands rapidly, merchants become wealthier than nobles
-- **The Age of the Five Houses** — merchants revolt, five houses take control
+- **The Age of Kings**: a king attempts to rule, central power remains weak
+- **The Age of Trade**: trade expands rapidly, merchants become wealthier than nobles
+- **The Age of the Five Houses**: merchants revolt, five houses take control
 ```
 
 ```markdown
@@ -245,7 +245,7 @@ Strip anything that is author/game-design meta, not in-world lore:
 
 These files are well-formatted and can be used as a reference when uncertain:
 
-- **felicien.md** (`Ereb/Countries/Felicien/`) — best Overview stat block, good Society/Slavery structure
-- **kardien.md** (`Ereb/Countries/Kardien/`) — good People subsections, Cities and Military format
-- **jorduashur.md** (`Ereb/Countries/Jorduashur/`) — good Overview with merged Quick Facts, Religion with named gods
-- **erebos.md** (`Ereb/Countries/Erebos/`) — good Geography with named island subsections, History eras
+- **felicien.md** (`Ereb/Countries/Felicien/`): best Overview stat block, good Society/Slavery structure
+- **kardien.md** (`Ereb/Countries/Kardien/`): good People subsections, Cities and Military format
+- **jorduashur.md** (`Ereb/Countries/Jorduashur/`): good Overview with merged Quick Facts, Religion with named gods
+- **erebos.md** (`Ereb/Countries/Erebos/`): good Geography with named island subsections, History eras

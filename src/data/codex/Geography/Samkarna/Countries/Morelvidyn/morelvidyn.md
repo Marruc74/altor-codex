@@ -12,98 +12,27 @@ The people are hardened by sea and struggle. They are skilled sailors and fierce
 
 In Morëlvidyn, no crown lasts long. Power belongs to those strong enough to take it, and ruthless enough to keep it.
 
-# Morëlvidyn – Overview
+## Overview
 
-## Location
+- **Government:** Fragmented: many small kingdoms, pirate lords, and warlords
+- **People:** humans, brunankor, and black pirate ducks
 
-- Located north of Samkarna along the Copper Sea
-- South of Caddo and Erebos
-- Consists of many small kingdoms with constantly shifting borders
+## Geography
+
+Morëlvidyn lies north of Samkarna along the Copper Sea, south of Caddo and Erebos. It consists of many small kingdoms with constantly shifting borders. The climate is warm and humid with strong coastal influence and heavy seasonal rains. The landscape features tropical and subtropical forests, mangrove coastlines, green hills, river valleys, and rocky archipelagos.
+
+## Government
+
+The region is unstable and highly fragmented. Pirate chiefs often seize power and claim descent from the old king **Haiëg-hamu**. Governance and borders change frequently.
+
+## People
+
+The Morëlvier are skilled sailors and fierce fighters, though rarely united. They are often described as brutal and disrespectful of life. In addition to humans, Morëlvidyn is home to brunankor and black pirate ducks, the latter known for raiding expeditions along the coasts of Kardien and Zorakin.
+
+## Military
+
+Forces are skilled at sea but tend to lack discipline and organization. The slave trade is common, drawing people from inland Samkarna and northern Soluna.
 
 ## History
 
-According to tradition, the realm was founded by Haiëg-hamu, the unifying king of Morëlvidyn.  
-His reign ended in 1038 B.O.
-
-He left the realm to his 216 sons, which explains why the region later fragmented into many small powers.
-
-## Politics and Society
-
-- The region is unstable and highly fragmented
-- Pirate chiefs often seize power and claim descent from the old king
-- Governance and borders change frequently
-
-## Reputation
-
-The Morëlvier are often described as:
-
-- Brutal
-- Disrespectful of life
-- Involved in slave trade (especially from inland Samkarna and northern Soluna)
-
-## Military and Culture
-
-- Skilled sailors and warriors
-- Often lack discipline and organization
-
-## People and Species
-
-In addition to humans, there are:
-
-- Brunankor
-- Black pirate ducks
-
-The latter are known for their raiding expeditions along the coasts of Kardien and Zorakin.
-
-## Climate and Nature (Based on Altor’s Geography)
-
-Since Altor becomes warmer further south, and Morëlvidyn lies well to the south but not within a desert zone, the climate is likely similar to:
-
-### Climate
-
-A mix of:
-
-- Southern Europe
-- The Caribbean
-- Northern South America
-
-Characteristics:
-
-- Warm
-- Humid
-- Strong coastal influence
-- Heavy seasonal rains
-
-### Landscape
-
-Likely environments include:
-
-- Tropical or subtropical forests
-- Mangrove coastlines
-- Green hills
-- River valleys
-- Rocky islands and archipelagos
-
-Not desert terrain.
-
-### Vegetation
-
-- Palm-like trees
-- Dense jungle near the coast
-- Banana- and citrus-like plants
-- Large rivers
-
-## Overall Feel / Aesthetic
-
-More:
-
-- Pirate archipelago
-- Seafaring petty kings
-- Tropical port towns
-- Fast ships and coastal raids
-
-Less:
-
-- Feudal knight societies
-- Large-scale farmland
-- Cold coniferous forests
+According to tradition, the realm was once unified by **Haiëg-hamu**, the unifying king of Morëlvidyn, whose reign ended in 1038 B.O. He left the realm to his 216 sons, which accounts for the region's later fragmentation into many small powers.

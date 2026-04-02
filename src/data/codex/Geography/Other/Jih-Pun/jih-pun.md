@@ -10,46 +10,31 @@ Samurai serve with unwavering loyalty, bound by oath and tradition, while shinob
 
 By day, Jih Pun is a place of order and beauty, of courts, poetry, and quiet ritual. By night, it becomes something else, where lantern light flickers and the unseen draws close. Few from Ereb ever reach its shores, and those who do return with stories that sound like dreams or warnings.
 
-## Jih-Pun
+## Society
 
-That’s a strong seed. It instantly paints a silhouette in the mind.
+Jih Pun is a proud and ancient civilization ruled by nobles, warlords, and an imperial divine court. Honor matters deeply, but so do appearances and obligation. A smile may hide a vendetta three generations old.
 
-Jih-Pun feels like a land that should be elegant on the surface and unsettling just beneath it. Not just “fantasy Japan,” but a place where ritual, steel, and the spirit world are braided together so tightly that daily life is never fully separate from the supernatural.
+## People
 
-A fitting core idea could be this:
+### Samurai
 
-Jih-Pun is a distant western island realm of mountain fortresses, misted cedar forests, volcanic valleys, imperial courts, hidden clans, and ancient shrines. Its warriors are famed across the world: disciplined samurai bound by oath, and secretive shinobi who move through shadow and rumor. But what truly sets Jih-Pun apart is that the unseen world is close there. Very close.
+Not only soldiers, but retainers, duelists, magistrates, monster-slayers, and guardians of sacred places. Bound by oath and tradition.
 
-The people of Jih-Pun live beside beings that are not always human:
+### Shinobi
 
-- fox spirits that charm, deceive, or protect
-- horned oni haunting ruined strongholds
-- river spirits that demand offerings
-- tengu in the high peaks, proud and dangerous
-- ghostly dead lingering where duty, grief, or vengeance remain unfinished
-- ancient demons sealed beneath temples, caves, or volcanic stone
+Clans that move unseen through the hidden spaces between power and secrecy. They may serve lords, temples, or secret pacts with spirits.
 
-That gives the country a wonderful double-face:
+## Religion
 
-By daylight, refined courts, poetry, lacquered armor, banners in the wind.  
-By night, lantern light trembling outside shrines while something watches from the trees.
+Shrines, ancestor rites, purification, sacred mountains, and temple orders maintain the balance between mortals and the spirits that dwell beyond. Cursed battlefields and ancient seals are part of daily spiritual life.
 
-### Society
+## The Spirit World
 
-A proud and old civilization ruled by nobles, warlords, or an emperor-like divine court. Honor matters deeply, but so do appearances, masks, and obligations. A smile may hide a vendetta three generations old.
+The unseen world is unusually close in Jih Pun. Many beings share the land with humans:
 
-### Warriors
-
-Samurai are not just soldiers, but retainers, duelists, magistrates, monster-slayers, and guardians of sacred places. Shinobi clans may serve lords, temples, or even secret pacts with spirits.
-
-### Religion and the Spirit World
-
-Shrines, ancestor rites, purification, sacred mountains, cursed battlefields, and temple orders that maintain the balance between mortals and hungry things from beyond.
-
-### Creatures
-
-Not every being is evil. Some yokai are tricksters, some are territorial, some are holy, and some are ancient horrors wearing beautiful faces.
-
-### Tone
-
-Jih-Pun should feel graceful, eerie, disciplined, tragic, and myth-soaked. A place where beauty and danger share the same cup.
+- **Fox spirits**: charming and deceptive, sometimes protective
+- **Oni**: horned beings haunting ruined strongholds
+- **River spirits**: territorial and demanding of offerings
+- **Tengu**: proud and dangerous, dwelling in the high peaks
+- **The dead**: some linger where duty, grief, or vengeance remain unfinished
+- **Ancient demons**: sealed beneath temples, caves, or volcanic stone

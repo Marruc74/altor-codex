@@ -45,9 +45,9 @@ This is the wealthiest part of the country.
 
 More primitive groups live here, largely untouched by civilization.
 
-- **Mountains** — sparsely populated, dangerous, home to predators and darkfolk
-- **Forests** — relatively few, as many have been cut down for shipbuilding
-- **Rivers** — important transport routes
+- **Mountains**: sparsely populated, dangerous, home to predators and darkfolk
+- **Forests**: relatively few, as many have been cut down for shipbuilding
+- **Rivers**: important transport routes
 
 ## People
 
@@ -76,8 +76,8 @@ They hold no political power.
 
 Several smaller groups also exist:
 
-- **Penter** — native population of Divra
-- **Ker-bosh** — native people of Antivin
+- **Penter**: native population of Divra
+- **Ker-bosh**: native people of Antivin
 - Darkfolk in the Aidne Mountains
 - Elven folk in the forests
 - Some halflings and ducks
@@ -109,8 +109,8 @@ The balance between king and nobility is delicate.
 
 ### Cities
 
-- **Noble Cities** — governed by bailiffs, pay taxes to the nobility
-- **Free Cities** — have bought their independence, governed by city councils, pay taxes directly to the king
+- **Noble Cities**: governed by bailiffs, pay taxes to the nobility
+- **Free Cities**: have bought their independence, governed by city councils, pay taxes directly to the king
 
 ## Military
 

@@ -28,4 +28,4 @@ A small number of miners work alongside dwarves.
 
 ## History
 
-Jorpagna was once the central region of the former empire. Around 1000 years ago, the "Konflux" occurred — a major event that shattered the realm. The region has never fully recovered from this.
+Jorpagna was once the central region of the former empire. Around 1000 years ago, the "Konflux" occurred: a major event that shattered the realm. The region has never fully recovered from this.

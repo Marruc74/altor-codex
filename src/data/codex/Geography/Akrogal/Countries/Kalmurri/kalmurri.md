@@ -9,34 +9,28 @@ Kalmurri lies beyond the eastern edge of the Demon Tongue, where the wind moves 
 
 Life in Kalmurri follows the rhythm of the sky. Under the full moon, the people are devout and disciplined, holding tightly to faith and order. When the moon fades, so do their laws, and freedom takes its place. This balance shapes a society that moves between restraint and release, always under the gaze of the goddess. Yet there are moments when even that gaze disappears. During a lunar eclipse, the Moon Goddess is said to close her eye, and for a short time, all boundaries fall away.
 
-# Kalmurri
+## Overview
 
-Kalmurri lies on the eastern side of the Demon Tongue and is ruled by a sovereign believed to be the son of the Moon Goddess.
+- **Government:** Sacred monarchy
+- **Religion:** Worship of the Moon Goddess
 
 ## The Ruler and the Incarnation
 
-When the ruler dies, sacred troops are sent out to find the goddess’s new incarnation.  
-They search for a newborn child with one completely white eye, seen as the sign that the Moon Goddess has been reborn.
+The ruler is believed to be the son of the Moon Goddess, marked by a single completely white eye. When the ruler dies, sacred troops are sent out to find the goddess's new incarnation: a newborn child bearing the same sign. The ruler's white eye symbolizes the moon itself, the only visible part of the Moon Goddess that humans can see.
 
 ## The Sacred Troops
 
-Their sole task is to observe and wait among other faiths.  
-They must remain spiritually pure and are therefore forbidden from indulging in worldly pleasures during their search.
+Their sole task is to search for the incarnation among other peoples. They must remain spiritually pure and are therefore forbidden from indulging in worldly pleasures during their search.
 
-## The White Eye
-
-The ruler’s white eye symbolizes the moon itself, the only visible part of the Moon Goddess that humans can see.
-
-## Life in Kalmurri
+## Society
 
 Society is strongly governed by the phases of the moon:
 
-- **Full Moon:** The people of Kalmurri must be devout and deeply faithful.
-- **New Moon:** No moral rules apply.
+- **Full Moon**: the people must be devout and deeply faithful
+- **New Moon**: no moral rules apply
 
 Life in Kalmurri therefore shifts between strict devotion and complete freedom.
 
 ## Lunar Eclipses
 
-Lunar eclipses are major festivals.  
-It is believed that during this time, the Moon Goddess closes her eye, meaning that everything is allowed for a few hours.
+Lunar eclipses are major festivals. It is believed that during this time, the Moon Goddess closes her eye, meaning that everything is allowed for a few hours.

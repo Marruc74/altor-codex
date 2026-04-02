@@ -51,14 +51,14 @@ Timar is the center of trade and power in Montures. The city is structured and s
 
 ## Settlements and Villages
 
-- **Zukos** — rural village, strong family structure
-- **Sharfall and Dudhil** — fishing communities, heavily dependent on the sea
-- **Zodula** — fishing village, known for pearl and shell diving
-- **Andudax** — focused on farming and crafts
+- **Zukos**: rural village, strong family structure
+- **Sharfall and Dudhil**: fishing communities, heavily dependent on the sea
+- **Zodula**: fishing village, known for pearl and shell diving
+- **Andudax**: focused on farming and crafts
 
 ## History
 
 The history centers around the ducal dynasty of Montures.
 
-- **Early history** — the area was colonized from the mainland, a duchy was established
-- **Key events** — pirates and wars affected the region, periods of political instability, several power struggles within the ducal family
+- **Early history**: the area was colonized from the mainland, a duchy was established
+- **Key events**: pirates and wars affected the region, periods of political instability, several power struggles within the ducal family
