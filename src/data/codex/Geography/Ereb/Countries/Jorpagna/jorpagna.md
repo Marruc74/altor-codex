@@ -10,18 +10,11 @@ The people endure. Fields are worked from dawn until dusk, grain flowing upward 
 
 And far away, above forests and mist, the old capital still stands. Not dead. Not whole. Watching.
 
-## Historical Background
+## Government
 
-Jorpagna was once the central region of the former empire.  
-Around 1000 years ago, the "Konflux" occurred, a major event that appears to have shattered the realm.  
-The region has never fully recovered from this.
+The area is now divided into several hundred small independent principalities, often entangled in internal intrigue and power struggles. No strong central authority has emerged.
 
-## Political Situation
-
-The area is now divided into several hundred small independent principalities.  
-These principalities are often entangled in internal intrigue and power struggles, preventing any strong central authority from emerging.
-
-## Economy and Society
+## Economy
 
 Agriculture is the dominant livelihood, carried out by serfs.
 
@@ -33,13 +26,6 @@ Some fishing takes place, but it is limited by the vast fishing fleets of Erebos
 
 A small number of miners work alongside dwarves.
 
-## Overall Picture
+## History
 
-Jorpagna appears as a former heartland that has fallen into political decline. It is:
-
-- Fragmented
-- Intrigue-driven
-- Agrarian
-- Weakly centralized
-
-At the same time, there is regional specialization: farming on the plains, fishing along the coast, and mining in the mountains.
+Jorpagna was once the central region of the former empire. Around 1000 years ago, the "Konflux" occurred — a major event that shattered the realm. The region has never fully recovered from this.

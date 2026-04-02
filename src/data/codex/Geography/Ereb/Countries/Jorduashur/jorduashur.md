@@ -14,8 +14,6 @@ Here, a person belongs first to their kin. Family and clan decide fate, justice,
 
 Jorduashur is a cold and rugged barbarian land in Ereb Altor. The land is sparsely populated, with a harsh climate shaped by warrior culture, trade, and seafaring.
 
-## Quick Facts
-
 - **Population:** approx. 30,000
 - **Population Breakdown:**
   - 50% humans
@@ -90,7 +88,7 @@ Clan ties and family bonds are especially important here.
 - city of Krakelid
 - strong focus on trade and raiding
 
-## Culture and Society
+## Society
 
 ### Clan Society
 
@@ -118,7 +116,7 @@ Formally, Jorduashur is a kingdom, but in practice:
 
 Major decisions are made there.
 
-## Trade and Seafaring
+## Economy
 
 Jorduashur is a seafaring culture.
 
@@ -158,7 +156,7 @@ Offerings are often made in the form of:
 - livestock
 - war spoils
 
-## History (Brief)
+## History
 
 - Dwarves arrived first for mining around 1500 years before present
 - humans settled later

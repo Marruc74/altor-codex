@@ -14,142 +14,51 @@ In Montures, power is negotiated in quiet halls, fortunes are carried on ships, 
 
 Montures lies in an island group in the Golwynda Sea.
 
-Three main islands:
-
 ### Gogero
 
-Mountainous island  
-Dense forests  
-Poorer region  
-Some farming and hunting
+Mountainous island with dense forests. A poorer region, relying on some farming and hunting.
 
 ### Elmor
 
-The most important island  
-Home to the capital Timar  
-Stronger agriculture and trade
+The most important island. Home to the capital Timar, with stronger agriculture and trade.
 
-Smaller islands  
-Small fishing communities  
-Focused on seafaring and trade
+### Smaller Islands
 
-The sea around the islands is warm and full of currents, making navigation and trade essential.
+Small fishing communities focused on seafaring and trade. The surrounding sea is warm and full of currents, making navigation essential.
 
-## Climate and Nature
+## Climate
 
-The climate is:
+The climate is warm and subtropical, with hot summers and mild winters.
 
-warm and subtropical  
-hot summers  
-mild winters
-
-Flora mainly consists of:
-
-olive trees  
-shrublands  
-low forests
-
-Fauna includes:
-
-eagles  
-crows  
-various fish  
-and occasionally more dangerous animals in the mountains
-
-## History (Short)
-
-The history centers around the ducal dynasty of Montures.
-
-Early history  
-The area was colonized from the mainland  
-A duchy was established
-
-Key events  
-Pirates and wars affected the region  
-A period of political instability  
-Several power struggles within the ducal family
-
-A family tree of the dukes is also included in the original material.
-
-## The Capital Timar
-
-Timar is the center of trade and power in Montures.
-
-The city includes:
-
-the castle, residence of the duke  
-city hall  
-tax offices  
-theater  
-harbor  
-districts for craftsmen and merchants
-
-The city is structured and somewhat rigid, but relatively wealthy due to trade.
+Flora mainly consists of olive trees, shrublands, and low forests. Fauna includes eagles, crows, and various fish, with more dangerous animals in the mountain regions.
 
 ## Economy
 
-The economy is mainly based on trade.
+The economy is mainly based on trade, controlled by several powerful merchant houses.
 
-Imports:
+- **Imports:** textiles, spices, luxury goods, metals
+- **Exports:** silver, glass, wine, crafts, agricultural goods
 
-textiles  
-spices  
-luxury goods  
-metals
+## The Capital Timar
 
-Exports:
+Timar is the center of trade and power in Montures. The city is structured and somewhat rigid, but relatively wealthy due to trade.
 
-silver  
-glass  
-wine  
-crafts  
-agricultural goods
-
-Trade is controlled by several powerful merchant houses.
+- Castle (ducal residence)
+- City hall and tax offices
+- Theater
+- Harbor
+- Districts for craftsmen and merchants
 
 ## Settlements and Villages
 
-Several villages are described, for example:
+- **Zukos** — rural village, strong family structure
+- **Sharfall and Dudhil** — fishing communities, heavily dependent on the sea
+- **Zodula** — fishing village, known for pearl and shell diving
+- **Andudax** — focused on farming and crafts
 
-Zukos  
-rural village  
-strong family structure
+## History
 
-Sharfall and Dudhil  
-fishing communities  
-heavily dependent on the sea
+The history centers around the ducal dynasty of Montures.
 
-Zodula  
-fishing village  
-known for pearl and shell diving
-
-Andudax  
-focused on farming and crafts
-
-Each village includes:
-
-population  
-local conflicts  
-professions  
-notable NPCs
-
-## Typical Adventures
-
-Montures is designed to support many smaller adventures:
-
-pirates  
-smugglers  
-political intrigue  
-mysterious locations  
-monsters in the wilderness  
-conflicts between families
-
-It is more of a sandbox setting than a single large storyline.
-
-## Tone and Style
-
-The setting feels like:
-
-Mediterranean-inspired fantasy  
-with an Italian or Iberian atmosphere  
-focused on trade, wine, harbors, and stone cities
+- **Early history** — the area was colonized from the mainland, a duchy was established
+- **Key events** — pirates and wars affected the region, periods of political instability, several power struggles within the ducal family

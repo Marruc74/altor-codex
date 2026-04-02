@@ -15,6 +15,11 @@ To the north, the land changes. The elfforests of Landori rise in shadow and sil
 Berendien is located in the northern part of Tolanhav Island.  
 The realm lies north of Felicien and south of the great elven forests of Landori.
 
+## People
+
+The spoken language is Berendian.  
+It is a Joric language, related to others in the region.
+
 ## Government
 
 Berendien is a feudal monarchy.
@@ -27,7 +32,7 @@ Power is organized roughly as follows:
 
 The political system closely resembles those of Zorakin and Kardien.
 
-## Society and Economy
+## Economy
 
 Berendien is primarily an agricultural land.
 
@@ -44,11 +49,6 @@ Other notes:
 - The country has at times been at war with Felicien.
 
 The economy is therefore typically feudal and agrarian.
-
-## Population and Language
-
-The spoken language is Berendian.  
-It is a Joric language, related to others in the region.
 
 ## Religion
 

@@ -9,22 +9,18 @@
 
 Cereval is a land shaped by distance and survival, where wind moves freely across dry plains and every road carries both trade and risk. Caravans travel slowly through the savanna, guided by those who know the land well, bringing goods between scattered settlements of stone and canvas. These travelers are not wanderers but lifelines, connecting people across a harsh and unforgiving region.
 
-Beyond the open plains rise forests where trollmasters live openly as part of the land’s balance, powerful and watchful. Deeper still, the mountains hold veins of moon silver, a metal prized and feared in equal measure. High above all this, dragonmasters move along the peaks and skies, distant yet ever present, a reminder that Cereval is never ruled by one force alone.
+Beyond the open plains rise forests where trollmasters live openly as part of the land's balance, powerful and watchful. Deeper still, the mountains hold veins of moon silver, a metal prized and feared in equal measure. High above all this, dragonmasters move along the peaks and skies, distant yet ever present, a reminder that Cereval is never ruled by one force alone.
 
 Here, humans endure, trolls belong, and dragons remain.
 
 ## Overview
 
-- Population: approximately 80,000
-- Demographics:
-  - 75% humans
-  - 11% trolls
-  - 14% other dark folks
-- Capital: Cerevallis
-- Government: Confederation of city-states
-- Main exports: moonsilver, horses, leather, suede
-- Imports: timber and metals
-- Religion: primarily the Nature Mother
+- **Population:** approximately 80,000 (75% humans, 11% trolls, 14% other dark folks)
+- **Capital:** Cerevallis
+- **Government:** Confederation of city-states
+- **Exports:** moonsilver, horses, leather, suede
+- **Imports:** timber and metals
+- **Religion:** the Nature Mother
 
 What makes Cereval unique is that trolls hold political dominance despite being a minority.
 
@@ -83,50 +79,7 @@ Cereval society is divided into three main groups:
 
 - Merchants, craftsmen, and soldiers
 
-## The Trolls
-
-Cereval is well known for its troll societies.
-
-### Key Traits
-
-- Trolls do not live in cities
-- They inhabit forests and caves
-
-### Types of Trolls
-
-- Forest trolls
-- Cave trolls
-- Ruler trolls who lead clans
-- Warrior trolls
-
-### Society
-
-- Organized in small clans
-- Led by a chieftain
-- Governed by their own laws and traditions
-
-### Relationship with Humans
-
-- Humans both respect and fear trolls
-- Trade exists between groups
-- In the forests, troll law prevails
-
-## Dragons and Dragon Masters
-
-The Cereval Mountains are home to:
-
-- Dragons
-- Dragon masters
-
-### Dragon Masters
-
-- Live in mountain caves
-- Can control dragons
-- Occasionally use them in warfare
-
-Dragons serve mainly as symbols of power and as instruments of fear.
-
-## Politics
+## Government
 
 Cereval is governed through three main centers of power:
 
@@ -180,14 +133,45 @@ The timeline of Cereval includes several key eras:
 - Cereval becomes an important trade region
 - Conflicts between groups continue
 
-## Themes
+## The Trolls
 
-Cereval is defined by several key themes:
+Cereval is well known for its troll societies.
 
-- Troll culture
+### Key Traits
+
+- Trolls do not live in cities
+- They inhabit forests and caves
+
+### Types of Trolls
+
+- Forest trolls
+- Cave trolls
+- Ruler trolls who lead clans
+- Warrior trolls
+
+### Society
+
+- Organized in small clans
+- Led by a chieftain
+- Governed by their own laws and traditions
+
+### Relationship with Humans
+
+- Humans both respect and fear trolls
+- Trade exists between groups
+- In the forests, troll law prevails
+
+## Dragons and Dragon Masters
+
+The Cereval Mountains are home to:
+
 - Dragons
-- Magical metal known as moonsilver
-- Nomadic lifestyles
-- Political tension and balance of power
+- Dragon masters
 
-Cereval is a harsh and dangerous land, but also a vital center of trade and influence.
+### Dragon Masters
+
+- Live in mountain caves
+- Can control dragons
+- Occasionally use them in warfare
+
+Dragons serve mainly as symbols of power and as instruments of fear.

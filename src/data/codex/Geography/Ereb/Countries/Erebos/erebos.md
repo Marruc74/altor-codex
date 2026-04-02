@@ -15,7 +15,7 @@ There is a quiet order beneath the movement, a balance between risk and reward. 
 Erebos is an island realm in the central Copper Sea and functions as a wealthy trade state.  
 Its economy and politics are largely controlled by merchant houses rather than nobles or kings.
 
-It is one of Caddo’s greatest rivals in trade and seafaring.
+It is one of Caddo's greatest rivals in trade and seafaring.
 
 ## Geography
 
@@ -29,7 +29,7 @@ Erebos consists of four islands:
 - Capital: Gringul
 - Fertile land with some mineral resources
 
-A key export is **sunstones**, a yellow gemstone that contributed greatly to Erebos’ wealth.
+A key export is **sunstones**, a yellow gemstone that contributed greatly to Erebos' wealth.
 
 ### 2. Dakkilo
 
@@ -38,7 +38,7 @@ A key export is **sunstones**, a yellow gemstone that contributed greatly to Ere
 - Dominated by steppe and grazing land
 - Exports wool, meat, and cheese
 
-Nohstril holds over 75% of the island’s population.
+Nohstril holds over 75% of the island's population.
 
 ### 3. Targero
 
@@ -57,26 +57,22 @@ The mountains are home to orcs, trolls, and other creatures.
 - Ships avoid the region
 - Strong currents and heavy fog make navigation difficult
 
-## Society and Culture
+## People
 
-### Population
+- **Population:** approx. 125,000 (85% humans, 15% ducks)
 
-- Approx. 125,000 inhabitants
-- 85% humans
-- 15% ducks
+Erebosians are often described as short in stature, temperamental, talkative, and strongly trade-oriented. The individual is valued more than lineage or tradition, unlike in feudal societies.
 
-### Mentality
+## Language
 
-Erebosians are often described as:
+Most people speak **Erebosian**, a language related to:
 
-- Short in stature
-- Temperamental
-- Talkative
-- Strongly trade-oriented
+- Hynsolgian
+- Berendian
 
-The individual is valued more than lineage or tradition, unlike in feudal societies.
+Many fishermen also speak local dialects, though most are bilingual.
 
-## Politics
+## Government
 
 Erebos is governed by the **Council of Five Houses**.
 
@@ -90,7 +86,7 @@ The system can be described as a **plutocracy**, where wealth determines power.
 
 The nobility lost its influence after a civil war between 512 and 514 FO.
 
-## Military Power
+## Military
 
 Erebos maintains:
 
@@ -118,16 +114,7 @@ She is:
 
 Religion is generally tolerant, and the state rarely interferes in matters of faith.
 
-## Language
-
-Most people speak **Erebosian**, a language related to:
-
-- Hynsolgian
-- Berendian
-
-Many fishermen also speak local dialects, though most are bilingual.
-
-## History (Brief Overview)
+## History
 
 ### Early History
 
@@ -159,7 +146,7 @@ Result:
 - Five merchant houses take control
 - The country becomes governed by a trade council
 
-## International Relations
+## Foreign Relations
 
 Erebos is especially in rivalry with:
 
@@ -168,15 +155,3 @@ Erebos is especially in rivalry with:
 - Zorakin
 
 Piracy and trade conflicts are common.
-
-## Summary
-
-Erebos is:
-
-- A wealthy maritime trade state
-- Governed by merchant houses
-- Dependent on trade and seafaring
-- Militarily strong at sea
-- Politically driven by wealth rather than nobility
-
-It can be described as a medieval trade republic, similar to a fantasy version of Venice or the Hanseatic League.

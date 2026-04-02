@@ -12,7 +12,7 @@ Power in Kardien rests with the echther, a proud and honor bound nobility who ru
 
 The people follow the Shining Path, a faith that guides their lives without often shaping their politics. From warbands raised by noble houses to quiet villages far from courtly intrigue, Kardien endures as a realm of duty, hierarchy, and quiet resilience.
 
-## General Facts
+## Overview
 
 - **Population:** approx. 160,000
 - **Capital:** Ekeborg (~7,000 inhabitants)
@@ -45,21 +45,15 @@ This is the wealthiest part of the country.
 
 More primitive groups live here, largely untouched by civilization.
 
-## Nature
+- **Mountains** — sparsely populated, dangerous, home to predators and darkfolk
+- **Forests** — relatively few, as many have been cut down for shipbuilding
+- **Rivers** — important transport routes
 
-- **Mountains:** Sparsely populated, dangerous, home to predators and darkfolk
-- **Forests:** Relatively few, as many have been cut down for shipbuilding
-- **Rivers:** Important transport routes
-
-## Peoples
-
-There are several groups living in Kardien.
+## People
 
 ### The Echther
 
 The ruling nobility.
-
-**Characteristics:**
 
 - Proud and high-born
 - Strong honor culture
@@ -82,13 +76,13 @@ They hold no political power.
 
 Several smaller groups also exist:
 
-- **Penter** – native population of Divra
-- **Ker-bosh** – native people of Antivin
+- **Penter** — native population of Divra
+- **Ker-bosh** — native people of Antivin
 - Darkfolk in the Aidne Mountains
 - Elven folk in the forests
 - Some halflings and ducks
 
-## Society and State
+## Society
 
 ### Feudal System
 
@@ -115,29 +109,17 @@ The balance between king and nobility is delicate.
 
 ### Cities
 
-There are two types of cities:
-
-**1. Noble Cities**
-
-- Governed by bailiffs
-- Pay taxes to the nobility
-
-**2. Free Cities**
-
-- Have bought their independence
-- Governed by city councils
-- Pay taxes directly to the king
+- **Noble Cities** — governed by bailiffs, pay taxes to the nobility
+- **Free Cities** — have bought their independence, governed by city councils, pay taxes directly to the king
 
 ## Military
 
-The army consists mainly of noble retinues.
+The army consists mainly of noble retinues. Typical peacetime forces:
 
-**Typical peacetime forces:**
-
-- King: ~500 soldiers
-- Dukes: ~100
-- Counts: ~50
-- Barons: ~25
+- **King:** ~500 soldiers
+- **Dukes:** ~100
+- **Counts:** ~50
+- **Barons:** ~25
 
 In war, peasants and mercenaries are also mobilized.
 
@@ -151,7 +133,7 @@ All Kardians follow **The Shining Path**.
 - The church is governed from Caddo
 - Rarely interferes in politics
 
-## History (Brief)
+## History
 
 After the Conflux, Kardien fell into chaos.
 
