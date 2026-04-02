@@ -2563,68 +2563,127 @@ body {
   line-height: 1.4;
 }
 
-/* Image carousel */
-.codex-carousel {
-  margin: 0 0 0.75rem;
+/* Image gallery (thumbnails) */
+.image-gallery {
   display: flex;
-  flex-direction: column;
-  gap: 0;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 0.75rem;
 }
 
-.codex-carousel__track {
-  display: grid;
-  grid-template-columns: 2rem 1fr 2rem;
-  align-items: center;
-  gap: 0;
-}
-
-.codex-carousel__arrow {
+.image-gallery__thumb {
   background: var(--bg-raised);
   border: 1px solid var(--border);
-  color: var(--text-muted);
-  font-size: 1.5rem;
-  line-height: 1;
+  border-radius: 2px;
   padding: 0;
-  height: 100%;
   cursor: pointer;
-  transition: color 0.15s, border-color 0.15s;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s;
+  width: 100px;
+}
+
+.image-gallery__thumb:hover {
+  border-color: var(--border-light);
+}
+
+.image-gallery__thumb img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.image-gallery__caption {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-style: italic;
+  text-align: center;
+  padding: 0.25rem 0.3rem;
+  line-height: 1.3;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.codex-carousel__arrow:first-child {
-  border-radius: 2px 0 0 2px;
-  border-right: none;
+.lightbox__content {
+  position: relative;
+  max-width: min(90vw, 700px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.codex-carousel__arrow:last-child {
-  border-radius: 0 2px 2px 0;
-  border-left: none;
+.lightbox__close {
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.15s;
 }
 
-.codex-carousel__arrow:hover:not(:disabled) {
+.lightbox__close:hover {
   color: var(--text-primary, #e8d8b8);
-  border-color: var(--border-light);
 }
 
-.codex-carousel__arrow:disabled {
-  opacity: 0.3;
+.lightbox__track {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr 2.5rem;
+  align-items: center;
+}
+
+.lightbox__arrow {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 1.8rem;
+  line-height: 1;
+  padding: 0;
+  height: 100%;
+  cursor: pointer;
+  transition: color 0.15s, background 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox__arrow:hover:not(:disabled) {
+  color: var(--text-primary, #e8d8b8);
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.lightbox__arrow:disabled {
+  opacity: 0.2;
   cursor: default;
 }
 
-.codex-carousel__image {
+.lightbox__image {
   width: 100%;
   display: block;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  max-height: 75vh;
+  object-fit: contain;
 }
 
-.codex-carousel__footer {
-  background: var(--bg-raised);
+.lightbox__footer {
+  background: rgba(0, 0, 0, 0.6);
   border: 1px solid var(--border);
   border-top: none;
-  padding: 0.35rem 0.75rem 0.4rem;
+  padding: 0.4rem 0.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2632,22 +2691,23 @@ body {
   min-height: 1.6rem;
 }
 
-.codex-carousel__caption {
+.lightbox__caption {
   font-family: var(--font-body);
   font-size: 0.78rem;
   color: var(--text-muted);
   font-style: italic;
   text-align: center;
   line-height: 1.4;
+  margin: 0;
 }
 
-.codex-carousel__dots {
+.lightbox__dots {
   display: flex;
   gap: 0.4rem;
   align-items: center;
 }
 
-.codex-carousel__dot {
+.lightbox__dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -2658,12 +2718,12 @@ body {
   transition: background 0.15s, border-color 0.15s;
 }
 
-.codex-carousel__dot--active {
+.lightbox__dot--active {
   background: var(--text-muted);
   border-color: var(--text-muted);
 }
 
-.codex-carousel__dot:hover:not(.codex-carousel__dot--active) {
+.lightbox__dot:hover:not(.lightbox__dot--active) {
   border-color: var(--text-muted);
 }
 

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import ReactMarkdown from "react-markdown";
 import { pins } from "../data/locations";
 import { entries } from "../data/codex/index.js";
@@ -15,27 +15,67 @@ function stripImages(md) {
   return md.replace(IMAGE_RE, "").replace(/\n{3,}/g, "\n\n").trim();
 }
 
-function ImageCarousel({ images }) {
-  const [idx, setIdx] = useState(0);
+function thumbSrc(src) {
+  const slash = src.lastIndexOf("/");
+  return src.slice(0, slash + 1) + "Thumbnails/" + src.slice(slash + 1);
+}
+
+function Lightbox({ images, startIdx, onClose }) {
+  const [idx, setIdx] = useState(startIdx);
   const img = images[idx];
+  const prev = useCallback(() => setIdx((i) => (i - 1 + images.length) % images.length), [images.length]);
+  const next = useCallback(() => setIdx((i) => (i + 1) % images.length), [images.length]);
+
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === "ArrowLeft") prev();
+      else if (e.key === "ArrowRight") next();
+      else if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [prev, next, onClose]);
+
   return (
-    <figure className="codex-carousel">
-      <div className="codex-carousel__track">
-        <button className="codex-carousel__arrow" onClick={() => setIdx((i) => (i - 1 + images.length) % images.length)} disabled={images.length === 1}>‹</button>
-        <img src={img.src} alt={img.alt} className="codex-carousel__image" />
-        <button className="codex-carousel__arrow" onClick={() => setIdx((i) => (i + 1) % images.length)} disabled={images.length === 1}>›</button>
+    <div className="lightbox" onClick={onClose}>
+      <div className="lightbox__content" onClick={(e) => e.stopPropagation()}>
+        <button className="lightbox__close" onClick={onClose}>✕</button>
+        <div className="lightbox__track">
+          <button className="lightbox__arrow" onClick={prev} disabled={images.length === 1}>‹</button>
+          <img src={img.src} alt={img.alt} className="lightbox__image" />
+          <button className="lightbox__arrow" onClick={next} disabled={images.length === 1}>›</button>
+        </div>
+        <div className="lightbox__footer">
+          {img.caption && <p className="lightbox__caption">{img.caption}</p>}
+          {images.length > 1 && (
+            <div className="lightbox__dots">
+              {images.map((_, i) => (
+                <button key={i} className={`lightbox__dot${i === idx ? " lightbox__dot--active" : ""}`} onClick={() => setIdx(i)} />
+              ))}
+            </div>
+          )}
+        </div>
       </div>
-      <div className="codex-carousel__footer">
-        {img.caption && <figcaption className="codex-carousel__caption">{img.caption}</figcaption>}
-        {images.length > 1 && (
-          <div className="codex-carousel__dots">
-            {images.map((_, i) => (
-              <button key={i} className={`codex-carousel__dot${i === idx ? " codex-carousel__dot--active" : ""}`} onClick={() => setIdx(i)} />
-            ))}
-          </div>
-        )}
+    </div>
+  );
+}
+
+function ImageGallery({ images }) {
+  const [lightboxIdx, setLightboxIdx] = useState(null);
+  return (
+    <>
+      <div className="image-gallery">
+        {images.map((img, i) => (
+          <button key={i} className="image-gallery__thumb" onClick={() => setLightboxIdx(i)}>
+            <img src={thumbSrc(img.src)} alt={img.alt} />
+            {img.caption && <span className="image-gallery__caption">{img.caption}</span>}
+          </button>
+        ))}
       </div>
-    </figure>
+      {lightboxIdx !== null && (
+        <Lightbox images={images} startIdx={lightboxIdx} onClose={() => setLightboxIdx(null)} />
+      )}
+    </>
   );
 }
 
@@ -46,6 +86,7 @@ const CONTINENTS = [
   { id: "ereb",     name: "Ereb"     },
   { id: "samkarna", name: "Samkarna" },
   { id: "soluna",   name: "Soluna"   },
+  { id: "other",    name: "Other"    },
 ];
 
 const countries = pins
@@ -107,7 +148,7 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect }) {
         <p className="country-detail__loading">Consulting the codex…</p>
       )}
 
-      {loaded && images.length > 0 && <ImageCarousel images={images} />}
+      {loaded && images.length > 0 && <ImageGallery images={images} />}
 
       {loaded && locationData.description && (
         <p className="country-detail__description">{locationData.description}</p>

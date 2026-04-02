@@ -16,7 +16,7 @@ export const pins = [
   { id: "torsheim",                name: "Torsheim",                type: "country",   continent: "ereb",     tagline: "", x: 1395, y: 766  },
   { id: "krun",                    name: "Krun",                    type: "country",   continent: "ereb",     tagline: "", x: 1600, y: 982  },
   { id: "magilre",                 name: "Magilre",                 type: "country",   continent: "ereb",     tagline: "", x: 989,  y: 732  },
-  { id: "jih-pun",                 name: "Jih Pun",                 type: "country",   continent: "ereb",     tagline: "", x: 12,   y: 1100 },
+  { id: "jih-pun",                 name: "Jih Pun",                 type: "country",   continent: "other",    tagline: "", x: 12,   y: 1100 },
   { id: "sombatze",                name: "Sombatze",                type: "country",   continent: "soluna",   tagline: "", x: 1800, y: 1250 },
   { id: "klomellien",              name: "Klomellien",              type: "country",   continent: "ereb",     tagline: "", x: 1027, y: 759  },
   { id: "kardien",                 name: "Kardien",                 type: "country",   continent: "ereb",     tagline: "", x: 912,  y: 913  },
