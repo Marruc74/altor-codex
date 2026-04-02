@@ -37,7 +37,7 @@ They also control:
 
 The region lies strategically between the eastern and western parts of the Copper Sea, making it an important trade hub.
 
-## The People – Feliciens
+## People
 
 Typical traits:
 
@@ -48,7 +48,7 @@ Typical traits:
 
 They are often seen as hardworking and disciplined, but also arrogant by other peoples.
 
-## Society and Values
+## Society
 
 A notable feature of Felicien is that:
 
@@ -65,25 +65,6 @@ This is due to traditions where women are not expected to perform heavy physical
 
 Families are relatively loose.  
 Many young people leave home around the age of 20 to pursue careers or military service.
-
-## Slavery
-
-Slaves make up nearly 50% of the population.
-
-They are used as:
-
-- Agricultural workers
-- Fishermen
-- Craft assistants
-- Household servants
-- Rowers in galleys
-- Entertainers (singers, dancers)
-
-Important notes:
-
-- Slaves have no legal rights
-- They can be freely bought and sold
-- Some may be freed after long service
 
 ## Language
 
@@ -111,14 +92,24 @@ Children are trained early in:
 
 At the age of 20, one is considered an adult and expected to support oneself.
 
-## Technology
+## Slavery
 
-Felicien is technologically behind in some areas, but highly skilled in:
+Slaves make up nearly 50% of the population.
 
-- Warfare industries
-- Shipbuilding
+They are used as:
 
-Their galleys are considered among the fastest in the Copper Sea.
+- Agricultural workers
+- Fishermen
+- Craft assistants
+- Household servants
+- Rowers in galleys
+- Entertainers (singers, dancers)
+
+Important notes:
+
+- Slaves have no legal rights
+- They can be freely bought and sold
+- Some may be freed after long service
 
 ## Government
 
@@ -135,7 +126,7 @@ The council represents:
 
 The king holds four votes, giving him strong influence.
 
-## Trade
+## Economy
 
 Felicien is one of the richest trading nations in Ereb Altor.
 
@@ -149,18 +140,6 @@ Trade is mainly based on:
 
 The trade center is located around Koalin Bay.
 
-## Foreign Policy
-
-Feliciens are known for being:
-
-- Proud
-- Arrogant
-- Tough negotiators
-
-They sometimes use state-backed privateers to force trade advantages.
-
-This has led to conflicts with several nations around the Copper Sea.
-
 ## Military
 
 The military is primarily based on the navy.
@@ -173,6 +152,15 @@ The fleet is divided into:
 In wartime, they can mobilize around 50 galleys.
 
 The land army is smaller.
+
+## Technology
+
+Felicien is technologically behind in some areas, but highly skilled in:
+
+- Warfare industries
+- Shipbuilding
+
+Their galleys are considered among the fastest in the Copper Sea.
 
 ## Religion
 
@@ -189,9 +177,9 @@ Two main gods:
 - God of the earth
 - Creator of humanity
 
-Philas’ daughter, **Felis**, is the goddess of mysticism.
+Philas' daughter, **Felis**, is the goddess of mysticism.
 
-## History (Brief)
+## History
 
 The people originate from the Kimzons, who fled the deserts of Akrogal.
 
@@ -210,3 +198,15 @@ They have fought wars against:
 - Dermania
 
 They often succeeded thanks to their strong navy.
+
+## Foreign Relations
+
+Feliciens are known for being:
+
+- Proud
+- Arrogant
+- Tough negotiators
+
+They sometimes use state-backed privateers to force trade advantages.
+
+This has led to conflicts with several nations around the Copper Sea.

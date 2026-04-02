@@ -4,7 +4,7 @@
 ![Caddo male](/codex/Geography/Ereb/Countries/Caddo/Male1.jpg "Caddo male")
 ![Caddo female](/codex/Geography/Ereb/Countries/Caddo/Female1.jpg "Caddo female")
 
-Caddo lies along the bright waters of the Copper Sea, an island shaped by trade, wind, and a way of seeing the world that few outsiders understand. Its cities rise from pale volcanic stone, strong and practical, built for merchants who value coin above crown. Ships arrive daily, heavy with goods, and leave just as full, carrying the island’s influence far beyond its shores.
+Caddo lies along the bright waters of the Copper Sea, an island shaped by trade, wind, and a way of seeing the world that few outsiders understand. Its cities rise from pale volcanic stone, strong and practical, built for merchants who value coin above crown. Ships arrive daily, heavy with goods, and leave just as full, carrying the island's influence far beyond its shores.
 
 What makes Caddo truly strange is not its wealth, but its people. The dalkers, who make up most of the population, are born without the ability to see color as others do. Over generations, they built their world without regard for harmony of color, choosing fabrics, banners, and patterns for form and meaning rather than appearance. To them, their cities are ordered and beautiful. To visitors, they are overwhelming and disorienting.
 
@@ -12,10 +12,10 @@ Yet beneath this confusion lies precision. Trade is measured carefully, agreemen
 
 ## Overview
 
-Caddo is a long, narrow volcanic island in the Kopparhavet with approximately 100,000 inhabitants. The majority are humans (97%), with a smaller population of ducks (3%).  
-The capital is Arno, with around 7,000 inhabitants.
+Caddo is a long, narrow volcanic island in the Kopparhavet, wealthy and trade-oriented, with strong maritime traditions and shipbuilding.
 
-The country is wealthy and trade-oriented, with strong maritime traditions and shipbuilding.
+- **Population:** approx. 100,000 (97% humans, 3% ducks)
+- **Capital:** Arno (~7,000 inhabitants)
 
 ## Geography
 
@@ -26,7 +26,7 @@ The island is dominated by the Appo Mountains, a range rising up to about 3,000 
 - Agriculture is well developed, mainly wheat and olives
 - The mountain regions are sparsely populated
 
-## Population – The Dalkers
+## People
 
 Caddo is almost entirely inhabited by dalkers.
 
@@ -39,7 +39,7 @@ Caddo is almost entirely inhabited by dalkers.
 
 They are well adapted to a sunny climate, though their color-blindness can create challenges in certain environments.
 
-## Culture and Mentality
+## Culture
 
 Dalkers are described as:
 
@@ -71,7 +71,7 @@ Decisions made by the national council must be approved by two-thirds of the can
 
 This system developed after a civil war (104–111 E.O.) and has remained stable since.
 
-## Economy and Trade
+## Economy
 
 Caddo is a major trading nation.
 
@@ -88,16 +88,6 @@ Caddo is a major trading nation.
 - Grain
 
 Caddo also has the most developed banking system in Ereb, giving its banks significant influence.
-
-## Foreign Relations
-
-Caddo is frequently involved in trade-related conflicts in the Kopparhavet.
-
-### Examples
-
-- Conflict with Zorakin
-- Conflict with Felicien, accused of piracy
-- Alliance with Berendien
 
 ## Military
 
@@ -124,8 +114,18 @@ The dominant religion is the Shining Path.
 - Magic is forbidden by the church
 - Magic still exists, but in secret
 
-## History (Brief)
+## History
 
 - Originally divided into tribes ruled by kings
 - A civil war led to the current democratic system
 - During the 2nd and 3rd centuries, Caddo became a major trading power in the Kopparhavet
+
+## Foreign Relations
+
+Caddo is frequently involved in trade-related conflicts in the Kopparhavet.
+
+### Examples
+
+- Conflict with Zorakin
+- Conflict with Felicien, accused of piracy
+- Alliance with Berendien

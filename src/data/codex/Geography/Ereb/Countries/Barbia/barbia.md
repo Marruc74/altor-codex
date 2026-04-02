@@ -14,42 +14,7 @@ Barbia is a highland and largely untamed land in Ereb Altor. It consists of moun
 
 For much of its history, Barbia lacks a strong central authority and is shaped by conflicts between tribes, kings, and neighboring peoples.
 
-## Historical Development
-
-- Prehistoric Era  
-  Early inhabitants lived as hunters and nomads  
-  Later followed by pastoral tribes
-
-- Bronze Age  
-  Migration from other regions  
-  Barbian tribes spread across the land
-
-- Rise of Babor  
-  Around 2400 years ago, the people of Babor emerge
-
-- Formation of Kingdoms  
-  Small kingdoms and tribal domains form  
-  Trade and contact with other civilizations increase
-
-- Imperial Era  
-  Barbia unified under an emperor from Babor  
-  Stronger rule, expansion, and warfare
-
-- Dark Age  
-  Fragmentation, invasions, and internal conflict  
-  Decline of royal authority
-
-## Major Conflicts
-
-- Conflicts with the Howathens  
-  Trade wars and political struggles  
-  Competition over trade routes
-
-- The War of Yddris  
-  Major war against Yddris  
-  Internal divisions weakened Barbia
-
-## Nature and Geography
+## Geography
 
 Barbia consists of:
 
@@ -65,29 +30,17 @@ Notable regions:
 
 ## Climate
 
-- Highlands - colder and windier
-- Lowlands - milder climate
-- Winters - snow and harsh cold
-- Summers - dry and relatively warm
+- **Highlands** — colder and windier
+- **Lowlands** — milder climate
+- **Winters** — snow and harsh cold
+- **Summers** — dry and relatively warm
 
-## People of Barbia
+## People
 
-- Northern Barbarians  
-  Nomadic warriors  
-  Livestock herding  
-  Strong tribal culture
-
-- People of Babor  
-  More organized society  
-  Developed cities  
-  Trade focused
-
-- Forest Folk  
-  Live in forests and mountains  
-  More isolated
-
-- Habulers  
-  Seafaring and trading people
+- **Northern Barbarians** — nomadic warriors, livestock herding, strong tribal culture
+- **People of Babor** — more organized society, developed cities, trade focused
+- **Forest Folk** — live in forests and mountains, more isolated
+- **Habulers** — seafaring and trading people
 
 ## Culture
 
@@ -100,10 +53,24 @@ Barbia is shaped by:
 
 Religion and rituals play an important role.
 
-## Politics
+## Government
 
 Around year 610:
 
 - The land is divided between clans and leaders
 - Trade cities and tribes compete for power
 - Conflicts with neighboring lands affect stability
+
+## History
+
+- **Prehistoric Era** — early inhabitants lived as hunters and nomads, later followed by pastoral tribes
+- **Bronze Age** — migration from other regions, Barbian tribes spread across the land
+- **Rise of Babor** — around 2400 years ago, the people of Babor emerge
+- **Formation of Kingdoms** — small kingdoms and tribal domains form, trade and contact with other civilizations increase
+- **Imperial Era** — Barbia unified under an emperor from Babor, stronger rule, expansion, and warfare
+- **Dark Age** — fragmentation, invasions, and internal conflict, decline of royal authority
+
+## Major Conflicts
+
+- **Conflicts with the Howathens** — trade wars and political struggles, competition over trade routes
+- **The War of Yddris** — major war against Yddris, internal divisions weakened Barbia

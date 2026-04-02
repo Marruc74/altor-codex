@@ -11,7 +11,7 @@ Its people live close to the coast, drawing their survival from the sea. Fishing
 
 The land itself offers little. Fields struggle against the dry soil, and harvests fall short of what is needed. Yet the people remain, bound not only to survival but to belief. In their temples, they worship Mullah, a god seen by outsiders as a distant echo of Etin. Their faith endures, structured and familiar, even as the empire around it has faded.
 
-## Location
+## Geography
 
 Krun lies south of the Grynner Mountains, in southeastern Ereb.
 

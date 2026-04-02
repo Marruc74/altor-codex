@@ -10,11 +10,10 @@ Klomellien lies along the western coast where the sea meets ambition. It is not 
 
 Klomellien is a loose union of eleven independent city-states along the western coast of Ereb Altor. It is not a unified realm, but rather a constant political chessboard where trade, intrigue, and balance of power dominate.
 
-- Population: approx. 125,000
-- Composition: ~70% humans, the rest dwarves, ducks, halflings, and others
-- Government: Union of self-governing city-states
-- Main exports: timber, salt, iron, pearls
-- Main imports: textiles, food
+- **Population:** approx. 125,000 (70% humans, the rest dwarves, ducks, halflings, and others)
+- **Government:** Union of self-governing city-states
+- **Exports:** timber, salt, iron, pearls
+- **Imports:** textiles, food
 
 ## Geography
 

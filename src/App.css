@@ -2478,7 +2478,7 @@ body {
   color: var(--gold);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin: 0.75rem 0 0;
+  margin: 2rem 0 0;
   padding-bottom: 0.35rem;
   border-bottom: 1px solid var(--border);
 }
@@ -3037,9 +3037,43 @@ body {
   margin-bottom: 2rem;
 }
 
+.country-detail__body h2 {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  color: var(--gold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 2.5rem 0 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.country-detail__body h3 {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  color: var(--gold-dim);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 1.5rem 0 0.4rem;
+}
+
+.country-detail__body p {
+  margin: 0 0 0.9rem;
+}
+
 .country-detail__body ul,
 .country-detail__body ol {
   padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.country-detail__body li {
+  margin-bottom: 0.3rem;
+}
+
+.country-detail__body strong {
+  color: var(--gold-light);
+  font-weight: 600;
 }
 
 .country-detail__description {
