@@ -81,6 +81,9 @@ function ImageGallery({ images }) {
 
 const videoById = Object.fromEntries(videos.map((v) => [v.id, v]));
 
+const locationModules = import.meta.glob("../data/locations/*.js");
+const markdownModules = import.meta.glob("../data/codex/**/*.md", { query: "?raw", import: "default" });
+
 const CONTINENTS = [
   { id: "akrogal",  name: "Akrogal"  },
   { id: "ereb",     name: "Ereb"     },
@@ -100,14 +103,20 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect }) {
   useEffect(() => {
     setLocationData(null);
     setMarkdown(null);
-    import(`../data/locations/${country.id}.js`)
+    const locKey = `../data/locations/${country.id}.js`;
+    const locLoader = locationModules[locKey];
+    if (!locLoader) { setLocationData({}); setMarkdown(""); return; }
+    locLoader()
       .then((m) => {
         setLocationData(m.default);
         if (m.default.detail) {
-          const detailPath = m.default.detail;
-          import(`../data/codex/${detailPath}?raw`)
-            .then((md) => setMarkdown(md.default))
-            .catch(() => setMarkdown(""));
+          const mdKey = `../data/codex/${m.default.detail}`;
+          const mdLoader = markdownModules[mdKey];
+          if (mdLoader) {
+            mdLoader().then((md) => setMarkdown(md)).catch(() => setMarkdown(""));
+          } else {
+            setMarkdown("");
+          }
         } else {
           setMarkdown("");
         }
