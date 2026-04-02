@@ -3029,6 +3029,19 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.country-detail__body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+
+.country-detail__body ul,
+.country-detail__body ol {
+  padding-left: 1.5rem;
+}
+
 .country-detail__description {
   font-family: var(--font-body);
   font-size: 1rem;
