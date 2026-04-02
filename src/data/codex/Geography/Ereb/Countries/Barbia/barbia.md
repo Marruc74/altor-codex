@@ -8,7 +8,7 @@ Barbia stretches wide beneath a restless sky, a land of purple heather, cold win
 
 At the heart of this land rises Babor, a city that seems to defy the very ground it stands on. Granite towers press tightly together, streets climbing and folding into one another, forming a maze where movement never truly stops. Bridges and walkways stretch high above the alleys, carrying trade and voices through the air. Markets hang between stone, filled with goods from distant places, while above it all the royal palace watches in silence. Its golden spires catch the light, a reminder that even in a harsh land, power gathers and holds.
 
-## Overview of Barbia
+## Overview
 
 Barbia is a highland and largely untamed land in Ereb Altor. It consists of mountains, forests, and open plains, and is known for its nomadic tribes and strong warrior traditions.
 
@@ -65,10 +65,10 @@ Notable regions:
 
 ## Climate
 
-- Highlands – colder and windier
-- Lowlands – milder climate
-- Winters – snow and harsh cold
-- Summers – dry and relatively warm
+- Highlands - colder and windier
+- Lowlands - milder climate
+- Winters - snow and harsh cold
+- Summers - dry and relatively warm
 
 ## People of Barbia
 
