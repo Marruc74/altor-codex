@@ -1431,7 +1431,8 @@ body {
 .location-panel__watch-btn {
   position: relative;
   display: block;
-  width: 100%;
+  width: 320px;
+  max-width: 100%;
   padding: 0;
   border: 1px solid var(--border);
   border-radius: 4px;
