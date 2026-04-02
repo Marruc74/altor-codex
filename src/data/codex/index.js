@@ -5,7 +5,7 @@ export const entries = [
     summary: "A rare gemstone found deep in the Beyural caves, prized for its warm inner glow and magical properties.",
     tags: ["gems"],
     image: "/codex/Geography/Ereb/Countries/Erebos/Sunstone.jpg",
-    detail: "Geography/Ereb/Countries/Erebor/sunstone.md",
+    detail: "Geography/Ereb/Countries/Erebos/sunstone.md",
     related: ["beyural", "erebos"],
     relatedVideos: ["hBVMZKASM_s", "WIm8eZ6Cn-U"],
   }, {
@@ -14,7 +14,7 @@ export const entries = [
     summary: "A great beast of Beyural — broad, heavy, and built for endurance. Essential to farming the region's dark volcanic soil.",
     tags: ["creature"],
     image: "/codex/Geography/Ereb/Countries/Erebos/Hornox.jpg",
-    detail: "Geography/Ereb/Countries/Erebor/hornox.md",
+    detail: "Geography/Ereb/Countries/Erebos/hornox.md",
     related: ["beyural", "erebos"],
     relatedVideos: ["hBVMZKASM_s", "WIm8eZ6Cn-U"],
   }, {
@@ -23,7 +23,7 @@ export const entries = [
     summary: "A hardy grain unique to Beyural, shaped by its volcanic soil. The foundation of the region's harvest and daily sustenance.",
     tags: ["plant", "food"],
     image: "/codex/Geography/Ereb/Countries/Erebos/Hersch.jpg",
-    detail: "Geography/Ereb/Countries/Erebor/hersch.md",
+    detail: "Geography/Ereb/Countries/Erebos/hersch.md",
     related: ["beyural", "hornox"],
     relatedVideos: ["hBVMZKASM_s", "WIm8eZ6Cn-U"],
   }, {
@@ -32,7 +32,7 @@ export const entries = [
     summary: "A gnarled stonefruit tree of Beyural's dry slopes. Seldom eaten fresh — its thick, pale oil is the real harvest.",
     tags: ["plant", "food"],
     image: "/codex/Geography/Ereb/Countries/Erebos/Lullad.jpg",
-    detail: "Geography/Ereb/Countries/Erebor/lullad.md",
+    detail: "Geography/Ereb/Countries/Erebos/lullad.md",
     related: ["beyural", "hersch"],
     relatedVideos: ["hBVMZKASM_s", "WIm8eZ6Cn-U"],
   }
