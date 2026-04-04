@@ -1,6 +1,25 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(node -e \":*)",
+      "Bash(ls:*)",
+      "Bash(git pull:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(python3 -c \"from PIL import Image; print\\('pillow ok'\\)\")",
+      "Bash(pip install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python3 -m pip install Pillow)",
+      "Bash(python3:*)",
+      "Bash(xargs grep:*)",
+      "Bash(git push:*)",
+      "Bash(node -e ':*)",
+      "Bash(node scripts/generate-tiles.mjs)",
+      "Bash(npm run:*)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "jira-secure"
-  ],
-  "enableAllProjectMcpServers": true
+  ]
 }

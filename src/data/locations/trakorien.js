@@ -1,5 +1,5 @@
 export default {
   description: "",
   youtubeId: "jX8pt-RTYC0",
-  detail: "Geography/Ereb/Countries/Trakorien/trakorien.md",
+  detail: "Geography/Ereb/trakorien.md",
 };

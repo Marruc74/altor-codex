@@ -346,19 +346,18 @@ export default function Compendium({
 }) {
   const [query, setQuery] = useState("");
   const [selectedEntry, setSelectedEntry] = useState(null);
-  const [countriesOpen, setCountriesOpen] = useState(true);
-  const [openContinents, setOpenContinents] = useState(
+  const [openSections, setOpenSections] = useState(
+    () => Object.fromEntries(SECTIONS.map((s) => [s.id, s.id === "geography"]))
+  );
+  const [openGeoGroups, setOpenGeoGroups] = useState(
     () => Object.fromEntries(CONTINENTS.map((c) => [c.id, true]))
   );
-  const [openSections, setOpenSections] = useState(
-    () => Object.fromEntries(SECTIONS.map((s) => [s.id, false]))
-  );
-
-  const toggleContinent = (id) =>
-    setOpenContinents((prev) => ({ ...prev, [id]: !prev[id] }));
 
   const toggleSection = (id) =>
     setOpenSections((prev) => ({ ...prev, [id]: !prev[id] }));
+
+  const toggleGeoGroup = (id) =>
+    setOpenGeoGroups((prev) => ({ ...prev, [id]: !prev[id] }));
 
   // Flat search across countries + videos
   const searchResults = useMemo(() => {
@@ -374,6 +373,7 @@ export default function Compendium({
         (v) =>
           v.section !== "countries" &&
           v.section !== "episodes" &&
+          v.section !== "characters" &&
           (v.name.toLowerCase().includes(q) ||
           (v.group && v.group.toLowerCase().includes(q)) ||
           SECTION_LABEL[v.section]?.toLowerCase().includes(q))
@@ -388,6 +388,29 @@ export default function Compendium({
 
     return [...matchCountries, ...matchVideos];
   }, [query]);
+
+  const geoGroups = useMemo(() => {
+    const geoVideoGroups = videosBySection["geography"] || [];
+    const geoByName = Object.fromEntries(geoVideoGroups.map((g) => [g.group ?? "", g.videos]));
+    const continentNames = new Set(CONTINENTS.map((c) => c.name));
+    const result = [];
+
+    for (const continent of CONTINENTS) {
+      const cs = countries.filter((c) => c.continent === continent.id);
+      const geoVids = geoByName[continent.name] || [];
+      if (cs.length || geoVids.length)
+        result.push({ id: continent.id, name: continent.name, countries: cs, videos: geoVids });
+    }
+    for (const g of geoVideoGroups) {
+      if (!g.group || continentNames.has(g.group)) continue;
+      result.push({ id: `geo-${g.group}`, name: g.group, countries: [], videos: g.videos });
+    }
+    const ungrouped = geoByName[""];
+    if (ungrouped?.length)
+      result.push({ id: "geo-ungrouped", name: null, countries: [], videos: ungrouped });
+
+    return result;
+  }, []);
 
   const selectedPin = countries.find((c) => c.id === selectedCountry) ?? null;
 
@@ -451,54 +474,73 @@ export default function Compendium({
           ) : (
             /* ── Full navigation tree ── */
             <nav className="compendium-nav">
-              {/* Countries */}
-              <div className="compendium-nav__section">
-                <button
-                  className="compendium-nav__section-hd"
-                  onClick={() => setCountriesOpen((o) => !o)}
-                >
-                  <span className="compendium-nav__sigil">◉</span>
-                  <span className="compendium-nav__title">Countries</span>
-                  <span className="compendium-nav__toggle">{countriesOpen ? "▲" : "▼"}</span>
-                </button>
+              {/* Geography — countries + geography videos merged by region */}
+              {(() => {
+                const geoSec = SECTIONS.find((s) => s.id === "geography");
+                return (
+                  <div className="compendium-nav__section">
+                    <button
+                      className="compendium-nav__section-hd"
+                      onClick={() => toggleSection("geography")}
+                    >
+                      <span className="compendium-nav__sigil">{geoSec.sigil}</span>
+                      <span className="compendium-nav__title">Geography</span>
+                      <span className="compendium-nav__toggle">
+                        {openSections["geography"] ? "▲" : "▼"}
+                      </span>
+                    </button>
 
-                {countriesOpen && CONTINENTS.map((continent) => {
-                  const list = countries.filter((c) => c.continent === continent.id);
-                  if (!list.length) return null;
-                  return (
-                    <div key={continent.id} className="compendium-nav__group">
-                      <button
-                        className="compendium-nav__group-hd"
-                        onClick={() => toggleContinent(continent.id)}
-                      >
-                        <span>{continent.name}</span>
-                        <span className="compendium-nav__toggle">
-                          {openContinents[continent.id] ? "▲" : "▼"}
-                        </span>
-                      </button>
-                      {openContinents[continent.id] && (
-                        <ul className="compendium-nav__list">
-                          {list.map((c) => (
-                            <li key={c.id}>
-                              <button
-                                className={`compendium-nav__item${
-                                  selectedCountry === c.id ? " compendium-nav__item--active" : ""
-                                }`}
-                                onClick={() => { onCountrySelect(c.id); setSelectedEntry(null); }}
-                              >
-                                {c.name}
-                              </button>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
+                    {openSections["geography"] && geoGroups.map((group) => {
+                      const isOpen = openGeoGroups[group.id] ?? false;
+                      return (
+                        <div key={group.id} className="compendium-nav__group">
+                          {group.name && (
+                            <button
+                              className="compendium-nav__group-hd"
+                              onClick={() => toggleGeoGroup(group.id)}
+                            >
+                              <span>{group.name}</span>
+                              <span className="compendium-nav__toggle">{isOpen ? "▲" : "▼"}</span>
+                            </button>
+                          )}
+                          {(group.name ? isOpen : true) && (
+                            <ul className="compendium-nav__list">
+                              {group.countries.map((c) => (
+                                <li key={`c-${c.id}`}>
+                                  <button
+                                    className={`compendium-nav__item${selectedCountry === c.id ? " compendium-nav__item--active" : ""}`}
+                                    onClick={() => { onCountrySelect(c.id); setSelectedEntry(null); }}
+                                  >
+                                    {c.name}
+                                  </button>
+                                </li>
+                              ))}
+                              {group.videos.map((v) => (
+                                <li key={`v-${v.id}`}>
+                                  <button
+                                    className={`compendium-nav__item compendium-nav__item--video${selectedEntry?.id === v.id ? " compendium-nav__item--active" : ""}`}
+                                    onClick={() => { setSelectedEntry(v); onCountrySelect(null); }}
+                                  >
+                                    {v.name}
+                                  </button>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
+              })()}
 
-              {/* Video sections — skip "countries" (MD-backed) and "episodes" */}
-              {SECTIONS.filter((s) => s.id !== "countries" && s.id !== "episodes").map((section) => {
+              {/* Other video sections — skip geography/countries/episodes/characters */}
+              {SECTIONS.filter((s) =>
+                s.id !== "geography" &&
+                s.id !== "countries" &&
+                s.id !== "episodes" &&
+                s.id !== "characters"
+              ).map((section) => {
                 const groups = videosBySection[section.id] || [];
                 const total = groups.reduce((n, g) => n + g.videos.length, 0);
                 if (!total) return null;
