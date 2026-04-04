@@ -3,11 +3,13 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { pins } from "../data/locations";
 
-const IMG_W = 3248;
-const IMG_H = 2200;
+const IMG_W = 6144;
+const IMG_H = 4096;
 
+// CRS.Simple with toLatLng(x,y)=[-y,x] maps image pixels directly to CRS
+// units (no flip needed): crs_x = image_x, crs_y = image_y.
 function toLatLng(x, y) {
-  return [IMG_H - y, x];
+  return [-y, x];
 }
 
 const PIN_STYLES = {
@@ -87,7 +89,7 @@ const InteractiveMap = forwardRef(function InteractiveMap({ onLocationSelect }, 
   useEffect(() => {
     if (!containerRef.current || mapRef.current) return;
 
-    const bounds = [[0, 0], [IMG_H, IMG_W]];
+    const bounds = [[-IMG_H, 0], [0, IMG_W]];
     const map = L.map(containerRef.current, {
       crs: L.CRS.Simple,
       minZoom: -2,
@@ -96,11 +98,22 @@ const InteractiveMap = forwardRef(function InteractiveMap({ onLocationSelect }, 
       zoomDelta: 0.5,
       attributionControl: false,
       zoomControl: false,
-      maxBounds: [[-IMG_H * 0.2, -IMG_W * 0.2], [IMG_H * 1.2, IMG_W * 1.2]],
+      maxBounds: [[-IMG_H * 1.2, -IMG_W * 0.2], [IMG_H * 0.2, IMG_W * 1.2]],
       maxBoundsViscosity: 0.85,
     });
 
-    L.imageOverlay("/Altor.jpg", bounds).addTo(map);
+    // Tile layer – file zoom z = Leaflet zoom + 2 (via zoomOffset).
+    // Tiles at file z=0,1,2 cover Leaflet -2,-1,0 (native res).
+    // Leaflet zoom > 0 reuses z=2 tiles scaled up (maxNativeZoom).
+    L.tileLayer("/tiles/{z}/{x}/{y}.png", {
+      tileSize: 256,
+      minZoom: -2,
+      maxNativeZoom: 0,
+      maxZoom: 3,
+      zoomOffset: 2,
+      noWrap: true,
+      bounds,
+    }).addTo(map);
     map.fitBounds(bounds);
     L.control.zoom({ position: "bottomright" }).addTo(map);
 
@@ -141,8 +154,9 @@ const InteractiveMap = forwardRef(function InteractiveMap({ onLocationSelect }, 
 
     const updateMini = () => {
       const b = map.getBounds();
-      const n = Math.min(b.getNorth(), IMG_H);
-      const s = Math.max(b.getSouth(), 0);
+      // With toLatLng(x,y)=[-y,x]: north=0 (image top), south=-IMG_H (image bottom)
+      const n = Math.min(b.getNorth(), 0);
+      const s = Math.max(b.getSouth(), -IMG_H);
       const w = Math.max(b.getWest(),  0);
       const e = Math.min(b.getEast(),  IMG_W);
       // Hide when showing ≥ 75% of the full image
@@ -150,10 +164,10 @@ const InteractiveMap = forwardRef(function InteractiveMap({ onLocationSelect }, 
         setMiniRect(null);
       } else {
         setMiniRect({
-          top:    (IMG_H - n) / IMG_H * 100,
-          left:   w          / IMG_W * 100,
-          width:  (e - w)    / IMG_W * 100,
-          height: (n - s)    / IMG_H * 100,
+          top:    (-n)    / IMG_H * 100,  // -lat_north = image_y at top edge
+          left:   w       / IMG_W * 100,
+          width:  (e - w) / IMG_W * 100,
+          height: (n - s) / IMG_H * 100,  // lat range = image y range
         });
       }
     };
@@ -304,7 +318,7 @@ const InteractiveMap = forwardRef(function InteractiveMap({ onLocationSelect }, 
 
       {miniRect && (
         <div className="minimap">
-          <img src="/Altor.jpg" className="minimap__img" alt="Overview" />
+          <img src="/tiles/thumb.jpg" className="minimap__img" alt="Overview" />
           <div
             className="minimap__rect"
             style={{
