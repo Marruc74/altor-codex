@@ -1,5 +1,5 @@
 export default {
   description: "",
   youtubeId: "",
-  detail: "Geography/Other/niferland.md",
+  detail: "Geography/Serpent Lake/niferland.md",
 };

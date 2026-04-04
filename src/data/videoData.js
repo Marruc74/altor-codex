@@ -316,8 +316,18 @@ function parse(title) {
   return { section: section ?? "lore", group: group ?? null, name };
 }
 
+// Explicit group overrides for otherwise-ungrouped geography entries
+const GROUP_OVERRIDES = {
+  "hyuDaw-DdOo": "Ereb",         // Geography: Ereb Altor
+  "kk4HXgQHIqQ": "Golwynda Sea", // Geography: Golwynda Sea
+};
+
 // Build the enriched video list
-export const videos = rawVideos.map((v) => ({ ...v, ...parse(v.title) }));
+export const videos = rawVideos.map((v) => {
+  const parsed = parse(v.title);
+  if (GROUP_OVERRIDES[v.id]) parsed.group = GROUP_OVERRIDES[v.id];
+  return { ...v, ...parsed };
+});
 
 // IDs already shown in the Chronicles section — exclude from Compendium
 const CHRONICLE_IDS = new Set(["6LBJzNV1ELE", "uwAW1TD2hi4", "SkHa9w8liis", "-6x3huqel8E", "b5zJNvqF5n8"]);

@@ -92,11 +92,12 @@ const locationModules = import.meta.glob("../data/locations/*.js");
 const markdownModules = import.meta.glob("../data/codex/**/*.md", { query: "?raw", import: "default" });
 
 const CONTINENTS = [
-  { id: "akrogal",  name: "Akrogal"  },
-  { id: "ereb",     name: "Ereb"     },
-  { id: "samkarna", name: "Samkarna" },
-  { id: "soluna",   name: "Soluna"   },
-  { id: "other",    name: "Other"    },
+  { id: "akrogal",      name: "Akrogal"         },
+  { id: "ereb",         name: "Ereb"             },
+  { id: "samkarna",     name: "Samkarna"         },
+  { id: "soluna",       name: "Soluna"           },
+  { id: "serpent-lake", name: "Serpent Lake"     },
+  { id: "western-sea",  name: "The Western Sea"  },
 ];
 
 const countries = pins
