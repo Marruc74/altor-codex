@@ -13,118 +13,69 @@ The people are divided. The Penner, strong and ambitious, dominate trade and rul
 
 Zorakin endures through balance. Between wealth and hardship, order and unrest, it remains a kingdom rooted in earth, tradition, and steel.
 
-# Overview: Kingdom of Zorakin
+## Overview
 
-## Basic Facts
-
-- **Population:** approx. 250,000
-- **Population breakdown:**
-  - Humans: 90%
-  - Ducks: 5%
-  - Elves: 4%
-  - Halflings: 1%
-- **Capital:** Pendon (approx. 7,500 inhabitants)
-- **Head of State:** Valien VII
+- **Population:** approx. 250,000 (90% humans, 5% ducks, 4% elves, 1% halflings)
+- **Capital:** Pendon (~7,500 inhabitants)
 - **Government:** Feudal monarchy
+- **Ruler:** Valien VII
 - **Religion:** The Shining Way
-- **Economy:** Export of grain, iron, timber, and furs. Import of textiles, salt, and precious metals.
-- **Military:** Strong knightly cavalry and a weak navy
+- **Exports:** grain, iron, timber, furs
+- **Imports:** textiles, salt, precious metals
+- **Military:** strong knightly cavalry, weak navy
 
 ## Geography
 
-Zorakin lies in the southern part of the Aidne Peninsula.
-
-The landscape consists mainly of two peninsulas:
+Zorakin lies in the southern part of the Aidne Peninsula, consisting mainly of two peninsulas.
 
 ### Grindanu
 
-- Roughly half forest and half cultivated land
-- Dominated by the Toril Forest, which has become dark and dangerous after an ancient catastrophe
-- The Jöstelf River runs through the region
-- A large portion of the population lives here
+Roughly half forest and half cultivated land, dominated by the Toril Forest, which has become dark and dangerous after an ancient catastrophe. The Jöstelf River runs through the region, and a large portion of the population lives here.
 
 ### Indar
 
-- Very fertile agricultural land
-- Produces large amounts of grain
-- The western part is more focused on livestock
-- North of the peninsula lies the Nordberg Forest, home to many different creatures
+Very fertile agricultural land that produces large amounts of grain. The western part is more focused on livestock. North of the peninsula lies the Nordberg Forest, home to many different creatures.
 
-## Population and Peoples
-
-Two main groups dominate:
+## People
 
 ### Penner
 
-- Of Joric origin
-- Live mainly in southern Grindanu
-- More culturally developed
-- Often warriors, merchants, or nobility
-- Taller and more strongly built than many other peoples
+Of Joric origin, living mainly in southern Grindanu. More culturally developed, often warriors, merchants, or nobility. Taller and more strongly built than many other peoples.
 
 ### Legerdier
 
-- Farmers of Indar
-- Often live under the control of the nobility
-- Poorer and more bound to the land
-- Dialect and culture are simpler and more rural
+Farmers of Indar, often living under the control of the nobility. Poorer and more bound to the land, with a simpler and more rural dialect and culture.
 
 ## Government
 
-Zorakin is a feudal society.
+Zorakin is a feudal society. The nobility governs their lands with a high degree of independence and collects taxes.
 
-### Hierarchy
+Typical hierarchy:
 
-- King
-- Dukes
-- Counts
-- Barons
+- **King**
+- **Dukes**
+- **Counts**
+- **Barons**
 - Peasants and townsfolk
 
-The nobility governs their lands with a high degree of independence and collects taxes.
+Some cities are free cities governed by councils, where council members often serve for life. Corruption is common.
 
-### Cities
-
-- Some cities are free cities governed by councils
-- Council members often serve for life
-- Corruption is common
-
-## Economy and Trade
+## Economy
 
 Zorakin is one of the wealthier realms around the Copper Sea.
 
-### Exports
-
-- Grain
-- Iron
-- Timber
-- Furs
-
-### Imports
-
-- Textiles
-- Salt
-- Precious metals
+- **Exports:** grain, iron, timber, furs
+- **Imports:** textiles, salt, precious metals
 
 ## Military
 
-The military consists mainly of:
+The military consists mainly of knights and their retinues, garrisons in noble strongholds, conscripted soldiers in times of war, and city militias. The knightly cavalry is very strong, but the navy is small.
 
-- Knights and their retinues
-- Garrisons in noble strongholds
-- Conscripted soldiers in times of war
-- City militias
-
-The knightly cavalry is very strong, but the navy is small.
-
-## History (Brief)
-
-Two major events shape the history of the realm:
+## History
 
 ### The Lindskärn Wars
 
-An aggressive human people from the north invaded Zorakin.  
-After hard fighting, they were driven back with help from Kardien.
+An aggressive human people from the north invaded Zorakin. After hard fighting, they were driven back with help from Kardien.
 
 ### The Great Schism
 

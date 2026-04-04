@@ -10,61 +10,32 @@ Their villages are guided by elder women whose wisdom shapes both daily life and
 
 Though peaceful in nature, Melukha is not defenseless. When danger comes, its people can gather quickly and stand together. It is a land that does not seek conflict, yet endures it when it must.
 
-# Overview: Melukha
+## Overview
 
-Melukha lies west of Sivoa and is described as a paradise-like region where the abundance of nature allows people to live with relatively few worries.
+- **Government:** Tribal, led by elder women
+- **Religion:** Worship of the Goddess
+- **Imports:** metal goods, spices, drugs, crafted items
 
-## Society and Lifestyle
+## Geography
 
-The population lives primarily from hunting and the rich vegetation of the land.  
-They do not strive for wealth or power, as nature provides enough for everyone.  
-Instead, they value the enjoyment of life and the arts.  
-Despite this, they can quickly raise an army if the land is threatened.
+Melukha lies west of Sivoa. The climate is warm with lush vegetation and rich natural environment. The land is abundant and there is no scarcity of food.
 
-## Culture and Values
+## Society
 
-Extreme hospitality is a central norm. Caring for guests is seen as an honor.  
-Life moves at a calm and unhurried pace. People do not rush.  
-Storytelling is important, and a good story can be told many times.
+The society is loosely divided into tribal regions with many villages. Both tribes and villages are led by elder women, considered to hold the greatest wisdom. Women and older men often live together in villages, while younger men may travel between villages and live with women who choose to accept them. The population lives primarily from hunting and the rich vegetation of the land, and values enjoyment of life and the arts over the pursuit of wealth or power.
 
-## Religion and View of Death
+## Culture
 
-They worship "the Goddess," a mother figure symbolizing the balance between life and nature.  
-They believe that the spirits of ancestors remain close to the living.  
-Death is not seen as dramatic or tragic.  
-The dead are embalmed and kept in the home, sometimes as furniture or decoration.  
-Children may even sit on the laps of preserved ancestors, whose faces are sometimes painted.
+Extreme hospitality is a central norm: caring for guests is seen as an honor. Life moves at a calm and unhurried pace. Storytelling is important, and a good story can be told many times.
 
-## Social Structure
+## Religion
 
-The society is loosely divided into tribal regions with many villages.  
-Both tribes and villages are led by elder women, who are considered to hold the greatest wisdom.  
-Women and older men often live together in villages.  
-Younger men may travel between villages and live with women who choose to accept them.
+They worship **the Goddess**, a mother figure symbolizing the balance between life and nature. The spirits of ancestors are believed to remain close to the living. Death is not seen as dramatic or tragic: the dead are embalmed and kept in the home, sometimes as furniture or decoration. Children may sit on the laps of preserved ancestors, whose faces are sometimes painted.
 
-## View on War
+## Military
 
-War is considered distasteful, but sometimes necessary.  
-It is led by men, who are seen as more suited to such tasks.  
-The brutality of war is not celebrated, although songs of victory exist.
+War is considered distasteful but sometimes necessary. It is led by men, who are seen as more suited to such tasks. The brutality of war is not celebrated, though songs of victory exist. When danger comes, the people can quickly raise an army.
 
-## Trade and Resources
+## Economy
 
-The Melukhans trade regularly but sparingly with other lands.  
-They trade for:
-
-- metal goods
-- spices
-- drugs
-- crafted items
-
-Trade is mostly seen as an enjoyable way to travel.  
-They only mine gold, copper, and silver, despite the presence of other resources.  
-Legend says that the island of Kymm sank into the sea when people began mining iron there.
-
-## Climate
-
-- warm
-- lush vegetation
-- rich natural environment
-- no scarcity of food
+The Melukhans trade regularly but sparingly, viewing trade mostly as an enjoyable way to travel. They trade for metal goods, spices, drugs, and crafted items. Only gold, copper, and silver are mined, despite the presence of other resources: legend holds that the island of **Kymm** sank into the sea when its people began mining iron.

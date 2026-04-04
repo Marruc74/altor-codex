@@ -13,127 +13,62 @@ The people live under constant structure. They work, obey, and endure, shaped by
 
 Trade flows in and out through guarded gates, while the army gathers strength in quiet preparation. To outsiders, Nidland appears sealed and controlled, yet steady. It is a land that does not bend easily, and one that watches the world beyond its walls with intent.
 
-## Overview: Nidland
+## Overview
 
-### Basic Facts
+- **Population:** approx. 240,000 (100% humans)
+- **Capital:** Khaanikiel (~18,000 inhabitants)
+- **Government:** Magocratic dictatorship
+- **Ruler:** Vicotnik, an Archmage
+- **Religion:** Kuzherism
+- **Economy:** relatively poor
+- **Exports:** textiles, precious metals, spices, craftsmanship
+- **Imports:** iron, slaves, weapons
 
-Population: approx. 240,000  
-Population composition: 100% humans  
-Capital: Khaanikiel (approx. 18,000 inhabitants)  
-Government: magocratic dictatorship  
-Ruler: Vicotnik, an Archmage  
-Religion: Kuzherism (fanatical monotheism)  
-Economy: relatively poor
+## Geography
 
-Exports: textiles, precious metals, spices, craftsmanship  
-Imports: iron, slaves, weapons
-
-### Geography
-
-Nidland lies in eastern Ereb, between the Grynner Mountains and the Demon Tongue.
-
-The terrain consists mainly of:
-
-- a large plateau (approx. 400 m above sea level)
-- poor soils and sparse vegetation
-- very few trees
-- coastal strips where alvherri (grain) is cultivated
-
-Common animals include:
-
-- sheep
-- mountain goats
+Nidland lies in eastern Ereb, between the Grynner Mountains and the Demon Tongue. The terrain consists mainly of a large plateau approximately 400 meters above sea level, with poor soils, sparse vegetation, and very few trees. Coastal strips support cultivation of **alvherri**, a local grain. Common animals include sheep and mountain goats.
 
 ### The Great Wall
 
-The entire country is surrounded by a massive wall.
+The entire country is surrounded by a massive wall built between 502 and 541 A.O.
 
-Characteristics:
-
-- 4 meters high
-- 4 meters thick
-- towers every 500 meters
-- heavily guarded gates
-- built between 502–541 A.O.
+- 4 meters high and 4 meters thick
+- Towers every 500 meters
+- Heavily guarded gates
 
 It is said to be nearly impossible to enter the country without permission.
 
-### The People (Nidlanders)
+## People
 
-Described as:
+The Nidlanders are tall, strongly built, and sunburnt, with black hair. Typical clothing consists of puffed trousers, a long coat called the **thogu**, a light shirt garment, and headwear called the **burtan**. Under Vicotnik's rule, the people have grown mentally subdued and accustomed to absolute obedience.
 
-- tall
-- sunburnt skin
-- black hair
-- strongly built
+## Government
 
-Typical clothing:
-
-- puffed trousers
-- long coat (thogu)
-- light shirt garment
-- headwear called burtan
-
-Under Vicotnik’s rule, the people have become:
-
-- mentally subdued
-- accustomed to absolute obedience
-
-### Government
-
-The country is ruled by Vicotnik, who governs with an iron hand.
-
-Structure:
+The country is ruled by Vicotnik, who governs with an iron hand through a strict hierarchy:
 
 - Vicotnik
-- 20 apprentices (judges)
-- disciples beneath them
-- local elder masters ruling towns and villages
+- 20 apprentices serving as judges
+- Disciples beneath them
+- Local elder masters ruling towns and villages
 
-The punishment system is brutal:
-
-- torture
-- experiments in magical laboratories
-- death penalty or forced labor
+The punishment system is brutal, including torture, experiments in magical laboratories, and death penalties or forced labor.
 
 ### Laws
 
-Examples of laws:
+- Foreigners are not allowed to enter without permission
+- Magic is forbidden except for the rulers
+- Preaching any religion other than Kuzherism is forbidden
+- Killing Nidlanders is forbidden
+- Theft is punished with forced labor
 
-- foreigners are not allowed to enter without permission
-- magic is forbidden (except for the rulers)
-- preaching any religion other than Kuzherism is forbidden
-- killing Nidlanders is forbidden
-- theft is punished with forced labor
+## Military
 
-### Religion – Kuzherism
+Little is known about the true strength of the army. The country can mobilize large forces, and Vicotnik is said to be preparing for a major war.
 
-The only permitted religion.
+## Religion
 
-Core beliefs:
+The only permitted religion is **Kuzherism**. Its core beliefs hold that the Nidlanders are the chosen people of the god **Kuzher**, destined to rule Ereb, and that other peoples are inferior. The religion is used to legitimize Vicotnik's power.
 
-- the Nidlanders are the chosen people of the god Kuzher
-- they are destined to rule Ereb
-- other peoples are inferior
+## History
 
-The religion is used to legitimize Vicotnik’s power.
-
-### Military Power
-
-Little is known about the true strength of the army.
-
-However:
-
-- the country can mobilize large forces
-- Vicotnik is said to be preparing for a major war
-
-### History (Brief)
-
-The region once belonged to Hynsolge.
-
-In the year 468 A.O., the mage Vicotnik arrived from the east.  
-He gathered followers and seized power.  
-He introduced a new religion and established a dictatorship.  
-He later built the Great Wall around the country.
-
-The population appears to strongly support him, which worries neighboring realms.
+The region once belonged to Hynsolge. In the year 468 A.O., the mage Vicotnik arrived from the east, gathered followers, and seized power. He introduced Kuzherism and established a dictatorship, later building the Great Wall around the country. The population appears to strongly support him, which worries neighboring realms.

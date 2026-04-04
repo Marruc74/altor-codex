@@ -6,7 +6,7 @@
 The hornox is a great beast of Beyural, broad and heavy, built for endurance rather than speed. Its thick hide bears the marks of labor, and its single forward horn is worn from use. It resembles cattle, yet carries itself with a quiet weight that sets it apart.
 
 #### On Its Temperament
-It is neither aggressive nor truly docile. The hornox works, but not out of obedience alone. It learns those who guide it and settles into a steady rhythm beside them. When mistreated, it does not lash out—it simply refuses to move.
+It is neither aggressive nor truly docile. The hornox works, but not out of obedience alone. It learns those who guide it and settles into a steady rhythm beside them. When mistreated, it does not lash out:it simply refuses to move.
 
 #### Of Its Use
 In Beyural’s dark volcanic soil, the hornox is essential. It pulls plows through heavy ground, hauls stone, and labors where other animals fail. Fields are shaped by its slow, deliberate strength.
@@ -19,4 +19,4 @@ It is said the hornox senses what lies beneath the earth. Some claim it feels tr
 
 #### In the End
 The hornox does not hurry, nor does it falter.
-It endures—and in Beyural, that is enough.
+It endures:and in Beyural, that is enough.

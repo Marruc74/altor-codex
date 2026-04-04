@@ -36,5 +36,5 @@ There are those who claim the stone feels warm even in shade, or that it dulls w
 
 The sunstone does not shine.
 
-It holds light—and perhaps, something more.
+It holds light:and perhaps, something more.
 

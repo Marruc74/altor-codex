@@ -12,16 +12,27 @@ At the mouth of the Harytis stands Ketoriam, a city of wealth and strength. Its 
 
 In ages past, crusading knights came from western Ereb, seeking to reshape Furgia in their image. They found a land that would not yield. The crusades were broken, and Furgia remained its own.
 
----
-
 ## Overview
 
-- **Location**: South of the Harytis river, on the frontier between Altor and the eastern steppe
-- **Role**: Defensive border realm and buffer against eastern peoples
-- **Rivalry**: Longstanding conflict with Kalmurri
-- **Culture**: Blend of feudal nobility and steppe riding traditions
-- **Society**: Dominated by ancient noble houses with strong chivalric ideals
-- **Capital**: Ketoriam, a wealthy and powerful city at the river’s mouth
-- **Military**: Strong cavalry tradition combining knights and steppe riders
-- **History**: Occasional invasions by northeastern nomads despite strong defenses
-- **Religion and Conflict**: Target of crusades from western Ereb, all ultimately repelled
+- **Capital:** Ketoriam
+- **Military:** strong cavalry combining knights and steppe riders
+
+## Geography
+
+Furgia lies south of the Harytis river, on the frontier between Altor and the eastern steppe. It serves as a defensive border realm and buffer against eastern peoples.
+
+## People
+
+Ancient noble houses dominate Furgian society. Their traditions are carried on horseback, and the ideals of knighthood have grown from the steppe rather than replacing it. Lords ride as easily as they rule, and the bond between rider and horse is as strong as any oath.
+
+## Military
+
+Furgia maintains a strong cavalry tradition that combines feudal knights with steppe riders.
+
+## History
+
+Nomadic riders from the northeast have breached the walls of Ketoriam in rare but hard-fought invasions. Crusading knights from western Ereb sought to reshape Furgia in their image, but the crusades were broken and Furgia remained its own.
+
+## Foreign Relations
+
+Furgia has a longstanding rivalry and conflict with Kalmurri.
