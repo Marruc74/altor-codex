@@ -282,9 +282,10 @@ export default function Compendium({
     const matchVideos = allVideos
       .filter(
         (v) =>
-          v.name.toLowerCase().includes(q) ||
+          v.section !== "countries" &&
+          (v.name.toLowerCase().includes(q) ||
           (v.group && v.group.toLowerCase().includes(q)) ||
-          SECTION_LABEL[v.section]?.toLowerCase().includes(q)
+          SECTION_LABEL[v.section]?.toLowerCase().includes(q))
       )
       .map((v) => ({
         kind: "video",
@@ -405,8 +406,8 @@ export default function Compendium({
                 })}
               </div>
 
-              {/* Video sections */}
-              {SECTIONS.map((section) => {
+              {/* Video sections — skip "countries" (handled by the MD-backed section above) */}
+              {SECTIONS.filter((s) => s.id !== "countries").map((section) => {
                 const groups = videosBySection[section.id] || [];
                 const total = groups.reduce((n, g) => n + g.videos.length, 0);
                 if (!total) return null;
