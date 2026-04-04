@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thealtorcodex.netlify.app/sitemap.xml
