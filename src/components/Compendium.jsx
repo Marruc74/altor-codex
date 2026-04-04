@@ -347,18 +347,13 @@ export default function Compendium({
 }) {
   const [query, setQuery] = useState("");
   const [selectedEntry, setSelectedEntry] = useState(null);
-  const [openSections, setOpenSections] = useState(
-    () => Object.fromEntries(SECTIONS.map((s) => [s.id, s.id === "geography"]))
-  );
-  const [openGeoGroups, setOpenGeoGroups] = useState(
-    () => Object.fromEntries(CONTINENTS.map((c) => [c.id, true]))
-  );
+  const [openSections, setOpenSections] = useState(() => ({}));
+  const [openGeoGroups, setOpenGeoGroups] = useState(() => ({}));
+  const [openSubGroups, setOpenSubGroups] = useState(() => ({}));
 
-  const toggleSection = (id) =>
-    setOpenSections((prev) => ({ ...prev, [id]: !prev[id] }));
-
-  const toggleGeoGroup = (id) =>
-    setOpenGeoGroups((prev) => ({ ...prev, [id]: !prev[id] }));
+  const toggleSection  = (id) => setOpenSections( (p) => ({ ...p, [id]: !p[id] }));
+  const toggleGeoGroup = (id) => setOpenGeoGroups((p) => ({ ...p, [id]: !p[id] }));
+  const toggleSubGroup = (id) => setOpenSubGroups((p) => ({ ...p, [id]: !p[id] }));
 
   // Flat search across countries + videos
   const searchResults = useMemo(() => {
@@ -478,6 +473,8 @@ export default function Compendium({
               {/* Geography — countries + geography videos merged by region */}
               {(() => {
                 const geoSec = SECTIONS.find((s) => s.id === "geography");
+                const geoTotal = geoGroups.reduce((n, g) => n + g.countries.length + g.videos.length, 0);
+                const geoOpen = openSections["geography"] ?? false;
                 return (
                   <div className="compendium-nav__section">
                     <button
@@ -486,12 +483,12 @@ export default function Compendium({
                     >
                       <span className="compendium-nav__sigil">{geoSec.sigil}</span>
                       <span className="compendium-nav__title">Geography</span>
-                      <span className="compendium-nav__toggle">
-                        {openSections["geography"] ? "▲" : "▼"}
-                      </span>
+                      <span className="compendium-nav__count">{geoTotal}</span>
+                      <span className="compendium-nav__toggle">{geoOpen ? "▲" : "▼"}</span>
                     </button>
 
-                    {openSections["geography"] && geoGroups.map((group) => {
+                    {geoOpen && geoGroups.map((group) => {
+                      const groupCount = group.countries.length + group.videos.length;
                       const isOpen = openGeoGroups[group.id] ?? false;
                       return (
                         <div key={group.id} className="compendium-nav__group">
@@ -501,6 +498,7 @@ export default function Compendium({
                               onClick={() => toggleGeoGroup(group.id)}
                             >
                               <span>{group.name}</span>
+                              <span className="compendium-nav__count">{groupCount}</span>
                               <span className="compendium-nav__toggle">{isOpen ? "▲" : "▼"}</span>
                             </button>
                           )}
@@ -545,6 +543,7 @@ export default function Compendium({
                 const groups = videosBySection[section.id] || [];
                 const total = groups.reduce((n, g) => n + g.videos.length, 0);
                 if (!total) return null;
+                const secOpen = openSections[section.id] ?? false;
                 return (
                   <div key={section.id} className="compendium-nav__section">
                     <button
@@ -554,30 +553,41 @@ export default function Compendium({
                       <span className="compendium-nav__sigil">{section.sigil}</span>
                       <span className="compendium-nav__title">{section.label}</span>
                       <span className="compendium-nav__count">{total}</span>
-                      <span className="compendium-nav__toggle">
-                        {openSections[section.id] ? "▲" : "▼"}
-                      </span>
+                      <span className="compendium-nav__toggle">{secOpen ? "▲" : "▼"}</span>
                     </button>
 
-                    {openSections[section.id] && groups.map((g, i) => (
-                      <div key={g.group ?? `__g${i}`} className="compendium-nav__group">
-                        {g.group && (
-                          <p className="compendium-nav__group-label">{g.group}</p>
-                        )}
-                        <ul className="compendium-nav__list">
-                          {g.videos.map((v) => (
-                            <li key={v.id}>
-                              <button
-                                className={`compendium-nav__item compendium-nav__item--video${selectedEntry?.id === v.id ? " compendium-nav__item--active" : ""}`}
-                                onClick={() => { setSelectedEntry(v); onCountrySelect(null); }}
-                              >
-                                {v.name}
-                              </button>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
+                    {secOpen && groups.map((g, i) => {
+                      const subKey = `${section.id}-${g.group ?? i}`;
+                      const subOpen = openSubGroups[subKey] ?? false;
+                      return (
+                        <div key={g.group ?? `__g${i}`} className="compendium-nav__group">
+                          {g.group ? (
+                            <button
+                              className="compendium-nav__group-hd"
+                              onClick={() => toggleSubGroup(subKey)}
+                            >
+                              <span>{g.group}</span>
+                              <span className="compendium-nav__count">{g.videos.length}</span>
+                              <span className="compendium-nav__toggle">{subOpen ? "▲" : "▼"}</span>
+                            </button>
+                          ) : null}
+                          {(g.group ? subOpen : true) && (
+                            <ul className="compendium-nav__list">
+                              {g.videos.map((v) => (
+                                <li key={v.id}>
+                                  <button
+                                    className={`compendium-nav__item compendium-nav__item--video${selectedEntry?.id === v.id ? " compendium-nav__item--active" : ""}`}
+                                    onClick={() => { setSelectedEntry(v); onCountrySelect(null); }}
+                                  >
+                                    {v.name}
+                                  </button>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </div>
+                      );
+                    })}
                   </div>
                 );
               })}
