@@ -105,6 +105,29 @@ const countries = pins
 
 const SECTION_LABEL = Object.fromEntries(SECTIONS.map((s) => [s.id, s.label]));
 
+// ── Path helpers ──────────────────────────────────────────────────────────
+function toSlug(str) {
+  return str
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[''']/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+function skipGroup(group, section) {
+  if (!group) return true;
+  const g = group.toLowerCase(), s = section.toLowerCase();
+  return g === s || g + "s" === s || g === s + "s";
+}
+function entryMdPath(video) {
+  const sec  = video.section[0].toUpperCase() + video.section.slice(1);
+  const slug = toSlug(video.name);
+  return skipGroup(video.group, video.section)
+    ? `${sec}/${slug}.md`
+    : `${sec}/${video.group}/${slug}.md`;
+}
+
 // ── CountryDetail ─────────────────────────────────────────────────────────
 function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect }) {
   const [locationData, setLocationData] = useState(null);
@@ -247,6 +270,72 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect }) {
   );
 }
 
+// ── EntryDetail ───────────────────────────────────────────────────────────
+function EntryDetail({ video, onVideoSelect }) {
+  const [markdown, setMarkdown] = useState(null);
+
+  useEffect(() => {
+    setMarkdown(null);
+    const mdKey = `../data/codex/${entryMdPath(video)}`;
+    const mdLoader = markdownModules[mdKey];
+    if (mdLoader) {
+      mdLoader().then((md) => setMarkdown(md)).catch(() => setMarkdown(""));
+    } else {
+      setMarkdown("");
+    }
+  }, [video.id]);
+
+  const loaded = markdown !== null;
+  const images = markdown ? extractImages(markdown) : [];
+  const bodyText = markdown ? stripImages(markdown).replace(/^#[^\n]*\n/, "").trim() : "";
+  const eyebrow = video.group && !skipGroup(video.group, video.section)
+    ? `${SECTION_LABEL[video.section]} · ${video.group}`
+    : SECTION_LABEL[video.section];
+
+  return (
+    <div className="country-detail">
+      <div className="country-detail__header">
+        <div className="country-detail__header-text">
+          <p className="country-detail__eyebrow">{eyebrow}</p>
+          <h2 className="country-detail__name">{video.name}</h2>
+        </div>
+      </div>
+
+      <div className="country-detail__divider" />
+
+      {!loaded && <p className="country-detail__loading">Consulting the codex…</p>}
+
+      {loaded && images.length > 0 && <ImageGallery images={images} />}
+
+      {loaded && bodyText && (
+        <div className="country-detail__body">
+          <ReactMarkdown>{bodyText}</ReactMarkdown>
+        </div>
+      )}
+
+      {loaded && (
+        <div className="country-detail__block">
+          <p className="location-panel__section-label">Chronicle</p>
+          <button
+            className="location-panel__watch-btn"
+            onClick={() => onVideoSelect(video)}
+            aria-label={`Watch ${video.name}`}
+          >
+            <img
+              src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`}
+              alt={video.name}
+            />
+            <div className="location-panel__watch-overlay">
+              <span className="location-panel__watch-play">▶</span>
+              <span className="location-panel__watch-label">Watch</span>
+            </div>
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ── Compendium ────────────────────────────────────────────────────────────
 export default function Compendium({
   selectedCountry,
@@ -256,6 +345,7 @@ export default function Compendium({
   onVideoSelect,
 }) {
   const [query, setQuery] = useState("");
+  const [selectedEntry, setSelectedEntry] = useState(null);
   const [countriesOpen, setCountriesOpen] = useState(true);
   const [openContinents, setOpenContinents] = useState(
     () => Object.fromEntries(CONTINENTS.map((c) => [c.id, true]))
@@ -283,6 +373,7 @@ export default function Compendium({
       .filter(
         (v) =>
           v.section !== "countries" &&
+          v.section !== "episodes" &&
           (v.name.toLowerCase().includes(q) ||
           (v.group && v.group.toLowerCase().includes(q)) ||
           SECTION_LABEL[v.section]?.toLowerCase().includes(q))
@@ -347,8 +438,8 @@ export default function Compendium({
                         : ""
                     }`}
                     onClick={() => {
-                      if (r.kind === "country") onCountrySelect(r.id);
-                      else onVideoSelect(r.video);
+                      if (r.kind === "country") { onCountrySelect(r.id); setSelectedEntry(null); }
+                      else { setSelectedEntry(r.video); onCountrySelect(null); }
                     }}
                   >
                     <span className="compendium-results__label">{r.label}</span>
@@ -393,7 +484,7 @@ export default function Compendium({
                                 className={`compendium-nav__item${
                                   selectedCountry === c.id ? " compendium-nav__item--active" : ""
                                 }`}
-                                onClick={() => onCountrySelect(c.id)}
+                                onClick={() => { onCountrySelect(c.id); setSelectedEntry(null); }}
                               >
                                 {c.name}
                               </button>
@@ -406,8 +497,8 @@ export default function Compendium({
                 })}
               </div>
 
-              {/* Video sections — skip "countries" (handled by the MD-backed section above) */}
-              {SECTIONS.filter((s) => s.id !== "countries").map((section) => {
+              {/* Video sections — skip "countries" (MD-backed) and "episodes" */}
+              {SECTIONS.filter((s) => s.id !== "countries" && s.id !== "episodes").map((section) => {
                 const groups = videosBySection[section.id] || [];
                 const total = groups.reduce((n, g) => n + g.videos.length, 0);
                 if (!total) return null;
@@ -434,8 +525,8 @@ export default function Compendium({
                           {g.videos.map((v) => (
                             <li key={v.id}>
                               <button
-                                className="compendium-nav__item compendium-nav__item--video"
-                                onClick={() => onVideoSelect(v)}
+                                className={`compendium-nav__item compendium-nav__item--video${selectedEntry?.id === v.id ? " compendium-nav__item--active" : ""}`}
+                                onClick={() => { setSelectedEntry(v); onCountrySelect(null); }}
                               >
                                 {v.name}
                               </button>
@@ -459,6 +550,12 @@ export default function Compendium({
               country={selectedPin}
               onPinSelect={onPinSelect}
               onEntrySelect={onEntrySelect}
+              onVideoSelect={onVideoSelect}
+            />
+          ) : selectedEntry ? (
+            <EntryDetail
+              key={selectedEntry.id}
+              video={selectedEntry}
               onVideoSelect={onVideoSelect}
             />
           ) : (
