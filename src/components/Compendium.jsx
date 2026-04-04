@@ -412,14 +412,6 @@ export default function Compendium({
 
   return (
     <section id="catalog" className="catalog-section">
-      <div className="section-header">
-        <p className="section-eyebrow">ALL ENTRIES</p>
-        <h2 className="section-title">The Compendium</h2>
-        <p className="section-subtitle">
-          Every chronicle, record, and field report in the Codex archive.
-        </p>
-      </div>
-
       <div className="compendium-layout">
         {/* ── Left sidebar ── */}
         <aside className="compendium-sidebar">
