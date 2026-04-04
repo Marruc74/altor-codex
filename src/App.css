@@ -2055,7 +2055,7 @@ body {
 .compendium-nav__group-hd {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 0.4rem;
   width: 100%;
   background: none;
   border: none;
@@ -2069,6 +2069,10 @@ body {
   text-align: left;
   border-bottom: 1px solid var(--border);
   margin-bottom: 0.2rem;
+}
+
+.compendium-nav__group-hd > span:first-child {
+  flex: 1;
 }
 
 .compendium-nav__group-label {
