@@ -4,9 +4,8 @@ import InteractiveMap from "./components/InteractiveMap";
 import LocationPanel from "./components/LocationPanel";
 import Timeline from "./components/Timeline";
 import CodexSection from "./components/CodexSection";
-import CountriesSection from "./components/CountriesSection";
+import Compendium from "./components/Compendium";
 import MediaSection from "./components/MediaSection";
-import VideoCatalog from "./components/VideoCatalog";
 import VideoModal from "./components/VideoModal";
 import GlobalSearch from "./components/GlobalSearch";
 import { entries } from "./data/codex/index.js";
@@ -31,10 +30,10 @@ function getInitialPage() {
   // URL params take priority — navigate to the relevant section
   if (getParam("pin"))     return "map";
   if (getParam("entry"))   return "codex";
-  if (getParam("country")) return "countries";
+  if (getParam("country")) return "catalog";
   // Otherwise read hash
   const hash = window.location.hash.replace("#", "");
-  const valid = ["about", "history", "map", "codex", "countries", "chronicles", "catalog"];
+  const valid = ["about", "history", "map", "codex", "chronicles", "catalog"];
   return valid.includes(hash) ? hash : null;
 }
 
@@ -235,19 +234,6 @@ export default function App() {
         </div>
       )}
 
-      {/* Countries */}
-      {activePage === "countries" && (
-        <div className="page">
-          <CountriesSection
-            selectedCountry={selectedCountry}
-            onCountrySelect={handleCountrySelect}
-            onPinSelect={handlePinSelect}
-            onEntrySelect={handleGlobalEntrySelect}
-            onVideoSelect={handleVideoSelect}
-          />
-        </div>
-      )}
-
       {/* Chronicles */}
       {activePage === "chronicles" && (
         <div className="page">
@@ -258,7 +244,13 @@ export default function App() {
       {/* Compendium */}
       {activePage === "catalog" && (
         <div className="page">
-          <VideoCatalog onVideoSelect={handleVideoSelect} />
+          <Compendium
+            selectedCountry={selectedCountry}
+            onCountrySelect={handleCountrySelect}
+            onPinSelect={handlePinSelect}
+            onEntrySelect={handleGlobalEntrySelect}
+            onVideoSelect={handleVideoSelect}
+          />
         </div>
       )}
 

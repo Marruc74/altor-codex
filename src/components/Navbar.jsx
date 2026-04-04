@@ -5,7 +5,6 @@ const navLinks = [
   { id: "history",    label: "History"    },
   { id: "map",        label: "Map"        },
   { id: "codex",      label: "Codex"      },
-  { id: "countries",  label: "Countries"  },
   { id: "chronicles", label: "Chronicles" },
   { id: "catalog",    label: "Compendium" },
 ];
