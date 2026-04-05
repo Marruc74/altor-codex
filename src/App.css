@@ -247,7 +247,29 @@ body {
 /* ── Hero image ── */
 .hero__image-wrap {
   position: absolute;
-  inset: 0;
+  inset: -22px; /* bleed for parallax shift */
+  transition: transform 0.12s ease-out;
+  will-change: transform;
+}
+
+/* ── Ken Burns slow zoom ── */
+@keyframes kenburns {
+  0%   { transform: scale(1.00) translate( 0%,    0%   ); }
+  33%  { transform: scale(1.05) translate(-0.8%,  0.4% ); }
+  66%  { transform: scale(1.07) translate( 0.5%, -0.5% ); }
+  100% { transform: scale(1.00) translate( 0%,    0%   ); }
+}
+
+/* ── Candle flicker (brightness/contrast) ── */
+@keyframes flicker {
+  0%,100% { filter: brightness(1.00) contrast(1.00); }
+  8%      { filter: brightness(0.97) contrast(1.01); }
+  19%     { filter: brightness(1.02) contrast(0.99); }
+  27%     { filter: brightness(0.96) contrast(1.02); }
+  41%     { filter: brightness(1.01) contrast(1.00); }
+  55%     { filter: brightness(0.98) contrast(1.01); }
+  70%     { filter: brightness(1.03) contrast(0.98); }
+  84%     { filter: brightness(0.97) contrast(1.01); }
 }
 
 .hero__image {
@@ -256,6 +278,17 @@ body {
   object-fit: cover;
   object-position: center 30%;
   display: block;
+  transform-origin: center center;
+  animation:
+    kenburns 45s ease-in-out infinite,
+    flicker  9s ease-in-out infinite;
+  will-change: transform, filter;
+}
+
+/* ── Gradient fade with breathing vignette ── */
+@keyframes vignette-breathe {
+  0%, 100% { opacity: 1;    }
+  50%       { opacity: 0.82; }
 }
 
 /* Gradient fade: dark at very top (for navbar), heavy dark at bottom (for text) */
@@ -270,6 +303,61 @@ body {
       rgba(10,8,7,0.80) 78%,
       rgba(10,8,7,0.97) 100%
     );
+  animation: vignette-breathe 7s ease-in-out infinite;
+}
+
+/* ── Film grain overlay ── */
+@keyframes grain-shift {
+  0%   { transform: translate( 0%,  0%); }
+  20%  { transform: translate(-3%,  2%); }
+  40%  { transform: translate( 2%, -3%); }
+  60%  { transform: translate( 3%,  1%); }
+  80%  { transform: translate(-1%,  3%); }
+}
+
+.hero__grain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0.045;
+  background: #ffffff;
+  filter: url(#hero-grain);
+  mix-blend-mode: overlay;
+  animation: grain-shift 0.09s steps(1) infinite;
+}
+
+/* ── Floating dust motes ── */
+@keyframes mote-float {
+  0%   { transform: translateY(0)     translateX(0);                   opacity: 0;   }
+  8%   { opacity: 1; }
+  90%  { opacity: 0.6; }
+  100% { transform: translateY(-190px) translateX(var(--mote-drift, 20px)); opacity: 0; }
+}
+
+.hero__motes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.mote {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,215,120,0.9) 0%, rgba(255,170,50,0) 70%);
+  animation: mote-float linear infinite;
+}
+
+/* ── Ember canvas ── */
+.hero__embers {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
 }
 
 /* ── Hero text content (sits at the bottom) ── */
@@ -286,48 +374,6 @@ body {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-.hero__description {
-  font-size: clamp(1rem, 2vw, 1.15rem);
-  color: var(--text-muted);
-  font-style: italic;
-  line-height: 1.8;
-  margin-bottom: 2rem;
-  animation: fade-up 1s 0.45s ease both;
-}
-
-.hero__cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  background: none;
-  border: 1px solid var(--gold-dim);
-  color: var(--gold-light);
-  font-family: var(--font-heading);
-  font-size: 0.75rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  padding: 0.9rem 2.5rem;
-  cursor: pointer;
-  position: relative;
-  transition: all var(--transition);
-  animation: fade-up 1s 0.6s ease both;
-  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
-}
-
-.hero__cta::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: var(--gold);
-  opacity: 0;
-  transition: opacity var(--transition);
-}
-
-.hero__cta:hover { color: var(--bg); border-color: var(--gold); }
-.hero__cta:hover::before { opacity: 1; }
-.hero__cta > * { position: relative; z-index: 1; }
-.hero__cta-arrow { font-size: 1rem; }
-
 .hero__surprise {
   display: block;
   margin: 1rem auto 0;
@@ -342,7 +388,7 @@ body {
   cursor: pointer;
   padding: 0.45rem 1.1rem;
   transition: color 0.2s, border-color 0.2s, background 0.2s;
-  animation: fade-up 1s 0.75s ease both;
+  animation: fade-up 1s 0.45s ease both;
 }
 .hero__surprise:hover {
   color: var(--gold);
@@ -350,23 +396,6 @@ body {
   background: rgba(200, 169, 81, 0.08);
 }
 
-.hero__scroll-hint {
-  position: absolute;
-  bottom: 1.2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: var(--font-heading);
-  font-size: 0.6rem;
-  letter-spacing: 0.3em;
-  color: var(--gold-dim);
-  white-space: nowrap;
-  animation: pulse 3s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 0.4; }
-  50%       { opacity: 0.9; }
-}
 
 /* ─── Global Search ─────────────────────────────────────── */
 .gs-backdrop {

@@ -8,6 +8,7 @@ import Compendium from "./components/Compendium";
 import MediaSection from "./components/MediaSection";
 import VideoModal from "./components/VideoModal";
 import GlobalSearch from "./components/GlobalSearch";
+import EmberCanvas from "./components/EmberCanvas";
 import { entries } from "./data/codex/index.js";
 import { pins } from "./data/locations";
 import "./App.css";
@@ -37,11 +38,36 @@ function getInitialPage() {
   return valid.includes(hash) ? hash : null;
 }
 
+const MOTES = Array.from({ length: 25 }, (_, i) => ({
+  id: i,
+  left: `${5 + (i * 3.9) % 90}%`,
+  top:  `${20 + (i * 2.7) % 65}%`,
+  size: `${1.1 + (i % 5) * 0.35}px`,
+  duration: `${9 + (i % 7) * 2.1}s`,
+  delay: `${-(i * 0.85)}s`,
+  drift: `${(i % 2 === 0 ? 1 : -1) * (10 + (i % 4) * 9)}px`,
+  opacity: 0.3 + (i % 3) * 0.13,
+}));
+
 export default function App() {
   const [activePage, setActivePage] = useState(getInitialPage);
 
-  const mapRef   = useRef(null);
-  const codexRef = useRef(null);
+  const mapRef      = useRef(null);
+  const codexRef    = useRef(null);
+  const imageWrapRef = useRef(null);
+
+  const handleHeroMouseMove = useCallback((e) => {
+    if (!imageWrapRef.current) return;
+    const rect = e.currentTarget.getBoundingClientRect();
+    const cx = (e.clientX - rect.left) / rect.width - 0.5;
+    const cy = (e.clientY - rect.top) / rect.height - 0.5;
+    imageWrapRef.current.style.transform = `translate(${cx * -14}px, ${cy * -9}px)`;
+  }, []);
+
+  const handleHeroMouseLeave = useCallback(() => {
+    if (!imageWrapRef.current) return;
+    imageWrapRef.current.style.transform = "";
+  }, []);
 
   const navigate = useCallback((id) => {
     setActivePage(id);
@@ -132,26 +158,54 @@ export default function App() {
 
       {/* Hero — shown only on home */}
       {activePage === null && (
-        <header className="hero">
+        <header className="hero" onMouseMove={handleHeroMouseMove} onMouseLeave={handleHeroMouseLeave}>
+          {/* SVG grain filter definition */}
+          <svg xmlns="http://www.w3.org/2000/svg" style={{ display: "none" }}>
+            <defs>
+              <filter id="hero-grain">
+                <feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="4" stitchTiles="stitch" />
+                <feColorMatrix type="saturate" values="0" />
+              </filter>
+            </defs>
+          </svg>
+
           <div className="hero__bg" />
-          <div className="hero__image-wrap">
+          <div className="hero__image-wrap" ref={imageWrapRef}>
             <img src="/hero-bg.jpg" alt="The Altor Codex — an ancient tome by candlelight" className="hero__image" />
             <div className="hero__image-fade" />
           </div>
+
+          {/* Dust motes */}
+          <div className="hero__motes" aria-hidden="true">
+            {MOTES.map(m => (
+              <span key={m.id} className="mote" style={{
+                left: m.left,
+                top: m.top,
+                width: m.size,
+                height: m.size,
+                animationDuration: m.duration,
+                animationDelay: m.delay,
+                "--mote-drift": m.drift,
+                opacity: m.opacity,
+              }} />
+            ))}
+          </div>
+
+          {/* Floating ember particles */}
+          <EmberCanvas />
+
+          {/* Film grain overlay */}
+          <div className="hero__grain" aria-hidden="true" />
+
           <div className="hero__content">
             <p className="hero__description">
               A compendium of the known world — its regions, cities, histories, and secrets.
               What you find here may save your life. What you don't find here might end it.
             </p>
-            <button className="hero__cta" onClick={() => navigate("chronicles")}>
-              Open the Codex
-              <span className="hero__cta-arrow">↓</span>
-            </button>
             <button className="hero__surprise" onClick={handleSurprise}>
               ✦ Surprise me
             </button>
           </div>
-          <div className="hero__scroll-hint">✦ Scroll to explore ✦</div>
         </header>
       )}
 
