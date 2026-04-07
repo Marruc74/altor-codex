@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Altor Pin Editor</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #161616;
+      color: #ddd;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* ── Toolbar ── */
+    #toolbar {
+      background: #111;
+      border-bottom: 1px solid #2a2a2a;
+      padding: 0 16px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    #toolbar h1 { font-size: 13px; font-weight: 700; color: #c8a951; letter-spacing: 0.12em; }
+    #status { font-size: 12px; color: #666; margin-left: auto; }
+    #pin-count { font-size: 12px; color: #555; }
+
+    /* ── Layout ── */
+    #main { display: flex; flex: 1; overflow: hidden; }
+    #map  { flex: 1; }
+
+    /* ── Sidebar ── */
+    #sidebar {
+      width: 300px;
+      flex-shrink: 0;
+      background: #1c1c1c;
+      border-left: 1px solid #2a2a2a;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    #sidebar-top {
+      padding: 10px;
+      border-bottom: 1px solid #2a2a2a;
+      display: flex;
+      gap: 8px;
+    }
+    #search {
+      flex: 1;
+      background: #242424;
+      border: 1px solid #383838;
+      color: #ddd;
+      padding: 6px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    #search:focus { outline: none; border-color: #c8a951; }
+    #btn-new {
+      background: #1f1e12;
+      border: 1px solid #c8a951;
+      color: #c8a951;
+      padding: 6px 11px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    #btn-new:hover { background: #2a2819; }
+
+    /* ── Pin list ── */
+    #pin-list { flex: 1; overflow-y: auto; }
+    #pin-list::-webkit-scrollbar { width: 6px; }
+    #pin-list::-webkit-scrollbar-track { background: #1c1c1c; }
+    #pin-list::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+
+    .type-header {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: #555;
+      padding: 8px 12px 3px;
+      text-transform: uppercase;
+    }
+    .pin-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 10px 5px 12px;
+      cursor: pointer;
+      border-left: 2px solid transparent;
+    }
+    .pin-row:hover  { background: #222; }
+    .pin-row.active { background: #21200f; border-left-color: #c8a951; }
+    .pin-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+    .pin-name { flex: 1; font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .pin-btns { display: flex; gap: 3px; opacity: 0; }
+    .pin-row:hover .pin-btns { opacity: 1; }
+    .btn-sm {
+      background: none;
+      border: 1px solid #383838;
+      color: #888;
+      width: 20px; height: 20px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 11px;
+      line-height: 1;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .btn-sm:hover { background: #2a2a2a; color: #ddd; }
+    .btn-sm.del:hover { border-color: #aa3333; color: #aa3333; }
+
+    /* ── Form ── */
+    #pin-form {
+      border-top: 1px solid #2a2a2a;
+      padding: 12px;
+      display: none;
+      flex-direction: column;
+      gap: 9px;
+      flex-shrink: 0;
+    }
+    #pin-form.open { display: flex; }
+
+    .form-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #888;
+      text-transform: uppercase;
+      margin-bottom: -2px;
+    }
+
+    .field { display: flex; flex-direction: column; gap: 3px; }
+    .field label { font-size: 10px; color: #666; text-transform: uppercase; letter-spacing: 0.08em; }
+    .field input, .field select {
+      background: #242424;
+      border: 1px solid #383838;
+      color: #ddd;
+      padding: 5px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    .field input:focus, .field select:focus { outline: none; border-color: #c8a951; }
+
+    .row2 { display: flex; gap: 8px; }
+    .row2 .field { flex: 1; }
+
+    .coord-group { display: flex; gap: 8px; align-items: flex-end; }
+    .coord-group .field { flex: 1; }
+
+    #btn-pick {
+      background: #1f1e12;
+      border: 1px solid #555;
+      color: #aaa;
+      padding: 5px 9px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 11px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      height: 28px;
+    }
+    #btn-pick:hover { background: #2a2819; border-color: #c8a951; color: #c8a951; }
+    #btn-pick.picking { border-color: #c8a951; color: #c8a951; background: #2a2819; }
+
+    .form-actions { display: flex; gap: 8px; }
+    #btn-save {
+      flex: 1;
+      background: #c8a951;
+      border: none;
+      color: #111;
+      padding: 7px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    #btn-save:hover { background: #d4b860; }
+    #btn-cancel {
+      background: #242424;
+      border: 1px solid #383838;
+      color: #888;
+      padding: 7px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    #btn-cancel:hover { background: #2a2a2a; }
+
+    /* ── Leaflet overrides ── */
+    .leaflet-container { background: #0d0d0d; }
+    .picking-cursor .leaflet-container { cursor: crosshair !important; }
+    .altor-pin { background: none !important; border: none !important; }
+  </style>
+</head>
+<body>
+
+<div id="toolbar">
+  <h1>✦ ALTOR PIN EDITOR</h1>
+  <span id="pin-count"></span>
+  <span id="status">Loading…</span>
+</div>
+
+<div id="main">
+  <div id="map"></div>
+
+  <div id="sidebar">
+    <div id="sidebar-top">
+      <input id="search" type="text" placeholder="Filter pins…" autocomplete="off">
+      <button id="btn-new">+ New</button>
+    </div>
+
+    <div id="pin-list"></div>
+
+    <form id="pin-form" autocomplete="off" novalidate>
+      <div class="form-title" id="form-title">New Pin</div>
+
+      <div class="field">
+        <label>Name</label>
+        <input id="f-name" type="text" placeholder="e.g. Pendon" required>
+      </div>
+
+      <div class="row2">
+        <div class="field">
+          <label>ID</label>
+          <input id="f-id" type="text" placeholder="e.g. pendon" required>
+        </div>
+        <div class="field">
+          <label>Type</label>
+          <select id="f-type">
+            <option value="continent">Continent</option>
+            <option value="country">Country</option>
+            <option value="region">Region</option>
+            <option value="mountain">Mountain</option>
+            <option value="forest">Forest</option>
+            <option value="water">Water</option>
+            <option value="site">Site</option>
+            <option value="capital" selected>Capital</option>
+            <option value="city">City</option>
+            <option value="ruin">Ruin</option>
+            <option value="dungeon">Dungeon</option>
+            <option value="shrine">Shrine</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row2">
+        <div class="field">
+          <label>Continent <span style="color:#444">(opt)</span></label>
+          <input id="f-continent" type="text" placeholder="e.g. ereb">
+        </div>
+        <div class="field">
+          <label>Tagline <span style="color:#444">(opt)</span></label>
+          <input id="f-tagline" type="text" placeholder="">
+        </div>
+      </div>
+
+      <div class="coord-group">
+        <div class="field">
+          <label>X</label>
+          <input id="f-x" type="number" min="0" max="6144" required>
+        </div>
+        <div class="field">
+          <label>Y</label>
+          <input id="f-y" type="number" min="0" max="4096" required>
+        </div>
+        <button type="button" id="btn-pick" title="Click on map to set coordinates">📍 Pick</button>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" id="btn-save">Save</button>
+        <button type="button" id="btn-cancel">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  const IMG_W = 6144, IMG_H = 4096;
+
+  function toLatLng(x, y)    { return [-y, x]; }
+  function fromLatLng(lat, lng) { return { x: Math.round(lng), y: Math.round(-lat) }; }
+
+  const PIN_COLORS = {
+    capital: '#c8a951', city: '#c0c0c0', continent: '#9a6abf',
+    country: '#c87a3a', region: '#7a9a5a', water: '#4a7aaa',
+    mountain: '#9a9a9a', forest: '#4a7a3a', site: '#a07840',
+    ruin: '#8a6520', dungeon: '#8a2020', shrine: '#3a7a6a',
+  };
+
+  const TYPE_ORDER = [
+    'continent','country','region','mountain','forest',
+    'water','site','capital','city','ruin','dungeon','shrine',
+  ];
+  const TYPE_LABELS = {
+    continent:'Continents', country:'Countries', region:'Regions',
+    mountain:'Mountains', forest:'Forests', water:'Water',
+    site:'Sites', capital:'Capitals', city:'Cities',
+    ruin:'Ruins', dungeon:'Dungeons', shrine:'Shrines',
+  };
+
+  // ── State ──────────────────────────────────────────────────────────────────
+
+  let pins     = [];
+  let markers  = {};   // id → Leaflet marker
+  let editId   = null; // null = new pin, string = existing id being edited
+  let picking  = false;
+
+  // ── Map ────────────────────────────────────────────────────────────────────
+
+  const mapBounds = [[-IMG_H, 0], [0, IMG_W]];
+  const map = L.map('map', {
+    crs: L.CRS.Simple,
+    minZoom: -2, maxZoom: 3,
+    zoomSnap: 0.25, zoomDelta: 0.5,
+    attributionControl: false,
+    maxBounds: [[-IMG_H * 1.2, -IMG_W * 0.2], [IMG_H * 0.2, IMG_W * 1.2]],
+    maxBoundsViscosity: 0.85,
+  });
+
+  L.tileLayer('/tiles/{z}/{x}/{y}.png', {
+    tileSize: 256, minZoom: -2, maxNativeZoom: 0,
+    maxZoom: 3, zoomOffset: 2, noWrap: true, bounds: mapBounds,
+  }).addTo(map);
+
+  map.fitBounds(mapBounds);
+
+  map.on('click', e => {
+    if (!picking) return;
+    const { x, y } = fromLatLng(e.latlng.lat, e.latlng.lng);
+    document.getElementById('f-x').value = Math.max(0, Math.min(IMG_W, x));
+    document.getElementById('f-y').value = Math.max(0, Math.min(IMG_H, y));
+    stopPicking();
+  });
+
+  // ── Icons ──────────────────────────────────────────────────────────────────
+
+  function makeIcon(type, selected) {
+    const color = PIN_COLORS[type] || '#888';
+    const r = selected ? 8 : 5;
+    const w = r * 2, h = r * 2 + 5;
+    const svg =
+      '<svg xmlns="http://www.w3.org/2000/svg" width="' + w + '" height="' + h + '"' +
+      ' viewBox="0 0 ' + w + ' ' + h + '">' +
+      '<circle cx="' + r + '" cy="' + r + '" r="' + (r - 1) + '"' +
+      ' fill="' + color + '" stroke="#0a0807" stroke-width="1.5"/>' +
+      '<line x1="' + r + '" y1="' + (r * 2 - 1) + '" x2="' + r + '" y2="' + h + '"' +
+      ' stroke="' + color + '" stroke-width="1.5" opacity="0.7"/>' +
+      '</svg>';
+    return L.divIcon({
+      html: svg, className: 'altor-pin',
+      iconSize:   [w, h],
+      iconAnchor: [r, h],
+      popupAnchor:[0, -h],
+    });
+  }
+
+  // ── API ────────────────────────────────────────────────────────────────────
+
+  async function loadPins() {
+    const res = await fetch('/api/pins');
+    pins = await res.json();
+    renderMap();
+    renderList();
+    setStatus(pins.length + ' pins loaded');
+    document.getElementById('pin-count').textContent = pins.length + ' pins';
+  }
+
+  async function savePins() {
+    const res = await fetch('/api/pins', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(pins),
+    });
+    if (!res.ok) {
+      const e = await res.json().catch(() => ({ error: 'Unknown error' }));
+      alert('Save failed: ' + e.error);
+      return false;
+    }
+    return true;
+  }
+
+  // ── Render map ─────────────────────────────────────────────────────────────
+
+  function renderMap() {
+    Object.values(markers).forEach(m => m.remove());
+    markers = {};
+    pins.forEach(pin => {
+      const m = L.marker(toLatLng(pin.x, pin.y), {
+        icon: makeIcon(pin.type, pin.id === editId),
+        title: pin.name,
+        zIndexOffset: pin.id === editId ? 1000 : 0,
+      }).addTo(map);
+      m.bindTooltip(
+        '<strong>' + pin.name + '</strong><br><span style="color:#888;font-size:11px">' + pin.type + '  x:' + pin.x + ' y:' + pin.y + '</span>',
+        { direction: 'top', offset: [0, -4] }
+      );
+      m.on('click', () => startEdit(pin.id));
+      markers[pin.id] = m;
+    });
+  }
+
+  // ── Render list ────────────────────────────────────────────────────────────
+
+  function renderList() {
+    const q = document.getElementById('search').value.trim().toLowerCase();
+    const visible = q
+      ? pins.filter(p => p.name.toLowerCase().includes(q) || p.id.includes(q))
+      : pins;
+
+    const grouped = new Map(TYPE_ORDER.map(t => [t, []]));
+    for (const pin of visible) {
+      if (!grouped.has(pin.type)) grouped.set(pin.type, []);
+      grouped.get(pin.type).push(pin);
+    }
+
+    const list = document.getElementById('pin-list');
+    list.innerHTML = '';
+
+    for (const [type, group] of grouped) {
+      if (!group.length) continue;
+
+      const hdr = document.createElement('div');
+      hdr.className = 'type-header';
+      hdr.textContent = (TYPE_LABELS[type] || type) + ' (' + group.length + ')';
+      list.appendChild(hdr);
+
+      for (const pin of group) {
+        const row = document.createElement('div');
+        row.className = 'pin-row' + (pin.id === editId ? ' active' : '');
+        row.dataset.id = pin.id;
+
+        const dot = document.createElement('span');
+        dot.className = 'pin-dot';
+        dot.style.background = PIN_COLORS[pin.type] || '#888';
+
+        const name = document.createElement('span');
+        name.className = 'pin-name';
+        name.textContent = pin.name;
+
+        const btns = document.createElement('div');
+        btns.className = 'pin-btns';
+
+        const editBtn = document.createElement('button');
+        editBtn.className = 'btn-sm';
+        editBtn.title = 'Edit';
+        editBtn.textContent = '✎';
+        editBtn.addEventListener('click', e => { e.stopPropagation(); startEdit(pin.id); });
+
+        const delBtn = document.createElement('button');
+        delBtn.className = 'btn-sm del';
+        delBtn.title = 'Delete';
+        delBtn.textContent = '✕';
+        delBtn.addEventListener('click', e => { e.stopPropagation(); deletePin(pin.id); });
+
+        btns.appendChild(editBtn);
+        btns.appendChild(delBtn);
+        row.appendChild(dot);
+        row.appendChild(name);
+        row.appendChild(btns);
+
+        row.addEventListener('click', () => flyTo(pin));
+        list.appendChild(row);
+      }
+    }
+  }
+
+  // ── Picking ────────────────────────────────────────────────────────────────
+
+  function startPicking() {
+    picking = true;
+    document.getElementById('btn-pick').classList.add('picking');
+    document.getElementById('btn-pick').textContent = '✕ Cancel';
+    document.body.classList.add('picking-cursor');
+    setStatus('Click the map to set coordinates…');
+  }
+
+  function stopPicking() {
+    picking = false;
+    document.getElementById('btn-pick').classList.remove('picking');
+    document.getElementById('btn-pick').textContent = '📍 Pick';
+    document.body.classList.remove('picking-cursor');
+    setStatus('');
+  }
+
+  // ── Edit form ──────────────────────────────────────────────────────────────
+
+  function startEdit(id) {
+    const pin = pins.find(p => p.id === id);
+    if (!pin) return;
+    editId = id;
+
+    document.getElementById('form-title').textContent = 'Edit Pin';
+    document.getElementById('f-id').value        = pin.id;
+    document.getElementById('f-name').value      = pin.name;
+    document.getElementById('f-type').value      = pin.type;
+    document.getElementById('f-continent').value = pin.continent || '';
+    document.getElementById('f-tagline').value   = pin.tagline   || '';
+    document.getElementById('f-x').value         = pin.x;
+    document.getElementById('f-y').value         = pin.y;
+
+    openForm();
+    flyTo(pin);
+    renderMap();
+    renderList();
+    scrollToPin(id);
+  }
+
+  function startNew() {
+    editId = null;
+    document.getElementById('form-title').textContent = 'New Pin';
+    document.getElementById('f-id').value        = '';
+    document.getElementById('f-name').value      = '';
+    document.getElementById('f-type').value      = 'city';
+    document.getElementById('f-continent').value = '';
+    document.getElementById('f-tagline').value   = '';
+    document.getElementById('f-x').value         = '';
+    document.getElementById('f-y').value         = '';
+    openForm();
+    renderList();
+  }
+
+  function openForm()  { document.getElementById('pin-form').classList.add('open'); }
+  function closeForm() {
+    document.getElementById('pin-form').classList.remove('open');
+    stopPicking();
+    editId = null;
+    renderMap();
+    renderList();
+  }
+
+  function flyTo(pin) {
+    map.flyTo(toLatLng(pin.x, pin.y), 1, { duration: 0.6 });
+  }
+
+  function scrollToPin(id) {
+    const row = document.querySelector('.pin-row[data-id="' + id + '"]');
+    if (row) row.scrollIntoView({ block: 'nearest' });
+  }
+
+  // ── Auto-ID from name ──────────────────────────────────────────────────────
+
+  document.getElementById('f-name').addEventListener('input', e => {
+    if (editId) return;
+    const id = e.target.value
+      .toLowerCase()
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9\s-]/g, '')
+      .trim()
+      .replace(/\s+/g, '-');
+    document.getElementById('f-id').value = id;
+  });
+
+  // ── Save ───────────────────────────────────────────────────────────────────
+
+  document.getElementById('pin-form').addEventListener('submit', async e => {
+    e.preventDefault();
+
+    const id   = document.getElementById('f-id').value.trim();
+    const name = document.getElementById('f-name').value.trim();
+    const x    = parseInt(document.getElementById('f-x').value, 10);
+    const y    = parseInt(document.getElementById('f-y').value, 10);
+
+    if (!id || !name || isNaN(x) || isNaN(y)) {
+      setStatus('Please fill in all required fields.');
+      return;
+    }
+
+    const pin = {
+      id, name,
+      type:      document.getElementById('f-type').value,
+      tagline:   document.getElementById('f-tagline').value.trim(),
+      x, y,
+    };
+    const cont = document.getElementById('f-continent').value.trim();
+    if (cont) pin.continent = cont;
+
+    // If id changed, remove old entry
+    if (editId && editId !== id) {
+      pins = pins.filter(p => p.id !== editId);
+    }
+
+    const idx = pins.findIndex(p => p.id === id);
+    if (idx >= 0) pins[idx] = pin;
+    else          pins.push(pin);
+
+    const ok = await savePins();
+    if (!ok) return;
+
+    closeForm();
+    renderMap();
+    renderList();
+    document.getElementById('pin-count').textContent = pins.length + ' pins';
+    setStatus('Saved "' + name + '"');
+
+    setTimeout(() => {
+      flyTo(pin);
+      if (markers[id]) markers[id].openTooltip();
+    }, 100);
+  });
+
+  // ── Delete ─────────────────────────────────────────────────────────────────
+
+  async function deletePin(id) {
+    const pin = pins.find(p => p.id === id);
+    if (!confirm('Delete "' + (pin ? pin.name : id) + '"?')) return;
+    pins = pins.filter(p => p.id !== id);
+    if (editId === id) closeForm();
+    const ok = await savePins();
+    if (!ok) { pins = await fetch('/api/pins').then(r => r.json()); }
+    renderMap();
+    renderList();
+    document.getElementById('pin-count').textContent = pins.length + ' pins';
+    setStatus('Deleted "' + (pin ? pin.name : id) + '"');
+  }
+
+  // ── Wiring ─────────────────────────────────────────────────────────────────
+
+  document.getElementById('btn-new').addEventListener('click', startNew);
+  document.getElementById('btn-cancel').addEventListener('click', closeForm);
+  document.getElementById('btn-pick').addEventListener('click', () => picking ? stopPicking() : startPicking());
+  document.getElementById('search').addEventListener('input', renderList);
+
+  // ── Keybindings ────────────────────────────────────────────────────────────
+  // P          — toggle Pick mode (form must be open, not typing)
+  // Ctrl+S     — Save (form must be open)
+  // Escape     — Cancel pick, or close form
+  // Capture phase so Leaflet can't swallow the events.
+
+  window.addEventListener('keydown', e => {
+    const tag = document.activeElement?.tagName ?? '';
+    const typing = tag === 'INPUT' || tag === 'SELECT' || tag === 'TEXTAREA';
+    const formOpen = document.getElementById('pin-form').classList.contains('open');
+
+    // Always trap Ctrl+S — prevents browser save dialog regardless of form state
+    if (e.ctrlKey && e.key === 's') {
+      e.preventDefault();
+      if (formOpen) document.getElementById('pin-form').dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
+      return;
+    }
+
+    if (e.key === 'Escape') {
+      if (picking) { stopPicking(); return; }
+      if (formOpen) { closeForm(); return; }
+    }
+
+    if (!typing && e.key.toLowerCase() === 'n') {
+      startNew();
+    }
+
+    if (!typing && formOpen && e.key.toLowerCase() === 'p') {
+      picking ? stopPicking() : startPicking();
+    }
+
+    // Enter saves when focus is outside the form inputs (e.g. on the map)
+    // Native Enter-in-input already submits, so only handle the non-typing case
+    if (e.key === 'Enter' && formOpen && !typing) {
+      e.preventDefault();
+      document.getElementById('pin-form').dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
+    }
+  }, true); // capture phase
+
+  function setStatus(msg) { document.getElementById('status').textContent = msg; }
+
+  loadPins();
+</script>
+</body>
+</html>
