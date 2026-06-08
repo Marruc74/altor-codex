@@ -1,9 +1,22 @@
+import { useState } from "react";
+
 export default function CodexCard({ entry, onSelect, onTagClick }) {
+  // Portrait/tall images get a 2:3 image box so they show in full instead of
+  // being cropped to 16:9 (detected from the image's natural dimensions).
+  const [portrait, setPortrait] = useState(false);
   return (
-    <article className="codex-card" onClick={() => onSelect(entry)}>
+    <article
+      className={`codex-card${portrait ? " codex-card--portrait" : ""}`}
+      onClick={() => onSelect(entry)}
+    >
       <div className="codex-card__image-wrap">
         {entry.image ? (
-          <img src={entry.image} alt={entry.title} className="codex-card__image" />
+          <img
+            src={entry.image}
+            alt={entry.title}
+            className="codex-card__image"
+            onLoad={(e) => setPortrait(e.currentTarget.naturalHeight > e.currentTarget.naturalWidth)}
+          />
         ) : (
           <div className="codex-card__placeholder">◈</div>
         )}
