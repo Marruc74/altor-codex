@@ -3,7 +3,8 @@ import ReactMarkdown from "react-markdown";
 import { SECTIONS, videosBySection, videos as allVideos } from "../data/videoData";
 import { pins } from "../data/locations";
 import { entries } from "../data/codex/index.js";
-import { videosForPin } from "../data/crossLinks";
+import { adventures } from "../data/adventures";
+import { videosForPin, relatedVideosByVideo } from "../data/crossLinks";
 
 // ── Image utilities ───────────────────────────────────────────────────────
 const IMAGE_RE = /!\[([^\]]*)\]\(([^")]+?)(?:\s+"([^"]*)")?\)/g;
@@ -104,6 +105,16 @@ const countries = pins
   .filter((p) => p.type === "country")
   .sort((a, b) => a.name.localeCompare(b.name));
 
+// Curated non-country pins that should also appear as places in the Geography
+// nav (nested under their continent), e.g. a notable region/forest with a video.
+const EXTRA_GEO_PLACE_IDS = new Set(["mereld", "goiana"]);
+const geoPlaces = pins
+  .filter((p) => p.type === "country" || EXTRA_GEO_PLACE_IDS.has(p.id))
+  .sort((a, b) => a.name.localeCompare(b.name));
+
+const placeKind = (pin) =>
+  pin.type === "country" ? "Country" : pin.type[0].toUpperCase() + pin.type.slice(1);
+
 const SECTION_LABEL = Object.fromEntries(SECTIONS.map((s) => [s.id, s.label]));
 
 // ── Path helpers ──────────────────────────────────────────────────────────
@@ -173,7 +184,7 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect }) {
     <div className="country-detail">
       <div className="country-detail__header">
         <div className="country-detail__header-text">
-          <p className="country-detail__eyebrow">Country</p>
+          <p className="country-detail__eyebrow">{placeKind(country)}</p>
           <h2 className="country-detail__name">{country.name}</h2>
           {country.tagline && <p className="country-detail__tagline">"{country.tagline}"</p>}
         </div>
@@ -292,6 +303,9 @@ function EntryDetail({ video, onVideoSelect }) {
   const eyebrow = video.group && !skipGroup(video.group, video.section)
     ? `${SECTION_LABEL[video.section]} · ${video.group}`
     : SECTION_LABEL[video.section];
+  const relatedVideos = (relatedVideosByVideo[video.id] ?? [])
+    .map((id) => videoById[id])
+    .filter(Boolean);
 
   return (
     <div className="country-detail">
@@ -333,6 +347,141 @@ function EntryDetail({ video, onVideoSelect }) {
           </button>
         </div>
       )}
+
+      {relatedVideos.length > 0 && (
+        <div className="country-detail__block">
+          <p className="location-panel__section-label">Related Videos</p>
+          <div className="location-panel__video-strip">
+            {relatedVideos.map((rv) => (
+              <button
+                key={rv.id}
+                className="location-panel__video-thumb"
+                onClick={() => onVideoSelect(rv)}
+                title={rv.name}
+              >
+                <img
+                  src={`https://img.youtube.com/vi/${rv.id}/mqdefault.jpg`}
+                  alt={rv.name}
+                />
+                <div className="location-panel__video-thumb-overlay">▶</div>
+                <span className="location-panel__video-thumb-label">{rv.name}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ── AdventureDetail ───────────────────────────────────────────────────────
+function AdventureDetail({ adventure, onVideoSelect }) {
+  const [markdown, setMarkdown] = useState(null);
+
+  useEffect(() => {
+    setMarkdown(null);
+    const mdLoader = adventure.detail
+      ? markdownModules[`../data/codex/${adventure.detail}`]
+      : null;
+    if (mdLoader) {
+      mdLoader().then((md) => setMarkdown(md)).catch(() => setMarkdown(""));
+    } else {
+      setMarkdown("");
+    }
+  }, [adventure.id]);
+
+  const loaded = markdown !== null;
+  const images = markdown ? extractImages(markdown) : [];
+  const bodyText = markdown ? stripImages(markdown).replace(/^#[^\n]*\n/, "").trim() : "";
+  const characters = adventure.characters ?? [];
+  const relatedVideos = (adventure.videoIds ?? [])
+    .map((id) => videoById[id] ?? { id, name: id })
+    .filter(Boolean);
+
+  return (
+    <div className="country-detail">
+      <div className="country-detail__header">
+        <div className="country-detail__header-text">
+          <p className="country-detail__eyebrow">Adventure</p>
+          <h2 className="country-detail__name">{adventure.title}</h2>
+          {adventure.tagline && <p className="country-detail__tagline">"{adventure.tagline}"</p>}
+        </div>
+      </div>
+
+      <div className="country-detail__divider" />
+
+      {!loaded && <p className="country-detail__loading">Consulting the codex…</p>}
+
+      {loaded && images.length > 0 && <ImageGallery images={images} />}
+
+      {adventure.summary && (
+        <p className="country-detail__description">{adventure.summary}</p>
+      )}
+
+      {loaded && bodyText && (
+        <div className="country-detail__body">
+          <ReactMarkdown>{bodyText}</ReactMarkdown>
+        </div>
+      )}
+
+      {characters.length > 0 && (
+        <div className="country-detail__block">
+          <p className="location-panel__section-label">Characters</p>
+          <div className="country-detail__entries-grid">
+            {characters.map((ch, i) => {
+              const inner = (
+                <>
+                  <div className="codex-card__image-wrap">
+                    {ch.image ? (
+                      <img className="codex-card__image" src={ch.image} alt={ch.name} />
+                    ) : (
+                      <span className="codex-card__placeholder">◈</span>
+                    )}
+                  </div>
+                  <div className="codex-card__body">
+                    <p className="codex-card__title">{ch.name}</p>
+                    {ch.role && <p className="codex-card__summary">{ch.role}</p>}
+                  </div>
+                </>
+              );
+              return ch.videoId ? (
+                <button
+                  key={ch.videoId}
+                  className="codex-card"
+                  onClick={() => onVideoSelect(videoById[ch.videoId] ?? { id: ch.videoId, title: ch.name })}
+                >
+                  {inner}
+                </button>
+              ) : (
+                <div key={ch.name ?? i} className="codex-card">{inner}</div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {relatedVideos.length > 0 && (
+        <div className="country-detail__block">
+          <p className="location-panel__section-label">Related Videos</p>
+          <div className="location-panel__video-strip">
+            {relatedVideos.map((rv) => (
+              <button
+                key={rv.id}
+                className="location-panel__video-thumb"
+                onClick={() => onVideoSelect(rv)}
+                title={rv.name}
+              >
+                <img
+                  src={`https://img.youtube.com/vi/${rv.id}/mqdefault.jpg`}
+                  alt={rv.name}
+                />
+                <div className="location-panel__video-thumb-overlay">▶</div>
+                <span className="location-panel__video-thumb-label">{rv.name}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -341,6 +490,8 @@ function EntryDetail({ video, onVideoSelect }) {
 export default function Compendium({
   selectedCountry,
   onCountrySelect,
+  selectedAdventure,
+  onAdventureSelect,
   onPinSelect,
   onEntrySelect,
   onVideoSelect,
@@ -360,9 +511,9 @@ export default function Compendium({
     const q = query.trim().toLowerCase();
     if (!q) return null;
 
-    const matchCountries = countries
+    const matchCountries = geoPlaces
       .filter((c) => c.name.toLowerCase().includes(q))
-      .map((c) => ({ kind: "country", id: c.id, label: c.name, sub: "Country", pin: c }));
+      .map((c) => ({ kind: "country", id: c.id, label: c.name, sub: placeKind(c), pin: c }));
 
     const matchVideos = allVideos
       .filter(
@@ -389,10 +540,11 @@ export default function Compendium({
     const geoVideoGroups = videosBySection["geography"] || [];
     const geoByName = Object.fromEntries(geoVideoGroups.map((g) => [g.group ?? "", g.videos]));
     const continentNames = new Set(CONTINENTS.map((c) => c.name));
+    const placeNames = new Set(geoPlaces.map((p) => p.name.toLowerCase()));
     const result = [];
 
     for (const continent of CONTINENTS) {
-      const cs = countries.filter((c) => c.continent === continent.id);
+      const cs = geoPlaces.filter((c) => c.continent === continent.id);
       const geoVids = geoByName[continent.name] || [];
       if (cs.length || geoVids.length)
         result.push({ id: continent.id, name: continent.name, countries: cs, videos: geoVids });
@@ -401,14 +553,17 @@ export default function Compendium({
       if (!g.group || continentNames.has(g.group)) continue;
       result.push({ id: `geo-${g.group}`, name: g.group, countries: [], videos: g.videos });
     }
-    const ungrouped = geoByName[""];
-    if (ungrouped?.length)
+    // A geography video whose name matches a place pin is already represented by
+    // that place above (e.g. Goiana) — drop it from the loose "ungrouped" bucket.
+    const ungrouped = (geoByName[""] || []).filter((v) => !placeNames.has(v.name.toLowerCase()));
+    if (ungrouped.length)
       result.push({ id: "geo-ungrouped", name: null, countries: [], videos: ungrouped });
 
     return result;
   }, []);
 
-  const selectedPin = countries.find((c) => c.id === selectedCountry) ?? null;
+  const selectedPin = geoPlaces.find((c) => c.id === selectedCountry) ?? null;
+  const selectedAdventureObj = adventures.find((a) => a.id === selectedAdventure) ?? null;
 
   return (
     <section id="catalog" className="catalog-section">
@@ -449,6 +604,7 @@ export default function Compendium({
                         : ""
                     }`}
                     onClick={() => {
+                      onAdventureSelect(null);
                       if (r.kind === "country") { onCountrySelect(r.id); setSelectedEntry(null); }
                       else { setSelectedEntry(r.video); onCountrySelect(null); }
                     }}
@@ -462,6 +618,40 @@ export default function Compendium({
           ) : (
             /* ── Full navigation tree ── */
             <nav className="compendium-nav">
+              {/* Adventures — campaign pages, not video-driven */}
+              {adventures.length > 0 && (() => {
+                const advOpen = openSections["adventures"] ?? false;
+                return (
+                  <div className="compendium-nav__section">
+                    <button
+                      className="compendium-nav__section-hd"
+                      onClick={() => toggleSection("adventures")}
+                    >
+                      <span className="compendium-nav__sigil">❖</span>
+                      <span className="compendium-nav__title">Adventures</span>
+                      <span className="compendium-nav__count">{adventures.length}</span>
+                      <span className="compendium-nav__toggle">{advOpen ? "▲" : "▼"}</span>
+                    </button>
+                    {advOpen && (
+                      <div className="compendium-nav__group">
+                        <ul className="compendium-nav__list">
+                          {adventures.map((a) => (
+                            <li key={a.id}>
+                              <button
+                                className={`compendium-nav__item${selectedAdventure === a.id ? " compendium-nav__item--active" : ""}`}
+                                onClick={() => { onAdventureSelect(a.id); onCountrySelect(null); setSelectedEntry(null); }}
+                              >
+                                {a.title}
+                              </button>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                );
+              })()}
+
               {/* Geography — countries + geography videos merged by region */}
               {(() => {
                 const geoSec = SECTIONS.find((s) => s.id === "geography");
@@ -500,7 +690,7 @@ export default function Compendium({
                                 <li key={`c-${c.id}`}>
                                   <button
                                     className={`compendium-nav__item${selectedCountry === c.id ? " compendium-nav__item--active" : ""}`}
-                                    onClick={() => { onCountrySelect(c.id); setSelectedEntry(null); }}
+                                    onClick={() => { onAdventureSelect(null); onCountrySelect(c.id); setSelectedEntry(null); }}
                                   >
                                     {c.name}
                                   </button>
@@ -510,7 +700,7 @@ export default function Compendium({
                                 <li key={`v-${v.id}`}>
                                   <button
                                     className={`compendium-nav__item compendium-nav__item--video${selectedEntry?.id === v.id ? " compendium-nav__item--active" : ""}`}
-                                    onClick={() => { setSelectedEntry(v); onCountrySelect(null); }}
+                                    onClick={() => { onAdventureSelect(null); setSelectedEntry(v); onCountrySelect(null); }}
                                   >
                                     {v.name}
                                   </button>
@@ -569,7 +759,7 @@ export default function Compendium({
                                 <li key={v.id}>
                                   <button
                                     className={`compendium-nav__item compendium-nav__item--video${selectedEntry?.id === v.id ? " compendium-nav__item--active" : ""}`}
-                                    onClick={() => { setSelectedEntry(v); onCountrySelect(null); }}
+                                    onClick={() => { onAdventureSelect(null); setSelectedEntry(v); onCountrySelect(null); }}
                                   >
                                     {v.name}
                                   </button>
@@ -595,6 +785,12 @@ export default function Compendium({
               country={selectedPin}
               onPinSelect={onPinSelect}
               onEntrySelect={onEntrySelect}
+              onVideoSelect={onVideoSelect}
+            />
+          ) : selectedAdventureObj ? (
+            <AdventureDetail
+              key={selectedAdventureObj.id}
+              adventure={selectedAdventureObj}
               onVideoSelect={onVideoSelect}
             />
           ) : selectedEntry ? (

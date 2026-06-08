@@ -238,6 +238,40 @@ export const rawVideos = [
   { id: "lhEAWjCEZjQ", title: "Corporeal Undead: Mara", views: 1 },
   { id: "MRa9ERgbzZw", title: "Corporeal Undead: Vampire", views: 1 },
   { id: "l4Qhd8TmyzU", title: "Sylvan: Hob", views: 1 },
+  // Newer shorts (Mar–Apr 2026 uploads). View counts are from the latest
+  // reporting period; titles normalized to the existing "Category Group: Name" scheme.
+  { id: "ZekDwW6f-D4", title: "Faction: Deathdancers", views: 6 },
+  { id: "-6xRYHUI71Q", title: "Religion: Inashtar", views: 4 },
+  { id: "Y8bObKzyMJA", title: "Faction: Treeshapers", views: 4 },
+  { id: "L9GOPwtFap8", title: "Faction: Lunorgh Kah", views: 3 },
+  { id: "DtWxUp5GMEk", title: "Faction: Brothers of Darkness", views: 3 },
+  { id: "SPxoPRwTtDY", title: "Elves: Cities beneath ground", views: 2 },
+  { id: "QA00fO4mqNU", title: "Elves: Floating Islands", views: 2 },
+  { id: "pf3G1J3vqWI", title: "Elves: White Towers", views: 2 },
+  { id: "qmsuI9xPeJ8", title: "Countries: Mereld", views: 2 },
+  { id: "6JVP0Wpgd20", title: "Elves: Fortress", views: 2 },
+  { id: "eBEsZSzhUXA", title: "Religion: Shamash", views: 2 },
+  { id: "CiDrS5KhZdU", title: "Religion: Church of Sbintor", views: 1 },
+  { id: "Iv8lu99cndA", title: "Faction: Urgh Grobb", views: 1 },
+  { id: "2zu0EkzUrwE", title: "Faction: Mistali", views: 1 },
+  { id: "qtpWTQSOoJA", title: "Faction: Deathbringers", views: 1 },
+  { id: "eQMv0UtUvkc", title: "Faction: Ylkor kha oggra", views: 1 },
+  { id: "VvN2fABOSic", title: "Faction: Rulgh Borgnag", views: 1 },
+  { id: "unoYZDN9oDI", title: "Countries Trakorien: Palamux", views: 1 },
+  { id: "EwOASKSHPAQ", title: "Religion: Kashim", views: 1 },
+  { id: "bjfL1Q3Zx9o", title: "Religion: Imária", views: 1 },
+  { id: "YtbKtxdAXaw", title: "Religion: Wegil", views: 0 },
+  { id: "KTYDdEp1TVU", title: "Dark Folks: Raukk", views: 0 },
+  { id: "fHpDb9q-cHs", title: "Countries Montures: Mokylider", views: 0 },
+  { id: "XQz7E5amhRo", title: "Countries Montures: Gideon Canyon", views: 0 },
+  { id: "5Hn5hYjbgRM", title: "Faction: Gylk Lobbnack", views: 0 },
+  { id: "c8YUGN3a584", title: "Faction: Grogol Gribb", views: 0 },
+  { id: "fxbalheg_7s", title: "Faction: RhobdoRana", views: 0 },
+  { id: "TC-mYynQyhI", title: "Faction: Dekkadorel Gnubbt", views: 0 },
+  { id: "Kh10kmtfGqg", title: "Region: Goiana", views: 0 },
+  { id: "-KFjJMOgv8A", title: "Countries Trakorien: Saphyna", views: 0 },
+  { id: "objR6mJ86IU", title: "Faction: Kallakadak Yldrokk", views: 0 },
+  { id: "pg3WrOPPGTA", title: "Countries Zorakin: Pendon", views: 0 },
 ];
 
 // Category → section mapping
@@ -267,6 +301,8 @@ const SECTION_MAP = {
   Character:          "characters",
   Religion:           "lore",
   Lore:               "lore",
+  Faction:            "lore",
+  Region:             "geography",
 };
 
 // For these sections the matched category key itself IS the group label
@@ -332,9 +368,21 @@ export const videos = rawVideos.map((v) => {
 // IDs already shown in the Chronicles section — exclude from Compendium
 const CHRONICLE_IDS = new Set(["6LBJzNV1ELE", "uwAW1TD2hi4", "SkHa9w8liis", "-6x3huqel8E", "b5zJNvqF5n8"]);
 
+// Videos surfaced only as "Related Videos" on another entry's page (e.g. an elf
+// sub-topic on the Cave Elf page). They stay in `videos` (resolvable by id for
+// those links) but are hidden from the standalone Compendium nav — no own page.
+export const CONNECTED_ONLY_IDS = new Set([
+  "SPxoPRwTtDY", // Cities beneath ground → Cave Elf
+  "QA00fO4mqNU", // Floating Islands     → Grey Elf
+  "pf3G1J3vqWI", // White Towers         → High Elf
+  "6JVP0Wpgd20", // Fortress             → Dark Elf
+]);
+
 // Build { sectionId → [ { group: string|null, videos[] }, ... ] }
 // Ungrouped entries (group===null) come first, then named groups sorted alphabetically
-const _bySection = videos.filter((v) => !CHRONICLE_IDS.has(v.id)).reduce((acc, v) => {
+const _bySection = videos
+  .filter((v) => !CHRONICLE_IDS.has(v.id) && !CONNECTED_ONLY_IDS.has(v.id))
+  .reduce((acc, v) => {
   if (!acc[v.section]) acc[v.section] = {};
   const key = v.group ?? "__none__";
   (acc[v.section][key] = acc[v.section][key] || []).push(v);
