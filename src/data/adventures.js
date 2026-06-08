@@ -10,7 +10,7 @@ import yaml from "js-yaml";
 //   videoIds: ["-6x3huqel8E", "b5zJNvqF5n8"]     # related chronicle videos
 //   characters:                                  # optional cast
 //     - name: Kaelene Fenholt
-//       role: Ranger
+//       description: A wary ranger who knows the fog-bound coast.
 //       image: /compendium/Adventures/The Misty Island/Characters/kaelene.jpg
 //       videoId: eoVRxFnDAHU                      # optional — card opens this video
 //   ---
