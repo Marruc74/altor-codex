@@ -264,6 +264,7 @@ const InteractiveMap = forwardRef(function InteractiveMap({ onLocationSelect }, 
               key={type}
               className={`map-filter-btn ${visibleTypes[type] ? "map-filter-btn--on" : "map-filter-btn--off"}`}
               onClick={() => toggleType(type)}
+              aria-pressed={visibleTypes[type]}
               style={{ "--pin-color": style.fill }}
             >
               <span className="map-filter-btn__dot" />

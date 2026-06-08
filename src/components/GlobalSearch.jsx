@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, useMemo } from "react";
 import { pins } from "../data/locations";
 import { entries } from "../data/codex/index.js";
 import { videos } from "../data/videoData";
+import { adventures } from "../data/adventures";
 
 const PIN_LABELS = {
   capital: "Capital", city: "City", country: "Country", region: "Region",
@@ -45,6 +46,18 @@ function buildGroups(query) {
       data: e, flatIdx: flatIdx++,
     }));
 
+  const matchedAdventures = adventures
+    .filter((a) =>
+      (a.title ?? "").toLowerCase().includes(q) ||
+      (a.summary ?? "").toLowerCase().includes(q)
+    )
+    .slice(0, 5)
+    .map((a) => ({
+      type: "adventure", key: a.id, label: a.title,
+      sub: "Adventure",
+      data: a, flatIdx: flatIdx++,
+    }));
+
   const matchedVideos = videos
     .filter((v) =>
       v.title.toLowerCase().includes(q) ||
@@ -57,14 +70,15 @@ function buildGroups(query) {
       data: v, flatIdx: flatIdx++,
     }));
 
-  if (matchedPins.length)    groups.push({ category: "Locations",  items: matchedPins });
-  if (matchedEntries.length) groups.push({ category: "Codex",      items: matchedEntries });
-  if (matchedVideos.length)  groups.push({ category: "Chronicles", items: matchedVideos });
+  if (matchedPins.length)       groups.push({ category: "Locations",  items: matchedPins });
+  if (matchedAdventures.length) groups.push({ category: "Adventures", items: matchedAdventures });
+  if (matchedEntries.length)    groups.push({ category: "Codex",      items: matchedEntries });
+  if (matchedVideos.length)     groups.push({ category: "Chronicles", items: matchedVideos });
 
   return groups;
 }
 
-export default function GlobalSearch({ onPinSelect, onEntrySelect, onVideoSelect, onClose }) {
+export default function GlobalSearch({ onPinSelect, onEntrySelect, onVideoSelect, onAdventureSelect, onClose }) {
   const [query, setQuery]           = useState("");
   const [focusedIdx, setFocusedIdx] = useState(0);
   const inputRef  = useRef(null);
@@ -76,8 +90,7 @@ export default function GlobalSearch({ onPinSelect, onEntrySelect, onVideoSelect
   const flatItems  = useMemo(() => groups.flatMap((g) => g.items), [groups]);
   const totalCount = flatItems.length;
 
-  // Reset focus on new query
-  useEffect(() => { setFocusedIdx(0); }, [query]);
+  const changeQuery = (value) => { setQuery(value); setFocusedIdx(0); };
 
   // Scroll focused item into view
   useEffect(() => {
@@ -89,6 +102,7 @@ export default function GlobalSearch({ onPinSelect, onEntrySelect, onVideoSelect
     if (item.type === "pin")   onPinSelect(item.data.id);
     if (item.type === "entry") onEntrySelect(item.data.id);
     if (item.type === "video") onVideoSelect(item.data);
+    if (item.type === "adventure") onAdventureSelect(item.data.id);
     onClose();
   };
 
@@ -117,16 +131,16 @@ export default function GlobalSearch({ onPinSelect, onEntrySelect, onVideoSelect
             ref={inputRef}
             className="gs__input"
             type="search"
-            placeholder="Search locations, codex, chronicles…"
+            placeholder="Search locations, adventures, codex, chronicles…"
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={(e) => changeQuery(e.target.value)}
             onKeyDown={handleKeyDown}
             aria-label="Search"
             autoComplete="off"
             spellCheck={false}
           />
           {hasQuery && (
-            <button className="gs__clear" onClick={() => setQuery("")} aria-label="Clear">✕</button>
+            <button className="gs__clear" onClick={() => changeQuery("")} aria-label="Clear">✕</button>
           )}
         </div>
 
@@ -145,7 +159,7 @@ export default function GlobalSearch({ onPinSelect, onEntrySelect, onVideoSelect
                   >
                     {item.type === "pin"
                       ? <span className="gs__dot" style={{ background: item.color }} />
-                      : <span className="gs__sigil">{item.type === "entry" ? "◈" : "▶"}</span>
+                      : <span className="gs__sigil">{item.type === "entry" ? "◈" : item.type === "adventure" ? "❖" : "▶"}</span>
                     }
                     <span className="gs__result-label">{item.label}</span>
                     {item.sub && <span className="gs__result-sub">{item.sub}</span>}

@@ -69,6 +69,7 @@ export default function CodexPanel({ entry, onClose, onTagClick, onEntrySelect, 
   useEffect(() => {
     if (entry) {
       panelRef.current?.focus();
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- reset before async load (keyed by entry)
       setContent(null);
       const detailPath = entry.detail ?? `${entry.id}.md`;
       const loader = markdownModules[`../data/codex/${detailPath}`];
@@ -128,7 +129,7 @@ export default function CodexPanel({ entry, onClose, onTagClick, onEntrySelect, 
           {content === null ? (
             <p className="location-panel__loading">Consulting the codex…</p>
           ) : content === "" ? (
-            <p className="location-panel__loading">No further information recorded.</p>
+            <p className="location-panel__loading">Lore entry coming soon.</p>
           ) : (() => {
             const imgs = extractImages(content);
             const body = stripImages(content);
