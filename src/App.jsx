@@ -32,6 +32,7 @@ function getInitialPage() {
   if (getParam("pin"))     return "map";
   if (getParam("entry"))   return "codex";
   if (getParam("country")) return "catalog";
+  if (getParam("adventure")) return "catalog";
   // Otherwise read hash
   const hash = window.location.hash.replace("#", "");
   const valid = ["about", "history", "map", "codex", "chronicles", "catalog"];
@@ -150,6 +151,12 @@ export default function App() {
   const handleCountrySelect = useCallback((id) => {
     setSelectedCountry(id);
     setParam("country", id);
+  }, []);
+
+  const [selectedAdventure, setSelectedAdventure] = useState(() => getParam("adventure"));
+  const handleAdventureSelect = useCallback((id) => {
+    setSelectedAdventure(id);
+    setParam("adventure", id);
   }, []);
 
   return (
@@ -301,6 +308,8 @@ export default function App() {
           <Compendium
             selectedCountry={selectedCountry}
             onCountrySelect={handleCountrySelect}
+            selectedAdventure={selectedAdventure}
+            onAdventureSelect={handleAdventureSelect}
             onPinSelect={handlePinSelect}
             onEntrySelect={handleGlobalEntrySelect}
             onVideoSelect={handleVideoSelect}

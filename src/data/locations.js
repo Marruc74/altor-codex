@@ -53,7 +53,7 @@ export const pins = [
   { id: "paratorna",                     name: "Paratorna",                   type: "region",        tagline: "", x: 1857, y: 1080 },
   { id: "palamux",                       name: "Palamux",                     type: "region",        tagline: "", x: 1619, y: 1029 },
   { id: "saphyna",                       name: "Saphyna",                     type: "region",        tagline: "", x: 1754, y: 1168 },
-  { id: "mereld",                        name: "Mereld",                      type: "region",        tagline: "", x: 1634, y: 1413 },
+  { id: "mereld",                        name: "Mereld",                      type: "region",        continent: "ereb",         tagline: "", x: 1634, y: 1413 },
   { id: "bzegusta",                      name: "Bzegusta",                    type: "region",        tagline: "", x: 1674, y: 1390 },
   { id: "sanritra",                      name: "Sanritra",                    type: "region",        tagline: "", x: 1523, y: 2067 },
   { id: "orghin",                        name: "Orghin",                      type: "region",        tagline: "", x: 2612, y: 558 },
@@ -104,7 +104,7 @@ export const pins = [
   { id: "aidne-mountains",               name: "Aidne Mountains",             type: "mountain",      continent: "ereb",         tagline: "", x: 1827, y: 1653 },
   { id: "meleshe-mountains",             name: "Meleshe Mountains",           type: "mountain",      continent: "ereb",         tagline: "", x: 1990, y: 1397 },
   // Forests
-  { id: "goiana",                        name: "Goiana",                      type: "forest",        tagline: "", x: 1829, y: 1588 },
+  { id: "goiana",                        name: "Goiana",                      type: "forest",        continent: "ereb",         tagline: "", x: 1829, y: 1588 },
   { id: "kardforest",                    name: "Kardforest",                  type: "forest",        tagline: "", x: 2348, y: 925 },
   { id: "landori",                       name: "Landori",                     type: "forest",        tagline: "", x: 2648, y: 1452 },
   { id: "morginner-forest",              name: "Morginner Forest",            type: "forest",        tagline: "", x: 1773, y: 2353 },
