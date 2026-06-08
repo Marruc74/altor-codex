@@ -376,23 +376,11 @@ function EntryDetail({ video, onVideoSelect }) {
 
 // ── AdventureDetail ───────────────────────────────────────────────────────
 function AdventureDetail({ adventure, onVideoSelect }) {
-  const [markdown, setMarkdown] = useState(null);
-
-  useEffect(() => {
-    setMarkdown(null);
-    const mdLoader = adventure.detail
-      ? markdownModules[`../data/compendium/${adventure.detail}`]
-      : null;
-    if (mdLoader) {
-      mdLoader().then((md) => setMarkdown(md)).catch(() => setMarkdown(""));
-    } else {
-      setMarkdown("");
-    }
-  }, [adventure.id]);
-
-  const loaded = markdown !== null;
-  const images = markdown ? extractImages(markdown) : [];
-  const bodyText = markdown ? stripImages(markdown).replace(/^#[^\n]*\n/, "").trim() : "";
+  // Body prose comes inline from the adventure's frontmatter .md (already parsed
+  // in adventures.js) — no async load needed.
+  const md = adventure.body ?? "";
+  const images = extractImages(md);
+  const bodyText = stripImages(md).replace(/^#[^\n]*\n/, "").trim();
   const characters = adventure.characters ?? [];
   const relatedVideos = (adventure.videoIds ?? [])
     .map((id) => videoById[id] ?? { id, name: id })
@@ -410,15 +398,13 @@ function AdventureDetail({ adventure, onVideoSelect }) {
 
       <div className="country-detail__divider" />
 
-      {!loaded && <p className="country-detail__loading">Consulting the codex…</p>}
-
-      {loaded && images.length > 0 && <ImageGallery images={images} />}
+      {images.length > 0 && <ImageGallery images={images} />}
 
       {adventure.summary && (
         <p className="country-detail__description">{adventure.summary}</p>
       )}
 
-      {loaded && bodyText && (
+      {bodyText && (
         <div className="country-detail__body">
           <ReactMarkdown>{bodyText}</ReactMarkdown>
         </div>
