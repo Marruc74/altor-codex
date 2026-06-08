@@ -8,12 +8,23 @@ import yaml from "js-yaml";
 //   tagline: ""                                  # optional short subtitle/quote
 //   summary: One-line blurb shown above the body.
 //   videoIds: ["-6x3huqel8E", "b5zJNvqF5n8"]     # related chronicle videos
-//   characters:                                  # optional cast
+//   characters:                                  # optional cast (NPCs + creatures)
 //     - name: Kaelene Fenholt
+//       type: npc                                 # npc (default) | creature → groups into NPCs / Creatures
 //       description: A wary ranger who knows the fog-bound coast.
 //       image: /compendium/Adventures/The Misty Island/Characters/kaelene.jpg
 //       videoId: eoVRxFnDAHU                      # optional — card opens this video
+//   places:                                       # optional locations in the adventure
+//     - name: Utkante
+//       description: A windswept settlement on the island's edge.
+//       image: /compendium/Adventures/The Misty Island/Places/utkante.jpg
+//   objects:                                       # optional items/maps/artifacts
+//     - name: Map
+//       description: Map of the Misty Island.
+//       image: /compendium/Adventures/The Misty Island/Map.jpg
 //   ---
+//
+// Cards with only an image (places, objects, portraits) open it in a lightbox.
 //   Prose body in markdown here (may embed ![images](/compendium/...)).
 //
 // `id` is derived from the filename: the-misty-island.md → "the-misty-island"
@@ -44,6 +55,8 @@ export const adventures = Object.entries(files)
       summary: data.summary ?? "",
       videoIds: data.videoIds ?? [],
       characters: data.characters ?? [],
+      places: data.places ?? [],
+      objects: data.objects ?? [],
       body,
     };
   })
