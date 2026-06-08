@@ -382,9 +382,67 @@ function AdventureDetail({ adventure, onVideoSelect }) {
   const images = extractImages(md);
   const bodyText = stripImages(md).replace(/^#[^\n]*\n/, "").trim();
   const characters = adventure.characters ?? [];
+  const byName = (a, b) => (a.name ?? "").localeCompare(b.name ?? "");
+  const npcs = characters.filter((c) => (c.type ?? "npc") !== "creature").sort(byName);
+  const creatures = characters.filter((c) => c.type === "creature").sort(byName);
+  const places = adventure.places ?? [];
+  const objects = adventure.objects ?? [];
   const relatedVideos = (adventure.videoIds ?? [])
     .map((id) => videoById[id] ?? { id, name: id })
     .filter(Boolean);
+
+  const [lightbox, setLightbox] = useState(null); // {src, alt, caption}[] for image cards
+
+  // Card grid reused for NPCs / Creatures / Places / Objects. Each entry has an
+  // optional image, description and videoId: a card with a videoId plays it; a
+  // card with only an image opens it in the lightbox (e.g. view the map full-size).
+  const cardGrid = (label, items, portrait = false) =>
+    items.length > 0 && (
+      <div className="country-detail__block">
+        <p className="location-panel__section-label">{label}</p>
+        <div className="country-detail__entries-grid">
+          {items.map((it, i) => {
+            const cls = `codex-card${(it.portrait ?? portrait) ? " codex-card--portrait" : ""}`;
+            const inner = (
+              <>
+                <div className="codex-card__image-wrap">
+                  {it.image ? (
+                    <img className="codex-card__image" src={it.image} alt={it.name} />
+                  ) : (
+                    <span className="codex-card__placeholder">◈</span>
+                  )}
+                </div>
+                <div className="codex-card__body">
+                  <p className="codex-card__title">{it.name}</p>
+                  {it.description && <p className="codex-card__summary">{it.description}</p>}
+                </div>
+              </>
+            );
+            if (it.videoId)
+              return (
+                <button
+                  key={it.videoId}
+                  className={cls}
+                  onClick={() => onVideoSelect(videoById[it.videoId] ?? { id: it.videoId, title: it.name })}
+                >
+                  {inner}
+                </button>
+              );
+            if (it.image)
+              return (
+                <button
+                  key={it.name ?? i}
+                  className={cls}
+                  onClick={() => setLightbox([{ src: it.image, alt: it.name, caption: it.name }])}
+                >
+                  {inner}
+                </button>
+              );
+            return <div key={it.name ?? i} className={cls}>{inner}</div>;
+          })}
+        </div>
+      </div>
+    );
 
   return (
     <div className="country-detail">
@@ -410,41 +468,10 @@ function AdventureDetail({ adventure, onVideoSelect }) {
         </div>
       )}
 
-      {characters.length > 0 && (
-        <div className="country-detail__block">
-          <p className="location-panel__section-label">Characters</p>
-          <div className="country-detail__entries-grid">
-            {characters.map((ch, i) => {
-              const inner = (
-                <>
-                  <div className="codex-card__image-wrap">
-                    {ch.image ? (
-                      <img className="codex-card__image" src={ch.image} alt={ch.name} />
-                    ) : (
-                      <span className="codex-card__placeholder">◈</span>
-                    )}
-                  </div>
-                  <div className="codex-card__body">
-                    <p className="codex-card__title">{ch.name}</p>
-                    {ch.description && <p className="codex-card__summary">{ch.description}</p>}
-                  </div>
-                </>
-              );
-              return ch.videoId ? (
-                <button
-                  key={ch.videoId}
-                  className="codex-card"
-                  onClick={() => onVideoSelect(videoById[ch.videoId] ?? { id: ch.videoId, title: ch.name })}
-                >
-                  {inner}
-                </button>
-              ) : (
-                <div key={ch.name ?? i} className="codex-card">{inner}</div>
-              );
-            })}
-          </div>
-        </div>
-      )}
+      {cardGrid("NPCs", npcs, true)}
+      {cardGrid("Creatures", creatures, true)}
+      {cardGrid("Places", places)}
+      {cardGrid("Objects", objects)}
 
       {relatedVideos.length > 0 && (
         <div className="country-detail__block">
@@ -467,6 +494,10 @@ function AdventureDetail({ adventure, onVideoSelect }) {
             ))}
           </div>
         </div>
+      )}
+
+      {lightbox && (
+        <Lightbox images={lightbox} startIdx={0} onClose={() => setLightbox(null)} />
       )}
     </div>
   );

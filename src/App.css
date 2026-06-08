@@ -2576,6 +2576,11 @@ body {
   flex-shrink: 0;
 }
 
+/* Portrait cards (e.g. adventure character art is ~2:3) — show the full figure */
+.codex-card--portrait .codex-card__image-wrap {
+  aspect-ratio: 2 / 3;
+}
+
 .codex-card__image {
   width: 100%;
   height: 100%;
