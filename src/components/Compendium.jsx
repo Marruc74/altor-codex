@@ -426,7 +426,7 @@ function AdventureDetail({ adventure, onVideoSelect }) {
                   </div>
                   <div className="codex-card__body">
                     <p className="codex-card__title">{ch.name}</p>
-                    {ch.role && <p className="codex-card__summary">{ch.role}</p>}
+                    {ch.description && <p className="codex-card__summary">{ch.description}</p>}
                   </div>
                 </>
               );
