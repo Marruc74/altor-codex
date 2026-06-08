@@ -3,6 +3,9 @@ import ReactMarkdown from "react-markdown";
 import { entries } from "../data/codex/index.js";
 import { videos } from "../data/videoData.js";
 
+// Statically-analyzable markdown loader (avoids vite:dynamic-import-vars warning)
+const markdownModules = import.meta.glob("../data/codex/**/*.md", { query: "?raw", import: "default" });
+
 const IMAGE_RE = /!\[([^\]]*)\]\(([^")]+?)(?:\s+"([^"]*)")?\)/g;
 
 function extractImages(markdown) {
@@ -68,9 +71,9 @@ export default function CodexPanel({ entry, onClose, onTagClick, onEntrySelect, 
       panelRef.current?.focus();
       setContent(null);
       const detailPath = entry.detail ?? `${entry.id}.md`;
-      import(`../data/codex/${detailPath}?raw`)
-        .then((m) => setContent(m.default))
-        .catch(() => setContent(""));
+      const loader = markdownModules[`../data/codex/${detailPath}`];
+      if (loader) loader().then((md) => setContent(md)).catch(() => setContent(""));
+      else setContent("");
     }
   }, [entry]);
 
