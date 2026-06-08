@@ -90,7 +90,7 @@ function ImageGallery({ images }) {
 const videoById = Object.fromEntries(allVideos.map((v) => [v.id, v]));
 
 const locationModules = import.meta.glob("../data/locations/*.js");
-const markdownModules = import.meta.glob("../data/codex/**/*.md", { query: "?raw", import: "default" });
+const markdownModules = import.meta.glob("../data/compendium/**/*.md", { query: "?raw", import: "default" });
 
 const CONTINENTS = [
   { id: "akrogal",      name: "Akrogal"         },
@@ -155,7 +155,7 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect }) {
       .then((m) => {
         setLocationData(m.default);
         if (m.default.detail) {
-          const mdKey = `../data/codex/${m.default.detail}`;
+          const mdKey = `../data/compendium/${m.default.detail}`;
           const mdLoader = markdownModules[mdKey];
           if (mdLoader) {
             mdLoader().then((md) => setMarkdown(md)).catch(() => setMarkdown(""));
@@ -288,7 +288,7 @@ function EntryDetail({ video, onVideoSelect }) {
 
   useEffect(() => {
     setMarkdown(null);
-    const mdKey = `../data/codex/${entryMdPath(video)}`;
+    const mdKey = `../data/compendium/${entryMdPath(video)}`;
     const mdLoader = markdownModules[mdKey];
     if (mdLoader) {
       mdLoader().then((md) => setMarkdown(md)).catch(() => setMarkdown(""));
@@ -381,7 +381,7 @@ function AdventureDetail({ adventure, onVideoSelect }) {
   useEffect(() => {
     setMarkdown(null);
     const mdLoader = adventure.detail
-      ? markdownModules[`../data/codex/${adventure.detail}`]
+      ? markdownModules[`../data/compendium/${adventure.detail}`]
       : null;
     if (mdLoader) {
       mdLoader().then((md) => setMarkdown(md)).catch(() => setMarkdown(""));

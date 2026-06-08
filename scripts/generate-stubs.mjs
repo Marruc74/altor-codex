@@ -40,7 +40,7 @@ function entryMdPath(section, group, name) {
 
 // ── Main ──────────────────────────────────────────────────────────────────
 const __dirname  = dirname(fileURLToPath(import.meta.url));
-const CODEX_BASE = join(__dirname, "../src/data/codex");
+const CODEX_BASE = join(__dirname, "../src/data/compendium");
 
 const SKIP_SECTIONS = new Set(["countries", "episodes"]);
 
