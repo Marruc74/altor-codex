@@ -101,10 +101,6 @@ const CONTINENTS = [
   { id: "western-sea",  name: "The Western Sea"  },
 ];
 
-const countries = pins
-  .filter((p) => p.type === "country")
-  .sort((a, b) => a.name.localeCompare(b.name));
-
 // Curated non-country pins that should also appear as places in the Geography
 // nav (nested under their continent), e.g. a notable region/forest with a video.
 const EXTRA_GEO_PLACE_IDS = new Set(["mereld", "goiana"]);
@@ -146,6 +142,7 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect }) {
   const [markdown, setMarkdown] = useState(null);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- reset before async load (keyed by country.id)
     setLocationData(null);
     setMarkdown(null);
     const locKey = `../data/locations/${country.id}.js`;
@@ -276,7 +273,7 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect }) {
       )}
 
       {loaded && !mainVideo && countryEntries.length === 0 && relatedVideos.length === 0 && images.length === 0 && !bodyText && (
-        <p className="country-detail__empty">No further information recorded.</p>
+        <p className="country-detail__empty">Details coming soon.</p>
       )}
     </div>
   );
@@ -287,6 +284,7 @@ function EntryDetail({ video, onVideoSelect }) {
   const [markdown, setMarkdown] = useState(null);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- reset before async load (keyed by video.id)
     setMarkdown(null);
     const mdKey = `../data/compendium/${entryMdPath(video)}`;
     const mdLoader = markdownModules[mdKey];
@@ -295,7 +293,7 @@ function EntryDetail({ video, onVideoSelect }) {
     } else {
       setMarkdown("");
     }
-  }, [video.id]);
+  }, [video]);
 
   const loaded = markdown !== null;
   const images = markdown ? extractImages(markdown) : [];
@@ -326,6 +324,10 @@ function EntryDetail({ video, onVideoSelect }) {
         <div className="country-detail__body">
           <ReactMarkdown>{bodyText}</ReactMarkdown>
         </div>
+      )}
+
+      {loaded && !bodyText && images.length === 0 && (
+        <p className="country-detail__empty">Lore entry coming soon — watch the chronicle below.</p>
       )}
 
       {loaded && (

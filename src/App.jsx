@@ -1,14 +1,16 @@
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback, useRef, lazy, Suspense } from "react";
 import Navbar from "./components/Navbar";
 import InteractiveMap from "./components/InteractiveMap";
 import LocationPanel from "./components/LocationPanel";
-import Timeline from "./components/Timeline";
 import CodexSection from "./components/CodexSection";
-import Compendium from "./components/Compendium";
-import MediaSection from "./components/MediaSection";
 import VideoModal from "./components/VideoModal";
 import GlobalSearch from "./components/GlobalSearch";
 import EmberCanvas from "./components/EmberCanvas";
+
+// Heavy, route-only views — split into their own chunks (loaded on first visit)
+const Timeline   = lazy(() => import("./components/Timeline"));
+const Compendium = lazy(() => import("./components/Compendium"));
+const MediaSection = lazy(() => import("./components/MediaSection"));
 import { entries } from "./data/codex/index.js";
 import { pins } from "./data/locations";
 import "./App.css";
@@ -159,6 +161,15 @@ export default function App() {
     setParam("adventure", id);
   }, []);
 
+  // From global search: jump to the Compendium and open the adventure
+  const handleGlobalAdventureSelect = useCallback((id) => {
+    setSelectedCountry(null);
+    setParam("country", null);
+    setSelectedAdventure(id);
+    setParam("adventure", id);
+    navigate("catalog");
+  }, [navigate]);
+
   return (
     <div className="app">
       <Navbar activePage={activePage} onNavigate={navigate} onSearchOpen={() => setSearchOpen(true)} />
@@ -261,7 +272,9 @@ export default function App() {
       {/* History */}
       {activePage === "history" && (
         <div className="page">
-          <Timeline onVideoSelect={handleVideoSelect} />
+          <Suspense fallback={<div className="page" />}>
+            <Timeline onVideoSelect={handleVideoSelect} />
+          </Suspense>
         </div>
       )}
 
@@ -298,22 +311,26 @@ export default function App() {
       {/* Chronicles */}
       {activePage === "chronicles" && (
         <div className="page">
-          <MediaSection />
+          <Suspense fallback={<div className="page" />}>
+            <MediaSection />
+          </Suspense>
         </div>
       )}
 
       {/* Compendium */}
       {activePage === "catalog" && (
         <div className="page">
-          <Compendium
-            selectedCountry={selectedCountry}
-            onCountrySelect={handleCountrySelect}
-            selectedAdventure={selectedAdventure}
-            onAdventureSelect={handleAdventureSelect}
-            onPinSelect={handlePinSelect}
-            onEntrySelect={handleGlobalEntrySelect}
-            onVideoSelect={handleVideoSelect}
-          />
+          <Suspense fallback={<div className="page" />}>
+            <Compendium
+              selectedCountry={selectedCountry}
+              onCountrySelect={handleCountrySelect}
+              selectedAdventure={selectedAdventure}
+              onAdventureSelect={handleAdventureSelect}
+              onPinSelect={handlePinSelect}
+              onEntrySelect={handleGlobalEntrySelect}
+              onVideoSelect={handleVideoSelect}
+            />
+          </Suspense>
         </div>
       )}
 
@@ -328,6 +345,7 @@ export default function App() {
           onPinSelect={handlePinSelect}
           onEntrySelect={handleGlobalEntrySelect}
           onVideoSelect={handleVideoSelect}
+          onAdventureSelect={handleGlobalAdventureSelect}
           onClose={() => setSearchOpen(false)}
         />
       )}
