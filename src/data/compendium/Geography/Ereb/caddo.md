@@ -28,7 +28,7 @@ The island is dominated by the Appo Mountains, a range rising up to about 3,000 
 
 ## People
 
-Caddo is almost entirely inhabited by dalkers.
+Caddo is almost entirely inhabited by dalkers. Tall and fair, and often deeply sunburnt beneath their island sun, they are an energetic people, industrious almost to a fault, and so fond of archery as a sport that Caddish longbow mercenaries are prized across the Copper Sea. They dress mostly in light hose and a short, long-sleeved jacket of velvet or silk.
 
 ### Characteristics
 

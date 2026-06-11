@@ -1,7 +1,7 @@
 ---
 title: The Gates of Power
 tagline: ""
-summary: ""
+summary: Picking up where the Dead Forest left off, the party passes through the opened gates to discover what lies beyond.
 videoIds: []
 sections:
   - title: Outside
@@ -31,6 +31,6 @@ sections:
         image: /compendium/Adventures/TheGatesOfPower/Characters/Sharch.jpg
 ---
 
-## Overview
+## Plot
 
-## Synopsis
+A direct continuation of the Dead Forest, the adventure sends the party through the gates opened at the end of that quest and down into the abandoned dwarven city beyond. They pick through what the dwarves left behind and face what now dwells there, following the thread that ties the trilogy together.

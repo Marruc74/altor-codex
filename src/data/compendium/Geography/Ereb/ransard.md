@@ -24,7 +24,7 @@ Ransard lies in western Ereb. Its core consists of three main regions: Nordland,
 
 ## People
 
-The Ransarders are taller than average at around 180 cm, strongly built, with light skin and often blue eyes. Men typically wear thick beards. Clothing is colorful wool with clan-specific patterns, consisting of a linen shirt, jacket, heavy trousers, and the **merrlokh**, a long cloth wrapped around the body.
+The Ransarders are taller than average at around 180 cm, strongly built, with light skin and often blue eyes. Men typically wear thick beards. Clothing is colorful wool with clan-specific patterns, consisting of a linen shirt, jacket, heavy trousers, and the **merrlokh**, a long cloth wrapped around the body. The realm's finest warriors are raised to the elite of griffon-riders, mighty foes upon their great winged mounts, and Ransarders nurse a particular contempt for elf-folk, halflings and the beast-folk.
 
 ## Culture
 

@@ -2608,7 +2608,7 @@ body {
 
 .codex-card__title {
   font-family: var(--font-heading);
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--gold-light);
   margin: 0;
   letter-spacing: 0.04em;
@@ -2616,11 +2616,17 @@ body {
 
 .codex-card__summary {
   font-family: var(--font-body);
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
-  line-height: 1.55;
+  line-height: 1.6;
   margin: 0;
   flex: 1;
+  text-align: justify;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  hyphenate-limit-chars: 6 3 2;
 }
 
 .codex-card__tags {
@@ -3404,6 +3410,12 @@ body {
   color: var(--text);
   line-height: 1.75;
   margin-bottom: 2rem;
+  text-align: justify;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  hyphenate-limit-chars: 6 3 2;
 }
 
 .country-detail__body h2 {
@@ -3415,6 +3427,12 @@ body {
   margin: 3.5rem 0 0.75rem;
   padding-bottom: 0.4rem;
   border-bottom: 1px solid var(--border);
+}
+
+/* When a heading (e.g. "Plot") leads the body, drop the large top gap left by
+   the summary above it. */
+.country-detail__body h2:first-child {
+  margin-top: 0;
 }
 
 .country-detail__body h3 {
@@ -3468,9 +3486,17 @@ body {
   font-weight: 600;
   color: var(--gold-light);
   letter-spacing: 0.08em;
-  margin: 0 0 1.25rem;
+  margin: 0 0 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--border);
+}
+
+.country-detail__section-desc {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.7;
+  margin: -0.25rem 0 1.5rem;
 }
 
 .country-detail__entries-grid {

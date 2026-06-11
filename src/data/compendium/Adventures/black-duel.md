@@ -1,7 +1,7 @@
 ---
 title: Black Duel
 tagline: ""
-summary: ""
+summary: Elves beg the party to sail to the island of Syrtan and stop a wizard who is raising an army of orcs.
 videoIds: []
 sections:
   - title: Syrtan Wilderness
@@ -96,6 +96,6 @@ sections:
         image: /compendium/Adventures/BlackDuel/Tork.jpg
 ---
 
-## Overview
+## Plot
 
-## Synopsis
+While passing through a forest the party is stopped by elves with a plea. They want someone to sail to the island of Syrtan and put an end to the wizard Telach, who is raising an army of orcs that threatens the whole region and the elves most of all. Landing in a sheltered bay past the reef, the party works across the island and finds a burned and looted village, a sphinx, a guard house crowded with orcs, and the cave system where the trail finally leads to Telach.

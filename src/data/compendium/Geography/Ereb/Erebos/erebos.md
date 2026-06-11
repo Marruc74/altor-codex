@@ -61,7 +61,7 @@ The mountains are home to orcs, trolls, and other creatures.
 
 - **Population:** approx. 125,000 (85% humans, 15% ducks)
 
-Erebosians are often described as short in stature, temperamental, talkative, and strongly trade-oriented. The individual is valued more than lineage or tradition, unlike in feudal societies.
+Erebosians are often described as short in stature, temperamental, talkative, and strongly trade-oriented. The individual is valued more than lineage or tradition, unlike in feudal societies. They tend to have dark hair, brown eyes and somewhat dark skin, and favour close-fitting silk or wool hose, white shirts and short jackets. In so mercantile a land the skilled negotiator is admired while the warrior is seen as little more than a tool in the merchant's hand, and eloquence, rhetoric and learning are held in high regard.
 
 ## Language
 

@@ -1,7 +1,7 @@
 ---
 title: Horrors of the Deep
 tagline: ""
-summary: ""
+summary: Hired for grim, ill-paid work in a northern province, the party is drawn to a mining village where something terrible has happened.
 videoIds: []
 sections:
   - title: North Hall
@@ -31,7 +31,7 @@ sections:
       - name: Senadi
         description: ""
         image: /compendium/Adventures/HorrorsOfTheDeep/Characters/Senadi.jpg
-  - title: Goblin Cave
+  - title: Svartalf Cave
     npcs:
       - name: Kassits
         description: ""
@@ -41,6 +41,6 @@ sections:
         image: /compendium/Adventures/HorrorsOfTheDeep/Characters/Mustuf.jpg
 ---
 
-## Overview
+## Plot
 
-## Synopsis
+The party takes on hard and poorly paid work in a northern province and is soon drawn to the mining village of Dracht, where every inhabitant has just been killed in a raid by dark folk. Tracing what happened leads them off the surface and down into the old trade route beneath the mountains, where they meet the creatures of the underworld in a grim and merciless fight.

@@ -37,6 +37,8 @@ Notable regions:
 
 ## People
 
+The Northern Barbarians, the highland nomads meant when most people speak of the Barbier, are tall and powerfully built against the harsh climate, fair-haired and fair-skinned with blue or steel-grey eyes, and dress in reindeer hides and undyed musk-ox wool hung with ornaments of teeth, horn and amber. They fight with spear and shield or bow in light leather, are superb mounted warriors, and from a life of driving cattle many have learned to snare a foe with the lasso. Self-reliant and devout, they hold nature in deep respect and count places of unusual beauty as sacred; magic is alien and faintly fearful to them, the work of village shamans alone, and they prize loyalty, friendship and fair dealing, for it would never occur to a Barbier to kick a man who is already down.
+
 - **Northern Barbarians**: nomadic warriors, livestock herding, strong tribal culture
 - **People of Babor**: more organized society, developed cities, trade focused
 - **Forest Folk**: live in forests and mountains, more isolated

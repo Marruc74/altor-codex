@@ -327,10 +327,12 @@ function EntryDetail({ video, onVideoSelect }) {
       )}
 
       {loaded && !bodyText && images.length === 0 && (
-        <p className="country-detail__empty">Lore entry coming soon — watch the chronicle below.</p>
+        <p className="country-detail__empty">
+          {video.noVideo ? "Lore entry coming soon." : "Lore entry coming soon — watch the chronicle below."}
+        </p>
       )}
 
-      {loaded && (
+      {loaded && !video.noVideo && (
         <div className="country-detail__block">
           <p className="location-panel__section-label">Chronicle</p>
           <button
@@ -382,7 +384,8 @@ function AdventureDetail({ adventure, onVideoSelect }) {
   // in adventures.js) — no async load needed.
   const md = adventure.body ?? "";
   const images = extractImages(md);
-  const bodyText = stripImages(md).replace(/^#[^\n]*\n/, "").trim();
+  // Strip only a leading H1 (a redundant "# Title"); keep H2 headings like "## Plot".
+  const bodyText = stripImages(md).replace(/^# [^\n]*\n/, "").trim();
   const characters = adventure.characters ?? [];
   const byName = (a, b) => (a.name ?? "").localeCompare(b.name ?? "");
   const npcs = characters.filter((c) => (c.type ?? "npc") !== "creature").sort(byName);
@@ -453,6 +456,9 @@ function AdventureDetail({ adventure, onVideoSelect }) {
     <div className="country-detail__section" key={section.title ?? i}>
       {section.title && (
         <h3 className="country-detail__section-title">{section.title}</h3>
+      )}
+      {section.description && (
+        <p className="country-detail__section-desc">{section.description}</p>
       )}
       {cardGrid("Places", section.places ?? [])}
       {cardGrid("NPCs", section.npcs ?? [], true)}

@@ -57,6 +57,8 @@ A strange giant snail sometimes used as a draft animal.
 
 ## People
 
+The Magillers themselves look much like the average folk of Ereb Altor and dress practically, the nobility excepted, whose festival garb is made as impractical as possible to show that the wearer need never stir, all metre-long sleeves of dried and perfumed seagrass, vast wheel-shaped ruff collars, hats hung with little bells, and curl-toed shoes knotted at the tip. Descended from the Joric legionaries who once civilised the land, they are no longer a warlike people, and in a tight corner they trust to a sharp tongue and deft diplomacy rather than to arms. So famed is their eloquence that the saying "to talk someone out of their wits like a Magiller" is known across all Ereb, and the country has bred many a gifted demagogue and politician.
+
 ### Language
 
 The language is Magil, resembling dialects from Klomellien and Toril.

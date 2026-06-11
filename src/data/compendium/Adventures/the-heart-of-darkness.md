@@ -1,7 +1,7 @@
 ---
 title: The Heart of Darkness
 tagline: ""
-summary: ""
+summary: The trail that began in the Dead Forest reaches its final and darkest stage.
 videoIds: []
 sections:
   - title: Before
@@ -47,6 +47,6 @@ sections:
         image: /compendium/Adventures/TheHeartOfDarkness/Characters/Dakoth.jpg
 ---
 
-## Overview
+## Plot
 
-## Synopsis
+The final part of the journey that began in the Dead Forest. The party follows the long quest to its close, where the conflict running beneath the whole trilogy comes to a head and the fate of the world is at last decided.

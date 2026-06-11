@@ -1,7 +1,7 @@
 ---
 title: Sulphur Winter
 tagline: ""
-summary: ""
+summary: On the remote island of Marjura, the realm of Trakorien invades to seize the sulphur trade, and the party is caught among its feuding factions.
 videoIds: []
 sections:
   - title: Arhem
@@ -134,6 +134,6 @@ sections:
         image: /compendium/Adventures/SulphurWinter/Prior Grafficanus Majus.jpg
 ---
 
-## Overview
+## Plot
 
-## Synopsis
+The island of Marjura lies in the northern ice sea as Trakorien's most distant outpost, long a refuge for the political and religious freethinkers who fled the kingdom's rigid hierarchy. That fragile peace breaks when Trakorien invades to control the sulphur trade flowing from the island's largest city, Arhem. Among occupying troops, native islanders, dwarves and giants, old grudges and quiet schemes pull in every direction, while the necromancer sect of Shagul steers events from its hidden Iron Tower. The party arrives into this tangle of feuding factions, where almost no one can be fully trusted.

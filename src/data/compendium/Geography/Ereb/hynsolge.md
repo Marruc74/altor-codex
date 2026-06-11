@@ -35,6 +35,8 @@ Cities are often fortified and politically divided.
 
 The Hynsolgers are generally short, around 165 to 170 cm, with dark hair and sturdy builds. They are known for their temperament, proud, quick to anger, and driven by honor, but also for their cultural depth.
 
+Lean and big-footed, with lightly sunburnt skin, dark and often braided hair, strong high cheekbones and, on the men, great drooping moustaches, they dress for the heat in light, airy clothes. The country folk wear sturdy, hard-wearing work garb and many a broad slouch hat, while festival dress is far stricter, formal and strikingly elegant. Of distant barbarian stock, they are quick to draw a blade when provoked, deeply superstitious of both natural omens and magic, wary of strangers, and inclined to give abandoned farmsteads a wide berth.
+
 The language is Hynsolgian, closely related to Pranagi.
 
 ## Politics

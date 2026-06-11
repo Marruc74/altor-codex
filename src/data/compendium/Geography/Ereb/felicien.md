@@ -46,7 +46,7 @@ Typical traits:
 - Limited emotional expression
 - Highly enduring and strong-willed
 
-They are often seen as hardworking and disciplined, but also arrogant by other peoples.
+They are often seen as hardworking and disciplined, but also arrogant by other peoples. Felicien despises manual labour, and by ancient custom its women do no heavy work, turning instead to politics, banking and the crafts while the men go as sailors, merchants, vintners, fishers and warriors. They prize strength, resolve, cunning, pride and a hard realism. For dress they favour the light, airy clothing suited to the warm Copper Sea, and are fond of jewellery, above all bracelets, headbands and brooches of gold and silver.
 
 ## Society
 

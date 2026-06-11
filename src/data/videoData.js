@@ -420,6 +420,105 @@ export const videosBySection = Object.fromEntries(
   })
 );
 
+// Markdown-only peoples: humanoid races from the Monster Book that have no
+// chronicle video. They surface in the Peoples nav and load their own .md via
+// the entry path; EntryDetail hides the "Watch" button when an entry has noVideo.
+const EXTRA_PEOPLES = [
+  { group: "Elves", name: "Wood Elf" },
+  { group: "Humans", name: "Half-elf" },
+  { group: "Humans", name: "Halfling" },
+  { group: "Humans", name: "Highman" },
+  { group: "Humans", name: "Magir" },
+  { group: "Humans", name: "Raggman" },
+  { group: "Humans", name: "Woodman" },
+  { group: "Other Humanoids", name: "Half-orc" },
+  { group: "Other Humanoids", name: "Lindskiarn" },
+].map((p, i) => ({
+  id: `x-people-${i}`,
+  title: `Peoples ${p.group}: ${p.name}`,
+  section: "peoples",
+  group: p.group,
+  name: p.name,
+  noVideo: true,
+}));
+
+{
+  const sec = videosBySection.peoples ?? (videosBySection.peoples = []);
+  for (const entry of EXTRA_PEOPLES) {
+    let grp = sec.find((g) => g.group === entry.group);
+    if (!grp) {
+      grp = { group: entry.group, videos: [] };
+      sec.push(grp);
+    }
+    grp.videos.push(entry);
+  }
+  // Ungrouped first, then groups alphabetically; entries within a group by name.
+  sec.sort((a, b) =>
+    a.group === null ? -1 : b.group === null ? 1 : a.group.localeCompare(b.group)
+  );
+  for (const g of sec) g.videos.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+// Markdown-only creatures from Monster Book III (Chaos) that have no chronicle
+// video. Same treatment as the extra peoples: they surface in the Creatures nav
+// and load their own .md, with the "Watch" button hidden by EntryDetail.
+const EXTRA_CREATURES = [
+  { group: "Spirits", name: "Poltergeist" },
+  { group: "Demonic Creatures", name: "Death Cherub" },
+  { group: "Demonic Creatures", name: "Death Angel" },
+  { group: "Demonic Creatures", name: "Servant" },
+  { group: "Demons", name: "Greater Demon" },
+  { group: "Demons", name: "Demon Noble" },
+  { group: "Demons", name: "Demon Prince" },
+  { group: "Chaos Warriors", name: "Chaos Cardinal" },
+  { group: "Chaos Warriors", name: "Chaos Knight" },
+  { group: "Chaos Warriors", name: "Chaos Corporal" },
+  { group: "Chaos Warriors", name: "Slayer" },
+  { group: "Chaos Warriors", name: "Ravager" },
+  { group: "Elemental Creatures", name: "Shadow Beast" },
+  { group: "Elemental Creatures", name: "Fire Horse" },
+  { group: "Elemental Creatures", name: "Light Bird" },
+  { group: "Elemental Creatures", name: "Earth Beetle" },
+  { group: "Elemental Creatures", name: "Frost Wolf" },
+  { group: "Elemental Creatures", name: "Djinn" },
+  { group: "Elemental Creatures", name: "Water Wave" },
+  { group: "Elemental Creatures", name: "Vulkanti" },
+  { group: "Elemental Lords", name: "Cyclone" },
+  { group: "Elemental Lords", name: "Magmani" },
+  { group: "Elemental Lords", name: "Matter Queen" },
+  { group: "Elemental Lords", name: "Sea King" },
+  { group: "Elemental Lords", name: "Black Sultan" },
+  { group: "Elemental Lords", name: "White Pasha" },
+  { group: "Elemental Lords", name: "Ice Lord" },
+  { group: "Elemental Lords", name: "Desert Lord" },
+  { group: "Magical Creatures", name: "Golem" },
+  { group: "Magical Creatures", name: "Guludur Abomination" },
+  { group: "Magical Creatures", name: "Guardian" },
+].map((p, i) => ({
+  id: `x-creature-${i}`,
+  title: `Creatures ${p.group}: ${p.name}`,
+  section: "creatures",
+  group: p.group,
+  name: p.name,
+  noVideo: true,
+}));
+
+{
+  const sec = videosBySection.creatures ?? (videosBySection.creatures = []);
+  for (const entry of EXTRA_CREATURES) {
+    let grp = sec.find((g) => g.group === entry.group);
+    if (!grp) {
+      grp = { group: entry.group, videos: [] };
+      sec.push(grp);
+    }
+    grp.videos.push(entry);
+  }
+  sec.sort((a, b) =>
+    a.group === null ? -1 : b.group === null ? 1 : a.group.localeCompare(b.group)
+  );
+  for (const g of sec) g.videos.sort((a, b) => a.name.localeCompare(b.name));
+}
+
 export const SECTIONS = [
   { id: "characters", label: "Characters", sigil: "◇" },
   { id: "conflicts",  label: "Conflicts",  sigil: "⚡" },
