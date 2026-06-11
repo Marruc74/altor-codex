@@ -3457,6 +3457,22 @@ body {
   margin-bottom: 2.5rem;
 }
 
+/* A named adventure section groups several card blocks under one heading. */
+.country-detail__section {
+  margin-bottom: 3rem;
+}
+
+.country-detail__section-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--gold-light);
+  letter-spacing: 0.08em;
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
 .country-detail__entries-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));

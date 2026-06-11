@@ -18,13 +18,22 @@ import yaml from "js-yaml";
 //     - name: Utkante
 //       description: A windswept settlement on the island's edge.
 //       image: /compendium/Adventures/The Misty Island/Places/utkante.jpg
-//   objects:                                       # optional items/maps/artifacts
+//   items:                                         # optional items/maps/artifacts (alias: objects)
 //     - name: Map
 //       description: Map of the Misty Island.
 //       image: /compendium/Adventures/The Misty Island/Map.jpg
+//   sections:                                       # optional — group cast/places by locale or beat
+//     - title: Outskirt                             # each section has its own sub-collections
+//       npcs: [ ... ]                               #   npcs / creatures / places / items
+//       creatures: [ ... ]                          #   (same card shape as the flat fields above)
+//       places: [ ... ]
+//       items: [ ... ]
 //   ---
 //
-// Cards with only an image (places, objects, portraits) open it in a lightbox.
+// `sections` and the flat `characters`/`places`/`items` fields coexist: if an
+// adventure defines `sections`, they render as titled groups; otherwise the flat
+// fields render as the single NPCs/Creatures/Places/Items view.
+// Cards with only an image (places, items, portraits) open it in a lightbox.
 //   Prose body in markdown here (may embed ![images](/compendium/...)).
 //
 // `id` is derived from the filename: the-misty-island.md → "the-misty-island"
@@ -56,7 +65,8 @@ export const adventures = Object.entries(files)
       videoIds: data.videoIds ?? [],
       characters: data.characters ?? [],
       places: data.places ?? [],
-      objects: data.objects ?? [],
+      items: data.items ?? data.objects ?? [],
+      sections: data.sections ?? [],
       body,
     };
   })

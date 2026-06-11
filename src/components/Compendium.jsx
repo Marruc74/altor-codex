@@ -388,14 +388,15 @@ function AdventureDetail({ adventure, onVideoSelect }) {
   const npcs = characters.filter((c) => (c.type ?? "npc") !== "creature").sort(byName);
   const creatures = characters.filter((c) => c.type === "creature").sort(byName);
   const places = adventure.places ?? [];
-  const objects = adventure.objects ?? [];
+  const items = adventure.items ?? [];
+  const sections = adventure.sections ?? [];
   const relatedVideos = (adventure.videoIds ?? [])
     .map((id) => videoById[id] ?? { id, name: id })
     .filter(Boolean);
 
   const [lightbox, setLightbox] = useState(null); // {src, alt, caption}[] for image cards
 
-  // Card grid reused for NPCs / Creatures / Places / Objects. Each entry has an
+  // Card grid reused for NPCs / Creatures / Places / Items. Each entry has an
   // optional image, description and videoId: a card with a videoId plays it; a
   // card with only an image opens it in the lightbox (e.g. view the map full-size).
   const cardGrid = (label, items, portrait = false) =>
@@ -446,6 +447,20 @@ function AdventureDetail({ adventure, onVideoSelect }) {
       </div>
     );
 
+  // A named section groups its own Places / NPCs / Creatures / Items beneath a
+  // title heading. Empty sub-grids hide themselves (see cardGrid).
+  const sectionBlock = (section, i) => (
+    <div className="country-detail__section" key={section.title ?? i}>
+      {section.title && (
+        <h3 className="country-detail__section-title">{section.title}</h3>
+      )}
+      {cardGrid("Places", section.places ?? [])}
+      {cardGrid("NPCs", section.npcs ?? [], true)}
+      {cardGrid("Creatures", section.creatures ?? [], true)}
+      {cardGrid("Items", section.items ?? [])}
+    </div>
+  );
+
   return (
     <div className="country-detail">
       <div className="country-detail__header">
@@ -470,10 +485,16 @@ function AdventureDetail({ adventure, onVideoSelect }) {
         </div>
       )}
 
-      {cardGrid("NPCs", npcs, true)}
-      {cardGrid("Creatures", creatures, true)}
-      {cardGrid("Places", places)}
-      {cardGrid("Objects", objects)}
+      {sections.length > 0 ? (
+        sections.map(sectionBlock)
+      ) : (
+        <>
+          {cardGrid("NPCs", npcs, true)}
+          {cardGrid("Creatures", creatures, true)}
+          {cardGrid("Places", places)}
+          {cardGrid("Items", items)}
+        </>
+      )}
 
       {relatedVideos.length > 0 && (
         <div className="country-detail__block">
