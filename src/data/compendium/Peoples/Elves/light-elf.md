@@ -1,11 +1,15 @@
 # Light Elf
 
-Where most elves hold themselves above mortals, the light elves live almost exactly as humans do, in cities and large towns. An elf met in a city is almost certainly a light elf; they work as craftsmen, jewellers, smiths, artists and teachers, and feel none of the closed-in unease that crowds bring on other elf-folk.
+The common notion of the elf-folk is that they hold themselves a little above mortal races and do not quite stoop to mixing with them. This does not hold for the light elves, who very nearly all live just as ordinary humans do, in towns or larger villages. Meet an elf in a city and you can be almost sure it is a light elf. They are chiefly craftsfolk, gem-cutters and precious-metal smiths, artists or teachers. Unlike other elf-folk they feel no sense of confinement or crowding in a city, and have nothing at all against the company of mortals.
 
 ## Appearance
 
-The very picture of an elf, named for skin a shade fairer than their kin, though their hair and eyes may be almost any colour. They dress in whatever the local fashion happens to be and favour the bow over heavier arms.
+The light elves are the very archetype of an elf. Their name comes from skin somewhat lighter than that of most other elves, but otherwise they may be of almost any colour of hair and eye. They usually dress according to the local fashion of whatever city they live in. They are good archers but rarely use heavier weapons.
 
 ## Behaviour
 
-Calm, self-assured and hard to fluster, they make formidable traders; imagine haggling with someone who has ten thousand years to find a better buyer. They scorn the dark folk but are otherwise almost tiresomely tolerant of mortal weakness.
+Light elves are as a rule calm, self-assured, hard to fluster, and very good men of business; imagine haggling with an elf who knows he has at least ten thousand years to find a buyer. In other respects they live much as humans do. They despise all that is called dark folk, but otherwise are almost trying in how readily they overlook the failings of mortals.
+
+## Abilities
+
+Light elves have no special powers. Like all elves they have keen sight and hearing, see well by night, are immune to disease and do not visibly age.

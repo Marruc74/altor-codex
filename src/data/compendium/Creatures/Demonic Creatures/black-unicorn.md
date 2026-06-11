@@ -1,15 +1,15 @@
 # Black Unicorn
 
-Black unicorns are the demonic opposites of ordinary unicorns and their absolute antithesis; some say they are the souls of unicorns that met a violent death, made vengeful by it. Unlike most chaos creatures they belong in the mortal world and so can be killed for good, and can be charmed only by a black-hearted male mage.
+The black unicorns are the demonic counterparts of the ordinary unicorns, and their absolute opposites. Some hold that the black unicorns are the souls of ordinary unicorns that met a violent death, their evil then explained as a thirst for vengeance. Unlike most Chaos creatures, the black unicorns belong to our human world and so can be truly killed.
 
 ## Appearance
 
-Shaped exactly like a unicorn, a horse with a golden spiral horn and cloven silver hooves, but to mortal eyes it shows only as a massive coal-black shadow, a barely transparent spirit.
+A unicorn looks just like a horse, but with a golden, spiralled horn in its brow and cloven silver hooves. The black unicorn is identical in form, but to the human eye it appears only as a massive, coal-black shadow, a barely transparent spirit.
 
 ## Behaviour
 
-Mightier than true unicorns in plain combat though far weaker in magic, and not shy but aggressive and challenging; on meeting one it snorts and paws the ground, then charges with startling speed. Black and white unicorns are mortal enemies.
+The black unicorns are more powerful than ordinary unicorns in plain combat with natural weapons, but nowhere near as mighty in magic. Nor are they shy in the way ordinary unicorns are, but rather aggressive and challenging. Meet a black unicorn and it at once begins to snort and paw the ground with its hooves, before charging with astonishing speed. Black and white unicorns are each other's absolute mortal foes.
 
 ## Abilities
 
-Its horn wounds at a touch, and it is so swift it strikes twice as often as a normal creature.
+A black unicorn's horn wounds at the merest touch. They are incredibly swift and strike twice as often as an ordinary creature in the press of a fight.

@@ -1,15 +1,15 @@
 # Cyclop
 
-The loners of the stone-folk, dwelling in remote, well-kept caves where they raise goats and sheep. Catch one away from home and you will likely find his cave piled with food and wine, the bleached bones of earlier visitors, and a chest or two of glittering treasure.
+Cyclopes are loners among the stonekin, living in remote, well-ordered caves by raising goats and sheep. Find a cyclops' cave while he is out and you will find heaps of food and wine, the whitened bones of earlier visitors, and very likely a number of well-filled treasure-chests of glittering contents.
 
 ## Appearance
 
-Up to six metres tall, like enormous, deeply tanned men but for the single red eye in the brow, wearing little more than a hide loincloth beneath unkempt black hair and beard.
+Like most stonekin that live above ground, cyclopes are enormous, up to six metres tall. They look like gigantic, very powerfully built, deeply sun-browned humans, but with a single red eye in the brow. Their dress is usually no more than a skin loincloth, and the black hair and beard are unkempt and uncut.
 
 ## Behaviour
 
-Fiercely hostile to intruders, though usually content just to chase them off. They live alone or now and then in pairs on isolated islands or far mountains, shun all other folk, and hold their drink badly.
+Cyclopes are very aggressive toward intruders but usually content themselves with merely chasing them off. They live alone, or rarely in pairs, and try as far as they can to avoid all other intelligent creatures, making their homes in very isolated places, on rocky islands or in remote mountains. They hold their drink very badly. Like all stonekin they loathe to fly, sail or ride, and are almost always sick when they do.
 
 ## Abilities
 
-Their single eye leaves them with no depth perception, making them clumsier than their great size would suggest.
+The cyclops' single eye leaves it with no depth of vision, so it is much clumsier in aim and movement than its great size would suggest. Like all stonekin it is long-lived, two to four centuries.

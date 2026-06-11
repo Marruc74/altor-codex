@@ -1,15 +1,15 @@
 # Cold Beast
 
-Cold beasts are terrible ice-monsters from the second circle of Inferno, the Circle of Cold, a kind of elemental creature built partly of demon-ice. In the mortal world they appear almost only in arctic regions and at sea, where they freeze the water into great floes to drift upon.
+Cold beasts are fearsome ice-monsters from Inferno's second circle, the Circle of Cold. They are a kind of elemental creature built in part of demon-ice. In our world they appear almost only in arctic regions and at sea, where they can freeze the water into great floes to drift about on.
 
 ## Appearance
 
-Like enormous, yellow-white, half-transparent walruses; the claws, the three straight horns on the brow and the great curved tusks are all of demon-ice, far harder than steel, and innards and veins show dimly through the pale blubber.
+Cold beasts look like enormous, yellow-white, half-transparent walruses. The long claws, three to a paw, the three dead-straight horns on the brow, and the great curved tusks are all of demon-ice, far harder than steel. Their hide is half-transparent, so that entrails and blood-vessels can be dimly seen through the white-yellow blubber.
 
 ## Behaviour
 
-Very aggressive, unintelligent meat-eaters that attack almost any warm-blooded creature they meet, freezing the prey solid before the feast.
+Cold beasts are very aggressive, unintelligent flesh-eaters, and attack practically any warm-blooded creature they meet. Once the victim is frozen down, it is, in their eyes, cooked, and the feast can begin.
 
 ## Abilities
 
-A solid hit snaps off a claw, tooth or horn-tip inside the victim, which at once begins to freeze the blood: within a few hours the victim is an unconscious block of ice, and no cure is known. They can freeze any water, even the sea, take double damage from fire, and are immune to cold, poison and acid.
+If a cold beast strikes home with a natural weapon, the tip of the claw, tooth or horn breaks off inside the victim's body and at once begins freezing his blood; within minutes he coughs frozen blood, within an hour he is so chilled he loses consciousness, and within a few hours nothing remains but a lump of ice, against which no cure has yet been found. Cold beasts can freeze any water, even salt water, into floes. Cold is their element: they take double harm from all fire and no harm at all from cold, poison or acid.

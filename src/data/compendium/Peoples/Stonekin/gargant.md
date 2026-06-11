@@ -1,15 +1,15 @@
 # Gargant
 
-Gargants carve vast underground complexes into deep ravines and sheer cliffs, and are known for their cruelty, routinely keeping other folk as slaves, dark folk and humans alike. Like dwarves they live by mining and craft, and where you find a settlement of giants there is usually a gargant cave nearby, the two trading slaves and food for craftwork.
+In deep ravines and steep cliff-faces the gargants dig out their vast underground complexes. They are known to be cruel, and regularly keep other peoples, chiefly dark folk but humans too, as slaves. Like the dwarves they live by mining and craft, and find a gargant cave somewhere and there is almost sure to be a giant village in relative reach, the two trading slaves and food for craftwork.
 
 ## Appearance
 
-Around four metres tall, shorter than their giant and cyclops kin, with near grey-black skin, short dark hair and grey eyes. They almost always wear leather-and-plate armour when they leave their cities and favour great double-axes.
+Gargants are somewhat shorter than their kin the giants and cyclopes, about four metres, with nearly grey-black skin. Otherwise they look like large, powerful humans, with short black or grey hair, no beard and grey eyes. Like dwarves they dress lightly indoors and almost always wear armour of leather and plate when they leave their sheltered cities. Double-axes are their favoured weapon.
 
 ## Behaviour
 
-They care little for any other folk and largely keep to themselves, met outside their cave-cities only when hunting for slaves or food, so they are best given a wide berth. They will not enslave dwarves, but every other people should beware.
+Gargants care very little for other peoples at all. They trade a little with neighbouring giants when they wish to be rid of their craftwork, but largely fend for themselves. The only times one meets gargants outside their cave-cities are when they are hunting slaves or food, so they are best given a wide berth. They do not take dwarves as slaves, but other peoples must beware.
 
 ## Abilities
 
-Like dwarves, they see in the dark.
+Gargants have the same darkvision as dwarves, and like all stonekin they live two to four centuries.

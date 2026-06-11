@@ -1,15 +1,15 @@
 # Hell Steed
 
-So strong is the bond between master and horse that when an intelligent creature becomes undead, such as a death wraith, its steed may undergo the same change, rising as an undead mount ever loyal to its master.
+The bond between master and horse is sometimes so strong that when a human or other intelligent creature becomes undead, such as a death wraith, it can draw its horse through the same change. The horse becomes an undead charger, a hell-steed, ever a loyal servant to its master.
 
 ## Appearance
 
-Its body is built of dense, material darkness; otherwise it looks like an ordinary horse, with red glowing eyes.
+The hell-steed's body is built of solid, thickened darkness. In other respects it looks like an ordinary horse, with red, glowing eyes.
 
 ## Behaviour
 
-Utterly loyal, it obeys every command without hesitation or fear for its own unlife. Should its master die or leave the mortal world, it ends itself, drowning or hurling itself off a cliff.
+The hell-steed is utterly loyal to its master and obeys every command without hesitation or fear for its own unlife. Should its master die or vanish from our human world, the hell-steed takes its own unlife by drowning itself or flinging itself off a cliff.
 
 ## Abilities
 
-Hard to spot in the dark and immune to all cold, its sharp teeth carry a venom that rots away whatever it bites. It loathes sunlight but sees perfectly in darkness and speaks mind to mind with its master across a mile.
+A hell-steed is very hard to spot in darkness. It can be harmed as normal by physical force and magic, but is wholly immune to all cold. Its sharp teeth are coated in a venom that sets the stricken limb rotting, useless within a day and falling from the body within two, a process halted only by the right spell. The hell-steed dislikes sunlight and is weakened by it, but has perfect vision in the dark and can speak mind to mind with its master across a kilometre, and it never needs to fear.

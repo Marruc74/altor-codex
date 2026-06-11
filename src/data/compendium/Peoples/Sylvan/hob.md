@@ -1,15 +1,15 @@
 # Hob
 
-A good-natured fae folk who slip into elven or human homes at nightfall to finish the work the household left undone: the cleaning, the baking, the mending. Each works alone on lonely farms and cottages, and will leave forever if the little bowl of porridge or pot of jam is not set out for him.
+Hobs are an easy-going elf-folk that at nightfall seek out the homes of elves or humans and finish the work the dwellers did not get done by day, such as cleaning, baking, cooking or mending clothes. They always go alone and are wanderers, leaving a farm or cottage at once if they do not find their little bowl of porridge or pot of jam waiting in the hall when they come of an evening. They keep only to lonely farms in the countryside or the forest.
 
 ## Appearance
 
-A very short, slight little thing with a big grey beard and a pointed cap, dressed in grey or green, and never armed or armoured.
+Should one, against all likelihood, catch sight of a hob, one sees a very short, slight little thing with a great grey beard and a pointed little cap, usually in grey or green clothes, using neither armour nor weapons.
 
 ## Behaviour
 
-Very shy and almost never seen; his presence shows only in faint humming by night and a house found spotless by morning. Should the home he serves be threatened, he does his utmost to protect its people.
+Hobs are very shy, and most households lucky enough to host one never see so much as a glimpse of him; his presence shows only by night, in faint humming and quiet singing, and by morning, when the house stands newly swept, the garden weeded, the flowers watered, the fence painted. Discovered, a hob flees and never returns. Should the house he serves be threatened, however, he does his utmost to help its dwellers, using his control of the weather under cover of invisibility to call rain to quench fires, mist to cover an escape, or a thunderstorm to hurl lightning at intruders.
 
 ## Abilities
 
-A magic cap lets him turn invisible at will, and he can command the weather around the house, calling rain to quench fires, fog to cover an escape or storms to hurl lightning at intruders.
+Every hob has a magical cap that lets it turn invisible at will, and a gift for controlling the weather quite unlike the animist's, prepared in advance at each new dwelling so that he can call up whatever weather he wishes at a moment's need.

@@ -1,15 +1,15 @@
 # Golem
 
-A golem is a constructed creature of stone or clay given life by powerful magic. With only limited wits, they are set to dull but important work, above all standing guard.
+A golem is a constructed creature of stone or clay, given life through various magical rituals and spells. Since they always have rather limited intelligence, they are often used for dull but important tasks, chiefly the guarding of places.
 
 ## Appearance
 
-Generally man-shaped and all granite-grey, even the hair and eyes turned to stone; the larger it is, the mightier, and it weighs twice what a living creature its size would. A creature turned to stone can itself be made into a golem, enslaved to its maker.
+A golem can be shaped into any form, but most often takes some kind of human-like shape; the larger it is, the mightier it is too. A creature turned to stone, such as a griffin, minotaur or dragon, can be made into a golem and so becomes a slave to its maker. A golem is always stony and wholly granite-grey over the whole body, even its hair and eyes turning stony and grey, and it weighs twice as much as an ordinary creature of the same size.
 
 ## Behaviour
 
-Like the magical undead it must be given exact instructions and obeys its maker blindly, having no will of its own.
+Like the magical undead, a golem must be given exact instructions for what it is to do. It is utterly loyal to its maker and obeys his orders blindly, having no will or wit of its own.
 
 ## Abilities
 
-Immune to sleep, poison and sickness and never needing rest or food, it works no magic; when its body is destroyed it explodes, harming all nearby.
+A golem is immune to sleep, poison and disease, never needs to rest, sleep or eat, and takes no harm from bleeding. When its body is finally destroyed it explodes, harming all nearby. A creature turned to stone by magic and then made a golem keeps the skills of its former life, but a golem can never work any kind of magic.

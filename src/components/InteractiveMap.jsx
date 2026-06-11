@@ -153,6 +153,9 @@ const InteractiveMap = forwardRef(function InteractiveMap({ onLocationSelect }, 
     mapRef.current = map;
 
     const updateMini = () => {
+      // Bail if the map has been torn down (a queued timer/listener can fire
+      // after map.remove(), which nulls _mapPane and breaks getBounds()).
+      if (!map._mapPane) return;
       const b = map.getBounds();
       // With toLatLng(x,y)=[-y,x]: north=0 (image top), south=-IMG_H (image bottom)
       const n = Math.min(b.getNorth(), 0);
@@ -172,9 +175,11 @@ const InteractiveMap = forwardRef(function InteractiveMap({ onLocationSelect }, 
       }
     };
     map.on("moveend zoomend", updateMini);
-    setTimeout(updateMini, 200);
+    const miniTimer = setTimeout(updateMini, 200);
 
     return () => {
+      clearTimeout(miniTimer);
+      map.off("moveend zoomend", updateMini);
       map.remove();
       mapRef.current = null;
       markersRef.current = {};

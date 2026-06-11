@@ -1,15 +1,15 @@
 # Spectre
 
-Spectres resemble ghosts in form and power, but have lost not only their solid shape but all feeling and all memory of their former lives, knowing only a deep forgetting and the memory of their violent death.
+Spectres are much like ghosts in their powers and appearance, but they have lost not only their solid form: they have also lost all feeling and all memory of their former life. The only things they know are a strong sense of oblivion and the memory of their own violent death.
 
 ## Appearance
 
-Like a ghost, but with the agony of death twisted across the face, wrapped always in a faint mist and very hard to spot by day, when they keep to shadowed places.
+Much like a ghost, with the terror of death plain in their twisted features. They are always wreathed in a faint mist and very hard to spot in daylight, for they keep to shadowy places.
 
 ## Behaviour
 
-Lost and confused, bound to no place, they drift aimlessly with no goal in their unlife but to preserve themselves.
+Spectres are lost and confused, and since they are not bound to any one place they simply drift about at random. They have no goal in their unlife but self-preservation, though they sometimes linger where they died, never realising they could move from the spot at all.
 
 ## Abilities
 
-A spectre's touch passes its own forgetting to others, wiping a skill from the victim's mind entirely, and its long, wailing howl strikes terror into all who hear it.
+By touching someone a spectre can pass on the same oblivion it suffers from, so that one of the victim's skills is wholly forgotten, chosen at random and lost entirely, if the spectre can overcome his will. Its power to strike terror comes from a drawn-out, wailing howl, though this is never used in a fight; all who hear it are seized by fear. Like all spirits it passes through solid matter, takes no harm from ordinary weapons, and can be hurt only by spells of the mind or driven off by a banishing.

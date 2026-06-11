@@ -1,15 +1,15 @@
 # Grey Elf
 
-Nomads of the open sea, the grey elves dwell far from land aboard floating islands and great sailing ships. Their islands are rafts of interwoven sea-lindens, trees that feed on saltwater plankton with most of their bulk submerged and only the high trunk and broad crown above the waves; by rigging sails between the trunks, the elves steer the islands across the ocean.
+Grey elves live far out at sea, aboard floating islands and vast sailing-ships. They are very skilled seafarers, shipwrights and navigators, and rarely leave their floating homes. The islands they live on are made of many intertwined sea-lindens, a tree that lives out at sea on saltwater plankton; some five-sixths of each tree is root beneath the surface, and only the ten-metre trunk and the great, spreading crown rise above. By rigging sails between the trunks they can steer the islands' course.
 
 ## Appearance
 
-Grey hair and grey eyes, darkly complexioned yet never weathered for all the harsh sea air. They dress in well-oiled hide clothing.
+Grey elves have grey hair and grey eyes. They are fairly dark-skinned, yet for all the often harsh climate far out at sea they look not the least weather-beaten. They dress in well-oiled skin clothes.
 
 ## Behaviour
 
-Like most elves they keep to themselves, touching land only a few times a year to trade from their long, slender oceangoing ships, saying little and avoiding all attention.
+Like most other elves the grey elves seek no company, but live to themselves and avoid contact with land, save a few times a year when they put in at some harbour with their great, long, slender ocean-going ships to trade. They are not very talkative and try to avoid all notice.
 
 ## Abilities
 
-Superb sailors, shipwrights and navigators, with no special powers beyond their mastery of the sea.
+Grey elves have no special powers, but are consummate sailors, navigators and weather-readers. Like all elves they are immune to disease and do not visibly age.

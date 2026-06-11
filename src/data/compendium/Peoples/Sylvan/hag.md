@@ -1,15 +1,15 @@
 # Hag
 
-The nymphs of darkness, taking shape out of shadow as hideous old crones in dark and shadowed places: the underworld, old ruins, dense forests, caves and crypts.
+Hags are darkness-nymphs that can materialise out of shadow and gloom, taking the shape of fearsome old witches. They keep to dark or shadowy places, such as the underworld, old ruins, very dense forests, caves and crypts. Like all nymphs a hag is bound to her home, here the darkness itself, and cannot be truly slain except by its destruction, the letting-in of sunlight upon her hiding-place.
 
 ## Appearance
 
-A withered old woman with stringy grey or black hair, sunken cheeks and rotten teeth.
+A hag takes the form of an old, thin woman with wasted muscles, grey or black lank hair, sunken cheeks, a wrinkled face and rotted teeth.
 
 ## Behaviour
 
-Neither good nor evil by nature, but openly aggressive toward any intruder in her chosen haunt.
+Hags, like other nymphs, are by nature neither good nor evil, but they are openly aggressive toward intruders in their chosen ground. Where other nymphs heal, the hag's touch works the opposite, harming rather than healing, and in place of a charm she has the power to strike sheer terror into those who face her.
 
 ## Abilities
 
-Where other nymphs heal, her touch wounds instead, and rather than charm she instils raw terror. Direct sunlight drives her physical form back to its haunt, and she is destroyed only by destroying that haunt.
+A hag's physical form cannot bear direct sunlight, and in it she returns at once to her home in spirit form. She can shift at will between physical and spirit form, invisible to ordinary eyes in the latter, and can be hurt only in physical form.

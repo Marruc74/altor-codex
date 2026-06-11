@@ -1,11 +1,15 @@
 # High Elf
 
-The most human of all elves in temperament, and the only kind one might almost call evil. They do not share other elf-folk's reverence for nature; they love wealth and power and stop at little to gain them. Renowned as gifted mages, they live apart in remote academies of magic, and rather than build open kingdoms they prefer to rule from the shadows through intrigue, blackmail and high office.
+High elves are by far the most human of all the elf-races, at least in mind. They differ from the other elf-races too in that one could almost call them evil. They do not share the other elf-folk's reverence and respect for nature; they love riches and power and shun no means to increase those two foundations of their existence. They are well known as skilled magicians, and usually live apart from the world in remote academies of magic. Despite their hunger for power they seldom build great realms, preferring to win their position through blackmail, intrigue and high office, the more discreet road.
 
 ## Appearance
 
-Taller and stronger than other elves, with long straight black hair, heavy black brows, grey or brown eyes and faintly olive skin. They dress in heavy, luxurious velvet and silk in purple, wine-red and black, rich with gold brocade and jewels.
+High elves are taller and stronger than other elves, with long, straight black hair, bushy black brows, grey or brown eyes and faintly olive skin. They dress in heavy, luxurious clothes of velvet and silk in purple, wine-red, dark green, black and brown, richly adorned with gold brocade, precious-metal clasps, beadwork and embroidery, and are very fond of large jewels, rings and brooches.
 
 ## Behaviour
 
-Haughty and arrogant, they despise nearly everyone who does not share their outlook, yet they respect skill of any kind wherever they find it, and never pass up a chance to display and increase their power.
+High elves are as a rule very superior and arrogant in manner, and look down on almost all who do not share their outlook. They hold themselves made to rule, and let slip no chance to display and increase their power and wealth; they respect skill, of whatever kind.
+
+## Abilities
+
+High elves have no special powers beyond their noted gift for magic. Like all elves they have keen sight and hearing, are immune to disease and do not visibly age.

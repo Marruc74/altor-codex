@@ -1,15 +1,15 @@
 # Severed Head
 
-A severed head is much like a deadman's hand, save that it is the head that has taken form. The beheaded often return this way to haunt whoever ordered the execution and drive them mad, the headless spirit seeking out its lost head.
+A severed head is much the same as a deadman's hand, with the obvious difference that it is the head that has taken material form, not the hand. People who have been beheaded often take this shape after death, to haunt the one who ordered the beheading and drive him to madness; the headless spirit seeks out its lost head and joins it to the spirit-head.
 
 ## Appearance
 
-An ordinary head with sinews, muscle and veins trailing from the neck, in whatever state it was at death, perhaps half-rotted and missing nose, ears or eyes, the hair grey and unkempt, the teeth blackened, the skin drawn tight over the dead skull.
+The severed head looks like an ordinary head, with sinews, muscles and blood-vessels hanging out through the neck. Its state depends on its condition at the moment of death; it may well be half-rotted or missing parts such as nose, ears, teeth or eyes. The hair is grey, lank and unkempt, the teeth black, the eyes half-thrust from their sockets, the skin dried and drawn tight over the undead skull.
 
 ## Behaviour
 
-Unable to take direct action, it relies mostly on striking terror, and now and then bites; its sharp fangs carry the same rotting venom as the hell steed's.
+Since the head can perform no direct actions, it relies chiefly on its power to strike terror. On rare occasions it bites, the sharp fangs coated in the same venom as a hell-steed's, which sets a stricken limb rotting.
 
 ## Abilities
 
-Its spirit-body moves freely through any material though the head itself cannot; small and nimble, it is hard to strike, keeps the wits it had in life, and takes normal damage from weapons, fire and magic.
+The head has perfect vision in the dark. Its spirit-body is wholly independent of its physical surroundings and can move freely through any material, though the head itself, being material, cannot. Because of its small size and great agility it is hard to strike. It keeps the skills it had in life, but only those based on the mind, and it cannot cast spells. It takes normal harm from all weapons, fire and magic.

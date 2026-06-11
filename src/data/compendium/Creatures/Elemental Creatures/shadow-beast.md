@@ -1,11 +1,15 @@
 # Shadow Beast
 
-A creature of the dark elemental plane, more powerful than a mere elemental, for it has a mind of its own.
+Elemental creatures dwell on the elemental planes. They are more powerful than the elementals in that they have an intelligence of their own, but they lack the elementals' special powers. Having no bodily vigour, none of them can be harmed by poison, sleep, fear or disease, and when its body is destroyed in our world the creature simply returns to its elemental plane. The shadow beast is the elemental creature of darkness.
 
 ## Appearance
 
-A diffuse shape of thickened darkness, some five metres long and three high, that can be seen only by searching for it.
+The shadow beast appears as a diffuse shape of thickened darkness, around five metres long and three high. It can be made out only by a careful, searching eye.
+
+## Behaviour
+
+A shadow beast is a predator of the dark, prowling and striking with bite and claw. Like all elemental creatures it has a will and wit of its own, unlike the mindless elementals.
 
 ## Abilities
 
-Having no living vigour, it cannot be touched by poison, sleep, fear or sickness; when its body is destroyed it simply returns to its own plane.
+The shadow beast is hard to perceive in the dark, and like all elemental creatures it cannot be harmed by poison, sleep, fear or disease; when its body is destroyed it returns at once to its plane of darkness.

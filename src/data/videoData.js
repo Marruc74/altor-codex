@@ -424,6 +424,8 @@ export const videosBySection = Object.fromEntries(
 // chronicle video. They surface in the Peoples nav and load their own .md via
 // the entry path; EntryDetail hides the "Watch" button when an entry has noVideo.
 const EXTRA_PEOPLES = [
+  { group: "Animal Humanoids", name: "Brown Duck" },
+  { group: "Animal Humanoids", name: "White Duck" },
   { group: "Elves", name: "Wood Elf" },
   { group: "Humans", name: "Half-elf" },
   { group: "Humans", name: "Halfling" },
@@ -494,6 +496,9 @@ const EXTRA_CREATURES = [
   { group: "Magical Creatures", name: "Golem" },
   { group: "Magical Creatures", name: "Guludur Abomination" },
   { group: "Magical Creatures", name: "Guardian" },
+  { group: "Fable Animals", name: "Ghertûm" },
+  { group: "Plants", name: "Tree Master" },
+  { group: "Shapeshifters", name: "Shapeshifter" },
 ].map((p, i) => ({
   id: `x-creature-${i}`,
   title: `Creatures ${p.group}: ${p.name}`,

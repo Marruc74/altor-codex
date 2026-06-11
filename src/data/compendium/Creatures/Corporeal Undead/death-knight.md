@@ -1,15 +1,15 @@
 # Death Knight
 
-A death knight is a very mighty kind of skeleton, made by cruel and secret rituals, and counts among the higher undead.
+The death knight is a very mighty kind of skeleton, created through evil and mysterious magical rituals.
 
 ## Appearance
 
-A black skeleton with faint red points of light in the eye-sockets. They can use any arms and armour, but having almost always been mighty warriors in life they take the shape of powerful fighters in the very mail and weapons they once bore.
+A death knight looks like a black skeleton, with faint red points of light in the eye-sockets. They can use any kind of armour and weapon, but since they were almost always very mighty warriors in life, they take the form of powerful fighters with the same armour and weapons they once bore.
 
 ## Behaviour
 
-Deeply evil and cunning, with strong resistance to spells, they pursue their own ends, be it power, wealth, fame or revenge, often the dreams they could not reach in life, owing no loyalty to whoever raised them.
+Death knights are very evil and cunning, and have a strong resistance to spells besides. They may have all manner of goals in unlife, power, riches, fame or vengeance, and most often use their unlife to realise the dreams they could not attain while living. They have no special bond to the one who made them, but keep a will entirely their own.
 
 ## Abilities
 
-Every death knight can make banemen of the foes it slays, and it can paralyse all within ten metres with an icy death-chill, leaving victims frozen and with no memory of what passed.
+Every death knight can automatically make banemen of the foes it slays. It can also paralyse its enemies with an icy death-chill that grips all within some ten metres, leaving any it overcomes wholly paralysed for a time, unable to act and left with no memory of what passed.

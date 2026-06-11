@@ -1,15 +1,15 @@
 # Slayer
 
-Slayers are chaos warriors utterly specialised in stalking, hiding and dealing instantly killing blows; at open fighting they are poor.
+Slayers are chaos warriors extremely specialised in stealth, in hiding, and in dealing instantly killing strikes; they are not much good at fighting in the open.
 
 ## Appearance
 
-Usually short, dressed in dark clothing matched to their surroundings, and since the clothes are illusion they can change colour in a flash, making them very hard to spot.
+Slayers are usually rather short and dressed in dark clothes that match their surroundings as closely as possible; since the clothing is an illusion they can change its colour in an instant, which makes them very hard to spot. Their true form, like all chaos warriors, is a green-shimmering lump of jelly topped with eyed and clawed tentacles.
 
 ## Behaviour
 
-Masters of getting unseen behind a foe, they turn invisible, creep up and cut a throat, or work a dagger between armour-plates at a vital spot; like all chaos warriors they are aggressive and murderous and attack without provocation.
+Slayers are masters of slipping up behind a foe unseen. Going into a fight they turn invisible, then creep up behind an enemy and try to cut his throat; if he wears armour they instead work a dagger between the plates at some vital spot, the kidneys, the neck, an armpit. Like all chaos warriors they are very aggressive and murderous, and attack without any provocation.
 
 ## Abilities
 
-A slayer can become all but invisible at will, so a foe needs sharp wits to notice it at all, and it shares the chaos warriors' shapeshifting and life-draining.
+A slayer has, as a natural knack, a power like invisibility, so that a foe must be very alert indeed to notice it. Like all chaos warriors it drinks life-force by touch, draining body and mind permanently, and reverts to its true jelly form, fully restored, when slain. It can remain in the human world about a month before vanishing without trace.

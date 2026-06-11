@@ -1,15 +1,15 @@
 # Satyr
 
-Male woodland spirits whose chief joys in life are feasting and chasing nymphs, holding nightly revels of wine, song, dance and music for the creatures of the forest.
+Satyrs are male forest-spirits whose chief joys in life are feasting and chasing nymphs. They live out in the open and each evening invite the spirits of the forest to great feasts with much wine, song, dance and music.
 
 ## Appearance
 
-A man's upper body with a goat's legs, tail and horns, pointed ears and a brown beard over a red-brown pelt.
+Satyrs have the upper body of a human, the legs and tail of a goat, pointed ears and goat-horns. The lower body is covered in red-brown fur, and they always wear a brown beard. In a fight they use chiefly broad-bladed spears or the longbow.
 
 ## Behaviour
 
-Merry and amorous, fond of the wine they make themselves, they are often found feasting with wood elves, faeries or nymphs. They ignore others until trespassed upon, then turn intruders away first with words, then broad-bladed spears, then bewitching music.
+Satyrs are merry charmers of women, with a great love of song, music, dance and wine, which they make themselves. They are often seen feasting with wood elves, faeries or nymphs. They ignore humans and other creatures so long as these do not intrude on the satyrs' own ground, when they drive them off, kindly but firmly, first with words, then with their broad-bladed long-spears, and last of all with their bewitching music.
 
 ## Abilities
 
-On their famous panpipes they can pipe sleep, love, paralysis or wild dancing into nearly any mind, though only an hour a day.
+With their famed panpipes the satyrs can twist the minds of most, playing harmonist spells of sleep, infatuation, following, mass-dancing, paralysis and even healing; the pipes can be used only an hour a day.

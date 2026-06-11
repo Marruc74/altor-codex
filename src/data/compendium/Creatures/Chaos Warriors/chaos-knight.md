@@ -1,15 +1,15 @@
 # Chaos Knight
 
-Chaos knights are about as powerful as the cardinals but know no magic beyond the illusion that hides their true shape; in exchange they are superb fighters. In our world they are drawn to violence, war and bands of adventurers, where they can drain the life-force of the fallen unnoticed.
+Chaos knights are about as powerful as the chaos cardinals, but command no magic save the illusion that hides their true identity; they are, on the other hand, extremely good fighters. Coming to the human world, they are often drawn to violence, to wars or to bands of adventurers, so as to drink the life-force of the slain unnoticed.
 
 ## Appearance
 
-Tall, powerful, proud and stately warriors in real or illusory full plate, fighting by choice with a one-handed weapon and large shield, or lance and shield when mounted.
+The knights often take the shape of tall, powerful warriors, proud and stately. They wear a full harness, real or illusory, and prefer to fight with a one-handed weapon and a great shield, or lance and shield when mounted. Their true form, like all chaos warriors, is a green-shimmering lump of jelly hung with eyed and clawed tentacles.
 
 ## Behaviour
 
-If no natural chance to feed presents itself, they will simply break into some unsuspecting household and kill them in their sleep before vanishing, careful like the cardinals to make their deeds look like ordinary murder or robbery.
+If a chaos knight cannot at once find some natural chance to take available life-force, it may simply break into the home of some unsuspecting family and kill them in their sleep, then vanish from the settlement. Like the cardinals they are very sly, and try as far as they can to cover their tracks by making their deeds look like natural acts of violence, an assassination or a robbery-murder.
 
 ## Abilities
 
-Like all chaos warriors they shapeshift, drain life by touch, and revert to their true form, fully restored, when their assumed body falls.
+Like all chaos warriors, a chaos knight can shift into any humanoid form, taking an hour to do so, and drinks the life-force of intelligent creatures by touch, draining body and mind permanently until the victim dies. When its body is slain it reverts to its true jelly form and is wholly restored, and it can remain in the human world about a month before vanishing without trace.

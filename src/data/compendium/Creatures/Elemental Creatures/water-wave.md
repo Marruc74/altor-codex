@@ -1,11 +1,15 @@
 # Water Wave
 
-A creature of the water elemental plane.
+Water waves dwell on the elemental plane of water. Like all elemental creatures they have an intelligence of their own but lack the elementals' special powers, and being without bodily vigour they cannot be harmed by poison, sleep, fear or disease; when slain in our world they return to their plane.
 
 ## Appearance
 
-A great pool of water that rears into a tall wave as it moves.
+The water wave looks like a large pool of water, and when it moves it rears up into the shape of a tall wave.
+
+## Behaviour
+
+It attacks by flinging itself over its victim. Like all elemental creatures it has a will of its own.
 
 ## Abilities
 
-It attacks by hurling itself over its prey, leaving the victim choking and helpless for a moment. Natural fire cannot harm it, only sufficiently powerful magical fire, and like all elemental creatures it is proof against poison, sleep, fear and sickness.
+A creature swept over by a water wave may take in a lungful of water and be left coughing and helpless for a moment. The wave cannot be harmed by natural fire, though strong enough magical fire will hurt it, and like all elemental creatures it is immune to poison, sleep, fear and disease, returning to the plane of water when its body is destroyed.

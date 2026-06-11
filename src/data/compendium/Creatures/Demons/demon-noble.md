@@ -1,15 +1,15 @@
 # Demon Noble
 
-Demon nobles are exceedingly mighty demons, perhaps supreme commanders or rulers of a lesser princedom or torture-sphere, the ancient ones of Inferno. They visit the mortal world only rarely, often taken as a sign of its doom, but it is most often they who arrange for lesser demons to arrive.
+Demon nobles are exceedingly mighty demons, perhaps supreme commanders or rulers of some lesser princedom or sphere of torment. It happens that they visit the human world, which is usually taken for its doom, but this is exceedingly rare; more often it is the demon nobles who lie behind the coming of lesser demons to the human world.
 
 ## Appearance
 
-Like a greater demon, though by this stage they have usually taken humanoid form, one head, one body, two arms and two legs.
+As the greater demon, but by this stage they have usually taken a humanoid form: one head, one body, two arms and two legs.
 
 ## Behaviour
 
-Intensely hungry for power, for they could not have risen so far otherwise, and forever intriguing for more; they keep the most contact with the mortal world, gladly sending messengers to gather information.
+As a rule demon nobles are exceedingly hungry for power, or they would not have climbed so high, and they intrigue endlessly to seize yet more. They have the most contact with the human world of any demons, since they gladly send messengers there to gather information.
 
 ## Abilities
 
-Many demonic gifts each, and they can teleport themselves or others between the planes of the multiverse at will.
+Demon nobles command a great wealth of demonic powers. They can teleport themselves or others between the planes of the Multiverse at will, can travel to the human world by their own strength, or be called up by a demonologist. As with all demons, their physical body may be slain anywhere, dissolving to dust, but only on their home plane can they be destroyed for good.

@@ -1,15 +1,15 @@
 # Zombie
 
-Zombies are corpses animated into undeath by a necromancer, stronger than skeletons, though the bodies used must be no more than a month dead and still whole in their essential parts; they count among the lesser undead.
+Zombies are corpses animated into undeath by a necromancer. They are more powerful than skeletons, but the bodies used to make a zombie must be no more than a month old and must still have all their essential parts and organs.
 
 ## Appearance
 
-Rotting corpses barely holding together, the skin pale, dried and cracked over lifeless bones, bloodless and yellowed, the decay going on even after animation so that they give off a frightful stench.
+Zombies look like rotted corpses that barely hold together any longer. The skin is pale, withered and cracked, drawn tight over lifeless bones; the body is bloodless, which gives it a yellowish hue, and since the fatty tissues break down first of all, a zombie ends as little more than skin-clad bones. The rot goes on even after the zombie is animated, so that zombies give off a dreadful stench.
 
 ## Behaviour
 
-Will-less servants that keep the skills of their former life save those of the mind, they fight as cunningly as their maker but are apt to flounder if a fight turns unexpectedly.
+Like all magical undead, zombies keep all the skills of their former life save those based on the intellect, so they cannot cast spells, though they are good at moving stealthily. A zombie's conduct in a fight is as cunning as that of the magician who made it, but it may come unstuck if the fight takes an unexpected turn. It has no will of its own and obeys its maker's commands, given within sight and hearing.
 
 ## Abilities
 
-Anyone who catches a zombie's rotten stench must master their stomach or be left violently sick and helpless for a time.
+All who catch the rotten stench of a zombie must master their stomachs or be struck by violent sickness, vomiting at once and left too dizzy to do anything for a short while. Like all magical undead a zombie feels no pain, is bloodless, and has perfect vision in the dark.

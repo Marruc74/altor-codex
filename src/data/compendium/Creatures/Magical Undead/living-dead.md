@@ -1,15 +1,15 @@
 # Living Dead
 
-A living dead is the unlucky union of a zombie and a lost, wandering spirit, the spirit taking up residence in the zombie's body; the result is a powerful creature with the zombie's body and the spirit's mind. Such things arise near the lairs of necromancers, where the undead crowd thick.
+Near the caves or castles of necromancers and other dark sorcerers the concentration of undead, wraiths, spirits and demons is usually exceptionally high, and in such places strange, unforeseen things can happen. A living dead is the unhappy combination of a zombie and a stray spirit: the spirit takes up residence in the zombie's body, and the result is a very powerful creature with the zombie's physical powers and the spirit's mental ones.
 
 ## Appearance
 
-Much like a zombie, save that the rot stops the moment the spirit moves in, so it gives off only a faint, unpleasant smell of corpse and grime rather than a true stench. It uses any arms and armour and tries to look as fearsome as it can.
+A living dead looks much like a zombie, except that the rot stops the moment the spirit takes up residence, so it gives off no revolting stench, only a faint, barely noticeable smell of corpse and filth. They can use any weapons and armour and generally try to look as terrifying as possible.
 
 ## Behaviour
 
-Evil, bloodthirsty and violent, it attacks unless plainly outmatched and fights like a berserker, with a will of its own and bound to no place or task, taking joy only in sending others to the realm of the dead.
+Living dead are malevolent, bloodthirsty, violent creatures. They always attack unless plainly outmatched, and fight like berserkers. They have a will of their own and are bound to no place or task; they have no goal in their unlife, but take great joy in sending other creatures to the Realm of Death.
 
 ## Abilities
 
-Being part spirit, it can drain the life-force from a victim by touch, taking their vigour away for good.
+Being part spirit, the living dead has a spirit's power to drain life-force by touch, taking the victim's bodily strength permanently each moment if it can overcome his will. Like all magical undead it feels no pain, is bloodless, and has perfect vision in the dark.

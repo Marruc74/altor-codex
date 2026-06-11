@@ -1,15 +1,15 @@
 # Pazuzu
 
-Pazuzu are the lesser demons of Inferno's shadow circle, the rank-and-file that serve as slave-drivers, torturers and underlings, their work to torment human souls to madness.
+Among the very lowest of Inferno's demon-folk are the pazuzu, the fly-masters of the shadow circle. The lowest demons serve as overseers, slave-drivers, executioners, under-officers, torturers and gaolers, their chief task to torment the human souls to madness.
 
 ## Appearance
 
-Green-grey, warty skin, forever wrapped in clouds of great flies, with faceted eyes, wings and huge drooling jaws set with enormous fangs.
+Pazuzu have grey-green, warty skin and are forever wrapped in clouds of large flies. They have faceted eyes, wings, and great drooling jaws set with enormous fangs.
 
 ## Behaviour
 
-Living in the gloomy shadow circle, they are melancholy creatures who feel the passing of all things.
+Living in the gloomy shadow circle, the pazuzu are melancholy creatures, keenly aware of the transience of all things. They rarely visit the human world, since most summoning spells call far mightier demons.
 
 ## Abilities
 
-Like all lesser demons they bear a few demonic gifts, and cannot reach the mortal world on their own but must be sent by a mightier demon or summoned by a demonologist.
+A pazuzu commands a few demonic powers. It cannot travel to the human world by its own strength, but must be sent by a mightier demon or called up by a demonologist. As with all demons, only its physical body is slain in our world, dissolving to dust as it returns to its own plane.

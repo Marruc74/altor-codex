@@ -1,11 +1,15 @@
 # Glacial
 
-The glacial is the elemental of cold.
+Glacials are the elementals of cold, incarnations of that element summoned from its plane into our world by elemental magic and bound to the will of the magician who calls them. Like all elementals they have no wit of their own, are immune to poison, and can be harmed by magic as normal.
 
 ## Appearance
 
-A man-like shape with blue skin and a bushy white hair and beard.
+A glacial appears as a human-like figure with blue skin and a bushy white hair and beard.
+
+## Behaviour
+
+Like all elementals, the glacial has no will of its own and acts only at the command of the magician who summoned it, until sent back to its plane.
 
 ## Abilities
 
-Immune to cold but harmed by fire, which does double damage, and by material weapons, though any iron edge that strikes it rusts and is permanently blunted. Its grip inflicts biting cold, and the fierce chill within a few metres of it can stop a creature from coming any closer.
+A glacial is immune to all cold-attacks but can be harmed by fire, which does it double harm, and by material weapons, though any iron edged weapon that wounds it rusts and is permanently dulled. If a glacial seizes another creature it inflicts cold-damage, and anyone who comes within a few metres must master the bitter chill or be unable to draw any closer.

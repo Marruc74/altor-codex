@@ -1,15 +1,15 @@
 # Death Angel
 
-The Death Angel is the chaos-princes' single mightiest instrument in the mortal world. Few have seen it; then again, dead men tell no tales.
+The death angel is by far the mightiest tool of the Chaos princes in the human world. Few have seen it, but then, dead men do not talk.
 
 ## Appearance
 
-All that shows of it is a long, ragged black hooded cloak, and within the hood a grinning, horrible skull whose empty sockets hold two red points of light far back; its withered, knotty hands always grip a black, razor-sharp scythe.
+All one sees of the death angel is a long, black, much-worn hooded robe, and within the hood a grinning, dreadful skull. The eye-sockets are empty but for two red points of light somewhere far inside. Its hands are dried and gnarled, and forever hold a black-gleaming, razor-sharp scythe.
 
 ## Behaviour
 
-It serves as messenger and omen, sent to warn that something dreadful will come unless plans change, or charged to collect someone whose deeds have earned a place in Inferno's lower circles.
+The death angel serves as a messenger or omen, sent to warn that something dreadful will come to pass unless one changes one's plans. It may also be set to fetch someone who, by his deeds, has surely earned a place in one of Inferno's lower circles.
 
 ## Abilities
 
-It cannot be killed, only banished for a day by destroying its body. Almost no magic touches it, and only magic weapons harm it, for half damage; with its dread right forefinger it can hold a chosen creature paralysed or beckon a victim helplessly after it.
+The death angel cannot be killed, only driven from the human world for a time by destroying its body; the soul then returns to Inferno and takes new material form after a day. Almost no magic touches it, by reason of its tremendous will, and only magical weapons can harm it, and those only by half. With its dreaded right forefinger it can point at a chosen creature and hold it wholly paralysed until the angel departs from the place, or beckon a victim and so force him to follow after it.

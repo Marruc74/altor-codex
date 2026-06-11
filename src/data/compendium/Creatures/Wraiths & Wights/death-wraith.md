@@ -1,15 +1,15 @@
 # Death Wraith
 
-Death wraiths are usually the spirits of extremely mighty mages, though now and then a common warrior becomes one; they are the most powerful of all undead, demonic creatures aside. They rise from souls strong enough to remain in the world after death, held here by an unfinished purpose, a lust for power, or sheer terror of the realm of the dead.
+Wraiths are very powerful spirits that arise from people whose strength of soul in life was so great that they could remain in the world after death, a magician obsessed with some single spell, a thief consumed by the theft of one particular treasure, a warrior bent on vengeance for a wrong real or imagined. The death wraith is usually the spirit of an extremely mighty magician, though in rare cases an ordinary fighter may become one. They are by far the most powerful of all the undead, if one does not count the death angel and the black avengers among them.
 
 ## Appearance
 
-It looks as it did in life, unmarked by death, but its body is a pitch-black figure like a shadow made solid, with red glowing eyes. Very old death wraiths age on into something more like a skeleton hung with rotted flesh.
+The death wraith looks as it did before death, bearing no marks of its dying. The body, however, is a night-black figure, as though a shadow had been turned to solid form, with red, glowing eyes. Having reached the wraith-state its body goes on ageing as before, so that a truly old death wraith looks more like a skeleton hung with rotting scraps of flesh than like a wraith.
 
 ## Behaviour
 
-Unlike lesser wraiths they are seldom bound to a single task, but act by a will entirely their own.
+Unlike the spectres and the dark and barrow wraiths, a death wraith is not so often bound to a single task, but keeps a will entirely its own. It is a wraith that has manifested its spirit in a solid, physical form, a body made by its own mind, and so it can heal itself as its will returns.
 
 ## Abilities
 
-Fully physical, they wield any weapon, take only half damage from ordinary arms, and keep every skill they had in life. A touch can drain a victim's strength forever and leave them paralysed, and their power to strike terror is among the greatest of any undead.
+A death wraith has a wholly physical body, can use any material thing and move about as a living creature does, and keeps all the skills it had in life. It can be harmed as normal by fire, magic and magical weapons, but takes only half harm from ordinary weapons. By touching a victim and overcoming his body with its will, it can drain his strength permanently and leave him completely paralysed for a short while; armour, clothing and ordinary wards are no help, and this, with its great power to strike terror, makes it the mightiest of the undead. It has perfect vision in the dark and extremely keen hearing, but is weakened in full daylight.

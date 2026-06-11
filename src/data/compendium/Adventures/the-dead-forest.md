@@ -6,7 +6,12 @@ videoIds: []
 sections:
   - title: The Inn
     description: The tavern where the party begins and is drawn into the forest by its rumours and the folk who hire them.
+    places:
+      - name: The Inn
+        description: The tavern at the forest's edge where the adventure begins, thick with rumours of the wood, where the wine-merchant Dregil, the rogue guides and the sorceress Doriath all find the party. Its name and place are the game master's to set.
     npcs:
+      - name: Dregil
+        description: A bitter, middle-aged wine-merchant in a worn wine-red robe who hires the party to hunt down the orcs that stole his wine-cargo, offering five casks of wine and a hundred gold, and gives them the road to the cave ravine.
       - name: Filundrus
         description: One of two rogues lounging in the tavern, a tall, fine-limbed thief of thirty-three whose pleasant looks hide a treacherous streak. With Ivil he offers to guide the party to a hoard, meaning all the while to rob them and slip away into the forest.
         image: /compendium/Adventures/TheDeadForest/Characters/Filundrus.jpg
@@ -18,6 +23,11 @@ sections:
         image: /compendium/Adventures/TheDeadForest/Characters/Doriath.jpg
   - title: Wilderness
     description: The living forest around the dead wood, and the travellers, beasts and dangers met on its paths.
+    places:
+      - name: The Dead Forest
+        description: The stand of tall trees along the Mountain River, once part of the elves' wood, that grow no longer yet are not dead but stand forever green as a memorial to a vanished age; around it the living forest teems with game and is crossed by travellers, beasts and worse.
+      - name: The Mountain River
+        description: The river that winds through the region and runs down into the Little Lake, crossed by the forest road's bridge on the way to the cave ravine.
     npcs:
       - name: Grim
         description: One of two minotaur brothers, the forest's worst bullies, who live only to fight and win glory and cut down all who resist with their great double axes.
@@ -37,30 +47,114 @@ sections:
       - name: Kara
         description: A twenty-year-old sorceress travelling with the monk Ariel, fair-haired and bright-eyed, who carries a wooden staff set with a sky-blue stone. The pair will gladly join the party in search of a new mystery.
         image: /compendium/Adventures/TheDeadForest/Characters/Kara.jpg
+      - name: Eledain's Knights
+        description: Anbel, Tylrod and Pilos, three knights of the Brotherhood of the Eternally Shining Star, servants of Eledain, who roam the forest hunting the Black Knight, a servant of Sathmog.
+      - name: The Elf Company
+        description: Eldur, Giljath, Fenor and the elf-magician Tirinor, four elves journeying to the Temple of the Winds, the others warriors with bow and blade.
+      - name: The Highwaymen
+        description: Eight armed robbers led by a dark-skinned, stubbled man, who waylay travellers on the forest paths.
+  - title: Grave Mounds
+    description: The barrows beneath a stone-ringed meadow where the guides try to lead the party, holding the grave of an ancient knight, his kin, their treasure, and the restless dead.
+    places:
+      - name: The Barrows
+        description: Grave-mounds under a meadow ringed with standing stones, a trapped descent leading to winding passages and the burial chambers of a knight dead nine hundred years, his consort, his companion and his young son, with gold and magic laid among the graves.
+    npcs:
+      - name: The Ancient Knight
+        description: A knight dead nine hundred years, his skeleton enthroned in the central burial chamber and risen as a barrow-wight; his consort, his right-hand companion and his young son lie in chambers of their own, each likewise risen.
+    creatures:
+      - name: Barrow-wights
+        description: Four powerful undead spirits that materialise in the barrow chambers, the risen dead of the ancient knight and his kin, harmed only by fire, magic and magical weapons.
+    items:
+      - name: The Magic Greatsword
+        description: A magical greatsword in the ancient knight's chamber, ever-enchanted so that it strikes truer and bites deeper.
+      - name: The Pentagram Shield
+        description: A war-shield bearing the Sign of the Double Pentagrams worked in fine silver, warding its bearer against elementals up to the third degree, and worth a small fortune.
+      - name: The Son's Short Sword
+        description: A magical short sword buried with the knight's young son, enchanted to strike truer and bite deeper.
   - title: Hermit
     description: The Deep Marshes and the old hermit who guards the way to the Gates of Power.
+    places:
+      - name: The Deep Marshes
+        description: Vast, dangerous marshlands between the highland and the forest, crossed safely only by the Marsh Path.
+      - name: The Marsh Path
+        description: The one safe way through the Deep Marshes, past the hermit's raft-tent and on to the Gates of Power.
+      - name: The Gates of Power
+        description: At the marsh path's end, a vast relief portal of pearl-white marble set in the highland cliff, flanked by two rearing unicorns with crossed horns and four crossed hands, opened by the two pearls and the conch horn, the way on to the trilogy's second part.
     npcs:
       - name: Ulat-a-a'r
         description: An eighty-two-year-old hermit who has always lived beside the path through the Deep Marshes that leads to the Gates of Power. Sinister to look at but kindly at heart, he keeps a golden charm meant for the gates and will give it only to those who are neither greedy nor power-hungry nor servants of dark powers.
         image: /compendium/Adventures/TheDeadForest/Characters/Ulat-a-a'r.jpg
+    items:
+      - name: The Golden Charm
+        description: A golden charm graven with a verse that tells the use of the three keys and marked with the Sign of the Double Pentagrams, forged by an elf for the key-bearers and now kept by the hermit, who gives it only to the worthy.
+  - title: Temple of the Winds
+    description: A white pillared temple on the height of Bergsön, home to the Wind Maiden who answers the questions of those who seek her.
+    places:
+      - name: The Temple of the Winds
+        description: A white pillared building with crystal doors on the top of Bergsön, the height within the forest, the dwelling of the Wind Maiden.
+    npcs:
+      - name: The Wind Maiden
+        description: An air-sylph, handmaiden and voice of the wind-goddess, who dwells in the Temple of the Winds and will answer a question for the price of a little of the asker's own spirit.
   - title: House of Elusia
     description: The healer Elusia's home by the Little Lake, and the White Pearl she keeps.
+    places:
+      - name: Elusia's House
+        description: A small log house by the Little Lake, a living-room and kitchen and a bedroom, where the White Pearl lies hidden in the hearth.
+      - name: The Little Lake
+        description: A small lake at the forest's south-western end, beside Elusia's home.
     npcs:
       - name: Elusia
         description: A gentle sorceress of twenty-five who lives alone by the Little Lake, healing and helping any who come to her in need. Beloved of the centaur Ketolus and foe of the cave-ravine orcs, she keeps the White Pearl, one of the keys to the Gates of Power, and might give it to someone she judges worthy.
         image: /compendium/Adventures/TheDeadForest/Characters/Elusia.jpg
+    items:
+      - name: The White Pearl
+        description: One of the three keys to the Gates of Power, a fist-sized pearl white as moonlight, hidden by Elusia in her hearth, which she might give to someone she judges worthy.
   - title: Water Pond
     description: The marble pool in the glade and the magician's complex hidden beneath it.
+    places:
+      - name: The Water Pool in the Glade
+        description: A marble pool in a forest glade that hides the entrance to Windhand's complex, warded by a sigil-spell and a water undine.
+      - name: Windhand's Underground Complex
+        description: A complex hewn from grey rock beneath the pool, holding a food cellar, a store-room, prison cells, a pentagram hall, a laboratory, a book-chamber and the magician's own kitchen and bedchamber.
     npcs:
       - name: Windhand
         description: A balding magician of forty-four, neither wholly good nor truly evil, who built a hidden complex beneath the marble pool in the glade. Having found the Conch Horn, another key to the Gates of Power, he now seeks the rest, and meets intruders disguised as a wandering monk before slipping underground to fight or flee as the odds turn.
         image: /compendium/Adventures/TheDeadForest/Characters/Vindhand.jpg
+    creatures:
+      - name: Water Undine
+        description: A water-elemental raised by the sigil-spells of the pool and the complex, which tries to drown any who break the seal.
+    items:
+      - name: The Conch Horn
+        description: One of the three keys to the Gates of Power, a horn made from a three-decimetre seashell, held by the magician Windhand, who seeks the other two keys for himself.
+      - name: The Book of the Unity of All Things
+        description: A magical book that grants any magician who reads it a lasting edge on every spell, one copy kept in Windhand's book-chamber and another in his bedchamber.
   - title: Canyon
     description: The cave ravine where the half-orc Blackhand's orcs lair with their plunder.
+    places:
+      - name: The Cave Ravine
+        description: A ravine of caves holding the orcs' and trolls' lairs, with an orc hideout, a troll cave, an empty cave and the orc caves proper, where Blackhand's band feasts on stolen wine.
+      - name: The Troll Cave
+        description: A cave in the ravine where three powerful cave-trolls lair, going out by night to hunt.
+      - name: The Dwarf Cell
+        description: A cell where two very old captive dwarves are made to forge locks for the orcs, locks they craft deliberately easy to pick.
     npcs:
       - name: Blackhand
         description: The half-orc chieftain of the orcs in the cave ravine, a fierce and paranoid raider who fights with two curved sabres and hoards his plunder. Above all he prizes the Black Pearl, taken from fleeing elves, never knowing it is one of the keys to the Gates of Power.
         image: /compendium/Adventures/TheDeadForest/Characters/Blackhand.jpg
+      - name: Baldor and Lordin
+        description: Two very old captive dwarves, three and a half centuries old, held in the ravine to make locks for the orcs, which they craft deliberately easy to pick, and who would be glad of rescue.
+      - name: The Captive Warriors
+        description: Aulec, Sigved and Yrvad, three badly beaten warriors held in a prison cell in the ravine.
+    creatures:
+      - name: Orcs
+        description: Blackhand's band of some twenty-five orcs who hold the cave ravine, often drunk on stolen wine.
+      - name: Cave Trolls
+        description: Obald, Tek and Stok, three powerful cave-trolls that lair in the ravine and hunt by night.
+      - name: Wildcat
+        description: A wildcat mother with three kittens denned in one of the ravine's caves.
+    items:
+      - name: The Black Pearl
+        description: One of the three keys to the Gates of Power, a fist-sized pearl black as ebony, hoarded by the half-orc Blackhand, who never knows its true worth.
 ---
 
 ## Plot

@@ -1,15 +1,15 @@
 # Death Cherub
 
-Death cherubs are creatures of Inferno whose task is to lead the newly dead down the burning Abyss to the ninth circle, where souls are judged to all but endless torment. Moving so near the gap between dimensions, they sometimes stray into our world, where they wander as vague, wailing, lost shadows seeking the way back.
+Death cherubs are creatures of Inferno, set to guide the newly damned down through the burning Abyss to Inferno's ninth circle, where the souls are sentenced to torments all but unending. Because they move near the gap between dimensions, they sometimes stray into our world, where they wander as vague, wailing, lost shadows in search of a way back to Inferno.
 
 ## Appearance
 
-They are the souls of small children already damned in their short lives, all the more tragic for it: like human children of three to six, rotting flesh hanging loose on ivory skeletons, with rusty, iron-scaled wings that grate as they move.
+Death cherubs are the souls of small children who, in their short lives, already managed to earn damnation, which makes their fate all the more tragic. They look like little human children of three to six years, with rotting flesh hanging loose on skeletons of ivory, and rusty wings that creak with their iron feathers.
 
 ## Behaviour
 
-In the mortal world they are lost and bewildered, forever weeping and lamenting, and in their despair may fall on anything that moves with their great claws and iron fangs.
+In our human world death cherubs are lost and confused, forever weeping and lamenting. They are flesh-eaters, and in their despair and bewilderment may attack anything that moves with their great claws and iron fangs.
 
 ## Abilities
 
-Dwelling normally in the flaming Abyss, they are immune to all fire, even dragon-fire, and being so largely of iron they strongly resist magic; their lament can break a hearer down into a weeping wreck.
+Death cherubs normally dwell in the flaming Abyss and so are immune to all fire, even dragon-fire. Because their bodies are so largely of iron, they resist magic strongly. All who hear a death cherub's lament must master themselves, or else break down and become weeping wrecks for as long as they can hear it.

@@ -411,13 +411,11 @@ function AdventureDetail({ adventure, onVideoSelect }) {
             const cls = `codex-card${(it.portrait ?? portrait) ? " codex-card--portrait" : ""}`;
             const inner = (
               <>
-                <div className="codex-card__image-wrap">
-                  {it.image ? (
+                {it.image && (
+                  <div className="codex-card__image-wrap">
                     <img className="codex-card__image" src={it.image} alt={it.name} />
-                  ) : (
-                    <span className="codex-card__placeholder">◈</span>
-                  )}
-                </div>
+                  </div>
+                )}
                 <div className="codex-card__body">
                   <p className="codex-card__title">{it.name}</p>
                   {it.description && <p className="codex-card__summary">{it.description}</p>}

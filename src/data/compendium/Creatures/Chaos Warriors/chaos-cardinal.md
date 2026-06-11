@@ -1,15 +1,15 @@
 # Chaos Cardinal
 
-Chaos warriors are rare but extremely dangerous visitors from a chaotic, warlike dimension who sometimes blunder into our world; no known spell can summon or banish them. All can shapeshift into any humanoid form and live by draining the life-force of others at a touch, and their true shape is a great green jelly hung with tentacles tipped in eyes and claws. The chaos cardinal is found above all at shrines and monasteries.
+Chaos warriors are very rare but extremely dangerous visitors to our dimension, beings from a chaotic and warlike plane who sometimes end up in our human world by mistake; no known spell can summon or banish them. Chaos cardinals have been met chiefly at shrines and monasteries.
 
 ## Appearance
 
-It takes the form of whatever folk inhabit the sanctuary, robing itself where it can in long crimson cloaks covered inside with strange symbols, though it wears whatever the temple requires. It never wears armour but is a highly skilled mage and fights only with spells.
+Chaos cardinals normally take the form of whatever humanoid peoples the shrine. They robe themselves where they can in long, sweeping crimson cloaks covered on the inside with mystic symbols, but otherwise wear whatever dress is required of the temple they have wormed into. They never wear armour, but are on the other hand very skilled magicians and fight with spells alone. Their true form, like all chaos warriors, is a great green-shimmering lump of jelly topped with a score of tentacles, each ending in an eye or a claw.
 
 ## Behaviour
 
-The craftiest and most dangerous of all chaos warriors, it slips into a holy house as a novice or student, then kills the inhabitants one by one in their sleep, the deaths looking entirely natural, and does not leave for its own plane until slain.
+A chaos cardinal may turn up at any time, often seeking entry to a shrine as a novice or student, and then begins slowly to kill off the inhabitants one by one without rousing too much suspicion, the deaths looking quite natural since there is no mark of outward violence, usually striking while the victims sleep. The cardinals are the cleverest and slyest of all chaos warriors, and the most dangerous; calculating to a fault, they do everything to hide their true identity, and once equipped with real gear are all but impossible to unmask.
 
 ## Abilities
 
-Strong resistance to magic and perfect night vision; when its assumed body is destroyed it reverts to its true form and recovers fully.
+Like all chaos warriors a chaos cardinal can shift its shape into any humanoid at will, taking an hour to do so, though it cannot mimic a particular individual, and it keeps all its qualities but its size. It lives by drinking the life-force of intelligent creatures: by touching a victim's temples it drains body and mind a little each moment, the loss permanent, until the victim, who merely feels himself growing swiftly tired and drowsy, falls unconscious and dies. It has perfect vision in the dark and resists magic strongly, and when its humanoid body is slain it reverts to its true form and is wholly restored. Chaos warriors can remain in the human world about a month before vanishing without trace.

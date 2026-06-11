@@ -1,15 +1,15 @@
 # Skeleton
 
-Skeletons, like mummies and zombies, are the remains of the dead raised by a mage, with no will of their own, obeying only their master's commands; they count among the lesser undead.
+Skeletons, like mummies and zombies, are the remains of dead bodies woken to unlife by a magician. They have no will of their own and can only obey the commands of their master.
 
 ## Appearance
 
-Just what the name says: ordinary skeletons with a little flesh and sinew holding the bones together, often in some armour or dress, and able to use any weapon. They can be made from any creature, even animals.
+The name tells well enough how they look: like ordinary skeletons, with a few scraps of flesh and sinew holding the bones together. They often wear some kind of armour or clothing, and can use any weapons at all. Skeletons can be made from any creature, even animals, and keep the skills they had in real life.
 
 ## Behaviour
 
-Will-less servants that keep the skills of their former life save those of the mind, they fight as cunningly as their maker but are apt to flounder if a fight turns unexpectedly.
+Like all magical undead, skeletons keep all the skills of their former life save those based on the intellect, so they cannot cast spells, though they are good at moving stealthily. A skeleton's conduct in a fight is as cunning as that of the magician who made it, but it may come unstuck if the fight takes an unexpected turn. It obeys its maker's commands, given within sight and hearing.
 
 ## Abilities
 
-They take no harm from arrows or thrusting weapons such as dagger and spear, nor from ordinary fire.
+Skeletons take no harm from arrows or thrusting weapons such as dagger and spear, nor from ordinary fire, such as a torch pressed into the face. They keep all the abilities they had in real life, save those based on the intellect, and like all magical undead they feel no pain, are bloodless, and have perfect vision in the dark.

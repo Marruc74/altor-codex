@@ -1,15 +1,15 @@
 # Deadman's Hand
 
-A deadman's hand is a spirit that only half-succeeded in manifesting as corporeal undead: an invisible spirit-body that can pass through walls and floors, and one visible hand that cannot. Thieves whose hands were struck off as punishment often return in this form, the spirit seeking out its lost hand to take revenge on whoever ordered the sentence.
+A deadman's hand is really a spirit that has only partly managed to manifest physically as a corporeal undead. The spirit-body has no special powers but can move freely through walls and floors, which the hand itself cannot, and the hand is the only part visible to the naked eye. Thieves who have had a hand struck off as punishment for their crimes often rise again in this form, the spirit seeking out its lost hand and using it to take revenge on whoever ordered the punishment.
 
 ## Appearance
 
-An ordinary-looking hand, the skin pale and cracked and the nails blackened, while the spirit-body is wholly invisible. It is always the sword-hand that manifests.
+The hand looks like a perfectly ordinary hand, with pale, cracked skin and blackened nails. The spirit-body is wholly invisible. It is always the person's sword-hand that manifests.
 
 ## Behaviour
 
-Born of a death in great rage where the soul lacked the force to manifest its whole body, it is driven above all to avenge a real or imagined wrong.
+A deadman's hand arises when a person dies in a state of strong passion but lacks the strength of soul to manifest his whole body. The commonest reason for one to appear is that its owner seeks vengeance for a wrong, real or imagined.
 
 ## Abilities
 
-It can do anything a normal hand can; small and quick, it is very hard to hit. It works no magic and takes normal damage from weapons, fire and spells.
+A deadman's hand can do all that a normal hand can. The spirit-body has perfect vision in the dark and very good hearing. Because of the hand's small size and quick movement it is very hard to strike, and it cannot cast spells. It takes normal harm from all weapons, fire and magic.

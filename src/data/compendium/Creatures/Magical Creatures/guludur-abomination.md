@@ -1,15 +1,15 @@
 # Guludur Abomination
 
-Guludur abominations are magical creatures from an unknown universe that live by devouring magical energy, whether from enchanted objects or from spells as they are cast. They are dreadfully rare, perhaps a dozen in all of Ereb Altor.
+The guludur abominations are magical creatures from an unknown universe. They live by drinking in magical energy, whether from magical items or from the energy released in the casting of spells. They are dreadfully rare, and there are probably no more than a dozen in all of Ereb Altor.
 
 ## Appearance
 
-Snake-like creatures ten to fifteen metres long with four short legs and a sharp, lizard-like snout, wholly white, striking little blue sparks where their paws touch as they run through the air; their only sound is a discreet giggling that swells in a fight to a delighted roar of laughter.
+The abominations are serpent-like creatures between ten and fifteen metres long, with four short legs and a lizard-like, very pointed snout. They are wholly white, and as they run through the air little blue sparks scatter where they set down their paws. Their only sound is a discreet tittering, which in a fight draws out into a loud, delighted peal of laughter.
 
 ## Behaviour
 
-They attack always from the air, draining the magic from any item they touch with their long snouts.
+The guludur abominations live, as said, on magical energy, chiefly from items they touch with their long snouts, and they always attack from the air.
 
 ## Abilities
 
-A touch of its snout drains spells from a magic item, and any spell cast nearby is simply swallowed and fails; each draught of magic raises its own power, and it can heal itself, flying off to do so in peace.
+If a guludur abomination touches a magical item with its snout, the item at once loses some of the power of the spells within it; the creature most relishes stored charges and permanence-magic, and saves the binding sigil for last, growing in strength with every measure it drinks. If anyone tries to cast magic near it, the abomination at once drinks in all the spell's power, laughing happily, and the spell always fails. A magical weapon that strikes it merely feeds it the same way, amid violent peals of laughter, and it can heal itself swiftly, often flying up into the air to do so undisturbed.
