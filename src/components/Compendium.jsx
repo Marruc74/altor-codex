@@ -1,5 +1,6 @@
 import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import ReactMarkdown from "react-markdown";
+import yaml from "js-yaml";
 import { SECTIONS, videosBySection, videos as allVideos } from "../data/videoData";
 import { pins } from "../data/locations";
 import { entries } from "../data/codex/index.js";
@@ -149,6 +150,44 @@ const ENTRY_PAGE_BY_SLUG = Object.fromEntries(
 function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect }) {
   const [locationData, setLocationData] = useState(null);
   const [markdown, setMarkdown] = useState(null);
+  const [lightbox, setLightbox] = useState(null);
+
+  // Notable figures/places/items render as image cards (image opens the lightbox).
+  const notableGrid = (label, list, portrait = false) =>
+    list.length > 0 && (
+      <div className="country-detail__block">
+        <p className="location-panel__section-label">{label}</p>
+        <div className="country-detail__entries-grid">
+          {list.map((it, i) => {
+            const cls = `codex-card${(it.portrait ?? portrait) ? " codex-card--portrait" : ""}`;
+            const inner = (
+              <>
+                {it.image && (
+                  <div className="codex-card__image-wrap">
+                    <img className="codex-card__image" src={it.image} alt={it.name} />
+                  </div>
+                )}
+                <div className="codex-card__body">
+                  <p className="codex-card__title">{it.name}</p>
+                  {it.description && <p className="codex-card__summary">{it.description}</p>}
+                </div>
+              </>
+            );
+            return it.image ? (
+              <button
+                key={it.name ?? i}
+                className={cls}
+                onClick={() => setLightbox([{ src: it.image, alt: it.name, caption: it.name }])}
+              >
+                {inner}
+              </button>
+            ) : (
+              <div key={it.name ?? i} className={cls}>{inner}</div>
+            );
+          })}
+        </div>
+      </div>
+    );
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect -- reset before async load (keyed by country.id)
@@ -183,8 +222,18 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect }) {
   const relatedVideos = pinVideos.filter((v) => v.id !== locationData?.youtubeId);
 
   const loaded = locationData !== null && markdown !== null;
-  const images = markdown ? extractImages(markdown) : [];
-  const bodyText = markdown ? stripImages(markdown).replace(/^#[^\n]*\n/, "").trim() : "";
+  // The page md may carry a YAML frontmatter block of notable figures/places/items.
+  const fm = markdown && markdown.startsWith("---")
+    ? markdown.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/)
+    : null;
+  let meta = {};
+  if (fm) { try { meta = yaml.load(fm[1]) ?? {}; } catch { meta = {}; } }
+  const body = fm ? fm[2] : (markdown ?? "");
+  const figures = meta.figures ?? [];
+  const notablePlaces = meta.places ?? [];
+  const notableItems = meta.items ?? [];
+  const images = body ? extractImages(body) : [];
+  const bodyText = body ? stripImages(body).replace(/^#[^\n]*\n/, "").trim() : "";
 
   return (
     <div className="country-detail">
@@ -214,6 +263,10 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect }) {
           <ReactMarkdown>{bodyText}</ReactMarkdown>
         </div>
       )}
+
+      {loaded && notableGrid("Notable Figures", figures, true)}
+      {loaded && notableGrid("Notable Places", notablePlaces)}
+      {loaded && notableGrid("Notable Items", notableItems)}
 
       {loaded && mainVideo && (
         <div className="country-detail__block">
@@ -283,6 +336,10 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect }) {
 
       {loaded && !mainVideo && countryEntries.length === 0 && relatedVideos.length === 0 && images.length === 0 && !bodyText && (
         <p className="country-detail__empty">Details coming soon.</p>
+      )}
+
+      {lightbox && (
+        <Lightbox images={lightbox} startIdx={0} onClose={() => setLightbox(null)} />
       )}
     </div>
   );
