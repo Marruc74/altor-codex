@@ -98,6 +98,7 @@ sections:
         description: A surly old cave troll of sixty-five who guards Sith's caverns with his great club, hoarding the weapons and treasure of those he has killed. Sith lets him roam the tunnels and feeds him in return for crushing intruders.
         image: /compendium/Adventures/TheMistyIsland/Characters/Okvir.jpg
       - name: Animated Skeletons
+        entry: skeleton
         description: Sith's animated skeleton guards, eight robed in the skeleton-trap and four with two-handed spears in each guardroom, halted only by the rhyme on Verkon's medallion.
     items:
       - name: Death Bringer

@@ -199,8 +199,10 @@ sections:
         description: A mute, wholly feral shepherd boy who lives like an animal among the sheep. Trodax bought him himself, and the boy looks up to the wizard as a dog to its master; Trodax is fond of him but will not admit it.
     creatures:
       - name: Giant Amoeba
+        entry: giant-amoeba
         description: A great, foul-smelling lump of formless slime in the flooded lowest level's cave-lake, which engulfs and dissolves whatever living thing it meets.
       - name: Cave Svartalfs
+        entry: svartalf
         description: Dark-folk who keep a temple on the mine's second level, where novices undergo their rite of blackness by standing eye to eye with the dragon.
     items:
       - name: Refined Mercury
@@ -255,6 +257,7 @@ sections:
       - name: The Devourer
         description: A by-product of the sect's experiments that lurks on the refuse-heap by the bridge to the tower, alongside the Avenger-organism, a danger to any who pass.
       - name: Marjuran Orcs
+        entry: orc
         description: The orcs who guard the Gethorn pass and barrack below the Iron Tower, and who hold the betrayer Melobin among them.
     items:
       - name: The Demon Staff

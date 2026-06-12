@@ -33,6 +33,7 @@ sections:
         description: Chambers full of dwarf-made axes, crossbows, halberds, hammers and shields in usable condition, though every wooden haft is rotten enough to snap at the worst moment.
     creatures:
       - name: Skeleton Guards
+        entry: skeleton
         description: Mogdath's animated guards, set throughout the welcome hall, guardrooms, corridors and council hall in ringmail with sword, halberd or light crossbow. They fall on any living thing that enters without the spoken passphrase and raise the alarm for their master.
   - title: Upper Level
     description: The old living quarters and the Council Hall that Mogdath has made his throne room, holding the copper portal and the salvaged treasure-chest.
@@ -76,6 +77,7 @@ sections:
         description: The spirit of a dwarf priest who fell defending the realm in Queen Gwinna's day, his rage too great to let him rest, bound now to the chapel he cannot leave. If he sees that the party are Mogdath's enemies he stops frightening them and begs them to drive Mogdath out so he may find peace, and in return reveals the hidden way out by the stream beneath the latrines, but only once they have wholly kept that promise.
     creatures:
       - name: Manticores
+        entry: manticore
         description: Two manticores set by Mogdath to guard the city's treasure-podium and hearth, one hurling spines from its tail, the other swinging a heavy tail-club.
     items:
       - name: Lefaleth
@@ -108,6 +110,7 @@ sections:
         image: /compendium/Adventures/TheGatesOfPower/Characters/Gozer.jpg
     creatures:
       - name: Ogres
+        entry: ogre
         description: Giant kin of the orcs, larger and stronger but duller of wit, who break and haul the iron ore in the mine under the dark wraiths' watch.
 ---
 

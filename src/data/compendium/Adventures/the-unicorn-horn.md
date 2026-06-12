@@ -22,6 +22,7 @@ sections:
         image: /compendium/Adventures/TheUnicornHorn/Liethon.jpg
     creatures:
       - name: The Unicorn
+        entry: unicorn
         description: The unicorn that long ago gave its life for the order's foundress; its spirit aids whoever bears the relic, and it appears at the last to bow to Liella, heal every wound and scatter the foes of the light.
       - name: Liéthon's War-Dogs
         description: Two huge Sehldimian war-mastiffs that guard the gatekeeper Liéthon, bred to stand against troll-wolves, who will hunt their master's killer for the rest of their days.
@@ -73,6 +74,7 @@ sections:
         description: A centaur knight who guards a bridge in the Spider Forest in his light-god's name, demanding tribute, service or single combat, and giving a light-sensing amulet to those who prove worthy.
     creatures:
       - name: The Sea-Serpent
+        entry: sea-serpent
         description: A giant sea-serpent, a true drake-worm that guards the island of Krömborgen and enforces its toll of gold.
       - name: Lizardfolk
         description: Reptile-warriors with poisoned weapons who hold a tower of Krömborgen and lurk in the spider-marsh.
@@ -81,10 +83,13 @@ sections:
       - name: The Krömborgen Puppet
         description: A four-metre puppet of wood, straw and rags, hoisted up a tower to play the part of a demon and front the pirates' extortion.
       - name: Will-o'-the-wisp
+        entry: will-o-the-wisp
         description: A marsh-light that lures the riverboat into bottomless mud by night in the spider-marsh.
       - name: Giant Spiders
+        entry: giant-spider
         description: Net-casting, venomous spiders, seven of them, that haunt the Spider Forest.
       - name: Ogres
+        entry: ogre
         description: Four to six horn-scaled ogres that ambush travellers at the Kimera pass.
     items:
       - name: The Centaur's Amulet
@@ -158,6 +163,7 @@ sections:
         description: Den Vita, the spirit of the order's foundress bound in the spirit-stone, aligned with the light, who will speak only with women, with worshippers of Delitha, or with elves.
     creatures:
       - name: Catacomb Mummies
+        entry: mummy
         description: Mummies walled into the old catacombs, each with a cursed ferry-coin in its mouth.
     items:
       - name: The Relic

@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback, useEffect } from "react";
+import { useState, useMemo, useCallback, useEffect, useRef, useLayoutEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import { SECTIONS, videosBySection, videos as allVideos } from "../data/videoData";
 import { pins } from "../data/locations";
@@ -135,6 +135,15 @@ function entryMdPath(video) {
     ? `${sec}/${slug}.md`
     : `${sec}/${video.group}/${slug}.md`;
 }
+
+// Index of Peoples/Creatures "pages" (video-backed entries) keyed by name-slug,
+// so an adventure's generic creature/race card can deep-link to its codex page
+// (e.g. a "Goblin" or "Death Knight" card → that Peoples/Creatures entry).
+const ENTRY_PAGE_BY_SLUG = Object.fromEntries(
+  allVideos
+    .filter((v) => v.section === "peoples" || v.section === "creatures")
+    .map((v) => [toSlug(v.name), v])
+);
 
 // ── CountryDetail ─────────────────────────────────────────────────────────
 function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect }) {
@@ -280,7 +289,7 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect }) {
 }
 
 // ── EntryDetail ───────────────────────────────────────────────────────────
-function EntryDetail({ video, onVideoSelect }) {
+function EntryDetail({ video, onVideoSelect, onBack, backLabel }) {
   const [markdown, setMarkdown] = useState(null);
 
   useEffect(() => {
@@ -307,6 +316,11 @@ function EntryDetail({ video, onVideoSelect }) {
 
   return (
     <div className="country-detail">
+      {onBack && (
+        <button className="country-detail__back" onClick={onBack}>
+          ← Back to {backLabel}
+        </button>
+      )}
       <div className="country-detail__header">
         <div className="country-detail__header-text">
           <p className="country-detail__eyebrow">{eyebrow}</p>
@@ -379,7 +393,7 @@ function EntryDetail({ video, onVideoSelect }) {
 }
 
 // ── AdventureDetail ───────────────────────────────────────────────────────
-function AdventureDetail({ adventure, onVideoSelect }) {
+function AdventureDetail({ adventure, onVideoSelect, onEntryOpen }) {
   // Body prose comes inline from the adventure's frontmatter .md (already parsed
   // in adventures.js) — no async load needed.
   const md = adventure.body ?? "";
@@ -409,6 +423,9 @@ function AdventureDetail({ adventure, onVideoSelect }) {
         <div className="country-detail__entries-grid">
           {items.map((it, i) => {
             const cls = `codex-card${(it.portrait ?? portrait) ? " codex-card--portrait" : ""}`;
+            // A generic creature/race card may carry `entry: <name-or-slug>` that
+            // links to its Peoples/Creatures codex page.
+            const page = it.entry ? ENTRY_PAGE_BY_SLUG[toSlug(String(it.entry))] : null;
             const inner = (
               <>
                 {it.image && (
@@ -419,9 +436,22 @@ function AdventureDetail({ adventure, onVideoSelect }) {
                 <div className="codex-card__body">
                   <p className="codex-card__title">{it.name}</p>
                   {it.description && <p className="codex-card__summary">{it.description}</p>}
+                  {page && onEntryOpen && (
+                    <span className="codex-card__entry-link">View more ↗</span>
+                  )}
                 </div>
               </>
             );
+            if (page && onEntryOpen)
+              return (
+                <button
+                  key={it.name ?? i}
+                  className={`${cls} codex-card--link`}
+                  onClick={() => onEntryOpen(page)}
+                >
+                  {inner}
+                </button>
+              );
             if (it.videoId)
               return (
                 <button
@@ -542,8 +572,35 @@ export default function Compendium({
 }) {
   const [query, setQuery] = useState("");
   const [selectedEntry, setSelectedEntry] = useState(null);
-  const [openSections, setOpenSections] = useState(() => ({}));
-  const [openGeoGroups, setOpenGeoGroups] = useState(() => ({}));
+  // When an entry page is opened from an adventure card, remember that adventure
+  // so the entry page can offer a "Back to …" button.
+  const [entryBack, setEntryBack] = useState(null);
+  // Page scroll position to restore when returning to that adventure via Back.
+  const savedAdvScroll = useRef(0);
+  const restorePending = useRef(false);
+
+  // After Back re-selects the adventure, return the window to where the user was.
+  // Restore once on commit, then again shortly after so late-loading images that
+  // grow the page above the target don't leave us short of the original spot.
+  useLayoutEffect(() => {
+    if (!restorePending.current || !selectedAdventure) return;
+    restorePending.current = false;
+    const y = savedAdvScroll.current;
+    window.scrollTo(0, y);
+    const raf = requestAnimationFrame(() => window.scrollTo(0, y));
+    const t = setTimeout(() => window.scrollTo(0, y), 250);
+    return () => { cancelAnimationFrame(raf); clearTimeout(t); };
+  }, [selectedAdventure]);
+  // Expand the nav section that holds the current selection on first render, so
+  // a deep-link (e.g. ?adventure=kandra) reveals and highlights it in the menu.
+  const [openSections, setOpenSections] = useState(() => ({
+    ...(selectedAdventure ? { adventures: true } : {}),
+    ...(selectedCountry ? { geography: true } : {}),
+  }));
+  const selectedContinent = geoPlaces.find((c) => c.id === selectedCountry)?.continent;
+  const [openGeoGroups, setOpenGeoGroups] = useState(() =>
+    selectedContinent ? { [selectedContinent]: true } : {}
+  );
   const [openSubGroups, setOpenSubGroups] = useState(() => ({}));
 
   const toggleSection  = (id) => setOpenSections( (p) => ({ ...p, [id]: !p[id] }));
@@ -649,6 +706,7 @@ export default function Compendium({
                     }`}
                     onClick={() => {
                       onAdventureSelect(null);
+                      setEntryBack(null);
                       if (r.kind === "country") { onCountrySelect(r.id); setSelectedEntry(null); }
                       else { setSelectedEntry(r.video); onCountrySelect(null); }
                     }}
@@ -683,7 +741,7 @@ export default function Compendium({
                             <li key={a.id}>
                               <button
                                 className={`compendium-nav__item${selectedAdventure === a.id ? " compendium-nav__item--active" : ""}`}
-                                onClick={() => { onAdventureSelect(a.id); onCountrySelect(null); setSelectedEntry(null); }}
+                                onClick={() => { onAdventureSelect(a.id); onCountrySelect(null); setSelectedEntry(null); setEntryBack(null); }}
                               >
                                 {a.title}
                               </button>
@@ -734,7 +792,7 @@ export default function Compendium({
                                 <li key={`c-${c.id}`}>
                                   <button
                                     className={`compendium-nav__item${selectedCountry === c.id ? " compendium-nav__item--active" : ""}`}
-                                    onClick={() => { onAdventureSelect(null); onCountrySelect(c.id); setSelectedEntry(null); }}
+                                    onClick={() => { onAdventureSelect(null); onCountrySelect(c.id); setSelectedEntry(null); setEntryBack(null); }}
                                   >
                                     {c.name}
                                   </button>
@@ -744,7 +802,7 @@ export default function Compendium({
                                 <li key={`v-${v.id}`}>
                                   <button
                                     className={`compendium-nav__item compendium-nav__item--video${selectedEntry?.id === v.id ? " compendium-nav__item--active" : ""}`}
-                                    onClick={() => { onAdventureSelect(null); setSelectedEntry(v); onCountrySelect(null); }}
+                                    onClick={() => { onAdventureSelect(null); setSelectedEntry(v); onCountrySelect(null); setEntryBack(null); }}
                                   >
                                     {v.name}
                                   </button>
@@ -803,7 +861,7 @@ export default function Compendium({
                                 <li key={v.id}>
                                   <button
                                     className={`compendium-nav__item compendium-nav__item--video${selectedEntry?.id === v.id ? " compendium-nav__item--active" : ""}`}
-                                    onClick={() => { onAdventureSelect(null); setSelectedEntry(v); onCountrySelect(null); }}
+                                    onClick={() => { onAdventureSelect(null); setSelectedEntry(v); onCountrySelect(null); setEntryBack(null); }}
                                   >
                                     {v.name}
                                   </button>
@@ -836,12 +894,33 @@ export default function Compendium({
               key={selectedAdventureObj.id}
               adventure={selectedAdventureObj}
               onVideoSelect={onVideoSelect}
+              onEntryOpen={(video) => {
+                savedAdvScroll.current = window.scrollY;
+                setEntryBack(selectedAdventureObj.id);
+                onAdventureSelect(null);
+                onCountrySelect(null);
+                setSelectedEntry(video);
+                window.scrollTo(0, 0);
+              }}
             />
           ) : selectedEntry ? (
             <EntryDetail
               key={selectedEntry.id}
               video={selectedEntry}
               onVideoSelect={onVideoSelect}
+              onBack={
+                entryBack
+                  ? () => {
+                      const back = entryBack;
+                      restorePending.current = true;
+                      setEntryBack(null);
+                      setSelectedEntry(null);
+                      onCountrySelect(null);
+                      onAdventureSelect(back);
+                    }
+                  : null
+              }
+              backLabel={entryBack ? (adventures.find((a) => a.id === entryBack)?.title ?? "adventure") : ""}
             />
           ) : (
             <div className="country-detail__prompt">

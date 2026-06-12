@@ -1,46 +1,165 @@
 ---
 title: Horrors of the Deep
-tagline: ""
-summary: Hired for grim, ill-paid work in a northern province, the party is drawn to a mining village where something terrible has happened.
+tagline: "No caravan has reached the city in a month, and the dead are walking the trade road."
+summary: Hired for grim, ill-paid work on the frozen frontier, the party is lured by rumor of dwarven gold into a sacked mine - and down into a lightless underworld where an undead baron is building an army of the dead.
 videoIds: []
 sections:
-  - title: North Hall
+  - title: Borreby & the Sled Road
+    description: "The adventure opens on the frozen northern frontier, where the half-frozen, ill-paid party signs on to haul the king's reindeer-meat taxes - and is tempted off the road by rumor of dwarven gold."
+    places:
+      - name: Borreby
+        description: "A grim northern village on the edge of the wilderness, ringed by the half-dug moat and palisade the party has spent three cold months building for its baron. Its inn, the Evening Lamp, is where the call for sled-drivers goes out."
+      - name: Tarros-Leba
+        description: "The base camp of the aoale reindeer-herders at the foot of the Ula mountains - a handful of log cabins, animal pens and a great guesthouse. Here the year's tax-meat is gathered, and here the party first hears of sacked Dracht and its untaken treasure."
     npcs:
-      - name: Ehalen Likvis
-        description: ""
-        image: /compendium/Adventures/HorrorsOfTheDeep/Characters/Ehalen Likvis.jpg
+      - name: Baron Jalt-Tidwindson
+        description: "Lord of Borreby, whose moat-and-palisade works employ the party as laborers. Slipping away from his tax expedition counts as desertion - a crime that will be waiting for them if they ever return."
+      - name: Snikon Brylle
+        description: "The baron's young, self-important herald, who proclaims the call for volunteer sled-drivers to carry the herders' taxes south for the king."
+      - name: Captain Osvald Snirring
+        description: "The soldier who commands the heavy cavalry escorting the tax-sleds north up the frozen river to Tarros-Leba."
+      - name: Marjolo
+        description: "A very old aoale elder at Tarros-Leba. He alone recalls the route to the ruined mining village of Dracht and will sketch the party a crude, not-to-scale map - the thread that pulls them underground."
+  - title: Dracht & the Deep Mine
+    description: "High in the Ula mountains lie the burned ruins of the dwarven mine-village and, far below it, the door to a treasure no one can keep."
+    places:
+      - name: Dracht
+        description: "A tiny, near-isolated dwarven mining village bored into an iron-rich mountain - now burned ruins strewn with some ninety-six frozen, mutilated dwarves, sacked two months earlier by a war-band of orcs and mountain trolls who, to their fury, found almost nothing of the legendary riches."
+      - name: The Spirit Hall
+        description: "A water-drop-shaped chamber deep in the mine, holding a grotesque horned stone face. Tilt the stone tongue in its mouth and one may speak with the bound mountain spirit - guardian, and betrayer, of the treasure beyond."
+      - name: The Treasure Chamber
+        description: "The mirror of the Spirit Hall, lined floor to ceiling - door and all - in thirty centimeters of lead. Within wait chests of mithril weapons and ingots worth a fortune. But to open it is to spring the trap: the act collapses the entire mine within minutes."
+    npcs:
+      - name: The Mountain Spirit
+        description: "An ancient spirit bound seven centuries ago into the stone face of Dracht to guard the dwarves' hoard, appearing as a translucent, hugely muscled bearded man. It will tell the party how to open the vault - by lining up every villager's corpse before the face - but never that doing so frees it and shatters the mountain."
+    items:
+      - name: The Stone Face
+        description: "The carved, horned guardian of the treasure door and the heart of the curse. Open the vault by its rules and the face explodes, loosing an earthquake that brings down every hall and shaft within minutes."
+      - name: The Mithril Hoard
+        description: "Five to ten mithril weapons and twenty-five mithril ingots, each worth a small fortune - and all but unobtainable, for claiming them buries the mine. The party may snatch only an item or two before the stone comes down."
+  - title: The Primordial Caverns
+    description: "Beneath the mine spreads a vast natural cave system - the only road between the northern coast and the southern mountains, and the hunting ground of the dead."
+    places:
+      - name: The Trade Route
+        description: "The broad main passage running the length of the underworld, hewn with rest-stops, along which every caravan bound for Nordsal must travel."
+      - name: Margoroth
+        description: "A vast, near-lightless cavern through which all caravans pass - and where the undead lie in wait to take them. Its eastern end opens onto the Gorgora Sea."
+      - name: The Gorgora Sea
+        description: "A cold lake five hundred meters deep, said to be haunted by unholy nymphs whose singing lures the unwary. The 'nymphs' are in truth the cave elves, singing from a hidden hollow on the eastern shore."
+  - title: North Hall
+    description: "Nordsal, a trading town of some nine hundred souls in an immense cavern lit round the clock by cultivated star-light fungi - now starving, for no caravan has reached it in over a month, and the blame has fallen unfairly on the goblins."
+    places:
+      - name: The Library
+        description: "Kept by Aini Dimfaer, the place to research the tale of Baron Minedigger and a map of his castle - early threads toward the truth in the deep."
+      - name: The Town Hall
+        description: "Home of the burgomaster, council chamber, courthouse and archive, where the records of the Minedigger family are kept."
+    npcs:
       - name: Gervar Roarer
-        description: ""
+        description: "The dwarf burgomaster of Nordsal, a hundred and sixty-seven years old and a shrewd, seasoned politician. He steers the starving cavern-city through the caravan crisis - and, should the insectoids come, lends his counsel to the party's appointed commander."
         image: /compendium/Adventures/HorrorsOfTheDeep/Characters/Gervar Roarer.jpg
       - name: Klamorkan Grey
-        description: ""
+        description: "Captain of Nordsal's twenty-four-strong city watch - a tough, broad-shouldered brawler, fiercely loyal to the burgomaster but no tactician. He keeps order at the market and the gates as fear of the 'robbers' grows."
         image: /compendium/Adventures/HorrorsOfTheDeep/Characters/Klamorkan Grey.jpg
       - name: Nilkand Fungusfriend
-        description: ""
+        description: "Nordsal's resident animist and weather-mage, a man of forty-three who tends the cavern's climate and its precious star-light fungi. He can advise the party on necromancy and on the trick of flinging iron filings to choke a spellcaster's magic."
         image: /compendium/Adventures/HorrorsOfTheDeep/Characters/Nilkand Fungusfriend.jpg
-  - title: Castle
-    npcs:
-      - name: Baron Boltshield
-        description: ""
-        image: /compendium/Adventures/HorrorsOfTheDeep/Characters/Baron Boltshield.jpg
+      - name: Ehalen Likvis
+        description: "The town alchemist, learned in botany and the lore of drugs and poisons. A useful ally for potions, antidotes and a sober second opinion on the strange deaths along the trade route."
+        image: /compendium/Adventures/HorrorsOfTheDeep/Characters/Ehalen Likvis.jpg
   - title: Cave of Cave Elves
+    description: "Beyond the Gorgora Sea hides a reclusive colony of cave elves who farm mushrooms and brew cave-wine, and who will aid the party only on their own terms."
+    places:
+      - name: The Elf Cave
+        description: "The cave elves' beautiful, fungus-lit home, reached through a hidden hollow on the shore of the Gorgora Sea. They guard its secret jealously; betray it and their aid is lost."
     npcs:
       - name: Garafin
-        description: ""
+        description: "Chieftain of the cave-elf colony. He alone remembers the full, tragic history of the Minedigger castle, and will share it - and his people's help - only if the party proves the raiders are undead and swears to keep the colony's home secret."
         image: /compendium/Adventures/HorrorsOfTheDeep/Characters/Garafin.jpg
       - name: Senadi
-        description: ""
+        description: "Mother Earth's chosen Envoy among the cave elves, gifted to swell her own strength, melt into the rock, and speak with beast and plant. Above all she wields Curse Undead, a blessing that halves a chosen undead's power for days - the party's surest weapon against the death knight."
         image: /compendium/Adventures/HorrorsOfTheDeep/Characters/Senadi.jpg
-  - title: Svartalf Cave
+  - title: Goblin Cave
+    description: "A clan of some thirty reclusive goblins mine the rock by the river Elbion - wrongly blamed for the caravan attacks, and divided against itself."
+    places:
+      - name: The Goblins' Warren
+        description: "Six squalid but skillfully hewn rooms by the river Elbion - hearth, dining hall, larders of salted fish and mead, and a children's room - home to the clan of thirty goblins."
     npcs:
       - name: Kassits
-        description: ""
+        description: "The cunning chieftain of the cave's goblins. Shrewd and self-serving, he will happily use the party to be rid of a rival - and can be won over by curing his sick, dazzling them with magic, or proving the true culprits are the dead."
         image: /compendium/Adventures/HorrorsOfTheDeep/Characters/Kassits.jpg
       - name: Mustuf
-        description: ""
+        description: "A cocky, warlike goblin champion and Kassits's rival for power. Quick to anger, he may challenge one of the party to a duel; how it ends can tip the clan into the infighting a clever party can turn to its advantage."
         image: /compendium/Adventures/HorrorsOfTheDeep/Characters/Mustuf.jpg
+  - title: Castle
+    description: "In a deep, oppressive cavern beside a warm spring stands a dwarf-built castle raised long ago for a sun-shy noblewoman - now the death knight's lair."
+    places:
+      - name: The Castle
+        description: "A robust dwarf-build of mortared granite in classic hexagons and octagons, on three levels. A joke lurks in the pantry - a huge animated wheel of cheese - and the library hides a secret ten-kilometer escape tunnel and a hundred books, a score of them necromantic manuals."
+      - name: The Laboratory
+        description: "The cellar vault with its gold pentagram, where the baron and the mages were remade into undead and the survivors were butchered. The stench of old death hangs so thick it sickens the living."
+    npcs:
+      - name: Baron Boltshield
+        description: "Once an ambitious, ruthless baron who dreamed of ruling the whole land, he had himself remade by the necromancers' ritual into a death knight - and kept his own will and cunning. Now an armored undead juggernaut in matte-black mithril, he ambushes the caravans to build an army of zombies and enslave Nordsal. He carries the ring of keys to every lock in the castle, and the living he slays rise again as his bane-men."
+        image: /compendium/Adventures/HorrorsOfTheDeep/Characters/Baron Boltshield.jpg
+    creatures:
+      - name: The Leader
+        description: "Head of the necromancer academy that once haunted the castle. He brought home the ritual to summon a death knight and conspired with the baron - until the plan curdled into slaughter. Now the most formidable spellcaster among the undead, a skeletal bane-lord."
+      - name: The Bane-Men
+        entry: baneman
+        description: "The animated corpses of the dead necromancers - skeletal undead casters who fire a beam of darkness from their eye-sockets to drain a victim's soul. A handful of iron filings flung over them chokes their spells."
+      - name: The Dwarf Zombies
+        entry: zombie
+        description: "The two curious dwarves of Dracht who fell into the deep and unlocked the wrong door a century ago. Slain at once and raised as powerful zombies, they guard the castle still."
+      - name: Fillo
+        description: "The death knight's black warhorse, now an undead charger in matte-black mithril barding. It savages anything living that enters its stable."
+    items:
+      - name: The Coded Diary
+        description: "'Volume Nine,' the journal of the one mage who fled and went mad, left in the castle library and written in a simple letter-shift cipher. Decoded, it lays bare the death knight's making and the academy's betrayal - the single key to the whole mystery."
+      - name: The Ring of Keys
+        description: "Boltshield's ring, opening every lock in the castle. Stolen, it lets the party seal the undead inside their own vault."
+      - name: Black Mithril Plate
+        description: "The death knight's matte-black mithril full plate and great shield, and the brutal broadsword whose wounds - far too savage for any small goblin - first betray that the raiders are no ordinary bandits."
+  - title: Foes of the Deep
+    description: "The raiders the party tracks are no bandits, and the long road through the dark holds worse besides."
+    creatures:
+      - name: Orcs
+        entry: orc
+        description: "Dark-folk foot soldiers, sword-and-shield raiders who joined the sack of Dracht."
+      - name: Mountain Trolls
+        description: "Huge giant-kin who came down on Dracht with great clubs - brutal and immensely strong, though they found little for their trouble."
+      - name: Goblin
+        entry: goblin
+        description: "Reclusive goblin-kin miners who know the caverns better than any - save the elves' cave - and read the dark by long habit. Mistrusted, and wrongly blamed for the attacks."
+      - name: Cave Elf
+        entry: cave-elf
+        description: "Pale, fungus-farming elves of the deep, each born with a natural sonar that lets them 'see' in utter darkness."
+      - name: Carry-Beetle
+        description: "A great docile beetle bred underground as a pack- and riding-beast; Nordsal keeps a rental stable of them."
+      - name: Cave Pig
+        description: "A hardy swine of the caverns, raised for meat in the lightless halls."
+  - title: The Insectoids Come
+    description: "An optional second scenario: a hive of ant-like insectoids, driven from its home by volcanic fire, pours into the Nordsal region, and a worthy party-member is named neutral commander of the combined human, cave-elf and goblin host."
+    creatures:
+      - name: Insectoids
+        description: "Ant-like hive-creatures with keen smell and bat-like sonar: an unmoving Queen, noble Leaders, flying Messengers of perfect memory, spear-throwing Warriors, armor-shredding Diggers, and laboring Workers. They are no fanatics - they break off once they lose half their warriors, two-thirds of their workers, or two of their leaders."
 ---
 
 ## Plot
 
-The party takes on hard and poorly paid work in a northern province and is soon drawn to the mining village of Dracht, where every inhabitant has just been killed in a raid by dark folk. Tracing what happened leads them off the surface and down into the old trade route beneath the mountains, where they meet the creatures of the underworld in a grim and merciless fight.
+The party takes on hard, poorly paid work on the frozen northern frontier and signs on as sled-drivers to haul the herders' annual reindeer-meat taxes south for the king. At the herders' camp they hear of Dracht, a dwarven mining village sacked by dark folk two months past, its fabled riches perhaps still buried in the ash. Tempted, they desert the expedition and climb to the ruins - and find only burned halls and the frozen, mutilated dead.
+
+Deep in the mine a bound spirit offers them the dwarves' treasure if they will only gather every villager's corpse before its stone face. Two bodies are missing, lost down an old shaft, and retrieving them draws the party out of the mine entirely - down into a vast primordial cave system that is the only trade road between coast and mountains. There, beneath the starving cavern-city of Nordsal, they uncover the truth: the "robbers" choking off the caravans are not bandits but the walking dead, led by a baron who had himself remade into a death knight.
+
+## A Curse Beneath the Mountain
+
+Seven centuries ago the dwarves of Dracht bound an offended mountain spirit into the carved face on their treasure door, to serve as its guardian. The binding hides a trap: lay all the villagers' corpses before the face within two months of their death and the spirit goes free - but the face bursts and the whole mine comes down in a killing earthquake. The spirit, wanting only its freedom, will lead the party straight into that snare.
+
+Nearer in time, a baron built a castle in a deep cavern so his sun-shy daughter could live out of the light; she died young in an underground stream, and the grieving family left it empty. A century later a necromancer academy took the castle, and their leader returned from the south with a ritual to raise a death knight. Their patron, the ambitious Baron Boltshield, had himself transformed - and the thing that rose kept his will, grew far stronger than the mages feared, and butchered them all, raising the dead as his servants.
+
+## The Caravan Crisis
+
+Boltshield means to conquer the whole underworld. His method is patient and grim: ambush the caravans in the lightless Margoroth cavern, drain the guards and raise them as skilled, near-lifelike zombies, and with that growing army fall upon a starving, isolated Nordsal. By the time the party arrives, no caravan has reached the city in over a month, the food and fuel are running out, and the goblins are being blamed for it.
+
+## Running the Adventure
+
+There is no single solution, and meeting the undead head-on is deadly - every one of them sees perfectly in the dark. The module rewards planning and clue-gathering: persuade the cave-elf Envoy to lay Curse Undead on the death knight, fling iron filings over the bane-men to silence their magic, steal the ring of keys to lock the dead inside their own vault, or pick them off one at a time. Beware even victory: destroy the death knight and his bane-men and the zombies still carry out their last standing order - to kill every living thing in sight.

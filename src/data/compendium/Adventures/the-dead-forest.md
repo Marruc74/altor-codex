@@ -63,6 +63,7 @@ sections:
         description: A knight dead nine hundred years, his skeleton enthroned in the central burial chamber and risen as a barrow-wight; his consort, his right-hand companion and his young son lie in chambers of their own, each likewise risen.
     creatures:
       - name: Barrow-wights
+        entry: barrow-wight
         description: Four powerful undead spirits that materialise in the barrow chambers, the risen dead of the ancient knight and his kin, harmed only by fire, magic and magical weapons.
     items:
       - name: The Magic Greatsword
@@ -122,6 +123,7 @@ sections:
         image: /compendium/Adventures/TheDeadForest/Characters/Vindhand.jpg
     creatures:
       - name: Water Undine
+        entry: undin
         description: A water-elemental raised by the sigil-spells of the pool and the complex, which tries to drown any who break the seal.
     items:
       - name: The Conch Horn
@@ -147,8 +149,10 @@ sections:
         description: Aulec, Sigved and Yrvad, three badly beaten warriors held in a prison cell in the ravine.
     creatures:
       - name: Orcs
+        entry: orc
         description: Blackhand's band of some twenty-five orcs who hold the cave ravine, often drunk on stolen wine.
       - name: Cave Trolls
+        entry: cave-troll
         description: Obald, Tek and Stok, three powerful cave-trolls that lair in the ravine and hunt by night.
       - name: Wildcat
         description: A wildcat mother with three kittens denned in one of the ravine's caves.

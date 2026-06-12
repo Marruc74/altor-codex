@@ -93,8 +93,10 @@ sections:
         description: A young girl who lived through the death knight's slaughter in the Village of the Dead. If the party defeats the banemen, she can tell them what befell the village.
     creatures:
       - name: Death Knight
+        entry: death-knight
         description: A higher undead, a black skeleton in blood-red armour, that attacks with a paralysing cold or with its two-handed axe and raises banemen from those it slays. One came to the Village of the Dead, killed all its people and turned them into a trap.
       - name: Banemen
+        entry: baneman
         description: Raised by a death knight from those it has killed, banemen look like ordinary people but for pale, lifeless skin and a flicker of pain in the eyes. They strike with their hands or with concentrated darkness that drains a victim's spirit from a short way off.
   - title: The Heart of Darkness
     description: The temple of pure darkness raised around the buried ruby, the master who would wake the god within it, and the god himself.
