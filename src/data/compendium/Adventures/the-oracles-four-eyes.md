@@ -1,11 +1,13 @@
 ---
 title: The Oracle's Four Eyes
+series: "The Fifth Conflux"
+seriesPart: 2
 tagline: "Four seers must be saved before the assassins find them - and the fifth conflux falls into the wrong hands."
-summary: A direct sequel to Sulphur Winter. A completed prophecy foretells a fated turning point in the world's future, and the deathless sorcerer Shagul means to claim it - so the party races his assassins to find and rescue the four living oracles who hold the key.
+summary: A direct sequel to Sulphur Winter. A completed prophecy foretells a fated turning point in the world's future, and the deathless sorcerer Shagul means to claim it - so a band of adventurers races his assassins to find and rescue the four living oracles who hold the key.
 videoIds: []
 sections:
   - title: The Prophecy of Ranz
-    description: "The campaign opens at a quiet Trakorien farm in spring, where a wounded monk drags the party into the hunt for the four eyes - and onward to the dying order-master of Ranz and the rotting patriarch of the Shadow Swamp."
+    description: "This tale opens at a quiet Trakorien farm in spring, where a wounded monk draws the adventurers into the hunt for the four eyes - and onward to the dying order-master of Ranz and the rotting patriarch of the Shadow Swamp."
     places:
       - name: The Living Mountain of Ranz
         description: "A holy, slowly living mountain by Malossi Lake, home of the Ranziner monks: a village, funnel-shaped pavilions, holy caves, and a white cliff that holds a giant fossil where the order-master dwells. Here the prophecy Vox Ranzina was completed and its secret verses kept."
@@ -13,16 +15,16 @@ sections:
         description: "A hidden island lair lost among stone cairns in a black mire, where the last Shagulit patriarch hides and worships fate. Its mandala chamber is a portal said to scatter a soul across the multiverse."
     npcs:
       - name: Peatro Petralba
-        description: "The white-bearded order-master of the Ranziner monks, father of the white cliff. Poisoned the very night the party reaches Ranz, he lives just long enough to entrust them with the secret verses and the saving of the four eyes; his ghost returns to guide them after."
+        description: "The white-bearded order-master of the Ranziner monks, father of the white cliff. Poisoned the very night the seekers reach Ranz, he lives just long enough to entrust them with the secret verses and the saving of the four eyes; his ghost lingers on to guide them after."
       - name: Bodonius
-        image: /compendium/Adventures/TheOraclesFourEyes/Bodonius.jpg
-        description: "A patient Ranziner monk of near-perfect memory who first seeks the party out. An assassin impersonates him to flush out those who once saw the true Ebharing, before the real, wounded Bodonius bursts in."
+        image: /compendium/Adventures/TheOraclesFourEyes/The Prophecy of Ranz/Bodonius.jpg
+        description: "A patient Ranziner monk of near-perfect memory, the first of the order to find the marked seekers. An assassin once wore his face to flush out those who saw the true Ebharing, before the real, wounded Bodonius broke in upon the ruse."
       - name: Furstessan Didra Damagi
-        image: /compendium/Adventures/TheOraclesFourEyes/Didra Damagi of Krimbydh.jpg
-        description: "A sinuous, panther-like princess sheathed in glowing tattoos, granddaughter of Elmesum, whose vengeful ghost she carries in her right ear. A capable sorceress and the party's ordained companion - and a snare for Shagul, who still loves the woman she resembles."
+        image: /compendium/Adventures/TheOraclesFourEyes/The Prophecy of Ranz/Didra Damagi of Krimbydh.jpg
+        description: "A sinuous, panther-like princess sheathed in glowing tattoos, granddaughter of Elmesum, whose vengeful ghost she carries in her right ear. A capable sorceress fated to walk beside the seekers - and a snare for Shagul, who still loves the woman she resembles."
       - name: Gobrugda
-        image: /compendium/Adventures/TheOraclesFourEyes/Manghalde.jpg
-        description: "The last surviving Shagulit patriarch, who lived through Shagul's betrayal and swore vengeance. Now slowly rotting alive, he hides in the Shadow Swamp under the name Manghalde, attended by undead reptile-men and a horn-demon, and can aid the party in many ways."
+        image: /compendium/Adventures/TheOraclesFourEyes/The Prophecy of Ranz/Manghalde.jpg
+        description: "The last surviving Shagulit patriarch, who lived through Shagul's betrayal and swore vengeance. Now slowly rotting alive, he hides in the Shadow Swamp under the name Manghalde, attended by undead reptile-men and a horn-demon, and bends what power he has left toward his old master's ruin."
       - name: Elmesum
         description: "The princess Shagul stole away long ago for company in his grave. She perished when it was opened, but her ghost lingers in her granddaughter Didra's ear, whispering for revenge."
     creatures:
@@ -38,9 +40,9 @@ sections:
       - name: Ebharing
         description: "A two-handed sword possessed by the demon Ebharing, central to Shagul's design. The assassins carry cast-iron forgeries of it; only those who saw the true blade on Marjura will know the difference, and so betray themselves as marked."
       - name: Peatro's Brass Bell
-        description: "A bell given to the party at Ranz, known to the horn-demon of the Shadow Swamp from miles away - a beacon that leads them safely to Gobrugda."
+        description: "A bell given to the seekers at Ranz, known to the horn-demon of the Shadow Swamp from miles away - a beacon that leads its bearers safely to Gobrugda."
   - title: The White Eye - Raoga
-    description: "On the forest island of Trinsmyra, a wolf-seer has been carried off by the hunters of a sorcerer-twins' isle. The party must win a place among the wolf-folk, then steal her back before a war-fleet of wolf-warriors falls on the island."
+    description: "On the forest island of Trinsmyra, a wolf-seer has been carried off by the hunters of a sorcerer-twins' isle. To free her, the seekers must first win a place among the wolf-folk, then steal her back before a war-fleet of wolf-warriors falls on the island."
     places:
       - name: Wulferveden
         description: "A man-hostile forest on Trinsmyra, court of the wolf-folk, ruled by elaborate rites of dominance and an aging wolf-queen."
@@ -48,24 +50,24 @@ sections:
         description: "An islet ruled by the magician twins, with a fishing village, a locked ballroom, and a green-towered citadel of magic mirrors, a teleporting tower-model, a gas-trap hall and a deep treasure vault."
     npcs:
       - name: Aoya
-        image: /compendium/Adventures/TheOraclesFourEyes/Evil Bite.jpg
+        image: /compendium/Adventures/TheOraclesFourEyes/The White Eye - Raoga/Evil Bite.jpg
         description: "The aging wolf-queen of Wulferveden, 'the evil bite,' blessed with a beast's sixth sense for danger and marked by a pierced right ear."
       - name: Raoga
-        image: /compendium/Adventures/TheOraclesFourEyes/Rauga.jpg
+        image: /compendium/Adventures/TheOraclesFourEyes/The White Eye - Raoga/Rauga.jpg
         entry: wolfman
         description: "The white-furred wolf-woman seer, the White Eye, captured by the twins' hunters. Driven mad in captivity, her uncanny singing is itself a key to a power that wakes in days to come."
       - name: Kamalkus
-        image: /compendium/Adventures/TheOraclesFourEyes/Kamalkus.jpg
+        image: /compendium/Adventures/TheOraclesFourEyes/The White Eye - Raoga/Kamalkus.jpg
         description: "One of the magician twins of Gatve's Rock, scarred and secretive after long years stranded in acid slime-jungles. His prized 'sculptures' are in truth people he has turned to stone, and he bears the Pandora orb."
       - name: Fundibera
-        image: /compendium/Adventures/TheOraclesFourEyes/Fundibera.jpg
+        image: /compendium/Adventures/TheOraclesFourEyes/The White Eye - Raoga/Fundibera.jpg
         description: "Kamalkus's twin, a lover of illusion and lavish balls who wears an ever-changing mask of beautiful forms over her true face."
       - name: Salmello
-        image: /compendium/Adventures/TheOraclesFourEyes/Salmello.jpg
+        image: /compendium/Adventures/TheOraclesFourEyes/The White Eye - Raoga/Salmello.jpg
         description: "A male courtesan, Fundibera's pampered favorite on Gatve's Rock, whom Kamalkus quietly means to add to his stone gallery."
     creatures:
       - name: Nekromorbus
-        image: /compendium/Adventures/TheOraclesFourEyes/Nekromordus.jpg
+        image: /compendium/Adventures/TheOraclesFourEyes/The White Eye - Raoga/Nekromordus.jpg
         description: "A perfect, deathless statue-warrior of green-black stone, one of thirteen such guardians. Loosed from the Pandora orb, it hunts the one who opened it without rest."
     items:
       - name: The Four Mirrors
@@ -85,7 +87,7 @@ sections:
       - name: Innocentia
         description: "The simple, devoted girl who tends the Blue Child atop its cliff."
       - name: Gozcana da Skugre
-        image: /compendium/Adventures/TheOraclesFourEyes/Gozcana da Skugre.jpg
+        image: /compendium/Adventures/TheOraclesFourEyes/The Blue Eye - the Blue Child/Gozcana da Skugre.jpg
         description: "Elder of the diFolt order in Ilibaurien and Gobrugda's guest, who refuses to give up the Blue Child and can fog intruders with strange drugs."
       - name: Cymba
         description: "A cruel, drug-addicted mercenary captain set to guard the temple, disgraced after his brutal reprisals sparked an uprising."
@@ -121,7 +123,7 @@ sections:
         entry: onaqui
         description: "The other flying beast of the King's Cliff cult, gorged on sacrificial hearts and versed in necromancy; should its mate die, it flees forever."
   - title: The Green Eye - Melealina
-    description: "Deepest and safest of the four: an elf astrologer who already knows the party and their errand, hidden in a giant flower-oak at the heart of a perilous forest."
+    description: "Deepest and safest of the four: an elf astrologer who knows the seekers and their errand before ever they arrive, hidden in a giant flower-oak at the heart of a perilous forest."
     places:
       - name: Tocmer Forest
         description: "A dangerous forest on Saphyna of bloodsucking seeds, a centaur's glade, an evil black primordial mountain, a walled troll-garden, and an isle of invisible elves."
@@ -129,16 +131,16 @@ sections:
         description: "The astrologer's home in a colossal flower-oak, with its dining branch, leaf-hall, sleeping chamber and a domed star-model under which she reads the heavens, watched over by some two hundred and fifty unseen elves and a unicorn."
     npcs:
       - name: Melealina
-        description: "The dark-haired elf astrologer, the Green Eye, born during an eclipse and gifted with sight of hidden things. She can move a whole party at a thought, speak with all of nature, and is the campaign's true and indispensable seer - and is barely harmed by anything of this world."
+        description: "The dark-haired elf astrologer, the Green Eye, born during an eclipse and gifted with sight of hidden things. She can move a whole company at a thought, speak with all of nature, and is the truest and most indispensable of the four eyes - and is barely harmed by anything of this world."
       - name: Kestur
         entry: centaur
         description: "A good-natured grey-and-red centaur who has faithfully guarded comrades turned to juniper bushes for centuries. He speaks only elvish, and converses with birds."
       - name: Grimhild
         description: "An ancient, tragic mountain-troll of Tocmer, not evil but unhinged by the death of her son. She 'adopts' wandering humanoids and smothers them with a lethal, doting over-protection."
       - name: Gaddagormgald
-        description: "The sole survivor of a company of soldiers turned to juniper bushes four hundred years ago - a stubborn, unwashed old-school warrior who, restored, joins the party out of gratitude."
+        description: "The sole survivor of a company of soldiers turned to juniper bushes four hundred years ago - a stubborn, unwashed old-school warrior who, once restored, swears his sword to his rescuers out of gratitude."
       - name: The Elf Siblings
-        description: "Four invisible, telepathic elf siblings who may join the party. They cannot lie but are unreliable all the same, and carry arrows that bring sleep."
+        description: "Four invisible, telepathic elf siblings who sometimes throw in their lot with passing wanderers. They cannot lie but are unreliable all the same, and carry arrows that bring sleep."
     creatures:
       - name: Kornalbon
         entry: unicorn
@@ -153,10 +155,10 @@ sections:
       - name: Shagul
         description: "The antagonist: a master of necromancy and the mind, ageless and deathless because he lives as several exact clones at once, one always seated at the earth-blood spring in King Ottar's grave. Believing the conflux will fall on the island he rules, he has seized the assassins' brotherhood to murder every rival astrologer - and every foreigner who once saw his true face."
       - name: Goba da Grummi
-        image: /compendium/Adventures/TheOraclesFourEyes/Mashmashu Goda da Grummi.jpg
+        image: /compendium/Adventures/TheOraclesFourEyes/Foes and Factions/Mashmashu Goda da Grummi.jpg
         description: "An obese, scheming high priest of the Kastyke, one of the mightiest of his order and master over the secret police, who never travels under his own power."
       - name: Lugal Praanz da Kaelve
-        image: /compendium/Adventures/TheOraclesFourEyes/Lugal Praanz da Kaelve.jpg
+        image: /compendium/Adventures/TheOraclesFourEyes/Foes and Factions/Lugal Praanz da Kaelve.jpg
         description: "A noble master-fencer of the secret police, missing his right ear and deadly with two blades at once. His buried secret is a birthmark betraying blood unthinkable for his rank."
     creatures:
       - name: Shaggira
@@ -176,12 +178,12 @@ But a hidden verse warns that Shagul will fall to someone who has seen his true 
 
 ## A Race Against the Assassins
 
-Resting at a Trakorien farm in the spring of the year, the party is drawn in by a wounded monk and rushed to Ranz, where the dying order-master gives them the secret verses and sends them fleeing through a hidden passage. He bids them seek the rotting patriarch of the Shadow Swamp and take the tattooed princess Didra along. From there the four rescues may be attempted in any order, always one step ahead of the brotherhood of the striped frog - and watched, all the while, by the realm's own secret police, who are unravelling the same threads.
+Resting at a Trakorien farm in the spring of the year, the adventurers are drawn in by a wounded monk and rushed to Ranz, where the dying order-master gives them the secret verses and sends them fleeing through a hidden passage. He bids them seek the rotting patriarch of the Shadow Swamp and take the tattooed princess Didra along. From there the four rescues unfold in no fixed order, always one step ahead of the brotherhood of the striped frog - and watched, all the while, by the realm's own secret police, who are unravelling the same threads.
 
 ## The Four Eyes
 
-Each eye is a seer worth a kingdom: the mad wolf-woman Raoga, whose song is a key; the Blue Child, whose existence alone stays Shagul's cloning; the fat genius Nastigast, who reads the stars in numbers; and the elf astrologer Melealina, who already knows all and can bind the rest together. Saving them is the heart of the campaign.
+Each eye is a seer worth a kingdom: the mad wolf-woman Raoga, whose song is a key; the Blue Child, whose existence alone stays Shagul's cloning; the fat genius Nastigast, who reads the stars in numbers; and the elf astrologer Melealina, who already knows all and can bind the rest together. Their saving is the heart of the tale.
 
 ## The Ransarder War
 
-While the party hunts the oracles, the realm slides into war. Three powers strike at once, cities fall, and a fanatic seizes a holy crown. At the height of it the old curse over a dark island breaks and a white-sailed fleet appears under a faceless king, fulfilling the prophecy - and leaving the four great islands balanced, none able to master the others. Whether the conflux is won or lost, and what the saved oracles must do next, is left for the tale to come.
+While the seekers hunt the oracles, the realm slides into war. Three powers strike at once, cities fall, and a fanatic seizes a holy crown. At the height of it the old curse over a dark island breaks and a white-sailed fleet appears under a faceless king, fulfilling the prophecy - and leaving the four great islands balanced, none able to master the others. Whether the conflux is won or lost, and what the saved oracles must do next, is left for the tale to come.

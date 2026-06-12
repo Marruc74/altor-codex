@@ -62,6 +62,10 @@ export const adventures = Object.entries(files)
       title: data.title ?? id,
       tagline: data.tagline ?? "",
       summary: data.summary ?? "",
+      // Optional campaign grouping: adventures sharing a `series` are shown
+      // together in the nav, ordered by `seriesPart`.
+      series: data.series ?? null,
+      seriesPart: data.seriesPart ?? null,
       videoIds: data.videoIds ?? [],
       characters: data.characters ?? [],
       places: data.places ?? [],
@@ -71,3 +75,21 @@ export const adventures = Object.entries(files)
     };
   })
   .sort((a, b) => a.title.localeCompare(b.title));
+
+// Adventures grouped for the nav: each series (ordered by seriesPart) followed
+// by the standalone adventures. Series groups are listed alphabetically.
+export const adventureGroups = (() => {
+  const series = {};
+  const standalone = [];
+  for (const a of adventures) {
+    if (a.series) (series[a.series] ??= []).push(a);
+    else standalone.push(a);
+  }
+  const groups = Object.entries(series)
+    .map(([name, advs]) => ({
+      name,
+      adventures: advs.slice().sort((a, b) => (a.seriesPart ?? 0) - (b.seriesPart ?? 0)),
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+  return { groups, standalone };
+})();

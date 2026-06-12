@@ -1,9 +1,9 @@
-import { useState, useMemo, useCallback, useEffect, useRef, useLayoutEffect } from "react";
+import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import ReactMarkdown from "react-markdown";
 import { SECTIONS, videosBySection, videos as allVideos } from "../data/videoData";
 import { pins } from "../data/locations";
 import { entries } from "../data/codex/index.js";
-import { adventures } from "../data/adventures";
+import { adventures, adventureGroups } from "../data/adventures";
 import { videosForPin, relatedVideosByVideo } from "../data/crossLinks";
 
 // ── Image utilities ───────────────────────────────────────────────────────
@@ -600,26 +600,55 @@ export default function Compendium({
   onVideoSelect,
 }) {
   const [query, setQuery] = useState("");
-  const [selectedEntry, setSelectedEntry] = useState(null);
-  // When an entry page is opened from an adventure card, remember that adventure
-  // so the entry page can offer a "Back to …" button.
-  const [entryBack, setEntryBack] = useState(null);
-  // Page scroll position to restore when returning to that adventure via Back.
+  // The open entry page (a video-backed Peoples/Creatures page). Reflected in the
+  // URL as ?ce=<id> so the browser back/forward buttons and refresh all work.
+  const [selectedEntry, setSelectedEntry] = useState(() => {
+    const id = new URLSearchParams(window.location.search).get("ce");
+    return id ? (videoById[id] ?? allVideos.find((v) => v.id === id) ?? null) : null;
+  });
+  // Page scroll to restore when leaving an entry back to the adventure it opened from.
   const savedAdvScroll = useRef(0);
-  const restorePending = useRef(false);
 
-  // After Back re-selects the adventure, return the window to where the user was.
-  // Restore once on commit, then again shortly after so late-loading images that
-  // grow the page above the target don't leave us short of the original spot.
-  useLayoutEffect(() => {
-    if (!restorePending.current || !selectedAdventure) return;
-    restorePending.current = false;
-    const y = savedAdvScroll.current;
-    window.scrollTo(0, y);
-    const raf = requestAnimationFrame(() => window.scrollTo(0, y));
-    const t = setTimeout(() => window.scrollTo(0, y), 250);
-    return () => { cancelAnimationFrame(raf); clearTimeout(t); };
-  }, [selectedAdventure]);
+  // Keep the ?ce= param in step with the open entry. This is replaceState (no new
+  // history entry); openEntry below is what pushes the back-able entry.
+  useEffect(() => {
+    const url = new URL(window.location);
+    if (selectedEntry) url.searchParams.set("ce", selectedEntry.id);
+    else url.searchParams.delete("ce");
+    if (url.href !== window.location.href) window.history.replaceState(null, "", url);
+  }, [selectedEntry]);
+
+  // Browser back/forward: drive the entry view from the ?ce= param.
+  useEffect(() => {
+    const onPop = () => {
+      const id = new URLSearchParams(window.location.search).get("ce");
+      if (id) {
+        setSelectedEntry(videoById[id] ?? allVideos.find((v) => v.id === id) ?? null);
+      } else {
+        setSelectedEntry((prev) => {
+          if (prev) {
+            const y = savedAdvScroll.current;
+            requestAnimationFrame(() => window.scrollTo(0, y));
+            setTimeout(() => window.scrollTo(0, y), 250);
+          }
+          return null;
+        });
+      }
+    };
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
+  }, []);
+
+  // Open an entry from an adventure card: remember the scroll, push a real history
+  // entry (so the browser Back button returns here), and jump to the entry's top.
+  const openEntry = useCallback((video) => {
+    savedAdvScroll.current = window.scrollY;
+    const url = new URL(window.location);
+    url.searchParams.set("ce", video.id);
+    window.history.pushState(null, "", url);
+    setSelectedEntry(video);
+    window.scrollTo(0, 0);
+  }, []);
   // Expand the nav section that holds the current selection on first render, so
   // a deep-link (e.g. ?adventure=kandra) reveals and highlights it in the menu.
   const [openSections, setOpenSections] = useState(() => ({
@@ -735,7 +764,6 @@ export default function Compendium({
                     }`}
                     onClick={() => {
                       onAdventureSelect(null);
-                      setEntryBack(null);
                       if (r.kind === "country") { onCountrySelect(r.id); setSelectedEntry(null); }
                       else { setSelectedEntry(r.video); onCountrySelect(null); }
                     }}
@@ -763,22 +791,66 @@ export default function Compendium({
                       <span className="compendium-nav__count">{adventures.length}</span>
                       <span className="compendium-nav__toggle">{advOpen ? "▲" : "▼"}</span>
                     </button>
-                    {advOpen && (
-                      <div className="compendium-nav__group">
-                        <ul className="compendium-nav__list">
-                          {adventures.map((a) => (
-                            <li key={a.id}>
-                              <button
-                                className={`compendium-nav__item${selectedAdventure === a.id ? " compendium-nav__item--active" : ""}`}
-                                onClick={() => { onAdventureSelect(a.id); onCountrySelect(null); setSelectedEntry(null); setEntryBack(null); }}
-                              >
-                                {a.title}
-                              </button>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
+                    {advOpen && (() => {
+                      const advItem = (a, label) => (
+                        <li key={a.id}>
+                          <button
+                            className={`compendium-nav__item${selectedAdventure === a.id ? " compendium-nav__item--active" : ""}`}
+                            onClick={() => { onAdventureSelect(a.id); onCountrySelect(null); setSelectedEntry(null); }}
+                          >
+                            {label}
+                          </button>
+                        </li>
+                      );
+                      return (
+                        <>
+                          {adventureGroups.groups.map((g) => {
+                            const subKey = `adv-${g.name}`;
+                            const subOpen = openSubGroups[subKey] ?? false;
+                            return (
+                              <div key={g.name} className="compendium-nav__group">
+                                <button
+                                  className="compendium-nav__group-hd"
+                                  onClick={() => toggleSubGroup(subKey)}
+                                >
+                                  <span>{g.name}</span>
+                                  <span className="compendium-nav__count">{g.adventures.length}</span>
+                                  <span className="compendium-nav__toggle">{subOpen ? "▲" : "▼"}</span>
+                                </button>
+                                {subOpen && (
+                                  <ul className="compendium-nav__list">
+                                    {g.adventures.map((a) =>
+                                      advItem(a, a.seriesPart != null ? `${a.seriesPart}. ${a.title}` : a.title)
+                                    )}
+                                  </ul>
+                                )}
+                              </div>
+                            );
+                          })}
+                          {adventureGroups.standalone.length > 0 && (() => {
+                            const subKey = "adv-standalone";
+                            const subOpen = openSubGroups[subKey] ?? false;
+                            return (
+                              <div className="compendium-nav__group">
+                                <button
+                                  className="compendium-nav__group-hd"
+                                  onClick={() => toggleSubGroup(subKey)}
+                                >
+                                  <span>Standalone</span>
+                                  <span className="compendium-nav__count">{adventureGroups.standalone.length}</span>
+                                  <span className="compendium-nav__toggle">{subOpen ? "▲" : "▼"}</span>
+                                </button>
+                                {subOpen && (
+                                  <ul className="compendium-nav__list">
+                                    {adventureGroups.standalone.map((a) => advItem(a, a.title))}
+                                  </ul>
+                                )}
+                              </div>
+                            );
+                          })()}
+                        </>
+                      );
+                    })()}
                   </div>
                 );
               })()}
@@ -821,7 +893,7 @@ export default function Compendium({
                                 <li key={`c-${c.id}`}>
                                   <button
                                     className={`compendium-nav__item${selectedCountry === c.id ? " compendium-nav__item--active" : ""}`}
-                                    onClick={() => { onAdventureSelect(null); onCountrySelect(c.id); setSelectedEntry(null); setEntryBack(null); }}
+                                    onClick={() => { onAdventureSelect(null); onCountrySelect(c.id); setSelectedEntry(null); }}
                                   >
                                     {c.name}
                                   </button>
@@ -831,7 +903,7 @@ export default function Compendium({
                                 <li key={`v-${v.id}`}>
                                   <button
                                     className={`compendium-nav__item compendium-nav__item--video${selectedEntry?.id === v.id ? " compendium-nav__item--active" : ""}`}
-                                    onClick={() => { onAdventureSelect(null); setSelectedEntry(v); onCountrySelect(null); setEntryBack(null); }}
+                                    onClick={() => { onAdventureSelect(null); setSelectedEntry(v); onCountrySelect(null); }}
                                   >
                                     {v.name}
                                   </button>
@@ -890,7 +962,7 @@ export default function Compendium({
                                 <li key={v.id}>
                                   <button
                                     className={`compendium-nav__item compendium-nav__item--video${selectedEntry?.id === v.id ? " compendium-nav__item--active" : ""}`}
-                                    onClick={() => { onAdventureSelect(null); setSelectedEntry(v); onCountrySelect(null); setEntryBack(null); }}
+                                    onClick={() => { onAdventureSelect(null); setSelectedEntry(v); onCountrySelect(null); }}
                                   >
                                     {v.name}
                                   </button>
@@ -910,7 +982,15 @@ export default function Compendium({
 
         {/* ── Right panel ── */}
         <div className="compendium-main">
-          {selectedPin ? (
+          {selectedEntry ? (
+            <EntryDetail
+              key={selectedEntry.id}
+              video={selectedEntry}
+              onVideoSelect={onVideoSelect}
+              onBack={selectedAdventure ? () => window.history.back() : null}
+              backLabel={selectedAdventure ? (adventures.find((a) => a.id === selectedAdventure)?.title ?? "adventure") : ""}
+            />
+          ) : selectedPin ? (
             <CountryDetail
               key={selectedPin.id}
               country={selectedPin}
@@ -923,33 +1003,7 @@ export default function Compendium({
               key={selectedAdventureObj.id}
               adventure={selectedAdventureObj}
               onVideoSelect={onVideoSelect}
-              onEntryOpen={(video) => {
-                savedAdvScroll.current = window.scrollY;
-                setEntryBack(selectedAdventureObj.id);
-                onAdventureSelect(null);
-                onCountrySelect(null);
-                setSelectedEntry(video);
-                window.scrollTo(0, 0);
-              }}
-            />
-          ) : selectedEntry ? (
-            <EntryDetail
-              key={selectedEntry.id}
-              video={selectedEntry}
-              onVideoSelect={onVideoSelect}
-              onBack={
-                entryBack
-                  ? () => {
-                      const back = entryBack;
-                      restorePending.current = true;
-                      setEntryBack(null);
-                      setSelectedEntry(null);
-                      onCountrySelect(null);
-                      onAdventureSelect(back);
-                    }
-                  : null
-              }
-              backLabel={entryBack ? (adventures.find((a) => a.id === entryBack)?.title ?? "adventure") : ""}
+              onEntryOpen={openEntry}
             />
           ) : (
             <div className="country-detail__prompt">

@@ -1,26 +1,28 @@
 ---
 title: The Dead Forest
+series: "The Path of Honor"
+seriesPart: 1
 tagline: ""
-summary: Lured by honour and gold, the party enters a cursed forest in search of the keys to the legendary Gates of Power.
+summary: Lured by honour and gold, adventurers enter a cursed forest in search of the keys to the legendary Gates of Power.
 videoIds: []
 sections:
   - title: The Inn
-    description: The tavern where the party begins and is drawn into the forest by its rumours and the folk who hire them.
+    description: The tavern at the forest's edge, thick with rumours of the wood and crowded with the folk who lure travellers into it.
     places:
       - name: The Inn
-        description: The tavern at the forest's edge where the adventure begins, thick with rumours of the wood, where the wine-merchant Dregil, the rogue guides and the sorceress Doriath all find the party. Its name and place are the game master's to set.
+        description: The tavern at the forest's edge, thick with rumours of the wood, where the wine-merchant Dregil, the rogue guides and the sorceress Doriath seek out travellers bound for the trees beyond.
     npcs:
       - name: Dregil
-        description: A bitter, middle-aged wine-merchant in a worn wine-red robe who hires the party to hunt down the orcs that stole his wine-cargo, offering five casks of wine and a hundred gold, and gives them the road to the cave ravine.
+        description: A bitter, middle-aged wine-merchant in a worn wine-red robe, robbed of his cargo by the orcs of the cave ravine, who offers wine and gold to any willing to hunt down the raiders and avenge the theft.
       - name: Filundrus
-        description: One of two rogues lounging in the tavern, a tall, fine-limbed thief of thirty-three whose pleasant looks hide a treacherous streak. With Ivil he offers to guide the party to a hoard, meaning all the while to rob them and slip away into the forest.
-        image: /compendium/Adventures/TheDeadForest/Characters/Filundrus.jpg
+        description: One of two rogues lounging in the tavern, a tall, fine-limbed thief of thirty-three whose pleasant looks hide a treacherous streak. With Ivil he offers to guide travellers to a hoard, meaning all the while to rob them and slip away into the forest.
+        image: /compendium/Adventures/TheDeadForest/The Inn/Filundrus.jpg
       - name: Ivil
-        description: The other of the tavern's two rogues, short and muscular like a small, sturdy warrior. He and Filundrus claim to know where orcs keep their stolen treasure and will gladly guide the party, only to make off with all they can at the first chance.
-        image: /compendium/Adventures/TheDeadForest/Characters/Ivil.jpg
+        description: The other of the tavern's two rogues, short and muscular like a small, sturdy warrior. He and Filundrus claim to know where orcs keep their stolen treasure and will gladly guide travellers, only to make off with all they can at the first chance.
+        image: /compendium/Adventures/TheDeadForest/The Inn/Ivil.jpg
       - name: Doriath
-        description: A striking young sorceress of about twenty-five, black-curled and green-eyed, who gives her name as Tuvinel and hides a ruthless hunger for power. She hires the party to descend into the magician Windhand's complex, after his magic and the Conch Horn, and leaves the fighting to them while she claims the magic for herself.
-        image: /compendium/Adventures/TheDeadForest/Characters/Doriath.jpg
+        description: A striking young sorceress of about twenty-five, black-curled and green-eyed, who gives her name as Tuvinel and hides a ruthless hunger for power. She covets the magician Windhand's secrets and the Conch Horn, and seeks out bold travellers to brave his complex while she keeps to the shadows and claims the magic for herself.
+        image: /compendium/Adventures/TheDeadForest/The Inn/Doriath.jpg
   - title: Wilderness
     description: The living forest around the dead wood, and the travellers, beasts and dangers met on its paths.
     places:
@@ -31,22 +33,22 @@ sections:
     npcs:
       - name: Grim
         description: One of two minotaur brothers, the forest's worst bullies, who live only to fight and win glory and cut down all who resist with their great double axes.
-        image: /compendium/Adventures/TheDeadForest/Characters/Grim.jpg
+        image: /compendium/Adventures/TheDeadForest/Wilderness/Grim.jpg
       - name: Grum
         description: The other minotaur brother, as brutal and glory-hungry as Grim; the two spare only those they judge too pitiful to make a worthy fight.
-        image: /compendium/Adventures/TheDeadForest/Characters/Grum.jpg
+        image: /compendium/Adventures/TheDeadForest/Wilderness/Grum.jpg
       - name: Ketolus
         description: The forest's only and lonely centaur, an archer who hunts game for Elusia, whom he loves. He knows the forest and its folk better than anyone and will guide travellers for a few gold, but shuns the brothers Grim and Grum.
-        image: /compendium/Adventures/TheDeadForest/Characters/Ketolus.jpg
+        image: /compendium/Adventures/TheDeadForest/Wilderness/Ketolus.jpg
       - name: Black Knight
         description: A silent knight all in black armour who rides down everyone he meets, kills with his great morningstar and takes their valuables. He is a servant of Sathmog, god of malice, darkness, death and ever-burning fire.
-        image: /compendium/Adventures/TheDeadForest/Characters/Black Knight.jpg
+        image: /compendium/Adventures/TheDeadForest/Wilderness/Black Knight.jpg
       - name: Ariel
-        description: A twenty-two-year-old wandering monk, at home in the wild and almost magically good at finding food. He and Kara are easygoing companions who may join the party and share fairly in any spoils.
-        image: /compendium/Adventures/TheDeadForest/Characters/Ariel.jpg
+        description: A twenty-two-year-old wandering monk, at home in the wild and almost magically good at finding food. He and Kara are easygoing souls who fall in gladly with fellow wanderers and share fairly in whatever is won.
+        image: /compendium/Adventures/TheDeadForest/Wilderness/Ariel.jpg
       - name: Kara
-        description: A twenty-year-old sorceress travelling with the monk Ariel, fair-haired and bright-eyed, who carries a wooden staff set with a sky-blue stone. The pair will gladly join the party in search of a new mystery.
-        image: /compendium/Adventures/TheDeadForest/Characters/Kara.jpg
+        description: A twenty-year-old sorceress travelling with the monk Ariel, fair-haired and bright-eyed, who carries a wooden staff set with a sky-blue stone. The pair wander the wood ever ready to take up a new mystery alongside fellow travellers.
+        image: /compendium/Adventures/TheDeadForest/Wilderness/Kara.jpg
       - name: Eledain's Knights
         description: Anbel, Tylrod and Pilos, three knights of the Brotherhood of the Eternally Shining Star, servants of Eledain, who roam the forest hunting the Black Knight, a servant of Sathmog.
       - name: The Elf Company
@@ -54,7 +56,7 @@ sections:
       - name: The Highwaymen
         description: Eight armed robbers led by a dark-skinned, stubbled man, who waylay travellers on the forest paths.
   - title: Grave Mounds
-    description: The barrows beneath a stone-ringed meadow where the guides try to lead the party, holding the grave of an ancient knight, his kin, their treasure, and the restless dead.
+    description: The barrows beneath a stone-ringed meadow where the treacherous guides lead the unwary, holding the grave of an ancient knight, his kin, their treasure, and the restless dead.
     places:
       - name: The Barrows
         description: Grave-mounds under a meadow ringed with standing stones, a trapped descent leading to winding passages and the burial chambers of a knight dead nine hundred years, his consort, his companion and his young son, with gold and magic laid among the graves.
@@ -67,11 +69,11 @@ sections:
         description: Four powerful undead spirits that materialise in the barrow chambers, the risen dead of the ancient knight and his kin, harmed only by fire, magic and magical weapons.
     items:
       - name: The Magic Greatsword
-        description: A magical greatsword in the ancient knight's chamber, ever-enchanted so that it strikes truer and bites deeper.
+        description: A magical greatsword laid in the ancient knight's chamber, its blade bound with an enduring enchantment that guides every stroke home and deepens every wound.
       - name: The Pentagram Shield
-        description: A war-shield bearing the Sign of the Double Pentagrams worked in fine silver, warding its bearer against elementals up to the third degree, and worth a small fortune.
+        description: A war-shield bearing the Sign of the Double Pentagrams worked in fine silver, which shields the one who carries it from the lesser elementals and is itself a treasure of great worth.
       - name: The Son's Short Sword
-        description: A magical short sword buried with the knight's young son, enchanted to strike truer and bite deeper.
+        description: A magical short sword buried with the knight's young son, its small blade enchanted to guide every stroke home and deepen every wound.
   - title: Hermit
     description: The Deep Marshes and the old hermit who guards the way to the Gates of Power.
     places:
@@ -84,7 +86,7 @@ sections:
     npcs:
       - name: Ulat-a-a'r
         description: An eighty-two-year-old hermit who has always lived beside the path through the Deep Marshes that leads to the Gates of Power. Sinister to look at but kindly at heart, he keeps a golden charm meant for the gates and will give it only to those who are neither greedy nor power-hungry nor servants of dark powers.
-        image: /compendium/Adventures/TheDeadForest/Characters/Ulat-a-a'r.jpg
+        image: /compendium/Adventures/TheDeadForest/Hermit/Ulat-a-a'r.jpg
     items:
       - name: The Golden Charm
         description: A golden charm graven with a verse that tells the use of the three keys and marked with the Sign of the Double Pentagrams, forged by an elf for the key-bearers and now kept by the hermit, who gives it only to the worthy.
@@ -106,7 +108,7 @@ sections:
     npcs:
       - name: Elusia
         description: A gentle sorceress of twenty-five who lives alone by the Little Lake, healing and helping any who come to her in need. Beloved of the centaur Ketolus and foe of the cave-ravine orcs, she keeps the White Pearl, one of the keys to the Gates of Power, and might give it to someone she judges worthy.
-        image: /compendium/Adventures/TheDeadForest/Characters/Elusia.jpg
+        image: /compendium/Adventures/TheDeadForest/House of Elusia/Elusia.jpg
     items:
       - name: The White Pearl
         description: One of the three keys to the Gates of Power, a fist-sized pearl white as moonlight, hidden by Elusia in her hearth, which she might give to someone she judges worthy.
@@ -120,7 +122,7 @@ sections:
     npcs:
       - name: Windhand
         description: A balding magician of forty-four, neither wholly good nor truly evil, who built a hidden complex beneath the marble pool in the glade. Having found the Conch Horn, another key to the Gates of Power, he now seeks the rest, and meets intruders disguised as a wandering monk before slipping underground to fight or flee as the odds turn.
-        image: /compendium/Adventures/TheDeadForest/Characters/Vindhand.jpg
+        image: /compendium/Adventures/TheDeadForest/Water Pond/Vindhand.jpg
     creatures:
       - name: Water Undine
         entry: undin
@@ -129,7 +131,7 @@ sections:
       - name: The Conch Horn
         description: One of the three keys to the Gates of Power, a horn made from a three-decimetre seashell, held by the magician Windhand, who seeks the other two keys for himself.
       - name: The Book of the Unity of All Things
-        description: A magical book that grants any magician who reads it a lasting edge on every spell, one copy kept in Windhand's book-chamber and another in his bedchamber.
+        description: A magical book whose teachings leave any magician who studies it forever surer in the casting of every spell; one copy rests in Windhand's book-chamber and another in his bedchamber.
   - title: Canyon
     description: The cave ravine where the half-orc Blackhand's orcs lair with their plunder.
     places:
@@ -142,7 +144,7 @@ sections:
     npcs:
       - name: Blackhand
         description: The half-orc chieftain of the orcs in the cave ravine, a fierce and paranoid raider who fights with two curved sabres and hoards his plunder. Above all he prizes the Black Pearl, taken from fleeing elves, never knowing it is one of the keys to the Gates of Power.
-        image: /compendium/Adventures/TheDeadForest/Characters/Blackhand.jpg
+        image: /compendium/Adventures/TheDeadForest/Canyon/Blackhand.jpg
       - name: Baldor and Lordin
         description: Two very old captive dwarves, three and a half centuries old, held in the ravine to make locks for the orcs, which they craft deliberately easy to pick, and who would be glad of rescue.
       - name: The Captive Warriors
@@ -163,9 +165,9 @@ sections:
 
 ## Plot
 
-The Dead Forest is less one adventure than a cluster of linked ones, and it begins at a tavern thick with rumours of the wood: a healer by the lake, two murderous minotaurs, grave-mounds full of treasure and ghosts, a robber band under the half-orc Blackhand, orcs in the northern caves. Several of the folk drinking there will set the party on its way, whether the wine merchant Dregil, who wants his stolen casks avenged, the rogue guides Filundrus and Ivil, or the sorceress Doriath, who hires them to plunder a magician's lair.
+The tale of the Dead Forest is less one story than a cluster of linked ones, and it begins at a tavern thick with rumours of the wood: a healer by the lake, two murderous minotaurs, grave-mounds full of treasure and ghosts, a robber band under the half-orc Blackhand, orcs in the northern caves. Several of the folk drinking there set wanderers on their way, whether the wine merchant Dregil, who wants his stolen casks avenged, the rogue guides Filundrus and Ivil, or the sorceress Doriath, who lures the bold to plunder a magician's lair.
 
-Drawn from clue to clue, the party crosses a forest where the trees of the old elven wood stand forever green yet neither living nor dead. Beneath it all runs the search for the three keys that open the Gates of Power, the legendary doors hidden past the Deep Marshes, and what begins as a treasure hunt opens into a struggle reaching back to the foundations of the world.
+Drawn from clue to clue, those who come cross a forest where the trees of the old elven wood stand forever green yet neither living nor dead. Beneath it all runs the search for the three keys that open the Gates of Power, the legendary doors hidden past the Deep Marshes, and what begins as a treasure hunt opens into a struggle reaching back to the foundations of the world.
 
 ### The Dead Forest
 

@@ -1,24 +1,26 @@
 ---
 title: The Gates of Power
+series: "The Path of Honor"
+seriesPart: 2
 tagline: ""
-summary: Picking up where the Dead Forest left off, the party uses the three keys to open the Gates of Power and descends into the dwarven realm that has stood abandoned behind them for seven hundred years.
+summary: Picking up where the Dead Forest left off, the three keys turn in the Gates of Power and a band of adventurers descends into the dwarven realm that has stood abandoned for seven hundred years.
 videoIds: []
 sections:
   - title: Outside
-    description: Just beyond the opened gates, where the party's guides and would-be allies meet them before the descent.
+    description: Just beyond the opened gates, where guides and would-be allies gather before the descent.
     places:
       - name: The Gates of Power
-        description: The realm's great doors, cast and forged wholly of iron with patterned locks of the finest steel, all but impossible to break or pick. They are opened by the three keys and stay open until closed by hand, and Mogdath bears copies of the keys; the iron-rich bedrock of the realm beyond weakens and slows all magic worked within it.
+        description: The realm's great doors, cast and forged wholly of iron with patterned locks of the finest steel, all but impossible to break or pick. They yield only to the three keys and stay open until closed by hand, and Mogdath bears copies of those keys; the iron-rich bedrock of the realm beyond weakens and slows all magic worked within it.
     npcs:
       - name: Doriath
-        description: A beautiful sorceress who looks about twenty-five, in wine-red silk, black-curled, green-eyed and red-lipped, who gives her name as Tuvinel. Intensely power-hungry and obsessed with magical items, though she hides it well, she recruits the party with talk of shared treasure while reserving first pick of anything magical for herself. Cautious and very experienced, she loves her own life and magic too much to take real risks, helps in a fight mainly to save her own skin, and once the treasure is secured takes her share and returns home to the Dead Forest.
-        image: /compendium/Adventures/TheGatesOfPower/Characters/Doriath.jpg
+        description: A beautiful sorceress who looks about twenty-five, in wine-red silk, black-curled, green-eyed and red-lipped, who gives her name as Tuvinel. Intensely power-hungry and obsessed with magical items, though she hides it well, she draws fellow seekers in with talk of shared treasure while quietly reserving first pick of anything magical for herself. Cautious and very experienced, she loves her own life and magic too much to take real risks, lends her aid in a fight mainly to save her own skin, and once the treasure is secured takes her share and returns home to the Dead Forest.
+        image: /compendium/Adventures/TheGatesOfPower/Outside/Doriath.jpg
       - name: Tefalas
-        description: A fair-haired old monk of fifty-six in the wine-red robe of Eledain's order, soft-spoken but unusually wise. He hunts Mogdath, one of the order's worst foes, and has an uncanny gift for foreseeing certain moments of his own future, which has brought him to the gates at just the right time. His master Godvindel armed him with an untested mithril dagger that can bind an undead spirit in its blade, at the cost of a little of the wielder's own spirit each day; no great knife-fighter himself, he gladly lets a capable, good-hearted ally carry it. Honest and helpful about the wars in the east, he betrays no one save in the direst need.
-        image: /compendium/Adventures/TheGatesOfPower/Characters/Tefalas.jpg
+        description: A fair-haired old monk of fifty-six in the wine-red robe of Eledain's order, soft-spoken but unusually wise. He hunts Mogdath, one of the order's worst foes, and has an uncanny gift for foreseeing certain moments of his own future, which has brought him to the gates at just the right time. His master Godvindel armed him with an untested mithril dagger that can bind an undead spirit in its blade, at the cost of a little of the wielder's own spirit each day; no great knife-fighter himself, he gladly entrusts it to a capable, good-hearted soul. Honest and helpful about the wars in the east, he betrays no one save in the direst need.
+        image: /compendium/Adventures/TheGatesOfPower/Outside/Tefalas.jpg
       - name: Windhand
-        description: A cowardly magician from the Dead Forest who may come along with the party or strike out on his own once he learns the gates are open. Should he meet one of the three wraiths in the realm there is a good chance he flees and leaves the party in the lurch.
-        image: /compendium/Adventures/TheGatesOfPower/Characters/Windhand.jpg
+        description: A cowardly magician from the Dead Forest who may travel along with the adventurers or strike out on his own once he learns the gates are open. Should he meet one of the three wraiths in the realm, he is all too likely to flee and leave his companions in the lurch.
+        image: /compendium/Adventures/TheGatesOfPower/Outside/Windhand.jpg
     items:
       - name: The Mithril Dagger
         description: Tefalas's dagger of mithril, made by the magic-master Godvindel after long study to bind an undead. Striking an undead, it breaks the spell that holds the spirit to the world and draws it into the blade, at the cost of a little of the wielder's own spirit each day; only one undead can be held at a time, and the bearer is shielded from the wraiths' special attacks. Its magic is wholly untested and used here for the first time.
@@ -34,16 +36,16 @@ sections:
     creatures:
       - name: Skeleton Guards
         entry: skeleton
-        description: Mogdath's animated guards, set throughout the welcome hall, guardrooms, corridors and council hall in ringmail with sword, halberd or light crossbow. They fall on any living thing that enters without the spoken passphrase and raise the alarm for their master.
+        description: Mogdath's animated guards, set throughout the welcome hall, guardrooms, corridors and council hall in ringmail with sword, halberd or light crossbow. They fall upon any living thing that enters without the spoken passphrase and raise the alarm for their master.
   - title: Upper Level
     description: The old living quarters and the Council Hall that Mogdath has made his throne room, holding the copper portal and the salvaged treasure-chest.
     places:
       - name: The Council Hall
-        description: A great hall with a white marble throne on a black dais flanked by warrior-statues, Mogdath's seat when the adventure begins. Here stand the smooth copper arch that is the focus of Dakoth's teleport portal and the locked chest of the realm's most precious salvaged treasures, with skeletons on watch. The rest of the level holds dwellings, kitchens, store-rooms and a library, mostly empty.
+        description: A great hall with a white marble throne on a black dais flanked by warrior-statues, the seat from which Mogdath holds court. Here stand the smooth copper arch that is the focus of Dakoth's teleport portal and the locked chest of the realm's most precious salvaged treasures, with skeletons on watch. The rest of the level holds dwellings, kitchens, store-rooms and a library, mostly empty.
     npcs:
       - name: Mogdath
-        description: Dakoth's servant and the adventure's chief antagonist, a tall knight in night-black dragon-scale armour with glowing coal-eyes, a cold, dark spirit quick to anger. Once a living knight-magician of the order of the Golden Sickle, he was betrayed and nearly slain in an ambush in his own castle, then saved by Dakoth, who bound his spirit to linger after death as a death wraith sworn to eternal loyalty. He bears the magical sword Aleth-Kheloch and four copper keys, and fights by preference with magic, first to read his foe and then to strike them down, drawing his sword only as a last resort. He patrols the realm and answers the alarms of his skeleton guards.
-        image: /compendium/Adventures/TheGatesOfPower/Characters/Mogdath.jpg
+        description: Dakoth's servant and the dark lord of the realm, a tall knight in night-black dragon-scale armour with glowing coal-eyes, a cold, dark spirit quick to anger. Once a living knight-magician of the order of the Golden Sickle, he was betrayed and nearly slain in an ambush in his own castle, then saved by Dakoth, who bound his spirit to linger after death as a death wraith sworn to eternal loyalty. He bears the magical sword Aleth-Kheloch and four copper keys, and fights by preference with magic, first to read his foe and then to strike them down, drawing his sword only as a last resort. He patrols the realm and answers the alarms of his skeleton guards.
+        image: /compendium/Adventures/TheGatesOfPower/Upper Level/Mogdath.jpg
     items:
       - name: Aleth-Kheloch
         description: Mogdath's mighty magical sword, borne in a sooted leather scabbard and enchanted so that it draws its power from nature rather than from his own spirit. Every blow strikes truer and bites deeper for the magic on the blade.
@@ -69,12 +71,12 @@ sections:
     npcs:
       - name: Blacktooth
         description: The orc leader, a big warrior in black scale armour with oversized black tusks, who fights by choice with a morningstar. He rose to command Mogdath's orc horde and is the only senior orc officer to survive the cave-in. Mogdath has threatened him with the Utmost Darkness if he cannot keep better discipline, which has frightened him into being a tyrant to his fellow orcs.
-        image: /compendium/Adventures/TheGatesOfPower/Characters/Blacktooth.jpg
+        image: /compendium/Adventures/TheGatesOfPower/The City/Blacktooth.jpg
       - name: Sharch
-        description: A nightwolf, an enormous, two-headed black wolf with glowing eyes and venomous saliva. Once a man named Sharch, murdered and consumed by hatred, his restless spirit haunted the place of his death until Dakoth bound it into a nightwolf's body in exchange for eternal loyalty and a chance at revenge. A solitary, aggressive lone wolf whom Mogdath mostly leaves in peace, he is fixed to no one spot and prowls the realm wherever the game master wishes.
-        image: /compendium/Adventures/TheGatesOfPower/Characters/Sharch.jpg
+        description: A nightwolf, an enormous, two-headed black wolf with glowing eyes and venomous saliva. Once a man named Sharch, murdered and consumed by hatred, his restless spirit haunted the place of his death until Dakoth bound it into a nightwolf's body in exchange for eternal loyalty and a chance at revenge. A solitary, aggressive lone wolf whom Mogdath mostly leaves in peace, he is fixed to no one spot and prowls the realm wherever his hunger leads.
+        image: /compendium/Adventures/TheGatesOfPower/The City/Sharch.jpg
       - name: The Dwarf Priest's Ghost
-        description: The spirit of a dwarf priest who fell defending the realm in Queen Gwinna's day, his rage too great to let him rest, bound now to the chapel he cannot leave. If he sees that the party are Mogdath's enemies he stops frightening them and begs them to drive Mogdath out so he may find peace, and in return reveals the hidden way out by the stream beneath the latrines, but only once they have wholly kept that promise.
+        description: The spirit of a dwarf priest who fell defending the realm in Queen Gwinna's day, his rage too great to let him rest, bound now to the chapel he cannot leave. Should he sense that newcomers are Mogdath's enemies he ceases his haunting and begs them to drive Mogdath out so he may find peace, and once that promise is wholly kept he reveals the hidden way out by the stream beneath the latrines.
     creatures:
       - name: Manticores
         entry: manticore
@@ -104,10 +106,10 @@ sections:
     npcs:
       - name: Daz
         description: A dark wraith and Mogdath's right hand, a faceless black shape that melts into the background and is seldom in the same place twice. Saved from death and made undead by Dakoth, he oversees the orcs and ogres in the forge and mine, and lets his dark spirit fall at once on any who disobey. His hatred of the living has festered over centuries.
-        image: /compendium/Adventures/TheGatesOfPower/Characters/Daz.jpg
+        image: /compendium/Adventures/TheGatesOfPower/The Forge and Mine/Daz.jpg
       - name: Gozer
         description: Another dark wraith, once Daz's most faithful pupil, who took the same road to undeath and grasped its cost too late. His spirit has turned dark and hateful, forever seeking new souls to send to the realm of death. Mogdath has strictly forbidden him to harm the orcs and ogres, but woe to any other intelligent creature near him, for he shows no mercy and takes no prisoners.
-        image: /compendium/Adventures/TheGatesOfPower/Characters/Gozer.jpg
+        image: /compendium/Adventures/TheGatesOfPower/The Forge and Mine/Gozer.jpg
     creatures:
       - name: Ogres
         entry: ogre
@@ -116,19 +118,19 @@ sections:
 
 ## Plot
 
-The second part of the Path of Glory trilogy picks up where the Dead Forest ended: the party, the three keys in hand, opens the Gates of Power and descends into a dwarven realm that has stood empty for some seven hundred years. What begins as the plunder of a legendary lost kingdom becomes a tense crawl through its dark and silent halls, for the realm is no longer empty.
+The second part of the Path of Glory trilogy picks up where the Dead Forest ended: with the three keys in hand, the adventurers open the Gates of Power and descend into a dwarven realm that has stood empty for some seven hundred years. What begins as the plunder of a legendary lost kingdom becomes a tense passage through its dark and silent halls, for the realm is no longer empty.
 
 Centuries ago the dwarf-prince Kalin led his people into the mountains to escape the encroaching humans, founding a hidden kingdom behind a set of magically locked doors, the Gates of Power, with three unique keys made to open them: a black pearl, a white pearl and a conch horn. Generation after generation the dwarves threw back human assaults, until at last, after King Kalin and others had fallen, Queen Gwinna ordered the gates sealed for all time; the dwarves withdrew deeper into the mountains and left their treasures behind sprung traps, a parting gift to the other firstborn races.
 
 In the present a three-way war rages in the east between the servants of Dakoth, Sathmog and Eledain. Dakoth's servant Mogdath rediscovered the gates and the rich iron mine and dwarven forge behind them, and Dakoth, prizing it as a strategic asset, built a teleport portal binding his black castle to the realm and funnelled in an occupying force. Greedy orcs then sprang the old dwarven traps and brought much of the city down on themselves, buried with the riches; now Mogdath holds the place with a reduced force, mining ore with the ogres, while Dakoth has announced that he will inspect the forge within a month.
 
-### The Hook
+### The Gathering
 
-The party arrives with the keys, whether by having completed the trilogy's first part, the Dead Forest, or by some other route the game master devises. Usually they are drawn in by the sorceress Doriath, under the alias Tuvinel, who recruits them with promises of a share in the underground treasure while secretly meaning to seize the magical items for herself. The monk Tefalas may meet them just outside the gates, on his own hunt to destroy Mogdath. They open the gates and step down.
+Those who come bear the keys, whether won in the trilogy's first part, the Dead Forest, or carried there by some other road. More often than not they are drawn in by the sorceress Doriath, under the alias Tuvinel, who lures them with promises of a share in the underground treasure while secretly meaning to seize the magical items for herself. The monk Tefalas may await them just outside the gates, on his own hunt to destroy Mogdath. The gates swing open, and the descent begins.
 
 ### The Descent
 
-The adventure is a crawl through four levels of the abandoned realm, played for dread as the party gropes through endless dark corridors, hunted by orcs, skeletons, the nightwolf and the wraiths. Each level has its own character and its own dangers.
+The road runs down through four levels of the abandoned realm, dread gathering as the adventurers grope through endless dark corridors, hunted by orcs, skeletons, the nightwolf and the wraiths. Each level has its own character and its own dangers.
 
 - **Ground level.** The gatehouse just inside the doors, holding the welcome hall and the guardrooms. A statue here yields a map of the level above to anyone who speaks the right words in an older tongue, while skeleton archers ambush any who enter without the passphrase, and hidden passages lead down toward the forge.
 - **Upper level.** The living quarters of the old realm: dwellings, a kitchen and a library, together with the Council Hall that serves as Mogdath's throne room. It houses both the copper portal, Dakoth's teleport focus, and a locked chest holding the realm's most precious salvaged treasures.
@@ -137,4 +139,4 @@ The adventure is a crawl through four levels of the abandoned realm, played for 
 
 ### Climax and Ways Out
 
-The campaign builds toward a confrontation with Mogdath and his lieutenants, and there are two ways onward to the trilogy's third part, the Heart of Darkness. If the party has trapped a wraith in Tefalas's mithril dagger and no other wraith has fled to warn Dakoth, they can knock on the copper portal with the dagger's blade; Dakoth, thinking it his returning servant, activates it and draws them through to his castle. Otherwise, if they defeat or drive off Mogdath's whole band, the dwarf priest's ghost, freed at last to find peace, reveals a hidden underground stream beneath the city's latrines, which after several hours and a possible sea-serpent carries them out the far side of the mountains and into the east. Either road sets the party down in the middle of the third part.
+The tale builds toward a reckoning with Mogdath and his lieutenants, and two roads lead onward to the trilogy's third part, the Heart of Darkness. Should a wraith be trapped in Tefalas's mithril dagger and no other wraith have fled to warn Dakoth, a knock upon the copper portal with the dagger's blade is answered by Dakoth himself, who, thinking it his returning servant, opens the way and draws the adventurers through to his castle. Otherwise, once Mogdath's whole band is broken or driven off, the dwarf priest's ghost, freed at last to find peace, reveals a hidden underground stream beneath the city's latrines, which after several hours and a lurking sea-serpent carries the travelers out the far side of the mountains and into the east. Either road sets them down in the middle of the third part.

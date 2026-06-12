@@ -35,6 +35,7 @@ function getInitialPage() {
   if (getParam("entry"))   return "codex";
   if (getParam("country")) return "catalog";
   if (getParam("adventure")) return "catalog";
+  if (getParam("ce")) return "catalog";
   // Otherwise read hash
   const hash = window.location.hash.replace("#", "");
   const valid = ["about", "history", "map", "codex", "chronicles", "catalog"];
