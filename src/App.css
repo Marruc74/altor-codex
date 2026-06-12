@@ -2654,6 +2654,30 @@ body {
   color: var(--gold-light);
 }
 
+/* Split card: image opens the lightbox, "View more" opens the entry - each its
+   own click target, so the card itself is not a single button. */
+.codex-card--split {
+  cursor: default;
+}
+.codex-card__image-btn {
+  flex-shrink: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  line-height: 0;
+  cursor: zoom-in;
+}
+.codex-card__entry-link--btn {
+  align-self: flex-start;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.codex-card__entry-link--btn:hover {
+  color: var(--gold-light);
+}
+
 /* Empty state */
 .codex-empty {
   text-align: center;

@@ -426,23 +426,52 @@ function AdventureDetail({ adventure, onVideoSelect, onEntryOpen }) {
             // A generic creature/race card may carry `entry: <name-or-slug>` that
             // links to its Peoples/Creatures codex page.
             const page = it.entry ? ENTRY_PAGE_BY_SLUG[toSlug(String(it.entry))] : null;
+            const linkable = page && onEntryOpen;
+            const imageWrap = it.image && (
+              <div className="codex-card__image-wrap">
+                <img className="codex-card__image" src={it.image} alt={it.name} />
+              </div>
+            );
+            const openLightbox = () => setLightbox([{ src: it.image, alt: it.name, caption: it.name }]);
+
+            // Both an image and a "View more" link: keep them independently
+            // clickable - the image opens the lightbox, the link opens the entry.
+            if (linkable && it.image)
+              return (
+                <div key={it.name ?? i} className={`${cls} codex-card--split`}>
+                  <button
+                    className="codex-card__image-btn"
+                    onClick={openLightbox}
+                    aria-label={`View image of ${it.name}`}
+                  >
+                    {imageWrap}
+                  </button>
+                  <div className="codex-card__body">
+                    <p className="codex-card__title">{it.name}</p>
+                    {it.description && <p className="codex-card__summary">{it.description}</p>}
+                    <button
+                      className="codex-card__entry-link codex-card__entry-link--btn"
+                      onClick={() => onEntryOpen(page)}
+                    >
+                      View more ↗
+                    </button>
+                  </div>
+                </div>
+              );
+
             const inner = (
               <>
-                {it.image && (
-                  <div className="codex-card__image-wrap">
-                    <img className="codex-card__image" src={it.image} alt={it.name} />
-                  </div>
-                )}
+                {imageWrap}
                 <div className="codex-card__body">
                   <p className="codex-card__title">{it.name}</p>
                   {it.description && <p className="codex-card__summary">{it.description}</p>}
-                  {page && onEntryOpen && (
+                  {linkable && (
                     <span className="codex-card__entry-link">View more ↗</span>
                   )}
                 </div>
               </>
             );
-            if (page && onEntryOpen)
+            if (linkable)
               return (
                 <button
                   key={it.name ?? i}

@@ -13,6 +13,7 @@ sections:
         description: "The Armored-fist clan's stronghold above Eskilsby, held by the present lord, baron Eskil Eriksson, and his fifty horsemen. The drowned war-booty and the prior's marked dagger-sheath are his family's by right."
     npcs:
       - name: Brother Franz
+        image: /compendium/Adventures/BeautyAndTheBeast/Brother Franz.jpg
         description: "The frail, confused monk of perhaps eighty years - the last man alive who saw the monastery, and the only guide to its ruin. Win his trust and he will come along for a last look at his childhood home, though he is weak in body and the prior's ghost may frighten him to death."
       - name: Baron Eskil Eriksson
         description: "The present lord of the Armored-fist clan at Eriksborg. The hoard his ancestor hid, and the heraldic dagger-sheath in the temple, are his by inheritance - and he will want them returned."
@@ -28,14 +29,19 @@ sections:
         description: "The burned, palisaded wreck of Karl's Monastery on the lake shore, never rebuilt after the svartfolk stormed it - now the bandit gang's hideout."
     npcs:
       - name: Rickard Hawkwing
+        image: /compendium/Adventures/BeautyAndTheBeast/Rickard Hawkwing.jpg
         description: "Leader of the bandits, a former soldier who deserted rather than help burn his own home village. A good and well-liked commander who refuses to kill locals. He takes the party for the baron's agents and will first try to scare them off, then fight - but never to the death. Convince him the errand is against the baron and the gang may join in for an equal share."
       - name: Silverfoot
+        image: /compendium/Adventures/BeautyAndTheBeast/Silverfoot.jpg
         description: "One of Rickard Hawkwing's outlaws, at home in the forest and quick to fall back to guerrilla tactics rather than be cornered."
       - name: Panther
+        image: /compendium/Adventures/BeautyAndTheBeast/Panther.jpg
         description: "One of Rickard Hawkwing's outlaws, a woodland fighter who would sooner harry the party from the trees than stand and die."
       - name: Carnation
+        image: /compendium/Adventures/BeautyAndTheBeast/Carnation.jpg
         description: "Rickard's deadliest follower - a crack woods-woman with a crossbow."
       - name: Krannish
+        image: /compendium/Adventures/BeautyAndTheBeast/Krannish.jpg
         entry: ogre
         description: "An unusually well-mannered ogre who joined the bandits simply for the company."
     items:
@@ -56,6 +62,7 @@ sections:
         description: "The monastery's holy silver - pitchers, dishes and dozens of chalices. A brother of the Karl Order in the party will forbid their taking."
     npcs:
       - name: The Prior's Ghost
+        image: /compendium/Adventures/BeautyAndTheBeast/Edvard Eskilsson.jpg
         description: "The tortured spirit of prior Edvard Eskilsson, who drowned the temple to save its hoard. He rises by the altar when the living enter, barring the way out until his fire burns again, and finds release the moment it does."
     creatures:
       - name: The Strangle-Vine
