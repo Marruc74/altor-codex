@@ -2558,7 +2558,8 @@ body {
   cursor: pointer;
   transition: border-color 0.2s, transform 0.2s;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .codex-card:hover {
@@ -2567,6 +2568,8 @@ body {
 }
 
 .codex-card__image-wrap {
+  width: 220px;
+  flex: 0 0 220px;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   background: var(--bg-raised);
@@ -2578,6 +2581,8 @@ body {
 
 /* Portrait cards (e.g. adventure character art is ~2:3) — show the full figure */
 .codex-card--portrait .codex-card__image-wrap {
+  width: 150px;
+  flex-basis: 150px;
   aspect-ratio: 2 / 3;
 }
 
@@ -3501,7 +3506,7 @@ body {
 
 .country-detail__entries-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
   gap: 1rem;
   margin-top: 0.75rem;
 }
@@ -3632,6 +3637,16 @@ body {
   }
 
   .country-detail__entries-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+  }
+
+  .codex-card__image-wrap {
+    width: 130px;
+    flex-basis: 130px;
+  }
+
+  .codex-card--portrait .codex-card__image-wrap {
+    width: 110px;
+    flex-basis: 110px;
   }
 }
