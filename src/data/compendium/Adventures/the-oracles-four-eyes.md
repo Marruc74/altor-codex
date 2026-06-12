@@ -15,6 +15,7 @@ sections:
         description: "A hidden island lair lost among stone cairns in a black mire, where the last Shagulit patriarch hides and worships fate. Its mandala chamber is a portal said to scatter a soul across the multiverse."
     npcs:
       - name: Peatro Petralba
+        image: /compendium/Adventures/TheOraclesFourEyes/The Prophecy of Ranz/Peatro Petralba of Ranz.jpg
         description: "The white-bearded order-master of the Ranziner monks, father of the white cliff. Poisoned the very night the seekers reach Ranz, he lives just long enough to entrust them with the secret verses and the saving of the four eyes; his ghost lingers on to guide them after."
       - name: Bodonius
         image: /compendium/Adventures/TheOraclesFourEyes/The Prophecy of Ranz/Bodonius.jpg
@@ -83,6 +84,7 @@ sections:
         description: "A city in Ilibaurien ruined by the opiander drug trade, dominated by a temple whose floating cliff hangs in the air over an ascension platform."
     npcs:
       - name: The Blue Child
+        image: /compendium/Adventures/TheOraclesFourEyes/The Blue Eye - the Blue Child/The Blue Child.jpg
         description: "A happy blue child worshipped atop the floating cliff as 'the innocent one' - in truth a clone grown from Shagul's severed hand, whose mere existence keeps him from making new clones. Taken from the cliff, it becomes a tormented blue dwarf with Shagul's knowledge and a power to grey colors and dull all heat, cold and feeling."
       - name: Innocentia
         description: "The simple, devoted girl who tends the Blue Child atop its cliff."
@@ -90,6 +92,7 @@ sections:
         image: /compendium/Adventures/TheOraclesFourEyes/The Blue Eye - the Blue Child/Gozcana da Skugre.jpg
         description: "Elder of the diFolt order in Ilibaurien and Gobrugda's guest, who refuses to give up the Blue Child and can fog intruders with strange drugs."
       - name: Cymba
+        image: /compendium/Adventures/TheOraclesFourEyes/The Blue Eye - the Blue Child/Cymba.jpg
         description: "A cruel, drug-addicted mercenary captain set to guard the temple, disgraced after his brutal reprisals sparked an uprising."
     creatures:
       - name: Basenanji
@@ -106,22 +109,32 @@ sections:
         description: "A bloody oracle-cult's seat in the canyon, where the birch-folk sacrifice the living. A trap-labyrinth and an underground lake guard the oracle at its heart."
     npcs:
       - name: Nastigast
+        image: /compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Nastigast.jpg
         description: "An immensely fat mathematical genius, the Red Eye, with a flawless memory for number and an infallible eye for measure - but no practical or fighting skill, barely able to walk or speak. He cannot be carried out on foot."
       - name: Bhrullist
+        image: /compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Bhrullist.jpg
         description: "A noble birch-folk son and devout, dim worshipper of the light-god, sworn to slay the cult's oracle, who carries holy jade weapons, a constellation-inlaid shield and a mask of great strength."
       - name: Sigisnar of Godlar
+        image: /compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Sigisnar of Godlar.jpg
         description: "A boorish, hard-drinking exiled knight who commands the border fort - loud and crude, but a formidable warrior."
       - name: Moliax
+        image: /compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Moliax.jpg
         description: "A jolly, cautious merchant-captain whose all-wood ship can thread the magnetic islands to supply the distant mission."
       - name: Godael
+        image: /compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Godael.jpg
         description: "The aged high priestess who runs the mission station, a seasoned animist and healer."
     creatures:
       - name: Bhe-Yell
+        image: /compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Bhe-yell.jpg
         entry: onaqui
         description: "One of the two clever, evil flying beasts that rule the King's Cliff cult and feed on sacrificial hearts. A wielder of necromancy; should its mate die, it flees forever."
       - name: Ghu-Tha
+        image: /compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Ghu-tha.jpg
         entry: onaqui
         description: "The other flying beast of the King's Cliff cult, gorged on sacrificial hearts and versed in necromancy; should its mate die, it flees forever."
+      - name: Mountain Goat
+        image: /compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Mountain Goat.jpg
+        description: "Sure-footed goats that pick their way along the canyon's high ledges, above the trails to the King's Cliff."
   - title: The Green Eye - Melealina
     description: "Deepest and safest of the four: an elf astrologer who knows the seekers and their errand before ever they arrive, hidden in a giant flower-oak at the heart of a perilous forest."
     places:
@@ -131,23 +144,44 @@ sections:
         description: "The astrologer's home in a colossal flower-oak, with its dining branch, leaf-hall, sleeping chamber and a domed star-model under which she reads the heavens, watched over by some two hundred and fifty unseen elves and a unicorn."
     npcs:
       - name: Melealina
+        image: /compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Melealina.jpg
         description: "The dark-haired elf astrologer, the Green Eye, born during an eclipse and gifted with sight of hidden things. She can move a whole company at a thought, speak with all of nature, and is the truest and most indispensable of the four eyes - and is barely harmed by anything of this world."
       - name: Kestur
+        image: /compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Kestur.jpg
         entry: centaur
         description: "A good-natured grey-and-red centaur who has faithfully guarded comrades turned to juniper bushes for centuries. He speaks only elvish, and converses with birds."
       - name: Grimhild
+        image: /compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Grimhild.jpg
         description: "An ancient, tragic mountain-troll of Tocmer, not evil but unhinged by the death of her son. She 'adopts' wandering humanoids and smothers them with a lethal, doting over-protection."
       - name: Gaddagormgald
+        image: /compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Gaddagormgald.jpg
         description: "The sole survivor of a company of soldiers turned to juniper bushes four hundred years ago - a stubborn, unwashed old-school warrior who, once restored, swears his sword to his rescuers out of gratitude."
-      - name: The Elf Siblings
-        description: "Four invisible, telepathic elf siblings who sometimes throw in their lot with passing wanderers. They cannot lie but are unreliable all the same, and carry arrows that bring sleep."
+      - name: Pipo
+        image: /compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Pipo.jpg
+        entry: faerie
+        description: "One of four invisible, telepathic faerie siblings who sometimes throw in their lot with passing wanderers. He cannot lie, yet is unreliable all the same, and carries arrows that bring sleep."
+      - name: Piso
+        image: /compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Piso.jpg
+        entry: faerie
+        description: "One of the four faerie siblings, invisible and telepathic, who cannot lie but is no more dependable for it, and looses sleep-bringing arrows."
+      - name: Sipo
+        image: /compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Sipo.jpg
+        entry: faerie
+        description: "A sister among the four faerie siblings, invisible and telepathic, truthful by nature yet unreliable, and armed with arrows that bring sleep."
+      - name: Siso
+        image: /compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Siso.jpg
+        entry: faerie
+        description: "The last of the four faerie siblings, a sister, invisible and telepathic, unable to lie though never quite to be counted on, who carries sleep-arrows."
     creatures:
       - name: Kornalbon
+        image: /compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Kornaldon.jpg
         entry: unicorn
         description: "Melealina's loyal unicorn, which mends wounds a little each day and senses any foe from afar."
       - name: Alame
+        image: /compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Alame.jpg
         description: "One of Grimhild's two giant, centuries-old talking ravens - cowardly, but a useful scout."
       - name: Elux
+        image: /compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Elux.jpg
         description: "The other of Grimhild's giant, centuries-old talking ravens - timid as its sibling, and just as keen-eyed a scout."
   - title: Foes & Factions
     description: "Behind the hunt stand the deathless Shagul, his demons, his brotherhood of assassins, and the Trakorian secret police circling the same mystery."

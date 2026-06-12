@@ -102,6 +102,7 @@ sections:
       - name: Echotun
         description: "The archmage's twelfth disciple and master of Fervidun, weakest of the disciples in magic but a superb swordsman and merciless torturer, overlord of the dark knights."
       - name: Ruggtash
+        entry: orc
         description: "The disciplined, foul-tempered chief of one of Ereb's largest orc mercenary hosts, red-eyed and hugely muscled, who betrayed the last free county to the archmage."
       - name: Melindor
         description: "The king's disowned daughter, a brilliant archer, swordswoman and resistance leader, found broken in the catacombs and calmed only by the sight of the man she loves."

@@ -17,30 +17,39 @@ sections:
         description: "A wooden bridge over a clear stream, kept by the sphinx. The water below hides the treasures of her past victims, among them an enchanted throwing dagger."
     npcs:
       - name: Brascht
+        entry: orc
         description: "Leader of an orc patrol that roams the island under orders to seize any suspicious stranger and drag them to Telach."
         image: /compendium/Adventures/BlackDuel/Syrtan Wilderness/Brascht.jpg
       - name: Littleclink
+        entry: orc
         description: "An orc of Brascht's patrol, hunting the island's trails for intruders."
         image: /compendium/Adventures/BlackDuel/Syrtan Wilderness/Littleclink.jpg
       - name: Gorm
+        entry: orc
         description: "An orc of Brascht's patrol, prowling the island for trespassers."
         image: /compendium/Adventures/BlackDuel/Syrtan Wilderness/Gorm.jpg
       - name: Chack
+        entry: orc
         description: "An orc of Brascht's patrol; the hook that serves him for a hand is tipped with a sleeping-poison."
         image: /compendium/Adventures/BlackDuel/Syrtan Wilderness/Chack.jpg
       - name: Gursch
+        entry: orc
         description: "An orc of Brascht's patrol, prowling the island for trespassers."
         image: /compendium/Adventures/BlackDuel/Syrtan Wilderness/Gursch.jpg
       - name: Vrasch
+        entry: orc
         description: "An orc of Brascht's patrol, prowling the island for trespassers."
         image: /compendium/Adventures/BlackDuel/Syrtan Wilderness/Vrasch.jpg
       - name: Sledgehammer
+        entry: ogre
         description: "One of the ogres that wander Syrtan under Telach's standing order to capture any intruder."
         image: /compendium/Adventures/BlackDuel/Syrtan Wilderness/Sledgehammer.jpg
       - name: Chopblock
+        entry: ogre
         description: "A one-legged, ill-tempered ogre who stumps across the island looking for someone to crush."
         image: /compendium/Adventures/BlackDuel/Syrtan Wilderness/Chopblock.jpg
       - name: Grumble
+        entry: ogre
         description: "The biggest of the wandering ogres, lumbering the island in search of trespassers to seize."
         image: /compendium/Adventures/BlackDuel/Syrtan Wilderness/Grumble.jpg
     creatures:
@@ -55,24 +64,31 @@ sections:
         description: "A windowless black blockhouse with arrow-slits and two rooftop posts, its iron-bound gate sealed by Telach's magic. Within, off-duty orcs dice and gamble away their loot."
     npcs:
       - name: Olb
+        entry: orc
         description: "An orc of the guardhouse garrison, standing watch over Telach's island gate."
         image: /compendium/Adventures/BlackDuel/Guard House/Olb.jpg
       - name: Sadh
+        entry: orc
         description: "An orc of the guardhouse garrison."
         image: /compendium/Adventures/BlackDuel/Guard House/Sadh.jpg
       - name: Omer
+        entry: orc
         description: "An orc of the guardhouse garrison."
         image: /compendium/Adventures/BlackDuel/Guard House/Omer.jpg
       - name: Torsehk
+        entry: orc
         description: "An orc of the guardhouse garrison."
         image: /compendium/Adventures/BlackDuel/Guard House/Torsehk.jpg
       - name: Kaerk
+        entry: orc
         description: "An orc of the guardhouse garrison."
         image: /compendium/Adventures/BlackDuel/Guard House/Kaerk.jpg
       - name: Jishnak
+        entry: orc
         description: "Watch-chief of the guardhouse, who sets the rotating watch and marches his orcs on the village when intruders are sighted by day."
         image: /compendium/Adventures/BlackDuel/Guard House/Jishnak.jpg
       - name: Grum
+        entry: ogre
         description: "The ogre of the guardhouse garrison, kept to break anything its orcs cannot."
         image: /compendium/Adventures/BlackDuel/Guard House/Grum.jpg
   - title: Tower
@@ -106,30 +122,38 @@ sections:
         description: "A water-filled cave with a quay and two ships, worked by orc stevedores - Telach's bolt-hole when a fight turns against him."
     npcs:
       - name: Ghashan
+        entry: ogre
         description: "One of Telach's two ogre bodyguards in the caves; he hides his hoarded coin inside the wall of his room."
         image: /compendium/Adventures/BlackDuel/Cave System/Ghashan.jpg
       - name: Janosch
+        entry: orc
         description: "An orc of Telach's cave garrison, quartered in the bedrooms off the stronghold's passages."
         image: /compendium/Adventures/BlackDuel/Cave System/Janosch.jpg
       - name: Ork
+        entry: orc
         description: "One of two orc brothers, Ork and Tork, found asleep in the cave bedrooms."
         image: /compendium/Adventures/BlackDuel/Cave System/Ork.jpg
       - name: Rural
+        entry: orc
         description: "An orc of Telach's cave garrison."
         image: /compendium/Adventures/BlackDuel/Cave System/Rural.jpg
       - name: Shondor
+        entry: orc
         description: "An orc of Telach's cave garrison."
         image: /compendium/Adventures/BlackDuel/Cave System/Shondor.jpg
       - name: Tahg
+        entry: ogre
         description: "Telach's other ogre bodyguard, an unlikely art-lover who keeps two prized paintings in his room."
         image: /compendium/Adventures/BlackDuel/Cave System/Tahg.jpg
       - name: Telach
         description: "The master of Syrtan - once an ordinary magician, corrupted by the black tower into a power-hungry conqueror who has subjected all of Syrta Bay. He wears no armor, trusting his Protection spell, and wields the mithril two-handed Moon-blade, which he teleports to his hand at will. Cunning and slippery, he greets callers politely, strikes by surprise, and flees a losing fight through his secret passage to the harbor."
         image: /compendium/Adventures/BlackDuel/Cave System/Telach.jpg
       - name: Tirban
+        entry: orc
         description: "An orc of Telach's cave garrison."
         image: /compendium/Adventures/BlackDuel/Cave System/Tirban.jpg
       - name: Tork
+        entry: orc
         description: "One of two orc brothers, Ork and Tork, found asleep in the cave bedrooms."
         image: /compendium/Adventures/BlackDuel/Cave System/Tork.jpg
     items:

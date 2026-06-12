@@ -28,12 +28,14 @@ sections:
         description: "A vandalized border castle on a hill at the edge of the mountains, seized from the Zeen family a hundred years ago. Its thirty rooms hold defaced galleries, a toppled chapel, a dungeon of starved skeletons and a guarded treasure cave - and, in an untouched throne-room, a staff-piece its occupiers never knew was there."
     npcs:
       - name: Orta
+        entry: orc
         description: "The hard but well-loved orc who holds El Nhassiv with an iron grip, for to lose it would mean a fate worse than death. He sends his svartalfs and fellow orcs in first and watches from afar, throwing himself into a fight only when it turns against his own."
         image: /compendium/Adventures/TheVoiceFromTheAncientPast/El Nhassiv/Orta.jpg
       - name: Lorrf
         description: "Orta's deputy of some years, left to run the castle when the chief is away raiding. He lays ambushes with his svartalfs but hangs back himself, and flees the moment the fight turns against him."
         image: /compendium/Adventures/TheVoiceFromTheAncientPast/El Nhassiv/Lorrf.jpg
       - name: Bagmol
+        entry: orc
         description: "The youngest and smallest of the castle's orcs, slight of build but quick-witted, making up in cunning what he lacks in size."
         image: /compendium/Adventures/TheVoiceFromTheAncientPast/El Nhassiv/Bagmol.jpg
     creatures:

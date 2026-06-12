@@ -75,8 +75,10 @@ sections:
         description: "A pitch-black warren beneath the city, worked by dark elves and orcs, where strange mushrooms grow in the dark and a runaway ore-wagon can plunge the unwary into a forgotten tomb."
     npcs:
       - name: Gartach the Great
+        entry: orc
         description: "The powerful, hot-tempered orc-chief of Ghan-toth, red-eyed and scarred, who rules without mercy and never acts rashly, and bears the blued blade that gives his picked guard its name."
       - name: Kosh
+        entry: orc
         description: "Gartach's half-mad orc sorcerer and adviser, scarred by his own carelessness and in love with fire above all things, who keeps a caged fire-salamander and a black wolf for his familiar."
       - name: Fritch
         description: "The cunning, bulge-eyed leader of Ghan-toth's dark elves, set over them by the orc-chief and milking the post for all it is worth, yet careful never to push the orcs too far."

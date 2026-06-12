@@ -95,6 +95,7 @@ sections:
         description: The drug-maker's house and store, with a laboratory of lead scraps and chemicals and a cellar of zombin-barrels.
     npcs:
       - name: Abrelax
+        entry: orc
         description: The slave-drivers' foreman, biggest and strongest of them all, an orc-troll of dark-folk stock over two metres tall and crudely built, with faintly greenish skin and wild twisted teeth. Brutal and bullying to his fellows but fawning to his betters, he never misses a chance for a brawl and loves to provoke newcomers. He wears a red scarf he says a lady gave him, in truth Hildur dressing him up, and sells sulphur in secret to Guster.
         image: /compendium/Adventures/SulphurWinter/The Sulphur Swamps/Abrelax.jpg
       - name: Sulidon Rumperlak

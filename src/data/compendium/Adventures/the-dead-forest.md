@@ -143,6 +143,7 @@ sections:
         description: A cell where two very old captive dwarves are made to forge locks for the orcs, locks they craft deliberately easy to pick.
     npcs:
       - name: Blackhand
+        entry: orc
         description: The half-orc chieftain of the orcs in the cave ravine, a fierce and paranoid raider who fights with two curved sabres and hoards his plunder. Above all he prizes the Black Pearl, taken from fleeing elves, never knowing it is one of the keys to the Gates of Power.
         image: /compendium/Adventures/TheDeadForest/Canyon/Blackhand.jpg
       - name: Baldor and Lordin

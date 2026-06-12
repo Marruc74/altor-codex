@@ -70,6 +70,7 @@ sections:
         description: A chamber with a round basin and dolphin-fountain and dwarf-sized privies flushed by an underground stream, where lies one of the two ways out of the realm.
     npcs:
       - name: Blacktooth
+        entry: orc
         description: The orc leader, a big warrior in black scale armour with oversized black tusks, who fights by choice with a morningstar. He rose to command Mogdath's orc horde and is the only senior orc officer to survive the cave-in. Mogdath has threatened him with the Utmost Darkness if he cannot keep better discipline, which has frightened him into being a tyrant to his fellow orcs.
         image: /compendium/Adventures/TheGatesOfPower/The City/Blacktooth.jpg
       - name: Sharch
