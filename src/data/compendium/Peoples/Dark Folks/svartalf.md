@@ -10,6 +10,10 @@ Roughly human but shorter and thicker, with bulbous heads, faintly grey or green
 
 Lazy, greedy and selfish, living for gold, wine and food, glad to fight well to get them but quick to flee when things turn against them.
 
+## Religion
+
+The svartalfs hold the wolf sacred above all. Their god Baawk, pictured as a giant wolf, is said to have given them the beast and to act in the world through what they call the four-legged brothers. Their bone-men dress in wolf-skins and wolf-bone, and the bond between a rider and his wolf is counted a gift of the god.
+
 ## Abilities
 
 They see perfectly outdoors at night but are pained by bright sun, so they keep to their caves on the finest days. Svartalfs can never learn magic.

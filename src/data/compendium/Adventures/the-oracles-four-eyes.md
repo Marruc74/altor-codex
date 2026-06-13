@@ -201,6 +201,7 @@ sections:
         description: "Shagul's own horn-demon, stationed to guard the earth-blood spring at the heart of his power."
     items:
       - name: The Striped Frog
+        entry: rhobdorana
         description: "Mark of RhabdoRana, the brotherhood of assassins sworn to a vengeance-demon: scattered cells bound by a crude shared mind, who blacken the inside of their lips and kill by a hundred elaborate, untraceable means. Shagul rules them in secret, from within their collective thought."
 ---
 

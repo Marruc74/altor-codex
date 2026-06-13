@@ -60,7 +60,21 @@ Roughly half forest and half cultivated land. The Toril Forest covers about half
 
 ### Indar
 
-Fertile, flat, and three-quarters under the plough. The slow-moving Sola and the Granström, together with a web of ditches, give Indar the largest harvests of any land on the Copper Sea. The over-worked western part has turned to cattle-raising, and windmills dot the windy plain. North of Indar, along the foot of the Aidne fells, lies the great Nordberg Forest, home mostly to forest-elves alongside humans, satyrs, and shy swan-maidens. Its eastern part, the duchy of Salamora, is held wholly by elves, who trade furs and herbs in exchange for being left in peace.
+Fertile, flat, and three-quarters under the plough. The slow-moving Sola and the Granström, together with a web of ditches, give Indar the largest harvests of any land on the Copper Sea. The over-worked western part has turned to cattle-raising, and windmills dot the windy plain. These mills serve a double purpose, for they are also semaphore towers, their sails set to signal across the open country and warn of invasion, of coming rain, and of the approach of tax-collectors and press-gangs alike. North of Indar, along the foot of the Aidne fells, lies the great Nordberg Forest, home mostly to forest-elves alongside humans, satyrs, and shy swan-maidens. Its eastern part, the duchy of Salamora, is held wholly by elves, who trade furs and herbs in exchange for being left in peace.
+
+## Pendon
+
+Pendon, the royal capital, is the largest city in either Zorakin or Kardien and the fifth-largest on all the Copper Sea. It began in 367 fO not as a town but as a monastery and lyceum, founded by **Leon Inergryd** of the **Mandelorden**, the scholar-monks of **Ingeril**, goddess of learning. Its fine harbour drew trade, the trade drew people, and by the time the kingdom of Zorakin was proclaimed the settlement had grown great enough to be made its capital.
+
+The city is crown-land, so that the king owns its ground and takes its taxes, though its day-to-day governance falls to a city-marshal, a council, and six city secretaries. Alone among the realm's cities, the folk of Pendon hold the right to propose new laws, a privilege granted them by King Ragnvald the Fair. At its gates stands the **muraskatt**, a toll of about a silver mark on every traveller and beast that enters, from which only farmers and royal officials go free. Roughly a third of its people are merchants and a third craftsmen, and though its trade has slipped since the lost Sympathy War against Felicien and the rising boldness of the svartfolk, it remains among the richest cities of the region.
+
+### The Lyceum and the Library
+
+Pendon is the seat of learning for the whole Copper Sea. Its royal library holds some ten thousand volumes and is the oldest of its kind anywhere on that sea, and the lyceum of the Mandelorden gathers about two hundred scholars and eight hundred students, who study history, languages, geography, magic, alchemy, and medicine.
+
+### Defence and Layout
+
+The city is built of stone and brick, its houses mostly two storeys high, and a great castle stands upon Kastelludden, the headland that once held the lyceum until pirate-ankor burned it in 55 fO. Long sandy shallows bar the harbour, forcing all cargo onto flat-bottomed barges, which helps the customs-men and frustrates smugglers. A city guard of four hundred, in four companies, keeps order, and two hundred picked men of the royal garde hold the king's palace. Weapons must be given up at the gate weapon-houses, and carrying arms inside the walls needs a royal writ, so crime is rare. At the King's Square stands the **Kora Cathedral**, nearly a hundred and thirty metres tall, the greatest Shining Way cathedral in Zorakin and the fourth-largest in the world, its doors set to face Arno, where Odo was born.
 
 ## People
 

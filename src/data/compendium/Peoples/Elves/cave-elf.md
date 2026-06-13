@@ -1,15 +1,19 @@
 # Cave Elf
 
-Unlike most elf-folk, who are described as light-loving and able to sit for days in a beautiful forest glade simply drinking in nature, the cave elves have chosen to settle underground, in natural cave-systems that they then enlarge. Like most underground races they live chiefly by farming mushrooms, with some mining besides, though the metals they dig are used for works of art, not tools. The beauty of cave-elf smithwork is clearly the equal of dwarf-work, though dwarves are the better at making durable, functional tools; the same holds for stonework, the elves the finer artists, the dwarves the more functional builders.
+Most elf-folk love the light and the open forest. The cave elves do not. They have settled deep beneath the mountains, in natural cave-systems that they widen into great halls and smithies lit by magical fire, glowstones and ever-burning flame. Like other underground peoples they live mostly on mushrooms, with a little mining besides, though the metal they dig becomes art rather than tools. Their smithwork matches the dwarves' for beauty, even if dwarves make the sturdier, more useful gear; their stonework is the same story, the elves the finer artists and the dwarves the better builders.
 
 ## Appearance
 
-Cave elves have very pale skin, large ears, brown hair and brown eyes. They dress in fairly light, pale, airy clothes with heavy leather reinforcement at elbows and knees, and wear their own extremely supple metal armour when forced to fight. They rarely use ranged weapons, which are ineffective underground.
+Cave elves have very pale skin, large ears, and brown hair and eyes. They dress in light, pale, airy clothes, reinforced with heavy leather at the elbows and knees, and put on their own supple metal armour only when forced to fight. They seldom carry bows, which are of little use underground.
 
 ## Behaviour
 
-Cave elves are a suspicious people who only rarely admit visitors to their dwellings. Though they live well-sheltered, they are forced into a rather warlike existence, since dark folk, dwarves and other underground creatures often come seeking new homes.
+Cave elves are suspicious and seldom let visitors into their dwellings. Sheltered as they are, they still live at war, because dark folk and dwarves keep pressing into their halls in search of new homes, and they hold their gates and tunnels against all of them.
+
+## The Smiths
+
+With the dwarves, the cave elves are the finest smiths alive, working deep underground in halls built to endure great heat. Their craft splits into schools. The silver-smiths refine the moon-bright metal mithril, and once knew the secret of galvorn, the strongest metal of all. The jewel-carvers prize a green gem they call the elf-heart and think diamonds a foolish thing to covet. The glass-smiths work a supple material that makes the best bows. Over all the schools sits a council of master-smiths that gathers once every five years.
 
 ## Abilities
 
-Living mostly in darkness, the cave elves have developed a way of seeing with sound, as bats do, so they can act wholly unhindered in the deepest pitch-black, and with this sense can even perceive invisible creatures. Like all elves they are immune to disease and do not visibly age.
+A cave elf sees clearly by the faintest light, and even in total blackness manages about as well as a human carrying a torch. Underground they never lose their way. Like all elves they are immune to disease and do not visibly age.

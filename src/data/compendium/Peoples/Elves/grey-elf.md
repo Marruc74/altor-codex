@@ -1,15 +1,19 @@
 # Grey Elf
 
-Grey elves live far out at sea, aboard floating islands and vast sailing-ships. They are very skilled seafarers, shipwrights and navigators, and rarely leave their floating homes. The islands they live on are made of many intertwined sea-lindens, a tree that lives out at sea on saltwater plankton; some five-sixths of each tree is root beneath the surface, and only the ten-metre trunk and the great, spreading crown rise above. By rigging sails between the trunks they can steer the islands' course.
+Grey elves live far out at sea, on floating islands and the swift ships they call goldiner. They are skilled sailors, shipwrights and navigators, and rarely leave their floating homes. The islands are made of many sea-lindens grown together, a tree that lives out on the open ocean and feeds on saltwater plankton. Five-sixths of each tree is root below the surface; only the ten-metre trunk and its wide crown rise above. By rigging sails between the trunks, the grey elves can steer an island along the ocean currents.
 
 ## Appearance
 
-Grey elves have grey hair and grey eyes. They are fairly dark-skinned, yet for all the often harsh climate far out at sea they look not the least weather-beaten. They dress in well-oiled skin clothes.
+Grey elves have grey hair and grey eyes and fairly dark skin. For all the harsh weather of the open sea, they never look weathered. They dress in well-oiled skin clothes.
 
 ## Behaviour
 
-Like most other elves the grey elves seek no company, but live to themselves and avoid contact with land, save a few times a year when they put in at some harbour with their great, long, slender ocean-going ships to trade. They are not very talkative and try to avoid all notice.
+Like most elves, the grey elves keep to themselves and avoid the land, coming ashore only a few times a year to trade from their long, slender ocean-going ships. They are quiet and try not to be noticed.
+
+## The Floating Islands
+
+Each island carries a watch-tower grown from a great sea-linden, sheltered harbours, and even a small pool of fresh water. At its holy place the windweavers, the grey-elf magicians, call up good winds and steer the weather for the fleet. The grey elves fight only at sea, lightly armoured. From among them come the mistali, the feared elite who strike fast and bloody and then vanish into the waves.
 
 ## Abilities
 
-Grey elves have no special powers, but are consummate sailors, navigators and weather-readers. Like all elves they are immune to disease and do not visibly age.
+A grey elf cannot be made seasick, however violent the water. They are consummate sailors, navigators and weather-readers. Like all elves they are immune to disease and do not visibly age.

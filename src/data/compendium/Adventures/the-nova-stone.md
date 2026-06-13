@@ -67,7 +67,7 @@ sections:
     description: "Deep in the Org mountains a wizard hoards the stolen ruby, walling it behind half-giants, the dead, and a maze of one-way mirrors."
     places:
       - name: Dingheimul's Caves
-        description: "A two-level cave warren in the Org mountains, reached by the mountain road through the Org Wood. Its halls are kept by a half-giant, animated skeletons, a chained demon, crocodile waters, dark elves and a net of one-way teleporting mirrors. Under a glass dome in the laboratory rests the Nova Stone."
+        description: "A two-level cave warren in the Org mountains, reached by the mountain road through the Org Wood. Its halls are kept by a half-giant, animated skeletons, a chained demon, crocodile waters, svartalfs and a net of one-way teleporting mirrors. Under a glass dome in the laboratory rests the Nova Stone."
     npcs:
       - name: Dingheimul
         description: "The wizard behind the theft, hungry for knowledge and power, who means to master the Nova Stone and make himself a demigod. He reads the minds of intruders, throws up illusory copies of himself, and strikes with a dagger of basilisk-bone that turns flesh to stone."
@@ -82,9 +82,9 @@ sections:
       - name: Animated Skeletons
         entry: skeleton
         description: "Bones roused from the cavern reliefs to cut down trespassers, stilled only by the right sign."
-      - name: Dark Elves
-        entry: dark-elf
-        description: "The dark elves of the deep caves who serve Dingheimul, swift to drown intruders in the black water."
+      - name: Svartalfs
+        entry: svartalf
+        description: "The svartalfs of the deep caves who serve Dingheimul, swift to drown intruders in the black water."
       - name: Crocodiles
         description: "Pale beasts lurking in the pitch-black cavern water, waiting for prey to be pushed in."
       - name: The Chained Demon

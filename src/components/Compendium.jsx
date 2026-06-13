@@ -129,12 +129,12 @@ function skipGroup(group, section) {
   const g = group.toLowerCase(), s = section.toLowerCase();
   return g === s || g + "s" === s || g === s + "s";
 }
-function entryMdPath(video) {
-  const sec  = video.section[0].toUpperCase() + video.section.slice(1);
-  const slug = toSlug(video.name);
-  return skipGroup(video.group, video.section)
+function entryMdPath(entry) {
+  const sec  = entry.section[0].toUpperCase() + entry.section.slice(1);
+  const slug = toSlug(entry.name);
+  return skipGroup(entry.group, entry.section)
     ? `${sec}/${slug}.md`
-    : `${sec}/${video.group}/${slug}.md`;
+    : `${sec}/${entry.group}/${slug}.md`;
 }
 
 // Unified page resolver: a slug (a card's explicit `entry`, or a card/place
@@ -151,7 +151,7 @@ const PAGE_BY_SLUG = (() => {
   for (const p of geoPlaces) add(toSlug(p.name), { kind: "country", id: p.id, name: p.name });
   for (const a of adventures) add(toSlug(a.title), { kind: "adventure", id: a.id, name: a.title });
   for (const v of allEntries)
-    if (ENTRY_SECTIONS.has(v.section)) add(toSlug(v.name), { kind: "entry", id: v.id, name: v.name, video: v });
+    if (ENTRY_SECTIONS.has(v.section)) add(toSlug(v.name), { kind: "entry", id: v.id, name: v.name, entry: v });
   return map;
 })();
 const resolvePage = (s) => (s ? PAGE_BY_SLUG[toSlug(String(s))] ?? null : null);
@@ -193,6 +193,16 @@ const RELATED_BY_SLUG = {
   "felicien-pirate-war": ["felicien", "erebos", "berendien", "caddo", "hynsolge"],
   "ransard-prepares": ["ransard", "trakorien"],
   "nidland-purification": ["nidland", "cereval", "the-hell-fort", "melindors-return", "the-final-battle"],
+  // The Burned Earth Clan and its member tribes link to one another.
+  "burned-earth-clan": ["lunorgh-kah", "rulgh-borgnag", "urgh-grobb", "grogol-gribb", "gylk-lobbnack", "ylkor-kha-oggra", "kallakadak-yldrokk", "dekkadorel-gnubbt"],
+  "lunorgh-kah": ["burned-earth-clan"],
+  "rulgh-borgnag": ["burned-earth-clan"],
+  "urgh-grobb": ["burned-earth-clan"],
+  "grogol-gribb": ["burned-earth-clan"],
+  "gylk-lobbnack": ["burned-earth-clan"],
+  "ylkor-kha-oggra": ["burned-earth-clan"],
+  "kallakadak-yldrokk": ["burned-earth-clan"],
+  "dekkadorel-gnubbt": ["burned-earth-clan"],
 };
 
 // ── CountryDetail ─────────────────────────────────────────────────────────
@@ -445,34 +455,34 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onO
 }
 
 // ── EntryDetail ───────────────────────────────────────────────────────────
-function EntryDetail({ video, onVideoSelect, onBack, backLabel, onOpenPage }) {
+function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPage }) {
   const [markdown, setMarkdown] = useState(null);
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- reset before async load (keyed by video.id)
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- reset before async load (keyed by entry.id)
     setMarkdown(null);
-    const mdKey = `../data/compendium/${entryMdPath(video)}`;
+    const mdKey = `../data/compendium/${entryMdPath(entry)}`;
     const mdLoader = markdownModules[mdKey];
     if (mdLoader) {
       mdLoader().then((md) => setMarkdown(md)).catch(() => setMarkdown(""));
     } else {
       setMarkdown("");
     }
-  }, [video]);
+  }, [entry]);
 
   const loaded = markdown !== null;
   const images = markdown ? extractImages(markdown) : [];
   const bodyText = markdown ? stripImages(markdown).replace(/^#[^\n]*\n/, "").trim() : "";
-  const eyebrow = video.group && !skipGroup(video.group, video.section)
-    ? `${SECTION_LABEL[video.section]} · ${video.group}`
-    : SECTION_LABEL[video.section];
-  const relatedVideos = (relatedVideosByVideo[video.id] ?? [])
+  const eyebrow = entry.group && !skipGroup(entry.group, entry.section)
+    ? `${SECTION_LABEL[entry.section]} · ${entry.group}`
+    : SECTION_LABEL[entry.section];
+  const relatedVideos = (relatedVideosByVideo[entry.id] ?? [])
     .map((id) => videoById[id])
     .filter(Boolean);
   // Cross-references: adventures that feature this entry, plus any curated
   // related pages (used for the conflicts → lands + adventures links).
-  const featuredIn = adventuresByEntryId[video.id] ?? [];
-  const related = (RELATED_BY_SLUG[toSlug(video.name)] ?? [])
+  const featuredIn = adventuresByEntryId[entry.id] ?? [];
+  const related = (RELATED_BY_SLUG[toSlug(entry.name)] ?? [])
     .map(resolvePage)
     .filter(Boolean);
 
@@ -486,7 +496,7 @@ function EntryDetail({ video, onVideoSelect, onBack, backLabel, onOpenPage }) {
       <div className="country-detail__header">
         <div className="country-detail__header-text">
           <p className="country-detail__eyebrow">{eyebrow}</p>
-          <h2 className="country-detail__name">{video.name}</h2>
+          <h2 className="country-detail__name">{entry.name}</h2>
         </div>
       </div>
 
@@ -504,21 +514,21 @@ function EntryDetail({ video, onVideoSelect, onBack, backLabel, onOpenPage }) {
 
       {loaded && !bodyText && images.length === 0 && (
         <p className="country-detail__empty">
-          {video.noVideo ? "Lore entry coming soon." : "Lore entry coming soon — watch the chronicle below."}
+          {entry.noVideo ? "Lore entry coming soon." : "Lore entry coming soon — watch the chronicle below."}
         </p>
       )}
 
-      {loaded && !video.noVideo && (
+      {loaded && !entry.noVideo && (
         <div className="country-detail__block">
           <p className="location-panel__section-label">Chronicle</p>
           <button
             className="location-panel__watch-btn"
-            onClick={() => onVideoSelect(video)}
-            aria-label={`Watch ${video.name}`}
+            onClick={() => onVideoSelect(entry)}
+            aria-label={`Watch ${entry.name}`}
           >
             <img
-              src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`}
-              alt={video.name}
+              src={`https://img.youtube.com/vi/${entry.id}/mqdefault.jpg`}
+              alt={entry.name}
             />
             <div className="location-panel__watch-overlay">
               <span className="location-panel__watch-play">▶</span>
@@ -806,8 +816,9 @@ export default function Compendium({
   onVideoSelect,
 }) {
   const [query, setQuery] = useState("");
-  // The open entry page (a video-backed Peoples/Creatures page). Reflected in the
-  // URL as ?ce=<id> so the browser back/forward buttons and refresh all work.
+  // The open entry page (a Peoples/Creatures/Lore page, either video-backed or
+  // markdown-only). Reflected in the URL as ?ce=<id> so the browser back/forward
+  // buttons and refresh all work.
   const [selectedEntry, setSelectedEntry] = useState(() => {
     const id = new URLSearchParams(window.location.search).get("ce");
     return id ? (videoById[id] ?? allEntries.find((v) => v.id === id) ?? null) : null;
@@ -847,12 +858,12 @@ export default function Compendium({
 
   // Open an entry from an adventure card: remember the scroll, push a real history
   // entry (so the browser Back button returns here), and jump to the entry's top.
-  const openEntry = useCallback((video) => {
+  const openEntry = useCallback((entry) => {
     savedAdvScroll.current = window.scrollY;
     const url = new URL(window.location);
-    url.searchParams.set("ce", video.id);
+    url.searchParams.set("ce", entry.id);
     window.history.pushState(null, "", url);
-    setSelectedEntry(video);
+    setSelectedEntry(entry);
     window.scrollTo(0, 0);
   }, []);
 
@@ -860,7 +871,7 @@ export default function Compendium({
   // entry (Peoples/Creatures/Lore/…), a country page, or an adventure.
   const openPage = useCallback((target) => {
     if (!target) return;
-    if (target.kind === "entry") { openEntry(target.video); return; }
+    if (target.kind === "entry") { openEntry(target.entry); return; }
     setSelectedEntry(null);
     if (target.kind === "country") {
       onAdventureSelect(null);
@@ -887,7 +898,8 @@ export default function Compendium({
   const toggleGeoGroup = (id) => setOpenGeoGroups((p) => ({ ...p, [id]: !p[id] }));
   const toggleSubGroup = (id) => setOpenSubGroups((p) => ({ ...p, [id]: !p[id] }));
 
-  // Flat search across countries + videos
+  // Flat search across countries + entries (entries cover both video-backed and
+  // markdown-only Peoples/Creatures/Lore pages, via allEntries).
   const searchResults = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (!q) return null;
@@ -896,7 +908,7 @@ export default function Compendium({
       .filter((c) => c.name.toLowerCase().includes(q))
       .map((c) => ({ kind: "country", id: c.id, label: c.name, sub: placeKind(c), pin: c }));
 
-    const matchVideos = allVideos
+    const matchEntries = allEntries
       .filter(
         (v) =>
           v.section !== "countries" &&
@@ -907,14 +919,14 @@ export default function Compendium({
           SECTION_LABEL[v.section]?.toLowerCase().includes(q))
       )
       .map((v) => ({
-        kind: "video",
+        kind: "entry",
         id: v.id,
         label: v.name,
         sub: v.group ? `${SECTION_LABEL[v.section]} · ${v.group}` : SECTION_LABEL[v.section],
-        video: v,
+        entry: v,
       }));
 
-    return [...matchCountries, ...matchVideos];
+    return [...matchCountries, ...matchEntries];
   }, [query]);
 
   const geoGroups = useMemo(() => {
@@ -987,7 +999,8 @@ export default function Compendium({
                     onClick={() => {
                       onAdventureSelect(null);
                       if (r.kind === "country") { onCountrySelect(r.id); setSelectedEntry(null); }
-                      else { setSelectedEntry(r.video); onCountrySelect(null); }
+                      else { setSelectedEntry(r.entry); onCountrySelect(null); }
+                      window.scrollTo(0, 0);
                     }}
                   >
                     <span className="compendium-results__label">{r.label}</span>
@@ -1018,7 +1031,7 @@ export default function Compendium({
                         <li key={a.id}>
                           <button
                             className={`compendium-nav__item${selectedAdventure === a.id ? " compendium-nav__item--active" : ""}`}
-                            onClick={() => { onAdventureSelect(a.id); onCountrySelect(null); setSelectedEntry(null); }}
+                            onClick={() => { onAdventureSelect(a.id); onCountrySelect(null); setSelectedEntry(null); window.scrollTo(0, 0); }}
                           >
                             {label}
                           </button>
@@ -1115,7 +1128,7 @@ export default function Compendium({
                                 <li key={`c-${c.id}`}>
                                   <button
                                     className={`compendium-nav__item${selectedCountry === c.id ? " compendium-nav__item--active" : ""}`}
-                                    onClick={() => { onAdventureSelect(null); onCountrySelect(c.id); setSelectedEntry(null); }}
+                                    onClick={() => { onAdventureSelect(null); onCountrySelect(c.id); setSelectedEntry(null); window.scrollTo(0, 0); }}
                                   >
                                     {c.name}
                                   </button>
@@ -1124,8 +1137,8 @@ export default function Compendium({
                               {group.videos.map((v) => (
                                 <li key={`v-${v.id}`}>
                                   <button
-                                    className={`compendium-nav__item compendium-nav__item--video${selectedEntry?.id === v.id ? " compendium-nav__item--active" : ""}`}
-                                    onClick={() => { onAdventureSelect(null); setSelectedEntry(v); onCountrySelect(null); }}
+                                    className={`compendium-nav__item compendium-nav__item--entry${selectedEntry?.id === v.id ? " compendium-nav__item--active" : ""}`}
+                                    onClick={() => { onAdventureSelect(null); setSelectedEntry(v); onCountrySelect(null); window.scrollTo(0, 0); }}
                                   >
                                     {v.name}
                                   </button>
@@ -1140,7 +1153,7 @@ export default function Compendium({
                 );
               })()}
 
-              {/* Other video sections — skip geography/countries/episodes/characters */}
+              {/* Other entry sections — skip geography/countries/episodes/characters */}
               {SECTIONS.filter((s) =>
                 s.id !== "geography" &&
                 s.id !== "countries" &&
@@ -1183,8 +1196,8 @@ export default function Compendium({
                               {g.videos.map((v) => (
                                 <li key={v.id}>
                                   <button
-                                    className={`compendium-nav__item compendium-nav__item--video${selectedEntry?.id === v.id ? " compendium-nav__item--active" : ""}`}
-                                    onClick={() => { onAdventureSelect(null); setSelectedEntry(v); onCountrySelect(null); }}
+                                    className={`compendium-nav__item compendium-nav__item--entry${selectedEntry?.id === v.id ? " compendium-nav__item--active" : ""}`}
+                                    onClick={() => { onAdventureSelect(null); setSelectedEntry(v); onCountrySelect(null); window.scrollTo(0, 0); }}
                                   >
                                     {v.name}
                                   </button>
@@ -1207,7 +1220,7 @@ export default function Compendium({
           {selectedEntry ? (
             <EntryDetail
               key={selectedEntry.id}
-              video={selectedEntry}
+              entry={selectedEntry}
               onVideoSelect={onVideoSelect}
               onOpenPage={openPage}
               onBack={selectedAdventure ? () => window.history.back() : null}

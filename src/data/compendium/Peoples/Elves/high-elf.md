@@ -1,15 +1,19 @@
 # High Elf
 
-High elves are by far the most human of all the elf-races, at least in mind. They differ from the other elf-races too in that one could almost call them evil. They do not share the other elf-folk's reverence and respect for nature; they love riches and power and shun no means to increase those two foundations of their existence. They are well known as skilled magicians, and usually live apart from the world in remote academies of magic. Despite their hunger for power they seldom build great realms, preferring to win their position through blackmail, intrigue and high office, the more discreet road.
+The high elves descend from the firstborn, and they are the oldest of the elf-kindreds. They live apart from the world in great bone-white towers on empty plains, and they care for little beyond their own studies and the silence of their halls. No high elves are born any more, so their numbers only fall as the ages pass. They are aloof, arrogant and hard to read, masters of magic, and they regard the younger peoples with cool indifference.
 
 ## Appearance
 
-High elves are taller and stronger than other elves, with long, straight black hair, bushy black brows, grey or brown eyes and faintly olive skin. They dress in heavy, luxurious clothes of velvet and silk in purple, wine-red, dark green, black and brown, richly adorned with gold brocade, precious-metal clasps, beadwork and embroidery, and are very fond of large jewels, rings and brooches.
+High elves are taller than other elves and beautiful in a way that unsettles, with a still, blank gaze that many find frightening. They wear their long, shining hair loose under fine diadems, and drape themselves in floor-length mantles of an almost weightless cloth, in dark colours that stand out against the white of their towers.
 
 ## Behaviour
 
-High elves are as a rule very superior and arrogant in manner, and look down on almost all who do not share their outlook. They hold themselves made to rule, and let slip no chance to display and increase their power and wealth; they respect skill, of whatever kind.
+High elves keep their distance from everyone. The learned they will sometimes deign to notice; other creatures, hardly at all. They are not so much cruel as indifferent, as if the doings of younger peoples were beneath them. Inside their towers there is only silence and the quiet work of magic.
+
+## The Keepers
+
+The one exception to all this seclusion is the order of the Keepers, who guard the white towers. Alone among the high elves they train in arms, carrying polearms and learning both attacking and defending magic, and alone among them they wear red instead of the towers' dark cloth. They are also the only high elves who leave the towers for long, and the likeliest of their kind to be drawn out into the wider world.
 
 ## Abilities
 
-High elves have no special powers beyond their noted gift for magic. Like all elves they have keen sight and hearing, are immune to disease and do not visibly age.
+Every high elf can speak mind to mind and move objects by thought alone, and most have mastered at least two schools of magic. Like all elves they have keen sight and hearing, are immune to disease, and age so slowly that they seem all but undying.

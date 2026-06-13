@@ -52,6 +52,24 @@ The church is supported by a tithe of one tenth, drawn from the faithful, and it
 
 The Shining Way is strongest in Zorakin and Kardien, where kings and nobles alike are counted among its members. It is the official faith of Erebos and Berendien also, though its hold there is weaker. By law the four kings of these realms must profess the faith. Through this bond of crown and altar the church wields influence over the affairs of nations as surely as over the souls of men.
 
+## Orders
+
+The Shining Way has several orders. Some are given to scholarship and prayer, others to war in the faith's name.
+
+### Monastic Orders
+
+The **Mandelorden** was founded in 401 fO by Haakon Mandel as a brotherhood of scholar-monks, at first devoted to the goddess of learning, Ingeril, though over time the worship faded and the pursuit of knowledge itself became their creed. They hold that only knowledge brings lasting happiness, and their work is to seek it out and to give it freely; at their height they ran a score of lyceums, the greatest of them at Pendon. Some three thousand brothers serve the order, divided between novices, who still study and do the labour, and the Learned, who teach. They live on modest fees and donations.
+
+The **Order of Odo's Memory**, the second order founded in his name, was raised in 112 eO to plant mission-monasteries all around the Copper Sea. The project failed, its brothers driven off everywhere save on Aidne and Caddo, and the order broke away to stand on its own. It is the only branch of the faith that still keeps Odo's first ideals in their full severity, holding strictly to poverty, obedience, and celibacy.
+
+### Knightly Orders
+
+The knightly orders are the martial and charitable arm of the Shining Way. Their members swear poverty and obedience, give over their plunder to the church, and bind themselves to a hard code of courtesy, honour, justice, and mercy; in return they enjoy free board and lodging, exemption from tax and toll while they serve, and a network of support that reaches across every believing land.
+
+The **Sun Knights** are the official order of the church, founded at Ekeborg at the start of the Great Schism, and the largest of all the orders, with perhaps fifteen hundred knights and twice as many squires. Only the noble-born of Kardien and Zorakin may join their ranks, and their vows of poverty and chastity sit lightly upon men who are lords in their own right. They fight from the saddle with lance and sword, and ride beneath black cloaks and surcoats blazoned with a golden sun. They bear an old and bitter hatred for the Order of Saint Justin.
+
+The **Order of Saint Justin** traces its founding to **Justin of Metera**, a poor cobbler's apprentice who in 233 eO was led by a dream to take a sword from a crypt in the church at Arno. Brought before the Exarch and bidden to tell his tale, he was set free, for the blade proved to be Odo's own. Justin rose to lead the Sun Knights and won great fame with the sword Gawalot, and when he died of old age in 274 he was declared a saint; the first crusade set out the very next year. The order he left behind is now among the strongest fighting forces anywhere about the Copper Sea.
+
 ## The Bright Hand
 
 The Bright Hand - Den Ljusa Handen - is the inquisition of the church. It was instituted by the exarch Zegedorn III in 314 eO. Its office is to police doctrine and to hunt out heresy wherever it takes root. The Bright Hand does not operate upon Caddo, the very land of Odo's birth, which lies beyond its reach since the Schism.
