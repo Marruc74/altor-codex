@@ -539,6 +539,17 @@ const EXTRA_LORE = [
   { group: "Cosmology", name: "The Heavenly Bodies" },
   { group: "Cosmology", name: "Constellations" },
   { group: "Factions", name: "Burned Earth Clan" },
+  { group: "Factions", name: "Grokashak Oggra" },
+  { group: "Magical Phenomena", name: "The Black Water" },
+  { group: "Magical Phenomena", name: "The Bane Storm" },
+  { group: "Magical Phenomena", name: "The City of Angels" },
+  { group: "Magical Phenomena", name: "Ley Lines and Magic-Dead Lands" },
+  { group: "The Multiverse", name: "The Multiverse" },
+  { group: "The Multiverse", name: "The Grey Halls" },
+  { group: "The Multiverse", name: "Demonicum" },
+  { group: "The Multiverse", name: "Nehcrom" },
+  { group: "The Multiverse", name: "Bemoth" },
+  { group: "The Multiverse", name: "Caliban" },
   { group: null, name: "Climate" },
   { group: null, name: "The Calendar" },
   { group: null, name: "Trade" },
@@ -568,6 +579,8 @@ const EXTRA_LORE = [
 // Markdown-only Magic page from the Campaign Book.
 const EXTRA_MAGIC = [
   { group: "Magic", name: "Dark Magic" },
+  { group: "Magic", name: "Demonology" },
+  { group: "Magic", name: "Notable Magic Items" },
 ].map((p, i) => ({
   id: `x-magic-${i}`,
   title: `Magic: ${p.name}`,

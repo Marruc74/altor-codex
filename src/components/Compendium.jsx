@@ -194,15 +194,35 @@ const RELATED_BY_SLUG = {
   "ransard-prepares": ["ransard", "trakorien"],
   "nidland-purification": ["nidland", "cereval", "the-hell-fort", "melindors-return", "the-final-battle"],
   // The Burned Earth Clan and its member tribes link to one another.
-  "burned-earth-clan": ["lunorgh-kah", "rulgh-borgnag", "urgh-grobb", "grogol-gribb", "gylk-lobbnack", "ylkor-kha-oggra", "kallakadak-yldrokk", "dekkadorel-gnubbt"],
+  "burned-earth-clan": ["lunorgh-kah", "rulgh-borgnag", "urgh-grobb", "grogol-gribb", "gylk-lobbnack", "ylkor-kha-oggra", "grokashak-oggra", "kallakadak-yldrokk", "dekkadorel-gnubbt"],
   "lunorgh-kah": ["burned-earth-clan"],
   "rulgh-borgnag": ["burned-earth-clan"],
   "urgh-grobb": ["burned-earth-clan"],
   "grogol-gribb": ["burned-earth-clan"],
   "gylk-lobbnack": ["burned-earth-clan"],
   "ylkor-kha-oggra": ["burned-earth-clan"],
+  "grokashak-oggra": ["burned-earth-clan"],
   "kallakadak-yldrokk": ["burned-earth-clan"],
   "dekkadorel-gnubbt": ["burned-earth-clan"],
+  // The schools of magic and the magical phenomena from the Mage's Handbook.
+  "animism": ["elemental", "mentalism"],
+  "elemental": ["animism", "mentalism"],
+  "mentalism": ["animism", "elemental", "necromancy"],
+  "necromancy": ["mentalism", "dark-magic"],
+  "dark-magic": ["necromancy"],
+  "the-black-water": ["ley-lines-and-magic-dead-lands", "the-bane-storm"],
+  "the-bane-storm": ["necromancy", "dark-magic", "the-black-water"],
+  "the-city-of-angels": ["death-angel", "the-world-of-altor"],
+  "ley-lines-and-magic-dead-lands": ["dark-magic", "the-black-water"],
+  // The Multiverse, Demonicum and its Guardians, and the art of demonology
+  // (from the Kaos Väktare supplement).
+  "the-multiverse": ["demonicum", "the-grey-halls", "the-gods", "the-world-of-altor"],
+  "the-grey-halls": ["the-multiverse", "demonicum", "demonology"],
+  "demonicum": ["the-multiverse", "the-grey-halls", "nehcrom", "bemoth", "caliban", "demonology"],
+  "nehcrom": ["demonicum", "bemoth", "caliban"],
+  "bemoth": ["demonicum", "nehcrom", "caliban", "animism"],
+  "caliban": ["demonicum", "nehcrom", "bemoth"],
+  "demonology": ["demonicum", "the-grey-halls", "necromancy", "dark-magic", "demon-prince"],
 };
 
 // ── CountryDetail ─────────────────────────────────────────────────────────
