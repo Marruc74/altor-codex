@@ -1,7 +1,7 @@
 import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import ReactMarkdown from "react-markdown";
 import yaml from "js-yaml";
-import { SECTIONS, videosBySection, videos as allVideos } from "../data/videoData";
+import { SECTIONS, videosBySection, videos as allVideos, allEntries } from "../data/videoData";
 import { pins } from "../data/locations";
 import { entries } from "../data/codex/index.js";
 import { adventures, adventureGroups } from "../data/adventures";
@@ -137,22 +137,74 @@ function entryMdPath(video) {
     : `${sec}/${video.group}/${slug}.md`;
 }
 
-// Index of Peoples/Creatures "pages" (video-backed entries) keyed by name-slug,
-// so an adventure's generic creature/race card can deep-link to its codex page
-// (e.g. a "Goblin" or "Death Knight" card → that Peoples/Creatures entry).
-const ENTRY_PAGE_BY_SLUG = Object.fromEntries(
-  allVideos
-    .filter((v) => v.section === "peoples" || v.section === "creatures")
-    .map((v) => [toSlug(v.name), v])
-);
+// Unified page resolver: a slug (a card's explicit `entry`, or a card/place
+// name) → a navigable page. Priority country pin > adventure > section entry,
+// so a name that is also a country resolves to its country page first. This is
+// what lets a notable card or an adventure's place card deep-link to whatever
+// page in the compendium shares its name (a creature, a country, an adventure…).
+const ENTRY_SECTIONS = new Set([
+  "peoples", "creatures", "lore", "magic", "history", "conflicts", "characters",
+]);
+const PAGE_BY_SLUG = (() => {
+  const map = {};
+  const add = (slug, val) => { if (slug && !(slug in map)) map[slug] = val; };
+  for (const p of geoPlaces) add(toSlug(p.name), { kind: "country", id: p.id, name: p.name });
+  for (const a of adventures) add(toSlug(a.title), { kind: "adventure", id: a.id, name: a.title });
+  for (const v of allEntries)
+    if (ENTRY_SECTIONS.has(v.section)) add(toSlug(v.name), { kind: "entry", id: v.id, name: v.name, video: v });
+  return map;
+})();
+const resolvePage = (s) => (s ? PAGE_BY_SLUG[toSlug(String(s))] ?? null : null);
+
+// ── Cross-reference indexes ────────────────────────────────────────────────
+// Every card (place / npc / creature / item) an adventure declares.
+function adventureCards(a) {
+  const out = [];
+  const push = (arr) => { for (const it of arr ?? []) out.push(it); };
+  push(a.places); push(a.items); push(a.characters);
+  for (const s of a.sections ?? []) { push(s.places); push(s.npcs); push(s.creatures); push(s.items); }
+  return out;
+}
+// adventuresByPin: country/region id → adventures set there (a place card naming
+// it, or a mention in the title/tagline/summary). adventuresByEntryId:
+// section-entry id → adventures featuring it (the reverse of the card links).
+const adventuresByPin = {};
+const adventuresByEntryId = {};
+const countryPins = geoPlaces.filter((p) => p.type === "country");
+for (const a of adventures) {
+  const pinIds = new Set();
+  const entryIds = new Set();
+  for (const c of adventureCards(a)) {
+    const t = resolvePage(c.entry ?? c.name);
+    if (t?.kind === "country") pinIds.add(t.id);
+    else if (t?.kind === "entry") entryIds.add(t.id);
+  }
+  const hay = `${a.title ?? ""} ${a.tagline ?? ""} ${a.summary ?? ""}`.toLowerCase();
+  for (const p of countryPins) if (hay.includes(p.name.toLowerCase())) pinIds.add(p.id);
+  for (const id of pinIds) (adventuresByPin[id] ??= []).push(a);
+  for (const id of entryIds) (adventuresByEntryId[id] ??= []).push(a);
+}
+
+// Curated "Related" links for entries not captured structurally — chiefly the
+// three live conflicts, which tie to their belligerent lands and the adventures
+// that dramatize them. Keyed by the entry's name-slug; values are slugs the
+// resolver turns into country / adventure / entry pages.
+const RELATED_BY_SLUG = {
+  "felicien-pirate-war": ["felicien", "erebos", "berendien", "caddo", "hynsolge"],
+  "ransard-prepares": ["ransard", "trakorien"],
+  "nidland-purification": ["nidland", "cereval", "the-hell-fort", "melindors-return", "the-final-battle"],
+};
 
 // ── CountryDetail ─────────────────────────────────────────────────────────
-function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect }) {
+function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onOpenPage }) {
   const [locationData, setLocationData] = useState(null);
   const [markdown, setMarkdown] = useState(null);
   const [lightbox, setLightbox] = useState(null);
 
-  // Notable figures/places/items render as image cards (image opens the lightbox).
+  // Notable figures/places/items render as cards. A card whose name (or explicit
+  // `entry`) matches another page in the compendium becomes a link to it; if it
+  // also has an image, the image opens the lightbox and a "View more" link
+  // navigates. Cards with no matching page keep their plain/lightbox behaviour.
   const notableGrid = (label, list, portrait = false) =>
     list.length > 0 && (
       <div className="country-detail__block">
@@ -160,30 +212,56 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect }) {
         <div className="country-detail__entries-grid">
           {list.map((it, i) => {
             const cls = `codex-card${(it.portrait ?? portrait) ? " codex-card--portrait" : ""}`;
+            const t = resolvePage(it.entry ?? it.name);
+            // Don't link a card back to the very page it sits on.
+            const target = t && !(t.kind === "country" && t.id === country.id) ? t : null;
+            const linkable = target && onOpenPage;
+            const imageWrap = it.image && (
+              <div className="codex-card__image-wrap">
+                <img className="codex-card__image" src={it.image} alt={it.name} />
+              </div>
+            );
+            const openLightbox = () => setLightbox([{ src: it.image, alt: it.name, caption: it.name }]);
+
+            if (linkable && it.image)
+              return (
+                <div key={it.name ?? i} className={`${cls} codex-card--split`}>
+                  <button className="codex-card__image-btn" onClick={openLightbox} aria-label={`View image of ${it.name}`}>
+                    {imageWrap}
+                  </button>
+                  <div className="codex-card__body">
+                    <p className="codex-card__title">{it.name}</p>
+                    {it.description && <p className="codex-card__summary">{it.description}</p>}
+                    <button className="codex-card__entry-link codex-card__entry-link--btn" onClick={() => onOpenPage(target)}>
+                      View more ↗
+                    </button>
+                  </div>
+                </div>
+              );
+
             const inner = (
               <>
-                {it.image && (
-                  <div className="codex-card__image-wrap">
-                    <img className="codex-card__image" src={it.image} alt={it.name} />
-                  </div>
-                )}
+                {imageWrap}
                 <div className="codex-card__body">
                   <p className="codex-card__title">{it.name}</p>
                   {it.description && <p className="codex-card__summary">{it.description}</p>}
+                  {linkable && <span className="codex-card__entry-link">View more ↗</span>}
                 </div>
               </>
             );
-            return it.image ? (
-              <button
-                key={it.name ?? i}
-                className={cls}
-                onClick={() => setLightbox([{ src: it.image, alt: it.name, caption: it.name }])}
-              >
-                {inner}
-              </button>
-            ) : (
-              <div key={it.name ?? i} className={cls}>{inner}</div>
-            );
+            if (linkable)
+              return (
+                <button key={it.name ?? i} className={`${cls} codex-card--link`} onClick={() => onOpenPage(target)}>
+                  {inner}
+                </button>
+              );
+            if (it.image)
+              return (
+                <button key={it.name ?? i} className={cls} onClick={openLightbox}>
+                  {inner}
+                </button>
+              );
+            return <div key={it.name ?? i} className={cls}>{inner}</div>;
           })}
         </div>
       </div>
@@ -268,6 +346,27 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect }) {
       {loaded && notableGrid("Notable Places", notablePlaces)}
       {loaded && notableGrid("Notable Items", notableItems)}
 
+      {(adventuresByPin[country.id] ?? []).length > 0 && onOpenPage && (
+        <div className="country-detail__block">
+          <p className="location-panel__section-label">Adventures set here</p>
+          <div className="country-detail__entries-grid">
+            {adventuresByPin[country.id].map((a) => (
+              <button
+                key={a.id}
+                className="codex-card codex-card--link"
+                onClick={() => onOpenPage({ kind: "adventure", id: a.id })}
+              >
+                <div className="codex-card__body">
+                  <p className="codex-card__title">{a.title}</p>
+                  {a.tagline && <p className="codex-card__summary">{a.tagline}</p>}
+                  <span className="codex-card__entry-link">View more ↗</span>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
       {loaded && mainVideo && (
         <div className="country-detail__block">
           <p className="location-panel__section-label">Chronicle</p>
@@ -346,7 +445,7 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect }) {
 }
 
 // ── EntryDetail ───────────────────────────────────────────────────────────
-function EntryDetail({ video, onVideoSelect, onBack, backLabel }) {
+function EntryDetail({ video, onVideoSelect, onBack, backLabel, onOpenPage }) {
   const [markdown, setMarkdown] = useState(null);
 
   useEffect(() => {
@@ -369,6 +468,12 @@ function EntryDetail({ video, onVideoSelect, onBack, backLabel }) {
     : SECTION_LABEL[video.section];
   const relatedVideos = (relatedVideosByVideo[video.id] ?? [])
     .map((id) => videoById[id])
+    .filter(Boolean);
+  // Cross-references: adventures that feature this entry, plus any curated
+  // related pages (used for the conflicts → lands + adventures links).
+  const featuredIn = adventuresByEntryId[video.id] ?? [];
+  const related = (RELATED_BY_SLUG[toSlug(video.name)] ?? [])
+    .map(resolvePage)
     .filter(Boolean);
 
   return (
@@ -423,6 +528,49 @@ function EntryDetail({ video, onVideoSelect, onBack, backLabel }) {
         </div>
       )}
 
+      {related.length > 0 && onOpenPage && (
+        <div className="country-detail__block">
+          <p className="location-panel__section-label">Related</p>
+          <div className="country-detail__entries-grid">
+            {related.map((t) => (
+              <button
+                key={`${t.kind}-${t.id}`}
+                className="codex-card codex-card--link"
+                onClick={() => onOpenPage(t)}
+              >
+                <div className="codex-card__body">
+                  <p className="codex-card__title">{t.name}</p>
+                  <span className="codex-card__entry-link">
+                    {t.kind === "adventure" ? "Adventure" : t.kind === "country" ? "Land" : "Lore"} ↗
+                  </span>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {featuredIn.length > 0 && onOpenPage && (
+        <div className="country-detail__block">
+          <p className="location-panel__section-label">Featured in adventures</p>
+          <div className="country-detail__entries-grid">
+            {featuredIn.map((a) => (
+              <button
+                key={a.id}
+                className="codex-card codex-card--link"
+                onClick={() => onOpenPage({ kind: "adventure", id: a.id })}
+              >
+                <div className="codex-card__body">
+                  <p className="codex-card__title">{a.title}</p>
+                  {a.tagline && <p className="codex-card__summary">{a.tagline}</p>}
+                  <span className="codex-card__entry-link">View more ↗</span>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
       {relatedVideos.length > 0 && (
         <div className="country-detail__block">
           <p className="location-panel__section-label">Related Videos</p>
@@ -450,7 +598,7 @@ function EntryDetail({ video, onVideoSelect, onBack, backLabel }) {
 }
 
 // ── AdventureDetail ───────────────────────────────────────────────────────
-function AdventureDetail({ adventure, onVideoSelect, onEntryOpen }) {
+function AdventureDetail({ adventure, onVideoSelect, onOpenPage }) {
   // Body prose comes inline from the adventure's frontmatter .md (already parsed
   // in adventures.js) — no async load needed.
   const md = adventure.body ?? "";
@@ -480,10 +628,11 @@ function AdventureDetail({ adventure, onVideoSelect, onEntryOpen }) {
         <div className="country-detail__entries-grid">
           {items.map((it, i) => {
             const cls = `codex-card${(it.portrait ?? portrait) ? " codex-card--portrait" : ""}`;
-            // A generic creature/race card may carry `entry: <name-or-slug>` that
-            // links to its Peoples/Creatures codex page.
-            const page = it.entry ? ENTRY_PAGE_BY_SLUG[toSlug(String(it.entry))] : null;
-            const linkable = page && onEntryOpen;
+            // A card may carry an explicit `entry: <slug>`, or simply share its
+            // name with another page (a creature, a country, an adventure…). Either
+            // way it deep-links there.
+            const target = resolvePage(it.entry ?? it.name);
+            const linkable = target && onOpenPage;
             const imageWrap = it.image && (
               <div className="codex-card__image-wrap">
                 <img className="codex-card__image" src={it.image} alt={it.name} />
@@ -508,7 +657,7 @@ function AdventureDetail({ adventure, onVideoSelect, onEntryOpen }) {
                     {it.description && <p className="codex-card__summary">{it.description}</p>}
                     <button
                       className="codex-card__entry-link codex-card__entry-link--btn"
-                      onClick={() => onEntryOpen(page)}
+                      onClick={() => onOpenPage(target)}
                     >
                       View more ↗
                     </button>
@@ -533,7 +682,7 @@ function AdventureDetail({ adventure, onVideoSelect, onEntryOpen }) {
                 <button
                   key={it.name ?? i}
                   className={`${cls} codex-card--link`}
-                  onClick={() => onEntryOpen(page)}
+                  onClick={() => onOpenPage(target)}
                 >
                   {inner}
                 </button>
@@ -661,7 +810,7 @@ export default function Compendium({
   // URL as ?ce=<id> so the browser back/forward buttons and refresh all work.
   const [selectedEntry, setSelectedEntry] = useState(() => {
     const id = new URLSearchParams(window.location.search).get("ce");
-    return id ? (videoById[id] ?? allVideos.find((v) => v.id === id) ?? null) : null;
+    return id ? (videoById[id] ?? allEntries.find((v) => v.id === id) ?? null) : null;
   });
   // Page scroll to restore when leaving an entry back to the adventure it opened from.
   const savedAdvScroll = useRef(0);
@@ -680,7 +829,7 @@ export default function Compendium({
     const onPop = () => {
       const id = new URLSearchParams(window.location.search).get("ce");
       if (id) {
-        setSelectedEntry(videoById[id] ?? allVideos.find((v) => v.id === id) ?? null);
+        setSelectedEntry(videoById[id] ?? allEntries.find((v) => v.id === id) ?? null);
       } else {
         setSelectedEntry((prev) => {
           if (prev) {
@@ -706,6 +855,22 @@ export default function Compendium({
     setSelectedEntry(video);
     window.scrollTo(0, 0);
   }, []);
+
+  // Navigate to any page resolved by the cross-reference resolver: a section
+  // entry (Peoples/Creatures/Lore/…), a country page, or an adventure.
+  const openPage = useCallback((target) => {
+    if (!target) return;
+    if (target.kind === "entry") { openEntry(target.video); return; }
+    setSelectedEntry(null);
+    if (target.kind === "country") {
+      onAdventureSelect(null);
+      onCountrySelect(target.id);
+    } else if (target.kind === "adventure") {
+      onCountrySelect(null);
+      onAdventureSelect(target.id);
+    }
+    window.scrollTo(0, 0);
+  }, [openEntry, onAdventureSelect, onCountrySelect]);
   // Expand the nav section that holds the current selection on first render, so
   // a deep-link (e.g. ?adventure=kandra) reveals and highlights it in the menu.
   const [openSections, setOpenSections] = useState(() => ({
@@ -1044,6 +1209,7 @@ export default function Compendium({
               key={selectedEntry.id}
               video={selectedEntry}
               onVideoSelect={onVideoSelect}
+              onOpenPage={openPage}
               onBack={selectedAdventure ? () => window.history.back() : null}
               backLabel={selectedAdventure ? (adventures.find((a) => a.id === selectedAdventure)?.title ?? "adventure") : ""}
             />
@@ -1054,13 +1220,14 @@ export default function Compendium({
               onPinSelect={onPinSelect}
               onEntrySelect={onEntrySelect}
               onVideoSelect={onVideoSelect}
+              onOpenPage={openPage}
             />
           ) : selectedAdventureObj ? (
             <AdventureDetail
               key={selectedAdventureObj.id}
               adventure={selectedAdventureObj}
               onVideoSelect={onVideoSelect}
-              onEntryOpen={openEntry}
+              onOpenPage={openPage}
             />
           ) : (
             <div className="country-detail__prompt">

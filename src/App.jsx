@@ -171,6 +171,33 @@ export default function App() {
     navigate("catalog");
   }, [navigate]);
 
+  // From global search: jump to the Compendium and open a country/region page.
+  const handleGlobalCountryOpen = useCallback((id) => {
+    setSelectedAdventure(null);
+    setParam("adventure", null);
+    setSelectedCountry(id);
+    setParam("country", id);
+    navigate("catalog");
+  }, [navigate]);
+
+  // From global search: open a compendium section entry page (Peoples, Creatures,
+  // Lore, Magic, History, Conflicts…). The Compendium owns the ?ce= param, so we
+  // set it and dispatch popstate to make it open the entry whether or not the
+  // Compendium is already mounted.
+  const handleGlobalCompendiumEntry = useCallback((id) => {
+    setSelectedAdventure(null);
+    setParam("adventure", null);
+    setSelectedCountry(null);
+    setParam("country", null);
+    navigate("catalog");
+    setTimeout(() => {
+      const url = new URL(window.location);
+      url.searchParams.set("ce", id);
+      window.history.pushState(null, "", url);
+      window.dispatchEvent(new PopStateEvent("popstate"));
+    }, 150);
+  }, [navigate]);
+
   return (
     <div className="app">
       <Navbar activePage={activePage} onNavigate={navigate} onSearchOpen={() => setSearchOpen(true)} />
@@ -347,6 +374,8 @@ export default function App() {
           onEntrySelect={handleGlobalEntrySelect}
           onVideoSelect={handleVideoSelect}
           onAdventureSelect={handleGlobalAdventureSelect}
+          onCompendiumEntrySelect={handleGlobalCompendiumEntry}
+          onCountryOpen={handleGlobalCountryOpen}
           onClose={() => setSearchOpen(false)}
         />
       )}

@@ -1,8 +1,25 @@
 import { useState, useEffect, useRef, useMemo } from "react";
 import { pins } from "../data/locations";
 import { entries } from "../data/codex/index.js";
-import { videos } from "../data/videoData";
+import { videos, allEntries } from "../data/videoData";
 import { adventures } from "../data/adventures";
+import { mentionIndex } from "../data/searchIndex.generated";
+
+// Sections that have their own compendium page (open the page, not the video).
+const ENTRY_SECTIONS = new Set([
+  "peoples", "creatures", "lore", "magic", "history", "conflicts", "characters",
+]);
+
+// Searchable text for an adventure: title, summary and every card name it holds
+// (places / NPCs / creatures / items), so a search for an NPC or location name
+// finds the adventure that features it.
+function adventureText(a) {
+  const names = [];
+  const push = (arr) => { for (const it of arr ?? []) if (it?.name) names.push(it.name); };
+  push(a.places); push(a.items); push(a.characters);
+  for (const s of a.sections ?? []) { push(s.places); push(s.npcs); push(s.creatures); push(s.items); }
+  return `${a.title ?? ""} ${a.summary ?? ""} ${names.join(" ")}`.toLowerCase();
+}
 
 const PIN_LABELS = {
   capital: "Capital", city: "City", country: "Country", region: "Region",
@@ -47,10 +64,7 @@ function buildGroups(query) {
     }));
 
   const matchedAdventures = adventures
-    .filter((a) =>
-      (a.title ?? "").toLowerCase().includes(q) ||
-      (a.summary ?? "").toLowerCase().includes(q)
-    )
+    .filter((a) => adventureText(a).includes(q))
     .slice(0, 5)
     .map((a) => ({
       type: "adventure", key: a.id, label: a.title,
@@ -58,27 +72,52 @@ function buildGroups(query) {
       data: a, flatIdx: flatIdx++,
     }));
 
-  const matchedVideos = videos
-    .filter((v) =>
-      v.title.toLowerCase().includes(q) ||
-      v.name.toLowerCase().includes(q)
+  // Compendium pages (Peoples, Creatures, Lore, Magic, History, Conflicts,
+  // Characters) — including the markdown-only pages that have no video.
+  const matchedCompendium = allEntries
+    .filter(
+      (v) =>
+        ENTRY_SECTIONS.has(v.section) &&
+        (v.name.toLowerCase().includes(q) ||
+          (v.group && v.group.toLowerCase().includes(q)))
     )
+    .slice(0, 6)
+    .map((v) => ({
+      type: "centry", key: v.id, label: v.name,
+      sub: v.group && v.group.toLowerCase() !== v.section ? v.group : v.section,
+      data: v, flatIdx: flatIdx++,
+    }));
+
+  // Notable figures / places / items named on a country or region page.
+  const matchedMentions = mentionIndex
+    .filter((m) => m.name.toLowerCase().includes(q))
+    .slice(0, 6)
+    .map((m) => ({
+      type: "mention", key: `${m.pinId}-${m.name}`, label: m.name,
+      sub: `in ${m.page}`,
+      data: m, flatIdx: flatIdx++,
+    }));
+
+  // Documentary episodes still play in the modal.
+  const matchedEpisodes = videos
+    .filter((v) => v.section === "episodes" && (v.title.toLowerCase().includes(q) || v.name.toLowerCase().includes(q)))
     .slice(0, 5)
     .map((v) => ({
       type: "video", key: v.id, label: v.name || v.title,
-      sub: v.group ?? v.section,
-      data: v, flatIdx: flatIdx++,
+      sub: "Episode", data: v, flatIdx: flatIdx++,
     }));
 
   if (matchedPins.length)       groups.push({ category: "Locations",  items: matchedPins });
   if (matchedAdventures.length) groups.push({ category: "Adventures", items: matchedAdventures });
   if (matchedEntries.length)    groups.push({ category: "Codex",      items: matchedEntries });
-  if (matchedVideos.length)     groups.push({ category: "Chronicles", items: matchedVideos });
+  if (matchedCompendium.length) groups.push({ category: "Compendium", items: matchedCompendium });
+  if (matchedMentions.length)   groups.push({ category: "Mentions",   items: matchedMentions });
+  if (matchedEpisodes.length)   groups.push({ category: "Chronicles", items: matchedEpisodes });
 
   return groups;
 }
 
-export default function GlobalSearch({ onPinSelect, onEntrySelect, onVideoSelect, onAdventureSelect, onClose }) {
+export default function GlobalSearch({ onPinSelect, onEntrySelect, onVideoSelect, onAdventureSelect, onCompendiumEntrySelect, onCountryOpen, onClose }) {
   const [query, setQuery]           = useState("");
   const [focusedIdx, setFocusedIdx] = useState(0);
   const inputRef  = useRef(null);
@@ -99,10 +138,12 @@ export default function GlobalSearch({ onPinSelect, onEntrySelect, onVideoSelect
   }, [focusedIdx]);
 
   const handleSelect = (item) => {
-    if (item.type === "pin")   onPinSelect(item.data.id);
-    if (item.type === "entry") onEntrySelect(item.data.id);
-    if (item.type === "video") onVideoSelect(item.data);
+    if (item.type === "pin")       onPinSelect(item.data.id);
+    if (item.type === "entry")     onEntrySelect(item.data.id);
+    if (item.type === "video")     onVideoSelect(item.data);
     if (item.type === "adventure") onAdventureSelect(item.data.id);
+    if (item.type === "centry")    onCompendiumEntrySelect(item.data.id);
+    if (item.type === "mention")   onCountryOpen(item.data.pinId);
     onClose();
   };
 
@@ -159,7 +200,13 @@ export default function GlobalSearch({ onPinSelect, onEntrySelect, onVideoSelect
                   >
                     {item.type === "pin"
                       ? <span className="gs__dot" style={{ background: item.color }} />
-                      : <span className="gs__sigil">{item.type === "entry" ? "◈" : item.type === "adventure" ? "❖" : "▶"}</span>
+                      : <span className="gs__sigil">{
+                          item.type === "entry" ? "◈"
+                            : item.type === "adventure" ? "❖"
+                            : item.type === "centry" ? "◆"
+                            : item.type === "mention" ? "✦"
+                            : "▶"
+                        }</span>
                     }
                     <span className="gs__result-label">{item.label}</span>
                     {item.sub && <span className="gs__result-sub">{item.sub}</span>}

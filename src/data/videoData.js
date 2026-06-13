@@ -582,6 +582,13 @@ const EXTRA_MAGIC = [
   for (const g of sec) g.videos.sort((a, b) => a.name.localeCompare(b.name));
 }
 
+// Flat list of every entry shown in the compendium (real videos + the
+// markdown-only EXTRA pages), used by the global search index and the
+// cross-reference resolver so the noVideo pages are reachable too.
+export const allEntries = Object.values(videosBySection)
+  .flat()
+  .flatMap((g) => g.videos);
+
 export const SECTIONS = [
   { id: "characters", label: "Characters", sigil: "◇" },
   { id: "conflicts",  label: "Conflicts",  sigil: "⚡" },
