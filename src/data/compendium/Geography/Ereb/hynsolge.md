@@ -181,3 +181,7 @@ Sirigon's wealthy baron, Anargel Steelboot, has hired orc and Felician mercenari
 Beneath the realm's wars runs an older corruption. The comet that struck in 599 fO came from Raukhra, the Red Moon, and radiates pure evil and chaos; it lay underwater most of the time, which dampened its power, but through it the demon Onaabys, the Soul-eater, sent a vision to Mustansir Omurtaag in 421 eO and so founded the Star Doctrine. In 425 the Focal circle drained the comet's crater, summoned Onaabys, and had him sire a child upon Mustansir's wife, an act whose aftermath killed most of the cultists in a great epidemic.
 
 The boy, Tervel, was sickly until they learned he must devour one soul each week to survive, his inheritance from the demon. He then grew explosively, reaching full adulthood in eight years, killed his stepfather, took his post as advisor to Brangoria's baron, and took the name Parikila, the "father-slayer," turning to dark magic. To secure a victim each week without rousing suspicion, Parikila had the baron let Greyburg buy its freedom, drawing in more people to take, and begin the slave-trade that explains the slaves who never stop vanishing.
+
+## Heraldry
+
+The arms of Hynsolge bear a silver seven-pointed star, raised as the sign of the realm's unity - the same star that blazed at the death of the hero Fingal, drawing the once-fractured land together under one crown.

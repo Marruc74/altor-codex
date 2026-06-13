@@ -193,3 +193,7 @@ The story begins with the Third Conflux of 599 to 598 fO and the fall of Jorpagn
 ## Foreign Relations
 
 Trakorien guards its islands jealously and remains famously reluctant to settle the mainland, a caution rooted in the revelation of Anxalis that bid the klavyker stay on their shores. Its reach abroad is carried by trade and treaty rather than conquest. The **Mana Extenda**, the Realm's Long Arm, steers foreign policy, while convoys, privateers, and the long-running rivalry with Ransard shape relations across the seas. Eastern voyages of the demontrade and the copper-runs of the Kopparkonvojen bind Trakorien to distant Demontungan, Melukha, and the powers of the Copper Sea.
+
+## Heraldry
+
+The arms of Trakorien bear a ship, a tower, and a gold coin. The ship stands for the trade that is the lifeblood of the island empire, the tower for its strength, and the gold coin for the prosperity that flows from its convoys and markets.

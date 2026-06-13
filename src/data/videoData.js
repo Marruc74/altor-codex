@@ -21,11 +21,11 @@ export const rawVideos = [
   { id: "J_JFYRX4O-E", title: "Countries: Ransard", views: 976 },
   { id: "nSosifB-uMA", title: "Countries Soluna: Traxilme", views: 955 },
   { id: "AruWSq23ibw", title: "History The Age of Armies: Civil War", views: 938 },
-  { id: "eoVRxFnDAHU", title: "Character - Kaelene Fenholt", views: 932 },
+  { id: "eoVRxFnDAHU", title: "Characters - Kaelene Fenholt", views: 932 },
   { id: "ZGw0DTNjLyY", title: "Geography The Eastern Seas: The Glass Sea", views: 928 },
   { id: "CMF5BhF-Iv8", title: "Geography Samkarna: Geardon's Gap", views: 894 },
   { id: "TcCuHAxIXFg", title: "Geography Serpent Lake: Nivral Isles", views: 858 },
-  { id: "8F5Mb3Ammuw", title: "Character: Bram Kestrel", views: 841 },
+  { id: "8F5Mb3Ammuw", title: "Characters: Bram Kestrel", views: 841 },
   { id: "8-8xTec9W7k", title: "History Yndar: The Rise", views: 840 },
   { id: "deuVtu_9UeQ", title: "Countries: Krun", views: 837 },
   { id: "VYCg3-s0mKc", title: "History The Age of Armies: End of War", views: 788 },
@@ -38,7 +38,7 @@ export const rawVideos = [
   { id: "c4TlU7s_1Ww", title: "Countries Far West: Jih Pun", views: 596 },
   { id: "JoJUp6rR9vM", title: "Countries Soluna: Sombatze", views: 594 },
   { id: "AXdysyzYlmY", title: "Countries: Torsheim", views: 582 },
-  { id: "N9PElcEaMhE", title: "Lesser Demon: Pazuzu", views: 547 },
+  { id: "N9PElcEaMhE", title: "Lesser Demons: Pazuzu", views: 547 },
   { id: "owgalEc7obg", title: "History: Grey Elves", views: 527 },
   { id: "r6Jx06ba1LY", title: "Shapeshifters: Werewolf", views: 521 },
   { id: "kk4HXgQHIqQ", title: "Geography: Golwynda Sea", views: 517 },
@@ -48,7 +48,7 @@ export const rawVideos = [
   { id: "qX2xnkHsZro", title: "Countries: Klomellien", views: 430 },
   { id: "DFh81Ma7rZY", title: "History The Age of Armies: Krun vs Hynsolge", views: 398 },
   { id: "3EodRTuZblQ", title: "Geography Samkarna: Maminira me Delema", views: 379 },
-  { id: "7SY6JsLZ02U", title: "Religion: The Shining Way", views: 378 },
+  { id: "7SY6JsLZ02U", title: "Religions: The Shining Way", views: 378 },
   { id: "O6i54fc3d3c", title: "Countries: Kardien", views: 331 },
   { id: "VFBIJSXuq1I", title: "Dragons: Sea Dragon", views: 303 },
   { id: "WK3S2d5KXMM", title: "Countries Soluna: Efaro", views: 297 },
@@ -57,8 +57,8 @@ export const rawVideos = [
   { id: "2JLA1pQBmNg", title: "Elves: Injir", views: 276 },
   { id: "2vEaAf-sMgU", title: "Dragons: Lindworm", views: 273 },
   { id: "ALidc3KBcMM", title: "History Colonial Era: Furgia Invasion", views: 269 },
-  { id: "cZIE9gyEBto", title: "Lesser Demon: Belmon", views: 268 },
-  { id: "i-ydrEYHeCk", title: "Character: Aelthira Moonveil", views: 258 },
+  { id: "cZIE9gyEBto", title: "Lesser Demons: Belmon", views: 268 },
+  { id: "i-ydrEYHeCk", title: "Characters: Aelthira Moonveil", views: 258 },
   { id: "Nt8NekPK6IY", title: "History Dwarves: King Targald Hardfoot", views: 248 },
   { id: "9W_pDQB8_MQ", title: "Geography Golwynda Sea: Raas Narram", views: 246 },
   { id: "IIOkhfzlwSk", title: "Countries: Barbia", views: 246 },
@@ -110,7 +110,7 @@ export const rawVideos = [
   { id: "BhcaUkSNLM0", title: "History: Melukha", views: 104 },
   { id: "fpaEJH6zA3g", title: "Countries: Cereval", views: 102 },
   { id: "SBXkOqDA_tg", title: "History Golwynda Sea: Palofar", views: 93 },
-  { id: "ZKkrChk6mH0", title: "Lesser Demon: Uzorak", views: 93 },
+  { id: "ZKkrChk6mH0", title: "Lesser Demons: Uzorak", views: 93 },
   { id: "i9BHjbB47pY", title: "Countries Erebos: Tolokfe", views: 85 },
   { id: "XDz5nBxuSDU", title: "Conflicts: Ransard Prepares", views: 84 },
   { id: "lT5xEwpWsIE", title: "Geography Samkarna: Jurona", views: 84 },
@@ -130,7 +130,7 @@ export const rawVideos = [
   { id: "D0XlYMgq5Jo", title: "Plants: Illusion Tree", views: 31 },
   { id: "zrQP8BwudKM", title: "The Hollow Back", views: 30 },
   { id: "ZO8V69aFfUw", title: "Animal Humanoids: Ratman", views: 29 },
-  { id: "YbZdnklAJD4", title: "Lesser Demon: Grazur", views: 26 },
+  { id: "YbZdnklAJD4", title: "Lesser Demons: Grazur", views: 26 },
   { id: "cBRFr_C1k14", title: "Fable Animals: Arboreal Leech", views: 24 },
   { id: "YyLbdsnYPzU", title: "Plants: Elf Eater", views: 18 },
   { id: "Q7uZkGoGRrI", title: "Fable Animals: Gorgon", views: 17 },
@@ -175,7 +175,7 @@ export const rawVideos = [
   { id: "32Hjh6PELKg", title: "Fable Animals: Giant Spider", views: 6 },
   { id: "oQHioPvfP7E", title: "Fable Animals: Onaqui", views: 6 },
   { id: "Ga0plmKw6vY", title: "Stonekin: Dwarf", views: 6 },
-  { id: "m9m510nJTAw", title: "Sylvan: Najad", views: 6 },
+  { id: "m9m510nJTAw", title: "Sylvans: Najad", views: 6 },
   { id: "I238uC9pxLQ", title: "Fable Animals: Kalydon", views: 5 },
   { id: "-6x3huqel8E", title: "The Altor Codex - Chapter 2A - The Misty Island", views: 5 },
   { id: "SkHa9w8liis", title: "The Altor Codex - Chapter 1 - The Secret of Skeleton Village", views: 5 },
@@ -185,7 +185,7 @@ export const rawVideos = [
   { id: "2ehrufKRZ8I", title: "Fable Animals: Ambiorm", views: 5 },
   { id: "L4O9Fougqq4", title: "Fable Animals: Gargoyle", views: 5 },
   { id: "85DMkHF8u6A", title: "Elves: Light Elf", views: 5 },
-  { id: "FDw6WWgfkPA", title: "Sylvan: Oread", views: 5 },
+  { id: "FDw6WWgfkPA", title: "Sylvans: Oread", views: 5 },
   { id: "ZyPwEK4FPRU", title: "Elves: Sea Elf", views: 5 },
   { id: "KCHzUfFU73U", title: "History The Age of Empires: Slimpaku", views: 5 },
   { id: "BMUSdN-1Ewc", title: "Dark Folks: Goblin", views: 5 },
@@ -199,7 +199,7 @@ export const rawVideos = [
   { id: "gza1ejlZsfQ", title: "Dark Folks: Cave Troll", views: 4 },
   { id: "1aZdqqZI9ZE", title: "Fable Animals: Hippogriff", views: 4 },
   { id: "MOhlOZQHq88", title: "Fable Animals: Unicorn", views: 4 },
-  { id: "wyPrX5LWKY8", title: "Sylvan: Fire Pixie", views: 4 },
+  { id: "wyPrX5LWKY8", title: "Sylvans: Fire Pixie", views: 4 },
   { id: "StM9yaPoFfA", title: "Dark Folks: Orc", views: 4 },
   { id: "xbuIdo0QHoE", title: "Wraiths & Wights: Dark Wraith", views: 4 },
   { id: "DZLBbbxDuAQ", title: "Stonekin: Gargant", views: 4 },
@@ -223,54 +223,54 @@ export const rawVideos = [
   { id: "bkRNOOpK6KA", title: "Demonic Creatures: Black Unicorn", views: 3 },
   { id: "X3lCwFVHSIA", title: "Corporeal Undead: Hell Steed", views: 2 },
   { id: "oyCnsAC5lag", title: "Demonic Creatures: Black Avenger", views: 2 },
-  { id: "G3T6f7JI9DU", title: "Sylvan: Satyr", views: 2 },
-  { id: "cjGfbtcPYpU", title: "Sylvan: Hag", views: 2 },
+  { id: "G3T6f7JI9DU", title: "Sylvans: Satyr", views: 2 },
+  { id: "cjGfbtcPYpU", title: "Sylvans: Hag", views: 2 },
   { id: "cVrGWmE5MZE", title: "Demonic Creatures: Vampire Butterfly", views: 2 },
   { id: "DgR1qzxBklM", title: "Magical Undead: Living Dead", views: 2 },
-  { id: "mD0O4y158nI", title: "Sylvan: Dryad", views: 2 },
-  { id: "ZtrSHqoJwh0", title: "Sylvan: Faerie", views: 2 },
+  { id: "mD0O4y158nI", title: "Sylvans: Dryad", views: 2 },
+  { id: "ZtrSHqoJwh0", title: "Sylvans: Faerie", views: 2 },
   { id: "PRrKhpnIdFg", title: "Dark Folks: Boggart", views: 2 },
   { id: "za-ZR10tS0k", title: "Corporeal Undead: Deadmans Hand", views: 2 },
   { id: "oIfZEktDif4", title: "Magical Undead: Baneman", views: 2 },
-  { id: "MHBR0okQCso", title: "Sylvan: Peerie", views: 2 },
+  { id: "MHBR0okQCso", title: "Sylvans: Peerie", views: 2 },
   { id: "O1fY__gjLX4", title: "Stonekin: Cyclop", views: 2 },
   { id: "T0KF37hwAYM", title: "Wraiths & Wights: Barrow Wight", views: 1 },
   { id: "lhEAWjCEZjQ", title: "Corporeal Undead: Mara", views: 1 },
   { id: "MRa9ERgbzZw", title: "Corporeal Undead: Vampire", views: 1 },
-  { id: "l4Qhd8TmyzU", title: "Sylvan: Hob", views: 1 },
+  { id: "l4Qhd8TmyzU", title: "Sylvans: Hob", views: 1 },
   // Newer shorts (Mar–Apr 2026 uploads). View counts are from the latest
   // reporting period; titles normalized to the existing "Category Group: Name" scheme.
-  { id: "ZekDwW6f-D4", title: "Faction: Deathdancers", views: 6 },
-  { id: "-6xRYHUI71Q", title: "Religion: Inashtar", views: 4 },
-  { id: "Y8bObKzyMJA", title: "Faction: Treeshapers", views: 4 },
-  { id: "L9GOPwtFap8", title: "Faction: Lunorgh Kah", views: 3 },
-  { id: "DtWxUp5GMEk", title: "Faction: Brothers of Darkness", views: 3 },
+  { id: "ZekDwW6f-D4", title: "Factions: Deathdancers", views: 6 },
+  { id: "-6xRYHUI71Q", title: "Religions: Inashtar", views: 4 },
+  { id: "Y8bObKzyMJA", title: "Factions: Treeshapers", views: 4 },
+  { id: "L9GOPwtFap8", title: "Factions: Lunorgh Kah", views: 3 },
+  { id: "DtWxUp5GMEk", title: "Factions: Brothers of Darkness", views: 3 },
   { id: "SPxoPRwTtDY", title: "Elves: Cities beneath ground", views: 2 },
   { id: "QA00fO4mqNU", title: "Elves: Floating Islands", views: 2 },
   { id: "pf3G1J3vqWI", title: "Elves: White Towers", views: 2 },
   { id: "qmsuI9xPeJ8", title: "Countries: Mereld", views: 2 },
   { id: "6JVP0Wpgd20", title: "Elves: Fortress", views: 2 },
-  { id: "eBEsZSzhUXA", title: "Religion: Shamash", views: 2 },
-  { id: "CiDrS5KhZdU", title: "Religion: Church of Sbintor", views: 1 },
-  { id: "Iv8lu99cndA", title: "Faction: Urgh Grobb", views: 1 },
-  { id: "2zu0EkzUrwE", title: "Faction: Mistali", views: 1 },
-  { id: "qtpWTQSOoJA", title: "Faction: Deathbringers", views: 1 },
-  { id: "eQMv0UtUvkc", title: "Faction: Ylkor kha oggra", views: 1 },
-  { id: "VvN2fABOSic", title: "Faction: Rulgh Borgnag", views: 1 },
+  { id: "eBEsZSzhUXA", title: "Religions: Shamash", views: 2 },
+  { id: "CiDrS5KhZdU", title: "Religions: Church of Sbintor", views: 1 },
+  { id: "Iv8lu99cndA", title: "Factions: Urgh Grobb", views: 1 },
+  { id: "2zu0EkzUrwE", title: "Factions: Mistali", views: 1 },
+  { id: "qtpWTQSOoJA", title: "Factions: Deathbringers", views: 1 },
+  { id: "eQMv0UtUvkc", title: "Factions: Ylkor kha oggra", views: 1 },
+  { id: "VvN2fABOSic", title: "Factions: Rulgh Borgnag", views: 1 },
   { id: "unoYZDN9oDI", title: "Countries Trakorien: Palamux", views: 1 },
-  { id: "EwOASKSHPAQ", title: "Religion: Kashim", views: 1 },
-  { id: "bjfL1Q3Zx9o", title: "Religion: Imária", views: 1 },
-  { id: "YtbKtxdAXaw", title: "Religion: Wegil", views: 0 },
+  { id: "EwOASKSHPAQ", title: "Religions: Kashim", views: 1 },
+  { id: "bjfL1Q3Zx9o", title: "Religions: Imária", views: 1 },
+  { id: "YtbKtxdAXaw", title: "Religions: Wegil", views: 0 },
   { id: "KTYDdEp1TVU", title: "Dark Folks: Raukk", views: 0 },
   { id: "fHpDb9q-cHs", title: "Countries Montures: Mokylider", views: 0 },
   { id: "XQz7E5amhRo", title: "Countries Montures: Gideon Canyon", views: 0 },
-  { id: "5Hn5hYjbgRM", title: "Faction: Gylk Lobbnack", views: 0 },
-  { id: "c8YUGN3a584", title: "Faction: Grogol Gribb", views: 0 },
-  { id: "fxbalheg_7s", title: "Faction: RhobdoRana", views: 0 },
-  { id: "TC-mYynQyhI", title: "Faction: Dekkadorel Gnubbt", views: 0 },
+  { id: "5Hn5hYjbgRM", title: "Factions: Gylk Lobbnack", views: 0 },
+  { id: "c8YUGN3a584", title: "Factions: Grogol Gribb", views: 0 },
+  { id: "fxbalheg_7s", title: "Factions: RhobdoRana", views: 0 },
+  { id: "TC-mYynQyhI", title: "Factions: Dekkadorel Gnubbt", views: 0 },
   { id: "Kh10kmtfGqg", title: "Region: Goiana", views: 0 },
   { id: "-KFjJMOgv8A", title: "Countries Trakorien: Saphyna", views: 0 },
-  { id: "objR6mJ86IU", title: "Faction: Kallakadak Yldrokk", views: 0 },
+  { id: "objR6mJ86IU", title: "Factions: Kallakadak Yldrokk", views: 0 },
   { id: "pg3WrOPPGTA", title: "Countries Zorakin: Pendon", views: 0 },
 ];
 
@@ -284,7 +284,7 @@ const SECTION_MAP = {
   "Fable Animals":    "creatures",
   Elementals:         "creatures",
   Spirits:            "creatures",
-  "Lesser Demon":     "creatures",
+  "Lesser Demons":    "creatures",
   Shapeshifters:      "creatures",
   Plants:             "creatures",
   "Corporeal Undead": "creatures",
@@ -295,13 +295,13 @@ const SECTION_MAP = {
   "Animal Humanoids": "peoples",
   "Animals Humanoids":"peoples",
   Stonekin:           "peoples",
-  Sylvan:             "peoples",
+  Sylvans:            "peoples",
   "Dark Folks":       "peoples",
   Conflicts:          "conflicts",
-  Character:          "characters",
-  Religion:           "lore",
+  Characters:         "characters",
+  Religions:          "lore",
   Lore:               "lore",
-  Faction:            "lore",
+  Factions:           "lore",
   Region:             "geography",
 };
 
@@ -356,6 +356,7 @@ function parse(title) {
 const GROUP_OVERRIDES = {
   "hyuDaw-DdOo": "Ereb",         // Geography: Ereb Altor
   "kk4HXgQHIqQ": "Golwynda Sea", // Geography: Golwynda Sea
+  "2ufVYb13bQ0": "Cosmology",    // Lore: The Polar Regions → grouped with the cosmology pages
 };
 
 // Build the enriched video list
@@ -521,6 +522,63 @@ const EXTRA_CREATURES = [
   sec.sort((a, b) =>
     a.group === null ? -1 : b.group === null ? 1 : a.group.localeCompare(b.group)
   );
+  for (const g of sec) g.videos.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+// Markdown-only Lore pages from the Campaign Book: the cosmology topics are
+// grouped under "Cosmology" (alongside The Polar Regions); the world-reference
+// topics are ungrouped. They surface in the Lore nav and load their own .md via
+// the entry path, with the "Watch" button hidden by EntryDetail.
+const EXTRA_LORE = [
+  { group: "Cosmology", name: "The World of Altor" },
+  { group: "Cosmology", name: "The Gods" },
+  { group: "Cosmology", name: "The Heavenly Bodies" },
+  { group: "Cosmology", name: "Constellations" },
+  { group: null, name: "Climate" },
+  { group: null, name: "The Calendar" },
+  { group: null, name: "Trade" },
+  { group: null, name: "Languages" },
+].map((p, i) => ({
+  id: `x-lore-${i}`,
+  title: `Lore${p.group ? " " + p.group : ""}: ${p.name}`,
+  section: "lore",
+  group: p.group,
+  name: p.name,
+  noVideo: true,
+}));
+
+{
+  const sec = videosBySection.lore ?? (videosBySection.lore = []);
+  for (const entry of EXTRA_LORE) {
+    let grp = sec.find((g) => g.group === entry.group);
+    if (!grp) { grp = { group: entry.group, videos: [] }; sec.push(grp); }
+    grp.videos.push(entry);
+  }
+  sec.sort((a, b) =>
+    a.group === null ? -1 : b.group === null ? 1 : a.group.localeCompare(b.group)
+  );
+  for (const g of sec) g.videos.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+// Markdown-only Magic page from the Campaign Book.
+const EXTRA_MAGIC = [
+  { group: "Magic", name: "Dark Magic" },
+].map((p, i) => ({
+  id: `x-magic-${i}`,
+  title: `Magic: ${p.name}`,
+  section: "magic",
+  group: p.group,
+  name: p.name,
+  noVideo: true,
+}));
+
+{
+  const sec = videosBySection.magic ?? (videosBySection.magic = []);
+  for (const entry of EXTRA_MAGIC) {
+    let grp = sec.find((g) => g.group === entry.group);
+    if (!grp) { grp = { group: entry.group, videos: [] }; sec.push(grp); }
+    grp.videos.push(entry);
+  }
   for (const g of sec) g.videos.sort((a, b) => a.name.localeCompare(b.name));
 }
 

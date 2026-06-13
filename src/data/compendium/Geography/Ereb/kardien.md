@@ -166,3 +166,7 @@ The Conflux shattered the old jorisk culture. Kardien fared a little better than
 ## Foreign Relations
 
 Kardien is joined to Zorakin by an alliance of great age, forged when the echther chieftain Vidar Odise and Zorakin's King Valien swore a bond in the year 56 fO that binds the two realms still. To the east the elf-realm of Goiana broke away and now stands free, and its rise has loosened the crown's hold upon the northern duchies.
+
+## Heraldry
+
+The arms of Kardien bear three crowns, one for each of the dynasties that have held the realm, set upon a field crossed by a silver chevron and a black bar inherited from King Vidar II, who reigned from 400 to 464 eO. Together the charges proclaim the unbroken descent of the crown through its royal houses.

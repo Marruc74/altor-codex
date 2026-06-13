@@ -146,3 +146,7 @@ Now King Kuthegil Halfbeard, ruling an overpopulated land with a strong army, ju
 The king issues letters of marque that take pirates into Felician service. A privateer so licensed may plunder ships sailing under certain flags, keeping half the loot and enjoying Felician protection - a lucrative trade, and a tool to force reluctant neighbors into dealing with Felicien.
 
 Of late this has badly angered Erebos, whose merchants have suffered most. King Kuthegil denies that he protects the pirates, though every sign suggests he lies. Erebos has answered with armed escorts and by refusing to renew its trade deals, turning instead to Felicien's arch-enemy Berendien. The tension is rising, and observers call the Copper Sea a powder keg.
+
+## Heraldry
+
+The arms of Felicien bear a trireme, weapons, and a cluster of grapes. The trireme proclaims its mastery of the sea, the weapons its strength upon the land, and the grape-cluster the art and culture that flourish in its white cities.

@@ -139,3 +139,7 @@ Beneath him stand his **20 judges**, the judge-mages who read minds to weigh gui
 The Archmage's power is a foreign and evil sorcery, unknown to the scholars of Ereb. Its darkest expression is the **Labraatriet**, Vicotnik's own experiment-chamber, where he and his pupils refine their magic and search for new uses for it.
 
 The horrors told of the Labraatriet are many: bone-marrow turned to boiling lead, skeletons dissolved until only a quivering lump remains, a head set upon the belly, curses that leave a victim trembling at the touch of sunlight. No one leaves the chamber without grave deformity or shattered mind, and such ruined victims are most often cast out and killed. To be sentenced to the Labraatriet is, in every meaning, the end.
+
+## Heraldry
+
+The arms of Nidland are the same as those borne by Vicotnik himself - an armored gauntlet gripping three lightning-bolts, the sign of the Archmage's iron rule and the dark power he wields over the whole sealed realm.

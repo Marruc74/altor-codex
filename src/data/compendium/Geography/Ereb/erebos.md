@@ -143,3 +143,7 @@ When the old nobility moved to crush the merchants, civil war broke out from 512
 ## Foreign Relations
 
 Erebos and **Caddo** are arch-rivals, contending over sea trade through intrigue, diplomacy, and at times open violence. The quarrel is truly house against house, yet it spills onto the national stage. The two now share a common enemy in **Felicien**, whose pirates seize Erebos, Caddo, and Berendian ships alike, and both realms are rearming in answer. Trade disputes with **Zorakin** are likewise common.
+
+## Heraldry
+
+The arms of Erebos bear grain-barrels and a merchant ship, the plain marks of a realm whose prosperity is built upon trade. The barrels speak of the goods that fill its warehouses, and the ship of the merchant fleet that carries them across the Copper Sea.

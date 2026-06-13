@@ -181,3 +181,7 @@ The ransarder worship the **Æsir**, a god-family of very many members, the same
 ## Foreign Relations
 
 Ransard's history is a long quarrel with Trakorien, whose spies and assassins have struck down two vortigers and whose grip on Saphyna has cost the ransarder three wars. The subject realms of Timora, Alerien and Narim are bound to Ransard under vortiger-kings of its own blood, while neighboring Gauland pays tribute though it keeps its name. To the east the theocracy of Palinor has launched four crusades against the ransarder and been thrown back each time, and the Red Moon orcs of the Kardbergen remain a standing threat to the northern lands of Narim. With the elves of the Kardskogen relations are uneasy and now broken, soured by the orcs' assault and by the elves' own fear of a folk that covets their immortal blood.
+
+## Heraldry
+
+The arms of Ransard bear a single rampant griffin, reared upon its hind legs - the beast of the Kardbergen heights from which the realm built the flying cavalry that makes its name feared across all Ereb.

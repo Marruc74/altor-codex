@@ -29,3 +29,7 @@ A small number of miners work alongside dwarves.
 ## History
 
 Jorpagna was once the central region of the former empire. Around 1000 years ago, the "Konflux" occurred: a major event that shattered the realm. The region has never fully recovered from this.
+
+## Heraldry
+
+The arms of Jorpagna bear a sword, acorns, and an open book. The sword stands for strength, the acorns for power and the wisdom to wield it, and the open book for the knowledge upon which the old empire once raised itself.

@@ -14,7 +14,9 @@ But the land is not gentle. When the winds rise, they carry more than dust. The 
 
 Traxilme is a vast desert region beyond the passes of the Gizur Mountains from southern Sombatze. In ancient times the area appears to have been rich and flourishing, with gardens, cities, and advanced cultures. For many centuries it has been dry and desolate.
 
-The mountains are made of multicolored stone, causing the entire region to shimmer in shifting hues. The desert plains are covered in violet sand that shifts in tones of green and yellow, and the mountains appear in deep purplish red. Even the air can change color, likely due to magmatic currents lifting mineral particles into the atmosphere.
+The mountains are made of multicolored stone, causing the entire region to shimmer in shifting hues. The desert plains are covered in violet sand that shifts in tones of green and yellow, and the mountains appear in deep purplish red. Even the air can change color, likely due to magmatic currents lifting mineral particles into the atmosphere. The ground itself is strangely magnetic, so that needles spin without sense and the unwary lose all reckoning of direction among the rainbow plains.
+
+Beyond Traxilme stretches the deep interior of Soluna, where the ruins of vanished civilizations stand silent and the plains turn forbidden and poisonous. Few who pass that far ever return, and fewer still bring back word of what they found.
 
 ## Dangers
 

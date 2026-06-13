@@ -105,3 +105,7 @@ However, it has also faced scandals and internal conflicts, which have reduced i
 - Later, barbarians from Begusta arrived
 - Many wars followed; the land was long ruled from Begusta
 - Eventually, Magilre rebelled and became independent
+
+## Heraldry
+
+The arms of Magilre bear a green chevron set between two lilies, marking the unbroken continuity of the royal family, together with the arms of the Shining Way as a sign of the realm's piety.

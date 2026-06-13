@@ -108,3 +108,7 @@ Since then the land has remained obscure in the histories of Ereb - too internal
 ## Foreign Relations
 
 Klomellien's chief enemy is **Magilre**, which covets its raw materials. It keeps good relations with **Kardien**, trading salt in exchange for food and metals.
+
+## Heraldry
+
+The arms of Klomellien bear towers and a turtle. The towers stand for the power and cohesion of the union's many city-states, while the turtle - the giant klomull of the hero Klomul - serves as the national symbol of the whole land.

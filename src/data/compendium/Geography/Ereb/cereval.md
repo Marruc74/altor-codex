@@ -246,3 +246,7 @@ The Cerevalbergen are the realm of the dragons and the strange humanoids who kee
 - As a dragon nears maturity it seeks out its own cave and hoard, and most die in territorial fights with their kind
 - A few bond truly with their master and learn to bear him aloft in flight, while many remain too independent and in time rebel
 - Cereval's dragons are less long-lived than those elsewhere but develop twice as swiftly
+
+## Heraldry
+
+The arms of Cereval bear black crosses, set to stand for the unity of its many city-states - a single device drawing the independent towns of the heath together beneath one sign.

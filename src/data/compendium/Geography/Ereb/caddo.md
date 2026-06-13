@@ -100,3 +100,7 @@ The **Shining Way** wholly dominates the island and is the only permitted faith,
 ## Foreign Relations
 
 Caddo lives in chronic rivalry with the other trading states, chiefly **Erebos**, over mainland trade. It has long felt friction with **Zorakin** over that realm's conquest of *Fristaden*, which disrupted dwarven commerce and led Caddo and the dwarves to found the city **Ereno** further north. At present the island is drawn into conflict against **Felicien** over masked piracy, allied with **Berendien** and, reluctantly, with **Erebos**.
+
+## Heraldry
+
+The arms of Caddo are identical to those of the Shining Way, the sole faith of the island - a single sun, blazing token of the church that wholly governs the dalkers' devotion.

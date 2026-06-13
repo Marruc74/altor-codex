@@ -55,3 +55,7 @@ The economy is therefore typically feudal and agrarian.
 The dominant religion is the worship of the Young Gods.
 
 This places Berendien within the same religious tradition as many other realms in Ereb Altor.
+
+## Heraldry
+
+The arms of Berendien bear a key and a lion. The key stands for power and the wisdom to wield it rightly, while the lion proclaims the strength and might of the realm and its kings.

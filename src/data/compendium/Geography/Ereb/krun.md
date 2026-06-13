@@ -39,3 +39,7 @@ The population worships Mullah.
 Many westerners consider Mullah to be a distortion of the god Etin.
 
 The structure of the church resembles that of the Shining Path.
+
+## Heraldry
+
+The arms of Krun bear a red waxing crescent and a curved sabre. The crescent stands for Mullahism, the faith of the land, while the sabre - the kroksabel of Krun - serves as the realm's own symbol of power.

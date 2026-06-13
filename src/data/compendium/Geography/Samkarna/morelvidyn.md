@@ -19,7 +19,7 @@ In Morëlvidyn, no crown lasts long. Power belongs to those strong enough to tak
 
 ## Geography
 
-Morëlvidyn lies north of Samkarna along the Copper Sea, south of Caddo and Erebos. It consists of many small kingdoms with constantly shifting borders. The climate is warm and humid with strong coastal influence and heavy seasonal rains. The landscape features tropical and subtropical forests, mangrove coastlines, green hills, river valleys, and rocky archipelagos.
+Morëlvidyn lies along the northern coast of Samkarna on the Copper Sea, south of Caddo and Erebos. It consists of many small kingdoms with constantly shifting borders. The climate is warm and humid with strong coastal influence and heavy seasonal rains, as everywhere on this wet and swampy continent that grows rainier the further south one travels. The landscape features tropical and subtropical forests, mangrove coastlines, green hills, river valleys, and rocky archipelagos.
 
 ## Government
 
@@ -27,12 +27,14 @@ The region is unstable and highly fragmented. Pirate chiefs often seize power an
 
 ## People
 
-The Morëlvier are skilled sailors and fierce fighters, though rarely united. They are often described as brutal and disrespectful of life. In addition to humans, Morëlvidyn is home to brunankor and black pirate ducks, the latter known for raiding expeditions along the coasts of Kardien and Zorakin.
+The Morëlvier are good sailors but undisciplined, and fierce fighters who are rarely united. They are often described as brutal and showing little respect for life. In addition to humans, Morëlvidyn is home to the brown ducks and to the black pirate ducks, the latter known for raiding expeditions along the coasts of Kardien and Zorakin.
 
 ## Military
 
-Forces are skilled at sea but tend to lack discipline and organization. The slave trade is common, drawing people from inland Samkarna and northern Soluna.
+Forces are skilled at sea but tend to lack discipline and organization. The slave trade is common, and Morëlvidyn sells slaves seized from the deep interior of Samkarna as well as from northern Soluna.
 
 ## History
 
 According to tradition, the realm was once unified by **Haiëg-hamu**, the unifying king of Morëlvidyn, whose reign ended in 1038 B.O. He left the realm to his 216 sons, which accounts for the region's later fragmentation into many small powers.
+
+Around 1040 B.O. the seafarers of Morëlvidyn raided the shores of Sivoa, and then fell upon the paradise island of Melukha, throwing it into civil war.

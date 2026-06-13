@@ -18,23 +18,23 @@ Though peaceful in nature, Melukha is not defenseless. When danger comes, its pe
 
 ## Geography
 
-Melukha lies west of Sivoa. The climate is warm with lush vegetation and rich natural environment. The land is abundant and there is no scarcity of food.
+Melukha lies west of Sivoa, a paradise island set off the coast of the great swampy continent of Samkarna. The climate is warm with lush vegetation and a rich natural environment. The land is abundant and there is no scarcity of food, so its people live well from hunting and the bounty of nature and seek neither gold nor power.
 
 ## Society
 
-The society is loosely divided into tribal regions with many villages. Both tribes and villages are led by elder women, considered to hold the greatest wisdom. Women and older men often live together in villages, while younger men may travel between villages and live with women who choose to accept them. The population lives primarily from hunting and the rich vegetation of the land, and values enjoyment of life and the arts over the pursuit of wealth or power.
+The society is matriarchal, loosely divided into tribal regions with many villages. Both tribes and villages are led by their old women, considered to hold the greatest wisdom. Women and older men often live together in villages, while younger men may travel between villages and live with women who choose to accept them. The population lives primarily from hunting and the rich vegetation of the land, and values enjoyment of life and the arts over the pursuit of wealth or power.
 
 ## Culture
 
-Extreme hospitality is a central norm: caring for guests is seen as an honor. Life moves at a calm and unhurried pace. Storytelling is important, and a good story can be told many times.
+The Melukhans are famed across the southern seas for their great hospitality. Caring for a guest is seen as an honor, and a stranger is welcomed with warmth. Life moves at a calm and unhurried pace. Storytelling is important, and a good story can be told many times.
 
 ## Religion
 
-They worship **the Goddess**, a mother figure symbolizing the balance between life and nature. The spirits of ancestors are believed to remain close to the living. Death is not seen as dramatic or tragic: the dead are embalmed and kept in the home, sometimes as furniture or decoration. Children may sit on the laps of preserved ancestors, whose faces are sometimes painted.
+They worship **the Goddess**, a mother figure symbolizing the balance between life and nature. She is her own deity, not to be confused with the elves' Mother Earth. Alongside her they honor the household spirits that dwell in each home, and the spirits of ancestors are believed to remain close to the living. Death is not seen as dramatic or tragic: the dead are mummified and kept in the home, sometimes as furniture or decoration. Children may sit on the laps of preserved ancestors, whose faces are sometimes painted.
 
 ## Military
 
-War is considered distasteful but sometimes necessary. It is led by men, who are seen as more suited to such tasks. The brutality of war is not celebrated, though songs of victory exist. When danger comes, the people can quickly raise an army.
+War is considered a contemptible but sometimes necessary task, and one that falls to the men, who are seen as suited to such work. The brutality of war is not celebrated, though songs of victory exist. When danger comes, the people can quickly raise an army - as they were forced to do around 1040 B.O., when raiders out of Morëlvidyn fell upon the island and threw it into civil war.
 
 ## Economy
 

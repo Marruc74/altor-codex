@@ -149,3 +149,7 @@ A coalition of nomad clans that claims all the land north of the Wind Peaks and 
 ## The Habulon Pirates
 
 The Habulon are warlike, near-unbeatable seafarers who raid Barbia's coasts from the Ardian Bay. An old peace was once sealed in the shared grave-vault of the pirate Namik and the emperor Les, a symbol of truce that held for generations, until grave-robbers plundered it and reignited the pirate war.
+
+## Heraldry
+
+The arms of Barbia quarter fields of red and black triangles, recalling the ancient union of the northern and eastern barbarians from whom the empire was forged. Upon them rests a golden roundel, struck for the ransom that bound that union and sealed the peace between the two peoples.

@@ -126,3 +126,7 @@ The teachings of Odo won a great response in Zorakin from the year 0. By 278 a r
 ## Foreign Relations
 
 Zorakin has long been a fairly strong realm, strong enough to deter attack. It fought in Berendien's war against Felicien from 370 to 394, until its fleet was crushed and it sued for peace. Relations with Caddo have been strained ever since the Great Schism, marked by trade blockades and crusades in Morälvidyn. The kingdom enjoys good and profitable relations with Erebos, and for six centuries with Kardien, its sworn ally. Berendien too is an old friend, with good relations kept despite the distance between them.
+
+## Heraldry
+
+The arms of Zorakin are a composite drawn from the arms of its various duchies, the charges of each gathered into a single shield - a heraldic emblem of the feudal realm bound together beneath one crown.
