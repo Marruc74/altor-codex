@@ -41,7 +41,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px at the 16px root; scales with the root on large screens */
   line-height: 1.7;
   min-height: 100vh;
   overflow-x: hidden;
@@ -3705,4 +3705,48 @@ body {
     width: 110px;
     flex-basis: 110px;
   }
+}
+
+/* ─── Large-screen scaling ─────────────────────────────────────
+   The UI was tuned for ~1200px-wide content, which on large monitors
+   left wide empty margins and small text. These breakpoints step up
+   the root font size (most sizing is rem-based, so text and spacing
+   scale together) and widen the main content columns so the page
+   fills more of a big screen. Nothing changes below 1500px. */
+@media (min-width: 1500px) {
+  :root { --navbar-height: 60px; }
+  html { font-size: 17px; }
+  .compendium-layout { max-width: 1360px; }
+  .codex-section,
+  .countries-section,
+  .catalog-body,
+  .catalog-search-wrap,
+  .lore-grid { max-width: 1280px; }
+  .chronicles-sections { max-width: 1120px; }
+}
+
+@media (min-width: 1920px) {
+  :root { --navbar-height: 64px; }
+  html { font-size: 19px; }
+  .compendium-layout { max-width: 1700px; }
+  .compendium-sidebar { width: 280px; }
+  .codex-section,
+  .countries-section,
+  .catalog-body,
+  .catalog-search-wrap,
+  .lore-grid { max-width: 1560px; }
+  .chronicles-sections { max-width: 1300px; }
+}
+
+@media (min-width: 2560px) {
+  :root { --navbar-height: 70px; }
+  html { font-size: 21px; }
+  .compendium-layout { max-width: 2040px; }
+  .compendium-sidebar { width: 320px; }
+  .codex-section,
+  .countries-section,
+  .catalog-body,
+  .catalog-search-wrap,
+  .lore-grid { max-width: 1860px; }
+  .chronicles-sections { max-width: 1500px; }
 }
