@@ -1,6 +1,6 @@
 # Necromancy
 
-Necromancy is the magic of death — the art of the corpse, the curse and the grave. It is the grimmest of the workings that grew out of mentalism, the school of body and soul, and the one men shun most. The necromancer does not heal nor build; he raises the dead, calls down plague and curse, and wastes the living away, and the dead-house and the battlefield are his proper haunts.
+Necromancy is the magic of death, the art of the corpse, the curse and the grave. It is the grimmest of the workings that grew out of mentalism, the school of body and soul, and the one men shun most. The necromancer does not heal nor build; he raises the dead, calls down plague and curse, and wastes the living away, and the dead-house and the battlefield are his proper haunts.
 
 ## Overview
 

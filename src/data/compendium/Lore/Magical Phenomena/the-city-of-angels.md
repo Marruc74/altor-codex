@@ -1,6 +1,6 @@
 # The City of Angels
 
-High above the peaks of the Aralern, among the clouds where no road climbs, drifts a city of impossible splendour — towers and halls of light hanging in the empty air. It is the City of Angels, and for all its beauty it is a place of terror, for the angels who dwell there have long since gone mad.
+High above the peaks of the Aralern, among the clouds where no road climbs, drifts a city of impossible splendour, towers and halls of light hanging in the empty air. It is the City of Angels, and for all its beauty it is a place of terror, for the angels who dwell there have long since gone mad.
 
 ## Overview
 

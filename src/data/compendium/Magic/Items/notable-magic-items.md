@@ -1,6 +1,6 @@
 # Notable Magic Items
 
-Not every enchantment is bent to war or ruin. The mages of Ereb have, over the ages, bound their art into a great many useful things — carpets that fly, bottles that never run dry, boots that walk on water — and the best of them carry the names of the masters who first made them. What follows is a traveller's sampling of the wares a wealthy buyer might find, at ruinous price, in the workshops and back-rooms of the academies.
+Not every enchantment is bent to war or ruin. The mages of Ereb have, over the ages, bound their art into a great many useful things (carpets that fly, bottles that never run dry, boots that walk on water), and the best of them carry the names of the masters who first made them. What follows is a traveller's sampling of the wares a wealthy buyer might find, at ruinous price, in the workshops and back-rooms of the academies.
 
 ## Travel and Flight
 

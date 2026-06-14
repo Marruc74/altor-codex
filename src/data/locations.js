@@ -56,6 +56,8 @@ export const pins = [
   { id: "mereld",                        name: "Mereld",                      type: "region",        continent: "ereb",         tagline: "", x: 1634, y: 1413 },
   { id: "bzegusta",                      name: "Bzegusta",                    type: "region",        tagline: "", x: 1674, y: 1390 },
   { id: "sanritra",                      name: "Sanritra",                    type: "region",        tagline: "", x: 1523, y: 2067 },
+  { id: "krilloan",                      name: "Krilloan",                    type: "city",          continent: "samkarna",     tagline: "", x: 1565, y: 2030 },
+  { id: "tannatopol",                    name: "Tannatopol",                  type: "site",          continent: "samkarna",     tagline: "", x: 1597, y: 2058 },
   { id: "orghin",                        name: "Orghin",                      type: "region",        tagline: "", x: 2612, y: 558 },
   { id: "slimpaku",                      name: "Slimpaku",                    type: "region",        tagline: "", x: 4291, y: 976 },
   { id: "sanithsid",                     name: "Sanithsid",                   type: "region",        tagline: "", x: 2128, y: 218 },

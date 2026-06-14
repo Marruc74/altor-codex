@@ -12,7 +12,7 @@ Between the walled worlds of the Multiverse lies a country that belongs to none 
 
 ## The Colourless Country
 
-To step through a portal into the Grey Halls is to leave the body behind; only the astral form crosses over, a grey reflection of the traveller stripped of all hue. What lies beyond is hall upon hall without end, ranked with pillars and crowded with statues and old memories, lit by no sun. Each gateway out stands as a locked ancient door of iron, graven with runes, a stone plate beside it carved with the sign of the world to which it leads. The mage who knows the runes may find his way; the one who does not may wander until he forgets even the shape of the flesh he left behind, and so is lost beyond recall, unless he can seize some new body to wear.
+To step through a portal into the Grey Halls is to leave the body behind; only the astral form crosses over, a grey reflection of the traveller stripped of all hue. What lies beyond is hall upon hall without end, ranked with pillars and crowded with statues and old memories, lit by no sun. Each gateway out is a locked ancient door of iron, graven with runes, a stone plate beside it carved with the sign of the world to which it leads. The mage who knows the runes may find his way; the one who does not may wander until he forgets even the shape of the flesh he left behind, and so is lost beyond recall, unless he can seize some new body to wear.
 
 ## Traces and Wanderers
 

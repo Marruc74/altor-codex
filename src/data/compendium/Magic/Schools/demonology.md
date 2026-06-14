@@ -13,11 +13,11 @@ Demonology is the art of trafficking with the demons of Demonicum — of calling
 
 ## Names and Summoning
 
-The whole craft turns upon names. Every demon bears a usual name, by which it may be called across the walls of the Multiverse, found in old books or sensed by a minor working when the demon is near. But every demon also bears a true name, given it by the Light to hold it in check: spoken in the demon's presence, the true name binds it utterly to the speaker's will, and a demon can do no harm to one who knows it. To summon, the demonologist draws his circles and his pentagram, calls the demon by its usual name into the trap he has prepared, and there masters it, binds it, or shapes it to his purpose — and if he is wise, sends it home again before his wards can fail.
+The whole craft turns upon names. Every demon bears a usual name, by which it may be called across the walls of the Multiverse, found in old books or sensed by a minor working when the demon is near. But every demon also bears a true name, given it by the Light to hold it in check: spoken in the demon's presence, the true name binds it utterly to the speaker's will, and a demon can do no harm to one who knows it. To summon, the demonologist draws his circles and his pentagram, calls the demon by its usual name into the trap he has prepared, and there masters it, binds it, or shapes it to his purpose, and if he is wise, sends it home again before his wards can fail.
 
 ## Circles and Pentagrams
 
-A demonologist's life hangs upon the lines he draws. A protection circle keeps a summoned thing from reaching those within it; a prison-pentagram, drawn the other way about, pens the demon in and saps its strength. Such figures may be strengthened with costly materials worked into the lines — silver and mithril, the blood of dragons and of demons — or, for a moment's need, by the sacrifice of the magician's own spirit. But every circle is only as strong as its weakest stroke: a single broken line, and the whole ward fails at once, with the demon loosed inside it.
+A demonologist's life hangs upon the lines he draws. A protection circle keeps a summoned thing from reaching those within it; a prison-pentagram, drawn the other way about, pens the demon in and saps its strength. Such figures may be strengthened with costly materials worked into the lines (silver and mithril, the blood of dragons and of demons), or, for a moment's need, by the sacrifice of the magician's own spirit. But every circle is only as strong as its weakest stroke: a single broken line, and the whole ward fails at once, with the demon loosed inside it.
 
 ## The Faithless Servant
 

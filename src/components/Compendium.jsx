@@ -104,7 +104,7 @@ const CONTINENTS = [
 
 // Curated non-country pins that should also appear as places in the Geography
 // nav (nested under their continent), e.g. a notable region/forest with a video.
-const EXTRA_GEO_PLACE_IDS = new Set(["mereld", "goiana"]);
+const EXTRA_GEO_PLACE_IDS = new Set(["mereld", "goiana", "krilloan", "tannatopol"]);
 const geoPlaces = pins
   .filter((p) => p.type === "country" || EXTRA_GEO_PLACE_IDS.has(p.id))
   .sort((a, b) => a.name.localeCompare(b.name));
@@ -219,10 +219,37 @@ const RELATED_BY_SLUG = {
   "the-multiverse": ["demonicum", "the-grey-halls", "the-gods", "the-world-of-altor"],
   "the-grey-halls": ["the-multiverse", "demonicum", "demonology"],
   "demonicum": ["the-multiverse", "the-grey-halls", "nehcrom", "bemoth", "caliban", "demonology"],
-  "nehcrom": ["demonicum", "bemoth", "caliban"],
-  "bemoth": ["demonicum", "nehcrom", "caliban", "animism"],
-  "caliban": ["demonicum", "nehcrom", "bemoth"],
-  "demonology": ["demonicum", "the-grey-halls", "necromancy", "dark-magic", "demon-prince"],
+  "nehcrom": ["demonicum", "bemoth", "caliban", "azoth", "demonic-artifacts"],
+  "bemoth": ["demonicum", "nehcrom", "caliban", "animism", "karnack", "nerocq"],
+  "caliban": ["demonicum", "nehcrom", "bemoth", "khurun", "darubah", "feot"],
+  "demonology": ["demonicum", "the-grey-halls", "necromancy", "dark-magic", "demon-prince", "demonic-artifacts"],
+  // Named demons of Demonicum and the demonic artifacts (Kaos Väktare).
+  "azoth": ["nehcrom", "demonicum"],
+  "karnack": ["bemoth", "demonicum", "nerocq"],
+  "nerocq": ["bemoth", "demonicum", "karnack"],
+  "darubah": ["caliban", "demonicum", "khurun"],
+  "feot": ["caliban", "demonicum", "khurun"],
+  "khurun": ["caliban", "demonicum", "darubah"],
+  "fire-demon": ["demonicum", "ice-demon"],
+  "ice-demon": ["demonicum", "fire-demon"],
+  "knowledge-demon": ["demonicum"],
+  "demonic-artifacts": ["demonology", "demonicum", "nehcrom", "bemoth", "soul-bound-weapons"],
+  // The Warrior's Handbook: soul-bound weapons and the weapon-academies.
+  "soul-bound-weapons": ["notable-magic-items", "demonic-artifacts", "demonology", "demon-prince"],
+  "notable-magic-items": ["soul-bound-weapons", "demonic-artifacts"],
+  "weapon-academies": ["cereval", "jorduashur", "ice-demon", "jih-pun"],
+  // Thieves & Assassins: the underworld guilds and crime.
+  "kharynos": ["felicien", "nidland", "the-underworld-guilds"],
+  "the-blood-spattered-feather": ["the-underworld-guilds", "black-duck", "rhobdorana"],
+  "the-underworld-guilds": ["kharynos", "the-blood-spattered-feather", "rhobdorana", "crime-and-punishment"],
+  "crime-and-punishment": ["the-underworld-guilds"],
+  "rhobdorana": ["the-underworld-guilds", "the-blood-spattered-feather"],
+  // Hjältarnas Handbok: the nature of heroism (ties to the gods' game).
+  "heroes": ["the-gods", "demonicum", "dark-magic"],
+  // Krilloan campaign book: the ruling order, the demon-cults, their goddess.
+  "ordo-magica": ["krilloan", "tannatopol", "demonology"],
+  "the-oktagon": ["imaria", "the-heavenly-bodies", "montures", "krilloan", "demonology"],
+  "imaria": ["the-oktagon", "montures", "krilloan"],
 };
 
 // ── CountryDetail ─────────────────────────────────────────────────────────
@@ -1197,11 +1224,15 @@ export default function Compendium({
                     </button>
 
                     {secOpen && groups.map((g, i) => {
+                      // A group whose name just repeats the section (e.g. the
+                      // "Magic" group under the Magic section) is redundant —
+                      // render its entries flat, with no sub-header.
+                      const flat = !g.group || skipGroup(g.group, section.id);
                       const subKey = `${section.id}-${g.group ?? i}`;
                       const subOpen = openSubGroups[subKey] ?? false;
                       return (
                         <div key={g.group ?? `__g${i}`} className="compendium-nav__group">
-                          {g.group ? (
+                          {!flat ? (
                             <button
                               className="compendium-nav__group-hd"
                               onClick={() => toggleSubGroup(subKey)}
@@ -1211,7 +1242,7 @@ export default function Compendium({
                               <span className="compendium-nav__toggle">{subOpen ? "▲" : "▼"}</span>
                             </button>
                           ) : null}
-                          {(g.group ? subOpen : true) && (
+                          {(flat ? true : subOpen) && (
                             <ul className="compendium-nav__list">
                               {g.videos.map((v) => (
                                 <li key={v.id}>

@@ -1,6 +1,6 @@
 # Animism
 
-Animism is the eldest of the three great schools of magic, the art of the living world — of beasts and growing things, of the wild places and the green. Where the elementalist commands fire and stone and the mentalist the mind, the animist speaks to what breathes and grows, and bends it to his will. It is the oldest art men remember, older than the academies, and its mages have always kept closer to the wilderness than to the city.
+Animism is the eldest of the three great schools of magic, the art of the living world, of beasts and growing things, of the wild places and the green. Where the elementalist commands fire and stone and the mentalist the mind, the animist speaks to what breathes and grows, and bends it to his will. It is the oldest art men remember, older than the academies, and its mages have always kept closer to the wilderness than to the city.
 
 ## Overview
 
@@ -25,4 +25,4 @@ No less than the beasts, the growing world answers the animist. He shapes and he
 
 ## The Great Summons
 
-The crowning works of animism call up powers greater than any single beast. The animist may summon the rådare, the guardian-godling of a kind of animal, to counsel or to aid him; he may call a terrible storm down out of a clear sky. Most dread of all is the Wild Hunt, when the horned hunter and his hell-hounds are loosed upon a chosen quarry, and run it down wherever it flees.
+The greatest works of animism call up powers greater than any single beast. The animist may summon the rådare, the guardian-godling of a kind of animal, to counsel or to aid him; he may call a terrible storm down out of a clear sky. Most dread of all is the Wild Hunt, when the horned hunter and his hell-hounds are loosed upon a chosen quarry, and run it down wherever it flees.

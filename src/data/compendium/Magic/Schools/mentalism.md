@@ -1,6 +1,6 @@
 # Mentalism
 
-Mentalism is the school of body and soul — the art of the mind, the senses and the flesh, and of illusion and death besides. It is the youngest of the three great schools and the most far-reaching, still growing where the elder arts have long since settled into their forms. Its workings are quiet ones, worked upon thought and memory and the body's own substance, and for that they are often the most feared: the elementalist's fire can be seen coming, but the mentalist's hand falls unseen.
+Mentalism is the school of body and soul, the art of the mind, the senses and the flesh, and of illusion and death besides. It is the youngest of the three great schools and the widest-ranging, still growing where the elder arts have long since settled into their forms. Its workings are quiet ones, worked upon thought and memory and the body's own substance, and for that they are often the most feared: the elementalist's fire can be seen coming, but the mentalist's hand falls unseen.
 
 ## Overview
 
@@ -17,7 +17,7 @@ The mentalist senses a person near at hand, reads whether a man speaks true, and
 
 ## Mastery of the Body
 
-Upon the flesh the school works no less surely. The mentalist endures hunger and thirst, masters his own pain, resists disease or calls it down upon another, twists a limb or a whole body out of true, paralyses, alters a person's very shape — and at the last, kills with a word.
+Upon the flesh the school works no less surely. The mentalist endures hunger and thirst, masters his own pain, resists disease or calls it down upon another, twists a limb or a whole body out of true, paralyses, alters a person's very shape, and at the last kills with a word.
 
 ## Illusion
 
@@ -25,4 +25,4 @@ The illusionist casts false sights and sounds, and sees through any illusion cas
 
 ## The Shadow of Death
 
-The darkest branch of mentalism is the magic of death — the raising of corpses, the calling of plague and curse, the slow wasting of the living. This is the necromancer's full art, and it is told elsewhere; but every mentalist knows that the road into the mind leads, in the end, to the door of the grave.
+The darkest branch of mentalism is the magic of death: the raising of corpses, the calling of plague and curse, the slow wasting of the living. This is the necromancer's full art, and it is told elsewhere; but every mentalist knows that the road into the mind leads, in the end, to the door of the grave.

@@ -1,6 +1,6 @@
 # Demonicum
 
-At the very brink of creation, where the ordered worlds give way to raw Chaos, lies the ring of frontier realms called Demonicum. Here the higher powers set their fiercest creations to stand guard — the demons — and here, on the outermost wall of the Multiverse, a war without end is fought against the dark. To the people of Altor a demon is a thing of pure evil, and so it seems; but in truth the demons were made to be the shield of all the worlds behind them.
+At the very brink of creation, where the ordered worlds give way to raw Chaos, lies the ring of frontier realms called Demonicum. Here the higher powers set their fiercest creations to stand guard — the demons — and here, on the outermost wall of the Multiverse, a war without end is fought against the dark. To the people of Altor a demon is a thing of pure evil, and so it seems; yet in truth the demons were made to be the shield of all the worlds behind them.
 
 ## Overview
 
@@ -13,7 +13,7 @@ At the very brink of creation, where the ordered worlds give way to raw Chaos, l
 
 ## The Nature of Demons
 
-The demons were shaped to resist the corrupting force of Chaos, and to that end were given a higher consciousness and great powers of mind. The same gifts made them what they are: independent, scrupleless and without compassion, false beasts who keep no word unless a higher power or a cosmic law compels them. Aggression is the root of their nature, and an ever-growing hunger for power its branch. The higher powers, fearing their own creations might one day grow mightier than themselves and march inward upon the ordered worlds, walled the demons into Demonicum along with the Chaos they were made to fight. A demon slain in any world dies only in its body, which crumbles to dust; its spirit returns to its home plane to take a new shape, and there alone can it be destroyed for good.
+The demons were shaped to resist the corrupting force of Chaos, and to that end were given a higher consciousness and great powers of mind. The same gifts made them what they are: independent and without compassion, false beasts who keep no word unless a higher power or a cosmic law compels them. Aggression is the root of their nature, and an ever-growing hunger for power its branch. The higher powers, fearing their own creations might one day grow mightier than themselves and march inward upon the ordered worlds, walled the demons into Demonicum along with the Chaos they were made to fight. A demon slain in any world dies only in its body, which crumbles to dust; its spirit returns to its home plane to take a new shape, and there alone can it be destroyed for good.
 
 ## The Demon Courts
 
@@ -25,4 +25,4 @@ Demonicum is itself a multitude of worlds. Best known are **Caboon**, the war-re
 
 ## How the Peoples Regard Demons
 
-Wherever a demon is summoned into Altor, ruin follows, and the peoples of the world have learned to dread the word. Humans, who first opened the portals to Demonicum, have suffered worst, and their demonologists are feared and hunted even where their craft is tolerated. The elves count demons soulless monsters and are the foremost of their hunters and tamers. The dwarves judge a demon only by what it does, and meddle little; the halflings flee the very thought of one; and the ducks meet them not with fear but with a near-berserk hatred. Only the dark folk are at ease with demons, for they are close to them in nature — the lesser demons they take for heroes, and the mighty ones they worship as gods.
+Wherever a demon is summoned into Altor, ruin follows, and the peoples of the world have learned to dread the word. Humans, who first opened the portals to Demonicum, have suffered worst, and their demonologists are feared and hunted even where their craft is tolerated. The elves count demons soulless monsters and are the foremost of their hunters and tamers. The dwarves judge a demon only by what it does, and meddle little; the halflings flee the very thought of one; and the ducks meet them not with fear but with a near-berserk hatred. Only the dark folk are at ease with demons, for they are close to them in nature: the lesser demons they take for heroes, and the mighty ones they worship as gods.

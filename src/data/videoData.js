@@ -357,6 +357,13 @@ const GROUP_OVERRIDES = {
   "hyuDaw-DdOo": "Ereb",         // Geography: Ereb Altor
   "kk4HXgQHIqQ": "Golwynda Sea", // Geography: Golwynda Sea
   "2ufVYb13bQ0": "Cosmology",    // Lore: The Polar Regions → grouped with the cosmology pages
+  // Magic schools → the "Schools" sub-section (otherwise they parse to the
+  // redundant "Magic" group). Their .md lives under Magic/Schools/.
+  "HaLYjl6tiJI": "Schools",      // Magic: Witchcraft
+  "pUr5p9d5vis": "Schools",      // Magic: Necromancy
+  "YecsaEgivSM": "Schools",      // Magic: Animism
+  "lERRxI7m5K8": "Schools",      // Magic: Mentalism
+  "ogDV_W-G6uU": "Schools",      // Magic: Elemental
 };
 
 // Build the enriched video list
@@ -504,6 +511,15 @@ const EXTRA_CREATURES = [
   { group: "Fable Animals", name: "Insectoid" },
   { group: "Plants", name: "Tree Master" },
   { group: "Shapeshifters", name: "Shapeshifter" },
+  { group: "Demons of Demonicum", name: "Azoth" },
+  { group: "Demons of Demonicum", name: "Karnack" },
+  { group: "Demons of Demonicum", name: "Nerocq" },
+  { group: "Demons of Demonicum", name: "Darubah" },
+  { group: "Demons of Demonicum", name: "Feot" },
+  { group: "Demons of Demonicum", name: "Khurún" },
+  { group: "Demons of Demonicum", name: "Fire Demon" },
+  { group: "Demons of Demonicum", name: "Ice Demon" },
+  { group: "Demons of Demonicum", name: "Knowledge Demon" },
 ].map((p, i) => ({
   id: `x-creature-${i}`,
   title: `Creatures ${p.group}: ${p.name}`,
@@ -540,6 +556,10 @@ const EXTRA_LORE = [
   { group: "Cosmology", name: "Constellations" },
   { group: "Factions", name: "Burned Earth Clan" },
   { group: "Factions", name: "Grokashak Oggra" },
+  { group: "Factions", name: "Kharynos" },
+  { group: "Factions", name: "The Blood-spattered Feather" },
+  { group: "Factions", name: "Ordo Magica" },
+  { group: "Religions", name: "The Oktagon" },
   { group: "Magical Phenomena", name: "The Black Water" },
   { group: "Magical Phenomena", name: "The Bane Storm" },
   { group: "Magical Phenomena", name: "The City of Angels" },
@@ -554,6 +574,10 @@ const EXTRA_LORE = [
   { group: null, name: "The Calendar" },
   { group: null, name: "Trade" },
   { group: null, name: "Languages" },
+  { group: null, name: "Weapon Academies" },
+  { group: null, name: "The Underworld Guilds" },
+  { group: null, name: "Crime and Punishment" },
+  { group: null, name: "Heroes" },
 ].map((p, i) => ({
   id: `x-lore-${i}`,
   title: `Lore${p.group ? " " + p.group : ""}: ${p.name}`,
@@ -578,9 +602,11 @@ const EXTRA_LORE = [
 
 // Markdown-only Magic page from the Campaign Book.
 const EXTRA_MAGIC = [
-  { group: "Magic", name: "Dark Magic" },
-  { group: "Magic", name: "Demonology" },
-  { group: "Magic", name: "Notable Magic Items" },
+  { group: "Schools", name: "Dark Magic" },
+  { group: "Schools", name: "Demonology" },
+  { group: "Items", name: "Demonic Artifacts" },
+  { group: "Items", name: "Notable Magic Items" },
+  { group: "Items", name: "Soul-Bound Weapons" },
 ].map((p, i) => ({
   id: `x-magic-${i}`,
   title: `Magic: ${p.name}`,

@@ -1,6 +1,6 @@
 # Elemental
 
-Elemental magic is the school of the raw stuff of the world — earth and air, fire and water and bitter cold. Its mages bend the elements themselves, raising walls of flame and tides of water, splitting the ground and calling the storm. Of the three great schools it is the most openly terrible in war, for its workings are loud and vast and leave the land marked behind them.
+Elemental magic is the school of the raw stuff of the world: earth and air, fire and water and bitter cold. Its mages bend the elements themselves, raising walls of flame and tides of water, splitting the ground and calling the storm. Of the three great schools it is the most openly terrible in war, for its workings are loud and vast and leave the land marked behind them.
 
 ## Overview
 
@@ -29,4 +29,4 @@ In its watery aspect the school purifies, shapes and conjures water, drowns a fo
 
 ## The Conjured Powers
 
-The element-beasts — the stone-giant, the storm-bird, the fire-drake, the leviathan and the ice-serpent — are reckoned the crowning works of the school, each a spirit of its element given monstrous shape and bound, for a while, to the mage who called it.
+The element-beasts (the stone-giant, the storm-bird, the fire-drake, the leviathan and the ice-serpent) are reckoned the greatest works of the school, each a spirit of its element given monstrous shape and bound, for a while, to the mage who called it.

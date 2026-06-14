@@ -1,6 +1,6 @@
 # Caliban
 
-Caliban, the Eternal Wind, is the third of the great Guardians of Demonicum, and the strangest. He feeds upon the sick minds and broken drives of mortals, for madness was the weapon he turned against Chaos — until that weapon turned upon him and unmade his own reason. Now he is the king of madness, and spreads insanity from world to world, seeking to claim them all and to avenge the curse that took his wits.
+Caliban, the Eternal Wind, is the third of the great Guardians of Demonicum, and the strangest. He feeds upon the sick minds and broken drives of mortals, for madness was the weapon he turned against Chaos, until that weapon turned upon him and unmade his own reason. Now he is the king of madness, and spreads insanity from world to world, seeking to claim them all and to avenge the curse that took his wits.
 
 ## Overview
 
@@ -17,4 +17,4 @@ Caliban appears as a vast humanoid of human proportion but for his height, and a
 
 ## The Spreading Insanity
 
-Caliban wages a recurring war with Nehcrom, and keeps clear of open battle with Bemoth, whose beasts are proof against the madness that is his only weapon. He commands hordes of mad warriors, berserks and crazed demonettes, and of the three Guardians his reach into Altor is the widest, for his cults take root easily among the lustful, the weak-willed and the decadent — in nearly every human society, and even in a few among the dwarves. Those who keep order, wherever they hold it, hunt his servants without mercy.
+Caliban wages a recurring war with Nehcrom, and keeps clear of open battle with Bemoth, whose beasts are proof against the madness that is his only weapon. He commands hordes of mad warriors, berserks and crazed demonettes, and of the three Guardians his reach into Altor is the widest, for his cults take root easily among the lustful and the weak-willed, in nearly every human society, and even in a few among the dwarves. Those who keep order, wherever they hold it, hunt his servants without mercy.
