@@ -505,6 +505,7 @@ const EXTRA_CREATURES = [
   { group: "Magical Creatures", name: "Golem" },
   { group: "Magical Creatures", name: "Guludur Abomination" },
   { group: "Magical Creatures", name: "Guardian" },
+  { group: "Magical Creatures", name: "Dragon Warrior" },
   { group: "Fable Animals", name: "Drinnen" },
   { group: "Fable Animals", name: "Ghertûm" },
   { group: "Fable Animals", name: "Giant Octopus" },
