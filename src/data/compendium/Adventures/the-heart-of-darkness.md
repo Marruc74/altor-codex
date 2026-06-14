@@ -40,6 +40,9 @@ sections:
       - name: Godvindel
         description: "The magic-master of Eledain's mountain temple, a hundred and seven years old, in a blue robe, very kind and attentive, though with a tendency to condescend a little to women and non-humans that he knows of and tries to master. A mighty magician happiest in quiet study of magic and history, he counts the war its own great tragedy for keeping him from it. He receives, heals and guides the heroes, destroys any undead bound in the dagger, reads the map to the temple of darkness, and gives them companions for the final battle."
         image: /compendium/Adventures/TheHeartOfDarkness/Mountain Temple/Godvindel.jpg
+      - name: The Brotherhood of the Eternally Shining Star
+        entry: the-brotherhood-of-the-eternally-shining-star
+        description: "Eledain's pacifist knightly order, whose knights are known as the Knights of Eledain. Sworn to draw a weapon only at the last resort, they take the field here at that last resort, riding from the mountain temple against the dark lord in the war for the Eastlands."
       - name: Ellindor
         description: One of three knights of Eledain in shining full plate with the star of Eledain on the breast, all in their prime, intensely dutiful and unimaginative. Ellindor is tall and fair, and like Gardon he hates the priests of Sathmog who march with the company.
         image: /compendium/Adventures/TheHeartOfDarkness/Mountain Temple/Ellindor.jpg

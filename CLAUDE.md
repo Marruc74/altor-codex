@@ -60,6 +60,8 @@ All styles are in `src/App.css` (~75KB) — custom hand-written CSS with no fram
 - **New map pin**: Add to `src/data/locations.js`; optionally create `src/data/locations/<id>.js` for detail.
 - **New videos**: Add to `src/data/videoData.js`.
 
+**IMPORTANT — Humanize all added prose.** Any prose written for this site (codex/compendium markdown bodies, taglines, summaries, card descriptions, etc.) must be passed through the `humanizer` skill before it is considered done. Run the skill on the new or edited text and apply its fixes so nothing reads as AI-generated.
+
 ### Country/Region Style
 
 See memory reference for the country file style guide (formatting rules for `.md` files).

@@ -28,7 +28,21 @@ characters:
     description: "A dwarf demonologer, alchemist and inventor, the city's great industrialist, who helps the band and gives them a gilded apple that can break any enchantment once."
 creatures:
   - name: Helsikel
+    entry: fire-dragon
     description: "The dragon Morriart raised anew: grown from a scrap of the dead beast's hide into a great egg, hatched, and aged to full size by witchcraft, its old soul driven back into it. Jesefael means to ride it against Tannatopol."
+  - name: Elmer
+    entry: pegasus
+    description: "The winged horse Jesefael keeps in the cherry-garden atop his pillar-tower, his swift way down from its height and a fine prize in its own right."
+  - name: Giant Spiders
+    entry: giant-spider
+    description: "A pair of monstrous spiders penned in the dragon-cave workshop, their bite carrying a paralysing venom, among the captive beasts the band must pass to reach the dragon."
+  - name: Giant Amoeba
+    entry: giant-amoeba
+    description: "A colossal, shapeless blob of dissolving plasm kept as a living weapon in Jesefael's tower, formless and slow but ruinous to anything it folds around."
+  - name: Giant Scorpion
+    description: "An immense scorpion caged in the dragon-cave, its sting loaded with a venom swift enough to kill a grown man in minutes."
+  - name: The Caged Mutants
+    description: "The twisted things Jesefael keeps caged in his workshop: men reshaped with claws and fangs, a tiger given a human face, a three-headed spitting reptile, the leavings of fifty years of animist experiment."
 places:
   - name: Krilloan
     entry: krilloan

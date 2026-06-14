@@ -17,10 +17,12 @@ characters:
   - name: Mildred Yeovil
     description: "The Black Rose Brotherhood's envoy, who comes to the band with the one answer the churches cannot give: that an angel can be matched only by a devil, and that the Brotherhood knows how to raise one."
   - name: Teitan
+    entry: demon-prince
     description: "The abyssal champion of the demon-lord Hemaquiel, the dark mirror of Angarion, into which one of the band, marked from birth with a rose, may be transformed to fight the angel on equal terms."
 creatures:
   - name: The Cairn-wraiths
-    description: "The ghosts of the thirteen fundamentalist monks who died in the cloister's burning long ago, lingering in the crypt below the chapel, who chose Ulrik as the angel's vessel and rise against any who disturb their tombs."
+    entry: spectre
+    description: "The ghosts of the thirteen fundamentalist monks who died in the cloister's burning long ago, lingering in the crypt below the chapel under the spirit of their old abbot. They chose Ulrik as the angel's vessel and rise against any who disturb their tombs, draining the life from the living."
 places:
   - name: Krilloan
     entry: krilloan

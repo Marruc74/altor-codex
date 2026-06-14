@@ -68,6 +68,7 @@ export const adventures = Object.entries(files)
       seriesPart: data.seriesPart ?? null,
       videoIds: data.videoIds ?? [],
       characters: data.characters ?? [],
+      creatures: data.creatures ?? [],
       places: data.places ?? [],
       items: data.items ?? data.objects ?? [],
       sections: data.sections ?? [],

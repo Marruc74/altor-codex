@@ -250,6 +250,11 @@ const RELATED_BY_SLUG = {
   "ordo-magica": ["krilloan", "tannatopol", "demonology"],
   "the-oktagon": ["imaria", "the-heavenly-bodies", "montures", "krilloan", "demonology"],
   "imaria": ["the-oktagon", "montures", "krilloan"],
+  // Eledain, the god of light and stars, and his one knightly order the
+  // Brotherhood of the Eternally Shining Star (the Knights of Eledain), who
+  // appear both in the Path of Honor and at the Skeleton Village.
+  "eledain": ["the-brotherhood-of-the-eternally-shining-star", "the-gods"],
+  "the-brotherhood-of-the-eternally-shining-star": ["eledain", "the-gods"],
 };
 
 // ── CountryDetail ─────────────────────────────────────────────────────────
@@ -665,7 +670,12 @@ function AdventureDetail({ adventure, onVideoSelect, onOpenPage }) {
   const characters = adventure.characters ?? [];
   const byName = (a, b) => (a.name ?? "").localeCompare(b.name ?? "");
   const npcs = characters.filter((c) => (c.type ?? "npc") !== "creature").sort(byName);
-  const creatures = characters.filter((c) => c.type === "creature").sort(byName);
+  // Creatures come from a dedicated top-level `creatures:` list and/or from
+  // `characters` entries tagged `type: creature`; merge both so either style renders.
+  const creatures = [
+    ...characters.filter((c) => c.type === "creature"),
+    ...(adventure.creatures ?? []),
+  ].sort(byName);
   const places = adventure.places ?? [];
   const items = adventure.items ?? [];
   const sections = adventure.sections ?? [];

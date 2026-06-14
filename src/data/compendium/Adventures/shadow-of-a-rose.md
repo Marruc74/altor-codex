@@ -13,6 +13,7 @@ characters:
   - name: Hilja Adriagoles
     description: "A paralysed medium of the Brotherhood who sends her soul out of her wasted body, slips into one of the adventurers unseen, and rides along inside the band as their hidden spy."
   - name: Lerajie Dantalion
+    entry: vampire
     description: "An ancient vampire-sorcerer of Imária's cult, once a queen's counsellor, freed from his sarcophagus by miners. Impatient for the chalice, he raises a death-knight to butcher everyone who resembles the band, and so turns the whole city against the necromancers."
   - name: Karcist Kataris
     description: "A masked assassin of the Gendilj cult and the band's mysterious benefactor, who shadows them in the hope they will lead him to Imária's worshippers, and fights at their side when the reckoning comes."
@@ -25,7 +26,20 @@ characters:
     description: "The riddling demon-librarian of the Black Library, who alone can say which of its doors a fleeing soul has taken, and only to those who answer his riddle."
 creatures:
   - name: Eberhard
+    entry: nightwolf
     description: "Lerajie's night-wolf and bodyguard, the bound spirit of a queen's favourite slain long ago, fettered now into the body of a great wolf."
+  - name: Rafael
+    entry: death-knight
+    description: "The death-knight Lerajie raises from the bones of a dead judge, a thing in armour that feels no pain and can call up corpse-servants of its own. He looses it to butcher everyone in the city who resembles the band, and so turns Krilloan against the necromancers."
+  - name: Nolgor
+    entry: deadmans-hand
+    description: "A severed, crawling hand worked by the medium Hilja's necromancy, sent creeping after the silver chalice to steal it from the band while they sleep."
+  - name: The Banemän
+    entry: baneman
+    description: "Pale risen corpses shaped in the likeness of those the band has killed before, set on the adventurers by the necromancers to turn each one's own dead against them."
+  - name: The Poltergeist
+    entry: poltergeist
+    description: "A spiteful, unseen spirit Hilja calls up to wreck a temple and sow confusion, flinging furniture and fittings about to cover the Brotherhood's work."
   - name: Diabolins
     description: "The small horned demons of Hemaquiel's world, raised from black poodles by a witch's rite, that serve for a few hours and vanish."
 places:

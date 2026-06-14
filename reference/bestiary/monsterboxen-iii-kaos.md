@@ -1,0 +1,2098 @@
+# DRAKAR & DEMONER — MONSTER BOK III: KAOS
+
+> *Transkription av den inskannade boken "Monster — Kaos III" (Drakar & Demoner).*
+> *Original inskannat 2007-10-17 (Scan & PDF: Jonas). 66 sidor, svenska.*
+
+---
+
+## INNEHÅLL
+
+**Andar** — 2
+- Lyktgubbe — 3
+- Poltergeist — 4
+- Spöke — 5
+- Vålnad — 6
+
+**Gastar** — 7
+- Dödsgast — 8
+- Fantom — 9
+- Kummelgast — 10
+- Mörkgast — 11
+
+**Kroppsliga odöda** — 12
+- Dödmanshand — 13
+- Dödsriddare — 14
+- Gasthäst — 15
+- Avhugget huvud — 16
+- Mara — 17
+- Vampyr — 18
+- Likätare — 20
+
+**Demoner** — 21
+- Lägre demoner — 22
+- Högre demoner — 23
+- Demonädlingar — 24
+- Demonfurstar — 25
+- *Demoniska förmågor* — 26
+
+**Demoniska varelser** — 28
+- Dödskerub — 29
+- Dödsängel — 30
+- Köldbest — 31
+- Svart enhörning — 32
+- Svart hämnare — 33
+- Tjänare — 34
+- Vampyrfjäril — 35
+
+**Kaoskrigare** — 36
+- Kaoskardinal — 37
+- Kaosriddare — 38
+- Kaoskorpral — 39
+- Dråpare — 40
+- Härjare — 41
+
+**Magiska odöda** — 42
+- Baneman — 43
+
+**Levande lik** — 44
+- Mumie — 45
+- Nattulv — 46
+- Skelett — 47
+- Zombie — 48
+
+**Magiska varelser** — 49
+- Elementarer — 50
+- Elementarvarelser — 51
+- Elementarherrar — 52
+  - Cyklon — 53
+  - Magmani — 54
+  - Materiedrottning — 55
+  - Havskonung — 56
+  - Svart sultan — 57
+  - Vit pascha — 58
+  - Isherre — 59
+  - Ökenherre — 60
+- Golem — 61
+- Guludursk styggelse — 62
+- Väktare — 63
+
+---
+
+# ANDAR
+
+Begreppet ANDAR omfattar de odöda varelserna vålnad, lyktgubbe, poltergeist och spöke. När en person dör en tragisk död, fylld av hat och vrede, kan hans själ komma att hemsöka den plats där han dog. Om den döde haft en mycket viktig uppgift på platsen kommer anden att hemsöka platsen och försöka se till så att någon annan kan lösa uppgiften, så att han sedan kan få dödsrikets frid. Om anden normalt var en mycket god människa kommer han förmodligen att varna andra för den fara som dödade honom. Genom att rädda andra från samma öde kan anden bli löst från odödhetens bojor. De flesta andarna härrör dock från extremt ondskefulla män, och deras andar är med största sannolikhet mycket illvilliga och ondsinta, och försöker snarare locka folk till faran än frälsa dem från den.
+
+Andar är normalt bundna till platsen för sin död och kan bara färdas 40–50 meter bort, men det finns givetvis undantag. Poltergeistar omfattas t.ex. inte av detta.
+
+Hur rollpersoner kan förvandlas till andar samt hur rollpersoner kan kontrollera och fördriva andar kan du läsa om i Drakar och Demoner Magi.
+
+Andar kan förflytta sig genom fast materia med normal hastighet.
+
+Det enda som kan skada en ande är besvärjelserna ANDESLAG, SJÄLAFÖRVITTRING, MENTAL ATTACK och MENTAL PROJEKTIL. Den kan däremot fördrivas helt med besvärjelsen FÖRDRIVNING. De tar ingen skada av vanliga attacker, inte ens med magiska vapen, eller några andra besvärjelser.
+
+Med hjälp av besvärjelsen SPÖKDRÅP kan en nekromantiker försöka få en person att bli spöke. Se Drakar och Demoner Magi för ytterligare beskrivning.
+
+Alla intelligenta humanoider kan bli andar. De som beskrivs här nedan är andarna efter människor.
+
+---
+
+## LYKTGUBBE
+### *Träskspöket*
+
+Lyktgubbar är spöken efter ondskefulla personer som drunknat eller dött en våldsam död i träsk, sumpmarker eller små skogstjärnar.
+
+**Utseende:** Lyktgubbarna uppenbarar sig som ljusklot som svävar omkring fritt i luften. I ljuset kan man urskilja den dödes anletsdrag. De kan slå av och på ljuset som de själva önskar eller höja eller sänka ljusstyrkan.
+
+**Uppträdande:** Lyktgubbarnas mål är att locka oförsiktiga vandrare bort från träskens säkra stigar ut i den bottenlösa gyttjan. Där kan de suga i sig en döende persons PSY-poäng. Medvetslöshet och död blir följden för rollpersonen och lyktgubben ökar sin egen psykiska styrka.
+
+**Förmågor:** En lyktgubbe kan försöka ta kontroll över en person genom besvärjelsen KONTROLLERA PERSON och locka denne av stigen. När en person lämnar stigen är det stor risk att han går ned sig och drunknar. SL måste bedöma från fall till fall. De PSY-poäng som lyktgubben spenderar på besvärjelsen kan han inte återvinna på vanligt sätt. Hans enda chans att få mer PSY är att ordna så att intelligenta varelser drunknar i närheten (högst 25 meter bort). Lyktgubben måste lysa när han lägger besvärjelsen och när han sedan utövar kontrollen.
+
+Offrets PSY-poäng förloras permanent. Lyktgubben "suger ut" dem i en takt av 1 PSY-poäng per SR.
+
+| | |
+|---|---|
+| **Hemvist:** | 6, 7 |
+| **Vanlighet:** | Sällsynt |
+| **Antal:** | 1–4 |
+
+| Grundegenskap | | Typvärde |
+|---|---|---|
+| STY | 0 | 0 |
+| STO | 2 | 2 |
+| FYS | 0 | 0 |
+| SMI | ×2 | 21 |
+| INT | ×1 | 11 |
+| PSY | ×2 | 21 |
+| KP | 0 | 0 |
+| SB | | 0 |
+
+**Färdighet (FV):** Kontrollera person 17, Skräckslå 5/—
+**Förflyttning:** A30
+**Naturligt skydd:** Inget
+
+---
+
+## POLTERGEIST
+### *De kaotiska andarna*
+
+En poltergeist är en ande från en annan dimension. De kan ganska enkelt tillkallas av spiritister och återvänder då besvärjelsens varaktighet löpt ut. Det händer dock i enstaka fall att poltergeists slår sig lösa från besvärjelsen eller hamnar i vår mänskliga värld på andra vis. De stannar i så fall där tills någon dräper eller förvisar dem.
+
+**Utseende:** En poltergeist kan ändra sin skepnad precis hur den vill. Den består av en immateriell kropp och är sålunda ganska genomskinlig.
+
+**Uppträdande:** Poltergeists är våldsamma, vildsinta och mycket aggressiva. Den kan dock inte själv skada någon levande varelse, utan de nöjer sig med att ställa till en fasansfull oreda; alla föremål som finns inom 10 meter att lyfts upp och flyger omkring med hög hastighet, alla ljud inom 10 meter ökar i styrka, o.s.v. När poltergeisten försvinner blir allting lugnt igen; alla föremål faller till marken och alla ljud dör ut.
+
+**Förmågor:** En poltergeist kan lyfta obegränsat antal föremål som väger upp till 25 kg och bolla omkring dem som han själv behagar. Skall poltergeisten försöka kasta något på någon, t.ex. en kniv, en yxa eller en sten används dess PSY som FV.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | | Typvärde |
+|---|---|---|
+| STY | | 0 |
+| STO | | 11 |
+| FYS | | 0 |
+| SMI | | 0 |
+| INT | | 2 |
+| PSY | | 15 |
+| KP | | 0 |
+| SB | | 0 |
+
+**Färdighet (FV):** Skräckslå 5/—
+**Förflyttning:** A10
+**Naturligt skydd:** Inget
+
+---
+
+## SPÖKE
+### *De fjättrade*
+
+Spöken är andar av personer som dött medan de hade något viktigt uppdrag att utföra. Viljestyrkan och vreden vid dödstillfället gjorde att deras andar bands till människornas värld och för att undkomma denna måste de slutföra sitt uppdrag.
+
+**Utseende:** Spöket uppträder som en blåskimrande, immateriell skepnad med samma utseende som det hade då det dog. Det bär samma kläder, har kvar gamla sår och kanske ett halvt avhugget huvud, etc.
+
+**Uppträdande:** Spökens enda önskan brukar vanligtvis vara att bli befriade från sitt odöda tillstånd. Detta blir de först när de fullgjort sin uppgift. Om uppgiften är av sådan art att anden inte själv kan slutföra den, t.ex. förstöra något, hämta något, befria någon, döda något eller någon kan den mycket väl tänkas hjälpa alla som han kommer i kontakt med. Om uppgiften å andra sidan är att t.ex. vakta eller skydda något så är den betydligt elakare och utnyttjar sin förmåga att Skräckslå.
+
+**Förmågor:** Spöken kan genom att enbart vidröra någon "suga ut" en FYS-poäng/SR från en rollperson. FYS-poängen återfås med en takt av en poäng per vecka. Om FYS skulle nå noll så blir rollpersonen medvetslös och dör.
+
+Spöken är alltid bundna till platsen för sin död och kan inte röra sig längre bort från den platsen än 25 meter.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | | Typvärde |
+|---|---|---|
+| STY | | 0 |
+| STO | ×1 | 11 |
+| FYS | | 0 |
+| SMI | ×2 | 21 |
+| INT | ×1 | 11 |
+| PSY | ×2 | 21 |
+| KP | | 0 |
+| SB | | 0 |
+
+**Färdighet (FV):** Skräckslå 5/10
+**Förflyttning:** A10
+**Naturligt skydd:** Inget
+
+---
+
+## VÅLNAD
+### *De osaligaste*
+
+Vålnaderna är mycket lika spökena till förmågor och utseende. De har dock inte bara förlorat sin fasta form, utan de har även förlorat alla känslor och alla minnen från sitt tidigare liv. Det enda de känner är en stark känsla av glömska och minnet från sin våldsamma död.
+
+**Utseende:** Se Spöke. Man kan tydligt urskilja dödsångest i deras förvridna ansiktsdrag. De omges alltid av en lätt dimma och är mycket svåra att upptäcka i dagsljus, då de håller sig gömda på skuggiga platser.
+
+**Uppträdande:** Vålnaderna är vilsekomna och förvirrade och eftersom de är inte bundna till en speciell plats så svävar de bara omkring på måfå. De har inga mål i icke-livet utom självbevarelse.
+
+**Förmågor:** Vålnader är inte bundna till en speciell plats, även om de ibland stannar kvar på den plats där de dog eftersom de inte lyckas komma på att de överhuvudtaget kan röra sig därifrån.
+
+Vålnader kan genom att enbart vidröra någon "suga ut" överföra samma glömska den själv lider av till någon annan. Detta avspeglar sig så att en av offrets färdigheter "glöms bort" helt. Färdigheten väljs slumpmässigt och offret får automatiskt FV 0 på den färdigheten. Vålnaden måste övervinna offrets PSY med sin egen PSY på Motståndstabellen för att lyckas med en sådan glömskeattack.
+
+En vålnads förmåga i att Skräckslå kommer av ett utdraget, klagande tjut som dock aldrig används i strid. Alla som hör tjutet måste slå på Skräcktabellen.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | | Typvärde |
+|---|---|---|
+| STY | | 0 |
+| STO | ×1 | 11 |
+| FYS | | 0 |
+| SMI | ×2 | 21 |
+| INT | 1 | 1 |
+| PSY | ×2 | 21 |
+| KP | | 0 |
+| SB | | 0 |
+
+**Färdighet (FV):** Skräckslå 5/—
+**Förflyttning:** A10
+**Naturligt skydd:** Inget
+
+---
+
+# GASTAR
+
+Gastarna är mycket kraftfulla andar som härstammar från personer som har haft en så stark själskraft att de har kunnat stanna kvar i världen efter sin död. Det kan t.ex. röra sig om en magiker som varit helt besatt av att forska fram en speciell besvärjelse, en tjuv som varit helt uppslukad av att stjäla ett visst föremål eller en krigare som velat utkräva hämnd för en verklig eller inbillad oförrätt som väckt kraftig vrede eller våldsamt hat. Dessa gastar, som av eget val stannat i den mänskliga världen efter sin död, har oftast någonting ogjort som de vill fullborda trots döden. De kan också drivas av stark maktlystnad eller abnormt stor skräck för Dödsriket.
+
+Gastar kan också frammanas från Dödsriket av kraftfulla nekromantiker, med hjälp av ritualen FRAMMANA GAST. Se Drakar och Demoner Magi för närmare förklaring. Dessa gastar är oftast ondskefulla personer som gärna återvänder till den mänskliga världen för att sprida sitt hat och sin ondska. De är ofta bundna till frambesvärjaren genom magiska eder. Om gasten inte vill återvända till den mänskliga världen så kan han frivilligt stanna kvar i Dödsriket.
+
+Det finns också vissa förbannade eller oheliga platser som automatiskt skapar gastar av lik som begravs där.
+
+Alla intelligenta humanoider kan bli gastar. De som beskrivs här nedan är mänskliga gastar. Alla gastar räknas som Högre odöda.
+
+## FÖRMÅGOR
+
+Gastarna är odöda som har lyckats manifestera sin ande i en fast, fysisk form och de har därför, till skillnad från andarna, en fysisk kropp, skapad av dess psyke. KP är därför alltid lika med PSY-värde. Om en gast kastar besvärjelser så sjunker även dess KP och om dess kropp skadas och förlorar KP, så förlorar gasten även PSY. När den återvinner PSY (på vanligt sätt), så återvinns även KP, och gasten kan alltså läka sig själv.
+
+Det är dock endast dödsgastar och fantomer som lyckats fullständigt med den fysiska manifestationen och fått en helt solid form. Detta, tillsammans med dödsgastens mycket goda förmåga att skräckslå, gör den till den absolut mäktigaste odöda varelsen.
+
+Gastar har perfekt mörkersyn och extremt god hörsel. De har −2 på alla färdigheter i fullt dagsljus.
+
+---
+
+## DÖDSGAST
+### *Gastarnas herrar*
+
+Dödsgastarna är oftast andar av extremt mäktiga magiker, men det händer även i sällsynta fall att vanliga kämpar kan bli dödsgastar. De är de klart mäktigaste av alla odöda varelser, om man inte räknar Dödsängeln och svarta hämnare till de odöda.
+
+**Utseende:** Dödsgasten ser ut som före sin död, d.v.s. den bär inga tecken på sitt dödsfall. En väsentlig skillnad är dock att kroppen består av en nattsvart gestalt, som verkar vara en skugga förvandlad till fast form, med röda, glödande ögon. Efter att ha nått gaststadiet fortsätter dödsgastens kropp att åldras som vanligt, så att riktigt gamla dödsgastar snarare ser ut som skelett med förruttnade köttslamsor på än som gastar.
+
+**Uppträdande:** Se introduktionen till det här kapitlet. Dödsgastar är inte lika ofta bundna till en speciell uppgift som vålnaderna och mörk- och kummelgastarna, utan har en helt egen vilja.
+
+**Förmågor:** En dödsgast har en helt fysisk kropp och kan använda alla sorters materiella ting och förflytta sig som vanligt. Dödsgasten kan skadas som vanligt av eld, magi och magiska vapen, men tar bara halv skada av vanliga vapen. Dödsgasten behåller alla de färdigheter den hade i levande skick.
+
+Genom att beröra ett offer och övervinna dess FYS med sin egen PSY på Motståndstabellen så kan en dödsgast suga 2 FYS-poäng permanent ur offret. Offret blir dessutom fullständigt paralyserat i 1T4 SR. Rustningar, kläder eller besvärjelsen SKYDD hjälper inte. Besvärjelsen MOTSTÅNDSKRAFT reducerar förlusten med en poäng för var femte effektgrad.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | | Typvärde |
+|---|---|---|
+| STY | ×2 | 21 |
+| STO | ×1 | 11 |
+| FYS | 0 | 0 |
+| SMI | ×1 | 11 |
+| INT | ×1 | 11 |
+| PSY | ×3 | 32 |
+| KP | =PSY | 32 |
+| SB | | +1T4 |
+
+**Färdighet (FV):** Samma som i levande livet (=1T10+15), Beröra offer 18, Skräckslå 5/15
+**Förflyttning:** L10
+**Naturligt skydd:** Inget
+
+---
+
+## FANTOM
+### *(Gastar)*
+
+Fantomer är halv-materiella andar efter personer som offrat livet i sitt sökande efter ett visst speciellt föremål, antingen någonting de letat efter eller någonting de framställt i samband med sin död. Magiker som avlider i samband med snedtändning då de framställer ett mycket kraftfullt magiskt föremål kan t.ex. bli fantomer. Krigare som dör precis när de efter ett livslångt sökande når fram till en legendarisk artefakt kan bli fantomer knutna till det Föremålet. Här är den stora skillnaden mot t.ex. dödsgastar; fantomerna har inte blivit gastar frivilligt, och därför har de också begränsade krafter.
+
+Liksom dödsgastarna är fantomer tillräckligt materiella för att kunna hantera föremål, om än med vissa inskränkningar. Den kan inte lyfta ett föremål som väger mer än PSY/10 kg. Om den skall använda vapen måste den använda ett enhandsvapen, med bägge händerna. Den kan inte använda tvåhandsvapen eller helrustning.
+
+**Utseende:** Fantomer uppträder i samma skepnad som dess kropp hade före sin död, dvs. utan de eventuella sår som tillfogades i samband med dödsfallet. De har dock en svagt blåskimrande gestalt. Normalt använder de samma utrustning som de använde då de dog.
+
+**Uppträdande:** Mentaliteten hos fantomer kan variera mycket, beroende på dess sinnelag innan dödsfallet. Till skillnad från övriga gastar är det inte ond vilja som skapar fantomer, utan snarare olyckliga omständigheter. Det enda sättet för en fantom att bli befriad på är genom att det föremål den är bunden till förstörs. Då deras mänskliga kropp förstörs (=PSY når noll) så försvinner den 'mänskliga' kroppen tillfälligt men manifesteras åter senare i anslutning till Föremålet. Fantomen bestämmer själv när den skall manifesteras igen, dock tidigast inom ett dygn.
+
+Det djävulska i det hela är att fantomen själv aldrig frivilligt kan låta någon förstöra Föremålet, utan kommer att göra allt för att förhindra detta.
+
+**Förmågor:** Fantomer tar endast halv skada av magiska vapen och alla besvärjelser. De tar ingen skada alls av vanliga vapen.
+
+Beröringen av en fantoms vapen eller kropp ger automatiskt samma effekt som besvärjelsen BLIXT E5, men ingen annan skada.
+
+En fantom kan bara röra sig upp till 5 meter bort i från det föremål den är bunden till. Fantomens färdighet att Skräckslå består i ett ylande, klagande läte. Alla som hör detta måste omedelbart slå på Skräcktabellen.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | | Typvärde |
+|---|---|---|
+| STY | ×1 | 11 |
+| STO | ×1 | 11 |
+| FYS | 0 | 0 |
+| SMI | ×1 | 11 |
+| INT | ×1 | 11 |
+| PSY | ×2 | 21 |
+| KP | =PSY | 21 |
+| SB | | 0 |
+
+**Färdighet (FV):** Samma som i levande livet (=1T10+10), Skräckslå 1/5
+**Förflyttning:** L10
+**Naturligt skydd:** Inget
+
+---
+
+## KUMMELGAST
+### *Gravplatsers hemsökare*
+
+Kummelgasten uppvisar stora likheter med dödsgasten, men eftersom dess själskraft i livet inte varit lika stor så blir inte kraften i icke-livet lika stor. De håller helst till i mörka gravvalv eller djupa katakomber, dit solljuset sällan tränger ned (de tar 1T4 i skada per SR i solljus). De kan dock utan problem förflytta sig ovan jord, med gör det då på natten och endast då månen inte är synlig. De förflyttar sig svävande och kan tränga igenom den minsta springa eller hålighet.
+
+**Utseende:** En kummelgast uppträder i samma skepnad som dess kropp hade före sin död, d.v.s. utan de eventuella sår som tillfogades i samband med dödsfallet. De antar dock en svagt skimrande gestalt och eftersom de nästan enbart håller till på mörka platser så brukar man beskriva kummelgastar som självlysande med ett svagt blått sken. Normalt använder de samma utrustning som innan de dog.
+
+**Uppträdande:** Kummelgastar är av naturen ondskefulla, annars hade de inte blivit gastar. Deras syfte med sitt icke-liv kan dock variera. Se inledningen till detta kapitel.
+
+**Förmågor:** Kummelgastarna anfaller antingen mentalt genom sin förmåga att Skräckslå, fysiskt med vapen, eller genom att dra offrets magiska energi (=PSY-poäng) och lägga den till sin egen (PSY). Detta sker om kummelgasten med sin PSY lyckas övervinna offrets PSY på Motståndstabellen. PSY-poängen (1T4 dras per SR) återfås på normalt vis. Det räcker med om Kummelgasten kommer inom 5 meter från sitt offer för att kunna suga magisk energi.
+
+Eftersom kummelgastarna bara består av svagt skimrande gestalter reduceras alla FV då man anfaller dem med 5. De kan bara skadas av magiska vapen, besvärjelser och eld (gör 1T4 KP i skada).
+
+Kummelgastar kan inte ha några färdigheter som är baserade på STY, SMI eller FYS, eftersom den inte har dessa egenskaper, men den behåller övriga egenskaper och FV från levande livet.
+
+| | |
+|---|---|
+| **Hemvist:** | 8, B, E, F |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | | Typvärde |
+|---|---|---|
+| STY | 0 | 0 |
+| STO | ×1 | 11 |
+| FYS | 0 | 0 |
+| SMI | 0 | 0 |
+| INT | ×1 | 11 |
+| PSY | ×2 | 21 |
+| KP | =PSY | 21 |
+| SB | | 0 |
+
+**Färdighet (FV):** Gömma sig 10, Upptäcka fara 15, Skräckslå 5/10
+**Förflyttning:** F15
+**Naturligt skydd:** Inget
+
+---
+
+## MÖRKGAST
+### *Mörkrets fasa*
+
+M�rkgastarna är ett slags mellanting av kummelgastar och dödsgastar. Deras väsen har dock inte på samma sätt som hos kummelgastarna lyckats ta en tillräckligt materiell form för att kunna hantera föremål, utan de är mer lika andarna i detta avseende.
+
+**Utseende:** Till skillnad från andra gastar så behåller mörkgasten bara sina humanoida drag från sitt tidigare liv. Övriga individuella drag suddas helt ut, och de antar skepnaden av en svart silhuett utan anletsdrag och med två glödande kolbitar i stället för ögon.
+
+**Uppträdande:** Liksom kummelgastarna så håller mörkgastarna helst till på mörka ställen, även om de inte tar någon skada av solljus. Mörkgastar är av naturen ondskefulla, annars hade de inte blivit gastar. Deras syfte med sitt icke-liv kan dock variera. Se inledningen till detta kapitel.
+
+**Förmågor:** Eftersom mörkgastarnas 'kroppar' är mycket diffusa har en angripare −8 på FV om han skall anfalla en mörkgast i mörker. I närheten av starka ljuskällor, magisk eller naturlig, är modifikationen å andra sidan +2. De kan bara skadas av magiska vapen, besvärjelser och eld (gör 1T4 KP i skada).
+
+M�rkgastar kan inte ha några färdigheter som är baserade på STY, SMI eller FYS, eftersom den inte har dessa egenskaper, men den behåller övriga egenskaper och FV från levande livet.
+
+Genom att beröra ett offer och övervinna dess FYS med sin egen PSY på Motståndstabellen, kan en mörkgast suga 1 FYS-poäng permanent ur offret. Offret blir dessutom fullständigt paralyserat i 1T4 SR. Rustningar, kläder eller besvärjelsen SKYDD hjälper inte. Besvärjelsen MOTSTÅNDSKRAFT (minst E5) skyddar dock.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | | Typvärde |
+|---|---|---|
+| STY | 0 | 0 |
+| STO | ×1 | 11 |
+| FYS | 0 | 0 |
+| SMI | 0 | 0 |
+| INT | ×1 | 11 |
+| PSY | ×2 | 21 |
+| KP | =PSY | 21 |
+| SB | | 0 |
+
+**Färdighet (FV):** Beröra offer 15, Gömma sig 16, Upptäcka fara 18, Skräckslå 5/10
+**Förflyttning:** F12
+**Naturligt skydd:** Inget
+
+---
+
+# KROPPSLIGT ODÖDA
+
+De kroppsligt odöda är en form av odöda som har kvar hela eller delar av sina ursprungliga kroppar, om än i förändrad form. De har en helt fysisk gestalt och kan uppstå på flera olika sätt.
+
+Dödmanshänder, avhuggna huvuden och maror uppstår spontant om en person dör en neslig och grym död samtidigt som han eller hon befinner sig i ett tillstånd av mycket stark vrede. Dödsriddarna skapas genom magiska ritualer, och gasthästarna uppnår sitt odöda tillstånd om dess herre skulle bli odöd. Vampyrers och likätares förmågor sprids genom fysisk kontakt.
+
+Alla kroppsligt odöda har perfekt mörkersyn. De tar ingen skada av att förlora blod.
+
+---
+
+## DÖDMANSHAND
+### *De halva hämnarna*
+
+En dödmanshand är egentligen en ande som endast lyckats delvis med att fysiskt manifestera sig som kroppsligt odöd. Andekroppen har inga speciella förmågor, men den kan röra sig obehindrat genom väggar och golv, vilket handen inte kan. Handen är också den enda del som är synlig för blotta ögat. Tjuvar som fått handen avhuggen som straff för sina brott återuppstår ofta i denna form. Dess ande letar då upp den förlorade handen och använder den för att ta hämnd på den som orsakat bestraffningen. En dödmanshand räknas som lägre odöd.
+
+**Utseende:** Handen ser ut som en helt vanlig hand, med blekt, sprucket skinn och svartnade naglar. Andekroppen är helt osynlig. Dödmanshänder kan skapas av alla intelligenta humanoida raser. Den som beskrivs nedan är en 'mänsklig' dödmanshand.
+
+**Uppträdande:** En dödmanshand skapas då en person avlider under stark affekt men inte har tillräcklig själskraft för att kunna manifestera hela sin kropp fysiskt. Det är alltid personens svärdshand som manifesteras (om personen är ambidextriös så manifesteras valfri hand). Den vanligaste orsaken till att en dödmanshand uppstår är att dess 'ägare' söker hämnd för en verklig eller upplevd oförrätt.
+
+**Förmågor:** En dödmanshand kan göra allt som en normal hand kan. Andekroppen har perfekt mörkersyn och mycket god hörsel. På grund av handens ringa storlek och rörelseförmåga har man −10 i FV på alla attacker mot den. Den kan inte använda några besvärjelser. Den tar normal skada av alla vapen, eld och all magi.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | | Typvärde |
+|---|---|---|
+| STY | ×2 | 21 |
+| STO | 1 | 1 |
+| FYS | 0 | 0 |
+| SMI | ×1,5 | 16 |
+| INT | ×1 | 11 |
+| PSY | ×1 | 11 |
+| KP | | 12 |
+| SB | | 0 |
+
+**Färdighet (FV):** Som i levande livet 1T10+10
+**Förflyttning:** F20
+**Naturligt skydd:** Inget
+
+---
+
+## DÖDSRIDDARE
+### *Hämndens härskare*
+
+Dödsriddaren är en mycket mäktig form av skelett som skapas genom ondskefulla och mystiska magiska ritualer. De räknas som högre odöda.
+
+**Utseende:** En dödsriddare ser ut som ett svart skelett, med svaga röda ljuspunkter i ögongloberna. De kan använda alla slags rustningar och vapen, men eftersom de nästan uteslutande har varit mycket mäktiga krigare i livet så tar de gestalt av kraftfulla krigare med samma rustning och vapen som de ursprungligen använde.
+
+**Uppträdande:** Dödsriddarna är mycket ondskefulla och listiga och har dessutom mycket gott motstånd mot besvärjelser. De kan ha olika mål med sitt icke-liv, t.ex. att vinna makt, rikedom, ryktbarhet eller hämnd. Oftast använder de sitt icke-liv för att förverkliga de drömmar de inte kunde uppnå i det levande livet. De har inga speciella band till den som skapade dem, utan en helt egen vilja.
+
+**Förmågor:** Alla dödsriddare har automatiskt förmågan att skapa banemän av dräpta fiender. Dödsriddarna har en förmåga att paralysera sina fiender genom att lamslå dem med en isande dödskyla. Alla inom 10 meters radie från dödsriddaren påverkas och attacken kostar 2 PSY-poäng (återvinns på vanligt sätt). Om attacken lyckas (slå PSY mot PSY på Motståndstabellen) så blir offret helt paralyserat i 1T6+10 SR. Offret kan under denna tid inte göra någonting överhuvudtaget och han kommer inte att ha något minne av vad som har hänt.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | | Typvärde |
+|---|---|---|
+| STY | ×2,5 | 27 |
+| STO | ×1 | 11 |
+| FYS | 0 | 0 |
+| SMI | ×1 | 11 |
+| INT | ×2 | 21 |
+| PSY | ×3 | 32 |
+| KP | | 18 |
+| SB | | +1T6 |
+
+**Färdighet (FV):** Som i levande livet 1T10+10, Skräckslå 1/5, Paralysering 20
+**Förflyttning:** L10
+**Naturligt skydd:** Inget
+
+---
+
+## GASTHÄST
+### *De odöda springarna*
+
+Det band som råder mellan herre och häst är i bland så starkt att en människa eller annan intelligent varelse som blir odöd, t.ex. dödsgast, kan få sin häst att genomgå samma process. Hästen blir en odöd springare, en gasthäst, som alltid är en lojal tjänare till sin herre. I omvandlingsprocessen förändras en del av dess grundegenskaper. Addera de modifikationer som finns nedan. Gasthästen räknas som lägre odöd.
+
+**Utseende:** Gasthästens kropp är uppbyggd av materiellt, förtätat mörker. I övrigt ser den ut som en vanlig häst med röda, glödande ögon.
+
+**Uppträdande:** Gasthästen är totalt lojal mot sin herre och lyder alla dess kommandon utan att tveka eller frukta för sitt eget icke-liv. Om dess herre skulle dö eller försvinna från vår mänskliga värld så tar gasthästen sitt eget liv genom att dränka sig eller kasta sig utför ett stup.
+
+**Förmågor:** En gasthäst är mycket svår att upptäcka i mörker (−4 på attacker och Upptäcka fara). Varelsen kan skadas som normalt av fysiskt våld och magi, men är helt immun mot alla former av köldskador. Hästens skarpa tänder är överdragna med ett gift (STY 8), som får den drabbade kroppsdelen att börja förruttna. Efter ett dygn är kroppsdelen oanvändbar, och efter två dygn förskjuts den från den övriga kroppen. Processen kan bara stoppas av NEUTRALISERA GIFT vars effektgrad måste övervinna giftets styrka på Motståndstabellen.
+
+Gasthästen tycker illa om solljus och har −5 på alla färdigheter och förflyttningsförmågan. Den har däremot perfekt mörkersyn och den kan kommunicera med sin herre på telepatisk väg (räckvidd 1 km). Den behöver aldrig slå på Skräcktabellen.
+
+*Grundegenskaperna nedan anges som modifikationer mot en vanlig häst.*
+
+| | |
+|---|---|
+| **Hemvist:** | Hos sin herre |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | | Typvärde |
+|---|---|---|
+| STY | +20 | 49 |
+| STO | ±0 | 26 |
+| FYS | 0 | 0 |
+| SMI | ±0 | 11 |
+| INT | ±0 | 5 |
+| PSY | +10 | 21 |
+| KP | | 38 |
+| SB | | +2T6 |
+
+**Färdighet (FV):** 2 Hovar (1T6) 15, 1 Bett (1T6, halv SB) 15, Upptäcka fara 14, Smyga 11
+**Förflyttning:** L24
+**Naturligt skydd:** 2 poäng skinn
+
+---
+
+## AVHUGGET HUVUD
+### *Halshuggnas hämnd*
+
+Ett avhugget huvud är ungefär detsamma som en dödmanshand, med den uppenbara skillnaden att det är huvudet som materialiserats, inte handen. Folk som halshuggits tar ofta denna form efter sin död, för att hemsöka den som beslutat om halshuggningen och driva honom till vansinne. Den huvudlösa anden letar då efter sin död upp det förlorade huvudet och inkorporerar det med 'andehuvudet'. Ett avhugget huvud räknas som lägre odöd.
+
+**Utseende:** Det avhuggna huvudet ser ut som ett vanligt huvud, med senor, muskler och blodådror hängande ut genom halsen. Skicket på huvudet beror på dess skick vid dödstillfället; det kan mycket väl vara halvt förruttnat eller sakna framträdande kroppsdelar (näsa, öron, tänder, ögon, etc.). Håret blir av naturliga skäl grått, stripigt och ovårdat, tänderna svarta, ögonen halvt utträngda ur sina hålor, skinnet förtorkat och åtstramat över det odöda kraniet, o.s.v.
+
+**Uppträdande:** Eftersom huvudet inte kan utföra några direkta handlingar, använder det huvudsakligen sin förmåga att Skräckslå. I undantagsfall bits det. De skarpa huggtänderna är överdragna av samma gift som gasthästens (se denna varelse).
+
+**Förmågor:** Huvudet har perfekt mörkerseende. Dess andekropp är helt oberoende av den fysiska omgivningen och kan röra sig fritt genom alla material. Huvudet är dock materiellt och har inte denna förmåga. På grund av dess ringa storlek och stora rörlighet har man −5 på alla vapenfärdigheter då man anfaller huvudet.
+
+Huvudet har samma förmågor som det hade i levande livet (dock enbart INT-baserade färdigheter). Det kan inte använda besvärjelser. Det tar normal skada av alla vapen, eld och all magi.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | | Typvärde |
+|---|---|---|
+| STY | ×2 | 21 |
+| STO | 2 | 2 |
+| FYS | 0 | 0 |
+| SMI | ×1,5 | 16 |
+| INT | ×1 | 11 |
+| PSY | ×2 | 21 |
+| KP | | 12 |
+| SB | | 0 |
+
+**Färdighet (FV):** 1 Bett (1T8, halv SB) 15, Samma som i livet 1T10+10
+**Förflyttning:** F20
+**Naturligt skydd:** Inget
+
+---
+
+## MARA
+
+En mara är en ondskefull kvinnlig odöd med mänskligt ursprung. Maran räknas som högre odöd.
+
+**Utseende:** Maran tar form av en mager, föråldrad kvinna med knotiga lemmar, kolsvart hud, långt, stripigt hår och lysande blå ögon. De svarta naglarna har växt ut till korta, vassa klor och ur den tandlösa munnen kommer ett hest, kacklande, kraxande skratt.
+
+**Uppträdande:** Maror kan ställa till med djävulskap på två olika sätt. Det vanligaste är att hon tar ut en häst på en vild, nattlig marritt när ägaren sover. På morgonen är hästen svettig, löddrig och totalt slutkörd. Under ritten drivs hästen av marans vilja och kan således pressas bortom vad den egentligen klarar av. I bland händer det att hästen således aldrig vaknar mer, utan dör av hjärtsvikt. Om den överlever måste den vila minst tio timmar innan den orkar göra något igen.
+
+En mara kan också sända ut mardrömmar till! män. Hon väljer då ut ett visst offer och försöker övervinna dess PSY med sin egen. Lyckas försöket så har offret våldsamma mardrömmar hela natten och är inte alls utvilad när han vaknar på morgonen. Offret har +5 på Skräcktabellen ända tills han får sova ostört en natt. Maran kan bara försöka sända mardrömmar en gång per natt (räckvidd 100 meter).
+
+**Förmågor:** Marans klor är överdragna av ett gift som kan göra en annan kvinna till mara om det tränger in i hennes kropp och övervinner hennes FYS. Kvinnan dör då och återuppstår som mara 4 dygn senare, såvida hennes kropp inte bränns. Giftet har STY 10. Om giftet inte verkar på detta sätt så gör det bara 5 KP i skada. Detta gäller även mot män.
+
+Marans färdighet att skräckslå består av hennes fruktansvärda skratt. Alla som hör det måste slå på Skräcktabellen.
+
+En mara kan aldrig använda magi eller magiska föremål.
+
+| | |
+|---|---|
+| **Hemvist:** | C |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | | Typvärde |
+|---|---|---|
+| STY | ×3,5 | 37 |
+| STO | ×1 | 11 |
+| FYS | 0 | 0 |
+| SMI | ×1,5 | 16 |
+| INT | ×1 | 11 |
+| PSY | ×2 | 21 |
+| KAR | 1 | 1 |
+| KP | | 25 |
+| SB | | +1T6 |
+
+**Färdighet (FV):** 2 Klor (1T6+gift) 11, 1 Spark (1T6) 9, Samma som i livet 1T10+10
+**Förflyttning:** L12
+**Naturligt skydd:** 1 poäng hud
+
+---
+
+## VAMPYR
+### *Blodsugarna*
+
+Vampyrer är vanliga människor som smittats av vampyrism, en kombination av sjukdom, förbannelse och gudagåva. Vampyrismen ändrar den drabbades ämnesomsättning och kroppsliga förmågor drastiskt; enligt somliga vampyrer till det bättre, enligt andra till det sämre. Vampyrer kan skapas av alla olika intelligenta humanoider av bägge könen. Den vampyr som beskrivs här nedan är en 'mänsklig' vampyr. Vampyrer räknas som högre odöda.
+
+**Utseende:** Vampyrer ser ut precis som vackra, helt vanliga människor med något blekare hud och förvuxna, vassa hörntänder. De åldras mycket långsamt (ett år på tio vanliga år) men kan inte dö en naturlig död. När en vampyr kommer upp i 500-årsåldern börjar han med andra ord bli ganska förklenad av ålderdomssvaghet. Vampyrer har ingen spegelbild.
+
+**Uppträdande:** Vampyrer är mycket diskreta för att inte avslöja sin identitet. Normalt är det mycket sällsynt att vampyrer för sin förmåga vidare, eftersom alltför många vampyrer på ett och samma ställe lätt leder till misstankar som drar till sig vampyrjägare. De undviker speglar och bär nästan alltid handskar för att kunna hantera silverföremål.
+
+Vampyrernas oförmåga att visa sig om dagen gör att de oftast söker sig till stora städer där de dels kan hitta många utslagna personer som de kan suga blod i från, dels kan gömma sig lätt, och dels kan hitta på en vettig ursäkt till att de bara rör sig ute om nätterna. De har ofta flera olika sovplatser för att kunna byta bostadsort ofta.
+
+**Förmågor:** En vampyr är tvungen att dricka blod från levande intelligenta varelser för att kunna överleva. För varje SR som vampyren har tänderna i sitt offer kan han suga 3 KP som dessutom dras direkt från FYS. När FYS når noll så dör offret. Om vampyren inte får minst 5 KP blod varje natt så minskas hans PSY med 1T6. Dessa återvinns först då vampyren får blod igen.
+
+Om vampyren vill kan han föra vampyrismen vidare till sitt offer. Detta sker i så fall automatiskt. Förvandlingen tar tre dygn, under vilka offret är mycket sjukt med hög feber och illamående. När förvandlingen är klar känner den nyblivne vampyren en mycket stark törst efter blod. Han är helt omedveten om vad som har hänt och känner inte till sina nya förmågor utan måste 'läras upp' av en annan vampyr. En nybliven vampyr behåller alla sina gamla färdigheter och förmågor.
+
+Ett vampyr kan lugna ett offer genom att få ögonkontakt och övervinna offrets PSY med sin egen. Effekten blir att offret blir som drogat; sömnigt och oförmöget att göra någotsomhelst motstånd, vare sig fysiskt eller psykiskt. Verkligheten ersätts av en halvt drömlik tillvaro tills vampyren släpper sitt mentala grepp om offret.
+
+En vampyr kan inte dödas på normalt sätt, utan endast genom en av följande fyra metoder:
+- Genom att vampyren träffas av minsta lilla solstråle. Då förtärs dess kropp omedelbart av en enormt het eldslåga, som dock inte skadar någonting annat. Kvar blir bara kläder och en askhög.
+- Genom att man kör en träpåle genom vampyrens hjärta medan den ligger i sin kista.
+- Genom att man träffar dess hjärta med ett silvervapen (för detta krävs en perfekt träff).
+- Genom att minst 50 gram silverstoft kommer in i blodomloppet.
+
+Detta avspeglas i att vampyrer inte har vanliga KP. De tar visserligen halv skada av normala vapen och dubbel skada av silvervapen, men dessa skador kan alltid läkas genom en dags sömn. En vampyr kan aldrig bli kritiskt skadad eller medvetslös, och de skador den får har således ingen egentlig effekt förutom att de kan få vampyren att inse att den valt ett alltför ovilligt offer. När dess KP når noll flyr de automatiskt. De är immuna mot all naturlig eld och kan läka magiska brännskador på en dag. De är också immuna mot alla slags sjukdomar och skadas endast av gifter med silverföreningar i.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | Varierar |
+
+| Grundegenskap | | Typvärde |
+|---|---|---|
+| STY | ×3 | 32 |
+| STO | ×1 | 11 |
+| FYS | 0 | 0 |
+| SMI | ×1,5 | 16 |
+| INT | ×1 | 11 |
+| PSY | ×1,5 | 16 |
+| KAR | ×1,5 | 16 |
+| KP | | 21 |
+| SB | | +1T6 |
+
+**Färdighet (FV):** 1 Bett (1T6, halv SB) 12, Samma som i livet 1T10+10, Gömma sig 25, Smyga 25, Upptäcka fara 30
+**Förflyttning:** L12
+**Naturligt skydd:** Inget
+
+---
+
+## LIKÄTARE
+### *De för evigt hungriga*
+
+Likätarna är en speciell form av kroppsliga odöda som egentligen inte kan räknas som odöda, eftersom de har behållit sin FYS. Den är ett slags mellanting mellan odöd och levande varelse och har därför kvar många av sina egenskaper från levande livet; t.ex. måste den äta, dricka och andas. Likätarna är intelligenta humanoider som smittats av likätarbett och därför själva blivit likätare. Likätare kan inte påverkas av besvärjelser som normalt endast påverkar odöda.
+
+**Utseende:** Likätarnas kroppar förändras långsamt när de blivit smittade. Tänderna och käken omvandlas till ett rovdjurs och de vassa tänderna blir utmärkta att slita sönder kött med. De svarta naglarna blir vassa klor som lätt kan slita bort kött från gamla ben. Huden blir gråvit, sprucken och mycket illaluktande, håret blir grått och stripigt, naglar och läppar svartnar och ögonen blir livlösa och gula. Alla intelligenta humanoida varelser kan bli likätare. Den som beskrivs här är en 'mänsklig' likätare.
+
+**Uppträdande:** Likätarna är ganska ointelligenta asätare som bara kan leva av lik från intelligenta humanoida varelser. De lever därför antingen vid begravningsplatser eller nära samhällen där de i skydd av mörkret kan slå ihjäl någon stackare och sedan äta upp honom. Av naturliga skäl så försöker de i möjligaste mån undvika all kontakt med andra invånare, eftersom alla fruktar och föraktar dem.
+
+**Förmågor:** Vem som helst kan bli likätare om han skadas av en likätares naturliga vapen. För att ta reda på det sätter man in det antal KP man tagit i skada av likätarens attacker på 'aktiv' och sin FYS på 'passiv' i Motståndstabellen.
+
+En person som blir likätare behåller alla gamla färdigheter utom de som är baserade på INT. En likätare kan inte påverkas av gift, sjukdom eller sömn.
+
+| | |
+|---|---|
+| **Hemvist:** | F, C |
+| **Vanlighet:** | Sällsynt |
+| **Antal:** | 1–6 |
+
+| Grundegenskap | | Typvärde |
+|---|---|---|
+| STY | ×1 | 11 |
+| STO | ×1 | 11 |
+| FYS | ×1,5 | 16 |
+| SMI | ×0,5 | 6 |
+| INT | ×0,5 | 6 |
+| PSY | ×0,5 | 6 |
+| KAR | 1 | 1 |
+| KP | | 11 |
+| SB | | 0 |
+
+**Färdighet (FV):** 1 Bett (1T8) 3, Samma som i livet 1T20
+**Förflyttning:** L8
+**Naturligt skydd:** Inget
+
+---
+
+# DEMONER
+
+Demoner är ett samlingsnamn på en typ av kaosvarelser. Det är inte med säkerhet fastställt om de har samma ursprung allihop, om de utgör flera olika raser eller om de är enskilda existenser utan samröre med varandra. Vissa demoner synes härstamma från plan med ett stort antal olika demonvarelser, medan andra förefaller komma från plan där de själva utgör den enda individen.
+
+Demonernas förmåga att själva bryta igenom de olika dimensionerna är begränsade. Det tycks som om de har lättare att färdas mellan plan bebodda av demoner än mellan andra. Bara de allra mäktigaste demonerna kan själva, utan att bli åkallade, förflytta sig till de plan som styrs av vår mänskliga världs naturlagar.
+
+En demon kan besegras och dödas i vilken som helst av multiversums världar, men det är bara dess fysiska kropp som dör för att sedan omedelbart upplösas till stoft. Demonen återvänder till sitt eget plan och kan där materialiseras i en ny kropp, oftast likadan som den gamla. Endast om man uppsöker demonen på dess eget plan kan man utplåna den för evigt.
+
+Här i Drakar och Demoner Monster skall vi huvudsakligen koncentrera oss på de demoner som lever i dimensionen Inferno, eftersom de är vanliga i Drakar och Demoners värld.
+
+## INFERNOS DEMONER
+
+Drakar och Demoners multiversum består av en mängd olika världar. Stället dit många kulturers förtappade människosjälar färdas efter döden kallas i Ereb Altor för Inferno. Denna värld består av nio olika kretsar dit svåra syndare färdas för att som straff för sina synder i evärdlig tid plågas av Infernos demoner. Varje krets behärskas av en demonfurste, en ofattbart mäktig och urgammal demon som på något vis lyckats få herraväldet över miljontals undersåtar. Varje krets består vidare av ett antal sfärer, som i sin tur styrs av demonprinsar.
+
+Längst ned i Inferno sitter dess härskare, furst Zahmet, med nio domare vid sin sida. Domarna bedömer de förtappade själarnas brott och skickar dem sedan till någon av de nio kretsarna; ju svårare försyndelser, desto längre ned i Inferno hamnar de.
+
+Inferno bebos av oändligt många olika demoniska raser. Demonernas fixering vid styrka och makt gör att de ofta är groteskt stora med betar, klor och andra naturliga vapen, om de inte har inneboende magi eller något annat som kan uppväga en mindre fysisk styrka.
+
+Olika demonraser kan para sig med varandra, något som har lett till en förvillande uppsjö av varelser med olika mängder lemmar, ögon och huvuden. Alla demoner är tvekönade och kan vid behov befrukta sig själva. De kan också få avkomma med människor och med andra humanoider och i vissa fall med djur. Demoner med ett i mänskliga ögon kvinnligt yttre är ovanligare, men de förekommer. De flesta demoner förändras under sitt liv. De är små som hundvalpar när de föds, men växer sedan snabbt och när de börjar få makt så förändras deras kroppar. De utvecklar större styrka och fler naturliga vapen; ju större makt, desto större styrka och desto fler förmågor. Demoner som inte lyckas hävda sig blir aldrig större än hundvalpar och blir antagligen uppätna under sina första levnadsveckor.
+
+De lägst stående demonerna utgör 'fotfolket' i Inferno. De kan närmast jämställas med människorna i vår värld, även om de är betydligt mäktigare och mer kraftfulla än människor. Varje krets har ett eller flera egna 'typiska' demonfolk.
+
+Under sitt oändliga liv växer alla demoner i styrka och de som lyckas bäst kan så småningom bli demonädlingar och få bevista demonfurstarnas hov, och där få upphöjda positioner som t.ex. härskare över olika sfärer eller truppstyrkor. De data som ges här nedan vad gäller demoners hemvist, vanlighet, antal, grundegenskaper, etc., gäller för deras fysiska form i vår mänskliga värld. I sin egen värld kan man förutsätta att de är betydligt mäktigare.
+
+---
+
+## LÄGRE DEMONER
+### *Syndarna*
+
+De allra lägst stående av Infernos demonvarelser fungerar som arbetsledare, slavdrivare, bödlar, underofficerare, torterare, gisslare, betjänter, etc. Deras huvudsakliga uppgift är att plåga de mänskliga själarna till vansinne. Enligt Drakar och Demoner Magi tillhör de klassen 'yngre demoner' eller 'elddemoner' (om de kommer från eldens krets). De bevistar sällan människornas dimension, eftersom de flesta åkallande besvärjelser gäller betydligt mäktigare demoner. Det räcker med E3 för att kontrollera en lägre demon med besvärjelsen KONTROLLERA DEMON.
+
+**Utseende:** Infernos invånare ser olika ut, beroende på i vilken krets man befinner sig. I skuggkretsen lever t.ex. pazuzu, flugmästarna. De har gröngrå, vårtig hud och är ständigt omgivna av moln av stora flugor. De har facettögon, vingar och stora, dreglande käftar med enorma huggtänder.
+
+Gruzerna, ett annat demonfolk, är långa, askfärgade varelser som ser ut som ett mellanting mellan reptiler och flugor. De har en klippödlas kropp men går upprätt på två ben. I övrigt liknar de pazuzu.
+
+I Kaoskretsen lever belmôner, en människoliknande art med halvgenomskinlig hud och vita, döda ögon. Deras hår skimrar spräckligt i klara pastellfärger. Eftersom de är lever i kaoskretsen tenderar deras kroppar att tappa strukturen och flyta ut till amöbaliknande geléklumpar.
+
+I Avgrunden, den klyfta som löper genom Infernos alla nio kretsar och förenar dem, lever uzorak, som är vagt människolika men längre och kraftigare och har regnbågsskimrande svart hud. Deras naglar har utvecklats till kraftiga klor och tänderna är vassa rovdjursbetar. Armar och ben har två leder i stället för en, och benens bägge leder är vikta bakåt.
+
+**Uppträdande:** Varierar enormt från krets till krets. Uzorak lever för att skaffa sig mer makt, gärna genom strid, lönnmord och svek. Pazuzu och gruz, som lever i den dystra skuggkretsen, är mer melankoliska och känner alltings förgänglighet. Belmônerna är impulsiva och lätt förvirrade. De är kreativa men har också lätt att bli destruktiva och nedbrytande.
+
+**Förmågor:** 1T3 demoniska förmågor. De kan inte av egen kraft förflytta sig till den mänskliga världen, utan måste antingen skickas dit av en annan, mäktigare demon, eller åkallas av en demonolog.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | Varierar |
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 21 |
+| STO | 16 |
+| FYS | 21 |
+| SMI | 21 |
+| INT | 11 |
+| PSY | 21 |
+| KAR | 1 |
+| KP | 19 |
+| SB | +1T6 |
+
+**Färdighet (FV):** 2 Nävar (1T3) 8, 1 Spark (1T6) 8, 1 Bett (1T8, halv SB) 8, 1 Svanssnärt (1T8) 8, 1T4 Klor (1T8) 8, Ett närstridsvapen 6, Smyga 4, Gömma sig 2, Upptäcka fara 14, Skräckslå 1/0
+**Förflyttning:** L18
+**Naturligt skydd:** 4 poängs hud
+**Demoniska förmågor:** 1T3 stycken
+
+---
+
+## HÖGRE DEMONER
+### *Syndarnas gissel*
+
+De högre demonerna är de som lyckats överleva tillräckligt länge för att kunna ha kommit upp sig en bit på rangskalan. En demon av denna rang kan t.ex. fungera som kansler, högre officer, domare eller chef i någon gruva. I Drakar och Demoner Magi faller de in under kategorin 'yngre demoner'. Det krävs E7 för att kontrollera en högre demon med besvärjelsen KONTROLLERA DEMON.
+
+**Utseende:** Varierar. Vanligtvis svart hud och röda eller gula ögon med mandelformade, svarta pupiller. Demoner har sällan något hår på kroppen. Kroppsform, antal kroppsdelar, storlek, etc., varierar enormt. Endast fantasin är begränsande.
+
+**Uppträdande:** Varierar beroende på 'livsmål' och uppgift. Inte nödvändigtvis ond, men så gott som alltid egoistisk på ett eller annat vis. Även om en demon kan vara en ödmjuk och blygsam tjänare, så är han det bara för att han vet att han kan vinna större fördelar senare.
+
+**Förmågor:** 1T6+1 demoniska förmågor. De kan inte av egen kraft förflytta sig till den mänskliga världen, utan måste antingen skickas dit av en annan, mäktigare demon, eller åkallas av en demonolog. Har de en gång skickats till den mänskliga världen kan de dock därefter använda samma väg själva.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 26 |
+| STO | 21 |
+| FYS | 26 |
+| SMI | 26 |
+| INT | 16 |
+| PSY | 26 |
+| KAR | 1 |
+| KP | 24 |
+| SB | +1T6 |
+
+**Färdighet (FV):** 2 Nävar (1T3) 12, 1 Spark (1T6) 12, 1 Bett (1T8, halv SB) 12, 1 Svansnärt (1T8) 12, 1T4 Klor (1T8) 12, Ett närstridsvapen 10, Smyga 8, Gömma sig 2, Upptäcka fara 18, Skräckslå 3/0
+**Förflyttning:** L22
+**Naturligt skydd:** 6 poängs hud
+**Demoniska förmågor:** 1T6+1
+
+---
+
+## DEMONÄDLINGAR
+### *Gisslarnas prinsar*
+
+Demonädlingarna är ytterst mäktiga demoner, kanske överbefälhavare eller härskare över ett mindre furstendöme eller tortyrsfär. Enligt Drakar och Demoner Magi är de 'Urgamla demoner'. Det händer att de besöker den mänskliga världen, vilket oftast uppfattas som dess undergång, men det är ytterst ovanligt. Däremot är det oftast demonädlingarna som ligger bakom lägre demoners ankomst till den mänskliga världen. Det krävs minst E15 för att kontrollera en demonädling med besvärjelsen KONTROLLERA DEMON.
+
+**Utseende:** Se 'Högre demon' ovan. De har dock oftast vid det här stadiet antagit humanoid form, d.v.s. ett huvud, en kropp, två armar och två ben.
+
+**Uppträdande:** Som regel är demonädlingarna ytterst maktlystna (annars hade de inte kommit så här pass långt upp) och de intrigerar ständigt för att tillskansa sig mer makt. Demonädlingarna är de som har mest kontakt med den mänskliga världen, eftersom de gärna skickar budbärare till den för att inhämta information. Demonädlingar kan själva utan problem teleportera sig själva eller andra mellan multiversums olika plan.
+
+**Förmågor:** 1T10+4 demoniska förmågor. De kan av egen kraft förflytta sig till den mänskliga världen, eller åkallas av en demonolog.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 31 |
+| STO | 26 |
+| FYS | 31 |
+| SMI | 31 |
+| INT | 21 |
+| PSY | 31 |
+| KAR | 1 |
+| KP | 29 |
+| SB | +1T10 |
+
+**Färdighet (FV):** 2 Nävar (1T3) 18, 1 Spark (1T6) 18, 1 Bett (1T8, halv SB) 18, 1 Svansnärt (1T8) 18, 1T4 Klor (1T8) 18, Ett närstridsvapen 18, Smyga 18, Gömma sig 18, Upptäcka fara 20, Skräckslå 5/5
+**Förflyttning:** L26/F52
+**Naturligt skydd:** 14 poängs hud
+**Demoniska förmågor:** 1T10+4
+
+---
+
+## DEMONFURSTAR
+### *Demonprinsars herre*
+
+Det finns åtta stycken demonfurstar förutom Zahmet själv. Demonfurstarna är mäktiga bortom allt mänskligt förstånd, och det är egentligen fullständigt onödigt och omöjligt att försöka ge dem värden som jämför dem med människor. Här nedan är dock ett försök, för att man skall förstå hur pass mäktiga de egentligen är. Den som beskrivs är Caradocus, furste över Infernos sjätte krets — Krigets krets. Demonfurstar går ej att kontrollera.
+
+**Utseende:** Caradocus tar vanligtvis skepnaden av en enorm krigare, ständigt klädd i en svart helrustning av demonstål. På armbågar, axlar, knän och knogar finns skickligt utmejslade reliefer av demoniska ansikten, förvridna av smärta och dödsångest. Varje ansikte har ett sylvasst, spiralformat, glänsande horn i pannan. Hjälmen är formad som ett drakkranium och har stora svartglänsande drakfjäll som kindplåtar. Det enda som inte är rustat på hans kropp är de två enorma, fjällprydda fladdermusvingarna. Caradocus kolsvarta tvåhandssvärd är tre meter långt och väger 290 kg. Det har tredubbla klingbrytare och hela klingan är inlagd med demonrunor som gör det högintelligent och oförstörbart.
+
+**Uppträdande:** Liksom alla urgamla demoner är Caradocus övermänskligt intelligent, även om han är korkad jämfört med de andra demonfurstarna. Som herre över Krigets krets är han dock verkligen rätt person på rätt plats; han är en lysande härförare, fantastiskt skicklig i att förutse sina motståndares drag och att snabbt omgruppera sina styrkor. Han älskar krig och kämpalekar över allt annat och skickar ständigt sina legioner av fördömda själar mot de andra kretsarna. Förluster bekymrar honom inte; han får snabbt ihop nya arméer.
+
+**Förmågor:** De demoniska förmågorna Eldkvast, Frätande blod, Gift, Hypnos, Kroppsförändring, Kvickhet, Livsuttömning, Magisk osårbarhet, Minnesförlust, Osynlighet, Osårbarhet, Regenerera, Sinnesuttömning, Skräckslå, Snabbhet, Styrkeuttömning, Stålskelett, Vingar, Ökad förflyttning och Ökat skydd. Caradocus kan av egen kraft förflytta sig till den mänskliga världen, men kan inte automatiskt åkallas av en demonolog. Om en demonolog skulle åkalla honom, väljer han själv om han vill komma eller ej. Risken är dock mycket liten att han skulle blanda sig i människornas värld.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Unik |
+| **Antal:** | 1 |
+
+| Grundegenskap | Värde |
+|---|---|
+| STY | 125 |
+| STO | 32 |
+| FYS | 84 |
+| SMI | 42 |
+| INT | 26 |
+| PSY | 58 |
+| KP | 58 |
+| SB | +5T6 |
+
+**Färdighet (FV):** 2 Nävar (1T4) 25, 2 Klor (1T10) 28, 1 Spark (1T8) 23, Tvåhandssvärd 58, Parera 48, Demonologi 26, Nekromanti 26, Elementarmagi 22, Spiritism 18, Mentalism 18, Alla besvärjelser till ovanstående skolor 26, Skräckslå 5/25
+**Förflyttning:** L40/F120
+**Naturligt skydd:** 12 poängs hud
+**Utrustning:** 24 poängs svart, magisk demon-helrustning (höjer SMI och Parera med 10). Demonsvärd (2H) som gör 3T10+16 i skada och höjer FV med 10.
+
+---
+
+## DEMONISKA FÖRMÅGOR
+
+Här följer några exempel på demoniska förmågor. Några är mycket mäktiga, andra är inte alls särskilt kraftfulla. När du skapar en demon kan du antingen välja dess förmågor slumpmässigt genom att slå 1T100, välja själv från tabellen, eller hitta på egna demoniska förmågor.
+
+| 1T100 | Förmåga |
+|---|---|
+| 01–03 | **Avbild:** Demonen behärskar besvärjelsen AVBILD till FV 18. |
+| 04–06 | **Besätta:** Demonen kan överta en annan varelses kropp om den övervinner dess PSY på Motståndstabellen och tränger då helt undan dess medvetande. Demonen kan drivas ut med KONTROLLERA DEMON och den återtar då sin naturliga form. |
+| 07–09 | **Demonvomering:** Demonen spyr ut en illaluktande, missfärgad, rutten massa som kastas ut i en konisk form (STY meter lång). Vomeringen skadar inte men kan fälla folk till marken och är näst intill omöjlig att tvätta bort. Lukten förföljer en i flera dygn därefter. |
+| 10–12 | **Demonbesudling:** Naturen runt om demonen besudlas och börjar ändra form till groteska parodier på växter. Om demonen stannar länge på samma ställe dör all växtlighet för all framtid. |
+| 13–15 | **Demonisk andedräkt:** En osannolikt illaluktande och kväljande stank följer på varje utandning som demonen gör. Hela rum kan bli obrukbara för veckor framöver. Tyger, papper och målade ytor kan missfärgas. |
+| 16–18 | **Eldkvast:** Demonen kan spruta en eldkvast som gör 2T10 i skada. Den har en räckvidd på 25 meter. |
+| 19–21 | **Eterisk kropp:** Demonens 'kropp' är bara en skugga av den materiella kroppen, som befinner sig på ett annat plan. Demonen kan därför inte skadas av några som helst vapen, utan endast med besvärjelser. |
+| 22–24 | **Extra huvud:** Demonen har två huvuden med separat INT och PSY. |
+| 25–26 | **Explosiv kropp:** När demonens kropp förstörs (KP når 0) så exploderar den. Explosionen ger 1 poäng i skada per STO hos demonen. Skadan avtar med 1 för varje meters avstånd mellan offret och demonen. |
+| 27–28 | **Frätande blod:** Demonens blod orsakar 1T6 poäng i skada. Varje rustning som träffas av demonens blod får sin abs minskad med 1. Den som skadar en demon med ett närstridsvapen kan träffas av blodstänk; han måste slå under sin SMI med 1T20 för att undvika detta. |
+| 29–30 | **Förlänga lemmar:** Demonen kan förlänga valfri lem STO antal meter. |
+| 31–32 | **Åldra/föryngra:** Demonen kan åldra eller föryngra offret med upp till 5 år genom att övervinna dess PSY med sin egen på Motståndstabellen. |
+| 33–34 | **Gift:** Demonen har giftblåsor i sina huggtänder. Giftets styrka är lika med demonens PSY. Giftet verkar endast om bettet gör minst en poäng i skada efter att offrets abs räknats bort. |
+| 35–36 | **Hoppförmåga:** Demonen kan hoppa SMI × 2 meter. |
+| 37–39 | **Hypnos:** Demonen kan genom att övervinna offrets PSY med sin egen PSY på Motståndstabellen ta kontrollen över en annan varelse och få den att fullständigt lyda demonens vilja. |
+| 40–41 | **Höjd grundegenskap:** Slå 1T6 för att se vilken av demonens grundegenskaper som höjs med 1T10+1. |
+| 42–43 | **Jordbävning:** Demonen kan skapa en mindre jordbävning genom att hoppa i marken. Alla inom 25 meter faller automatiskt omkull. |
+| 44–45 | **Kroppsförändring:** Demonen kan ändra skepnad till valfri varelse, men behåller alla sina grundegenskaper. |
+| 46–48 | **Kvickhet:** Demonen anfaller *alltid* först i varje SR. |
+| 49–51 | **Lemfrånskiljning:** Demonen kan till exempel kasta sin arm efter någon, med fullt fungerande förmågor kvar i armen. |
+| 52–54 | **Livsuttömning:** Demonen kan, genom att beröra ett offer, 'suga ut' 1T6 FYS-poäng ur honom. Dessa FYS-poäng är förlorade för alltid. Demonen måste övervinna offrets PSY med sin egen PSY på Motståndstabellen för att attacken skall lyckas. |
+| 55–57 | **Magisk osårbarhet:** Demonen är helt resistent mot magi och kan inte påverkas av några som helst besvärjelser, ej ens elementarbesvärjelser. |
+| 58–60 | **Minnesförlust:** Demonen kan, genom att beröra ett offer, få rollpersonen att 'glömma' en slumpmässig färdighet eller besvärjelse permanent. Demonen måste övervinna offrets PSY med sin egen PSY på Motståndstabellen för att attacken skall lyckas. |
+| 61–63 | **Osynlighet:** Demonen kan när han vill göra sig osynlig. Denna osynlighet upphör inte ens om demonen anfaller eller tar skada. Eventuella blodspår syns dock. Osynligheten drar 1 PSY-poäng per minut. |
+| 64–65 | **Osårbarhet:** Demonen berörs ej av icke-magiska vapen, utan endast av besvärjelser, heliga och magiska vapen. |
+| 66–68 | **Regenerera:** Slå 1T10 för att bestämma antalet KP som demonen automatiskt läker varje SR (dock ej mer än vad han har fått i skada). |
+| 69–71 | **Sinnesuttömning:** Demonen kan, genom att beröra ett offer, 'suga ut' 1T6 PSY-poäng ur honom. Dessa PSY-poäng är förlorade för alltid. Demonen måste övervinna offrets PSY med sin egen PSY på Motståndstabellen för att attacken skall lyckas. |
+| 72–73 | **Skräckslå:** Demonen har Skräckslå 5/25. |
+| 74–76 | **Snabbhet:** Demonen är otroligt snabb och får utföra dubbla antalet attacker eller lägga dubbla antalet besvärjelser under en SR. |
+| 77–79 | **Spikhänder:** Demonen är utrustad med 1T10 spikar på varje hand. Spikarna gör 1T8 i skada. FV=SMI. |
+| 80–82 | **Styrkeuttömning:** Demonen kan, genom att beröra ett offer, 'suga ut' 1T6 STY-poäng ur honom. Dessa STY-poäng är förlorade för alltid. Demonen måste övervinna offrets PSY med sin egen PSY på Motståndstabellen för att attacken skall lyckas. |
+| 83–85 | **Stålskelett:** Demonen har ett oerhört hårt skelett och kan aldrig få en kritiskt skadad kroppsdel. |
+| 86–88 | **Teleportering:** Demonen kan flytta sig upp till PSY × 10 meter under en SR. Förflyttningen kostar 1 PSY-poäng för var tionde meter. |
+| 89–91 | **Telepati:** Demonen kan läsa andras tankar genom att övervinna offrets PSY med sin egen PSY på Motståndstabellen. Han kan också förmedla tankar telepatiskt. |
+| 92–94 | **Vingar:** Demonen har vingar som gör det möjligt för honom att flyga med samma förflyttningsförmåga som han har på marken. |
+| 95–97 | **Ökad förflyttning:** Öka demonens förflyttningsförmåga till det dubbla. |
+| 98–00 | **Ökat skydd:** Öka demonens naturliga skydd med 1T10+1. |
+
+---
+
+# DEMONISKA VARELSER
+
+Förutom demoner finns i Inferno och på andra plan av multiversum ett oändligt antal varelser som närmast kan betraktas som 'djur', om man skall jämföra med den mänskliga världen. Här tar vi upp några stycken som är relativt vanligt förekommande i den mänskliga världen.
+
+De demoniska varelserna har många gemensamma egenskaper med demonerna. Se inledningsstycket i kapitlet 'Demoner' i denna bok för mer information.
+
+---
+
+## DÖDSKERUB
+### *De dömdas ledsagare*
+
+Dödskeruberna är infernovarelser, med uppgift att lotsa nytillkomna ned genom den brinnande Avgrunden till Infernos nionde krets, där själarna döms till mer eller mindre oändliga plågor. Eftersom de rör sig i närheten av gapet mellan dimensionerna händer det vid vissa tillfällen att de förirrar sig in i vår värld där de sedan som vaga, klagande, vilsna skuggor irrar omkring och letar efter en väg tillbaka till Inferno.
+
+**Utseende:** Dödskeruber är själarna av små barn som redan under sin korta livstid lyckats bli dömda till Inferno. Därför är deras öde så mycket mer tragiskt. De ser ut som små människobarn, tre till sex år gamla, med ruttnande kött löst hängande på skelett av elfenben. De har rostiga vingar, gnisslande av järnfjäll.
+
+**Uppträdande:** I vår mänskliga värld uppträder dödskeruberna vilset och förvirrat, ständigt gråtande och klagande. De är kötttätare och kan i sin förtvivlan och vilsenhet anfalla allt som rör sig med sina stora klor och huggtänder av järn.
+
+**Förmågor:** Dödskeruberna lever normalt i den flammande Avgrunden och är därför immuna mot all slags eld, till och med drakeld. De har dessutom dubbel PSY på alla motståndsslag mot magi, eftersom deras kroppar till så stor del består av järn. Alla som hör en dödskerubs klagan måste slå under sin PSY med 1T20, annars bryter de själva ihop och blir gråtande vrak så länge de hör dödskeruben.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1–20 |
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 6 |
+| STO | 6 |
+| FYS | 17 |
+| SMI | 14 |
+| INT | 6 |
+| PSY | 11 |
+| KP | 12 |
+| SB | — |
+
+**Färdighet (FV):** 2 Nävar (1T3) 1, 2 Klor (1T10) 3, 1 Spark (1T6) 1, 1 Bett (1T8) 3, Gömma sig 12, Upptäcka fara 1, Smyga 1, Skräckslå 1/0
+**Förflyttning:** L2/F10
+**Naturligt skydd:** 9 poängs benstomme av onaturligt hårt elfenben
+
+---
+
+## DÖDSÄNGEL
+### *Dödens sändebud*
+
+Dödsängeln är kaosfurstarnas absolut mäktigaste redskap i den mänskliga världen. Få har sett den, men å andra sidan, döda män talar inte…
+
+**Utseende:** Det enda man ser av dödsängeln är en lång, svart, mycket sliten kåpa med huva, och i huvan en flinande, fasansfull dödskalle. Ögonhålorna är tomma sånär som på två röda ljuspunkter någonstans långt inne. Händerna är förtorkade och knotiga och håller alltid i en svartglänsande, sylvass lie.
+
+**Uppträdande:** Dödsängeln fungerar som budbärare eller omen, t.ex. för att tala om när någonting otrevligt kommer att hända om man inte ändrar sina planer. Han kan också få uppgiften att hämta någon som genom sina gärningar definitivt förtjänat en plats i någon av Infernos lägre kretsar.
+
+**Förmågor:** Dödsängeln kan inte dödas, utan endast tillfälligt fördrivas från den mänskliga världen genom att man förstör hans kropp. Själen återvänder då till Inferno där den tar en ny materiell form efter ett mänskligt dygn.
+
+Praktiskt taget ingen magi biter på Dödsängeln på grund av hans höga PSY. Endast magiska vapen kan verka på Dödsängeln, och de gör blott halv skada.
+
+Dödsängeln har ett fruktat högerpekfinger, med vilket han kan utföra följande:
+- Peka på en utvald varelse och få honom att stå helt paralyserad till Dödsängeln försvinner från platsen (PSY mot PSY på Motståndstabellen).
+- Vinka till sig en utvald varelse och på så sätt tvinga offret att följa efter Dödsängeln. Offret får slå ett Motståndsslag (PSY mot PSY) varje timme.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Unik |
+| **Antal:** | 1 |
+
+| Grundegenskap | Värde |
+|---|---|
+| STY | 90 |
+| STO | 15 |
+| FYS | 0 |
+| SMI | 15 |
+| INT | 18 |
+| PSY | 63 |
+| KP | 200 |
+| SB | +4T6 |
+
+**Färdighet (FV):** 2 Nävar (1T3) 43, 1 Spark (1T6) 43, Lie (2T10) 40, Parera 40, Alla andra färdigheter (utom besvärjelser) 19, Skräckslå 0/25
+**Förflyttning:** L10 / Teleportation obegränsat avstånd
+**Naturligt skydd:** Inget
+
+---
+
+## KÖLDBEST
+### *Iskall död*
+
+Köldbestarna är fruktansvärda ismonster från Infernos andra krets, Köldens krets. De är ett slags elementarvarelser som till viss del är uppbyggda av demon-is. I vår värld förekommer de nästan enbart i arktiska regioner samt till havs, där de kan frysa vattnet till stora isflak som de driver omkring på.
+
+**Utseende:** Köldbestar ser ut som enorma, gulvita, halvgenomskinliga valrossar. De långa klorna (tre på varje labb), de tre spikraka hornen i pannan och de väldiga, krökta huggtänderna består av demon-is, som är betydligt hårdare än stål. Köldbestarnas hud är halvgenomskinlig, så att inälvor och blodådror vagt kan anas genom det vit-gula späcket.
+
+**Uppträdande:** Köldbestar är mycket aggressiva, ointelligenta köttätare och anfaller i stort sett alla varmblodiga varelser de stöter på. Efter att ha frusit ned offret (se nedan), är det 'tillagat' och kalaset kan börja.
+
+**Förmågor:** Om en köldbest träffar med något av sina naturliga vapen och gör minst en poäng i skada, bryts spetsen på klon/tanden/hornet av och stannar inne i offrets kropp, där det omedelbart börjar frysa ned offrets blod. Detta yttrar sig genom att offret efter bara några minuter börjar hosta fruset blod, och efter bara någon timme är offret så nedfruset att medvetslöshet inträder. Efter tre till fyra timmar återstår bara en isklump. Man har hittills inte hittat något effektivt botemedel mot detta.
+
+Köldbestar kan frysa vilket vatten som helst, även saltvatten, till isflak.
+
+Kölden är köldbestarnas rätta element och de tar dubbel skada av all slags eld. De tar ingen skada alls av köld, gift eller syra.
+
+| | |
+|---|---|
+| **Hemvist:** | 11, 12, 13 |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1–5 |
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 35 |
+| STO | 28 |
+| FYS | 19 |
+| SMI | 7 |
+| INT | 3 |
+| PSY | 11 |
+| KP | 24 |
+| SB | +2T6 |
+
+**Färdighet (FV):** 3 Klor (1T10) 8, 1 Bett (1T8, halv SB) 5, 1 Stångning (2T6) 12, Simma 20, Upptäcka fara 6
+**Förflyttning:** L6/S18
+**Naturligt skydd:** 6 poängs is-hud
+
+---
+
+## SVART ENHÖRNING
+### *Skuggornas springare*
+
+De svarta enhörningarna är demoniska motpoler till de vanliga enhörningarna, och deras absoluta motsatser. Somliga menar att de svarta enhörningarna är själarna av vanliga enhörningar som gått en våldsam död till mötes. Deras ondska skulle i så fall förklaras med att de är hämndlystna. Svarta enhörningar kan endast 'charmas' av manliga magiker med svarta sinnen (bedöms av SL). De svarta enhörningarna hör till skillnad från de flesta andra kaosvarelser hemma i vår mänskliga värld och kan därför dödas 'på riktigt'.
+
+**Utseende:** En enhörning ser ut precis som en häst men med ett gyllne, spiralvridet horn i pannan och kluvna silverne hovar. Den svarta enhörningen är identisk till formen, men den framträder för det mänskliga ögat bara som en massiv kolsvart skugga, en knappt genomskinlig ande.
+
+**Uppträdande:** De svarta enhörningarna är mer kraftfulla än de vanliga enhörningarna i vanlig strid med naturliga vapen, men inte alls lika mäktiga magiskt. De är inte heller skygga på samma sätt som vanliga enhörningar, utan snarare aggressiva och utmanande. Möter man en svart enhörning börjar han genast frusta och skrapa i marken med hovarna, för att därefter anfalla med förbluffande snabbhet.
+
+Svarta och vita enhörningar är varandras absoluta dödsfiender.
+
+**Förmågor:** Svarta enhörningshorn gör 1T4 KP i skada vid beröring. De är otroligt snabba och får göra dubbelt antal attacker varje SR.
+
+| | |
+|---|---|
+| **Hemvist:** | 2, 3 |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 45 |
+| STO | 26 |
+| FYS | 18 |
+| SMI | 18 |
+| INT | 11 |
+| PSY | 6 |
+| KP | 22 |
+| SB | +2T6 |
+
+**Färdighet (FV):** 2 Stångningar (1T6) 12, 4 Hovar (1T6) 16, 2 Bett (1T4, halv SB) 12, Gömma sig 13, Upptäcka fara 22, Hoppa 13, Smyga 13
+**Förflyttning:** L26
+**Naturligt skydd:** 2 poängs skinn
+
+---
+
+## SVART HÄMNARE
+### *Den obevekliga döden*
+
+En svart hämnare är det absolut farligaste man någonsin kan råka på i den mänskliga världen, Dödsängeln möjligtvis undantagen. En svart hämnare blir resultatet när en mycket kraftfull odöd (t.ex. en dödsgast) blir besatt av en demonädling. De har alltid en speciell uppgift, t.ex. att vakta ett föremål eller att döda en person.
+
+**Utseende:** En svart hämnare har formen av en två och en halv meter lång riddare i kolsvart, glänsande helrustning (abs 15) med en svart kappa över axlarna. Bakom tunnhjälmens ögonspringor skymtar bara ett rött ljussken. Han är alltid beväpnad med en demonisk dubbelyxa som kan skära genom alla material.
+
+**Uppträdande:** De svarta hämnarna har en viss mycket bestämd uppgift och gör ingenting förutom den. Har de satts att vakta ett föremål, så vaktar de föremålet, och skulle det bli stulet så förföljer de tjuven, dödar honom och hans kumpaner, och återvänder med stöldgodset till dess rätta plats. I vissa fall räcker detta för att den svarte hämnaren skall bli löst från sitt uppdrag, i andra fall finns han kvar.
+
+**Förmågor:** En svart hämnare behöver aldrig äta eller dricka. De blir aldrig uttråkade eller trötta. De kan färdas under vattnet eller genom luften med samma hastighet som på marken; kort sagt, de tar sig fram överallt. Fysiska hinder (väggar, etc.) hugger den sig igenom.
+
+| | |
+|---|---|
+| **Hemvist:** | A |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 75 |
+| STO | 25 |
+| FYS | 75 |
+| SMI | 20 |
+| INT | 7 |
+| PSY | 50 |
+| KP | 50 |
+| SB | +3T6 |
+
+**Färdighet (FV):** Dubbelyxa (4T10+4) 35, Parera 35, Smyga 0, Upptäcka fara 30, Gömma sig 19, Klättra 25, Spåra 65, Skräckslå 5/0
+**Förflyttning:** A6
+**Naturligt skydd:** Inget
+
+---
+
+## TJÄNARE
+### *Ondskans tjänare*
+
+Tjänare är vanliga humanoider, vanligtvis nekromantiker, som slutit ett fördrag med en demonädling, demonfurste eller annan gudomlighet som är tillräckligt mäktig, och därigenom fått vissa speciella förmågor. De står dock i förbund med denne och måste följa vissa bestämda regler. Ofta får de ett visst uppdrag som de skall utföra åt sin herre; lyckas de så väntar närmast obegränsad makt och rikedom; misslyckas de väntar lämpligt straff, oftast döden på det mest plågsamma av alla tänkbara sätt.
+
+**Utseende:** Tjänarna har ingenting yttre som röjer deras uppdrag.
+
+**Uppträdande:** Ingenting speciellt.
+
+**Förmågor:** Man kan se följande tecken på att en tjänare finns i närheten (inom 500 meter):
+- Mjölk och grädde surnar; smör härsknar; katter börjar löpa oavsett säsong; all eld brinner med en klotrund, klarblå låga; vin och bröd slutar jäsa; hästar är i uppror om morgnarna; all gröda slutar växa; tuppar gal inte på morgonen; färg torkar inte.
+
+En tjänare har alltid en, oftast flera, av följande förmågor. Han kan:
+- använda besvärjelsen ENERGISTRÅLE upp till E25.
+- åldra eller föryngra människor upp till 20 år per dygn. Han måste då känna till offrets namn samt äga ett föremål som tillhört offret lika många år som denne skall åldras/föryngras per dygn.
+- bränna ut ett offers ögon genom att möta offrets blick och övervinna dennes PSY med sin egen på Motståndstabellen. Synen kan räddas med en HELA E5 inom en timme.
+- flyga med en hastighet av F50.
+- använda någon av de demoniska förmågorna Eldkvast, Hoppförmåga, Kvickhet, Livsuttömning, Minnesförlust, Sinnesuttömning, Snabbhet, Styrkeuttömning eller Teleportering.
+- automatiskt döda en spiritus familiaris om han kommer inom 10 meter från den.
+
+En tjänare har följande svagheter:
+- Han tar 1 KP/SR i skada då han är i kontakt med helig jord eller heligt vatten.
+- Han kan aldrig gå under en hästsko som hänger med ändarna uppåt.
+- Om man slår ned en järnspik i ett spår efter tjänaren tar han 2 KP i skada i den kroppsdel som lämnat spåret.
+- Han tar 1 KP/SR i skada av salt eller vitlök om det kommer i kontakt med ett sår.
+- Man kan skydda sig från vilken som helst av tjänarens förmågor om man biter på ett kopparmynt.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 |
+
+*En tjänare behåller alla grundegenskaper oförändrade.*
+
+**Färdighet (FV):** Vanliga 1T10+10, Skräckslå 0/1
+**Förflyttning:** L10
+**Naturligt skydd:** Inget
+
+---
+
+## VAMPYRFJÄRIL
+### *Den bevingade döden*
+
+Vampyrfjärilarna är blodsugande demonvarelser med ursprung i Kaos. De klarar sig bra i alla miljöer och hamnar ofta av misstag i vår värld då de flyger omkring bland alla konstiga dimensionsportar som finns i Kaosdimensionen. De har ingen direkt hemvist utan finns spridda på alla multiversums plan.
+
+**Utseende:** Vampyrfjärilens 'kropp' är en decimeterlång, extremt smal röd humanoid demon med en en decimeter lång, tunn svans. Demonen har vassa huggtänder och centimeterlånga, rakbladsvassa klor på både händer och fötter. De stora vingarna (spännvidd ungefär en halvmeter) skiftar hela tiden i regnbågens alla färger.
+
+**Uppträdande:** Vampyrfjärilen är en blodsugande rovvarelse som anfaller genom att ljudlöst flyga upp bakom sitt offer (använd färdigheten Smyga) och snabbt fladdra fram bakom det tilltänkta offret för att söva honom. Därefter sätter det tänderna i offrets halspulsåder eller handled och börjar tömma kroppen på blod. Fjärilen suger alltid sin egen FYS KP blod ur offret, som alltså mycket väl kan överleva attacken, men offrets egen FYS sänks med så mycket som fjärilen sugit. Dessa FYS-poäng återfås i en takt av en poäng per dag.
+
+**Förmågor:** Den som ser vingarna på en vampyrfjäril måste klara ett slag PSY mot PSY på Motståndstabellen för att undgå att bli sövd av det mystiska färgmönstret.
+
+En vampyrfjäril som får sin kropp förstörd återvänder till sitt ursprungsplan och skapar en ny kropp.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1–80 |
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 5 |
+| STO | 6 |
+| FYS | 9 |
+| SMI | 19 |
+| INT | 11 |
+| PSY | 11 |
+| KP | 8 |
+| SB | — |
+
+**Färdighet (FV):** 2 Klor (1T4) 5, 1 Spark (1T6) 5, 1 Bett (1T6) 5, Smyga 17, Upptäcka fara 8, Gömma sig 1, Skräckslå 1/0
+**Förflyttning:** L4/F14
+**Naturligt skydd:** Inget
+
+---
+
+# KAOSKRIGARE
+
+Kaoskrigarna är mycket ovanliga, men extremt farliga besökare i vår dimension. De är varelser från en kaotisk och krigisk dimension och kan i bland hamna i vår mänskliga värld av misstag. Det finns ingen känd besvärjelse för att åkalla eller skicka bort kaoskrigare.
+
+Alla kaoskrigare har FV 20 i Hamnskifte (=skepnadsförändring) och de kan när som helst anta formen av vilken humanoid varelse de vill. Hamnskiftet till en humanoid tar en timme. De kan dock inte bestämma sig för att efterlikna någon speciell individ, utan om de skiftar hamn (=form) till 'människa' så ser de ut som vilken människa som helst, inte någon speciell som de själva väljer. De behåller också alla grundegenskaper, utom STO. Deras sanna hamn är en stor grönskimrande geléklump med ett tjugotal tentakler upptill. Ytterst på varje tentakel sitter ett öga eller en klo. När en kaoskrigares humanoida form når KP 0 återtar han automatiskt sin sanna hamn och alla KP och PSY-poäng återställs.
+
+Kläder, vapen, rustningar och andra föremål består för kaoskrigarnas del oftast av illusioner (se Drakar och Demoner Magi: formelboken, sid. 38). Den som genomskådar en kaoskrigares illusion ser bara en naken person. Det är omöjligt att se den sanna hamnen, eftersom förvandlingen till humanoid är verklig. Om kaoskrigaren skiftar till sin sanna hamn upplöses illusionen automatiskt. Det kan givetvis hända att kaoskrigaren skaffar sig 'riktig' utrustning efter det att han kommit till den mänskliga världen. Denna faller ihop i en hög på golvet/marken om han skiftar till sin sanna hamn.
+
+Kaoskrigare av alla slag 'lever' av att suga livskraft ur andra intelligenta varelser. Genom att beröra ett offers tinningar drar han en FYS-poäng och en PSY-poäng per SR, som offret förlorar permanent. Offret behöver inte vara vid medvetande, huvudsaken är att själen inte lämnat kroppen. Ett offer som är vid medvetande märker detta som att han mycket snabbt blir trött och dåsig, för att slutligen bli medvetslös och dö när endera egenskapen når noll.
+
+Kaoskrigarna kan stanna på det mänskliga planet i högst en månad, på ett ungefär. Därefter försvinner de spårlöst.
+
+Alla kaoskrigare ser likadana ut i sin sanna hamn. De har samma grundegenskaper som i sin humanoida hamn, utom STO, som är 12. De kan aldrig använda några besvärjelser i sin sanna hamn, eftersom dessa kräver vissa handrörelser.
+
+Kaoskrigarna har för övrigt många gemensamma egenskaper med demonerna. Se inledningsstycket i kapitlet 'Demoner' i denna bok för mer information.
+
+**Sanna hamnen — Färdighet (FV):** 10 Klor (1T6) SMI, Smyga 10, Gömma sig 10, Upptäcka fara 26, Klättra 2, Skräckslå 1/1
+**Förflyttning:** L4
+**Naturligt skydd:** Inget
+
+---
+
+## KAOSKARDINAL
+### *Helgedomars skövlare*
+
+Kaoskardinalerna har påträffats främst vid helgedomar och kloster. En kaoskardinal kan dyka upp när som helst och söker ofta inträde vid en helgedom som novis eller studerande. Därefter börjar han långsamt avliva invånarna en efter en, utan att det väcker alltför mycket misstankar. Dödsfallen ser mycket naturliga ut, eftersom inga tecken på yttre våld förekommer. Vanligtvis slår de till när offren sover.
+
+**Utseende:** Kaoskardinalerna har normalt formen av den humanoid som befolkar helgedomen. De 'klär' sig om möjligt i långa, svepande karmosinröda kåpor med en mängd mystiska symboler på insidan, men bär naturligtvis den eventuella klädedräkt som är påbjuden i det tempel de har nästlat sig in i. De bär aldrig rustning, men är å andra sidan mycket skickliga magiker. De slåss enbart med besvärjelser.
+
+**Uppträdande:** Kardinalerna är de listigaste och slugaste av alla kaoskrigarna, samt de farligaste. De är mycket beräknande och gör allt för att dölja sin verkliga identitet. Om de skaffar sig 'verklig' utrustning är det i stort sett omöjligt att avslöja dem, och de återvänder inte till sitt eget plan förrän de dödas.
+
+**Förmågor:** Dubbel PSY vid alla motståndsslag mot magi. Perfekt mörkerseende. När deras mänskliga forms KP når noll så återtar de sin sanna form och återfår alla förlorade KP och PSY-poäng.
+
+| | |
+|---|---|
+| **Hemvist:** | A |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 14 |
+| STO | 11 |
+| FYS | 14 |
+| SMI | 19 |
+| INT | 19 |
+| PSY | 35 |
+| KP | 14 |
+| SB | — |
+
+**Färdighet (FV):** 2 Nävar (1T3) 5, 1 Spark (1T6) 5, Stav 5, Stavmagi 25, Alla besvärjelser 20, Smyga 19, Gömma sig 30, Upptäcka fara 12, Klättra 10
+**Förflyttning:** L10
+**Naturligt skydd:** Inget
+
+---
+
+## KAOSRIDDARE
+### *Kaos legionärer*
+
+Kaosriddarna är ungefär lika kraftfulla som kardinalerna, men behärskar ingen magi förutom den illusion som döljer deras sanna identitet. De är å andra sidan extremt goda kämpar. När de kommer till den mänskliga världen dras de ofta till våldsamheter, t.ex. krig eller grupper av äventyrare, för att obemärkt kunna suga i sig av de besegrade offrens livskraft.
+
+**Utseende:** Riddarna tar ofta skepnaden av högvuxna, kraftiga kämpar, stolta och ståtliga. De bär antingen en verklig eller en illusorisk helrustning och föredrar att slåss med enhandsvapen och stor sköld eller lans och sköld om de är beridna.
+
+**Uppträdande:** Lyckas kaosriddarna inte omedelbart finna något naturligt tillfälle att få tag på tillgänglig livskraft så kan det hända att de helt enkelt bryter sig in hos någon intet ont anande familj och dödar dem i sömnen. Därefter försvinner de från samhället. De är liksom kaoskardinalerna mycket sluga och försöker i möjligaste mån sopa igen spåren efter sig genom att få sina dåd att se ut som 'naturliga' våldshandlingar, t.ex. lönnmord eller rånmord.
+
+**Förmågor:** Se ovan.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 36 |
+| STO | 15 |
+| FYS | 18 |
+| SMI | 19 |
+| INT | 18 |
+| PSY | 17 |
+| KP | 17 |
+| SB | +1T10 |
+
+**Färdighet (FV):** 2 Nävar (1T3) 12, 1 Spark (1T6) 10, Vapen 25, Lans 17, Stor sköld 20, Smyga 19, Gömma sig 20, Upptäcka fara 12, Klättra 10, Rida 20
+**Förflyttning:** L10
+**Naturligt skydd:** Inget
+
+---
+
+## KAOSKORPRAL
+### *Mörkrets centurioner*
+
+En kaoskorpral är mindre kraftfull än kaosriddaren. Annars är den enda skillnaden i princip att de alltid uppträder i sällskap med härjare och dråpare (se nedan). Vanligen dyker de upp i 'vår' värld i grupper om fem till femton kaoskrigare med en kaoskorpral som ledare. Gruppen försöker vanligtvis få anställning som hyrsvärd eller legosoldater, men om inte detta lyckas kan de ge sig på att anfalla mindre byar och gårdar.
+
+**Utseende:** Se 'Kaosriddare' ovan.
+
+**Uppträdande:** Se 'Kaosriddare' ovan.
+
+**Förmågor:** Se 'Kaosriddare' ovan.
+
+| | |
+|---|---|
+| **Hemvist:** | A |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 2–4 (tillsammans med 2–6 härjare och 1–5 dråpare) |
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 18 |
+| STO | 15 |
+| FYS | 17 |
+| SMI | 17 |
+| INT | 11 |
+| PSY | 11 |
+| KP | 16 |
+| SB | +1T4 |
+
+**Färdighet (FV):** 2 Nävar (1T3) 10, 1 Spark (1T6) 8, Bastardsvärd 19, Lans 12, Stor sköld 15, Smyga 14, Gömma sig 15, Upptäcka fara 12, Klättra 10, Rida 16
+**Förflyttning:** L10
+**Naturligt skydd:** Inget
+
+---
+
+## DRÅPARE
+### *Den smygande fasan*
+
+Dråparna är kaoskrigare som är extremt specialiserade på att smyga, att gömma sig och att utdela omedelbart dödande hugg eller stötar. De är inte särskilt duktiga på att slåss 'vanligt'.
+
+**Utseende:** Dråpare är oftast ganska korta och är klädda i mörka kläder som matchar omgivningen så mycket det går. Eftersom kläderna består av illusioner kan de mycket snabbt ändra färg på dem. Detta gör att de är mycket svårupptäckta.
+
+**Uppträdande:** Dråpare är mästare på att osedda ta sig upp bakom sina motståndare. När de går in i vanlig strid utnyttjar de sin förmåga att göra sig osynliga och smyger därefter upp bakom en motståndare och försöker skära strupen av honom. Om offret bär rustning så försöker dråparen i stället lirka in sin dolk mellan rustningsplåtarna på ett vitalt ställe, t.ex. njurarna, nacken eller en armhåla. Liksom alla andra kaoskrigare är de mycket aggressiva och mordiska och anfaller utan föregående provokationer.
+
+**Förmågor:** Dråpare har automatiskt en förmåga som liknar besvärjelsen OSYNLIGHET. Denna förmåga, som används som en vanlig färdighet, gör att en motståndare måste lyckas med ett färdighetsslag på Upptäcka fara med en modifikation på −10 på slaget för att upptäcka dråparen.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1–5 (tillsammans med 2–6 härjare och 2–4 kaoskorpraler) |
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 11 |
+| STO | 9 |
+| FYS | 13 |
+| SMI | 27 |
+| INT | 11 |
+| PSY | 11 |
+| KP | 11 |
+| SB | |
+
+**Färdighet (FV):** 2 Nävar (1T3) 5, 1 Spark (1T6) 5, Dolk 25, Smyga 23, Gömma sig 23, Upptäcka fara 18, Klättra 20, 'Vara osedd' 20
+**Förflyttning:** L10
+**Naturligt skydd:** Inget
+
+---
+
+## HÄRJARE
+### *Legionens bärsärkar*
+
+Härjarna är dråparnas absoluta motsatser. När de går in i strid blir de mycket vildsinta och anfaller ända tills offret har stupat utan att bry sig om egna skador.
+
+**Utseende:** Härjarna ser ut som helt vanliga människor, oftast klädda i läderrustning eller ringbrynja. De slåss alltid med tvåhandsvapen, främst dubbelyxa eller tvåhandssvärd.
+
+**Uppträdande:** Man får leta länge om man skall hitta mer aggressiva och vildsinta kämpar än härjarna. De älskar att slåss över allt annat och är mycket lättretliga. När de väl börjat slåss slutar de inte förrän KP når noll.
+
+**Förmågor:** Härjare får göra två närstridsattacker per SR, mot samma eller två olika motståndare inom vapenlängds avstånd.
+
+För varje attack som härjaren gör, förlorar han automatiskt en KP, ovanpå den normala skada han tar.
+
+Härjarna är helt opåverkade av alla skador ända tills KP når noll, då de omedelbart återtar sin sanna form och återfår alla KP och PSY-poäng.
+
+Härjare kan hela sig själva med en takt av en KP per SR. Under denna SR försätter de sig i ett demoniskt transtillstånd och är helt avstängda från omvärlden.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 2–6 (tillsammans med 2–4 kaoskorpraler och 1–5 dråpare) |
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 33 |
+| STO | 11 |
+| FYS | 31 |
+| SMI | 14 |
+| INT | 7 |
+| PSY | 11 |
+| KP | 21 |
+| SB | +1T6 |
+
+**Färdighet (FV):** 2 Nävar (1T3) 14, 1 Spark (1T6) 14, Ett tvåhandsvapen 23, Smyga 4, Gömma sig 4, Klättra 12
+**Förflyttning:** L10
+**Naturligt skydd:** Inget
+
+---
+
+# MAGISKA ODÖDA
+
+I Drakar och Demoner Magi står allt om hur man skapar magiska odöda, det mesta om hur de fungerar, men väldigt lite om hur de ser ut och vilka värden de har. Magiska odöda är döda personers kroppar som väckts till liv igen av en magiker, med hjälp av olika animeringsbesvärjelser. Normalt sker detta efter att den dödes själ har lämnat kroppen och den odöde har därför ingen egen vilja. Han är i stället helt och hållet slav under magikerns vilja.
+
+Den trollkarl som skapar en magisk odöd kontrollerar alla dess aktiviteter fullständigt. Order kan endast delas ut då den odöde befinner sig inom syn- och hörhåll. I andra situationer utför den sin senaste order.
+
+Magiska odöda har inga känslor och känner därför aldrig någon smärta. Deras odöda kroppar är blodlösa och kan därför givetvis inte heller blöda. Alla magiska odöda har perfekt mörkersyn.
+
+---
+
+## BANEMAN
+### *Dödsriddarnas slavar*
+
+Banemännen är ett slags zombier som bara kan skapas av dödsriddare, som skapar dem av fallna fiender och använder dem som följeslagare och tjänare. En baneman räknas som lägre odöd.
+
+**Utseende:** En baneman ser ut precis som i levande livet, men hans hud är blek, livlös och sprucken. Inget blod syns i sprickorna. Hans ögon och naglar är helt svarta och hela banemannen omges av en känsla av död och mörker.
+
+**Uppträdande:** En baneman kan använda sig av vanliga vapen eller naturliga vapen, men använder vanligtvis sin mörkerattack (se nedan) i första hand. Banemännen har ingen egen vilja utan lyder blint den dödsriddare som skapat dem. Eftersom dödsriddare lätt kan skapa nya banemän tvekar han inte att använda dem till allehanda jobbiga eller farliga uppgifter, hellre än att riskera sitt eget icke-liv.
+
+**Förmågor:** Banemannen kan skjuta en stråle koncentrerat mörker ur ögonen. Strålen har en räckvidd på 10 meter och måste riktas mot ett bestämt offer. Med hjälp av strålen försöker banemannen övervinna offrets PSY med sin egen på Motståndstabellen. Lyckas attacken förlorar offret 1T6 PSY, som dock kan återvinnas på vanligt sätt. Om PSY når 0 så dör offret. Varje 'mörkerattack' kostar banemannen 3 PSY.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | Varierar |
+
+| Grundegenskap | | Typvärde |
+|---|---|---|
+| STY | ×2 | 21 |
+| STO | ×1 | 11 |
+| FYS | 0 | 0 |
+| SMI | ×0,75 | 8 |
+| INT | ×0,5 | 5 |
+| PSY | ×1,5 | 16 |
+| KP | ×1 | 11 |
+| SB | | 0 |
+
+**Färdighet (FV):** Som i levande livet 1T20, Mörkerattack 20
+**Förflyttning:** L8
+**Naturligt skydd:** Inget
+
+---
+
+# LEVANDE LIK
+### *De dräpande hybriderna*
+
+I närheten av nekromantikers och andra mörkerbesvärjares grottor eller slott är koncentrationen av odöda, gastar, andar, demoner, etc. oftast exceptionellt hög. I sådana områden kan det därför i bland hända märkliga saker som ingen kunnat förutse. Ett levande lik är den olyckliga kombinationen av en zombie och en vilsegången ande. Anden tar boning i zombiens kropp och resultatet blir en mycket kraftfull varelse, med zombiens fysiska förmågor och andens mentala.
+
+**Utseende:** Ett levande lik ser ut ungefär som en zombie, bortsett från att förruttnelseprocessen upphör så fort anden tar plats. Av denna anledning sprider det levande liket inte heller någon avskyvärd stank, utan endast en lätt, svagt förnimbar obehaglig lukt av lik och smuts. De kan använda alla slags vapen och rustningar och försöker allmänt se så skräckinjagande ut som möjligt.
+
+**Uppträdande:** Levande lik är ondsinta, blodtörstiga, våldsamma varelser. De anfaller alltid om de inte är i uppenbart underläge och slåss som bärsärkar. De har en egen vilja och är inte bundna till någon speciell plats eller ett speciellt uppdrag. De har inget mål med sin icke-tillvaro, men finner stor glädje i att förpassa andra varelser till Dödsriket.
+
+**Förmågor:** Eftersom det levande liket delvis är en ande har det också andars förmåga att suga livskraft ur sina offer. Detta sker genom fysisk beröring. Det levande liket drar 2 FYS-poäng permanent per SR från sitt offer. Det måste dock övervinna motståndarens PSY med sin egen för att lyckas med detta. Med MOTSTÅNDSKRAFT kan man reducera förlusten med ett för var femte effektgrad.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | Varierar |
+
+| Grundegenskap | | Typvärde |
+|---|---|---|
+| STY | ×2 | 21 |
+| STO | ×1 | 11 |
+| FYS | 0 | 0 |
+| SMI | ×1 | 11 |
+| INT | ×0,75 | 8 |
+| PSY | ×2 | 21 |
+| KP | | 16 |
+| SB | | 0 |
+
+**Färdighet (FV):** Som i levande livet 1T20, Skräckslå 1/10
+**Förflyttning:** L10
+**Naturligt skydd:** Inget
+
+---
+
+## MUMIE
+### *De återuppväckta*
+
+Genom att behandla ett lik med olika kemikalier och magiska besvärjelser så kan man återuppliva ett lik i form av en mumie. De förekommer ofta som väktare av gravar och tempel, eftersom de lyder blint och inte behöver varken sömn, dryck eller föda. Mumien räknas som lägre odöd.
+
+**Utseende:** Mumien består av ett med balsamerande salvor bevarat lik, omlindat med tjocka lindor av linne- eller bomullstyg. De kan skapas från kropparna av vilka humanoida intelligenta varelser som helst. De värden som ges här nedan är för en mänsklig mumie. Mumier använder sällan avståndsvapen på grund av sin låga SMI.
+
+**Uppträdande:** Se inledningen till detta kapitel. Magiska odöda behåller alla färdigheter från sitt tidigare liv, utom de som är baserade på INT. De kan därför inte använda besvärjelser, men däremot är de duktiga på att smyga. Mumiernas uppförande i strid är lika listigt som hos den magiker som skapade dem, däremot kan de få problem om striden tar en oväntad vändning.
+
+**Förmågor:** Mumiens lindor fungerar visserligen som skydd, men de är också brännbara. En brinnande mumie känner ingen smärta, utan fortsätter agera som om ingenting hade hänt i ytterligare två SR, då den faller ihop i en stinkande hög på golvet. Alla som känner denna stank måste klara en FYS-kontroll (slå under sin FYS med 1T20) för att inte bli kraftigt illamående i 1T4 minuter.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Sällsynt |
+| **Antal:** | Varierar |
+
+| Grundegenskap | | Typvärde |
+|---|---|---|
+| STY | ×1–×5 | 32 |
+| STO | ×1 | 11 |
+| FYS | 0 | 0 |
+| SMI | ×0,1–×0,5 | 3 |
+| INT | ×0,2–×1 | 7 |
+| PSY | Magikerns offrade PSY | 2 |
+| KP | | 6 |
+| SB | | +1T6 |
+
+**Färdighet (FV):** Varierar 1T20, Smyga 19
+**Förflyttning:** L8
+**Naturligt skydd:** 2 poängs lindor
+
+---
+
+## NATTULV
+### *De nattsvarta väktarna*
+
+Nattulven är en fruktansvärd odöd varelse, en kombination av en konstruerad varelse som blivit besatt av ett spöke. De är oftast tjänare eller livvakter till den nekromantiker som har skapat dem, eller också är de väktare över någonting dyrbart. Nattulven räknas som högre odöd.
+
+**Utseende:** Nattulven liknar en jättelik kolsvart ulv med två eller tre huvuden. Den är ungefär en och en halv meter hög och två och en halv meter lång och har lång, tät nattsvart päls. Dess röda ögon sprider ondska vart den än ser.
+
+**Uppträdande:** Nattulvarna är till skillnad från de andra magiska odöda inte beroende av någon som hela tiden ger kommandon, utan har en egen vilja. De uppträder enbart nattetid eller på platser dit solljuset inte når, eftersom de inte tål direkt solljus.
+
+**Förmågor:** Nattulven tar 1 KP i skada per minut i solsken. Dess saliv är ett gift med styrka 5. Om det verkar börjar offret åldras med ett år per dag tills det dör av ålderssvaghet.
+
+Nattulvens förmåga att Skräckslå består i dess högljudda och skräckinjagande ylande. Alla som hör det måste slå på Skräcktabellen. De olika huvudena kan uppträda oberoende av varandra. T.ex. kan det ena huvudet skräckslå medan det/de andra anfaller.
+
+Nattulvar har perfekt mörkersyn.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 27 |
+| STO | 19 |
+| FYS | 0 |
+| SMI | 15 |
+| INT | 11 |
+| PSY | 21 |
+| KP | 23 |
+| SB | +1T6 |
+
+**Färdighet (FV):** 2–3 Bett (1T8+gift) 8, 2 Klor (1T6) 8, Spåra 9, Smyga 12, Finna dolda ting 9, Gömma sig 13, Upptäcka fara 17, Skräckslå —/5
+**Förflyttning:** L26
+**Naturligt skydd:** 3 poängs hud
+
+---
+
+## SKELETT
+### *Nekromantikernas slavar*
+
+Skeletten är liksom mumier och zombier resterna av döda kroppar som väckts till liv av en magiker. De har därför ingen egen vilja utan kan bara lyda kommandon den får från sin herre. Skelett räknas till lägre odöda.
+
+**Utseende:** Namnet talar ganska väl om hur skeletten ser ut; som vanliga skelett med lite köttslamsor och senor som håller ihop de olika benen. Ofta bär de något slags rustning eller klädsel, och de kan använda vilka vapen som helst. Skelett kan skapas av vilka varelser som helst, även djur. De behåller då de färdigheter de hade i det verkliga livet.
+
+**Uppträdande:** Se inledningen till detta kapitel. De magiska odöda behåller alla färdigheter från sitt tidigare liv, utom de som är baserade på INT. De kan därför inte använda besvärjelser, men är duktiga på att smyga. Skelettens uppförande i strid är lika listigt som hos den magiker som skapade dem, däremot kan de få problem om striden tar en oväntad vändning.
+
+**Förmågor:** Skelett tar ingen skada av pilar eller stickvapen (t.ex. dolk och spjut). De kan heller inte ta någon skada av vanlig eld, t.ex. en fackla som trycks in i ansiktet. De behåller alla förmågor de hade i verkliga livet, utom de som baserades på INT.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Sällsynt |
+| **Antal:** | Varierar |
+
+| Grundegenskap | | Typvärde |
+|---|---|---|
+| STY | ×0,4–×2 | 13 |
+| STO | ×1 | 11 |
+| FYS | 0 | 0 |
+| SMI | ×0,2–×1 | 7 |
+| INT | ×0,05–×0,25 | 2 |
+| PSY | Magikerns offrade PSY | 2 |
+| KP | | 6 |
+| SB | | 0 |
+
+**Färdighet (FV):** Varierar 1T20, Smyga 19
+**Förflyttning:** L6
+**Naturligt skydd:** Inget
+
+---
+
+## ZOMBIE
+### *De viljelösa*
+
+Zombier är lik som animerats till odöda av en nekromantiker. De är kraftfullare än skeletten, men de kroppar man använder då man skapar zombier får inte vara mer än en månad gamla och de måste dessutom ha kvar alla väsentliga kroppsdelar och organ. Zombier räknas till lägre odöda.
+
+**Utseende:** Zombierna ser ut som förruttnade lik som knappt hänger ihop längre. Skinnet är blekt, förtorkat och sprucket och stramar över de livlösa benknotorna. Kroppen saknar blod, vilket ger den en gulaktig nyans, och eftersom fettvävnaderna bryts ned först av allt i zombiens kropp blir den slutligen knappt mer än skinnklädda benknotor. Förruttnelseprocessen fortsätter även efter det att zombien animerats, vilket gör att zombier avger en fruktansvärd stank. Zombier kan skapas från kropparna av vilka intelligenta humanoider som helst. De värden som ges här nedan är för en 'mänsklig' zombie.
+
+**Uppträdande:** Se inledningen till detta kapitel. De magiska odöda behåller alla färdigheter från sitt tidigare liv, utom de som är baserade på INT. De kan därför inte använda besvärjelser, men däremot är de duktiga på att smyga. Zombiernas uppförande i strid är lika listigt som hos den magiker som skapade dem, däremot kan de få problem om striden tar en oväntad vändning.
+
+**Förmågor:** Alla som känner den ruttna stanken av en zombie måste klara en FYS-kontroll (slå under sin FYS med 1T20) för att undvika kraftigt illamående i 1 minut. En drabbad rollperson spyr omedelbart och är så snurrig att han inte kan göra någonting alls under 1 minut.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Sällsynt |
+| **Antal:** | Varierar |
+
+| Grundegenskap | | Typvärde |
+|---|---|---|
+| STY | ×0,6–×3 | 19 |
+| STO | ×1 | 11 |
+| FYS | 0 | 0 |
+| SMI | ×0,1–×0,5 | 4 |
+| INT | ×0,05–×0,25 | 2 |
+| PSY | Magikerns offrade PSY | 2 |
+| KP | | 6 |
+| SB | | 0 |
+
+**Färdighet (FV):** Varierar 1T20, Smyga 19
+**Förflyttning:** L8
+**Naturligt skydd:** Inget
+
+---
+
+# MAGISKA VARELSER
+
+Drakar och Demoners värld består av oändligt många olika dimensioner, sfärer och världar. De mest grundläggande 'världarna' är de åtta elementarplanen. Med hjälp av elementarmagi eller mystiska föremål med fördolt syfte kan man kalla till sig varelser från dessa elementarplan till vår mänskliga värld. Resultatet blir de magiska varelserna.
+
+Det finns även ett antal andra varelser med rent magiskt ursprung, t.ex. golem, väktare och den guludurska styggelsen. En golem är en konstruerad kropp som väcks till liv av mycket kraftfull elementarmagi, medan den guludurska styggelsens ursprung fortfarande är okänt. Väktarna är magiska skapelser som dock inte kommer från elementarplanen.
+
+Elementarvarelserna delas in i tre olika kategorier: elementarer, elementarvarelser och elementarherrar. De sistnämnda går inte att frammana frivilligt, utan kommer och går mellan de olika planen som de själva behagar. De åtta elementen och dess kända varelser är:
+
+| Element | Elementar | Elementarvarelse | Elementarherre |
+|---|---|---|---|
+| Luft | sylf | djinn | cyklon |
+| Eld | salamander | eldhäst | magmani |
+| Jord | gnom | jordbagge | materiedrottning |
+| Vatten | undin | vattenvåg | havskonung |
+| Mörker | umbra | skuggbest | svart sultan |
+| Ljus | luminal | ljusfågel | vit pascha |
+| Köld | glacial | frostvarg | isherre |
+| Värme | therm | vulkanti | ökenherre |
+
+Alla elementarer och elementarvarelser (utom vulkantin) och deras förmågor beskrivs mycket noggrant i Drakar och Demoner Magi och här kommer endast att ges en kortfattad beskrivning.
+
+---
+
+## ELEMENTARER
+### *De magiska tjänarna*
+
+Elementarerna är inkarnationer av de fyra huvudelementen (jord, vatten, luft, eld) och deras respektive underelement (mörker, köld, ljus och värme). De är relativt lätta för en elementarmagiker med rätt besvärjelser att frammana och att skicka iväg.
+
+Elementarernas grundegenskaper beror på hur kraftfulla de är, d.v.s. hur hög effektgrad magikern använder. SMI är alltid 3T6. STO och STY är [E]T6. PSY är [E+3]T6. De saknar både FYS och INT och måste alltså styras av magikerns fulla uppmärksamhet. De kan påverkas normalt av magi, men är immuna mot gift. I övrigt skiljer sig förmågorna åt för de olika elementarerna.
+
+Eftersom elementarerna beskrivs både i Drakar och Demoners regler och i Drakar och Demoner Magi, nöjer vi oss med att beskriva det hos de fyra nya elementarerna som är intressant i fall man möter dem som fiender.
+
+### UMBRA
+En umbra uppträder som en vagt människoliknande varelse skapad av ett kompakt mörker (kan lätt misstas för en mörkgast). Den kan inte skadas av materiella vapen, men tar å andra sidan dubbel skada av alla eldattacker. Den kan skapa en glob av mörker så att alla ljuskällor inom 5 rutor/E slutar att sända ut ljus, men de släcks inte. Inte ens mörkerseende varelser (utom de med värmesyn) kan se någonting som helst i detta mörker. En umbra som sluter sig runt något tvingar offret att slå på Skräcktabellen, om umbrans PSY övervinner offrets PSY på Motståndstabellen. En umbra har förflyttning F15 och perfekt mörkerseende.
+
+### LUMINAL
+En luminal uppenbarar sig som en glob av klart skinande ljus. Den kan inte skadas av materiella vapen och är immun mot alla former av eld. Den bländar alla varelser som ser på den. Offren måste klara ett Normalt PSY-slag (varelser med mörkersyn Svårt PSY-slag), annars blir de bländade under 2T6 SR. En bländad varelse behandlas som om han befann sig i totalt kolmörker. Luminaler har förflyttning F15.
+
+### GLACIAL
+En glacial uppenbarar sig som en människoliknande skepnad med blå hud och buskigt vitt hår och skägg. Den är immun mot alla slags köldattacker men kan skadas av eld (dubbel skada) och materiella vapen. Alla eggvapen av järn (t.ex. svärd och yxor) som skadar en glacial får dock rostskador som permanent minskar vapnets skada med ett. Om en glacial får grepp om en annan varelse (CL=8+E) så gör den [E]T4 KP i köldskada. Alla varelser som kommer närmare en glacial än 3 meter måste klara ett Svårt FYS-slag. Ett misslyckande innebär att den starka kylan hindrar dem från att kunna gå närmare. Förflyttning F15.
+
+### THERM
+En therm uppenbarar sig som ett genomskinligt, substanslöst klot av värme. Den är immun mot alla slags värmeattacker men kan skadas av köld (dubbel skada) och magiska vapen. Om en therm sveper sig kring en annan varelse (CL=8+E) så gör den [E]T4 KP i värmeskada. Alla varelser som kommer närmare en therm än 3 meter måste klara ett Svårt FYS-slag. Ett misslyckande innebär att den starka hettan hindrar dem från att kunna gå närmare. Förflyttning F15.
+
+---
+
+## ELEMENTARVARELSER
+
+Elementarvarelserna är varelser som lever på elementarplanen. De är kraftfullare än elementarerna såtillvida att de har egen intelligens, men de saknar elementarernas speciella krafter.
+
+Gemensamma förmågor är att de inte har någon FYS och således inte kan skadas av gift, sömn, rädsla eller sjukdomar. När KP når noll, är dess kropp i vår mänskliga värld förstörd och varelsen återvänder till sitt elementarplan.
+
+Elementarvarelserna beskrivs ingående i Drakar och Demoner Magi, och här kommer vi endast att ta upp deras viktigaste egenskaper. För samtliga elementarvarelser gäller följande:
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 eller 1–10 |
+| **Naturligt skydd:** | 0 |
+
+### Skuggbest
+| STY | STO | SMI | INT | PSY | KP | SB | Förflyttn |
+|---|---|---|---|---|---|---|---|
+| 30 | 35 | 25 | 10 | 12 | 33 | 2T6 | L20 |
+
+**Färdighet (FV):** 1 Bett (1T10) 11, 2 Klor (1T6) 11, Smyga 19, Upptäcka fara 10
+Skuggbesten uppenbarar sig som en ca 5 m lång och 3 m hög, diffus skepnad av förtätat mörker. Kan endast ses med hjälp av Finna dolda ting.
+
+### Eldhäst
+| STY | STO | SMI | INT | PSY | KP | SB | Förflyttn |
+|---|---|---|---|---|---|---|---|
+| 40 | 35 | 25 | 10 | 12 | 37 | 2T6 | L36 |
+
+**Färdighet (FV):** 1 Bett (1T4, ingen SB) 9, 2 Hovar (1T6) 19, Upptäcka fara 15
+Eldhästen liknar en eldröd, ädel springare vars päls består av flammande lågor. Man kan använda den som riddjur om man skyddar sig med lämpliga besvärjelser.
+
+### Ljusfågel
+| STY | STO | SMI | INT | PSY | KP | SB | Förflyttn |
+|---|---|---|---|---|---|---|---|
+| 30 | 20 | 35 | 10 | 12 | 25 | 1T10 | F60/L5 |
+
+**Färdighet (FV):** BLÄNDA (Spec) 20, 1 Bett (1T6, halv SB) 9, 2 Klor (1T6) 13, Upptäcka fara 15, Finna dolda ting 17
+Ljusfågeln uppenbarar sig som en enorm örnliknande fågel som strålar av starkt vitt ljus. Den lyser normalt upp en yta av STO×5 m. Alla som ser ljusfågeln måste klara ett Svårt PSY-slag eller bli blinda i 1T10 SR. Ljusfågeln kan bara BLÄNDA varannan SR och bara 5 ggr/dag. Kan ej påverkas av eld- eller blixtbesvärjelser.
+
+### Jordbagge
+| STY | STO | SMI | INT | PSY | KP | SB | Förflyttn |
+|---|---|---|---|---|---|---|---|
+| 40 | 30 | 20 | 10 | 12 | 35 | 2T6 | L20 |
+
+**Färdighet (FV):** 1 Bett (1T8) 12, 2 Klor (1T6) 12, 1 Jordsprut (1T10) 12, Klättra 19, Spåra 16, Upptäcka fara 10, Gömma sig 2 (19 i lera, jord, sand, grus, etc.)
+Jordbaggen ser ut som en gigantisk skalbagge. Den kan spruta ut en stråle av sammanpressade jordklumpar (räckvidd 10 m). Den kan bara skjuta 5 sådana per dag. Eld och eldbesvärjelser ger bara halv skada.
+
+### Frostvarg
+| STY | STO | SMI | INT | PSY | KP | SB | Förflyttn |
+|---|---|---|---|---|---|---|---|
+| 40 | 25 | 30 | 10 | 12 | 33 | 2T6 | L28 |
+
+**Färdighet (FV):** 1 Bett (1T8) 14, 1 Luftblås (2T6, ingen SB) 19, Upptäcka fara 15, Spåra 12
+Frostvargen ser ut som en jättelik, helt vit varg. Den kan blåsa ut en stråle av fruktansvärt kall luft genom näsborrarna (räckvidd 5 m). Rustningar skyddar ej.
+
+### Djinn
+| STY | STO | SMI | INT | PSY | KP | SB | Förflyttn |
+|---|---|---|---|---|---|---|---|
+| 30 | 20 | 40 | 10 | 12 | 25 | 1T6 | F60 |
+
+**Färdighet (FV):** Finna dolda ting 19, Smyga 13, Upptäcka fara 10
+Djinnen ser ut som en liten, rökfylld tornado. Den kan blåsa omkull en varelse genom att övervinna dess STO med sin STY. Djinner kan ej skadas av vanliga vapen.
+
+### Vattenvåg
+| STY | STO | SMI | INT | PSY | KP | SB | Förflyttn |
+|---|---|---|---|---|---|---|---|
+| 40 | 35 | 20 | 10 | 12 | 37 | 2T6 | L10/S20 |
+
+**Färdighet (FV):** 1 Slag (1T6) 12, Upptäcka fara 15, Hoppa 19, Simma B5
+Vattenvågen ser ut som en stor vattenpöl och när den rör sig tar den formen av en hög våg. Den anfaller genom att kasta sig över sitt offer. Om offret misslyckas med ett SMI-slag får han en kallsup och kan inte göra annat än att stå och hosta en SR. Vattenvågen kan inte skadas av naturlig eld, men om magisk ELDs effektgrad övervinner vattenvågens gör den normal skada.
+
+### Vulkanti
+| STY | STO | SMI | INT | PSY | KP | SB | Förflyttn |
+|---|---|---|---|---|---|---|---|
+| 45 | 35 | 25 | 10 | 12 | 40 | 2T6 | L10 |
+
+**Färdighet (FV):** 2 Nävar (1T6) 12, 1 Spark (1T8) 12, Upptäcka fara 15
+En vulkanti ser ut som en människoliknande varelse som består av glödande kol. Varje gång den träffar med ett naturligt vapen gör den 1T6 extra skada av hetta. Metallrustningar skyddar inte mot denna extra skada. Den tar inte någon skada av eld eller eldbesvärjelser.
+
+---
+
+# ELEMENTARHERRAR
+
+Elementarherrarna är mycket kraftfulla elementarvarelser som inte kan tillkallas av vanliga magiker. De kommer och går som de själva vill mellan elementarplanen och den mänskliga världen. Somliga av dem, t.ex. isherrarna och ökenherrarna, har permanent bosatt sig på Altor och kämpar om herraväldet i världen. Liksom elementarerna och elementarvarelserna har de som 'mål' att sprida just sitt eget element i alla världar. Elementarherrarna uppträder så gott som alltid ensamma tillsammans med ett antal elementarer (2T6) och elementarvarelser (1T8).
+
+## UPPTRÄDANDE
+
+Vid de sällsynta tillfällen då elementarherrarna lämnar sina tydligt utstakade domäner så har de alltid ett bestämt syfte, rekognoscering om inte annat. Ljuselementarherrar kan t.ex. bege sig ned i underjorden för att besegra Mörkrets element; värme- eller eldelementarherrar kan bege sig till kallare trakter för att sprida värme och eld och därigenom öka sitt elements inflytande på den mänskliga världen. Den ständiga kampen mellan elementen märks dock ytterst sällan, och då oftast i form av väldiga naturkatastrofer; jordbävningar, vulkanutbrott, skyfall, häftiga stormar, jättevågor, extrema värmeböljor, snöstormar, etc. Dessa strider är givetvis ganska sällsynta, eftersom elementarerna inte i onödan vill förstöra vare sig sina undersåtar eller världen.
+
+Elementarherrar kan av denna anledning också få i uppgift att bevaka någonting, t.ex. en portal eller ett för dem mycket farligt föremål. De är inte av naturen aggressiva eller något verkligt hot mot andra intelligenta varelser, men på grund av deras enorma krafter och ringa intresse för andra levande varelser i vår värld är det lätt hänt att vi kommer i kläm.
+
+## FÖRMÅGOR
+
+Alla elementarherrar har mycket stor magisk kapacitet och stort motstånd mot diverse elementarkrafter. De är alltid helt immuna mot all skada som härrör från sitt eget element (ljus-, värme- och eldherrar mot eld och eldbesvärjelser; köldherrar mot köldbesvärjelser; etc.). De kan aldrig skadas av vanliga, icke-magiska vapen, utan skadar i stället själva de vapen som berör dem (vapnet blir förslöat och gör 1T6 mindre poäng i skada, permanent). Magiska vapen påverkas dock inte av detta.
+
+Eftersom elementarherrarna inte har någon FYS kan de inte påverkas av sömn, gift eller sjukdom.
+
+En elementarmagiker kan försöka skicka bort en elementarherre med besvärjelsen SKICKA BORT ELEMENTAR eller någon av de övriga besvärjelser som sänder bort elementarvarelser. Besvärjelsen måste gälla samma element som elementarherren tillhör. Besvärjelsens effektgrad måste då övervinna elementarherrens PSY.
+
+Alla elementarherrar kan när som helst TILLKALLA eller SKICKA BORT elementarer eller elementarvarelser av samma element som de själva tillhör. Detta kostar 3 PSY-poäng per individ och varelserna får automatiskt samma effektgrad som elementarherren har PSY *efter* besvärjelsen är lagd.
+
+De flesta elementarherrar har två olika former; en sann form och en människoliknande form. Förvandlingen tar en hel SR under vilken elementarherren inte kan göra någonting annat.
+
+---
+
+## CYKLON
+### *Luftens elementarherre*
+
+**Utseende:** Cyklonen kan ta form antingen av en jättelik, strutformad virvelvind eller av en enorm människa med kropp skapad av ett moln. Konturerna är mycket diffusa och ögonen ett par ljusblå, klart lysande punkter. De ger inte något intryck av att bära rustning eller klädsel och de använder heller aldrig vapen.
+
+**Förmågor:** Se ovan. En cyklon kan dessutom:
+- kontrollera alla vindrörelser inom 300 meters radie. Den kan styra vindar åt vilket håll den vill och skapa vindstyrkor på upp till 60 m/s (alla varelser måste klara ett Svårt STO-slag eller blåsa omkull). Avståndsvapen är av denna anledning i princip verkningslösa mot en cyklon (fungerar automatiskt som VIRVELSKÖLD E20). Om en koncentrerad vindpil riktas mot ett enda offer tar detta 1T10 KP i skada och kastas automatiskt 1T6 meter bakåt.
+- förstöra salamandrar, eldhästar och magmani genom att övervinna dess PSY med sin egen på Motståndstabellen.
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 50 |
+| STO | 40 |
+| FYS | 0 |
+| SMI | 60 |
+| INT | 20 |
+| PSY | 27 |
+| KP | 45 |
+| SB | +3T6 |
+
+**Färdighet (FV):** Upptäcka fara 20, Smyga 17, Gömma sig 35, Vindpil (1T10) 26
+**Förflyttning:** F40/L20
+**Naturligt skydd:** Inget
+
+---
+
+## MAGMANI
+### *Eldens elementarherre*
+
+**Utseende:** En magmani tar formen av en jättelik, mycket kraftig människa med glödröd hud och kort, svart hår. Hela kroppen omvärvs av små eldslågor. Den kan också ta formen av ett jättelikt eldklot med en kärna av lava (diameter 3 m). Eldklotet har två 'armar' som sträcker sig ut ungefär två meter från kroppen.
+
+**Förmågor:** Se ovan. En magmani kan dessutom:
+- tända eld på alla brännbara föremål inom 25 meter (även pilar som skjuts mot den!).
+- förstöra undiner, glacialer, vattenvågor, frostvargar, havskonungar och isherrar genom att övervinna dess PSY med sin egen på Motståndstabellen.
+- använda metallvapen som hettas upp så mycket att det kan skära genom alla metaller utom mithril. Rustningar av andra material, utom drakfjäll, ger inget skydd.
+- i sin 'klotform' innesluta ett offer i flammor som gör 3T6 i skada. Inga rustningar skyddar mot detta och allt hår på offret fattar automatiskt eld.
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 60 |
+| STO | 50 |
+| FYS | 0 |
+| SMI | 40 |
+| INT | 20 |
+| PSY | 27 |
+| KP | 55 |
+| SB | +4T6 |
+
+**Färdighet (FV):** Upptäcka fara 20, Smyga 14, Ett närstridsvapen 18
+**Förflyttning:** L20/F20
+**Naturligt skydd:** Inget
+
+---
+
+## MATERIEDROTTNING
+### *Jordens elementardrottning*
+
+**Utseende:** Materiedrottningarna ser ut som mycket vackra kvinnor som huggits ut ur kritvit marmor eller kolsvart basalt. De har ingen sann form.
+
+**Förmågor:** Se ovan. En materiedrottning kan dessutom:
+- skapa jordskalv med ett omfång av 30 meter bort från sig själv. Alla som står inom denna radie måste klara ett Svårt SMI-slag för att undvika att falla omkull. Materiedrottningen kan dessutom skapa klyftor i den solidaste berggrund och öppna och försluta dessa som hon själv önskar. Man måste lyckas med ett Svårt SMI-slag för att undvika att trilla ned i en sådan spricka. Att använda någon av dessa förmågor kostar henne 10 PSY-poäng.
+- förstöra undiner, vattenvågor och havskonungar genom att övervinna dess PSY med sin egen på Motståndstabellen.
+- ömsesidigt förinta kroppspoäng hos en undin, vattenvåg eller havskonung tills en av dem är upplöst.
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 35 |
+| STO | 40 |
+| FYS | 0 |
+| SMI | 30 |
+| INT | 20 |
+| PSY | 27 |
+| KP | 37 |
+| SB | +2T6 |
+
+**Färdighet (FV):** 2 Nävar (1T8) 14, Upptäcka fara 20, Smyga 10, Gömma sig 10
+**Förflyttning:** L20
+**Naturligt skydd:** 10 poängs hud
+
+---
+
+## HAVSKONUNG
+### *Vattnets elementarherre*
+
+**Utseende:** En havskonung ser antingen ut som en enorm människa med klädsel av sjögräs och blåaktig hud eller som en fem meter hög våg med två armliknande utskott från sidorna. I sin mänskliga form slåss han med enorma treuddar.
+
+**Förmågor:** Se ovan. En havskonung kan dessutom:
+- kontrollera alla vattenrörelser inom 300 meters radie. Den kan styra strömmar åt vilket håll den vill och skapa strömstyrkor på upp till 20 m/s (en simmande varelse måste ha minst Simma B5 för att undvika att dras med av strömmarna).
+- från vilket vattendrag som helst kan havskonungen rikta en koncentrerad vattenstråle som gör 2T6 i skada och dessutom slår omkull sitt mål om skadan övervinner offrets STO på Motståndstabellen.
+- skölja bort gnomer, jordbaggar och materiedrottningar genom att övervinna dess PSY med sin egen på Motståndstabellen (endast i 'vågform').
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 45 |
+| STO | 45 |
+| FYS | 0 |
+| SMI | 50 |
+| INT | 20 |
+| PSY | 27 |
+| KP | 45 |
+| SB | +3T6 |
+
+**Färdighet (FV):** Upptäcka fara 20, Smyga 6, Gömma sig (i vatten) 65, Vattenstråle (2T6) 22, Treudd 22
+**Förflyttning:** L20/S60
+**Naturligt skydd:** Inget
+
+---
+
+## SVART SULTAN
+### *Mörkrets elementarherre*
+
+**Utseende:** En svart sultan kan ta formen av en väldig, kolsvart skugga med samma form som en människa. Den har då en lång svart klädnad och en stor kolsvart turban. Den använder en kolsvart kroksabel då den slåss i sin mänskliga form. I sin sanna form består den svarta sultanen av en oformlig skepnad av kompakt mörker.
+
+**Förmågor:** Se ovan. Dessutom kan en svart sultan:
+- inte upptäckas med hjälp av Upptäcka fara i mörker. Däremot kan man varsebli den med hjälp av Finna dolda ting.
+- förstöra en luminal, ljusfågel eller vit pascha genom att övervinna dess PSY med sin egen på Motståndstabellen.
+- kväva allt ljus inom sin klotform (10 rutors radie). Ljuskällor inne i klotet släcks inte, men de sänder inte ut något ljus. Mörkersyn fungerar inte inne i klotet.
+- angripa en levande varelse med skräck. Om den svarta sultanen sveper sig runt en varelse och besegrar dess PSY med sin egen på Motståndstabellen måste offret slå på Skräcktabellen med +10 på slaget.
+- ta dubbel skada av alla eld- och ljusattacker.
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 40 |
+| STO | 40 |
+| FYS | 0 |
+| SMI | 60 |
+| INT | 22 |
+| PSY | 27 |
+| KP | 40 |
+| SB | +2T6 |
+
+**Färdighet (FV):** Kroksabel 18, Gömma sig 27, Smyga 19, Upptäcka fara 18
+**Förflyttning:** L20/F20
+**Naturligt skydd:** Inget
+
+---
+
+## VIT PASCHA
+### *Ljusets elementarherre*
+
+**Utseende:** Den vita paschan kan ta formen av en stor, mäktig magiker med ljusa, luftiga sidenkläder och en stor ljusskimrande turban på huvudet. Han utstrålar ett starkt ljussken. I sin sanna form uppenbarar sig den vita paschan som en stor glob av mycket klart skinande ljus.
+
+**Förmågor:** Se ovan. Dessutom kan en vit pascha:
+- förstöra en umbra, skuggbest eller svart sultan genom att övervinna dess PSY med sin egen på Motståndstabellen.
+- Lysa upp ett område med 100 meters radie med ett ljus som motsvarar dagsljus.
+- blända varelser. Alla som ser den vita paschan måste klara ett Svårt PSY-slag. Varelser med mörkersyn måste klara ett Kritiskt PSY-slag. Misslyckas de så blir de bländade i 3T6 SR. Under denna tid anses de vara helt blinda.
+- är helt immun mot alla slag av eld- och ljusattacker.
+- skicka upp till två blixtar per SR mot olika offer inom 50 meter. Blixten påverkas inte av några rustningar och gör 2T10 i skada. Varje blixt kostar 3 PSY-poäng.
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 50 |
+| STO | 40 |
+| FYS | 0 |
+| SMI | 50 |
+| INT | 22 |
+| PSY | 27 |
+| KP | 45 |
+| SB | +3T6 |
+
+**Färdighet (FV):** Blixt 18, Gömma sig 4, Smyga 26, Upptäcka fara 18
+**Förflyttning:** L20/F30
+**Naturligt skydd:** Inget
+
+---
+
+## ISHERRE
+### *Köldens elementarherre*
+
+**Utseende:** En isherre tar alltid form av en jätte med stort, vitt skägg fyllt av rimfrost, frostiga ögonbryn, immig andedräkt och varma pälskläder. Han bär ofta en enorm träklubba över axeln.
+
+**Förmågor:** Se ovan. Dessutom kan en isherre:
+- förstöra en salamander, therm, eldhäst, vulkanti, magmani eller ökenherre genom att övervinna dess PSY med sin egen på Motståndstabellen.
+- frysa allt vatten inom 100 m.
+- ge varmblodiga varelser köldskador om han lyckas vidröra dem. Beröringen ger förutom vanlig skada 2T6 i köldskada. Metallrustningar skyddar inte mot detta, medan läderrustningar skyddar som normalt.
+- inte ta någon skada av köldattacker. Han tar däremot dubbel skada av all slags eld.
+- kyla ned luften inom 10 meters radie tills den blir så kall att man måste lyckas med ett Normalt FYS-slag för att kunna gå närmare.
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 60 |
+| STO | 50 |
+| FYS | 0 |
+| SMI | 35 |
+| INT | 22 |
+| PSY | 27 |
+| KP | 55 |
+| SB | +4T6 |
+
+**Färdighet (FV):** Klubba 19, Gömma sig 4, Smyga 16, Upptäcka fara 18
+**Förflyttning:** L20
+**Naturligt skydd:** 6 poängs pälsar
+
+---
+
+## ÖKENHERRE
+### *Värmens elementarherre*
+
+**Utseende:** En ökenherre ser ut som en mycket kraftig jätte med knallröd hud och kort svart hår. Ökenherrar använder ofta enorma tvåhandssvärd.
+
+**Förmågor:** Se ovan. Dessutom kan en ökenherre:
+- förstöra en glacial, frostvarg eller isherre genom att övervinna dess PSY med sin egen på Motståndstabellen.
+- få allt vatten inom 100 m att börja koka.
+- ge varmblodiga varelser brännskador om han lyckas vidröra dem. Beröringen ger förutom vanlig skada 2T6 i köldskada. Metallrustningar skyddar inte, men läderrustningar skyddar som normalt.
+- inte ta någon skada av något slags eld. Han tar däremot dubbel skada av alla slags köldattacker.
+- hetta upp luften inom 10 meters radie tills den blir så het att man måste lyckas med ett Normalt FYS-slag för att kunna gå närmare.
+- använda metallvapen som blir så heta att de kan skära genom alla metaller utom mithril. Rustningar av andra material, utom drakfjäll, ger inget skydd.
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 60 |
+| STO | 50 |
+| FYS | 0 |
+| SMI | 35 |
+| INT | 22 |
+| PSY | 27 |
+| KP | 55 |
+| SB | +4T6 |
+
+**Färdighet (FV):** Tvåhandssvärd 19, Gömma sig 4, Smyga 16, Upptäcka fara 18
+**Förflyttning:** L20
+**Naturligt skydd:** Inget
+
+---
+
+## GOLEM
+### *Lertjänaren*
+
+En golem är en konstruerad sten- eller lervarelse som fått liv genom diverse magiska ritualer och besvärjelser (beskrivs i Drakar och Demoner Magi). Eftersom de alltid har ganska begränsad intelligens används de ofta för tråkiga men viktiga uppgifter, främst bevakningsuppdrag.
+
+**Utseende:** En golem kan formas till vilken form som helst, men vanligast är att den får en människoliknande form av något slag. Ju större den är, desto mäktigare blir den också. En varelse, t.ex. en grip, minotaur eller drake, som förstenats kan göras till en golem och blir då slav under sin skapare. En golem är alltid stenartad, och helt granitgrå över hela kroppen. Till och med hår och ögon blir steniga och grå. Den väger dubbelt så mycket som en vanlig varelse av samma storlek.
+
+**Uppträdande:** Liksom magiska odöda måste en golem får exakta instruktioner för vad den skall göra. Den är fullständigt lojal mot sin skapare och lyder hans order blint eftersom den inte har någon självständig intelligens.
+
+**Förmågor:** En golem är immun mot sömn, gift och sjukdomar, behöver aldrig vila, sova eller äta och tar inga skador av att blöda. När dess KP når noll exploderar den. Explosionen gör lika många poäng i skada som golemens STO och drabbar alla inom räckvidden. Skadan minskar med 1 för varje meter som skiljer golemen och offret åt. Rustningar och besvärjelser skyddar som normalt.
+
+En varelse som förstenats på magisk väg kan göras till en golem. Den behåller då sina färdigheter från levande livet, men FV kan aldrig vara högre än den grundegenskap som färdigheten är baserad på. En golem kan aldrig något slags magi.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | Varierar |
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | =STO |
+| STO | Enligt konstruktion |
+| FYS | =STO |
+| SMI | 7 |
+| INT | 4 |
+| PSY | STO+11 |
+| KP | =STO |
+| SB | Varierar |
+
+**Färdighet (FV):** 2 Nävar (1T3) STO, 1 Spark (1T6) STO, Ett närstridsvapen STO
+**Förflyttning:** L7
+**Naturligt skydd:** 10 poängs sten
+
+---
+
+## GULUDURSK STYGGELSE
+### *Magislukaren*
+
+De guludurska styggelserna är magiska varelser från ett okänt universum. De lever av att suga i sig magisk energi, antingen från magiska föremål eller sådan energi som frigörs i magiska formler. De är fruktansvärt sällsynta; troligen finns det inte fler än ett dussin i hela Ereb Altor.
+
+**Utseende:** Styggelserna är mellan 10 och 15 meter långa, ormliknande varelser med fyra korta ben och en ödleliknande, mycket spetsig nos. De är helt vita och när de 'springer' genom luften så slår det ut små blå gnistor där de sätter ned sina tassar. Deras enda läte är ett diskret fnissande som i 'strid' dras ut till ett högljutt, förtjust gapskratt.
+
+**Uppträdande:** De guludurska styggelserna lever som sagt av magisk energi, främst från föremål som den vidrör med sin långa nos. De 'anfaller' alltid från luften.
+
+**Förmågor:** Om en guludursk styggelse lyckas vidröra ett magiskt föremål med sin nos så förlorar föremålet omedelbart 1T4 effektgrader av de besvärjelser som det innehåller. Varelsen tycker bäst om LADDNING, följt av PERMANENS och NEXUS. Därefter suger den i sig andra besvärjelser och sist av allt SIGILLet. För varje effektgrad den suger i sig så ökar dess PSY med en poäng.
+
+Om någon försöker använda magi i närheten av en guludursk styggelse så suger den omedelbart i sig alla effektgraderna och skrattar lyckligt. Dess PSY ökar med ett för varje effektgrad som besvärjelsen innehåller. Detta sker automatiskt, och besvärjelsen misslyckas alltid.
+
+Om varelsen träffas av ett magiskt vapen så suger den i sig dess energi på samma vis som om den hade vidrört det med nosen, allt under våldsamma skrattsalvor.
+
+En guludursk styggelse kan regenerera sig själva till kostnad av 2 PSY-poäng per regenererad KP. Den kan inte suga magi under denna tid, varför den ofta flyger upp en bit i luften för att få vara i fred. Den kan regenerera maximalt 6 KP per SR.
+
+| | |
+|---|---|
+| **Hemvist:** | Varierar |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 23 |
+| STO | 25 |
+| FYS | 22 |
+| SMI | 26 |
+| INT | 5 |
+| PSY | 36 |
+| KP | 24+PSY |
+| SB | 0 |
+
+**Färdighet (FV):** Parera avståndsvapen 15, Parera närstridsvapen 10, Nosberöring 17, Suga magi 14
+**Förflyttning:** L3, F26
+**Naturligt skydd:** Inget
+
+---
+
+## VÄKTARE
+### *Stenvakterna*
+
+Väktare är kraftfulla magiska varelser med ett enda syfte; att förhindra andra intelligenta varelser från att passera dem. En väktare påminner mycket om en golem, men skillnaden är att i väktaren så har en ande blivit fängslad av en mäktig runa till det förstenade kreaturet. Det enda sättet att fördriva anden är att förstöra runan (för detta krävs ett perfekt slag).
+
+**Utseende:** En väktare är en förstenad, förstorad variant av ett vanligt djur eller monster och har ett eller flera huvuden. Vanliga varelser är vargar, ulvar, gripar, minotaurer eller något annat djur som är mycket skickligt på att slåss.
+
+**Uppträdande:** Om någon kommer inom syn- eller hörhåll från väktaren så börjar den omedelbart att låta (skälla, skrika, ryta, eller hur nu djuret/monstret kan låta). Ju närmare inkräktaren kommer, desto högre blir lätet.
+
+**Förmågor:** Varje huvud som väktaren har bär också en runa. För att tysta en väktare med tre huvuden krävs alltså tre perfekta slag. Väktare är immuna mot alla vanliga vapen samt mot eld, gift och sömn. De tar normal skada av besvärjelser och magiska vapen. När KP i ett huvud når noll rör sig inte huvudet mer, men den fortsätter att skrika. Det räcker med ett lyckat anfallsslag för att tysta ett huvud med KP 0.
+
+Alla som vill gå närmare en väktare än tre meter måste klara ett Normalt PSY-slag per huvud för att kunna motstå det fruktansvärda oväsendet. Misslyckas man så måste man hålla för öronen i 1 SR innan man får försöka igen.
+
+Väktare behöver aldrig sova, äta eller dricka.
+
+Vilket eller vilka naturliga vapen väktaren använder beror på vad den är skapad av.
+
+| | |
+|---|---|
+| **Hemvist:** | 8, A, E, F |
+| **Vanlighet:** | Mycket sällsynt |
+| **Antal:** | 1 |
+
+| Grundegenskap | Typvärde |
+|---|---|
+| STY | 22 |
+| STO | 22 |
+| FYS | 0 |
+| SMI | 16 |
+| INT | 4 |
+| PSY | 30 |
+| KP/huvud | 11 |
+| KP — kropp | 22 |
+| SB | +1T6 |
+
+**Färdighet (FV):** Naturligt vapen (var.) 15
+**Förflyttning:** 0
+**Naturligt skydd:** 10 poängs sten
+
+---
+
+*[Sidan 64 i boken är en helsides blyertsillustration (en demonisk varelse som besvärjer en stjärna/pentagram), utan text.]*
+
+*[Baksidan: grön pärm med förlagsloggan "Äventyrsspel".]*
+
+---
+
+*Slut på "Monster Bok III: Kaos".*
