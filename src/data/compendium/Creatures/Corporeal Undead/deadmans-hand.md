@@ -1,5 +1,7 @@
 # Deadman's Hand
 
+
+![Deadman's Hand](/compendium/Creatures/Corporeal Undead/deadmans-hand.png "Deadman's Hand")
 A deadman's hand is really a spirit that has only partly managed to manifest physically as a corporeal undead. The spirit-body has no special powers but can move freely through walls and floors, which the hand itself cannot, and the hand is the only part visible to the naked eye. Thieves who have had a hand struck off as punishment for their crimes often rise again in this form, the spirit seeking out its lost hand and using it to take revenge on whoever ordered the punishment.
 
 ## Appearance

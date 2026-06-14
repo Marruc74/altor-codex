@@ -1,5 +1,7 @@
 # Sea Dragon
 
+
+![Sea Dragon](/compendium/Creatures/Dragons/sea-dragon.png "Sea Dragon")
 Sea dragons differ greatly in form from the other dragons, but they share most of the fire-dragon's powers. They make their nests in caves and hollows above or below the water, along coastlines or on remote rocky isles; since they cannot breathe water as fish and sharks do, the lair must hold air and have access to fresh air, though its entrance may well lie below the surface.
 
 ## Appearance

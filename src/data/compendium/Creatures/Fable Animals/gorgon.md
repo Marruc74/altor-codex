@@ -1,5 +1,7 @@
 # Gorgon
 
+
+![Gorgon](/compendium/Creatures/Fable Animals/gorgon.png "Gorgon")
 It is said that only three gorgons exist. Once they were beautiful women, but now they are dreadful monsters. Two of the gorgons are immortal, named Stheno and Euryale, while the third, Medusa, can be slain.
 
 ## Appearance

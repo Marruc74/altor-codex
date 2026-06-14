@@ -1,5 +1,7 @@
 # Gargoyle
 
+
+![Gargoyle](/compendium/Creatures/Fable Animals/gargoyle.png "Gargoyle")
 Some believe gargoyles are stone statues perched on temples and old castles, brought to life by mad magicians. This is wrong. Gargoyles are hideous stone-like monsters that inspired the stonemasons to adorn temples and castles with imitations of them.
 
 ## Appearance

@@ -1,5 +1,7 @@
 # Vampire
 
+
+![Vampire](/compendium/Creatures/Corporeal Undead/vampire.png "Vampire")
 Vampires are ordinary humans infected with vampirism, a mixture of disease, curse and divine gift. Vampirism drastically changes the metabolism and bodily powers of the afflicted, for the better according to some vampires, for the worse according to others.
 
 ## Appearance

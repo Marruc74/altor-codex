@@ -1,5 +1,7 @@
 # Werewolf
 
+
+![Werewolf](/compendium/Creatures/Shapeshifters/werewolf.png "Werewolf")
 Lycanthropy is a disease in which the infected, at every full moon, lasting three days every fourth week, is transformed into a werewolf, a fearsome beast driven by bloodlust and above all by a hunger for human flesh. The infected may be of any race or sex, though the disease most often strikes human men. The change takes only a moment and comes the instant the moon rises; it cannot be stopped, whether the werewolf sees the moon or not, and when the moon sets again he returns to his human form with no memory whatever of the night's deeds.
 
 ## Appearance

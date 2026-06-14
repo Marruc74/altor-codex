@@ -1,5 +1,7 @@
 # Black Avenger
 
+
+![Black Avenger](/compendium/Creatures/Demonic Creatures/black-avenger.png "Black Avenger")
 A black avenger is the most dangerous thing one could ever meet in the human world, the death angel perhaps excepted. A black avenger is what results when a very powerful undead, such as a death wraith, is possessed by a demon noble. They always have a single special task, such as to guard an object or to kill a particular person.
 
 ## Appearance

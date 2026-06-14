@@ -26,7 +26,7 @@ sections:
       - name: Lake Anja
         description: "A clear mountain lake deep in the wilds, holding the island called Anja's Eye. Its waters sank when the monastery fell, and a hidden outflow surfaces far off at a spring."
       - name: The Monastery Ruins
-        description: "The burned, palisaded wreck of Karl's Monastery on the lake shore, never rebuilt after the svartfolk stormed it - now the bandit gang's hideout."
+        description: "The burned, palisaded wreck of Karl's Monastery on the lake shore, never rebuilt after the dark folk stormed it - now the bandit gang's hideout."
     npcs:
       - name: Rickard Hawkwing
         image: /compendium/Adventures/BeautyAndTheBeast/Lake Anja and the Bandits/Rickard Hawkwing.jpg
@@ -70,7 +70,7 @@ sections:
         description: "A man-eating plant of eight grasping tentacles, made by magic and left dormant by the long flooding of the Guardian Hall. It rouses to half strength within half an hour and to full power within the hour."
       - name: Orc Skeletons
         entry: skeleton
-        description: "The bones of the svartfolk warband that stormed the temple sixty years past, left in the antechamber and the hall."
+        description: "The bones of the dark folk warband that stormed the temple sixty years past, left in the antechamber and the hall."
       - name: Flood Crayfish
         description: "An overgrown crayfish lurking in the drowned halls - a minor hazard to the wading and the unwary."
     items:
@@ -86,7 +86,7 @@ sections:
 
 ## Plot
 
-There survives a torn page of an old chronicle - found, perhaps, among the wreck of a bandit-struck caravan - that tells of a war-hoard hidden beneath a mountain lake. Sixty years ago a svartfolk army overran the region; baron Eskil of the Armored-fist clan crushed one orc band, seized its plunder, and gave it to his brother, the prior of Karl's Monastery, who sealed it in an underground temple beneath the island of Anja's Eye. The baron died breaking out to reach the king; the monastery was stormed and burned. Captured, the prior offered to lead the orc commander to the treasure - then spoke a secret Word that quenched the altar fire, opened hidden channels, and drowned both himself and the raider to keep the hoard safe.
+There survives a torn page of an old chronicle - found, perhaps, among the wreck of a bandit-struck caravan - that tells of a war-hoard hidden beneath a mountain lake. Sixty years ago a dark folk army overran the region; baron Eskil of the Armored-fist clan crushed one orc band, seized its plunder, and gave it to his brother, the prior of Karl's Monastery, who sealed it in an underground temple beneath the island of Anja's Eye. The baron died breaking out to reach the king; the monastery was stormed and burned. Captured, the prior offered to lead the orc commander to the treasure - then spoke a secret Word that quenched the altar fire, opened hidden channels, and drowned both himself and the raider to keep the hoard safe.
 
 Those who would follow the chronicle, versed in heraldry and history, must come to the village of Eskilsby and seek out brother Franz, the last living man who remembers where the monastery stood. The lake lies a week into the wilds, and its ruined monastery is now held by a band of sympathetic outlaws who would rather bargain than bleed.
 
@@ -96,4 +96,4 @@ It is a tale where wit wins where steel would fail. The bandits under Rickard Ha
 
 ## The Drowned Temple
 
-The treasure sits in the flooded temple under Anja's Eye, down a spiral stair into a drowned shaft, and the heart of the matter is finding a way to draw the water out. When any living non-svartfolk enters the temple hall, the ghost of prior Edvard rises by the altar and bars the way out until his fire burns again, finding release when it does. Only then do the vaults and their hoard lie open.
+The treasure sits in the flooded temple under Anja's Eye, down a spiral stair into a drowned shaft, and the heart of the matter is finding a way to draw the water out. When any living non-dark folk enters the temple hall, the ghost of prior Edvard rises by the altar and bars the way out until his fire burns again, finding release when it does. Only then do the vaults and their hoard lie open.

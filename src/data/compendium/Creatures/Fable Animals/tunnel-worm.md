@@ -1,5 +1,7 @@
 # Tunnel Worm
 
+
+![Tunnel Worm](/compendium/Creatures/Fable Animals/tunnel-worm.png "Tunnel Worm")
 Tunnel worms are very large underground creatures that live on practically anything. They bore their own tunnels through everything softer than bedrock, swallowing the earth and drawing out the nourishment in it; whatever they cannot or will not eat at once they leave behind in slime-cocoons, things such as metal objects and warriors clad in metal armour.
 
 ## Appearance

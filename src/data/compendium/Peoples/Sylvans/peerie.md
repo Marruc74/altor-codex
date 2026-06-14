@@ -1,5 +1,7 @@
 # Peerie
 
+
+![Peerie](/compendium/Peoples/Sylvans/peerie.png "Peerie")
 Peeries live the summer in beautiful, blossoming meadows and the winter in underground workshops, where they spend the whole dark season at their cobbling. Their favourite pastime, next to shoemaking, is playing tricks on humans and driving them to distraction with their pranks.
 
 ## Appearance

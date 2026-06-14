@@ -1,5 +1,7 @@
 # Umbra
 
+
+![Umbra](/compendium/Creatures/Elementals/umbran.png "Umbra")
 Elementals are incarnations of the elements, summoned from the elemental planes into our world by a magician's elemental magic. They have no will or wit of their own and must be directed by the full attention of the one who called them; they are immune to poison but can be harmed by magic as normal. The umbra is the elemental of darkness, and can easily be mistaken for a dark wraith.
 
 ## Appearance

@@ -1,5 +1,7 @@
 # Pazuzu
 
+
+![Pazuzu](/compendium/Creatures/Lesser Demons/pazuzu.png "Pazuzu")
 Among the very lowest of Inferno's demon-folk are the pazuzu, the fly-masters of the shadow circle. The lowest demons serve as overseers, slave-drivers, executioners, under-officers, torturers and gaolers, their chief task to torment the human souls to madness.
 
 ## Appearance

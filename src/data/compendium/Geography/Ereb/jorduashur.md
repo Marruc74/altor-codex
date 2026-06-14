@@ -49,7 +49,7 @@ Here, a person belongs first to their kin. The **clan** and the family decide fa
 
 Jorduashur is a cold and rugged barbarian land on a great northern peninsula, sparsely settled and poor in coin, but rich in iron, salt, amber, and the courage of its people.
 
-- **Population:** approx. 30,000 (50% humans, 33% svartfolk and stenfolk, 10% elves, 7% dwarves)
+- **Population:** approx. 30,000 (50% humans, 33% dark folk and stenfolk, 10% elves, 7% dwarves)
 - **Capital:** Halle (approx. 1,000)
 - **Government:** union of four jarldoms
 - **Ruler:** Elfhelm Korp, jarl of Allnemark, seen abroad as king
@@ -157,7 +157,7 @@ The chief gods are:
 
 ## History
 
-Around 1500 fO the dwarves came for the rich iron of what would become Sigsdal, living peacefully with the svartfolk. After the fall of **Melukha** in 1040 fO a small band of elves settled the southwest of the Kardskogen, seeking something there, perhaps a place holy to Mother Earth. Around 800 fO barbarians migrated north from Nargur.
+Around 1500 fO the dwarves came for the rich iron of what would become Sigsdal, living peacefully with the dark folk. After the fall of **Melukha** in 1040 fO a small band of elves settled the southwest of the Kardskogen, seeking something there, perhaps a place holy to Mother Earth. Around 800 fO barbarians migrated north from Nargur.
 
 The Conflux barely touched Jorduashur, and so began a long age of raiding the ravaged southern lands, with colonies planted in today's Klomellien and Magilre and a heyday of loot shipped north and sold on to the dwarves, until the plundered lands recovered. The last of the forts fell at the death of King **Harald Krokig** in 456 eO, though the blended state of jordukerlar and barbarians called **Hamur**, in south Klomellien, still survives.
 

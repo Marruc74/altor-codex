@@ -1,5 +1,7 @@
 # Grey Mareskunk
 
+
+![Grey Mareskunk](/compendium/Creatures/Fable Animals/grey-mareskunk.png "Grey Mareskunk")
 The grey mareskunk is a marsh creature unique in that its only weapon is wholly of the mind: it learns the thoughts of others and casts them back at its victim. It is told that some years ago, in one place, a levy of two hundred men was gathered to kill a single mareskunk that had learned a hunter's death-terror as he was being devoured by a strangler-vine; that skunk had burst the hearts of four men and driven three more mad by making them live through the hunter's ordeal.
 
 ## Appearance

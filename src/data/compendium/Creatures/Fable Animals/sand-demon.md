@@ -1,5 +1,7 @@
 # Sand Demon
 
+
+![Sand Demon](/compendium/Creatures/Fable Animals/sand-demon.png "Sand Demon")
 The sand demon is the dramatic name for a venomous serpent that lives in the southern deserts, though it has also been found in other sandy regions, since it endures any climate free of ground-frost. It has the power to spit a strong venom which, should it strike the victim's eyes, usually leads to an agonising death. Many desert folk always carry a powder made from the ash of certain plants, which is strewn into the struck eye and then rinsed with plenty of liquid, urine if nothing else can be had.
 
 ## Appearance

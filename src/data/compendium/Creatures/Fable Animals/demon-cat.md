@@ -1,5 +1,7 @@
 # Demon Cat
 
+
+![Demon Cat](/compendium/Creatures/Fable Animals/demon-cat.png "Demon Cat")
 There are rumours of fearsome demon-cats, beasts that kill every intruder in their territory. Once they were ordinary wildcats, but since the third conflux, when a meteor struck the forest where they lived, they began to change in a dreadful way and to spread: they grew larger, their fur thickened, and their teeth sharpened.
 
 ## Appearance

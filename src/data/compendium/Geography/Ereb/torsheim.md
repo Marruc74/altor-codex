@@ -68,7 +68,7 @@ At the center of it all stands Torsborg, a wooden town on the shore of the Great
 - **Type:** A wilderness region of central Ereb gathered around the town of Torsborg
 - **Chief town:** Torsborg
 - **Government:** None over the region as a whole. Torsborg lies under a town-master and a merchant council, while the howather answer to their clan-elders and a chief called a *herse*
-- **Peoples:** Howather forest- and mountain-clans, jorer farmers, Kvizur dwarves, the Nekhi wolfmen, scattered elf-kin, and svartfolk in the deep wilds
+- **Peoples:** Howather forest- and mountain-clans, jorer farmers, Kvizur dwarves, the Nekhi wolfmen, scattered elf-kin, and dark folk in the deep wilds
 - **Faiths:** Wegil the Lord of Light, and the secret cult of Kashim the Ruling Flame
 - **Trade:** Dwarf metalwork and jewellery, furs, timber, and fish
 - **Tongue:** Howathic, with *jori* widely spoken as the language of trade
@@ -109,7 +109,7 @@ The **Nekhi** are wolfmen, fierce wolf-like folk who came late to Torsheim and s
 
 ### The Wild Folk
 
-Harpies haunt the lonelier crags, and shy elf-kin keep to the deep woods, seldom seen and seldom troubling the affairs of men. In the darkest forests and the eastern mountains lurk the **svartfolk** - the trolls, orcs, ogres and dark-elves whose lairs are shunned by all sensible folk.
+Harpies haunt the lonelier crags, and shy elf-kin keep to the deep woods, seldom seen and seldom troubling the affairs of men. In the darkest forests and the eastern mountains lurk the **dark folk** - the trolls, orcs, ogres and dark-elves whose lairs are shunned by all sensible folk.
 
 ## Religion
 

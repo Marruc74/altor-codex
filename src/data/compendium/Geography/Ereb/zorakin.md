@@ -1,7 +1,13 @@
 ---
 figures:
   - name: "Valien VII the Just Council"
-    description: "the present king, 'the Just-counsel'"
+    description: "the present king, who came to the throne at thirty-two and is loved by the commons for his fairness - and resented by the nobles for the same reason; counted a handsome man, with a young queen, Gertlinn, whom the court envies"
+  - name: "Gertlinn"
+    description: "Valien VII's young queen, whose beauty is the envy of the court ladies"
+  - name: "Yvein of Hevel"
+    description: "grand inquisitor of the Bright Hand, the Shining Way's inquisition, who rides through Zorakin and Kardien alike holding its heretic-courts; a fanatic past corrupting, said to read the guilt in a man's eyes"
+  - name: "The Warlock of the Black Tower"
+    description: "a nameless necromancer first marked in Zorakin's wilds, far older than his fifty years, who carved a realm out of the dark folk of the high fells and holds them by sheer force of will"
   - name: "Valien I"
     description: "founder-king, also called Valien Valiensson and Rikesbyggare, the Realm-builder"
   - name: "Vidar Odise"
@@ -16,7 +22,7 @@ places:
   - name: "Salamora"
     description: "the elf-held duchy in the eastern Nordberg Forest"
   - name: "Toril Forest"
-    description: "the great wood of Grindanu, turned dark and evil by svartfolk"
+    description: "the great wood of Grindanu, turned dark and evil by dark folk"
   - name: "Nordberg Forest"
     description: "the elven forest along the foot of the Aidne fells"
   - name: "Grimmani Marsh"
@@ -56,7 +62,7 @@ The kingdom hangs upon two great peninsulas, Grindanu in the west and Indar in t
 
 ### Grindanu
 
-Roughly half forest and half cultivated land. The Toril Forest covers about half the peninsula. Once a bright, leafy wood, it turned dark and evil after svartfolk came into it in the early 100s eO, and its depths are now feared and avoided. Grindanu's only great river is the cold, swift Jöstel, which empties into the vast Grimmani Marsh. About half of all Zorakin lives here, and the peninsula is more urban than Indar.
+Roughly half forest and half cultivated land. The Toril Forest covers about half the peninsula. Once a bright, leafy wood, it turned dark and evil after dark folk came into it in the early 100s eO, and its depths are now feared and avoided. Grindanu's only great river is the cold, swift Jöstel, which empties into the vast Grimmani Marsh. About half of all Zorakin lives here, and the peninsula is more urban than Indar.
 
 ### Indar
 
@@ -66,7 +72,7 @@ Fertile, flat, and three-quarters under the plough. The slow-moving Sola and the
 
 Pendon, the royal capital, is the largest city in either Zorakin or Kardien and the fifth-largest on all the Copper Sea. It began in 367 fO not as a town but as a monastery and lyceum, founded by **Leon Inergryd** of the **Mandelorden**, the scholar-monks of **Ingeril**, goddess of learning. Its fine harbour drew trade, the trade drew people, and by the time the kingdom of Zorakin was proclaimed the settlement had grown great enough to be made its capital.
 
-The city is crown-land, so that the king owns its ground and takes its taxes, though its day-to-day governance falls to a city-marshal, a council, and six city secretaries. Alone among the realm's cities, the folk of Pendon hold the right to propose new laws, a privilege granted them by King Ragnvald the Fair. At its gates stands the **muraskatt**, a toll of about a silver mark on every traveller and beast that enters, from which only farmers and royal officials go free. Roughly a third of its people are merchants and a third craftsmen, and though its trade has slipped since the lost Sympathy War against Felicien and the rising boldness of the svartfolk, it remains among the richest cities of the region.
+The city is crown-land, so that the king owns its ground and takes its taxes, though its day-to-day governance falls to a city-marshal, a council, and six city secretaries. Alone among the realm's cities, the folk of Pendon hold the right to propose new laws, a privilege granted them by King Ragnvald the Fair. At its gates stands the **muraskatt**, a toll of about a silver mark on every traveller and beast that enters, from which only farmers and royal officials go free. Roughly a third of its people are merchants and a third craftsmen, and though its trade has slipped since the lost Sympathy War against Felicien and the rising boldness of the dark folk, it remains among the richest cities of the region.
 
 ### The Lyceum and the Library
 

@@ -1,5 +1,7 @@
 # Therm
 
+
+![Therm](/compendium/Creatures/Elementals/therm.png "Therm")
 Therms are the elementals of heat, incarnations of that element summoned from its plane into our world by elemental magic and bound to the will of the magician who calls them. Like all elementals they have no wit of their own, are immune to poison, and can be harmed by magic as normal.
 
 ## Appearance

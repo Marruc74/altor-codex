@@ -32,7 +32,7 @@ places:
   - name: "The Temple of the Winds"
     description: "A round granite temple on a ledge of the Wind Peaks, built about the Crystal Pillar by the Priestesses of the Winds, who alone can read and steer the winds."
   - name: "Edretch"
-    description: "A svartfolk cave-realm of orcs and trolls, its bewitched orc-king ruled in secret by three half-orc magicians in the sorceress's service."
+    description: "A dark folk cave-realm of orcs and trolls, its bewitched orc-king ruled in secret by three half-orc magicians in the sorceress's service."
   - name: "Kettael"
     description: "A crater holding a blue lake and a crystal-white island, the Moonstone - the remnant of a fallen star and the source of the temple's wind-patterns, guarded by a riddling sphinx."
   - name: "The Ardian Bay"
@@ -61,7 +61,7 @@ At the heart of this land rises Babor, a city that seems to defy the very ground
 
 Barbia is a vast, cold, subarctic land in the far north of Ereb - isolated, easily forgotten, and steeped in hidden magic. Its people are freedom-loving and slow to be ruled, and much of the country answers to no throne at all.
 
-- **Population:** sparse and scattered, mostly human (nomad barbarians and the townsfolk of Babor), with svartfolk in the highlands and elves in the Moonshine Forest
+- **Population:** sparse and scattered, mostly human (nomad barbarians and the townsfolk of Babor), with dark folk in the highlands and elves in the Moonshine Forest
 - **Capital:** Babor
 - **Government:** Empire ruled from Babor, though the nomad clans and trade-cities hold much independence
 - **Ruler:** Emperor Yddris Yxhammer
@@ -82,7 +82,7 @@ An enchanted forest first settled by elves, where the golden maple grows with se
 
 ### Plains and Highlands
 
-Open heather plains roamed by the nomad herders, rising to cold, windswept highlands where svartfolk war from their strongholds.
+Open heather plains roamed by the nomad herders, rising to cold, windswept highlands where dark folk war from their strongholds.
 
 ### Coasts
 
@@ -103,7 +103,7 @@ The Northern Barbarians, the highland nomads meant when most people speak of the
 - **People of Babor**: settled traders and soldiers of the capital, more organized and city-bound
 - **Cave Folk**: a near-neanderthal people of the Wind Peaks
 - **Habulon**: warlike, near-unbeatable seafarers and pirates
-- **Svartfolk**: orcs, trolls and kin who war from the highlands and the caves of Edretch
+- **Dark Folk**: orcs, trolls and kin who war from the highlands and the caves of Edretch
 - **Forest Elves**: the old dwellers of the Moonshine Forest
 
 The land also holds scattered farming villages such as Nug, Sendul, Alder, Vesse and Utill.
@@ -132,7 +132,7 @@ The barbarians revere nature and hold places of unusual beauty sacred, their mag
 ## History
 
 - **The Dragons' Charge**: before he slept, the dragon Alad-Arch was set a task by the dragons' great council, to wait until the appointed time
-- **The Elder Ages**: elves settle the Moonshine Forest, humans come as hunters and herders, and svartfolk war endlessly from the highlands
+- **The Elder Ages**: elves settle the Moonshine Forest, humans come as hunters and herders, and dark folk war endlessly from the highlands
 - **The Priestesses of the Winds**: the blue Crystal Pillar is found among the Wind Peaks and a temple raised about it; when the priestesses die out, Fadarim seals herself in crystal and the winds go blind to the east
 - **The Fall of Jorpagna**: the southern empire collapses when a plague of arm-long flesh-eating grasshoppers devours civilization, casting the land into a stone-age Dark Time
 - **The Rebuilding**: emperors raise Babor anew and reoccupy the wind temple
@@ -144,7 +144,7 @@ Long ago a blue Crystal Pillar was found among the Wind Peaks, and four Priestes
 
 ## Klan Tridor
 
-A coalition of nomad clans that claims all the land north of the Wind Peaks and rebels against the empire. It is led in name by three captains - Relian, Fridar, and Gehard Bloodspiller - but Gehard rules it in secret, the banished tyrant returned for his revenge. Through three half-orc magicians loyal to the sorceress Siratsia, he has also seized the svartfolk realm of Edretch, bending its orc-king to his will.
+A coalition of nomad clans that claims all the land north of the Wind Peaks and rebels against the empire. It is led in name by three captains - Relian, Fridar, and Gehard Bloodspiller - but Gehard rules it in secret, the banished tyrant returned for his revenge. Through three half-orc magicians loyal to the sorceress Siratsia, he has also seized the dark folk realm of Edretch, bending its orc-king to his will.
 
 ## The Habulon Pirates
 

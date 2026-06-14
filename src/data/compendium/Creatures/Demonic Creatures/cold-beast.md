@@ -1,5 +1,7 @@
 # Cold Beast
 
+
+![Cold Beast](/compendium/Creatures/Demonic Creatures/cold-beast.png "Cold Beast")
 Cold beasts are fearsome ice-monsters from Inferno's second circle, the Circle of Cold. They are a kind of elemental creature built in part of demon-ice. In our world they appear almost only in arctic regions and at sea, where they can freeze the water into great floes to drift about on.
 
 ## Appearance

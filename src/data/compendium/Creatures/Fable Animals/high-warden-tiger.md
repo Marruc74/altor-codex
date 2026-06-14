@@ -1,5 +1,7 @@
 # High Warden Tiger
 
+
+![High Warden Tiger](/compendium/Creatures/Fable Animals/high-warden-tiger.png "High Warden Tiger")
 The high warden tiger belongs by origin to the deep jungles of the far east. The odd one has sought refuge further west, for the simple reason that it is hunted in most of the lands where it occurs naturally.
 
 ## Appearance

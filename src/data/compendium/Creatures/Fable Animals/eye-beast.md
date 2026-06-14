@@ -1,5 +1,7 @@
 # Eye Beast
 
+
+![Eye Beast](/compendium/Creatures/Fable Animals/eye-beast.png "Eye Beast")
 Eye-beasts are very dangerous predators that live in small packs of between four and eight. They can eat practically anything they get hold of: fish, rabbits, deer, birds and wild boar. They never attack creatures as large as humans, however, unless there are several of them together.
 
 ## Appearance

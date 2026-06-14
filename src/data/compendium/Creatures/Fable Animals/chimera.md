@@ -1,5 +1,7 @@
 # Chimera
 
+
+![Chimera](/compendium/Creatures/Fable Animals/chimera.png "Chimera")
 In one of the most turbulent of the Chaos realms, a bored Chaos lord created the chimeras. Unhappily he grew bored of them very quickly and dispatched them to other dimensions without much further thought, which is why chimeras are found in most of the dimensions of the Multiverse.
 
 ## Appearance

@@ -1,5 +1,7 @@
 # Fire Dragon
 
+
+![Fire Dragon](/compendium/Creatures/Dragons/fire-dragon.png "Fire Dragon")
 Fire-dragons are the commonest kind of dragon and most likely the ancestral stock from which all the other kinds descend. They are no great masters of magic, but make up for that one weakness by being unusually swift and agile, even for dragons. They thrive in every climate but the very coldest, always lairing in remote caves, and burn the land around their lairs at intervals to mark their territory and wipe out any would-be intruder.
 
 ## Appearance

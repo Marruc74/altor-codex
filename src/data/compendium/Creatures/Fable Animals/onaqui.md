@@ -1,5 +1,7 @@
 # Onaqui
 
+
+![Onaqui](/compendium/Creatures/Fable Animals/onaqui.png "Onaqui")
 The onaqui is a most frightening creature that lives in tropical jungles. Where these beings come from, and what they are doing in our human world, is unknown.
 
 ## Appearance

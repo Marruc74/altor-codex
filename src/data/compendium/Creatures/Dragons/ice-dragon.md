@@ -1,5 +1,7 @@
 # Ice Dragon
 
+
+![Ice Dragon](/compendium/Creatures/Dragons/ice-dragon.png "Ice Dragon")
 Ice dragons make their homes in the coldest climates and are happiest amid cold and snow, though they fare perfectly well in any climate, for a dragon's greatest strength is perhaps its hardiness against every element. Unlike other dragons they do not dwell in stone caves but dig out their own caverns in the ice of glaciers and polar floes. They are predators that live on polar bears, walruses, seals, frost-elves and the like.
 
 ## Appearance

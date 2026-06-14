@@ -1,5 +1,7 @@
 # Goblin
 
+
+![Goblin](/compendium/Peoples/Dark Folks/goblin.png "Goblin")
 Goblins live in tight-knit clans in great underground mining complexes and have reached almost the same level of craft as dwarves, at least in practical function if not in beauty, so they trade their work to the less skilled dark folk. Their cities are well planned and well built and can hold up to three thousand.
 
 ## Appearance

@@ -1,5 +1,7 @@
 # Blood Elf
 
+
+![Blood Elf](/compendium/Peoples/Elves/blood-elf.png "Blood Elf")
 Blood elves are an elf-folk that live, among other places, in the forests of Nargur in Ereb Altor, dwelling solely in settlements high in the crowns of giant oaks, and they are very rare. By legend they are an elf-folk abandoned in elder days by Tevatenu for dreadful crimes against their own kin, and so are far worse tainted by the world's evil; they fled into the deep forests of central Ereb and have lived there as long as any can remember. Like all elf-folk they are thought to be immortal, and since few visitors have ever seen a young one, they are believed to breed very slowly. They live in giant oaks quite literally, petrifying the trees and then hewing stairs and rooms into the trunks and building small huts among the branches.
 
 ## Appearance

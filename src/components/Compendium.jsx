@@ -6,6 +6,8 @@ import { pins } from "../data/locations";
 import { entries } from "../data/codex/index.js";
 import { adventures, adventureGroups } from "../data/adventures";
 import { videosForPin, relatedVideosByVideo } from "../data/crossLinks";
+import { thumbSrc, onThumbError } from "../lib/thumb";
+import { entryImages } from "../data/entryImages.generated";
 
 // ── Image utilities ───────────────────────────────────────────────────────
 const IMAGE_RE = /!\[([^\]]*)\]\(([^")]+?)(?:\s+"([^"]*)")?\)/g;
@@ -17,9 +19,19 @@ function extractImages(md) {
 function stripImages(md) {
   return md.replace(IMAGE_RE, "").replace(/\n{3,}/g, "\n\n").trim();
 }
-function thumbSrc(src) {
-  const slash = src.lastIndexOf("/");
-  return src.slice(0, slash + 1) + "Thumbnails/" + src.slice(slash + 1);
+
+// A card image: shows the thumbnail, falls back to the full image if the
+// thumbnail is missing. The full image is loaded by the lightbox / detail page.
+function CardImage({ src, alt }) {
+  return (
+    <img
+      className="codex-card__image"
+      src={thumbSrc(src)}
+      alt={alt}
+      loading="lazy"
+      onError={onThumbError(src)}
+    />
+  );
 }
 
 // ── Lightbox ──────────────────────────────────────────────────────────────
@@ -255,6 +267,20 @@ const RELATED_BY_SLUG = {
   // appear both in the Path of Honor and at the Skeleton Village.
   "eledain": ["the-brotherhood-of-the-eternally-shining-star", "the-gods"],
   "the-brotherhood-of-the-eternally-shining-star": ["eledain", "the-gods"],
+  // The Magic rulebook: the further schools, the aspect framework, divination.
+  "the-aspects-of-magic": ["animism", "elemental", "mentalism", "the-multiverse"],
+  "dragon-magic": ["mentalism", "illusionism", "symbolism"],
+  "illusionism": ["mentalism", "dragon-magic", "symbolism"],
+  "symbolism": ["mentalism", "dragon-magic", "illusionism"],
+  "staff-magic": ["the-aspects-of-magic", "notable-magic-items"],
+  "harmonism": ["voice-magic", "the-aspects-of-magic"],
+  "voice-magic": ["harmonism", "the-aspects-of-magic"],
+  "spiritism": ["demonology", "necromancy", "the-aspects-of-magic"],
+  "alchemy": ["notable-magic-items", "the-aspects-of-magic"],
+  "magic-nodes-and-storms": ["the-bane-storm", "ley-lines-and-magic-dead-lands", "dark-magic"],
+  "the-shaul-deck": ["ordo-magica", "the-heavenly-bodies"],
+  "familiars": ["witchcraft", "spiritism", "animism"],
+  "witchcraft": ["animism", "necromancy", "familiars", "the-aspects-of-magic"],
 };
 
 // ── CountryDetail ─────────────────────────────────────────────────────────
@@ -278,14 +304,18 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onO
             // Don't link a card back to the very page it sits on.
             const target = t && !(t.kind === "country" && t.id === country.id) ? t : null;
             const linkable = target && onOpenPage;
-            const imageWrap = it.image && (
+            // A card with no image of its own borrows the image of the page its
+            // "View more" link points to (e.g. a card linking to Orc shows the orc).
+            const borrowed = target ? entryImages[toSlug(target.name)] : null;
+            const cardImage = it.image ?? borrowed ?? null;
+            const imageWrap = cardImage && (
               <div className="codex-card__image-wrap">
-                <img className="codex-card__image" src={it.image} alt={it.name} />
+                <CardImage src={cardImage} alt={it.name} />
               </div>
             );
-            const openLightbox = () => setLightbox([{ src: it.image, alt: it.name, caption: it.name }]);
+            const openLightbox = () => setLightbox([{ src: cardImage, alt: it.name, caption: it.name }]);
 
-            if (linkable && it.image)
+            if (linkable && cardImage)
               return (
                 <div key={it.name ?? i} className={`${cls} codex-card--split`}>
                   <button className="codex-card__image-btn" onClick={openLightbox} aria-label={`View image of ${it.name}`}>
@@ -317,7 +347,7 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onO
                   {inner}
                 </button>
               );
-            if (it.image)
+            if (cardImage)
               return (
                 <button key={it.name ?? i} className={cls} onClick={openLightbox}>
                   {inner}
@@ -457,7 +487,7 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onO
               <button key={entry.id} className="codex-card" onClick={() => onEntrySelect(entry.id)}>
                 <div className="codex-card__image-wrap">
                   {entry.image ? (
-                    <img className="codex-card__image" src={entry.image} alt={entry.title} />
+                    <CardImage src={entry.image} alt={entry.title} />
                   ) : (
                     <span className="codex-card__placeholder">◈</span>
                   )}
@@ -700,16 +730,20 @@ function AdventureDetail({ adventure, onVideoSelect, onOpenPage }) {
             // way it deep-links there.
             const target = resolvePage(it.entry ?? it.name);
             const linkable = target && onOpenPage;
-            const imageWrap = it.image && (
+            // A card with no image of its own borrows the image of the page its
+            // "View more" link points to (e.g. a card linking to Orc shows the orc).
+            const borrowed = target ? entryImages[toSlug(target.name)] : null;
+            const cardImage = it.image ?? borrowed ?? null;
+            const imageWrap = cardImage && (
               <div className="codex-card__image-wrap">
-                <img className="codex-card__image" src={it.image} alt={it.name} />
+                <CardImage src={cardImage} alt={it.name} />
               </div>
             );
-            const openLightbox = () => setLightbox([{ src: it.image, alt: it.name, caption: it.name }]);
+            const openLightbox = () => setLightbox([{ src: cardImage, alt: it.name, caption: it.name }]);
 
             // Both an image and a "View more" link: keep them independently
             // clickable - the image opens the lightbox, the link opens the entry.
-            if (linkable && it.image)
+            if (linkable && cardImage)
               return (
                 <div key={it.name ?? i} className={`${cls} codex-card--split`}>
                   <button
@@ -764,12 +798,12 @@ function AdventureDetail({ adventure, onVideoSelect, onOpenPage }) {
                   {inner}
                 </button>
               );
-            if (it.image)
+            if (cardImage)
               return (
                 <button
                   key={it.name ?? i}
                   className={cls}
-                  onClick={() => setLightbox([{ src: it.image, alt: it.name, caption: it.name }])}
+                  onClick={openLightbox}
                 >
                   {inner}
                 </button>

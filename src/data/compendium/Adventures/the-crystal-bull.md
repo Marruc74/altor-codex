@@ -16,14 +16,19 @@ sections:
     npcs:
       - name: Melealina
         description: "The dark-haired elf astrologer, born under an eclipse to see the hidden and to stand as a bridge between worlds. Swallowed and reborn by a demon to escape another, she carries the errand to free the hero - and a secret, bitter burden she may tell no one."
+        image: /compendium/Adventures/TheCrystalBull/Melealina.jpg
       - name: Arn Dunkelbrink
         description: "King of Stegos, his face burned blind by a dragon whose true name he learned and turned to his command. Bitter, grave and half-haunted, he loves the elf-seer and needs the aid of her friends."
+        image: /compendium/Adventures/TheCrystalBull/Arn Dunkelbrink da Kharasme.jpg
       - name: Garasuga
         description: "A crippled, careworn high priest of the White Shamash and counselor to the king, anxious to see Arn accepted by all, and only half-trusting the elf-seer."
+        image: /compendium/Adventures/TheCrystalBull/Enu Garasuga.jpg
       - name: Naramsi
         description: "A romantic, proud Stegoser knight, the first to meet the king on the freed island and unshakably loyal - a master of lute and bow who would ride north with the company."
+        image: /compendium/Adventures/TheCrystalBull/Naramsi of the Eastern Canyon.jpg
       - name: Noscapio
         description: "A humorless, pale priest-observer sent along as a faithful witness, with a keen eye for false reasoning and little earthly use besides."
+        image: /compendium/Adventures/TheCrystalBull/Noscapio.jpg
       - name: Moder Himesia
         description: "An old Stegoser woman whose true-sight reads the soul behind the eyes, weighing the heart of any who will meet her gaze."
       - name: Varicras
@@ -45,15 +50,22 @@ sections:
     npcs:
       - name: The Leather Rat
         description: "A runaway desert-nomad turned thief in Fontra Cilor, a passionate liar, greedy and forever suspicious, who fled west with the key-keepers' stolen treasures and hid the strangest of them away among his own tribe."
+        image: /compendium/Adventures/TheCrystalBull/Leatherrat.jpg
       - name: Pultry
         description: "A one-eyed black duck and usurer of Fontra Cilor, a scarred old pirate with a silver-riveted bill, hunting the Leather Rat for an unpaid gambling debt."
+        image: /compendium/Adventures/TheCrystalBull/Pultry.jpg
       - name: Kandurra
         description: "A once-great illusionist who owns the salt-mine and dwells in a magic pyramid, so lost in his own illusions that he can no longer tell the real from the dreamed."
       - name: Koklai
         description: "A mighty spirit bound as a great gaudy rooster to serve the illusionist for his life, weary of the bond and longing to pass out through the underworld gate to his own world. He reads minds, and trades his help for freedom."
+        image: /compendium/Adventures/TheCrystalBull/Koklai.jpg
+      - name: Bax
+        description: "A melancholy, near-silent giant of the Weeping Mountains, herdsman and keeper of the peace in the oasis of Na Yoh, who clips every name he speaks down to its first syllable. He stayed on after his swine ate a local merchant, and now looks after the dead man's widow - and spars with the eastern blade Wifi."
+        image: /compendium/Adventures/TheCrystalBull/Bax.jpg
     creatures:
       - name: Bugalatman
         description: "A vile, formless mass of living hunger that crawled up beneath the buried gate when the gold-eating folk of Woddam wound their tentacles together. Near unkillable, it grows by devouring all, and its laid-bare heart is a terrible, corrupting boon."
+        image: /compendium/Adventures/TheCrystalBull/Bugalatman.jpg
       - name: Sand-Rasslers
         description: "Great flesh-eating centipedes of the plain that hunt by scent and fall on anything that stirs the sand."
     items:
@@ -73,6 +85,7 @@ sections:
     npcs:
       - name: Culexis
         description: "One of the few first folk of Woddam, ages old and unbearably bored, swimming the acid sea. Beyond clever, able to read minds and foresee the fates of kingdoms, yet blind to feeling, beauty and music, he speaks the forbidden High Tongue and longs only to pass out through the gate."
+        image: /compendium/Adventures/TheCrystalBull/Culexis.jpg
     creatures:
       - name: The Glass Woddamites
         description: "Starved, insect-jointed descendants of the first folk, sheathed in brittle glass, that fall on all who pass - and are stilled a while by beautiful music."
@@ -82,6 +95,7 @@ sections:
       - name: Wafna
         entry: basilisk
         description: "The basilisk hatched of the rooster-spirit's egg: a yellow chick's head on grey lizard-scales and small bat-wings, that grows in a few months into a gaze that turns the living to stone."
+        image: /compendium/Adventures/TheCrystalBull/Wafna.jpg
   - title: Bythos
     description: "A world like the inside of a rolled scroll, lit blood-red, made by a failed god from the stolen life of a living castle. Here the hero is hidden, broken into seven."
     places:
@@ -137,12 +151,16 @@ sections:
         description: "The deathless necromancer and arch-enemy of the whole campaign, master of clones, who hunts the travelers and the seers and would seize the fifth conflux and loose the world-conqueror into Altor."
       - name: Huriems
         description: "A Ransard envoy passing as a Kardish artist, bound for a secret alliance with the sorcerer, who carries the cradle the sorcerer was laid in as a newborn - its inscription naming the realm's own capital."
+        image: /compendium/Adventures/TheCrystalBull/Mister Merinor.jpg
       - name: Zahembra
         description: "Huriems's bodyguard, a sun-loving desert warrior all muscle and good cheer, who poisons his arrows and delights in food, drink and a good fight."
+        image: /compendium/Adventures/TheCrystalBull/Zahembra.jpg
       - name: Wifi
         description: "Huriems's other guard, a slant-eyed warrior-thief from the east who fights faster than the eye on her nerve-quickening drug, traveling the world to learn new arts of the blade."
+        image: /compendium/Adventures/TheCrystalBull/Wifi.jpg
       - name: Dahobny
         description: "A thief-assassin sent in secret to hunt out infiltrators in the brotherhood, who goes masked as a foul-breathed, squint-eyed jester."
+        image: /compendium/Adventures/TheCrystalBull/Rafler.jpg
     creatures:
       - name: Ebharing
         description: "An ancient demon and would-be world-conqueror who walks the borders of the worlds awaiting his way into Altor, manifesting as a dead king's sword and, in the grey halls, as a living green statue with blades growing from its palms."

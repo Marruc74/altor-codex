@@ -1,5 +1,7 @@
 # Frost Elf
 
+
+![Frost Elf](/compendium/Peoples/Elves/frost-elf.png "Frost Elf")
 Frost elves are a very rare elf-kin that live in arctic regions. They descend from wood elves driven for various reasons from their original homes in the northern conifer forests, and live in small, nomadic tribes chiefly by reindeer-herding, hunting and fishing, having adapted astonishingly well to the harsh climate.
 
 ## Appearance

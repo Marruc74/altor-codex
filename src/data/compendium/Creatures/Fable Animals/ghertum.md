@@ -1,5 +1,7 @@
 # Ghertûm
 
+
+![Ghertûm](/compendium/Creatures/Fable Animals/ghertum.png "Ghertûm")
 A ghertûm is no creature in the ordinary sense, but rather a being made up of millions of tiny silver-grey insects that hold together in so dense a swarm that they take on the shape of a single creature.
 
 ## Appearance

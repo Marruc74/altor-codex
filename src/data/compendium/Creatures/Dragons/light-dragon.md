@@ -1,5 +1,7 @@
 # Light Dragon
 
+
+![Light Dragon](/compendium/Creatures/Dragons/light-dragon.png "Light Dragon")
 Light dragons are close kin to fire-dragons, though much smaller and nowhere near as powerful. Their chief weapon, the bolt of light, is mightier than either the gout of flame or the cone of cold, which makes them very dangerous foes all the same. Like fire-dragons they live in high cliff-caves, but they will also den in the throats of dead volcanoes, where a dozen dragons may sometimes be found in one place, a thing unique among dragonkind, though each always keeps its own cave.
 
 ## Appearance

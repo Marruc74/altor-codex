@@ -1,5 +1,7 @@
 # Arboreal Leech
 
+
+![Arboreal Leech](/compendium/Creatures/Fable Animals/arboreal-leech.png "Arboreal Leech")
 Tree-leeches live in the treetops of dark, damp deciduous forests. They are, sadly, rather common, and so pose the greatest danger to adventurers who dare to venture there.
 
 ## Appearance

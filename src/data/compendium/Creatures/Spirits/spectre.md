@@ -1,5 +1,7 @@
 # Spectre
 
+
+![Spectre](/compendium/Creatures/Spirits/spectre.png "Spectre")
 Spectres are much like ghosts in their powers and appearance, but they have lost not only their solid form: they have also lost all feeling and all memory of their former life. The only things they know are a strong sense of oblivion and the memory of their own violent death.
 
 ## Appearance

@@ -1,5 +1,7 @@
 # Stone Biter
 
+
+![Stone Biter](/compendium/Peoples/Stonekin/stone-biter.png "Stone Biter")
 The stone biters are the stonekin who best earn the name. They not only live in stone and by stone, they are in fact made of stone. They live solely underground, where they work the mines, no heavy task for them, since they can dig through solid bedrock with their bare hands much as a human digs through an earth bank. The other strange thing about them, and what gave them their name, is that they live on stone, eating it, preferring ore-free minerals, so that their mines and their larders often lie in quite separate parts of the mountain, sometimes leagues apart, joined by perfectly dug passages. What they do with all the metals and gems they dig out, no one quite knows; they certainly do not sell them on.
 
 ## Appearance

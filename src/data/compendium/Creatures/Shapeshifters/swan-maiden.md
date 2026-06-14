@@ -1,5 +1,7 @@
 # Swan Maiden
 
+
+![Swan Maiden](/compendium/Creatures/Shapeshifters/swan-maiden.png "Swan Maiden")
 One of the elf-kin, a swan-maiden is a graceful woman of the lakes and rivers who can take the shape of a white swan, and who can no more bear to be shut indoors than a wild bird can.
 
 ## Appearance

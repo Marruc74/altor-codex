@@ -1,5 +1,7 @@
 # Spider Vine
 
+
+![Spider Vine](/compendium/Creatures/Plants/spider-vine.png "Spider Vine")
 The spider-vine is a carnivorous relative of the strangler-vine, but considerably more cunning and dangerous. It grows on the border between damp marshland and drier ground, and breeds in the same way as the strangler-vine.
 
 ## Appearance

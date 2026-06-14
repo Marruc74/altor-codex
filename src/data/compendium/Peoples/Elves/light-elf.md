@@ -1,5 +1,7 @@
 # Light Elf
 
+
+![Light Elf](/compendium/Peoples/Elves/light-elf.png "Light Elf")
 The common notion of the elf-folk is that they hold themselves a little above mortal races and do not quite stoop to mixing with them. This does not hold for the light elves, who very nearly all live just as ordinary humans do, in towns or larger villages. Meet an elf in a city and you can be almost sure it is a light elf. They are chiefly craftsfolk, gem-cutters and precious-metal smiths, artists or teachers. Unlike other elf-folk they feel no sense of confinement or crowding in a city, and have nothing at all against the company of mortals.
 
 ## Appearance

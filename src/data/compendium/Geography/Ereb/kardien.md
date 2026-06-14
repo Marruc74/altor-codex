@@ -1,13 +1,17 @@
 ---
 figures:
   - name: "Vidar VI"
-    description: "the present king of Kardien"
+    description: "the present king, a quiet scholar who would sooner pass his days in Ekeborg's library or a magician's academy than at war or the tourney; unwed and childless at sixty-two, with his nephew Helmfrid the unofficial heir"
+  - name: "Helmfrid"
+    description: "captain of the royal garde and King Vidar's eldest nephew, the unofficial heir to a childless throne"
+  - name: "Yvein of Hevel"
+    description: "the tots-kerigass, grand inquisitor of the Bright Hand and head of the Shining Way's inquisition; an incorruptible fanatic who has driven a reformation through the mainland church and rides Kardien and Zorakin to oversee its courts"
   - name: "Valentin Echthe"
     description: "founder of the echther people, who died soon after gathering them"
   - name: "Vidar Odise"
     description: "the echther chieftain whose alliance with King Valien bound Kardien to Zorakin"
   - name: "The sorcerer of the Black Tower"
-    description: "blamed for the malaise that broke the old rulers' will to govern"
+    description: "a nameless necromancer, far older than the fifty years he looks, first reported to the Faltrax academy in 399 eO; he rules a realm of dark folk in the high mountains and is blamed for the malaise that broke the old rulers' will to govern"
 places:
   - name: "Ekeborg"
     description: "the capital and seat of the exark palace, from which the Shining Way is governed"
@@ -28,7 +32,7 @@ places:
 ![Kardien female](/compendium/Geography/Ereb/Countries/Kardien/Female1.jpg "Kardien female")
 ![Knight](/compendium/Geography/Ereb/Countries/Kardien/Knight1.jpg "Knight")
 
-Kardien is a land where golden fields stretch beneath a warm southern sun, and stone castles rise over a people divided by birth and duty. It is a feudal crusader kingdom upon the Aidne peninsula, ruled without exception by the proud nobility of the echther, devoted body and soul to the Shining Way, and bound to neighbouring Zorakin by an ancient alliance. In the fertile south, farmers known as faltrakier tend the soil along the great rivers, feeding the realm through steady labour and simple lives. Beyond the towering Aidne-bergen lies the harsh north, a poorer and wilder country where scattered settlements cling to survival and svartfolk move through the high passes.
+Kardien is a land where golden fields stretch beneath a warm southern sun, and stone castles rise over a people divided by birth and duty. It is a feudal crusader kingdom upon the Aidne peninsula, ruled without exception by the proud nobility of the echther, devoted body and soul to the Shining Way, and bound to neighbouring Zorakin by an ancient alliance. In the fertile south, farmers known as faltrakier tend the soil along the great rivers, feeding the realm through steady labour and simple lives. Beyond the towering Aidne-bergen lies the harsh north, a poorer and wilder country where scattered settlements cling to survival and dark folk move through the high passes.
 
 Power in Kardien rests with the echther, an honour-bound caste who rule through a strict feudal order. Kings, dukes, counts and barons each hold their domains, yet none stand entirely above the others, and the balance of power is forever uncertain. Cities may serve a noble house or stand free under their own councils, but all alike remain tied to the crown.
 
@@ -57,9 +61,9 @@ The river Stirpaz marks the border with Zorakin, and west of it lies the heart o
 
 ### Northern Kardien
 
-North of the mountains lies the Inmark, sparse and hard, harried by mountain svartfolk who descend from the heights. Beyond it stretch the remote and poor northern lands, the duchies of Videlrike and Nordmark, where royal control has grown weak since the rise of the elf-realm of Goiana to the east. Svartfolk hold the north coast of Antivin, and there too dwells the ker-bosh, a native people who still live as in the stone age.
+North of the mountains lies the Inmark, sparse and hard, harried by mountain dark folk who descend from the heights. Beyond it stretch the remote and poor northern lands, the duchies of Videlrike and Nordmark, where royal control has grown weak since the rise of the elf-realm of Goiana to the east. Dark Folk hold the north coast of Antivin, and there too dwells the ker-bosh, a native people who still live as in the stone age.
 
-- **The Aidne-bergen**: sparsely peopled and perilous, home to cliff-goats, predators and svartfolk, and to old legends of cyclopes and giants
+- **The Aidne-bergen**: sparsely peopled and perilous, home to cliff-goats, predators and dark folk, and to old legends of cyclopes and giants
 - **Gladaskogen**: the surviving woodland of the west
 - **Brynhildur's Forest**: the eastern forest, largely inhabited by elf-folk, whose trees are protected from the touch of steel
 
@@ -93,7 +97,7 @@ Several smaller peoples share the land:
 
 - **Penterna**: the natives of Divra, granted an autonomous province whose chieftains swear a special oath, rank as underdrots, and owe only a yearly tribute to Ekeborg
 - **Ker-bosh**: the stone-age natives of Antivin, left to themselves
-- **Svartfolk**: dwelling unsubdued in the Aidne-bergen and on Antivin
+- **Dark Folk**: dwelling unsubdued in the Aidne-bergen and on Antivin
 - **Elf-folk**: roughly a thousand souls in Goiana's forests, left in peace as the king's personal subjects
 - **Halflings and ankor**: full members of Kardian society, found mostly in the free cities
 
@@ -153,6 +157,8 @@ The military orders of the church are counted apart from these limits. In time o
 ## Religion
 
 All Kardier follow the Shining Way with great devotion. The capital Ekeborg, whose name is a softened form of "Echtherborg," holds the great exark palace, and from it the whole church of the Shining Way is governed, save only for Caddo. So deeply does the faith run through Kardien that the church stands nearly as mighty as the nobility.
+
+Heresy and slackness of faith are hunted down by the **Bright Hand**, the church's inquisition, whose courts sit across the mainland under its grand inquisitor, the tots-kerigass. Its reach runs into Zorakin as well, and under a zealous head it has lately pressed a reformation upon the whole mainland church.
 
 ## History
 

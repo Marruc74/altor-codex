@@ -1,7 +1,7 @@
 ---
 title: The Sea Wolves
 tagline: "A Jorduashur sea-captain hires the band as rowers for a raid on a robber chieftain's coastal fastness in the wild north of Kardien, three hundred miles of open water and a three-day march from home."
-summary: "In the port of Halle a Jorduashur captain, Erik Järnnäve, takes the adventurers on as rowers for a long raid south: across the sea to the lawless north of Kardien, to storm the stronghold of the robber chieftain Luis Candelas. A freed Kardener captive, El Jabato, guides them to the fortress in return for passage home. The voyage holds storms, a sea-serpent and a rival raider; the overland march holds bears, a barrow-ghost, trolls, svartfolk and an orc-warren; and the fortress itself is three levels of brigands, slaves, spell-bound guardian statues and a knife-trapped vault, with worse things lairing in the half-dug caves below."
+summary: "In the port of Halle a Jorduashur captain, Erik Järnnäve, takes the adventurers on as rowers for a long raid south: across the sea to the lawless north of Kardien, to storm the stronghold of the robber chieftain Luis Candelas. A freed Kardener captive, El Jabato, guides them to the fortress in return for passage home. The voyage holds storms, a sea-serpent and a rival raider; the overland march holds bears, a barrow-ghost, trolls, dark folk and an orc-warren; and the fortress itself is three levels of brigands, slaves, spell-bound guardian statues and a knife-trapped vault, with worse things lairing in the half-dug caves below."
 videoIds: []
 characters:
   - name: Erik Järnnäve
@@ -25,7 +25,7 @@ creatures:
   - name: The Forest Trolls
     entry: forest-troll
     description: "A troll band that roams the wild country on the march south, falling on camps by night with great clubs and making first for the watch-fires to put them out."
-  - name: The Svartfolk
+  - name: The Dark Folk
     entry: svartalf
     description: "A party of svartalfer met on the road carrying a wounded comrade and begging for healing. Help them and they give up a sword they do not know is enchanted; refuse, and ten of them steal back in the night to take revenge."
   - name: The Cave-Orcs
@@ -51,13 +51,13 @@ places:
     description: "The capital and chief port of Jorduashur, the realm's only true city, where Erik gathers his crew and the long voyage south begins."
   - name: The North of Kardien
     entry: kardien
-    description: "The harsh, lawless country beyond the Aidne-bergen in the far north of Kardien, where scattered settlements cling on and svartfolk move through the high passes, and where the robber chieftain has built his fastness above the coast."
+    description: "The harsh, lawless country beyond the Aidne-bergen in the far north of Kardien, where scattered settlements cling on and dark folk move through the high passes, and where the robber chieftain has built his fastness above the coast."
   - name: The Robber's Fortress
     description: "Luis Candelas's stronghold above the Kardien coast: a timber hall ringed by a palisade of oak, three levels deep, with stables, a guest-hall and cells above and a treasure vault and half-dug caves below. The gates are barred from within, so the only ways in are over the wall or up through a hidden tunnel."
   - name: The Orc Caves
     description: "A cave-warren of two levels on the overland road, home to Tammam's orcs, with a guarded throne-room and a false treasury set to turn robbers away from the real hoard."
 items:
-  - name: The Svartfolk Sword
+  - name: The Dark Folk Sword
     description: "A broadsword the grateful svartalfer give away as the dearest thing their clan owns, not knowing it is enchanted to call down lightning and to heal, secrets a keen eye can read in the blade."
   - name: The Robber's Hoard
     description: "The treasure locked in the fortress vault: a great weight of silver and gold behind a knife-trapped chest, silver bowls and fine wine, and a casket of potions along with dragon's blood and dried dragon-hide for an alchemist, the last of these deadly to taste."
@@ -77,7 +77,7 @@ It is three hundred miles of open water from Jorduashur to the Kardien coast, an
 
 ## The Overland March
 
-The landing puts the band three days' march from the fortress through the harsh north country of Kardien, beyond the Aidne-bergen, where the law does not reach and the svartfolk move freely. The road holds its own dangers by day and night: territorial bears in their mountain dens, a sounder of wild boar in the glades, a barrow-ghost that demands gold and magic as the price of passage, and trolls that storm the camp after dark to put out the fires. A party of svartalfer carrying a wounded comrade may beg for healing, and how the band answers decides whether they walk away with an enchanted sword or with ten vengeful svartfolk on their trail by night. Off the road lies an optional warren of cave-orcs under the chieftain Tammam, who guards a true hoard behind a false one and a poisoned throne.
+The landing puts the band three days' march from the fortress through the harsh north country of Kardien, beyond the Aidne-bergen, where the law does not reach and the dark folk move freely. The road holds its own dangers by day and night: territorial bears in their mountain dens, a sounder of wild boar in the glades, a barrow-ghost that demands gold and magic as the price of passage, and trolls that storm the camp after dark to put out the fires. A party of svartalfer carrying a wounded comrade may beg for healing, and how the band answers decides whether they walk away with an enchanted sword or with ten vengeful dark folk on their trail by night. Off the road lies an optional warren of cave-orcs under the chieftain Tammam, who guards a true hoard behind a false one and a poisoned throne.
 
 ## The Robber's Fortress
 

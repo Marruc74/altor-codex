@@ -70,10 +70,10 @@ sections:
       - name: The East-Wind Moonstone
         description: "The wind-pattern the founder-priestess took to her grave, the reason the winds are forever blind to the east."
   - title: Edretch
-    description: "A reeking svartfolk cave-realm whose bewitched orc-king dances to the sorceress's strings, and where two captured bounty-hunters await the axe."
+    description: "A reeking dark folk cave-realm whose bewitched orc-king dances to the sorceress's strings, and where two captured bounty-hunters await the axe."
     places:
       - name: Edretch
-        description: "A multi-level svartfolk cave-realm reeking of orcs and trolls, with barracks, a slave-worked smithy, wolf-kennels and a great bronze alarm-bell at its gate, its cells holding the doomed bounty-hunters."
+        description: "A multi-level dark folk cave-realm reeking of orcs and trolls, with barracks, a slave-worked smithy, wolf-kennels and a great bronze alarm-bell at its gate, its cells holding the doomed bounty-hunters."
     npcs:
       - name: King Jatterman
         description: "The huge, bewitched orc-king of Edretch, ruled in truth by the sorceress's three half-orc magicians."

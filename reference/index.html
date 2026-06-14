@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ereb Altor — Source Reference</title>
+<style>
+  :root {
+    --bg: #1b1714;
+    --panel: #221d19;
+    --panel-2: #2b2520;
+    --ink: #e9e0d2;
+    --muted: #b3a594;
+    --faint: #8a7c6b;
+    --accent: #c8a24a;
+    --accent-soft: #e0c578;
+    --line: #3a322b;
+    --link: #d8b25e;
+    --sidebar-w: 312px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    display: flex;
+  }
+
+  /* Sidebar */
+  #sidebar {
+    width: var(--sidebar-w);
+    flex: 0 0 var(--sidebar-w);
+    height: 100vh;
+    overflow-y: auto;
+    background: var(--panel);
+    border-right: 1px solid var(--line);
+    padding: 18px 0 40px;
+  }
+  .brand {
+    padding: 4px 20px 14px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 10px;
+  }
+  .brand h1 {
+    font-size: 18px; margin: 0; letter-spacing: .02em;
+    color: var(--accent-soft); font-variant: small-caps;
+  }
+  .brand p { margin: 4px 0 0; font-size: 12px; color: var(--faint); }
+  .search-wrap { padding: 0 16px 12px; }
+  #search {
+    width: 100%; padding: 9px 12px; border-radius: 8px;
+    border: 1px solid var(--line); background: var(--panel-2);
+    color: var(--ink); font-size: 14px; font-family: inherit;
+  }
+  #search::placeholder { color: var(--faint); }
+  #search:focus { outline: none; border-color: var(--accent); }
+
+  .group { margin: 6px 0; }
+  .group > h2 {
+    font-size: 11px; text-transform: uppercase; letter-spacing: .12em;
+    color: var(--accent); margin: 0; padding: 12px 20px 4px;
+  }
+  .group .count { color: var(--faint); font-weight: normal; }
+  nav a {
+    display: block; padding: 6px 20px 6px 24px; color: var(--muted);
+    text-decoration: none; font-size: 14.5px; line-height: 1.35;
+    border-left: 3px solid transparent;
+  }
+  nav a small { display: block; color: var(--faint); font-size: 11.5px; }
+  nav a:hover { background: var(--panel-2); color: var(--ink); }
+  nav a.active {
+    background: var(--panel-2); color: var(--accent-soft);
+    border-left-color: var(--accent);
+  }
+  nav a.hidden, .group.hidden { display: none; }
+
+  /* Content */
+  #main { flex: 1 1 auto; height: 100vh; overflow-y: auto; }
+  article {
+    max-width: 820px; margin: 0 auto; padding: 56px 48px 120px;
+  }
+  .doc-path { color: var(--faint); font-size: 12.5px; letter-spacing: .04em; margin-bottom: 24px; }
+  article h1, article h2, article h3, article h4 {
+    color: var(--accent-soft); line-height: 1.25; font-weight: 600;
+  }
+  article h1 { font-size: 30px; margin: 0 0 .4em; border-bottom: 1px solid var(--line); padding-bottom: .3em; }
+  article h2 { font-size: 22px; margin: 1.7em 0 .5em; }
+  article h3 { font-size: 17px; margin: 1.4em 0 .4em; color: var(--accent); }
+  article h4 { font-size: 15px; margin: 1.2em 0 .3em; color: var(--muted); }
+  article p { margin: 0 0 1em; }
+  article a { color: var(--link); }
+  article ul, article ol { margin: 0 0 1em; padding-left: 1.4em; }
+  article li { margin: .2em 0; }
+  article strong { color: #f3ead9; }
+  article hr { border: none; border-top: 1px solid var(--line); margin: 2em 0; }
+  article blockquote {
+    margin: 1.2em 0; padding: .4em 1.1em; color: var(--muted);
+    border-left: 3px solid var(--accent); background: var(--panel);
+    border-radius: 0 6px 6px 0;
+  }
+  article code {
+    background: var(--panel-2); padding: .1em .4em; border-radius: 4px;
+    font-size: .9em; font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+  }
+  article pre {
+    background: var(--panel); padding: 14px 16px; border-radius: 8px;
+    overflow-x: auto; border: 1px solid var(--line);
+  }
+  article pre code { background: none; padding: 0; }
+  article table {
+    border-collapse: collapse; width: 100%; margin: 1.2em 0; font-size: 14.5px;
+    display: block; overflow-x: auto;
+  }
+  article th, article td { border: 1px solid var(--line); padding: 7px 11px; text-align: left; vertical-align: top; }
+  article thead th { background: var(--panel-2); color: var(--accent-soft); }
+  article tbody tr:nth-child(even) { background: rgba(255,255,255,.018); }
+  article img { max-width: 100%; height: auto; border-radius: 6px; }
+
+  #empty { color: var(--faint); text-align: center; padding-top: 18vh; font-style: italic; }
+
+  /* Mobile */
+  .menu-toggle { display: none; }
+  @media (max-width: 820px) {
+    body { flex-direction: column; }
+    #sidebar {
+      width: 100%; flex-basis: auto; height: auto; max-height: 46vh;
+      border-right: none; border-bottom: 1px solid var(--line);
+    }
+    #main { height: auto; }
+    article { padding: 32px 22px 80px; }
+  }
+</style>
+</head>
+<body>
+  <aside id="sidebar">
+    <div class="brand">
+      <h1>Ereb Altor — Sources</h1>
+      <p id="doc-count"></p>
+    </div>
+    <div class="search-wrap">
+      <input id="search" type="search" placeholder="Search titles &amp; files…" autocomplete="off" />
+    </div>
+    <nav id="nav"></nav>
+  </aside>
+
+  <main id="main">
+    <article id="article"><div id="empty">Select a document from the list.</div></article>
+  </main>
+
+  <script src="reader-data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+  <script>
+    const docs = (window.MD_DOCS || []).slice().sort((a, b) =>
+      a.folder.localeCompare(b.folder) || a.title.localeCompare(b.title));
+    const nav = document.getElementById("nav");
+    const article = document.getElementById("article");
+    const search = document.getElementById("search");
+    document.getElementById("doc-count").textContent = docs.length + " documents";
+
+    const FOLDER_ORDER = ["Adventures", "Sourcebooks", "Handbooks", "Bestiary", "Peoples", "Other"];
+    const byFolder = {};
+    for (const d of docs) (byFolder[d.folder] ||= []).push(d);
+    const folders = Object.keys(byFolder).sort(
+      (a, b) => (FOLDER_ORDER.indexOf(a) + 1 || 99) - (FOLDER_ORDER.indexOf(b) + 1 || 99) || a.localeCompare(b));
+
+    const linkByPath = {};
+    for (const folder of folders) {
+      const group = document.createElement("div");
+      group.className = "group";
+      group.dataset.folder = folder;
+      const h2 = document.createElement("h2");
+      h2.innerHTML = folder + ' <span class="count">' + byFolder[folder].length + "</span>";
+      group.appendChild(h2);
+      for (const d of byFolder[folder]) {
+        const a = document.createElement("a");
+        a.href = "#" + encodeURIComponent(d.path);
+        a.dataset.path = d.path;
+        a.innerHTML = "";
+        a.appendChild(document.createTextNode(d.title));
+        const small = document.createElement("small");
+        small.textContent = d.path;
+        a.appendChild(small);
+        group.appendChild(a);
+        linkByPath[d.path] = a;
+      }
+      nav.appendChild(group);
+    }
+
+    function render(path) {
+      const doc = docs.find((d) => d.path === path);
+      if (!doc) return;
+      const html = window.marked
+        ? window.marked.parse(doc.body, { gfm: true, breaks: false })
+        : '<pre style="white-space:pre-wrap">' +
+          doc.body.replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c])) + "</pre>";
+      article.innerHTML = '<div class="doc-path">' + doc.path + "</div>" + html;
+      document.getElementById("main").scrollTop = 0;
+      for (const el of nav.querySelectorAll("a.active")) el.classList.remove("active");
+      const link = linkByPath[path];
+      if (link) {
+        link.classList.add("active");
+        link.scrollIntoView({ block: "nearest" });
+      }
+      document.title = doc.title + " — Ereb Altor Sources";
+    }
+
+    function openFromHash() {
+      const path = decodeURIComponent(location.hash.slice(1));
+      if (path && docs.some((d) => d.path === path)) render(path);
+      else if (docs.length) render(docs[0].path);
+    }
+    window.addEventListener("hashchange", openFromHash);
+
+    search.addEventListener("input", () => {
+      const q = search.value.trim().toLowerCase();
+      for (const folder of folders) {
+        const group = nav.querySelector('.group[data-folder="' + CSS.escape(folder) + '"]');
+        let anyVisible = false;
+        for (const a of group.querySelectorAll("a")) {
+          const hit = !q || (a.dataset.path + " " + a.textContent).toLowerCase().includes(q);
+          a.classList.toggle("hidden", !hit);
+          if (hit) anyVisible = true;
+        }
+        group.classList.toggle("hidden", !anyVisible);
+      }
+    });
+
+    openFromHash();
+  </script>
+</body>
+</html>

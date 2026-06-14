@@ -56,7 +56,7 @@ Ransard stands in the west where mountains cut the sky and cold winds shape the 
 
 ## Overview
 
-- **Population:** approx. 130,000 (85% humans, 15% svartfolk)
+- **Population:** approx. 130,000 (85% humans, 15% dark folk)
 - **Capital:** Kapalht (approx. 4,500)
 - **Government:** Clan-based monarchy
 - **Ruler:** The vortiger, at this time Argald the Younger (Argald II)
@@ -83,7 +83,7 @@ For battle they don a mail shirt and metal-reinforced leather limb-guards, with 
 
 ## Culture
 
-Ransard society is shaped by a warrior ideal. Strength and courage are prized above all, and cowardice is a great shame. Skill in battle brings status, and a warrior is often judged by how many enemies he has slain, sometimes notching a stick for each foe felled. The ransarder consider themselves superior to all other folk, regarding other peoples as uncivilized rabble, and they reserve a particular contempt for the ankor, for halflings and for svartfolk. They bear no ill will toward elves, yet a widespread belief that elf-blood grants immortality leads the elves to avoid them.
+Ransard society is shaped by a warrior ideal. Strength and courage are prized above all, and cowardice is a great shame. Skill in battle brings status, and a warrior is often judged by how many enemies he has slain, sometimes notching a stick for each foe felled. The ransarder consider themselves superior to all other folk, regarding other peoples as uncivilized rabble, and they reserve a particular contempt for the ankor, for halflings and for dark folk. They bear no ill will toward elves, yet a widespread belief that elf-blood grants immortality leads the elves to avoid them.
 
 Their favorite arms are the **seax**, a blade falling between short- and broadsword, and the **tarque**, a small round shield with a central grip used not only to guard but to strike, knocking an opponent aside like a boxer's jab. To these they add a long spear of some 2.5 meters, fit for mounted use, melee or throwing, and a long dagger. Some warriors instead carry the **glamorg**, a huge two-handed sword up to 2 meters in length. Griffin-borne archers are uncommon but extremely accurate, their iron-hard bows piercing both shield and steel helm in a single shot.
 
@@ -130,7 +130,7 @@ The ransarder worship the **Æsir**, a god-family of very many members, the same
 ### Founding and the western migrations
 
 - **900s B.O.**: barbarians arrive from the west, some passing on to Jorduashur
-- **400s B.O.**: svartfolk, mainly orcs, reach the Kardbergen
+- **400s B.O.**: dark folk, mainly orcs, reach the Kardbergen
 - **27 B.O.**: Ransard is united under **Omric the Great**
 
 ### Belgoth and the wars of freedom
