@@ -14,4 +14,4 @@ Peeries hold a deep distrust of all who are not elf-folk, and take great joy in 
 
 ## Abilities
 
-A peerie's great strength lies in making magical shoes, boots and sandals: seven-league boots that bear the wearer at tremendous speed, shapeshifter's boots that let the peerie look like any mammal, sleeper's boots that sink a victim into deep slumber, or calming boots that make a chosen victim forget all aggressive thought. Every peerie commands the school of illusion magic.
+A peerie's great strength lies in making magical shoes, boots and sandals: seven-league boots that bear the wearer at tremendous speed, shapeshifter's boots that let the peerie look like any mammal, sleeper's boots that sink a victim into deep slumber, calming boots that make a chosen victim forget all aggressive thought, or spirit-snaring boots that, with a stamp of the foot, trap a spirit in the nearest growing plant. Every peerie commands the school of illusion magic.

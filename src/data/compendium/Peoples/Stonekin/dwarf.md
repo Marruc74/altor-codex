@@ -15,3 +15,15 @@ Dwarves hold five basic ideals: solidarity, chiefly toward their own race, firmn
 ## Abilities
 
 Dwarves see in the dark even where there is no light at all, as far as a human would by torchlight, and like all stonekin they live two to four centuries.
+
+## Society
+
+Dwarven society rests on five castes, but rank is settled by ability rather than birth, judged during a dwarf's upbringing and open to change. At the top stand the king and the nobility: the crown passes by inheritance and its holder wields great power, yet he is no tyrant, bound by tradition and sharing the making of laws with the nobles, who are the foremost craftsmen and ablest citizens and who direct the work of the guilds. Below them come the craftsmen proper, rising from apprentice to journeyman to master by proven skill, the master's title won by a year's labour on a single flawless piece; then the warriors, a disciplined professional class who serve as guards, watch and border-patrols and favour the axe, war-sword and crossbow; and last the labourers and farmers, who hew the ore and raise mushrooms in the dark or grain on the surface. The dwarves prize a strong, orderly state: none is left to starve, but none may idle either, and revolt is almost unheard of.
+
+## Religion
+
+Dwarves worship a pantheon headed by Terra, lord of the underworld and maker of their race, who shaped first the deep caves and ore-veins and then the dwarves, giants and cyclopes. Beneath Terra stand lesser gods such as Titåtan, god of war, and Ervívor, god of the forge. Every settlement keeps a temple, its side walls lined with niches and altars, one to each god, and the chief altar set at the far end for Terra. Now and then a god chooses a dwarf as a Messenger, blessing him with mastery of a craft and making of him a revered teacher. Stranger still are the Mountain-Taken: dwarven children who vanish into the rock without trace and return as adults touched by the gods, smiths of the highest order who can call up earth-spirits and pass through solid stone and metal alike, but who live half in another world, feeling neither pain nor love and speaking only in signs to those closest to them.
+
+## Language
+
+There are many dwarven tongues, all closely related. The dwarves of Grynnerbergen spread their speech, gryndur, across the whole of Ereb, and it serves them as a common language; their warriors learn jori, the trade-tongue, besides, the better to deal with humans. All the dwarven languages share one script, a runic alphabet of about thirty characters.

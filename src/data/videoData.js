@@ -433,9 +433,11 @@ export const videosBySection = Object.fromEntries(
 // the entry path; EntryDetail hides the "Watch" button when an entry has noVideo.
 const EXTRA_PEOPLES = [
   { group: "Animal Humanoids", name: "Brown Duck" },
+  { group: "Animal Humanoids", name: "Shark-Man" },
   { group: "Animal Humanoids", name: "White Duck" },
   { group: "Elves", name: "Wood Elf" },
   { group: "Humans", name: "Pamperna" },
+  { group: "Other Humanoids", name: "Dyler" },
   { group: "Other Humanoids", name: "Half-elf" },
   { group: "Other Humanoids", name: "Half-orc" },
   { group: "Other Humanoids", name: "Halfling" },
@@ -443,6 +445,8 @@ const EXTRA_PEOPLES = [
   { group: "Other Humanoids", name: "Lindskiarn" },
   { group: "Other Humanoids", name: "Magir" },
   { group: "Other Humanoids", name: "Raggman" },
+  { group: "Other Humanoids", name: "Sharg" },
+  { group: "Other Humanoids", name: "Wolf-Rider" },
   { group: "Other Humanoids", name: "Woodman" },
 ].map((p, i) => ({
   id: `x-people-${i}`,
@@ -508,12 +512,24 @@ const EXTRA_CREATURES = [
   { group: "Magical Creatures", name: "Guludur Abomination" },
   { group: "Magical Creatures", name: "Guardian" },
   { group: "Magical Creatures", name: "Dragon Warrior" },
+  { group: "Magical Creatures", name: "Warden" },
+  { group: "Magical Undead", name: "Imariot" },
   { group: "Fable Animals", name: "Drinnen" },
   { group: "Fable Animals", name: "Forgyor" },
   { group: "Fable Animals", name: "Ghertûm" },
+  { group: "Fable Animals", name: "Brook Bear" },
+  { group: "Fable Animals", name: "Elefantine" },
+  { group: "Fable Animals", name: "Elephant Bird" },
+  { group: "Fable Animals", name: "Harebir" },
   { group: "Fable Animals", name: "Giant Octopus" },
   { group: "Fable Animals", name: "Insectoid" },
+  { group: "Fable Animals", name: "Rock Lizard" },
+  { group: "Fable Animals", name: "Shranck" },
+  { group: "Fable Animals", name: "Silver Shark" },
+  { group: "Fable Animals", name: "Ziplodit" },
+  { group: "Fable Animals", name: "Dwarf Horse" },
   { group: "Plants", name: "Tree Master" },
+  { group: "Plants", name: "Nargur Giant Oak" },
   { group: "Shapeshifters", name: "Shapeshifter" },
   { group: "Demons of Demonicum", name: "Azoth" },
   { group: "Demons of Demonicum", name: "Karnack" },
@@ -559,6 +575,7 @@ const EXTRA_LORE = [
   { group: "Cosmology", name: "The Heavenly Bodies" },
   { group: "Cosmology", name: "Constellations" },
   { group: "Cosmology", name: "Tiamat" },
+  { group: "Cosmology", name: "The Rainbow" },
   { group: "Factions", name: "Burned Earth Clan" },
   { group: "Factions", name: "Grokashak Oggra" },
   { group: "Factions", name: "Kharynos" },
@@ -567,6 +584,9 @@ const EXTRA_LORE = [
   { group: "Factions", name: "Ordo Magica" },
   { group: "Factions", name: "The Brotherhood of the Eternally Shining Star" },
   { group: "Religions", name: "The Oktagon" },
+  { group: "Religions", name: "Kabrinzi" },
+  { group: "Religions", name: "Sbintor" },
+  { group: "Religions", name: "Mokylider" },
   { group: "Religions", name: "Eledain" },
   { group: "Religions", name: "Kastyke" },
   { group: "Religions", name: "Trocuspa" },
@@ -579,6 +599,7 @@ const EXTRA_LORE = [
   { group: "Religions", name: "Valliman and Drigel" },
   { group: "Religions", name: "Tigwalvan" },
   { group: "Magical Phenomena", name: "The Black Water" },
+  { group: "Magical Phenomena", name: "Meh-Zadria's Pillar" },
   { group: "Magical Phenomena", name: "The Devil's Palace" },
   { group: "Magical Phenomena", name: "The Bane Storm" },
   { group: "Magical Phenomena", name: "The City of Angels" },
@@ -641,6 +662,13 @@ const EXTRA_MAGIC = [
   { group: "Items", name: "Soul-Bound Weapons" },
   { group: "Items", name: "The White Staff" },
   { group: "Items", name: "The Demon Sledge" },
+  { group: "Items", name: "The Queen of the Sea" },
+  { group: "Items", name: "The Hynsolge Weapons" },
+  { group: "Items", name: "The Crown Jewels" },
+  { group: "Items", name: "Neverind's Magic Sack" },
+  { group: "Items", name: "Qhriz" },
+  { group: "Items", name: "The Kabrinzi Artifacts" },
+  { group: "Items", name: "The Staff of Mokylider" },
 ].map((p, i) => ({
   id: `x-magic-${i}`,
   title: `Magic: ${p.name}`,
@@ -666,6 +694,14 @@ const EXTRA_MAGIC = [
 // button hidden by EntryDetail.
 const EXTRA_CHARACTERS = [
   { group: null, name: "Baron Piet Steeljaw" },
+  { group: null, name: "Houd Istimam" },
+  { group: null, name: "The Man on the Mountain" },
+  { group: null, name: "Serek the Dark" },
+  { group: null, name: "Tamanrasset" },
+  { group: null, name: "Tara" },
+  { group: null, name: "The Three Wolves" },
+  { group: null, name: "Karaleia" },
+  { group: null, name: "The Hunter" },
 ].map((p, i) => ({
   id: `x-character-${i}`,
   title: `Characters: ${p.name}`,
@@ -678,6 +714,34 @@ const EXTRA_CHARACTERS = [
 {
   const sec = videosBySection.characters ?? (videosBySection.characters = []);
   for (const entry of EXTRA_CHARACTERS) {
+    let grp = sec.find((g) => g.group === entry.group);
+    if (!grp) { grp = { group: entry.group, videos: [] }; sec.push(grp); }
+    grp.videos.push(entry);
+  }
+  sec.sort((a, b) =>
+    a.group === null ? -1 : b.group === null ? 1 : a.group.localeCompare(b.group)
+  );
+  for (const g of sec) g.videos.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+// Markdown-only Geography pages with no chronicle video and no fixed map pin
+// (e.g. Caranor, the silver elves' drifting flying island). Grouped by
+// continent so they surface under it in the Geography nav, the same way the
+// other EXTRA pages do, with the "Watch" button hidden by EntryDetail.
+const EXTRA_GEO = [
+  { group: "Ereb", name: "Caranor" },
+].map((p, i) => ({
+  id: `x-geo-${i}`,
+  title: `Geography ${p.group}: ${p.name}`,
+  section: "geography",
+  group: p.group,
+  name: p.name,
+  noVideo: true,
+}));
+
+{
+  const sec = videosBySection.geography ?? (videosBySection.geography = []);
+  for (const entry of EXTRA_GEO) {
     let grp = sec.find((g) => g.group === entry.group);
     if (!grp) { grp = { group: entry.group, videos: [] }; sec.push(grp); }
     grp.videos.push(entry);

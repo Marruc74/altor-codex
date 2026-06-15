@@ -66,6 +66,7 @@ Magilre is a land where wealth travels slowly and power rarely rests in one plac
 - **Government:** a king sharing power with self-governing nobility across 98 baronies
 - **Ruler:** King Cerebuz II of the Ry'caril line, bynamed "Long-nose"
 - **Religion:** the Shining Way, dominant but politically weak
+- **Military:** a small royal standing army backed by the nobles' levies, with a medium navy for coastal defence
 - **Exports:** wheat, maize, dried and salted fish, mussels
 - **Imports:** nearly everything but foodstuffs and timber
 - **Unique feature:** the Low Line, a tramway network linking the whole country
@@ -91,7 +92,9 @@ The swamps and farmland also hold two species of tiny wild "elephants," scarcely
 
 The Magillers themselves look much like the average folk of Ereb Altor and dress practically, the nobility excepted, whose festival garb is made as impractical as possible to show that the wearer need never stir, all metre-long sleeves of dried and perfumed seagrass, vast wheel-shaped ruff collars, hats hung with little bells, and curl-toed shoes knotted at the tip. Descended from the Joric legionaries who once civilised the land, they are no longer a warlike people, and in a tight corner they trust to a sharp tongue and deft diplomacy rather than to arms. So famed is their eloquence that the saying "to talk someone out of their wits like a Magiller" is known across all Ereb, and the country has bred many a gifted demagogue and politician.
 
-It is whispered that this gift is more than mere practice. The loanwords the Magillers inherited from the land's first, vanished people are said to carry a true persuasive charm, so that one who masters the old dialect and speaks it to a listener who understands it can bend the mind as surely as any spell. Whether the tale is true or only the boast of a talkative race, even the well-schooled nobility are said to be swayed by it.
+The common folk love their tall, many-storeyed houses and their lively talk, and they set a famous table: maize bread baked in the oven and stuffed with pickled fillings under a mussel sauce, and snail roasted in seaweed.
+
+It is whispered that this gift of the tongue is more than mere practice. The loanwords the Magillers inherited from the land's first, vanished people are said to carry a true persuasive charm, so that one who masters the old dialect and speaks it to a listener who understands it can bend the mind as surely as any spell. Whether the tale is true or only the boast of a talkative race, even the well-schooled nobility are said to be swayed by it.
 
 ### The Dyler
 

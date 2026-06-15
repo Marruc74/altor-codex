@@ -97,6 +97,8 @@ The wildlife of the islands runs from the curious to the deadly. The thieving **
 
 The folk of Montures live within a rigid feudal order, each rank set firmly above the next. At the summit stands the duke, and below him the seven Councillors who rule in his name. Beneath them come the nobles and the great-farmers, many of them noble themselves and free of all tax, who hold the land and lease it out to the smallholders and tenant-farmers who work it. Below these stands the great mass of common folk, the farmers, labourers and soldiers, and lowest of all an underclass of sailors, wanderers and the workless who hold no standing at all.
 
+Justice in Montures is weighed by rank as much as by deed: the punishment for a crime is scaled by the standing of the offender against that of his victim, the duke and the Councillors are never punished at all, and each fresh offence drags a man's status lower. The penalties themselves are harsh, running from fines and the lash and the brand through the loss of a hand or the tongue, up to death at the stake or being cast living into the Gideon Chasm.
+
 The land is dotted with villages every few miles, each clustered about its fields and orchards, where peach, melon, apricot, plum, fig and olive grow alongside the grain. The islanders are proud of their table, and prize above all the famed **Trangorian spice-cheese**, made to secret family recipes and sold even to the mainland. But not all of Montures lives so well. High in the **Agino Mountains** lie the harsh mining camps, labour-gangs of men alone, where women and children are forbidden, the work is brutal and dangerous, and newcomers are bullied without mercy.
 
 ## Government
