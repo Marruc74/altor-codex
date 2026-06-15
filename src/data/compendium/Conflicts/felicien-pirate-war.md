@@ -24,3 +24,9 @@ The war has drawn in more than the two who began it. Hynsolge stands with Felici
 ## Those Who Stay Ashore
 
 Erebos counts Kardien and Zorakin among its friends, but neither will be of much use at sea. Both possess fleets too weak to matter in a war of convoys and privateers, and so both have chosen to keep clear of the fighting. Their absence leaves Erebos to carry the weight of the war on its own decks, and sharpens the danger should Caddo ever change its mind.
+
+## Open War (615 eO)
+
+In the summer of 615 eO the long quarrel turned to open war. Felician fleets fell on three of Berendien's western ports - Atrema, Entika and Ventimiglia - and crippled much of the Berendien navy; at Ventimiglia they put hundreds of townsfolk to the sword. Out of the outrage came a firmer pact, the Three-headed Alliance of Erebos, Caddo and Berendien, with warships lent besides by Zorakin and Jorpagna, and even the pirate-cities of Montagor, Ankorath and Dunderin turning on Felician hulls to keep the upstarts in check. The allies struck and took Felicien's great fleet-base on the south coast, yet the Felician captains, reckoned among the finest strategists of the Copper Sea, still held the advantage on open water. The swift ships of Erebos answered with raid after raid along the Felician coast, hoping to draw the enemy fleet close to land - and by the dark month of that year the outcome was anyone's to guess.
+
+> The sources do not agree on Zorakin. The account above (from the events of 615 eO) lists Zorakin among those who lent warships to the alliance, while the earlier reckoning under "Those Who Stay Ashore" holds that Zorakin's fleet was too weak to matter and kept clear of the fighting. Both are left here as recorded.

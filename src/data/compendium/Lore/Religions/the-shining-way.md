@@ -74,6 +74,10 @@ The **Order of Saint Justin** traces its founding to **Justin of Metera**, a poo
 
 The Bright Hand - Den Ljusa Handen - is the inquisition of the church. It was instituted by the exarch Zegedorn III in 314 eO. Its office is to police doctrine and to hunt out heresy wherever it takes root. The Bright Hand does not operate upon Caddo, the very land of Odo's birth, which lies beyond its reach since the Schism.
 
+## Magic and the Faith
+
+The faith is of two minds about magic, and it was this question that broke the church in the Schism. On Caddo the orthodox hold to Odo's own letter to the Erebites - "I shall not warp Etin's creation, for then it would become mere illusion" - and forbid all magic, alchemy included; there, only the god-gifted may wield such power. On the mainland the church holds magic neutral in itself, a tool that may serve the Teaching or work against it by the magician's choice. Even so, certain spells are judged plainly contrary to Odo's word, and may be turned only against the unfaithful: the compelling of a creature's will, blindness, falling-sickness, terror, conjured darkness, the cursing of weapons, the shadow-road, illusion, and the false mirage. Necromancy alone is forbidden outright, to whatever end.
+
 ## Heresies
 
 The church names several heresies and tolerates none of them gladly:

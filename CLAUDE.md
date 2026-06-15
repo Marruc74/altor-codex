@@ -70,6 +70,8 @@ All styles are in `src/App.css` (~75KB) — custom hand-written CSS with no fram
 
 **IMPORTANT — Humanize all added prose.** Any prose written for this site (codex/compendium markdown bodies, taglines, summaries, card descriptions, etc.) must be passed through the `humanizer` skill before it is considered done. Run the skill on the new or edited text and apply its fixes so nothing reads as AI-generated.
 
+**IMPORTANT — Archive source reference files.** When you read an `.md` reference/source file to bring its content into the compendium (e.g. a Sinkadus summary from `Downloads/`), move that file into the `reference/` folder once you're done with it, under the right subfolder (`adventures/`, `bestiary/`, `peoples/`, `handbooks/`, `sourcebooks/`) and renamed in kebab-case (e.g. `Sinkadus37_Skuggor_over_Nohstril.md` → `reference/adventures/sinkadus-37.md`).
+
 ### Country/Region Style
 
 See memory reference for the country file style guide (formatting rules for `.md` files).

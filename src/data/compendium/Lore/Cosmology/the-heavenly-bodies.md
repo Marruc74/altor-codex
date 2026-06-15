@@ -4,13 +4,13 @@ Twelve sphere-shaped bodies wheel through the heavens above Altor, and all of th
 
 ## Luna
 
-Luna, called Lunia in the old tongue, is the largest of the moons and the only one to be seen the whole year round. She circles Altor in about a single day, her face turning always toward the world so that one side shines while the other lies forever dark. Her light is cold and gives no warmth, a pale silver glow that falls upon the night without comfort. The cold-gods are said to guard her, and her shining face is their watchtower over the sleeping world.
+Luna, called Lunia in the old tongue, is the largest of the moons and the only one to be seen the whole year round. She circles Altor in about a single day, her face turning always toward the world so that one side shines while the other lies forever dark. Her light is cold and gives no warmth, a pale silver glow that falls upon the night without comfort. Her circuit is not quite constant - it slips by about an hour for reasons the wise have never fathomed - and the bright face she turns to the world is held by many to be a god itself, riding an errant orbit and lending the dark its light. The cold-gods are said to guard her, and her shining face is their watchtower over the sleeping world.
 
 ## The Other Moons
 
 Besides Luna there are eight smaller moons, and not all may be seen with the naked eye - several are glimpsed only through the astronomer's telescope. A number of them turn in time with Altor's own motion, keeping pace so that they cast permanent shadow-eclipses upon fixed regions of the world below.
 
-Three among them are the dreaded black moons, dark bodies that drink the light rather than give it. One hangs over southern Soluna, one over the far western sea, and one over easternmost Akrogal. Beneath each lies a place forever touched by their shadow.
+Three among them are the dreaded black moons, dark bodies that drink the light rather than give it. One hangs over southern Soluna, one over the far western sea, and one over easternmost Akrogal, where no Erebite has ever set foot. Beneath each lies a place forever touched by their shadow, shunned by living things and all but unknown - and some hold that the mystic Krindenmaar in Trakorien was once such a place, before whatever shadowed it passed from the sky.
 
 ## The Sun
 

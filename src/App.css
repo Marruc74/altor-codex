@@ -2640,6 +2640,13 @@ body {
   transition: transform 0.3s ease;
 }
 
+/* Full-frame art (e.g. a weapon shot that fills the frame corner to corner)
+   that would lose its ends to a cover-crop: show the whole image, letterboxed
+   against the card's raised background instead. */
+.codex-card--fit .codex-card__image {
+  object-fit: contain;
+}
+
 .codex-card:hover .codex-card__image {
   transform: scale(1.03);
 }
@@ -3083,8 +3090,7 @@ body {
 
 .lightbox__content {
   position: relative;
-  max-width: min(90vw, 700px);
-  width: 100%;
+  max-width: 96vw;
   display: flex;
   flex-direction: column;
 }
@@ -3108,8 +3114,9 @@ body {
 
 .lightbox__track {
   display: grid;
-  grid-template-columns: 2.5rem 1fr 2.5rem;
+  grid-template-columns: 2.5rem auto 2.5rem;
   align-items: center;
+  justify-content: center;
 }
 
 .lightbox__arrow {
@@ -3138,9 +3145,11 @@ body {
 }
 
 .lightbox__image {
-  width: 100%;
   display: block;
-  max-height: 75vh;
+  width: auto;
+  height: auto;
+  max-width: min(84vw, 1100px);
+  max-height: 84vh;
   object-fit: contain;
 }
 

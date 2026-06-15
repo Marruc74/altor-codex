@@ -129,7 +129,7 @@ The story of Torsheim is told in two great ages, the years *fO* before the found
 
 - **c.1500 fO** - The howather come down out of the north and take the forests and mountains for their own.
 - **912 fO** - After the Council of Grafferburg, long wars break out between the wilderness folk and the realm of Jorpagna to the south.
-- **599 fO** - A conflux of dark powers ushers in the Dark Time, a long age of fear and disorder across the region.
+- **599 fO** - At the conflux of that year a cloud of countless "meat-biters" - arm-long carnivorous locusts, each bearing a blue stone - sweeps up from the south, halving the region's people in weeks and ruining its herds, and ushers in the Dark Time, a long age of fear and disorder.
 - **100s-200s eO** - Jori settlers push up from the south into the forest's edge, founding farms and the first lasting market on the Great Lake.
 - **212-213 eO** - War flares between the settlers and the clans; the peace that ends it walls the town of Torsborg and binds the howather to the old treaty that the herse still keeps.
 - **300s eO** - Elves come into the woods, and the great animist Eloaner founds Santono among the high branches of a giant beech.

@@ -6,6 +6,25 @@ Across the lands of the Shining Way, men and women reckon the passing of their d
 
 The Arcival year is divided into twelve months, each of thirty days, making three hundred and sixty days in all. To these is added a festival week of five days at the close of the year, set apart from the months and given over to the celebration of Odo's birth and the dawning of the new year. The calendar is kept in Kardien, Zorakin, Klomellien, Magilre, Trakorien, Jorpagna, Berendien, Felicien, Hynsolge, Erebos, and Caddo. Not all the world follows it: Ransard, Jorduashur, Barbia, and Cereval keep instead a calendar reckoned by the phases of the moon; Nidland follows the calendar of Vicotnik; and the elves and dwarves keep their own ancient reckonings, older by far than any of the works of men.
 
+The Arcival calendar was not made from nothing. It rests on the old joriska reckoning of the vanished empire, changed chiefly in the names of the months: the old names honoured the gods of Jorpagna, and the Shining Way would not carry that heathenry into its own calendar, so the months were renamed afresh. Nor does every land that keeps the calendar keep it whole. In Zorakin and Kardien, where the austere Enkla hold sway, the festival week at year's end is refused as an indulgence; in its place a day is added at the close of every second month and of every fourth quarter, so that the count comes out the same by a plainer road.
+
+## The Twelve Months
+
+The months bear different names from one tongue to the next, but all mean the same, and each carries its own holy days where it has them:
+
+- **Opening-month**, as winter first loosens its grip.
+- **Thaw-month.**
+- **Cold-month** - on its twenty-first falls the Spring Equinox.
+- **Sprout-month** - on its twelfth, Odo's death and resurrection are kept.
+- **Seed-month.**
+- **Sun-month** - the fourth marks Odo's reunion with Etin, the twenty-first the Sun Dance.
+- **Growing-month.**
+- **Half-year-month.**
+- **Harvest-month** - the third is the Great Harvest Day, the twentieth the Day of Repentance.
+- **Rest-month** - the first is the Day of Fair Ladies.
+- **Dark-month.**
+- **Etin's-month** - the twentieth keeps Odo's birth.
+
 ## The Holy Days of the Year
 
 The Arcival year is strung through with sacred days, each marking a turn in the great story of Odo and the faith. As the dark of winter loosens its hold, the Spring Equinox is kept, the first of the year's great feasts. Soon after come the solemn days that mark Odo's death and his resurrection, the heart of the faith's mourning and joy. At the height of summer falls the gladdest season of all, when the people keep Odo's reunion with Etin and dance the Sun Dance at midsummer beneath the long light of the longest days.

@@ -481,6 +481,8 @@ const EXTRA_CREATURES = [
   { group: "Demons", name: "Greater Demon" },
   { group: "Demons", name: "Demon Noble" },
   { group: "Demons", name: "Demon Prince" },
+  { group: "Demons", name: "Urbaug the Insane" },
+  { group: "Demons", name: "Echram Schroedel" },
   { group: "Chaos Warriors", name: "Chaos Cardinal" },
   { group: "Chaos Warriors", name: "Chaos Knight" },
   { group: "Chaos Warriors", name: "Chaos Corporal" },
@@ -507,6 +509,7 @@ const EXTRA_CREATURES = [
   { group: "Magical Creatures", name: "Guardian" },
   { group: "Magical Creatures", name: "Dragon Warrior" },
   { group: "Fable Animals", name: "Drinnen" },
+  { group: "Fable Animals", name: "Forgyor" },
   { group: "Fable Animals", name: "Ghertûm" },
   { group: "Fable Animals", name: "Giant Octopus" },
   { group: "Fable Animals", name: "Insectoid" },
@@ -555,15 +558,28 @@ const EXTRA_LORE = [
   { group: "Cosmology", name: "The Gods" },
   { group: "Cosmology", name: "The Heavenly Bodies" },
   { group: "Cosmology", name: "Constellations" },
+  { group: "Cosmology", name: "Tiamat" },
   { group: "Factions", name: "Burned Earth Clan" },
   { group: "Factions", name: "Grokashak Oggra" },
   { group: "Factions", name: "Kharynos" },
+  { group: "Factions", name: "Sybiall" },
   { group: "Factions", name: "The Blood-spattered Feather" },
   { group: "Factions", name: "Ordo Magica" },
   { group: "Factions", name: "The Brotherhood of the Eternally Shining Star" },
   { group: "Religions", name: "The Oktagon" },
   { group: "Religions", name: "Eledain" },
+  { group: "Religions", name: "Kastyke" },
+  { group: "Religions", name: "Trocuspa" },
+  { group: "Religions", name: "Remuntra" },
+  { group: "Religions", name: "Enki" },
+  { group: "Religions", name: "Anxalis" },
+  { group: "Religions", name: "Marduk" },
+  { group: "Religions", name: "Luvena" },
+  { group: "Religions", name: "Ereshkigal" },
+  { group: "Religions", name: "Valliman and Drigel" },
+  { group: "Religions", name: "Tigwalvan" },
   { group: "Magical Phenomena", name: "The Black Water" },
+  { group: "Magical Phenomena", name: "The Devil's Palace" },
   { group: "Magical Phenomena", name: "The Bane Storm" },
   { group: "Magical Phenomena", name: "The City of Angels" },
   { group: "Magical Phenomena", name: "Ley Lines and Magic-Dead Lands" },
@@ -583,6 +599,7 @@ const EXTRA_LORE = [
   { group: null, name: "Crime and Punishment" },
   { group: null, name: "Heroes" },
   { group: null, name: "The Aspects of Magic" },
+  { group: null, name: "Magical Symbols" },
   { group: null, name: "The Shaul Deck" },
   { group: null, name: "Familiars" },
 ].map((p, i) => ({
@@ -622,6 +639,8 @@ const EXTRA_MAGIC = [
   { group: "Items", name: "Demonic Artifacts" },
   { group: "Items", name: "Notable Magic Items" },
   { group: "Items", name: "Soul-Bound Weapons" },
+  { group: "Items", name: "The White Staff" },
+  { group: "Items", name: "The Demon Sledge" },
 ].map((p, i) => ({
   id: `x-magic-${i}`,
   title: `Magic: ${p.name}`,
@@ -638,6 +657,34 @@ const EXTRA_MAGIC = [
     if (!grp) { grp = { group: entry.group, videos: [] }; sec.push(grp); }
     grp.videos.push(entry);
   }
+  for (const g of sec) g.videos.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+// Markdown-only Characters with no chronicle video (e.g. notable NPCs drawn
+// from the source material). Same treatment as the other EXTRA pages: they
+// surface in the Characters nav and load their own .md, with the "Watch"
+// button hidden by EntryDetail.
+const EXTRA_CHARACTERS = [
+  { group: null, name: "Baron Piet Steeljaw" },
+].map((p, i) => ({
+  id: `x-character-${i}`,
+  title: `Characters: ${p.name}`,
+  section: "characters",
+  group: p.group,
+  name: p.name,
+  noVideo: true,
+}));
+
+{
+  const sec = videosBySection.characters ?? (videosBySection.characters = []);
+  for (const entry of EXTRA_CHARACTERS) {
+    let grp = sec.find((g) => g.group === entry.group);
+    if (!grp) { grp = { group: entry.group, videos: [] }; sec.push(grp); }
+    grp.videos.push(entry);
+  }
+  sec.sort((a, b) =>
+    a.group === null ? -1 : b.group === null ? 1 : a.group.localeCompare(b.group)
+  );
   for (const g of sec) g.videos.sort((a, b) => a.name.localeCompare(b.name));
 }
 

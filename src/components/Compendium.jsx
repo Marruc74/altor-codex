@@ -204,7 +204,7 @@ for (const a of adventures) {
 const RELATED_BY_SLUG = {
   "felicien-pirate-war": ["felicien", "erebos", "berendien", "caddo", "hynsolge"],
   "ransard-prepares": ["ransard", "trakorien"],
-  "nidland-purification": ["nidland", "cereval", "the-hell-fort", "melindors-return", "the-final-battle"],
+  "nidland-purification": ["nidland", "cereval", "the-hell-fort", "melindors-return", "the-final-battle", "haktahchas-arrival"],
   // The Burned Earth Clan and its member tribes link to one another.
   "burned-earth-clan": ["lunorgh-kah", "rulgh-borgnag", "urgh-grobb", "grogol-gribb", "gylk-lobbnack", "ylkor-kha-oggra", "grokashak-oggra", "kallakadak-yldrokk", "dekkadorel-gnubbt"],
   "lunorgh-kah": ["burned-earth-clan"],
@@ -299,7 +299,7 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onO
         <p className="location-panel__section-label">{label}</p>
         <div className="country-detail__entries-grid">
           {list.map((it, i) => {
-            const cls = `codex-card${(it.portrait ?? portrait) ? " codex-card--portrait" : ""}`;
+            const cls = `codex-card${(it.portrait ?? portrait) ? " codex-card--portrait" : ""}${it.fit === "contain" ? " codex-card--fit" : ""}`;
             const t = resolvePage(it.entry ?? it.name);
             // Don't link a card back to the very page it sits on.
             const target = t && !(t.kind === "country" && t.id === country.id) ? t : null;
@@ -724,7 +724,7 @@ function AdventureDetail({ adventure, onVideoSelect, onOpenPage }) {
         <p className="location-panel__section-label">{label}</p>
         <div className="country-detail__entries-grid">
           {items.map((it, i) => {
-            const cls = `codex-card${(it.portrait ?? portrait) ? " codex-card--portrait" : ""}`;
+            const cls = `codex-card${(it.portrait ?? portrait) ? " codex-card--portrait" : ""}${it.fit === "contain" ? " codex-card--fit" : ""}`;
             // A card may carry an explicit `entry: <slug>`, or simply share its
             // name with another page (a creature, a country, an adventure…). Either
             // way it deep-links there.
