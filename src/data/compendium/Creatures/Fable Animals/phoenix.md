@@ -1,5 +1,7 @@
 # Phoenix
 
+
+![Phoenix](/compendium/Creatures/Fable Animals/phoenix.png "Phoenix")
 The phoenix is closely bound to the elemental source of fire, and is often used as a symbol by revolutionary movements that hold themselves impossible to crush, forever reborn. It is very rare and found only in desert country, where it builds its nest in clefts of rock.
 
 ## Appearance

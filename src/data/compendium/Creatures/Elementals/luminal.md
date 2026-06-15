@@ -1,5 +1,7 @@
 # Luminal
 
+
+![Luminal](/compendium/Creatures/Elementals/luminal.png "Luminal")
 Luminals are the elementals of light, incarnations of that element summoned from its plane into our world by elemental magic and bound to the will of the magician who calls them. Like all elementals they have no wit of their own, are immune to poison, and can be harmed by magic as normal.
 
 ## Appearance

@@ -1,5 +1,7 @@
 # Vampire Butterfly
 
+
+![Vampire Butterfly](/compendium/Creatures/Demonic Creatures/vampire-butterfly.png "Vampire Butterfly")
 Vampire butterflies are blood-sucking demon-creatures with their origin in Chaos. They fare well in any surroundings and often end up in our world by mistake, flying among the strange dimension-gates of the Chaos dimension. They have no fixed home, but are scattered across all the planes of the Multiverse.
 
 ## Appearance

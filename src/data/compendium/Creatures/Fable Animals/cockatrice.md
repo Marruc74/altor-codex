@@ -1,5 +1,7 @@
 # Cockatrice
 
+
+![Cockatrice](/compendium/Creatures/Fable Animals/cockatrice.png "Cockatrice")
 The basilisk's larger cousin, the cockatrice is often called. Its gaze, however, does not petrify but only briefly paralyses, which makes it far less dangerous than the small, deadly basilisk. The cockatrice was made by a necromancer who took up the nature-magic of animism and went mad in the doing; from that insane project a power-crazed witch-sorcerer later drew inspiration and made the basilisk. The cockatrice may thus be called the basilisk's prototype, and basilisks hate cockatrices.
 
 ## Appearance

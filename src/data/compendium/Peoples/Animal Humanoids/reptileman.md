@@ -1,5 +1,7 @@
 # Reptileman
 
+
+![Reptileman](/compendium/Peoples/Animal Humanoids/reptileman.png "Reptileman")
 The undisputed lords of the marshes, the reptile-men live as hunters and fishers in small villages of reed huts, and put fear into intruders with their needle-sharp tridents.
 
 ## Appearance

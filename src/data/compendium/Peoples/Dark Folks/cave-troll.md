@@ -1,5 +1,7 @@
 # Cave Troll
 
+
+![Cave Troll](/compendium/Peoples/Dark Folks/cave-troll.png "Cave Troll")
 The commonest kind of troll and probably the closest to the original stock, sheltering underground or in caves by day from the sun's petrifying rays and venturing out by night to find food.
 
 ## Appearance

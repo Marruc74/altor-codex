@@ -117,7 +117,7 @@ Faith in Hynsolge runs along the same fault line as its politics, and the priest
 
 ### The Fingal Cult
 
-The realm's official patron is the deified hero Fingal Orchnackare, the "Orc-cleaver," also called Fingal Gorrond, god of military strength and of the realm's unification. He is depicted as a tall, muscular, bearded man in mail, bearing a huge greatsword upon a giant black mail-clad stallion. His symbol is a seven-pointed yellow star on dark blue, the star that appeared at his death in the autumn of 142 eO. His clergy and temple-knights are trained in both arms and learning; they swear to obey their superiors, to oppose the realm's fragmentation, and never to flee from svartfolk. The cult is wholly royalist, and so unloved by the nobility.
+The realm's official patron is the deified hero Fingal Orchnackare, the "Orc-cleaver," also called Fingal Gorrond, god of military strength and of the realm's unification. He is depicted as a tall, muscular, bearded man in mail, bearing a huge greatsword upon a giant black mail-clad stallion. His symbol is a seven-pointed yellow star on dark blue, the star that appeared at his death in the autumn of 142 eO. His clergy and temple-knights are trained in both arms and learning; they swear to obey their superiors, to oppose the realm's fragmentation, and never to flee from dark folk. The cult is wholly royalist, and so unloved by the nobility.
 
 ### The Parbager, the Urgods
 

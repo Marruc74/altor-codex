@@ -1,5 +1,7 @@
 # Unicorn
 
+
+![Unicorn](/compendium/Creatures/Fable Animals/unicorn.png "Unicorn")
 The unicorn is probably the most mythical of all the legendary beasts. White as snow and pure as angels, they are the very symbol of goodness, and they are feared as well for their power to fight against evil.
 
 ## Appearance

@@ -1,5 +1,7 @@
 # Primeval Monster
 
+
+![Primeval Monster](/compendium/Creatures/Fable Animals/primeval-monster.png "Primeval Monster")
 Primeval monsters are dreadful predators that can live in every kind of environment and climate. They lack the normal drives; they are quite simply ruled by an insatiable, ceaseless hunger, and they roam about in small bands to seek food from beast and humanoid alike.
 
 ## Appearance

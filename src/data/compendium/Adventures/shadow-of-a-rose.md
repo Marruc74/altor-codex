@@ -1,7 +1,6 @@
 ---
 title: Shadow of a Rose
 series: "Krilloan"
-seriesPart: 1
 tagline: "A dying stranger presses a silver chalice into your hands, and with it the holiest relic of a death-goddess's cult and every killer in Krilloan at your heels."
 summary: In the city of Krilloan a band of adventurers comes by chance into possession of the silver chalice, holiest relic of the cult of the death-goddess Imária. Hunted first by the Black Rose Brotherhood and then by a vampire who would seize it for himself, they are driven at last into the demon-lord Hemaquiel's own world and the endless Black Library, where enemy and ally change places and an old foe must be hunted down between the shelves.
 videoIds: []

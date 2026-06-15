@@ -40,7 +40,7 @@ Known to its neighbours as "the Dragons' Realm", Cereval holds the largest conce
 
 ## Overview
 
-- **Population:** approximately 80,000 (75% humans, 11% trolls, 14% svartfolk)
+- **Population:** approximately 80,000 (75% humans, 11% trolls, 14% dark folk)
 - **Capital:** none - the three city-states of Cerevallis, Drakonia and Lirvella each stand independent
 - **Government:** independent city-states with no obvious ruling class, all subject to the Moon Law
 - **Ruler:** none - final authority rests with the dragonmasters through the Moon Law
@@ -101,7 +101,7 @@ Cereval is poor in the wealth other realms count, trading fish, meat and alchemi
 
 ## Society
 
-Cereval society is divided among three great groups of people, together with the trolls of the forest and the svartfolk of the mountain roots. Despite their differences, all are bound by the Moon Law, and open violence is rare - the chief exception being the endless feuding between the city-states.
+Cereval society is divided among three great groups of people, together with the trolls of the forest and the dark folk of the mountain roots. Despite their differences, all are bound by the Moon Law, and open violence is rare - the chief exception being the endless feuding between the city-states.
 
 ### The Cerevalier
 
@@ -124,7 +124,7 @@ The three human groups make up some three-quarters of the realm's people. They t
 
 - Craftsmen, merchants, scholars and outlaws, mostly of barbarian descent
 - The three great cities also hold small communities of dwarves, elves, ankor and halflings
-- Outlaws may include those of svartfolk blood, but full-blooded orcs and reptile-men are killed or driven off
+- Outlaws may include those of dark folk blood, but full-blooded orcs and reptile-men are killed or driven off
 
 ## Government
 
@@ -190,7 +190,7 @@ The trolls of Cereval are far more advanced than the degenerate trolls found els
 - The forest trolls, some four in five of all Cereval trolls
 - Live in caves in communities of fifteen to forty
 - Cultivate forest ponds, grow the white-green poisonous mushroom *trollhatt* for food, medicine, flour and a ceremonial drink, and raise giant toads, water-snakes and spiders
-- Ruled by a ruler-troll and use svartfolk slaves to handle the fire they themselves fear
+- Ruled by a ruler-troll and use dark folk slaves to handle the fire they themselves fear
 
 ### Ruler-Trolls
 
@@ -223,10 +223,10 @@ The trolls of Cereval are far more advanced than the degenerate trolls found els
 
 Changelings are human children swapped by troll magic for troll young and imprinted to look identical to the child they replace. They gain partial resistance to sun, fire and steel, grow larger and stronger, hold a natural talent for magic and far-reaching dark-vision, but can never father or bear children with humans, and after about a century they slowly take on troll traits. Raised in upper-class human families they may rise to fine careers as warriors, craftsmen or mages; raised poor they are often bullied into the slums. Those raised by trolls are cherished, educated, trained in magic, and serve as the trolls' loyal representatives, some even studying at the university of Drakonia.
 
-## The Svartfolk
+## The Dark Folk
 
 - An underground orc realm lies at the northern tip of the Cerevalbergen, its leaders orcs, with ogres and dark elves often kept as slaves
-- Since the Moon Council of 401 eO, all svartfolk save Cereval's own trolls are outlawed and may be killed without penalty
+- Since the Moon Council of 401 eO, all dark folk save Cereval's own trolls are outlawed and may be killed without penalty
 
 ## Dragons and Dragon Masters
 

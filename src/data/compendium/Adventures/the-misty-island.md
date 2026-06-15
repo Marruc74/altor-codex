@@ -12,6 +12,12 @@ sections:
         image: /compendium/Adventures/TheMistyIsland/Outskirt/Outskirt.jpg
       - name: The Stone Chapel
         description: The village's stone chapel, beneath which lies the grave the priest Rabindranath guards, where the alf-forged sword Dragonslayer is buried.
+      - name: The Three Stags
+        description: The one inn in Outskirt, run by the two former outlaws Bryte and Ulvar, who never quite explain how they came by it.
+      - name: The Great Farm
+        description: The largest holding in Outskirt, home to Warge and his wife Luvia and their children Biorn, Vagnhild and red-haired Rosiall, along with the watchdogs Bitske and Gråpäls.
+      - name: Mifalodor's Hut
+        description: The hermit alchemist's hut in the forest above Outskirt, where Mifalodor brews his elixirs alone and comes down once a month to trade them for food.
     npcs:
       - name: Badinor
         description: One of three dwarves who travel up from the Ore Mountains each quarter to supply Outskirt with metal; through them the village hears news of the wider world.
@@ -20,7 +26,7 @@ sections:
         description: Warge's adventurous sixteen-year-old son from the great farm, eager for a taste of the wider world.
         image: /compendium/Adventures/TheMistyIsland/Outskirt/Biorn.jpg
       - name: Bryte
-        description: A former outlaw who, with Ulvar, runs the village inn the Three Harts. The larger of the two, fair-haired and blue-eyed, he keeps the shop.
+        description: A former outlaw who, with Ulvar, runs the village inn the Three Stags. The larger of the two, fair-haired and blue-eyed, he keeps the shop.
         image: /compendium/Adventures/TheMistyIsland/Outskirt/Bryte.jpg
       - name: Hårde
         description: A thirty-six-year-old former warrior and the village's finest hunter, more often in the forest than at home. He carries a magical elf-bow given by an elf woman he once saved, and is ever drawn to ventures that promise danger and treasure.
@@ -38,7 +44,7 @@ sections:
         description: The strongest of the three dwarves who bring metal to Outskirt from the Ore Mountains each quarter.
         image: /compendium/Adventures/TheMistyIsland/Outskirt/Throin.jpg
       - name: Ulvar
-        description: The other former outlaw of the Three Harts, tall, lean and quick-fingered, who handles the buying and the scheming and is not above robbing a wealthy guest.
+        description: The other former outlaw of the Three Stags, tall, lean and quick-fingered, who handles the buying and the scheming and is not above robbing a wealthy guest.
         image: /compendium/Adventures/TheMistyIsland/Outskirt/Ulvar.jpg
       - name: Vagnhild
         description: Warge's elder daughter at the great farm, the image of her mother in youth, and one of the villagers restless enough to be drawn away by the promise of adventure.
@@ -135,7 +141,7 @@ Outskirt is a remote forest village of some fifty folk, three days from its near
 
 Some fifty villagers live in Outskirt, most of them in a handful of households. At the smithy are the smith Vagn and his wife Belinda, with their son Jore, who helps at the forge, and their daughter Elusia, reckoned the loveliest maiden in the village. The largest holding is the great farm of Warge and his wife Luvia, home to their children Biorn, Vagnhild and red-haired Rosiall, along with their livestock and the watchdogs Bitske and Gråpäls. The mill is kept by the miller Fyndve and his wife Velinda, who have no children of their own.
 
-Among the other farming families are Evke and Yvalinda with their two small ones; the pious Ikald and Ävyn, whose son Boltar is the terror of the village young; Anbel and Lycinda, with a brood of six; and Baliol, father of five daughters, who keeps so stern an eye on their company that the village lads are forever gathering at his gate. Living alone are the priest Rabindranath, the hermit-alchemist Mifalodor, the hunter Hårde, and old Castellan, who at eighty fills his days scolding the children. The inn, the Three Harts, is run by the two former outlaws Bryte and Ulvar, while the bailiff Fogden represents what little authority reaches so remote a place.
+Among the other farming families are Evke and Yvalinda with their two small ones; the pious Ikald and Ävyn, whose son Boltar is the terror of the village young; Anbel and Lycinda, with a brood of six; and Baliol, father of five daughters, who keeps so stern an eye on their company that the village lads are forever gathering at his gate. Living alone are the priest Rabindranath, the hermit-alchemist Mifalodor, the hunter Hårde, and old Castellan, who at eighty fills his days scolding the children. The inn, the Three Stags, is run by the two former outlaws Bryte and Ulvar, while the bailiff Fogden represents what little authority reaches so remote a place.
 
 ### The Underground Complex
 

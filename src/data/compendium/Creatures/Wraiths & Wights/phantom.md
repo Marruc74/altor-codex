@@ -1,5 +1,7 @@
 # Phantom
 
+
+![Phantom](/compendium/Creatures/Wraiths & Wights/phantom.png "Phantom")
 Phantoms are half-material spirits of people who gave their lives in the search for one particular object, whether something they sought or something they made at the moment of their death. A magician who dies in a backfire while crafting a very powerful magical item may become a phantom; so may a warrior who dies just as he reaches, after a lifelong search, some legendary artefact, bound thereafter to that object. Here lies the great difference from a death wraith: phantoms did not become wraiths willingly, and so their powers are limited.
 
 ## Appearance

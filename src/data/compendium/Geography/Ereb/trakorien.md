@@ -93,7 +93,7 @@ A maritime merchant-oligarchy of four islands, bound together by trade, treaty, 
 - **Islands:** Paratorna, Palamux, Saphyna, and Trinsmyra
 - **Government:** Elective empire; a life-elected emperor shares power with the great noble council, the **Bodaken**
 - **Ruler:** An emperor chosen for life, never by blood
-- **Peoples:** Trakorians of jori stock, with barbosker, tolgulder giant-folk, dwarves, elves, seal-folk, bird-men, and svartfolk of the wilds
+- **Peoples:** Trakorians of jori stock, with barbosker, tolgulder giant-folk, dwarves, elves, seal-folk, bird-men, and dark folk of the wilds
 - **Religion:** Five great faiths and many common gods; no single church dominates
 - **Exports:** sulfur, sylvoleum, metals, cloth, salt, farm produce
 - **Imports:** timber, precious metals, spices, luxuries
@@ -113,7 +113,7 @@ The oldest and most populous island, the realm's **mother island**, where statec
 
 ### Saphyna
 
-The southernmost island and the realm's breadbasket, fertile and fairly peaceful. The very rich **Frimboliner Plain** is tended by the good-natured, simple farmers of Saphyna, dotted with villages and famed for its black beer and its herb-gardens. The island is split north and south by the snowy **Matagde Mountains**, where evil svartfolk lair, while the eastern cape holds the impassable **Tocmer Forest**. North of the mountains lies pleasant **Korjulme** with its orchards. The whole western reach is **Krindenland**, a warped zone too strange to truly chart. The drug-towns of **Gudiena**, where zombin was first distilled, and the harbour of **Krindenmaar** lie here.
+The southernmost island and the realm's breadbasket, fertile and fairly peaceful. The very rich **Frimboliner Plain** is tended by the good-natured, simple farmers of Saphyna, dotted with villages and famed for its black beer and its herb-gardens. The island is split north and south by the snowy **Matagde Mountains**, where evil dark folk lair, while the eastern cape holds the impassable **Tocmer Forest**. North of the mountains lies pleasant **Korjulme** with its orchards. The whole western reach is **Krindenland**, a warped zone too strange to truly chart. The drug-towns of **Gudiena**, where zombin was first distilled, and the harbour of **Krindenmaar** lie here.
 
 ### Trinsmyra
 
@@ -139,7 +139,7 @@ Many peoples share the four islands, woven together under the empire's law.
 - **The elves of Gwondel Leigu**: an ancient folk of the oak forests of Palamux, long allied to the klavyker colonists.
 - **The seal-folk**: a shapeshifting elven kind of the coasts and isles of Paratorna, who take the shape of seals upon the water.
 - **The bird-men**: intelligent feathered humanoids of the Ooram forest, who cannot work metal and dread enclosed spaces, fighting with knife and spear.
-- **The svartfolk of the wilds**: orcs, dark elves, and goblins of the mountains and the ill-famed north, hunted from the settled lands but never wholly destroyed.
+- **The dark folk of the wilds**: orcs, dark elves, and goblins of the mountains and the ill-famed north, hunted from the settled lands but never wholly destroyed.
 
 ## Government
 
@@ -227,7 +227,7 @@ The seas and wilds of Trakorien hold many strange beasts.
 - **The fall of Cruri (~200 fO)**: the gods doomed the demon-kingdom and sealed its island beneath the ice, beginning the eight-hundred-year sulfur winter.
 - **The klavyker wars (130-68 fO)**: colonists, allied with the Gwondel Leigu elves and at last the giant tolgulder, won the plains of Moskorien and named themselves klavyker, the key-folk, for they had unlocked a promised land.
 - **The klavyker realm (from 68 fO)**: born when an illusionist hid an army at the festival of HOXOH and the old nobility of Nastrol were cut down; the new empire rose with its capital at Fontra Cilor and its council, the Bodaken.
-- **The Crystal Centuries (50 fO-150 eO)**: long and failing efforts to cleanse the ill-famed north of necromancy and svartfolk, even as colonies spread to Stegos, Paratorna, Bzegusta, Torilia, and the city O.
+- **The Crystal Centuries (50 fO-150 eO)**: long and failing efforts to cleanse the ill-famed north of necromancy and dark folk, even as colonies spread to Stegos, Paratorna, Bzegusta, Torilia, and the city O.
 - **The Voyage of the Holy Swans (year 0, eO)**: the klavyker rescued thousands from sinking Kymm, forging an eternal friendship with Melukha.
 - **The First Ransard War (180-200 eO)**: ended in klavyker victory at the sea-battle of Rubakin's bay.
 - **The Mad Milacker (220-300 eO)**: Trinsmyra under the dictator **Hiatus Neffro** nearly overran Palamux, its swift catamaran raiders burning the heavy fleet with the dreaded incendiary **vildeld**, before it was beaten back.
@@ -235,7 +235,7 @@ The seas and wilds of Trakorien hold many strange beasts.
 - **The Holy Kishatet founded (311 eO)**: the truth-god Shamash's theocracy took root on Palamux.
 - **The coming of Remuntra (349-350 eO)**: Klastobrest Dimvett preached the contagious faith and sailed west with half of Lasemos's fleet, never to return.
 - **The Second Ransard War (370-385 eO)**: repelled with the new Kishatet's help; Soblak was ceded to Trakorien.
-- **The development age (385-450 eO)**: the **Trakoriska riket** was founded as heir to the klavyker realm, waging a war of extermination against the svartfolk; Paratorna was cleared and Ilibaurien conquered without a battle through Astrumal diFolt's drug opiander.
+- **The development age (385-450 eO)**: the **Trakoriska riket** was founded as heir to the klavyker realm, waging a war of extermination against the dark folk; Paratorna was cleared and Ilibaurien conquered without a battle through Astrumal diFolt's drug opiander.
 - **The Aalskalle line (405-530 eO)**: at the council of Vumbra **Ganfryd Aalskalle** declared himself king of Trinsmyra, founding a royal house that would resist the empire to the end.
 - **The eclipse of Stegos (440 eO)**: in punishment for betraying the Kishatet, Shamash cast the island of Stegos into permanent darkness.
 - **The Third Ransard War (497-507 eO)**: drove Ransard from Saphyna, incorporating the Gudiena plain.

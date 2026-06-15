@@ -14,6 +14,7 @@ sections:
     npcs:
       - name: Melealina
         description: "The elf-seer, charged by the gods to pilot the fifth conflux safely home. She senses world-foreign beings across vast distance and can step between trees she knows; beloved of King Arn, she carries a doom she may not speak."
+        image: /compendium/Adventures/TheCrystalBull/Melealina.jpg
       - name: Aldrun
         description: "The helmswoman and captain of the living ship Bladverk, who answered the seer's call when the time came to leave Stegos."
       - name: Bodonius

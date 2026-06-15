@@ -16,7 +16,7 @@ figures:
     description: "God said to have created Altor out of boredom, chiefly worshipped in Mercana"
 places:
   - name: "Kvulm Lake"
-    description: "Brown, sluggish, foul-smelling water beside the eastern mountains, called 'the gods' drain' and 'the anal of evil.' Only svartfolk live nearby, and the dark-elf tribe **the Hairless** fishes its rare **kvulmerkarp**, sold in the cities as the delicacy 'Golden carp.'"
+    description: "Brown, sluggish, foul-smelling water beside the eastern mountains, called 'the gods' drain' and 'the anal of evil.' Only dark folk live nearby, and the dark-elf tribe **the Hairless** fishes its rare **kvulmerkarp**, sold in the cities as the delicacy 'Golden carp.'"
   - name: "the Misty Valley"
     description: "A valley in the southern mountains shrouded in perpetual fog. Almost no one who descends into it ever returns."
   - name: "Joraga"
@@ -97,11 +97,11 @@ An aggressive oligarchy of around 20,000 and the largest state by area, ruled by
 
 ### Sanzas
 
-A democracy of roughly 12,000, founded by halflings fleeing the svartfolk. It grows fine tobacco for export and sprawls like an overgrown village, ruled by a mayor and a **village council** elected every five years. Its halflings endure constant insults from their larger neighbors. The folk here keep no religion.
+A democracy of roughly 12,000, founded by halflings fleeing the dark folk. It grows fine tobacco for export and sprawls like an overgrown village, ruled by a mayor and a **village council** elected every five years. Its halflings endure constant insults from their larger neighbors. The folk here keep no religion.
 
 ## History
 
-Klomellien was settled late, long a haunt of the svartfolk. Colonists from **Jorpagna** first took the northern coast of the Copper Sea, then Magilre, and only around 620 fO did they cross the mountains into Klomellien. The Third Conflux struck the region only lightly, and when Jorpagna fell, its Klomellien colonies became independent.
+Klomellien was settled late, long a haunt of the dark folk. Colonists from **Jorpagna** first took the northern coast of the Copper Sea, then Magilre, and only around 620 fO did they cross the mountains into Klomellien. The Third Conflux struck the region only lightly, and when Jorpagna fell, its Klomellien colonies became independent.
 
 Since then the land has remained obscure in the histories of Ereb - too internally divided and too far out of the way to matter to the great powers. Yet it holds real economic weight through its salt. There is great wealth here, and just as much poverty.
 

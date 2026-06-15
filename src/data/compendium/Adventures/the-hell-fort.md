@@ -65,10 +65,10 @@ sections:
         entry: dwarf
         description: "The warrior-miners of Tarat-khon in white tabards and ringmail, who sealed their realm against the world after a betrayal and keep but the one gate, wary of every human who comes."
   - title: Ghan-toth
-    description: "An abandoned dwarf-city, its wards broken by the archmage's disciple and seized by a svartfolk tribe who mine its ore for the coming war."
+    description: "An abandoned dwarf-city, its wards broken by the archmage's disciple and seized by a dark folk tribe who mine its ore for the coming war."
     places:
       - name: Ghan-toth
-        description: "A once-great dwarf-city, abandoned and trap-laden and half-buried in a great cave-in, now a teeming svartfolk colony of orcs, dark elves and slaves, its smithies forging ore for Nidland day and night."
+        description: "A once-great dwarf-city, abandoned and trap-laden and half-buried in a great cave-in, now a teeming dark folk colony of orcs, dark elves and slaves, its smithies forging ore for Nidland day and night."
       - name: The Council Seat
         description: "The old council-hall of the dwarf-city, now the residence of the orc-chief and his sorcerer: a library, a torture-chamber, an arena, a menagerie, and the tribe's hoarded treasure."
       - name: The Mines
@@ -93,7 +93,7 @@ sections:
         description: "The other of the orc-chief's giant twins, a shade cleverer than his brother and no less savage, who tends his great club like a treasured child."
       - name: The Orcs
         entry: orc
-        description: "The svartfolk tribe that holds Ghan-toth, hundreds strong under their chief and his underchieftains, with the picked Blue Sword Guard for his fist."
+        description: "The dark folk tribe that holds Ghan-toth, hundreds strong under their chief and his underchieftains, with the picked Blue Sword Guard for his fist."
       - name: The Dark Elves
         entry: svartalf
         description: "The svartalfer of Ghan-toth, set beneath the orcs and made to dwell in the mines, keeping wolves and svartnisse slaves of their own."

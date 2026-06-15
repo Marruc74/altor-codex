@@ -54,7 +54,7 @@ Erebos consists of three rocky volcanic islands lying roughly thirty mil northea
 - Largest city: **Gringul**, a place of palaces and canals at the mouth of the river **Elspet**
 - Other towns include Jachindo, Behrill, Josch, and Yrrtik
 
-Serfs here raise **entorningar**, one-horned cattle, grow wine, the giant wheat called **hersch**, and **lullader**, a small bitter stone-fruit pressed for spice and cooking oil. Remnant forests of **trill** and **iron book** trees are protected by law. In the **Bey-bergen** lie the only sunstones found anywhere in Ereb: yellow gems that glow with their own warm light. Immensely valuable, they were the foundation of the wealth Erebos amassed in the 400s eO. They are rumored, without proof, to ward off dragons, svartfolk, demons, undead, magic, and disease, and they do at least instill courage in those who carry them.
+Serfs here raise **entorningar**, one-horned cattle, grow wine, the giant wheat called **hersch**, and **lullader**, a small bitter stone-fruit pressed for spice and cooking oil. Remnant forests of **trill** and **iron book** trees are protected by law. In the **Bey-bergen** lie the only sunstones found anywhere in Ereb: yellow gems that glow with their own warm light. Immensely valuable, they were the foundation of the wealth Erebos amassed in the 400s eO. They are rumored, without proof, to ward off dragons, dark folk, demons, undead, magic, and disease, and they do at least instill courage in those who carry them.
 
 ### Dakkilo
 
@@ -71,7 +71,7 @@ The wool of Dakkilo's sheep is woven into prized warm fabric, lately grown fashi
 - Lively fishing sustains its coasts
 - Old **Jorpagna ruins** lie in its mountains and draw treasure-hunters
 
-Targero is the only Erebos island troubled by svartfolk, both orcs and trolls. There are rumors of perytons, hydras, basilisks, and even dragon-serpents lurking in its high places.
+Targero is the only Erebos island troubled by dark folk, both orcs and trolls. There are rumors of perytons, hydras, basilisks, and even dragon-serpents lurking in its high places.
 
 ### Tolokfe
 

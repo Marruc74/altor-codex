@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { thumbSrc, onThumbError } from "../lib/thumb";
 
 export default function CodexCard({ entry, onSelect, onTagClick }) {
   // Portrait/tall images get a 2:3 image box so they show in full instead of
@@ -12,10 +13,12 @@ export default function CodexCard({ entry, onSelect, onTagClick }) {
       <div className="codex-card__image-wrap">
         {entry.image ? (
           <img
-            src={entry.image}
+            src={thumbSrc(entry.image)}
             alt={entry.title}
             className="codex-card__image"
+            loading="lazy"
             onLoad={(e) => setPortrait(e.currentTarget.naturalHeight > e.currentTarget.naturalWidth)}
+            onError={onThumbError(entry.image)}
           />
         ) : (
           <div className="codex-card__placeholder">◈</div>

@@ -1,5 +1,7 @@
 # Primeval Tree
 
+
+![Primeval Tree](/compendium/Creatures/Plants/primeval-tree.png "Primeval Tree")
 Primeval trees are mighty forest beings that resemble great oaks with human features. They serve as shepherds and wardens of all the forests' trees, which they love above everything else and protect from every evil. Some primeval trees in turn have a tree master, a guardian who serves, worships and protects the tree so that it does not fall asleep, grow woody in temper and, after a century or so, die like an ordinary tree. The tree master's temperament rubs off on the tree, and if the master is deeply evil the primeval tree is turned into a so-called black tree.
 
 ## Appearance

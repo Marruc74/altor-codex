@@ -1,5 +1,7 @@
 # Silver Elf
 
+
+![Silver Elf](/compendium/Peoples/Elves/silver-elf.png "Silver Elf")
 The winged silver elves live an airborne, nomadic life as hunters and gatherers. They live in tribes of thirty to fifty and feed chiefly on fruit, berries and birds caught in great nets. Silver elves are not especially enduring fliers, and so raise large herds of pegasi to use as mounts.
 
 ## Appearance

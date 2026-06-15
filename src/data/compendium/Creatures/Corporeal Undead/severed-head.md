@@ -1,5 +1,7 @@
 # Severed Head
 
+
+![Severed Head](/compendium/Creatures/Corporeal Undead/severed-head.png "Severed Head")
 A severed head is much the same as a deadman's hand, with the obvious difference that it is the head that has taken material form, not the hand. People who have been beheaded often take this shape after death, to haunt the one who ordered the beheading and drive him to madness; the headless spirit seeks out its lost head and joins it to the spirit-head.
 
 ## Appearance

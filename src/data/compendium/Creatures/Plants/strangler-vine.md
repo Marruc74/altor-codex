@@ -1,5 +1,7 @@
 # Strangler Vine
 
+
+![Strangler Vine](/compendium/Creatures/Plants/strangler-vine.png "Strangler Vine")
 The strangler-vine is a carnivorous, very greedy plant of unknown origin. It is sometimes used as a guardian, since it attacks anything that comes into contact with it.
 
 ## Appearance
