@@ -1,7 +1,7 @@
 # Elf Eater
 
 
-![Elf Eater](/compendium/Creatures/Plants/elf-eater.png "Elf Eater")
+![Elf Eater](/compendium/Creatures/Plants/elf-eater.jpg "Elf Eater")
 Elf-eaters are the name for a kind of carnivorous plant that has specialised in attacking elf-folk and drinking in their blood, though they will gladly drink the blood of any living creature at all.
 
 ## Appearance

@@ -1,7 +1,7 @@
 # Snake Sphere
 
 
-![Snake Sphere](/compendium/Creatures/Fable Animals/snake-sphere.png "Snake Sphere")
+![Snake Sphere](/compendium/Creatures/Fable Animals/snake-sphere.jpg "Snake Sphere")
 A snake-sphere is a monster originally called up from some hidden hell, but which has managed to manifest itself fully and breed in our human world like any other creature. They keep chiefly to dark places, where their black, floating shapes are all but impossible to spot. They always appear alone, or perhaps in the company of a gorgon, and breed by division.
 
 ## Appearance

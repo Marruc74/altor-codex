@@ -1,7 +1,7 @@
 # Illusion Tree
 
 
-![Illusion Tree](/compendium/Creatures/Plants/illusion-tree.png "Illusion Tree")
+![Illusion Tree](/compendium/Creatures/Plants/illusion-tree.jpg "Illusion Tree")
 The illusion-tree is a very nasty plant that lives by catching living creatures and draining out their soul and life-force. The tree has no interest in the undead.
 
 ## Appearance

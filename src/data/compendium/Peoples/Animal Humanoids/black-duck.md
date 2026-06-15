@@ -1,7 +1,7 @@
 # Black Duck
 
 
-![Black Duck](/compendium/Peoples/Animal Humanoids/black-duck.png "Black Duck")
+![Black Duck](/compendium/Peoples/Animal Humanoids/black-duck.jpg "Black Duck")
 The duck-folk come in three kinds: the dreaded and commonest black ducks, who are seafaring pirates; the far more peaceable white ducks, almost all traders; and the rarer, more warlike brown ducks, who often grow up to be mercenaries. They usually live among humans in human cities, though there are pure duck-towns and duck-quarters as well.
 
 ## Appearance

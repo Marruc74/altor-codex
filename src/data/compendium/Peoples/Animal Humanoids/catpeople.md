@@ -1,7 +1,7 @@
 # Catpeople
 
 
-![Catpeople](/compendium/Peoples/Animal Humanoids/catpeople.png "Catpeople")
+![Catpeople](/compendium/Peoples/Animal Humanoids/catpeople.jpg "Catpeople")
 Cat-people are creatures of the wilds, living alone or in small families of half a dozen as skilled and deadly hunters.
 
 ## Appearance

@@ -18,6 +18,8 @@ node scripts/generate-entry-images.mjs   # Index each compendium page's first im
 
 Card images load a small thumbnail from a sibling `Thumbnails/` folder (see `src/lib/thumb.js`) and only fetch the full-size image when opened in the lightbox or on the detail page. After adding card images, run `generate-thumbnails.mjs` so each new image gets a thumbnail.
 
+Compendium images must be JPG, not PNG. If any `.png` lands under `public/compendium`, convert it to `.jpg` (flatten transparency onto white), delete the PNG, update every `.png` reference to `.jpg` (markdown `image:`/`![]()` paths and `src/data/entryImages.generated.js`), then run `generate-thumbnails.mjs`.
+
 A card with a "View more" link but no image of its own borrows the linked page's image (e.g. a card that links to the Orc page shows the orc). That mapping lives in `src/data/entryImages.generated.js` (page slug → first embedded image); re-run `generate-entry-images.mjs` after adding or changing page images.
 
 No test framework is configured.

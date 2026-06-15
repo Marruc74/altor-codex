@@ -1,7 +1,7 @@
 # Harpy
 
 
-![Harpy](/compendium/Creatures/Fable Animals/harpy.png "Harpy")
+![Harpy](/compendium/Creatures/Fable Animals/harpy.jpg "Harpy")
 Harpies so hate their own existence that they find no pleasure in life but to spread as much misery around them as they can. Filthy and surly, they are extremely vindictive.
 
 ## Appearance

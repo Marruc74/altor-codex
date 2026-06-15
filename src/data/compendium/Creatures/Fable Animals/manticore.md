@@ -1,7 +1,7 @@
 # Manticore
 
 
-![Manticore](/compendium/Creatures/Fable Animals/manticore.png "Manticore")
+![Manticore](/compendium/Creatures/Fable Animals/manticore.jpg "Manticore")
 The manticore is not the cleverest foe one might meet, but it is dangerous. Manticores are often found in the service of magicians who need reliable watchdogs.
 
 ## Appearance

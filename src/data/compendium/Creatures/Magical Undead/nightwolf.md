@@ -1,7 +1,7 @@
 # Nightwolf
 
 
-![Nightwolf](/compendium/Creatures/Magical Undead/nightwolf.png "Nightwolf")
+![Nightwolf](/compendium/Creatures/Magical Undead/nightwolf.jpg "Nightwolf")
 The nightwolf is a fearsome undead creature, a combination of a constructed body possessed by a ghost. They are most often servants or bodyguards to the necromancer who made them, or else guardians set over something precious.
 
 ## Appearance

@@ -1,7 +1,7 @@
 # Sea Serpent
 
 
-![Sea Serpent](/compendium/Creatures/Dragons/sea-serpent.png "Sea Serpent")
+![Sea Serpent](/compendium/Creatures/Dragons/sea-serpent.jpg "Sea Serpent")
 Sea serpents are vast serpent-like monsters found in most seas and in some great lakes and rivers. They are close kin to the dragonsnakes, but lack arms and bear instead a single great, sharp horn in the middle of the brow. They are bloodthirsty predators living chiefly on whales, dolphins, giant squid, sharks and large fish, but should the chance arise to vary the fare with a little human flesh they do not hesitate.
 
 ## Appearance

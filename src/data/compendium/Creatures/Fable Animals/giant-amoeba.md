@@ -1,7 +1,7 @@
 # Giant Amoeba
 
 
-![Giant Amoeba](/compendium/Creatures/Fable Animals/giant-amoeba.png "Giant Amoeba")
+![Giant Amoeba](/compendium/Creatures/Fable Animals/giant-amoeba.jpg "Giant Amoeba")
 A giant amoeba is a great, foul-smelling lump of slime whose chief occupation is to find organic matter it can absorb.
 
 ## Appearance

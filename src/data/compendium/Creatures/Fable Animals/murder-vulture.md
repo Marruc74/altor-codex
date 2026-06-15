@@ -1,7 +1,7 @@
 # Murder Vulture
 
 
-![Murder Vulture](/compendium/Creatures/Fable Animals/murder-vulture.png "Murder Vulture")
+![Murder Vulture](/compendium/Creatures/Fable Animals/murder-vulture.jpg "Murder Vulture")
 The murder vulture is a nightmare creature of the southern deserts that has spread to the wastes and thinly settled regions of the north. Unlike other vultures it does not wait for its prey to die of its own accord, but hastens the end by sapping the victim's mind.
 
 ## Appearance

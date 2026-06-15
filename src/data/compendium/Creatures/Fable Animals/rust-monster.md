@@ -1,7 +1,7 @@
 # Rust Monster
 
 
-![Rust Monster](/compendium/Creatures/Fable Animals/rust-monster.png "Rust Monster")
+![Rust Monster](/compendium/Creatures/Fable Animals/rust-monster.jpg "Rust Monster")
 The rust monster is a destructive creature that springs from the elements of earth and water, and was probably called up by some magician in the beginning of time, but has since bred and so lives on in our human world.
 
 ## Appearance

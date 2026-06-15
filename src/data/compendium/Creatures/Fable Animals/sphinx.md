@@ -1,7 +1,7 @@
 # Sphinx
 
 
-![Sphinx](/compendium/Creatures/Fable Animals/sphinx.png "Sphinx")
+![Sphinx](/compendium/Creatures/Fable Animals/sphinx.jpg "Sphinx")
 When the intelligent races were shaped, some gods clearly worked from ideals of beauty and reason no human mind can follow, and their creations turned out very strange to our eyes. The centaur is one example; the sphinx is another, and to a far greater degree. The learned suspect that some god with a particular fondness for cats made the sphinx, perhaps the same Segorr said to have fashioned the cat-folk, but neither they nor the sphinxes themselves have ever uncovered the truth.
 
 ## Appearance

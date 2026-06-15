@@ -1,7 +1,7 @@
 # Black Unicorn
 
 
-![Black Unicorn](/compendium/Creatures/Demonic Creatures/black-unicorn.png "Black Unicorn")
+![Black Unicorn](/compendium/Creatures/Demonic Creatures/black-unicorn.jpg "Black Unicorn")
 The black unicorns are the demonic counterparts of the ordinary unicorns, and their absolute opposites. Some hold that the black unicorns are the souls of ordinary unicorns that met a violent death, their evil then explained as a thirst for vengeance. Unlike most Chaos creatures, the black unicorns belong to our human world and so can be truly killed.
 
 ## Appearance

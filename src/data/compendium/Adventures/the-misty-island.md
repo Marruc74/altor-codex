@@ -11,13 +11,19 @@ sections:
         description: A remote forest village of some fifty content folk, three days from its nearest neighbour, where word of the island first reaches the ears of travelers.
         image: /compendium/Adventures/TheMistyIsland/Outskirt/Outskirt.jpg
       - name: The Stone Chapel
-        description: The village's stone chapel, beneath which lies the grave the priest Rabindranath guards, where the alf-forged sword Dragonslayer is buried.
+        portrait: true
+        description: The village's stone chapel, beneath which lies the grave the priest Rabindranath guards, where the elf-forged sword Dragonslayer is buried.
+        image: /compendium/Adventures/TheMistyIsland/Outskirt/Stone Chapel.jpg
       - name: The Three Stags
         description: The one inn in Outskirt, run by the two former outlaws Bryte and Ulvar, who never quite explain how they came by it.
+        image: /compendium/Adventures/TheMistyIsland/Outskirt/Three Stags.jpg
       - name: The Great Farm
         description: The largest holding in Outskirt, home to Warge and his wife Luvia and their children Biorn, Vagnhild and red-haired Rosiall, along with the watchdogs Bitske and Gråpäls.
+        image: /compendium/Adventures/TheMistyIsland/Outskirt/Great Farm.jpg
       - name: Mifalodor's Hut
+        portrait: true
         description: The hermit alchemist's hut in the forest above Outskirt, where Mifalodor brews his elixirs alone and comes down once a month to trade them for food.
+        image: /compendium/Adventures/TheMistyIsland/Outskirt/Mifalodors Hut.jpg
     npcs:
       - name: Badinor
         description: One of three dwarves who travel up from the Ore Mountains each quarter to supply Outskirt with metal; through them the village hears news of the wider world.
@@ -70,29 +76,39 @@ sections:
         image: /compendium/Adventures/TheMistyIsland/Outskirt/Map.jpg
       - name: Dragonslayer
         portrait: true
-        description: A great alf-forged broadsword of noble-silver hidden in the grave beneath the stone chapel and watched over by Rabindranath. Runes along its blade hold powerful spells and a bound spirit will not release it easily; it once belonged to Bestistal, slayer of the dragon Vel-Abkon.
+        description: A great elf-forged broadsword of noble-silver hidden in the grave beneath the stone chapel and watched over by Rabindranath. Runes along its blade hold powerful spells and a bound spirit will not release it easily; it once belonged to Bestistal, slayer of the dragon Vel-Abkon.
         image: /compendium/Adventures/TheMistyIsland/Outskirt/Dragonslayer.jpg
       - name: Hårde's Elf-Bow
+        portrait: true
         description: A magical bow the hunter Hårde carries, given him by the elf-woman Fingolin in thanks for saving her life, that strikes harder and truer than any common bow.
+        image: /compendium/Adventures/TheMistyIsland/Outskirt/Elf Bow.jpg
       - name: Mifalodor's Brews
+        portrait: true
         description: The healing elixirs and potions the hermit-alchemist Mifalodor brews in his forest hut and trades for food, among them draughts of healing, invisibility, shrinking, growth, warding and command.
+        image: /compendium/Adventures/TheMistyIsland/Outskirt/Brews.jpg
   - title: The Misty Island
     description: A mist-wrapped island in the Mirror Lake, four centuries a haunt of demon-summoning magicians, and the flooded complex beneath it.
     places:
       - name: The Sacrificial Tower
+        portrait: true
         description: A twenty-metre white marble tower on the island's stony northern end, its top a pentagram of five blood-channelled altars, where the charred bodies of Sith and his apprentice still lie.
+        image: /compendium/Adventures/TheMistyIsland/The Misty Island/Sacrificial Tower.jpg
       - name: Sith's Underground Complex
         description: The magician's flooded stronghold beneath the island's central lake, reached through a sunken cave-mouth, an upper maze of water-logged natural caves where Akrae, Cadal's ghost and the troll Okvir wait, and a lower level of black-and-white marble, the magicians' own work, with pentagram-sealed doors, deadly traps, a library and a treasure-chamber, guarded by the fire demon Khaa.
+        image: /compendium/Adventures/TheMistyIsland/The Misty Island/Underground Complex.jpg
     npcs:
       - name: Cadal
         description: The ghost of a warrior who came to slay the magician Sith and rescue his beloved Tuviol, only to fall to the demon Akrae. He cannot rest until Akrae is dead, and pleads with any who pass to carry off his medallion, which wards against magic and glows blue when danger is near.
         image: /compendium/Adventures/TheMistyIsland/The Misty Island/Cadal.jpg
       - name: Sith
         description: The island's last master, a mighty magician who perished when he tried to summon a death-demon to win the secret of eternal life, struck down with his apprentice Verkon for the asking.
+        image: /compendium/Adventures/TheMistyIsland/The Misty Island/Sith.jpg
       - name: Prince Emrys
         description: Tuviol's brother, held in a cell deep in the complex to await sacrifice to the demon Akrae, who has left a parchment telling of his captivity and begging that word be sent to Cadal.
-      - name: Tuviol
+        image: /compendium/Adventures/TheMistyIsland/The Misty Island/Emrys.jpg
+      - name: Princess Tuviol
         description: The princess Cadal loved, imprisoned and sacrificed by Sith in the offering-cells, who left a last message to Cadal written in her own blood.
+        image: /compendium/Adventures/TheMistyIsland/The Misty Island/Tuviol.jpg
     creatures:
       - name: Akrae
         description: A demon bound to a pentagram stone deep in the flooded caves, set there by Sith to kill any intruder. Human in shape but with a crab's head and claws, he cannot leave his stone and does not parley, only fights.
@@ -112,13 +128,20 @@ sections:
         description: A great black-bladed broadsword found among Sith's hoard, its blade engraved with runes. Spoken aloud, the words they spell summon four salamanders to serve the wielder for a quarter of an hour before they return to their own plane.
         image: /compendium/Adventures/TheMistyIsland/The Misty Island/Deathbringer.jpg
       - name: Cadal's Medallion
+        portrait: true
         description: A gold pentagram-medallion that wards its bearer against magic and shimmers pale blue when danger draws near, which the ghost Cadal longs to see carried off from the island.
+        image: /compendium/Adventures/TheMistyIsland/The Misty Island/Cadors Medallion.jpg
       - name: Verkon's Medallion
+        portrait: true
         description: The apprentice Verkon's medallion, which, warmed and read aloud, speaks a rhyme that freezes Sith's guard-skeletons where they stand.
+        image: /compendium/Adventures/TheMistyIsland/The Misty Island/Verkons Medallion.jpg
       - name: The Black Books
         description: Four books marked with golden pentagrams, kept in the Black Room, that teach the summoning and banishing of fire, water, air and earth elementals.
+        image: /compendium/Adventures/TheMistyIsland/The Misty Island/The Black Books.jpg
       - name: The Demon Eyes
+        portrait: true
         description: Two rubies set as the eyes of a statuette, hidden keys to the complex, the right opening the way back to the surface and the left a sealed metal door.
+        image: /compendium/Adventures/TheMistyIsland/The Misty Island/The Demon Eyes.jpg
 ---
 
 _Chapter 2 of the Altor Codex chronicle._
@@ -135,7 +158,7 @@ For four centuries the island in the Mirror Lake has drawn power-hungry magician
 
 ### The Village of Outskirt
 
-Outskirt is a remote forest village of some fifty folk, three days from its nearest neighbour, supplied with metal by three travelling dwarves and watched over in matters of law by its bailiff. It is here the dwarves' tale is told and Sirter's map changes hands. Beneath the village's stone chapel the priest Rabindranath guards a buried alf-forged sword, the Dragonslayer.
+Outskirt is a remote forest village of some fifty folk, three days from its nearest neighbour, supplied with metal by three travelling dwarves and watched over in matters of law by its bailiff. It is here the dwarves' tale is told and Sirter's map changes hands. Beneath the village's stone chapel the priest Rabindranath guards a buried elf-forged sword, the Dragonslayer.
 
 ### Families of Outskirt
 

@@ -1,7 +1,7 @@
 # Serpent
 
 
-![Serpent](/compendium/Peoples/Animal Humanoids/serpent.png "Serpent")
+![Serpent](/compendium/Peoples/Animal Humanoids/serpent.jpg "Serpent")
 Serpents love warm, damp places like the underworld and the jungles, distant kin of the reptile-men and living much as they do. Their tribes of twenty to forty hunt almost any creature, even reptile-men when they can, and their craft never rises above stone-age clubs.
 
 ## Appearance

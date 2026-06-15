@@ -1,7 +1,7 @@
 # Gold Dragon
 
 
-![Gold Dragon](/compendium/Creatures/Dragons/gold-dragon.png "Gold Dragon")
+![Gold Dragon](/compendium/Creatures/Dragons/gold-dragon.jpg "Gold Dragon")
 Gold dragons are the most magnificent and imposing of all dragons, and at the same time by far the rarest, for they live far longer than any other kind yet still seek a mate only once in their lives. They dwell even more solitary than fire-dragons and shun both very hot and very cold climates.
 
 ## Appearance

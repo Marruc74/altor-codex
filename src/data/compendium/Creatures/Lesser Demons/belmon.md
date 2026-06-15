@@ -1,7 +1,7 @@
 # Belmon
 
 
-![Belmon](/compendium/Creatures/Lesser Demons/belmon.png "Belmon")
+![Belmon](/compendium/Creatures/Lesser Demons/belmon.jpg "Belmon")
 In the Chaos circle of Inferno live the belmôns, among the lowest of its demon-folk, set like all lesser demons to torment the damned souls as overseers, torturers and gaolers.
 
 ## Appearance

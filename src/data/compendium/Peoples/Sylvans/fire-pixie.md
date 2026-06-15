@@ -1,7 +1,7 @@
 # Fire Pixie
 
 
-![Fire Pixie](/compendium/Peoples/Sylvans/fire-pixie.png "Fire Pixie")
+![Fire Pixie](/compendium/Peoples/Sylvans/fire-pixie.jpg "Fire Pixie")
 Fire-pixies are a most peculiar elf-folk that live in deep forests, often together with dryads, najads or wood elves, who provide them with food.
 
 ## Appearance

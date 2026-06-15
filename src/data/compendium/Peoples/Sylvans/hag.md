@@ -1,7 +1,7 @@
 # Hag
 
 
-![Hag](/compendium/Peoples/Sylvans/hag.png "Hag")
+![Hag](/compendium/Peoples/Sylvans/hag.jpg "Hag")
 Hags are darkness-nymphs that can materialise out of shadow and gloom, taking the shape of fearsome old witches. They keep to dark or shadowy places, such as the underworld, old ruins, very dense forests, caves and crypts. Like all nymphs a hag is bound to her home, here the darkness itself, and cannot be truly slain except by its destruction, the letting-in of sunlight upon her hiding-place.
 
 ## Appearance

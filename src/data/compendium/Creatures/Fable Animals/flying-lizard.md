@@ -1,7 +1,7 @@
 # Flying Lizard
 
 
-![Flying Lizard](/compendium/Creatures/Fable Animals/flying-lizard.png "Flying Lizard")
+![Flying Lizard](/compendium/Creatures/Fable Animals/flying-lizard.jpg "Flying Lizard")
 Flying lizards are large reptiles with short legs and an enormously broad wingspan. Now and then some intelligent creature tames one and uses it as a mount, though the rider must be both clever and hardy to dominate the beast.
 
 ## Appearance

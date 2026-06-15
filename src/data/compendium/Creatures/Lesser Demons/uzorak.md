@@ -1,7 +1,7 @@
 # Uzorak
 
 
-![Uzorak](/compendium/Creatures/Lesser Demons/uzorak.png "Uzorak")
+![Uzorak](/compendium/Creatures/Lesser Demons/uzorak.jpg "Uzorak")
 In the Abyss, the great rift that runs through all nine circles of Inferno and joins them together, live the uzorak, among the lowest of its demon-folk, set to torment the damned.
 
 ## Appearance

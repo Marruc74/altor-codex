@@ -1,7 +1,7 @@
 # Kalydon
 
 
-![Kalydon](/compendium/Creatures/Fable Animals/kalydon.png "Kalydon")
+![Kalydon](/compendium/Creatures/Fable Animals/kalydon.jpg "Kalydon")
 A kalydon is a gigantic fire-breathing boar. Most likely it is, like several other vile creatures, the result of some magician's repugnant experiment, in this case probably the manipulation of ordinary wild boar; or the breed may have its origin in one of the realms of Chaos and have broken through to our dimension by mistake.
 
 ## Appearance

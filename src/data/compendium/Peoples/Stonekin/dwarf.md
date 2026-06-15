@@ -1,7 +1,7 @@
 # Dwarf
 
 
-![Dwarf](/compendium/Peoples/Stonekin/dwarf.png "Dwarf")
+![Dwarf](/compendium/Peoples/Stonekin/dwarf.jpg "Dwarf")
 The most civilised of the stonekin, perhaps of all humanoids, are the dwarves. Their underground cities and mining communities are usually far better ordered than those of humans, and without doubt the dwarves are the more industrious, disciplined and loyal of subjects. Dwarves from every corner of the world feel a far greater kinship than, say, humans of different cultures, and with it comes a great need for fellowship; an outcast or solitary dwarf is almost certainly a very unhappy one.
 
 ## Appearance

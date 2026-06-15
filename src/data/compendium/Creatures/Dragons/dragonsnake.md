@@ -1,7 +1,7 @@
 # Dragonsnake
 
 
-![Dragonsnake](/compendium/Creatures/Dragons/dragonsnake.png "Dragonsnake")
+![Dragonsnake](/compendium/Creatures/Dragons/dragonsnake.jpg "Dragonsnake")
 Dragonsnakes are only distant kin to the mightiest of all creatures, the dragons, and lack most of the special powers and traits that set true dragons apart. A dragonsnake is neither as intelligent nor as rapacious as a dragon, and cares far less for treasure; instead it is driven by a fierce, gnawing hunger and devours almost anything that crosses its path.
 
 ## Appearance

@@ -1,7 +1,7 @@
 # Faerie
 
 
-![Faerie](/compendium/Peoples/Sylvans/faerie.png "Faerie")
+![Faerie](/compendium/Peoples/Sylvans/faerie.jpg "Faerie")
 Faeries are small, mischievous sprites that live in beautiful, bright forests, gathering berries and nuts. They almost always carry their magical bows, the better to defend themselves.
 
 ## Appearance

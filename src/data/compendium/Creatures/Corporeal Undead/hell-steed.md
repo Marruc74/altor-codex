@@ -1,7 +1,7 @@
 # Hell Steed
 
 
-![Hell Steed](/compendium/Creatures/Corporeal Undead/hell-steed.png "Hell Steed")
+![Hell Steed](/compendium/Creatures/Corporeal Undead/hell-steed.jpg "Hell Steed")
 The bond between master and horse is sometimes so strong that when a human or other intelligent creature becomes undead, such as a death wraith, it can draw its horse through the same change. The horse becomes an undead charger, a hell-steed, ever a loyal servant to its master.
 
 ## Appearance

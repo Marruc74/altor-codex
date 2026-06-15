@@ -1,7 +1,7 @@
 # Corpse Eaters
 
 
-![Corpse Eaters](/compendium/Creatures/Corporeal Undead/corpse-eaters.png "Corpse Eaters")
+![Corpse Eaters](/compendium/Creatures/Corporeal Undead/corpse-eaters.jpg "Corpse Eaters")
 Corpse eaters are a special form of corporeal undead that cannot really be counted among the undead at all, since they keep their living vigour. They are a kind of midpoint between undead and living creature, and so retain many of the qualities of life; they must still eat, drink and breathe. Corpse eaters are intelligent humanoids infected by a corpse eater's bite, and so become corpse eaters themselves. They cannot be affected by spells that work only on the undead.
 
 ## Appearance

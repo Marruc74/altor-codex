@@ -1,7 +1,7 @@
 # Dark Elf
 
 
-![Dark Elf](/compendium/Peoples/Elves/dark-elf.png "Dark Elf")
+![Dark Elf](/compendium/Peoples/Elves/dark-elf.jpg "Dark Elf")
 The dark elves are the corrupted kindred of the elf-folk, a people given over to Chaos. They live in grim castles high among the mountain peaks and leave them only to ride to war beside the dark folk, to raid and to plunder. They despise life, enslave those they beat, and are the most warlike of all the elf-races. Where other elves revere nature, the dark elves serve ruin.
 
 ## Appearance

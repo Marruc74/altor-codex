@@ -1,7 +1,7 @@
 # Siren
 
 
-![Siren](/compendium/Creatures/Fable Animals/siren.png "Siren")
+![Siren](/compendium/Creatures/Fable Animals/siren.jpg "Siren")
 Sirens may be called the sea's answer to the huldre. They are certainly kin to the harpies, and though far more pleasing and beautiful than those, they are certainly more dangerous too.
 
 ## Appearance

@@ -1,7 +1,7 @@
 # Giant
 
 
-![Giant](/compendium/Peoples/Stonekin/giant.png "Giant")
+![Giant](/compendium/Peoples/Stonekin/giant.jpg "Giant")
 Giants dwell in remote forest and mountain country where they can be left in peace by other peoples. They lead a simple life as woodcutters, farmers or herders, with a fairly plain culture; they make simple tools themselves and get the rest from the far more advanced gargants. Giants live out in the open, but usually keep some kind of wind- and rain-shelter near at hand. Like many peoples they have spread over much of the world and adapted to different climates, and far in the north one finds the ice-giants, with a shaggy pelt and wholly untroubled by cold.
 
 ## Appearance

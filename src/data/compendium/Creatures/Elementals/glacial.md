@@ -1,7 +1,7 @@
 # Glacial
 
 
-![Glacial](/compendium/Creatures/Elementals/glacial.png "Glacial")
+![Glacial](/compendium/Creatures/Elementals/glacial.jpg "Glacial")
 Glacials are the elementals of cold, incarnations of that element summoned from its plane into our world by elemental magic and bound to the will of the magician who calls them. Like all elementals they have no wit of their own, are immune to poison, and can be harmed by magic as normal.
 
 ## Appearance

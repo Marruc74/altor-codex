@@ -1,7 +1,7 @@
 # Satyr
 
 
-![Satyr](/compendium/Peoples/Sylvans/satyr.png "Satyr")
+![Satyr](/compendium/Peoples/Sylvans/satyr.jpg "Satyr")
 Satyrs are male forest-spirits whose chief joys in life are feasting and chasing nymphs. They live out in the open and each evening invite the spirits of the forest to great feasts with much wine, song, dance and music.
 
 ## Appearance

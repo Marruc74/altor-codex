@@ -1,7 +1,7 @@
 # Gargant
 
 
-![Gargant](/compendium/Peoples/Stonekin/gargant.png "Gargant")
+![Gargant](/compendium/Peoples/Stonekin/gargant.jpg "Gargant")
 In deep ravines and steep cliff-faces the gargants dig out their vast underground complexes. They are known to be cruel, and regularly keep other peoples, chiefly dark folk but humans too, as slaves. Like the dwarves they live by mining and craft, and find a gargant cave somewhere and there is almost sure to be a giant village in relative reach, the two trading slaves and food for craftwork.
 
 ## Appearance

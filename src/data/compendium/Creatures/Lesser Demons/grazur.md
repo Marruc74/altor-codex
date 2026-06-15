@@ -1,7 +1,7 @@
 # Grazur
 
 
-![Grazur](/compendium/Creatures/Lesser Demons/grazur.png "Grazur")
+![Grazur](/compendium/Creatures/Lesser Demons/grazur.jpg "Grazur")
 The grazur are another of Inferno's lesser demon-folk, kin in their lot to the pazuzu of the shadow circle, set to torment the damned as overseers, torturers and gaolers.
 
 ## Appearance

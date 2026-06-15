@@ -1,7 +1,7 @@
 # Death Owl
 
 
-![Death Owl](/compendium/Creatures/Fable Animals/death-owl.png "Death Owl")
+![Death Owl](/compendium/Creatures/Fable Animals/death-owl.jpg "Death Owl")
 It is said that the death owls' ancestral home lies in the deep forests of the north.
 
 ## Appearance

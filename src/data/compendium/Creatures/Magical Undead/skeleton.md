@@ -1,7 +1,7 @@
 # Skeleton
 
 
-![Skeleton](/compendium/Creatures/Magical Undead/skeleton.png "Skeleton")
+![Skeleton](/compendium/Creatures/Magical Undead/skeleton.jpg "Skeleton")
 Skeletons, like mummies and zombies, are the remains of dead bodies woken to unlife by a magician. They have no will of their own and can only obey the commands of their master.
 
 ## Appearance

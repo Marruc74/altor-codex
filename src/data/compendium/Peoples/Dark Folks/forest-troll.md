@@ -1,7 +1,7 @@
 # Forest Troll
 
 
-![Forest Troll](/compendium/Peoples/Dark Folks/forest-troll.png "Forest Troll")
+![Forest Troll](/compendium/Peoples/Dark Folks/forest-troll.jpg "Forest Troll")
 Far more cultivated than cave trolls, forest trolls live in small communities of three to five families, often in caves in a cliff or rock face. Besides hunting they farm great toads, water-spiders, water-snakes and the white-green trollcap mushroom, which they prize as delicacies and as ingredients for salves and brews, and they keep slaves, usually other dark folk, for the daytime work they cannot do themselves.
 
 ## Appearance

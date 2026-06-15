@@ -1,4 +1,4 @@
 # Sylf
 
 
-![Sylf](/compendium/Creatures/Elementals/sylf.png "Sylf")
+![Sylf](/compendium/Creatures/Elementals/sylf.jpg "Sylf")

@@ -1,7 +1,7 @@
 # Ogre
 
 
-![Ogre](/compendium/Peoples/Dark Folks/ogre.png "Ogre")
+![Ogre](/compendium/Peoples/Dark Folks/ogre.jpg "Ogre")
 Something between a great orc and a giant, even dimmer than orcs but sharing their values. They live alone or in small bands, often among orc clans or svartalf groups where they serve as prized warriors but seldom as leaders, and very rarely join with trolls.
 
 ## Appearance

@@ -1,7 +1,7 @@
 # Ghost
 
 
-![Ghost](/compendium/Creatures/Spirits/ghost.png "Ghost")
+![Ghost](/compendium/Creatures/Spirits/ghost.jpg "Ghost")
 Ghosts are the spirits of people who died while they still had some important task to perform. The strength of will and the rage at the moment of death bound their spirits to the world of the living, and to escape it they must see that task completed.
 
 ## Appearance

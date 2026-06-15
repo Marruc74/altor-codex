@@ -1,7 +1,7 @@
 # Lindworm
 
 
-![Lindworm](/compendium/Creatures/Dragons/lindworm.png "Lindworm")
+![Lindworm](/compendium/Creatures/Dragons/lindworm.jpg "Lindworm")
 Lindworms are a kind of cross between dragons and dragonsnakes. They have inherited much of a dragon's look but possess few of the traits that make dragons the mightiest creatures in the world: they cannot use dragon-magic, cannot breathe fire, lack the dragon's power to instil terror, and cannot bind a victim with their gaze.
 
 ## Appearance

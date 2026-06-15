@@ -1,7 +1,7 @@
 # Wolfman
 
 
-![Wolfman](/compendium/Peoples/Animal Humanoids/wolfman.png "Wolfman")
+![Wolfman](/compendium/Peoples/Animal Humanoids/wolfman.jpg "Wolfman")
 Wolf-men are often mistaken for werewolves, whom they resemble, but they share nothing in temperament and so carry an undeserved bad name. They live in small, close-knit hunting tribes, and those who go among humans often serve as hunters or scouts in armies.
 
 ## Appearance

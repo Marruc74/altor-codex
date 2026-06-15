@@ -1,7 +1,7 @@
 # Will-o'-the-Wisp
 
 
-![Will-o'-the-Wisp](/compendium/Creatures/Spirits/will-o-the-wisp.png "Will-o'-the-Wisp")
+![Will-o'-the-Wisp](/compendium/Creatures/Spirits/will-o-the-wisp.jpg "Will-o'-the-Wisp")
 Will-o'-the-wisps are the ghosts of wicked people who drowned or met a violent death in marshes, swamps or small forest tarns. Like all such spirits they are bound to the place of their death, born of a soul that died full of hatred, and they would sooner lure others to the same fate than save them from it.
 
 ## Appearance

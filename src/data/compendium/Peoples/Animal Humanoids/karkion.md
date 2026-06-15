@@ -1,7 +1,7 @@
 # Karkion
 
 
-![Karkion](/compendium/Peoples/Animal Humanoids/karkion.png "Karkion")
+![Karkion](/compendium/Peoples/Animal Humanoids/karkion.jpg "Karkion")
 The karkions are not of this world; they fled here when their own was destroyed thousands of years ago, and so have no true home, living as wanderers and hermits here and there. They are very few and keep to the margins, and so have left little mark on humanity.
 
 ## Appearance

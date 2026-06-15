@@ -1,7 +1,7 @@
 # Kerberos
 
 
-![Kerberos](/compendium/Creatures/Fable Animals/kerberos.png "Kerberos")
+![Kerberos](/compendium/Creatures/Fable Animals/kerberos.jpg "Kerberos")
 There are many roads to the Realm of Death. Each is guarded by a terrible creature set there by the death-gods to keep the souls of the dead from returning to the circle of the living. Kerberos is one of these wardens. Should Kerberos be slain, one of the death-gods can raise him again, so that he may return to his watch.
 
 ## Appearance

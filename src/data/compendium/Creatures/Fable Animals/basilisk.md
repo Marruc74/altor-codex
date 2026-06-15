@@ -1,7 +1,7 @@
 # Basilisk
 
 
-![Basilisk](/compendium/Creatures/Fable Animals/basilisk.png "Basilisk")
+![Basilisk](/compendium/Creatures/Fable Animals/basilisk.jpg "Basilisk")
 The reptilian basilisk and its petrifying gaze are no matter for a novice adventurer, though a seasoned fighter usually has a fair chance against the vile creature.
 
 ## Appearance

@@ -1,7 +1,7 @@
 # Baneman
 
 
-![Baneman](/compendium/Creatures/Magical Undead/baneman.png "Baneman")
+![Baneman](/compendium/Creatures/Magical Undead/baneman.jpg "Baneman")
 Banemen are a kind of zombie that only a death knight can make, fashioning them from fallen foes and using them as companions and servants.
 
 ## Appearance

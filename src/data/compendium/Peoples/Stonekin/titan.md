@@ -1,7 +1,7 @@
 # Titan
 
 
-![Titan](/compendium/Peoples/Stonekin/titan.png "Titan")
+![Titan](/compendium/Peoples/Stonekin/titan.jpg "Titan")
 Titans are a very rare and fairly close relative of the giants. The great difference is that titans are always skilled in magic. They live always alone, in great, mist-shrouded marble castles, and avoid all and everyone but other titans. They are far longer-lived than other stonekin and may reach a thousand years.
 
 ## Appearance

@@ -1,7 +1,7 @@
 # Kelpie
 
 
-![Kelpie](/compendium/Creatures/Fable Animals/kelpie.png "Kelpie")
+![Kelpie](/compendium/Creatures/Fable Animals/kelpie.jpg "Kelpie")
 The kelpie is a treacherous predator of fresh water. There are both kelpie stallions and kelpie mares, but whether they truly breed no one knows, for no one has ever seen a kelpie foal, nor two kelpies together.
 
 ## Appearance

@@ -1,7 +1,7 @@
 # Troglodyte
 
 
-![Troglodyte](/compendium/Peoples/Stonekin/troglodyte.png "Troglodyte")
+![Troglodyte](/compendium/Peoples/Stonekin/troglodyte.jpg "Troglodyte")
 Troglodytes, or cave-people as they are also called, live mainly underground, sometimes alongside dwarves or gargants but most often in old abandoned complexes. They shun sunlight and so avoid leaving their caves, though they take no real bodily harm from it.
 
 ## Appearance

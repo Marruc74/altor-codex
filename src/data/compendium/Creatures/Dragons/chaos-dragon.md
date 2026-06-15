@@ -1,7 +1,7 @@
 # Chaos Dragon
 
 
-![Chaos Dragon](/compendium/Creatures/Dragons/chaos-dragon.png "Chaos Dragon")
+![Chaos Dragon](/compendium/Creatures/Dragons/chaos-dragon.jpg "Chaos Dragon")
 Chaos dragons are the very opposite of gold dragons in their general bearing. Their name comes from the way the sagas paint them as cunning, unpredictable and malevolent, and their black shape has done much to make people link them with the creatures of Chaos. In truth they are wholly creatures of our own world, with all the strengths and weaknesses that implies.
 
 ## Appearance

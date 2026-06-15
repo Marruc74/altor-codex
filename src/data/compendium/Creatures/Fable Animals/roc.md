@@ -1,7 +1,7 @@
 # Roc
 
 
-![Roc](/compendium/Creatures/Fable Animals/roc.png "Roc")
+![Roc](/compendium/Creatures/Fable Animals/roc.jpg "Roc")
 A roc is a gigantic bird of prey that lives in great seclusion, far from all that is called civilisation and humankind. They are predators that hunt in southern lands, taking buffalo, rhinoceroses, hippopotami, goats and sometimes even elephants. They may grow up to a thousand years old and live alone all their lives but for a single year, when they seek a mate to raise young; the two eggs are brooded for forty years before they hatch.
 
 ## Appearance

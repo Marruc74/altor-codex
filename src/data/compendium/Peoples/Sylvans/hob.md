@@ -1,7 +1,7 @@
 # Hob
 
 
-![Hob](/compendium/Peoples/Sylvans/hob.png "Hob")
+![Hob](/compendium/Peoples/Sylvans/hob.jpg "Hob")
 Hobs are an easy-going elf-folk that at nightfall seek out the homes of elves or humans and finish the work the dwellers did not get done by day, such as cleaning, baking, cooking or mending clothes. They always go alone and are wanderers, leaving a farm or cottage at once if they do not find their little bowl of porridge or pot of jam waiting in the hall when they come of an evening. They keep only to lonely farms in the countryside or the forest.
 
 ## Appearance
