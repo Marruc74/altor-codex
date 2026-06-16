@@ -1,5 +1,13 @@
 ---
 places:
+  - name: "Beyural"
+    description: "The largest and most fertile island and the realm's unofficial heart, holding most of its people, towns and harbours; the city of Gringul and the sunstone-bearing Bey-bergen lie here"
+  - name: "Dakkilo"
+    description: "The smallest island, given over almost wholly to the capital Nohstril, with only poor goat-pasture and prized-wool sheep beyond the city"
+  - name: "Targero"
+    description: "The largest but poorest island, rugged and troubled by orcs and trolls, where the fleet recruits its toughest soldiers and old Jorpagna ruins draw treasure-hunters"
+  - name: "Tolokfe"
+    description: "The fog-bound Cyclops' Isle, shunned by all sailors"
   - name: "Nohstril"
     description: "The capital, on Dakkilo, seat of the Council of Five Houses"
   - name: "Gringul"
@@ -8,8 +16,6 @@ places:
     description: "The mountains of Beyural, sole source of the sunstones"
   - name: "Jorpagna ruins"
     description: "Ancient ruins in the mountains of Targero, a lure for treasure-hunters"
-  - name: "Tolokfe"
-    description: "The fog-bound Cyclops' Isle, shunned by all sailors"
 items:
   - name: "Sunstones"
     description: "Yellow gems that glow with warm light and instill courage"
