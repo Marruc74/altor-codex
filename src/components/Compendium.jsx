@@ -267,8 +267,19 @@ const RELATED_BY_SLUG = {
   // Trolls and their goddess; Nohstril's catacombs and the society that dug them.
   "troll": ["slergolis", "cave-troll", "forest-troll", "ogre"],
   "slergolis": ["troll"],
-  "ordo-nova": ["the-catacombs-of-nohstril", "erebos"],
-  "the-catacombs-of-nohstril": ["ordo-nova", "erebos"],
+  "ordo-nova": ["nohstril", "the-catacombs-of-nohstril", "erebos"],
+  "the-catacombs-of-nohstril": ["nohstril", "ordo-nova", "erebos"],
+  // The Jorpagnan empire, its fall, and the lands that founded it.
+  "jorpagna-empire": ["the-fall-of-jorpagna", "grafferburg", "hynsolge", "jorpagna", "karkion"],
+  "karkion": ["jorpagna-empire"],
+  "the-fall-of-jorpagna": ["jorpagna-empire", "jorpagna"],
+  "grafferburg": ["jorpagna-empire", "the-fall-of-jorpagna"],
+  // Marjura, the sulphur isle, and the heretic city cast onto it from Yndar.
+  "krau-ki": ["marjura", "trakorien"],
+  // Eshwan Theard's hammer, and House Festglade of Nohstril and its demons.
+  "the-hammer-of-eshwan-theard": ["soul-bound-weapons", "notable-magic-items"],
+  "house-festglade": ["nohstril", "erebos", "the-catacombs-of-nohstril", "ordo-nova", "echram-schroedel"],
+  "echram-schroedel": ["nohstril", "house-festglade"],
   "witchcraft": ["animism", "necromancy", "familiars", "the-aspects-of-magic"],
 };
 

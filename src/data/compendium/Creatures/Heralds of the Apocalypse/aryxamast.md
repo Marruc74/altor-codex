@@ -8,7 +8,7 @@ A humanoid, hideously thin, its grey skin dry and stretched on the bone. Its hea
 
 ## Nature
 
-It is starvation given a body, and it shares nothing willingly. The wasting hunger it can lay on a victim it guards most jealously of all — though a patient necromancer may puzzle that curse out for himself, since the working is not beyond mortal reach.
+It is starvation given a body, and it shares nothing willingly. The wasting hunger it can lay on a victim it guards most jealously of all - though a patient necromancer may puzzle that curse out for himself, since the working is not beyond mortal reach.
 
 ## Abilities
 

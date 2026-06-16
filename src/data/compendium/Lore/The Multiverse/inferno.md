@@ -28,6 +28,6 @@ The wise open their portals in Limbo and on some lonely spot where demons seldom
 
 ## Why the Demons Covet Altor
 
-A demon that is middling or weak in Inferno becomes something deadly in Altor, where the air itself seems to feed its strength, and that alone is lure enough for many. But the demons have a longer aim. They mean to break through the Order that the Young Gods laid over creation and restore the old laws of the Old Gods, when gods and demons and the dead alike walked the world as they pleased. Should they ever manage it, that would be the end of the world as its peoples know it — what men call Altor's Doomsday.
+A demon that is middling or weak in Inferno becomes something deadly in Altor, where the air itself seems to feed its strength, and that alone is lure enough for many. But the demons have a longer aim. They mean to break through the Order that the Young Gods laid over creation and restore the old laws of the Old Gods, when gods and demons and the dead alike walked the world as they pleased. Should they ever manage it, that would be the end of the world as its peoples know it - what men call Altor's Doomsday.
 
 For now the dimension walls hold, and the demons come only one at a time and only when called. An immortal cannot truly die in our world, and so cannot be suffered in it freely; a demon is let through only when a summoner meets the Thirteen Conditions, and a demon slain here merely loses its body and wakes again in Inferno a few days later. To end one for good, it must be sent home and killed there.

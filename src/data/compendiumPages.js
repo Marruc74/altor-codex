@@ -19,7 +19,7 @@ export function toSlug(str) {
 
 // Curated non-country pins that also count as Geography places (a notable
 // region/forest with a page), so they resolve like countries.
-const EXTRA_GEO_PLACE_IDS = new Set(["mereld", "goiana", "krilloan", "tannatopol"]);
+const EXTRA_GEO_PLACE_IDS = new Set(["mereld", "goiana", "krilloan", "tannatopol", "nohstril"]);
 export const geoPlaces = pins
   .filter((p) => p.type === "country" || EXTRA_GEO_PLACE_IDS.has(p.id))
   .sort((a, b) => a.name.localeCompare(b.name));

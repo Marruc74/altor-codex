@@ -1,6 +1,6 @@
 # Coins and Measures
 
-The peoples of Ereb do not count as a clerk of another world might, in neat tens. They reckon in twelves. Twelve of the small coins make one of the middle sort, and twelve of those one of the great, so that a single high coin is worth a hundred and forty-four of the least — and the same fondness for the dozen runs through their weights and their measures besides. A trader who cannot do his sums in twelves does not stay a trader long.
+The peoples of Ereb do not count as a clerk of another world might, in neat tens. They reckon in twelves. Twelve of the small coins make one of the middle sort, and twelve of those one of the great, so that a single high coin is worth a hundred and forty-four of the least - and the same fondness for the dozen runs through their weights and their measures besides. A trader who cannot do his sums in twelves does not stay a trader long.
 
 ## Measures
 
@@ -10,7 +10,7 @@ Weight climbs the same way, from the tiny uns up through the lod and the mark to
 
 ## Coin
 
-Every land of any standing strikes its own coin in copper, silver and gold, and a moneychanger sits in every port to weigh one realm's money against another's. A few are worth singling out. The old Empire's coins still pass in the lands that were once Jorpagna — the copper aes, the silver sestertie, the gold aurei — long after the Empire that struck them fell. The dwarves' money is heavy and well trusted, and beyond the common copper-strike, silver-shield and dwarf-daler, every dwarf city mints dalers of its own and a flood of jubilee coins besides. In Trakorien the coppers are so often called marackel, the Trakorian word for a seashell, that the true name is half forgotten. In Nidland the gold libra goes by the name guldvicotnik. The city-states of the Klomellian union each strike their own coin to a common worth, save Nya Arno, which spends Caddo money. And in Krun there is a great copper piece called the iron-drachma, a name left over from the days when the working of iron was still a new and wondered-at thing.
+Every land of any standing strikes its own coin in copper, silver and gold, and a moneychanger sits in every port to weigh one realm's money against another's. A few are worth singling out. The old Empire's coins still pass in the lands that were once Jorpagna - the copper aes, the silver sestertie, the gold aurei - long after the Empire that struck them fell. The dwarves' money is heavy and well trusted, and beyond the common copper-strike, silver-shield and dwarf-daler, every dwarf city mints dalers of its own and a flood of jubilee coins besides. In Trakorien the coppers are so often called marackel, the Trakorian word for a seashell, that the true name is half forgotten. In Nidland the gold libra goes by the name guldvicotnik. The city-states of the Klomellian union each strike their own coin to a common worth, save Nya Arno, which spends Caddo money. And in Krun there is a great copper piece called the iron-drachma, a name left over from the days when the working of iron was still a new and wondered-at thing.
 
 ## The Coinages of Ereb
 

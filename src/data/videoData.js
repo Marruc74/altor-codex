@@ -589,6 +589,7 @@ const EXTRA_LORE = [
   { group: "Factions", name: "The Blood-spattered Feather" },
   { group: "Factions", name: "Ordo Magica" },
   { group: "Factions", name: "Ordo Nova" },
+  { group: "Factions", name: "House Festglade" },
   { group: "Factions", name: "The Brotherhood of the Eternally Shining Star" },
   { group: "Religions", name: "The Oktagon" },
   { group: "Religions", name: "Kabrinzi" },
@@ -681,6 +682,7 @@ const EXTRA_MAGIC = [
   { group: "Items", name: "Qhriz" },
   { group: "Items", name: "The Kabrinzi Artifacts" },
   { group: "Items", name: "The Staff of Mokylider" },
+  { group: "Items", name: "The Hammer of Eshwan Theard" },
 ].map((p, i) => ({
   id: `x-magic-${i}`,
   title: `Magic: ${p.name}`,

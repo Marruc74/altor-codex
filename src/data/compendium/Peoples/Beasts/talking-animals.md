@@ -4,7 +4,7 @@ In some corners of the world there are beasts that speak and reason, set apart f
 
 ## Nature
 
-A talking animal is cleverer than the common run of its kind, with a quicker and deeper mind, but in every other way it lives as its kind does — the same haunts, the same shape, the same needs. A talking wolf is still a wolf; a talking raven, still a raven. How many there are, and where they are found, depends entirely on the beast.
+A talking animal is cleverer than the common run of its kind, with a quicker and deeper mind, but in every other way it lives as its kind does - the same haunts, the same shape, the same needs. A talking wolf is still a wolf; a talking raven, still a raven. How many there are, and where they are found, depends entirely on the beast.
 
 ## Their Place in the World
 
