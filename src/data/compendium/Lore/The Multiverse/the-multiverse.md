@@ -9,11 +9,11 @@ Altor is but one world among an infinity of worlds. Beyond the sphere of sky and
 - **Ordered by:** The higher powers, who raised the dimension walls
 - **The light:** Radiates from an unknown centre; the inner worlds are pure and spiritual, the outer ones gross and material
 - **The outer ring:** Demonicum, the frontier worlds that border raw Chaos
-- **The only road between worlds:** Magic — a direct portal, or the grey path of the astral plane
+- **The only road between worlds:** Magic - a direct portal, or the grey path of the astral plane
 
 ## Chaos and the Light
 
-In the beginning was Chaos — evil, dark, and full of terrible winds, the formless first power out of which all else came. From Chaos, in time, was born its opposite: the Light. About the Light the higher powers shaped new worlds and new beings, orderly and good, and to keep the corrupting tide of Chaos from ever reaching the Light they raised the dimension walls, dividing creation into an endless multitude of separated worlds. So was the Multiverse made, a thing of order carved out of, and forever besieged by, Chaos.
+In the beginning was Chaos - evil, dark, and full of terrible winds, the formless first power out of which all else came. From Chaos, in time, was born its opposite: the Light. About the Light the higher powers shaped new worlds and new beings, orderly and good, and to keep the corrupting tide of Chaos from ever reaching the Light they raised the dimension walls, dividing creation into an endless multitude of separated worlds. So was the Multiverse made, a thing of order carved out of, and forever besieged by, Chaos.
 
 ## The Inner and Outer Worlds
 

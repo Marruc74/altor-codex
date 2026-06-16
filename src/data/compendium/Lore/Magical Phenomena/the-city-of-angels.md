@@ -11,4 +11,4 @@ High above the peaks of the Aralern, among the clouds where no road climbs, drif
 
 ## The Mad Host
 
-What raised the city and set it adrift no one living can say, and few have come near enough to ask. Those who have glimpsed it from the high passes speak of a place of unearthly grace, and of the things that move through its bright streets — angels in seeming, but reasonless and cruel, their wits broken by some ancient grief or doom. Whatever befell them, they keep their floating seat against all comers, and the wise count the City of Angels among the world's beautiful deaths, to be wondered at from afar and never sought.
+What raised the city and set it adrift no one living can say, and few have come near enough to ask. Those who have glimpsed it from the high passes speak of a place of unearthly grace, and of the things that move through its bright streets - angels in seeming, but reasonless and cruel, their wits broken by some ancient grief or doom. Whatever befell them, they keep their floating seat against all comers, and the wise count the City of Angels among the world's beautiful deaths, to be wondered at from afar and never sought.

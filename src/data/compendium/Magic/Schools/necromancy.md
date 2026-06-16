@@ -25,4 +25,4 @@ A necromancer is marked by his trade. He feels where death has been and senses t
 
 ## Kin to the Dark Art
 
-Necromancy is the old magic of death, known here and there across Ereb wherever a mentalist follows his art to its darkest end. It should not be confused with the dark magic of Vicotnik, the grimmer discipline carried out of the east and drawing its strength from the moon — though the two are close cousins, and a land that fears the one has good reason to fear the other.
+Necromancy is the old magic of death, known here and there across Ereb wherever a mentalist follows his art to its darkest end. It should not be confused with the dark magic of Vicotnik, the grimmer discipline carried out of the east and drawing its strength from the moon - though the two are close cousins, and a land that fears the one has good reason to fear the other.

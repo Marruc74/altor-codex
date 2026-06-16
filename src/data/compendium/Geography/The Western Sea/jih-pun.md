@@ -52,10 +52,10 @@ The samurai bears the dai-sho, the paired long and short blades, the katana and 
 
 The warriors of Jih Pun train in schools as the swordsmen of Ereb train in their academies, but here the arts of the empty hand are held in equal honor with the blade.
 
-- **Karate, the open hand** — the most widespread, a pure fighting art that uses no weapons at all.
-- **Kenpo** — given more to kicks and evasions, and to the nunchaku and the staff.
-- **Ju-jutsu, the soft school** — the art of self-defence, of throws and locks that turn an attacker's own strength against him.
-- **Ninjutsu, the ninja's way** — secret, taught only within the hidden clans, joining the blade and the shadow-warrior's strange weapons to the techniques of war.
+- **Karate, the open hand** - the most widespread, a pure fighting art that uses no weapons at all.
+- **Kenpo** - given more to kicks and evasions, and to the nunchaku and the staff.
+- **Ju-jutsu, the soft school** - the art of self-defence, of throws and locks that turn an attacker's own strength against him.
+- **Ninjutsu, the ninja's way** - secret, taught only within the hidden clans, joining the blade and the shadow-warrior's strange weapons to the techniques of war.
 
 ## Religion
 

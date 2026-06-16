@@ -20,4 +20,4 @@ Against the nodes stand their opposites: the magic-dead lands, tracts of country
 
 ## The Mage-Storms
 
-Over and above the fixed geography of magic come the mage-storms, the magistormar — periodic discharges of magical power that gather and sweep across the whole of Ereb in the guise of violent thunderstorms. Within such a storm no spell of any kind may be cast, and the enchantments bound into magic items are at risk of being stripped away forever. Against the mage-storm neither node nor study avails; for as long as it rages, all magic in Ereb is undone alike.
+Over and above the fixed geography of magic come the mage-storms, the magistormar - periodic discharges of magical power that gather and sweep across the whole of Ereb in the guise of violent thunderstorms. Within such a storm no spell of any kind may be cast, and the enchantments bound into magic items are at risk of being stripped away forever. Against the mage-storm neither node nor study avails; for as long as it rages, all magic in Ereb is undone alike.

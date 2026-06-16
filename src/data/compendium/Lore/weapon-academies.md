@@ -1,6 +1,6 @@
 # Weapon Academies
 
-A warrior may learn his trade in the field or from a hired master, but the finest learn it at one of the great weapon-academies — schools where a single art of arms is studied to a depth no common soldier ever reaches. A handful are famous across Ereb, each built around a single founder and a single family of weapons, with its own hard road to mastery. The teaching is dear and the training long, three years and more, but a master of an academy is worth a company of ordinary swords.
+A warrior may learn his trade in the field or from a hired master, but the finest learn it at one of the great weapon-academies - schools where a single art of arms is studied to a depth no common soldier ever reaches. A handful are famous across Ereb, each built around a single founder and a single family of weapons, with its own hard road to mastery. The teaching is dear and the training long, three years and more, but a master of an academy is worth a company of ordinary swords.
 
 ## Eledain's Fencing School
 

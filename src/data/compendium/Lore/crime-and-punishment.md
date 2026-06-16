@@ -1,6 +1,6 @@
 # Crime and Punishment
 
-"The law is built on fear," runs a saying laid to a Caddo judge; "if you stop hanging criminals there is nothing left for the people to fear — so hang one now and again." Across Ereb the law is harsh, uneven, and bent as often as it is kept, and a wise traveller learns the customs of each land before he runs afoul of them, for what costs a fine in one city may cost a hand, or a head, in the next.
+"The law is built on fear," runs a saying laid to a Caddo judge; "if you stop hanging criminals there is nothing left for the people to fear - so hang one now and again." Across Ereb the law is harsh, uneven, and bent as often as it is kept, and a wise traveller learns the customs of each land before he runs afoul of them, for what costs a fine in one city may cost a hand, or a head, in the next.
 
 ## The Ladder of Punishments
 

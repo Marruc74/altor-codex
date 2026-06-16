@@ -6,7 +6,7 @@ Bemoth, the Prince of Beasts, is the second of the three great Guardians of Demo
 
 - **Title:** Prince of Beasts; the second Guardian of Demonicum
 - **Domain:** The wild forces of nature, and the beasts of every world
-- **Realm:** Leithicor — untamed wildlands and ancient forests under an eternal moon
+- **Realm:** Leithicor - untamed wildlands and ancient forests under an eternal moon
 - **His seat:** Toroth, a stone altar within a ring of monoliths that roams the worlds with the phases of the moon
 - **Sworn enemy:** Nehcrom, whose invasion of Leithicor he shattered
 - **Honoured by:** Beast-peoples, shamans and druids; the elves do not count him a direct threat

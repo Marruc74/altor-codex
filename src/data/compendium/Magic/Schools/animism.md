@@ -9,7 +9,7 @@ Animism is the eldest of the three great schools of magic, the art of the living
 - **Domain:** Beasts and plants, the wild and the wellsprings of living things
 - **Instruments:** The Dagger, mastery over the beasts; the Cup, the wellsprings of life; the Censer, the powers of the senses
 - **Practised by:** Druids above all, who live close to the land and can speak with the animals
-- **Beyond its reach:** The unliving — stone, metal and the dead answer to other arts
+- **Beyond its reach:** The unliving - stone, metal and the dead answer to other arts
 
 ## The Animist's Art
 

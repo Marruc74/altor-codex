@@ -11,7 +11,7 @@ export const entries = [
   }, {
     id: "hornox",
     title: "Hornox",
-    summary: "A great beast of Beyural — broad, heavy, and built for endurance. Essential to farming the region's dark volcanic soil.",
+    summary: "A great beast of Beyural - broad, heavy, and built for endurance. Essential to farming the region's dark volcanic soil.",
     tags: ["creature"],
     image: "/codex/Geography/Ereb/Countries/Erebos/Hornox.jpg",
     detail: "Geography/Ereb/Erebos/hornox.md",
@@ -29,7 +29,7 @@ export const entries = [
   }, {
     id: "lullad",
     title: "Lullad",
-    summary: "A gnarled stonefruit tree of Beyural's dry slopes. Seldom eaten fresh — its thick, pale oil is the real harvest.",
+    summary: "A gnarled stonefruit tree of Beyural's dry slopes. Seldom eaten fresh - its thick, pale oil is the real harvest.",
     tags: ["plant", "food"],
     image: "/codex/Geography/Ereb/Countries/Erebos/Lullad.jpg",
     detail: "Geography/Ereb/Erebos/lullad.md",
