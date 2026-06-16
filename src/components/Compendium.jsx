@@ -250,7 +250,7 @@ const RELATED_BY_SLUG = {
   "the-brotherhood-of-the-eternally-shining-star": ["eledain", "the-gods"],
   // The Magic rulebook: the further schools, the aspect framework, divination.
   "the-aspects-of-magic": ["animism", "elemental", "mentalism", "the-multiverse"],
-  "dragon-magic": ["mentalism", "illusionism", "symbolism"],
+  "dragon-magic": ["mentalism", "illusionism", "symbolism", "the-dragon-masters"],
   "illusionism": ["mentalism", "dragon-magic", "symbolism"],
   "symbolism": ["mentalism", "dragon-magic", "illusionism"],
   "staff-magic": ["the-aspects-of-magic", "notable-magic-items"],
@@ -263,7 +263,13 @@ const RELATED_BY_SLUG = {
   "familiars": ["witchcraft", "spiritism", "animism"],
   // Worldbuilding lore cross-links.
   "coins-and-measures": ["trade"],
-  "trade": ["coins-and-measures"],
+  "trade": ["coins-and-measures", "craft-guilds"],
+  "craft-guilds": ["trade", "weapon-academies", "coins-and-measures"],
+  // The dragon-masters: their title, their chronicle, and the karkion who began it.
+  "the-dragon-masters": ["cereval", "karkion", "dragon-magic"],
+  // The Cauldron of Bitterness, and the dragon-haunted swordsman Arn.
+  "khab-hemi": ["the-crown-jewels", "meh-zadrias-pillar", "the-black-water"],
+  "arn-dunkelbrink": ["marjura", "trakorien", "the-oracles-four-eyes"],
   // Trolls and their goddess; Nohstril's catacombs and the society that dug them.
   "troll": ["slergolis", "cave-troll", "forest-troll", "ogre"],
   "slergolis": ["troll"],
@@ -271,7 +277,7 @@ const RELATED_BY_SLUG = {
   "the-catacombs-of-nohstril": ["nohstril", "ordo-nova", "erebos"],
   // The Jorpagnan empire, its fall, and the lands that founded it.
   "jorpagna-empire": ["the-fall-of-jorpagna", "grafferburg", "hynsolge", "jorpagna", "karkion"],
-  "karkion": ["jorpagna-empire"],
+  "karkion": ["jorpagna-empire", "the-dragon-masters"],
   "the-fall-of-jorpagna": ["jorpagna-empire", "jorpagna"],
   "grafferburg": ["jorpagna-empire", "the-fall-of-jorpagna"],
   // Marjura, the sulphur isle, and the heretic city cast onto it from Yndar.
