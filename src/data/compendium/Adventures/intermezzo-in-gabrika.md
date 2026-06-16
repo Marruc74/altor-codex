@@ -1,7 +1,7 @@
 ---
 title: Intermezzo in Gabrika
 tagline: "Two masters, each paying to be rid of the other."
-summary: In a poor southern barony, the party is caught between a bedridden baron, the healer who truly rules in his place, and a resistance that wants the baron dead: two patrons with opposite commissions and one party between them.
+summary: "In a poor southern barony, the party is caught between a bedridden baron, the healer who truly rules in his place, and a resistance that wants the baron dead: two patrons with opposite commissions and one party between them."
 videoIds: []
 npcs:
   - name: Baron Castorin
