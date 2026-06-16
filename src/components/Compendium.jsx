@@ -2,12 +2,12 @@ import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import ReactMarkdown from "react-markdown";
 import yaml from "js-yaml";
 import { SECTIONS, videosBySection, videos as allVideos, allEntries } from "../data/videoData";
-import { pins } from "../data/locations";
 import { entries } from "../data/codex/index.js";
 import { adventures, adventureGroups } from "../data/adventures";
 import { videosForPin, relatedVideosByVideo } from "../data/crossLinks";
 import { thumbSrc, onThumbError } from "../lib/thumb";
 import { entryImages } from "../data/entryImages.generated";
+import { resolvePage, geoPlaces } from "../data/compendiumPages";
 
 // ── Image utilities ───────────────────────────────────────────────────────
 const IMAGE_RE = /!\[([^\]]*)\]\(([^")]+?)(?:\s+"([^"]*)")?\)/g;
@@ -114,13 +114,6 @@ const CONTINENTS = [
   { id: "western-sea",  name: "The Western Sea"  },
 ];
 
-// Curated non-country pins that should also appear as places in the Geography
-// nav (nested under their continent), e.g. a notable region/forest with a video.
-const EXTRA_GEO_PLACE_IDS = new Set(["mereld", "goiana", "krilloan", "tannatopol"]);
-const geoPlaces = pins
-  .filter((p) => p.type === "country" || EXTRA_GEO_PLACE_IDS.has(p.id))
-  .sort((a, b) => a.name.localeCompare(b.name));
-
 const placeKind = (pin) =>
   pin.type === "country" ? "Country" : pin.type[0].toUpperCase() + pin.type.slice(1);
 
@@ -148,25 +141,6 @@ function entryMdPath(entry) {
     ? `${sec}/${slug}.md`
     : `${sec}/${entry.group}/${slug}.md`;
 }
-
-// Unified page resolver: a slug (a card's explicit `entry`, or a card/place
-// name) → a navigable page. Priority country pin > adventure > section entry,
-// so a name that is also a country resolves to its country page first. This is
-// what lets a notable card or an adventure's place card deep-link to whatever
-// page in the compendium shares its name (a creature, a country, an adventure…).
-const ENTRY_SECTIONS = new Set([
-  "peoples", "creatures", "lore", "magic", "history", "conflicts", "characters",
-]);
-const PAGE_BY_SLUG = (() => {
-  const map = {};
-  const add = (slug, val) => { if (slug && !(slug in map)) map[slug] = val; };
-  for (const p of geoPlaces) add(toSlug(p.name), { kind: "country", id: p.id, name: p.name });
-  for (const a of adventures) add(toSlug(a.title), { kind: "adventure", id: a.id, name: a.title });
-  for (const v of allEntries)
-    if (ENTRY_SECTIONS.has(v.section)) add(toSlug(v.name), { kind: "entry", id: v.id, name: v.name, entry: v });
-  return map;
-})();
-const resolvePage = (s) => (s ? PAGE_BY_SLUG[toSlug(String(s))] ?? null : null);
 
 // ── Cross-reference indexes ────────────────────────────────────────────────
 // Every card (place / npc / creature / item) an adventure declares.
@@ -228,9 +202,11 @@ const RELATED_BY_SLUG = {
   "ley-lines-and-magic-dead-lands": ["dark-magic", "the-black-water"],
   // The Multiverse, Demonicum and its Guardians, and the art of demonology
   // (from the Kaos Väktare supplement).
-  "the-multiverse": ["demonicum", "the-grey-halls", "the-gods", "the-world-of-altor"],
-  "the-grey-halls": ["the-multiverse", "demonicum", "demonology"],
-  "demonicum": ["the-multiverse", "the-grey-halls", "nehcrom", "bemoth", "caliban", "demonology"],
+  "the-multiverse": ["demonicum", "the-grey-halls", "inferno", "dimension-travel", "the-gods", "the-world-of-altor"],
+  "the-grey-halls": ["the-multiverse", "demonicum", "dimension-travel", "demonology"],
+  "demonicum": ["the-multiverse", "the-grey-halls", "inferno", "nehcrom", "bemoth", "caliban", "demonology"],
+  "inferno": ["demonicum", "the-multiverse", "dimension-travel", "demonology"],
+  "dimension-travel": ["inferno", "the-multiverse", "demonicum", "the-grey-halls", "demonology"],
   "nehcrom": ["demonicum", "bemoth", "caliban", "azoth", "demonic-artifacts"],
   "bemoth": ["demonicum", "nehcrom", "caliban", "animism", "karnack", "nerocq"],
   "caliban": ["demonicum", "nehcrom", "bemoth", "khurun", "darubah", "feot"],
@@ -245,6 +221,11 @@ const RELATED_BY_SLUG = {
   "fire-demon": ["demonicum", "ice-demon"],
   "ice-demon": ["demonicum", "fire-demon"],
   "knowledge-demon": ["demonicum"],
+  // The four forerunners of the apocalyptic Riders (Sinkadus 32).
+  "stilakor": ["evolakasa", "aryxamast", "kalembri"],
+  "evolakasa": ["stilakor", "aryxamast", "kalembri"],
+  "aryxamast": ["stilakor", "evolakasa", "kalembri"],
+  "kalembri": ["stilakor", "evolakasa", "aryxamast"],
   "demonic-artifacts": ["demonology", "demonicum", "nehcrom", "bemoth", "soul-bound-weapons"],
   // The Warrior's Handbook: soul-bound weapons and the weapon-academies.
   "soul-bound-weapons": ["notable-magic-items", "demonic-artifacts", "demonology", "demon-prince"],
@@ -280,6 +261,14 @@ const RELATED_BY_SLUG = {
   "magic-nodes-and-storms": ["the-bane-storm", "ley-lines-and-magic-dead-lands", "dark-magic"],
   "the-shaul-deck": ["ordo-magica", "the-heavenly-bodies"],
   "familiars": ["witchcraft", "spiritism", "animism"],
+  // Worldbuilding lore cross-links.
+  "coins-and-measures": ["trade"],
+  "trade": ["coins-and-measures"],
+  // Trolls and their goddess; Nohstril's catacombs and the society that dug them.
+  "troll": ["slergolis", "cave-troll", "forest-troll", "ogre"],
+  "slergolis": ["troll"],
+  "ordo-nova": ["the-catacombs-of-nohstril", "erebos"],
+  "the-catacombs-of-nohstril": ["ordo-nova", "erebos"],
   "witchcraft": ["animism", "necromancy", "familiars", "the-aspects-of-magic"],
 };
 
