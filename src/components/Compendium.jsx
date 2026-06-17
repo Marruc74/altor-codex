@@ -228,6 +228,9 @@ const RELATED_BY_SLUG = {
   // The oni of Jih-pun and the oni-prince who schemes from the Fire-Peak.
   "oni": ["jih-pun", "ozuno", "shutendoji"],
   "ozuno": ["oni", "jih-pun"],
+  // From Sinkadus 19: the deep-dwelling water elves and the dwarves' building art.
+  "water-elf": ["sea-elf", "grey-elf", "shark-man"],
+  "dwarven-architecture": ["dwarf", "craft-guilds"],
   "the-black-water": ["ley-lines-and-magic-dead-lands", "the-bane-storm"],
   "the-bane-storm": ["necromancy", "dark-magic", "the-black-water"],
   "the-city-of-angels": ["death-angel", "the-world-of-altor"],
