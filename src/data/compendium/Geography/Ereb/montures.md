@@ -10,6 +10,12 @@ figures:
     description: "The imprisoned demigoddess of the undead and of eternal torment, who once turned the whole island's people into walking dead. Bound in a buried chamber by fetters none of her own kind can undo, she waits for the day she is set free again."
   - name: "Frithiof Greyhand"
     description: "The head of the Church of Sbintor and chairman of the ruling Council, foremost among the seven who govern the duchy behind the duke."
+  - name: "Denos Glass-jaw"
+    description: "One of the two ketarks who command the army of Montures, charged with the defence of the capital, and dwelling in the duke's castle."
+  - name: "Adson Strikeward"
+    description: "The second ketark, who answers for the army of the countryside and is forever on the road; a merchant house of his name imports weapons, warhorses and iron for the duchy."
+  - name: "Mekiliter Naar"
+    description: "The most renowned of the four magicians kept at the duke's court, an illusionist taken deep in the Vergili Forest. Like the others he serves as a prisoner, chained in his room by night and walked under guard by day."
   - name: "Gideon Barktongue"
     description: "The anarchist who murdered Duke Mauritz I and was cast into the great chasm that has borne his name ever since."
   - name: "Palina Livillion"
@@ -106,6 +112,28 @@ The land is dotted with villages every few miles, each clustered about its field
 In name, Montures is ruled by **Duke Mauritz VI Bergenswaard**, a young man tall and slender and fond of silk, who has the look of a thinker but little of the substance, and who passes his weeks in feasting. In truth he is a marionette, and the strings are pulled by the **Council**.
 
 The Council was founded long ago as a body of seven advisers to the duke, but it has grown into something far greater and far worse. Its seven members are appointed for life and cannot in practice be removed; they pay no taxes and answer to no one. Over the years the body has hardened into a nest of conservatism, greed and intrigue, and it is the Council, not the duke, that truly governs the realm. Its chairman is **Frithiof Greyhand**, head of the Church of Sbintor, and among its number sit some of the most powerful merchants of Timar.
+
+## The Army
+
+Montures keeps a standing army of some two thousand four hundred men, raised less for conquest than for the defence of the isles against the pirates of Morelis and the raugons, and for the keeping of order at home.
+
+It began small. When Mauritz I sailed out to reclaim the isles he brought five hundred families, and of these only sixty were fighting men, the force growing as the colony grew, fed by mainland rumour of silver and untouched land that drew settlers and even Zorakian colonists across the sea. The paranoid Duke Getzov raised from it an elite of twenty under an ebön, a discreet bodyguard the army still remembers as the phantom battalion, though it did not save him from a violent end. It was Mauritz V who built the army to its present size, and his son Adinovan II who first hired foreign companies to stiffen it.
+
+The chain of command runs from two generals, the **ketarks**, each set over six ebön. An ebön leads four semnor, a semnor five durak, and a durak is a company of twenty men. The two ketarks divide the realm between them: **Denos Glass-jaw** holds the defence of the capital, while **Adson Strikeward** answers for the countryside and is seldom off the road.
+
+The bulk of the army is foot. The regulars serve as the city's guards and, in war, as its infantry; heavier pike-companies are trained to break a charge of horse; and the **empörer** are lightly burdened bowmen who move fast. Above them ride the horse: the light cavalry the Council is fond of loosing on farmers slow to pay their tax, and the **caligea**, elite riders who guard the ketarks in the field and out of it. To these the dukes have added hired blades from across the sea. The **Silverhelms** are eighteen heavily armoured knights out of Kardien with silver-and-black plumes, and the **Orvolo** are two hundred Caddish longbowmen who take their name and their purple plumes from the purple-shell of their home coast.
+
+## The Ban on Magic
+
+In Montures the knowledge of magic and the keeping of magical things are crimes. The law was written in 564 by Mauritz V, less out of any horror of sorcery than to be rid of every magician who would not work for him, and it has thinned the isles of their free mages almost to nothing: most are burned, the rest long fled, and witches are carried to Timar to die at the stake.
+
+A magician who is found out has two roads before him. If he is willing and skilled he may enter the duke's service, where four of them are kept, the best known the illusionist **Mekiliter Naar**, taken deep in the Vergili Forest. But they serve as prisoners, chained in their rooms by night and walked under guard by day, and must master the binding arts of sigil and charge to be of use. The rest go to the fire.
+
+The law is enforced by the **witch-hunters**, perhaps ten in all, who work alone and are shunned even by those they protect, for the man who shields one of the accused is likely to be named next. Each wears an enchanted armband that warns him of magic, of a mage or a charmed thing, within fifty paces, so that few sorcerers can hide from them for long. The Council, for its part, has learned to point a witch-hunter at any troublesome person who happens to stand in its way.
+
+## The Council's Hidden Hands
+
+The Council does not rest on the law alone. It keeps a hidden division of some five-and-twenty assassins for the work that cannot be owned to, the quiet killing, the sabotage, the squeezing of an enemy, each of them living behind an honest-seeming trade, a spirit-distiller or the like. And it reaches into every village through its bailiffs, who ride the country to wring out taxes and debts, lodging free at any great-farmer's table or any inn, and keeping their own hard methods for the man who cannot pay.
 
 ## The Capital Timar
 

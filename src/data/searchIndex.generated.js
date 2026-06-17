@@ -2,9 +2,19 @@
 // Notable card names on country/region pages, for Global Search.
 export const mentionIndex = [
   {
+    "name": "Abel the Magpie",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
     "name": "Abrahim Stenklo",
     "pinId": "hynsolge",
     "page": "Hynsolge"
+  },
+  {
+    "name": "Adson Strikeward",
+    "pinId": "montures",
+    "page": "Montures"
   },
   {
     "name": "Agila Dubbelhand",
@@ -52,6 +62,16 @@ export const mentionIndex = [
     "page": "Ransard"
   },
   {
+    "name": "Arhem",
+    "pinId": "marjura",
+    "page": "Marjura"
+  },
+  {
+    "name": "Arkondor II",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
     "name": "Arno",
     "pinId": "caddo",
     "page": "Caddo"
@@ -77,6 +97,11 @@ export const mentionIndex = [
     "page": "Montures"
   },
   {
+    "name": "Atur Kastelli",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
     "name": "Babor",
     "pinId": "barbia",
     "page": "Barbia"
@@ -90,6 +115,26 @@ export const mentionIndex = [
     "name": "Bey-bergen",
     "pinId": "erebos",
     "page": "Erebos"
+  },
+  {
+    "name": "Beyural",
+    "pinId": "erebos",
+    "page": "Erebos"
+  },
+  {
+    "name": "Bhannavil",
+    "pinId": "marjura",
+    "page": "Marjura"
+  },
+  {
+    "name": "Black roses",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
+    "name": "Bogus",
+    "pinId": "krilloan",
+    "page": "Krilloan"
   },
   {
     "name": "Borkon the Symbolist",
@@ -127,6 +172,11 @@ export const mentionIndex = [
     "page": "Magilre"
   },
   {
+    "name": "Captain Jän the Seafarer",
+    "pinId": "nohstril",
+    "page": "Nohstril"
+  },
+  {
     "name": "Cerevallis",
     "pinId": "cereval",
     "page": "Cereval"
@@ -137,9 +187,39 @@ export const mentionIndex = [
     "page": "Felicien"
   },
   {
+    "name": "Clusta Noba",
+    "pinId": "marjura",
+    "page": "Marjura"
+  },
+  {
+    "name": "Composite Bows",
+    "pinId": "sese-hesuoni",
+    "page": "Sése Hesuóni"
+  },
+  {
+    "name": "Cruri",
+    "pinId": "marjura",
+    "page": "Marjura"
+  },
+  {
     "name": "Cymba",
     "pinId": "trakorien",
     "page": "Trakorien"
+  },
+  {
+    "name": "Dakkilo",
+    "pinId": "erebos",
+    "page": "Erebos"
+  },
+  {
+    "name": "Dartan Plios",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
+    "name": "Denos Glass-jaw",
+    "pinId": "montures",
+    "page": "Montures"
   },
   {
     "name": "Dird Ligamester",
@@ -222,6 +302,11 @@ export const mentionIndex = [
     "page": "Torsheim"
   },
   {
+    "name": "Emperor Kain",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
     "name": "Emperor Yddris",
     "pinId": "barbia",
     "page": "Barbia"
@@ -232,6 +317,11 @@ export const mentionIndex = [
     "page": "Trakorien"
   },
   {
+    "name": "Enlil Talannen",
+    "pinId": "goiana",
+    "page": "Goiana"
+  },
+  {
     "name": "Entorning",
     "pinId": "erebos",
     "page": "Erebos"
@@ -240,6 +330,11 @@ export const mentionIndex = [
     "name": "Ereno",
     "pinId": "caddo",
     "page": "Caddo"
+  },
+  {
+    "name": "Erfedik Långe",
+    "pinId": "nohstril",
+    "page": "Nohstril"
   },
   {
     "name": "Eskel Bearclaw",
@@ -265,6 +360,11 @@ export const mentionIndex = [
     "name": "Fogar",
     "pinId": "magilre",
     "page": "Magilre"
+  },
+  {
+    "name": "Forithos",
+    "pinId": "krilloan",
+    "page": "Krilloan"
   },
   {
     "name": "Fridar",
@@ -302,6 +402,11 @@ export const mentionIndex = [
     "page": "Caddo"
   },
   {
+    "name": "Gertlinn",
+    "pinId": "zorakin",
+    "page": "Zorakin"
+  },
+  {
     "name": "Gideon Barktongue",
     "pinId": "montures",
     "page": "Montures"
@@ -320,6 +425,11 @@ export const mentionIndex = [
     "name": "Goiana",
     "pinId": "kardien",
     "page": "Kardien"
+  },
+  {
+    "name": "Golena",
+    "pinId": "goiana",
+    "page": "Goiana"
   },
   {
     "name": "Gomol Skalle",
@@ -362,6 +472,11 @@ export const mentionIndex = [
     "page": "Klomellien"
   },
   {
+    "name": "Guazzo Arathaso",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
     "name": "Habblar",
     "pinId": "klomellien",
     "page": "Klomellien"
@@ -397,6 +512,21 @@ export const mentionIndex = [
     "page": "Trakorien"
   },
   {
+    "name": "Håschir Steel-eye",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
+    "name": "Hazrab El-Mahzud",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
+    "name": "Helmfrid",
+    "pinId": "kardien",
+    "page": "Kardien"
+  },
+  {
     "name": "Hersch",
     "pinId": "erebos",
     "page": "Erebos"
@@ -410,6 +540,11 @@ export const mentionIndex = [
     "name": "Hiatus Neffro",
     "pinId": "trakorien",
     "page": "Trakorien"
+  },
+  {
+    "name": "Hiskel Trååne",
+    "pinId": "krilloan",
+    "page": "Krilloan"
   },
   {
     "name": "Hjörleif Shield-cleaver",
@@ -430,6 +565,11 @@ export const mentionIndex = [
     "name": "Hylsspjut",
     "pinId": "jorduashur",
     "page": "Jorduashur"
+  },
+  {
+    "name": "Ilef the Weaponsmith",
+    "pinId": "nohstril",
+    "page": "Nohstril"
   },
   {
     "name": "Imaria",
@@ -465,6 +605,11 @@ export const mentionIndex = [
     "name": "Juniz Duolik",
     "pinId": "magilre",
     "page": "Magilre"
+  },
+  {
+    "name": "Kain",
+    "pinId": "krilloan",
+    "page": "Krilloan"
   },
   {
     "name": "Kalameikos",
@@ -537,6 +682,21 @@ export const mentionIndex = [
     "page": "Felicien"
   },
   {
+    "name": "Kiorsham",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
+    "name": "Kitteln",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
+    "name": "Klamorkan Röde",
+    "pinId": "nohstril",
+    "page": "Nohstril"
+  },
+  {
     "name": "Klastobrest Dimvett",
     "pinId": "trakorien",
     "page": "Trakorien"
@@ -552,6 +712,11 @@ export const mentionIndex = [
     "page": "Montures"
   },
   {
+    "name": "Koka",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
     "name": "Korumil Gormowac",
     "pinId": "hynsolge",
     "page": "Hynsolge"
@@ -560,6 +725,16 @@ export const mentionIndex = [
     "name": "Krarr",
     "pinId": "ransard",
     "page": "Ransard"
+  },
+  {
+    "name": "Krau-Ki",
+    "pinId": "marjura",
+    "page": "Marjura"
+  },
+  {
+    "name": "Krillo DiCastran",
+    "pinId": "krilloan",
+    "page": "Krilloan"
   },
   {
     "name": "Krindenland",
@@ -597,6 +772,11 @@ export const mentionIndex = [
     "page": "Montures"
   },
   {
+    "name": "Leatherwork",
+    "pinId": "sese-hesuoni",
+    "page": "Sése Hesuóni"
+  },
+  {
     "name": "Lirvella",
     "pinId": "cereval",
     "page": "Cereval"
@@ -622,6 +802,11 @@ export const mentionIndex = [
     "page": "Trakorien"
   },
   {
+    "name": "Mart and Dunn",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
     "name": "Mauritz I Bergenswaard",
     "pinId": "montures",
     "page": "Montures"
@@ -635,6 +820,41 @@ export const mentionIndex = [
     "name": "Medos",
     "pinId": "barbia",
     "page": "Barbia"
+  },
+  {
+    "name": "Meh-Achladi",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
+    "name": "Meh-Dachaur",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
+    "name": "Meh-Krillghin",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
+    "name": "Meh-Mitzur",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
+    "name": "Meh-Sylfhin",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
+    "name": "Meh-Taupour",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
+    "name": "Mekiliter Naar",
+    "pinId": "montures",
+    "page": "Montures"
   },
   {
     "name": "Memnum Iyi",
@@ -797,14 +1017,34 @@ export const mentionIndex = [
     "page": "Montures"
   },
   {
+    "name": "Ponuvera",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
+    "name": "Prester Larus",
+    "pinId": "nohstril",
+    "page": "Nohstril"
+  },
+  {
     "name": "Queen Karaleia VII",
     "pinId": "montures",
     "page": "Montures"
   },
   {
+    "name": "Quicksilver",
+    "pinId": "marjura",
+    "page": "Marjura"
+  },
+  {
     "name": "Relian Dendorsbane",
     "pinId": "barbia",
     "page": "Barbia"
+  },
+  {
+    "name": "Rhas",
+    "pinId": "krilloan",
+    "page": "Krilloan"
   },
   {
     "name": "Rhys",
@@ -817,9 +1057,24 @@ export const mentionIndex = [
     "page": "Hynsolge"
   },
   {
+    "name": "Sab'hinn Zathago",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
+    "name": "Sab'hinn's love-elixir",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
     "name": "Sabarga",
     "pinId": "trakorien",
     "page": "Trakorien"
+  },
+  {
+    "name": "Sagrin's Colossus",
+    "pinId": "nohstril",
+    "page": "Nohstril"
   },
   {
     "name": "Salamora",
@@ -862,6 +1117,11 @@ export const mentionIndex = [
     "page": "Trakorien"
   },
   {
+    "name": "Shaza Sahivann",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
     "name": "Sidon the Dreaming",
     "pinId": "felicien",
     "page": "Felicien"
@@ -882,9 +1142,29 @@ export const mentionIndex = [
     "page": "Cereval"
   },
   {
+    "name": "Silver-lindens",
+    "pinId": "goiana",
+    "page": "Goiana"
+  },
+  {
     "name": "Siratsia",
     "pinId": "barbia",
     "page": "Barbia"
+  },
+  {
+    "name": "Sister Hadiö Dimion",
+    "pinId": "nohstril",
+    "page": "Nohstril"
+  },
+  {
+    "name": "Solmöllan",
+    "pinId": "nohstril",
+    "page": "Nohstril"
+  },
+  {
+    "name": "St Kleol's Monastery",
+    "pinId": "krilloan",
+    "page": "Krilloan"
   },
   {
     "name": "Stegos",
@@ -895,6 +1175,11 @@ export const mentionIndex = [
     "name": "Stigis",
     "pinId": "torsheim",
     "page": "Torsheim"
+  },
+  {
+    "name": "Sulphur",
+    "pinId": "marjura",
+    "page": "Marjura"
   },
   {
     "name": "Sunstones",
@@ -912,6 +1197,11 @@ export const mentionIndex = [
     "page": "Trakorien"
   },
   {
+    "name": "Tannatopol",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
     "name": "Tarad",
     "pinId": "barbia",
     "page": "Barbia"
@@ -920,6 +1210,11 @@ export const mentionIndex = [
     "name": "Tarassusravinen",
     "pinId": "cereval",
     "page": "Cereval"
+  },
+  {
+    "name": "Targero",
+    "pinId": "erebos",
+    "page": "Erebos"
   },
   {
     "name": "Tarkens Krök",
@@ -935,6 +1230,16 @@ export const mentionIndex = [
     "name": "Teldoric",
     "pinId": "ransard",
     "page": "Ransard"
+  },
+  {
+    "name": "Telidor",
+    "pinId": "goiana",
+    "page": "Goiana"
+  },
+  {
+    "name": "Teodoros Destanior",
+    "pinId": "krilloan",
+    "page": "Krilloan"
   },
   {
     "name": "The 20 judges",
@@ -962,6 +1267,11 @@ export const mentionIndex = [
     "page": "Trakorien"
   },
   {
+    "name": "The Cracked Wine-Jug",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
     "name": "The Crystal Pillar",
     "pinId": "barbia",
     "page": "Barbia"
@@ -982,9 +1292,19 @@ export const mentionIndex = [
     "page": "Jorduashur"
   },
   {
+    "name": "The Dwarf City",
+    "pinId": "nohstril",
+    "page": "Nohstril"
+  },
+  {
     "name": "The East-Wind Moonstone",
     "pinId": "barbia",
     "page": "Barbia"
+  },
+  {
+    "name": "The Elemental Academy",
+    "pinId": "nohstril",
+    "page": "Nohstril"
   },
   {
     "name": "The floating bazaars",
@@ -1000,6 +1320,26 @@ export const mentionIndex = [
     "name": "The Gideon Chasm",
     "pinId": "montures",
     "page": "Montures"
+  },
+  {
+    "name": "The Golden Cathedral",
+    "pinId": "nohstril",
+    "page": "Nohstril"
+  },
+  {
+    "name": "The Golden Portal",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
+    "name": "The Grass Sea",
+    "pinId": "sese-hesuoni",
+    "page": "Sése Hesuóni"
+  },
+  {
+    "name": "The Great Library",
+    "pinId": "nohstril",
+    "page": "Nohstril"
   },
   {
     "name": "The Great Wall",
@@ -1020,6 +1360,16 @@ export const mentionIndex = [
     "name": "The Holy Kishatet",
     "pinId": "trakorien",
     "page": "Trakorien"
+  },
+  {
+    "name": "The Iron Tower",
+    "pinId": "marjura",
+    "page": "Marjura"
+  },
+  {
+    "name": "The Jungle",
+    "pinId": "krilloan",
+    "page": "Krilloan"
   },
   {
     "name": "The Kardbergen",
@@ -1077,6 +1427,11 @@ export const mentionIndex = [
     "page": "Torsheim"
   },
   {
+    "name": "The Old Stone Road",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
     "name": "The Orc Knoll",
     "pinId": "hynsolge",
     "page": "Hynsolge"
@@ -1085,6 +1440,21 @@ export const mentionIndex = [
     "name": "The Pata",
     "pinId": "trakorien",
     "page": "Trakorien"
+  },
+  {
+    "name": "The Plague-town",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
+    "name": "The Residence of the Five Houses",
+    "pinId": "nohstril",
+    "page": "Nohstril"
+  },
+  {
+    "name": "The Rose and the Cup",
+    "pinId": "krilloan",
+    "page": "Krilloan"
   },
   {
     "name": "The Saryng",
@@ -1100,6 +1470,11 @@ export const mentionIndex = [
     "name": "The Staff of Mokylider",
     "pinId": "montures",
     "page": "Montures"
+  },
+  {
+    "name": "The Sulphur Swamps",
+    "pinId": "marjura",
+    "page": "Marjura"
   },
   {
     "name": "the Sval Isles",
@@ -1147,6 +1522,21 @@ export const mentionIndex = [
     "page": "Montures"
   },
   {
+    "name": "The vesir",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
+    "name": "The Wagon-forts",
+    "pinId": "sese-hesuoni",
+    "page": "Sése Hesuóni"
+  },
+  {
+    "name": "The Warlock of the Black Tower",
+    "pinId": "zorakin",
+    "page": "Zorakin"
+  },
+  {
     "name": "The Wind Peaks",
     "pinId": "barbia",
     "page": "Barbia"
@@ -1185,6 +1575,11 @@ export const mentionIndex = [
     "name": "Trinsmyra",
     "pinId": "trakorien",
     "page": "Trakorien"
+  },
+  {
+    "name": "Twilight Square",
+    "pinId": "krilloan",
+    "page": "Krilloan"
   },
   {
     "name": "Tyros the Golden",
@@ -1252,6 +1647,11 @@ export const mentionIndex = [
     "page": "Trakorien"
   },
   {
+    "name": "Vlad Kamantur",
+    "pinId": "krilloan",
+    "page": "Krilloan"
+  },
+  {
     "name": "Vlempi Malcus",
     "pinId": "torsheim",
     "page": "Torsheim"
@@ -1260,6 +1660,16 @@ export const mentionIndex = [
     "name": "Volva Sigaswitha",
     "pinId": "torsheim",
     "page": "Torsheim"
+  },
+  {
+    "name": "Yvein of Hevel",
+    "pinId": "kardien",
+    "page": "Kardien"
+  },
+  {
+    "name": "Yvein of Hevel",
+    "pinId": "zorakin",
+    "page": "Zorakin"
   },
   {
     "name": "Zoduda",

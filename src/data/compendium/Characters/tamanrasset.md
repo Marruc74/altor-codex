@@ -13,3 +13,7 @@ He wandered west to Kandra in Berendien, crept into the magicians' house and sto
 ## The Coup
 
 At last he fell in with goblins from the Nidabergen north of Berendien and, working on the whole community with his magic, seized it in a bloodless coup. He rules them now in full, his warriors known far and wide as the skull-crushers for the spiked clubs they bring down on their enemies' heads. He keeps a personal treasury rich in silver and gems, for the settlement sits on a fine lode, and a small store of magical items besides. Selfish and given to cruelty, careful of his own skin yet trusting his magic utterly, he is known by his thin black hair bound in a knot, his wide and evil smile, and the black silk robe with a silver pentagram on the back, a rat's skull hanging at his breast.
+
+## His Book
+
+He set down the necromancy of his people in a spellbook of his own, of which two copies were made. One he keeps; the other went out into the world long ago in the hands of a disciple who took his lessons and vanished, and has not been seen since. It is a slim thing, holding perhaps ten workings, but it is one of the few accounts of goblin death-magic anywhere, and worth a great deal to anyone who could read it.

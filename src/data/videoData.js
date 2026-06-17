@@ -591,6 +591,7 @@ const EXTRA_LORE = [
   { group: "Factions", name: "Ordo Nova" },
   { group: "Factions", name: "House Festglade" },
   { group: "Factions", name: "The Brotherhood of the Eternally Shining Star" },
+  { group: "Factions", name: "The Brotherhood of the Red Fish" },
   { group: "Religions", name: "The Oktagon" },
   { group: "Religions", name: "Kabrinzi" },
   { group: "Religions", name: "Sbintor" },
@@ -720,6 +721,8 @@ const EXTRA_CHARACTERS = [
   { group: null, name: "Karaleia" },
   { group: null, name: "The Hunter" },
   { group: null, name: "Arn Dunkelbrink" },
+  { group: null, name: "Kenvadsin Lao'Geraftjan" },
+  { group: null, name: "Naurudun" },
 ].map((p, i) => ({
   id: `x-character-${i}`,
   title: `Characters: ${p.name}`,
