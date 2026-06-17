@@ -565,6 +565,7 @@ const EXTRA_CREATURES = [
   { group: "Jih-Pun", name: "Shishi" },
   { group: "Jih-Pun", name: "Shura" },
   { group: "Jih-Pun", name: "Tako" },
+  { group: "Jih-Pun", name: "Oni" },
 ].map((p, i) => ({
   id: `x-creature-${i}`,
   title: `Creatures ${p.group}: ${p.name}`,
@@ -742,6 +743,7 @@ const EXTRA_CHARACTERS = [
   { group: null, name: "Arn Dunkelbrink" },
   { group: null, name: "Kenvadsin Lao'Geraftjan" },
   { group: null, name: "Naurudun" },
+  { group: null, name: "Ozuno" },
 ].map((p, i) => ({
   id: `x-character-${i}`,
   title: `Characters: ${p.name}`,

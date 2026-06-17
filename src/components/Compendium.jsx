@@ -225,6 +225,9 @@ const RELATED_BY_SLUG = {
   // The two human peoples of Jih-pun: the islanders and the natives they displaced.
   "jih-mono": ["jih-pun", "ainu"],
   "ainu": ["jih-pun", "jih-mono"],
+  // The oni of Jih-pun and the oni-prince who schemes from the Fire-Peak.
+  "oni": ["jih-pun", "ozuno", "shutendoji"],
+  "ozuno": ["oni", "jih-pun"],
   "the-black-water": ["ley-lines-and-magic-dead-lands", "the-bane-storm"],
   "the-bane-storm": ["necromancy", "dark-magic", "the-black-water"],
   "the-city-of-angels": ["death-angel", "the-world-of-altor"],
