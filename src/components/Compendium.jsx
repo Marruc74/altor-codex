@@ -231,6 +231,9 @@ const RELATED_BY_SLUG = {
   // From Sinkadus 19: the deep-dwelling water elves and the dwarves' building art.
   "water-elf": ["sea-elf", "grey-elf", "shark-man"],
   "dwarven-architecture": ["dwarf", "craft-guilds"],
+  // From Sinkadus 18: the dwarves' brewing, and the seven roads to immortality.
+  "drinks-of-ereb": ["dwarf", "trade", "craft-guilds"],
+  "the-exalted": ["the-dragon-masters", "the-gods", "the-world-of-altor"],
   "the-black-water": ["ley-lines-and-magic-dead-lands", "the-bane-storm"],
   "the-bane-storm": ["necromancy", "dark-magic", "the-black-water"],
   "the-city-of-angels": ["death-angel", "the-world-of-altor"],
@@ -301,7 +304,7 @@ const RELATED_BY_SLUG = {
   "trade": ["coins-and-measures", "craft-guilds"],
   "craft-guilds": ["trade", "weapon-academies", "coins-and-measures"],
   // The dragon-masters: their title, their chronicle, and the karkion who began it.
-  "the-dragon-masters": ["cereval", "karkion", "dragon-magic"],
+  "the-dragon-masters": ["cereval", "karkion", "dragon-magic", "the-exalted"],
   // The Cauldron of Bitterness, and the dragon-haunted swordsman Arn.
   "khab-hemi": ["the-crown-jewels", "meh-zadrias-pillar", "the-black-water"],
   "arn-dunkelbrink": ["marjura", "trakorien", "the-oracles-four-eyes"],

@@ -454,6 +454,7 @@ const EXTRA_PEOPLES = [
   { group: "Other Humanoids", name: "Sharg" },
   { group: "Other Humanoids", name: "Wolf-Rider" },
   { group: "Other Humanoids", name: "Woodman" },
+  { group: "Other Humanoids", name: "Alegar" },
   { group: "Beasts", name: "Talking Animals" },
   { group: "Dark Folks", name: "Troll" },
 ].map((p, i) => ({
@@ -603,6 +604,7 @@ const EXTRA_LORE = [
   { group: "Cosmology", name: "Constellations" },
   { group: "Cosmology", name: "Tiamat" },
   { group: "Cosmology", name: "The Rainbow" },
+  { group: "Cosmology", name: "The Exalted" },
   { group: "Factions", name: "Burned Earth Clan" },
   { group: "Factions", name: "Grokashak Oggra" },
   { group: "Factions", name: "Kharynos" },
@@ -651,6 +653,7 @@ const EXTRA_LORE = [
   { group: null, name: "Coins and Measures" },
   { group: null, name: "Craft Guilds" },
   { group: null, name: "Dwarven Architecture" },
+  { group: null, name: "Drinks of Ereb" },
   { group: null, name: "The Catacombs of Nohstril" },
   { group: null, name: "The Dragon-Masters" },
   { group: null, name: "Languages" },
