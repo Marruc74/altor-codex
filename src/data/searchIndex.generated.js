@@ -112,6 +112,11 @@ export const mentionIndex = [
     "page": "Trakorien"
   },
   {
+    "name": "Beikuo and Nankuo",
+    "pinId": "jih-pun",
+    "page": "Jih Pun"
+  },
+  {
     "name": "Bey-bergen",
     "pinId": "erebos",
     "page": "Erebos"
@@ -302,9 +307,19 @@ export const mentionIndex = [
     "page": "Torsheim"
   },
   {
+    "name": "Emperor Hakamoto",
+    "pinId": "jih-pun",
+    "page": "Jih Pun"
+  },
+  {
     "name": "Emperor Kain",
     "pinId": "krilloan",
     "page": "Krilloan"
+  },
+  {
+    "name": "Emperor Takamori",
+    "pinId": "jih-pun",
+    "page": "Jih Pun"
   },
   {
     "name": "Emperor Yddris",
@@ -552,6 +567,11 @@ export const mentionIndex = [
     "page": "Jorduashur"
   },
   {
+    "name": "Hokkodo",
+    "pinId": "jih-pun",
+    "page": "Jih Pun"
+  },
+  {
     "name": "Hugger",
     "pinId": "caddo",
     "page": "Caddo"
@@ -585,6 +605,11 @@ export const mentionIndex = [
     "name": "Isakra",
     "pinId": "trakorien",
     "page": "Trakorien"
+  },
+  {
+    "name": "Ishikawa Goemon",
+    "pinId": "jih-pun",
+    "page": "Jih Pun"
   },
   {
     "name": "Joraga",
@@ -902,9 +927,19 @@ export const mentionIndex = [
     "page": "Magilre"
   },
   {
+    "name": "Murasaki",
+    "pinId": "jih-pun",
+    "page": "Jih Pun"
+  },
+  {
     "name": "Mustansir Omurtaag",
     "pinId": "hynsolge",
     "page": "Hynsolge"
+  },
+  {
+    "name": "Nankyo",
+    "pinId": "jih-pun",
+    "page": "Jih Pun"
   },
   {
     "name": "Narim",
@@ -1122,6 +1157,11 @@ export const mentionIndex = [
     "page": "Krilloan"
   },
   {
+    "name": "Shikyo",
+    "pinId": "jih-pun",
+    "page": "Jih Pun"
+  },
+  {
     "name": "Sidon the Dreaming",
     "pinId": "felicien",
     "page": "Felicien"
@@ -1277,6 +1317,11 @@ export const mentionIndex = [
     "page": "Barbia"
   },
   {
+    "name": "The dai-sho",
+    "pinId": "jih-pun",
+    "page": "Jih Pun"
+  },
+  {
     "name": "The Dead City",
     "pinId": "montures",
     "page": "Montures"
@@ -1315,6 +1360,11 @@ export const mentionIndex = [
     "name": "The Frost Sword",
     "pinId": "torsheim",
     "page": "Torsheim"
+  },
+  {
+    "name": "The Fujimuri Mountains",
+    "pinId": "jih-pun",
+    "page": "Jih Pun"
   },
   {
     "name": "The Gideon Chasm",
@@ -1427,6 +1477,11 @@ export const mentionIndex = [
     "page": "Torsheim"
   },
   {
+    "name": "The o-yoroi",
+    "pinId": "jih-pun",
+    "page": "Jih Pun"
+  },
+  {
     "name": "The Old Stone Road",
     "pinId": "krilloan",
     "page": "Krilloan"
@@ -1460,6 +1515,11 @@ export const mentionIndex = [
     "name": "The Saryng",
     "pinId": "trakorien",
     "page": "Trakorien"
+  },
+  {
+    "name": "The Shogun",
+    "pinId": "jih-pun",
+    "page": "Jih Pun"
   },
   {
     "name": "The sorcerer of the Black Tower",
@@ -1575,6 +1635,11 @@ export const mentionIndex = [
     "name": "Trinsmyra",
     "pinId": "trakorien",
     "page": "Trakorien"
+  },
+  {
+    "name": "Tsun-kuo, the Middle Kingdom",
+    "pinId": "jih-pun",
+    "page": "Jih Pun"
   },
   {
     "name": "Twilight Square",
