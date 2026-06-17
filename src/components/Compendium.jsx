@@ -194,8 +194,16 @@ const RELATED_BY_SLUG = {
   "animism": ["elemental", "mentalism"],
   "elemental": ["animism", "mentalism"],
   "mentalism": ["animism", "elemental", "necromancy"],
-  "necromancy": ["mentalism", "dark-magic"],
+  "necromancy": ["mentalism", "dark-magic", "familiars", "tamanrasset", "kenvadsin-laogeraftjan"],
   "dark-magic": ["necromancy"],
+  // The necromancers drawn from the Necromancy archive feature: the goblin
+  // book-thief and the mild interpreter who hides his claws.
+  "tamanrasset": ["necromancy", "kenvadsin-laogeraftjan"],
+  "kenvadsin-laogeraftjan": ["necromancy", "erebos", "tamanrasset", "familiars"],
+  // The Brotherhood of the Red Fish and its worked example, the thief whose
+  // botched job opens The Stolen Elephant.
+  "the-brotherhood-of-the-red-fish": ["naurudun", "hynsolge", "demonology"],
+  "naurudun": ["the-brotherhood-of-the-red-fish", "hynsolge"],
   "the-black-water": ["ley-lines-and-magic-dead-lands", "the-bane-storm"],
   "the-bane-storm": ["necromancy", "dark-magic", "the-black-water"],
   "the-city-of-angels": ["death-angel", "the-world-of-altor"],
@@ -1010,7 +1018,6 @@ export default function Compendium({
         (v) =>
           v.section !== "countries" &&
           v.section !== "episodes" &&
-          v.section !== "characters" &&
           (v.name.toLowerCase().includes(q) ||
           (v.group && v.group.toLowerCase().includes(q)) ||
           SECTION_LABEL[v.section]?.toLowerCase().includes(q))
@@ -1250,12 +1257,12 @@ export default function Compendium({
                 );
               })()}
 
-              {/* Other entry sections — skip geography/countries/episodes/characters */}
+              {/* Other entry sections — skip geography/countries/episodes (those
+                  have their own treatment above or play as videos). */}
               {SECTIONS.filter((s) =>
                 s.id !== "geography" &&
                 s.id !== "countries" &&
-                s.id !== "episodes" &&
-                s.id !== "characters"
+                s.id !== "episodes"
               ).map((section) => {
                 const groups = videosBySection[section.id] || [];
                 const total = groups.reduce((n, g) => n + g.videos.length, 0);
