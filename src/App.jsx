@@ -162,6 +162,10 @@ export default function App() {
     setParam("adventure", id);
   }, []);
 
+  // Bumped on main-menu navigation to remount the Compendium, which otherwise
+  // keeps its open entry (?ce) in internal state across a query-param reset.
+  const [compendiumKey, setCompendiumKey] = useState(0);
+
   // From global search: jump to the Compendium and open the adventure
   const handleGlobalAdventureSelect = useCallback((id) => {
     setSelectedCountry(null);
@@ -198,9 +202,33 @@ export default function App() {
     }, 150);
   }, [navigate]);
 
+  // From a Chronicles card: open the Compendium page that shares its subject.
+  // Dispatches on the resolved page kind to the matching deep-link handler.
+  const handleChroniclePageOpen = useCallback((target) => {
+    if (!target) return;
+    if (target.kind === "country")        handleGlobalCountryOpen(target.id);
+    else if (target.kind === "adventure") handleGlobalAdventureSelect(target.id);
+    else if (target.kind === "entry")     handleGlobalCompendiumEntry(target.id);
+  }, [handleGlobalCountryOpen, handleGlobalAdventureSelect, handleGlobalCompendiumEntry]);
+
+  // Main-menu navigation (nav links + brand): start the destination page fresh.
+  // Drop any deep-link query params (?entry, ?pin, ?country, ?adventure, ?ce) and
+  // the selections they drove, so a menu click never lands on a filtered or
+  // pre-opened view.
+  const handleMenuNavigate = useCallback((id) => {
+    setSelectedLocation(null);
+    setSelectedCountry(null);
+    setSelectedAdventure(null);
+    setCompendiumKey((k) => k + 1);
+    const url = new URL(window.location);
+    url.search = "";
+    history.replaceState(null, "", url);
+    navigate(id);
+  }, [navigate]);
+
   return (
     <div className="app">
-      <Navbar activePage={activePage} onNavigate={navigate} onSearchOpen={() => setSearchOpen(true)} />
+      <Navbar activePage={activePage} onNavigate={handleMenuNavigate} onSearchOpen={() => setSearchOpen(true)} />
 
       {/* Hero — shown only on home */}
       {activePage === null && (
@@ -340,7 +368,7 @@ export default function App() {
       {activePage === "chronicles" && (
         <div className="page">
           <Suspense fallback={<div className="page" />}>
-            <MediaSection />
+            <MediaSection onOpenPage={handleChroniclePageOpen} />
           </Suspense>
         </div>
       )}
@@ -350,6 +378,7 @@ export default function App() {
         <div className="page">
           <Suspense fallback={<div className="page" />}>
             <Compendium
+              key={compendiumKey}
               selectedCountry={selectedCountry}
               onCountrySelect={handleCountrySelect}
               selectedAdventure={selectedAdventure}

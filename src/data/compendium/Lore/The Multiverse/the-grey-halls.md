@@ -5,7 +5,7 @@ Between the walled worlds of the Multiverse lies a country that belongs to none 
 ## Overview
 
 - **What it is:** The astral plane, a timeless grey country touching every world
-- **What enters it:** Not the body but the astral form — a grey, colourless mirror of the traveller
+- **What enters it:** Not the body but the astral form - a grey, colourless mirror of the traveller
 - **Its gates:** Each closed portal appears as a locked and rune-graven iron gate, beside a stone bearing the rune of the world it opens upon
 - **Its danger:** To lose one's way is to forget one's own body, perhaps forever
 - **Its dwellers:** Lost mages, demons and wanderers, ready to help or to prey

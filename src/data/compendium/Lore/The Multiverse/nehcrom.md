@@ -6,7 +6,7 @@ Nehcrom, called the Horned One, is the outermost of the three great Guardians of
 
 - **Title:** The Horned One; outermost Guardian of Demonicum
 - **Domain:** Violence, plunder, death and war
-- **Realm:** Caboon — the black cliff Khla, built into an endless Black Fortress
+- **Realm:** Caboon - the black cliff Khla, built into an endless Black Fortress
 - **Sworn enemy:** Bemoth, the Prince of Beasts, with whom he has warred for ages
 - **Worshipped by:** The dark folk above all; his servants are warriors, assassins and executioners
 - **Symbol:** A horned skull, black upon red

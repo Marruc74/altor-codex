@@ -6,7 +6,7 @@ Caliban, the Eternal Wind, is the third of the great Guardians of Demonicum, and
 
 - **Title:** The Eternal Wind; the third Guardian of Demonicum
 - **Domain:** Madness, delirium and the sicknesses of the mind
-- **Realm:** Calibandium, and the fortress Methucalem — endless halls of festival and folly
+- **Realm:** Calibandium, and the fortress Methucalem - endless halls of festival and folly
 - **Marked by:** Having no horns at all, alone among the great demons
 - **Enemies:** Recurring war with Nehcrom; he avoids Bemoth, whose beasts shrug off madness
 - **Worshipped by:** Lustful and weak-willed mortals, decadent nobles; cults in nearly every human land

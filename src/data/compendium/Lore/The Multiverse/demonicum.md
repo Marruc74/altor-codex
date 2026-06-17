@@ -1,6 +1,6 @@
 # Demonicum
 
-At the very brink of creation, where the ordered worlds give way to raw Chaos, lies the ring of frontier realms called Demonicum. Here the higher powers set their fiercest creations to stand guard — the demons — and here, on the outermost wall of the Multiverse, a war without end is fought against the dark. To the people of Altor a demon is a thing of pure evil, and so it seems; yet in truth the demons were made to be the shield of all the worlds behind them.
+At the very brink of creation, where the ordered worlds give way to raw Chaos, lies the ring of frontier realms called Demonicum. Here the higher powers set their fiercest creations to stand guard - the demons - and here, on the outermost wall of the Multiverse, a war without end is fought against the dark. To the people of Altor a demon is a thing of pure evil, and so it seems; yet in truth the demons were made to be the shield of all the worlds behind them.
 
 ## Overview
 
@@ -8,7 +8,7 @@ At the very brink of creation, where the ordered worlds give way to raw Chaos, l
 - **Its purpose:** A living wall set by the higher powers to hold back Chaos
 - **Its demons:** Aggressive, amoral and faithless by nature, ever hungering for power
 - **Why walled in:** Lest the demons, grown mighty, turn inward and overthrow their own makers
-- **Its great lords:** The three Guardians — Nehcrom, Bemoth and Caliban
+- **Its great lords:** The three Guardians - Nehcrom, Bemoth and Caliban
 - **Reached only by:** Summoning, or by a mage who walks the grey path
 
 ## The Nature of Demons

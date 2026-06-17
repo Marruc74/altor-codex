@@ -1,5 +1,7 @@
 ---
 title: Horrors of the Deep
+series: "The Caverns of Nordsal"
+seriesPart: 1
 tagline: "No caravan has reached the city in a month, and the dead are walking the trade road."
 summary: Hired for grim, ill-paid work on the frozen frontier, hard-luck adventurers are lured by rumor of dwarven gold into a sacked mine - and down into a lightless underworld where an undead baron is building an army of the dead.
 videoIds: []

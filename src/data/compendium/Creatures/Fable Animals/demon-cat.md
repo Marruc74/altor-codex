@@ -10,7 +10,7 @@ Demon-cats are like immense cats with dense, dull, coal-black fur and many sharp
 
 ## Behaviour
 
-The demon-cat is dreadfully territorial. It kills everything that trespasses on its ground, but happily it very rarely leaves that ground. It is active only by night, prowling its domain to slay all that comes near, and by day it lies asleep in its cave deep in the forest.
+The demon-cat is cunning, malicious and dreadfully territorial. It kills everything that trespasses on its ground, but happily it very rarely leaves that ground. It is active only by night, prowling its domain to slay all that comes near, and by day it lies asleep in its cave deep in the forest.
 
 ## Abilities
 

@@ -41,6 +41,7 @@ export const entryImages = {
   "demon-cat": "/compendium/Creatures/Fable Animals/demon-cat.jpg",
   "eye-beast": "/compendium/Creatures/Fable Animals/eye-beast.jpg",
   "flying-lizard": "/compendium/Creatures/Fable Animals/flying-lizard.jpg",
+  "forgyor": "/compendium/Creatures/Fable Animals/forgyor.jpg",
   "gargoyle": "/compendium/Creatures/Fable Animals/gargoyle.jpg",
   "ghertum": "/compendium/Creatures/Fable Animals/ghertum.jpg",
   "giant-amoeba": "/compendium/Creatures/Fable Animals/giant-amoeba.jpg",

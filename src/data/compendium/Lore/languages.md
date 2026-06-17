@@ -16,7 +16,7 @@ In Caddo the people speak Dalkish, a tongue song-like and flowing, beautiful to 
 
 ## The Tongues of Dwarves and Elves
 
-The dwarves are a people of many tongues, divided as their many holds are divided, yet over time they have raised a common dwarven speech called gryndur, by which the scattered clans may understand one another. The elves, by contrast, speak with a single voice. Their language, Satenu, knows no dialects at all - soft and rich in vowels, it is spoken the same by every elf beneath the sky, an unbroken speech as ancient and unchanging as the elven people themselves.
+The dwarves are a people of many tongues, divided as their many holds are divided, yet over time they have raised a common dwarven speech called gryndur, by which the scattered clans may understand one another. It was first the speech of the folk of the Grynner Mountains, who, driven from their homes, spread across Ereb as travelling merchants and carried their tongue everywhere they went, until it served as the dwarves' shared speech. The elves, by contrast, speak with a single voice. Their language, Satenu, was made by Tevatenu the Earth Mother herself, and knows no dialects at all - soft and rich in vowels, it is spoken the same by every elf beneath the sky, an unbroken speech as ancient and unchanging as the elven people themselves.
 
 ## The Dragon Language
 

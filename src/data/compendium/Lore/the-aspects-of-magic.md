@@ -4,10 +4,10 @@ Every working of magic leaves an indelible mark upon the soul of the one who wor
 
 ## The Four Aspects
 
-- **Order** — elemental magic, harmonism and voice magic, the arts of pattern and law.
-- **Chaos** — spiritism and demonology, the arts that reach beyond the ordered world.
-- **Life** — animism and necromancy, the arts of the quick and the dead, with witchcraft standing alongside.
-- **Consciousness** — mentalism, illusionism and symbolism, the arts of the mind, all grown from the old dragon magic.
+- **Order** - elemental magic, harmonism and voice magic, the arts of pattern and law.
+- **Chaos** - spiritism and demonology, the arts that reach beyond the ordered world.
+- **Life** - animism and necromancy, the arts of the quick and the dead, with witchcraft standing alongside.
+- **Consciousness** - mentalism, illusionism and symbolism, the arts of the mind, all grown from the old dragon magic.
 
 ## Opposites and Barriers
 

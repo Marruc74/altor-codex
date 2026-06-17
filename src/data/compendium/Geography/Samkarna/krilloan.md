@@ -23,7 +23,9 @@ figures:
   - name: "Hiskel Trååne"
     description: "the master of the thieves' guild"
   - name: "Hazrab El-Mahzud"
-    description: "the gangster who controls the city's drug trade"
+    description: "the gangster who controls the city's drug trade, godfather of the Meh-Phoe quarter and master of Kitteln's Golden Portal"
+  - name: "Mart and Dunn"
+    description: "two battered old adventurers who keep the Cracked Wine-Jug, the rumour-tavern of Kitteln"
   - name: "Abel the Magpie"
     description: "leader of the Slayers, an assassin who keeps to certain limits"
   - name: "Bogus"
@@ -59,6 +61,16 @@ places:
     description: "an abandoned mountain cloister to the north-east, home now only to the mad hermit Ulrik Oddbratt"
   - name: "The Plague-town"
     description: "Mehir Natzack, the walled quarter of the dead, sealed off and guarded by the undead since the plague of 608"
+  - name: "Kitteln"
+    description: "the old thieves' quarter of Meh-Phoe, sunk in a stone hollow and laced with tunnels"
+  - name: "The Golden Portal"
+    description: "an opium den in Kitteln, the seat of the drug-lord Hazrab El-Mahzud"
+  - name: "Twilight Square"
+    description: "Kitteln's one open marketplace, lit only three or four hours a day"
+  - name: "The Cracked Wine-Jug"
+    description: "a rough Kitteln tavern of rumours, kept by two old adventurers"
+  - name: "The Rose and the Cup"
+    description: "a cheap Kitteln tavern with a secret brotherhood's cult in its cellar"
 items:
   - name: "The vesir"
     description: "the coin of Krilloan, struck in copper, silver and gold"
@@ -168,6 +180,12 @@ The speech of Krilloan is a mongrel tongue, forever taking in new words and shed
 ## The Underworld
 
 Crime in Krilloan is as organised as its trade. The thieves' guild, under the master Hiskel Trååne, holds the lesser theft and smuggling of the city. The drug trade answers to the gangster Hazrab El-Mahzud. Murder for hire is bought at the Black Stallion in Meh-Dachaur, where two rival bands keep their trade: the Skulls under Atle the Bonebreaker, and the Slayers under Abel the Magpie, a killer who is said to keep to certain limits. The sewers and the sinking city give all of them their boltholes, and the watch ventures into neither lightly.
+
+## Kitteln
+
+Kitteln is the old thieves' quarter of Meh-Phoe, sunk in a stone hollow that was deepened long ago when the stone for the city wall was cut from it. Once the haunt of the city's burglars, it is now where fortune-seekers and sharpers gather to trade a rumour, a treasure-map, or stolen goods too hot to move anywhere else. Few of its two hundred and fifty people are settled folk, and the watch long since gave up keeping order there. Its grimy houses of stone and timber run as far below the street as above, joined by tunnels that break here and there into the dense, separate sewer-net of Meh-Phoe and drain at last into the old moat, so that a careful traveller can cross half the quarter unseen.
+
+The Golden Portal, an opium den, is the nearest thing Kitteln has to a ruling power: the seat of the gangster Hazrab El-Mahzud and his trade in drugs and slaves. For drink and rumour there is the Cracked Wine-Jug, kept by the old adventurers Mart and Dunn; for a wager, the cockfights of the Bloody Cockerel; and when a point needs making, the bruisers Helbrik and Mundir will break an arm to order. Beneath the Rose and the Cup, a cheap tavern with worse beer, a secret brotherhood keeps its cult.
 
 ## History
 

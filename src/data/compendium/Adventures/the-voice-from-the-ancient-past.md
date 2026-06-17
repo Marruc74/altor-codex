@@ -9,6 +9,8 @@ sections:
     places:
       - name: The Death-Glade
         description: "A grassy forest glade where, four hundred years ago, sir Valland was ambushed and killed. Only here, on the very spot of his death, can the mended staff break his curse."
+        image: /compendium/Adventures/TheVoiceFromTheAncientPast/Wilderness/The Death-Glade.jpg
+        portrait: true
     npcs:
       - name: Sir Valland de Klochard
         description: "A courteous gentleman-wraith bound to his grave-glade. Four centuries ago he hid the royal regalia from a usurper and was murdered and cursed to wander the earth without rest. Weary at last, he longs for the three pieces of the broken staff that binds him, and offers the lost king's treasure to any who will gather them."
@@ -19,13 +21,16 @@ sections:
     items:
       - name: The Three Staff-Pieces
         description: "The broken curse-staff that binds Valland's ghost, scattered across three distant strongholds. Joined again at the death-glade, they free him and leave behind an icy, indestructible staff."
+        image: /compendium/Adventures/TheVoiceFromTheAncientPast/Wilderness/The Three Staff-Pieces.jpg
       - name: The King's Treasure
         description: "Valland's promised reward, buried under a great oak east of Faltrax: a gem-set gold crown and scepter and a heap of gold. The regalia are royal property, perilous to fence in the shadows and worth a knighthood to whoever returns them to the king."
+        image: /compendium/Adventures/TheVoiceFromTheAncientPast/Wilderness/The Kings Treasure.jpg
   - title: El Nhassiv
     description: "A ruined border castle, taken from a noble family a century ago and now a robber-hold of orcs and svartalfs - with one of the staff-pieces hidden in a throne-room no one has touched."
     places:
       - name: Castle El Nhassiv
         description: "A vandalized border castle on a hill at the edge of the mountains, seized from the Zeen family a hundred years ago. Its thirty rooms hold defaced galleries, a toppled chapel, a dungeon of starved skeletons and a guarded treasure cave - and, in an untouched throne-room, a staff-piece its occupiers never knew was there."
+        image: /compendium/Adventures/TheVoiceFromTheAncientPast/El Nhassiv/Castle El Nhassiv.jpg
     npcs:
       - name: Orta
         entry: orc
@@ -48,11 +53,13 @@ sections:
     items:
       - name: Orta's Hoard
         description: "A treasure-sack in the chief's room, guarded by a hidden poison needle and holding coin, a fine ruby, and a healing draught."
+        image: /compendium/Adventures/TheVoiceFromTheAncientPast/El Nhassiv/Ortas Hoard.jpg
   - title: Faltrax
     description: "The harbor town that is the launching-point for Falkon - and the hunting ground of a pirate gang that marks the careless and the visibly rich."
     places:
       - name: Faltrax Harbor
         description: "A bustling harbor of inns, warehouses and homes where ships are hired for the voyage to Falkon, and where Migroun's pirates quietly note which travelers are worth a night's robbery."
+        image: /compendium/Adventures/TheVoiceFromTheAncientPast/Faltrax/Faltrax Harbor.jpg
     npcs:
       - name: Borune Camaar
         description: "The harbor's skilled, overweight warehouse manager, shrewd in trade and wholly blind to his wife's affair."
@@ -69,18 +76,28 @@ sections:
     creatures:
       - name: The Pirate Crew
         description: "Migroun's handful of cutthroats, who swarm out in force when they strike at sea but slip ashore in twos and threes for a robbery on land."
+        image: /compendium/Adventures/TheVoiceFromTheAncientPast/Sea/The Pirate Crew.jpg
+        portrait: false
       - name: Forgyor
+        entry: forgyor
         description: "A silver-scaled, blue-winged predator of the deep that normally hunts alone but gathers in swarms, gliding on enlarged belly-fins. A flock descends on the ship during the crossing to Falkon."
+        portrait: false
       - name: The Green Sea-Monster
         description: "A great green beast glimpsed in the waters off Falkon, amid the wrecks and bones of ships that never made harbor."
+        image: /compendium/Adventures/TheVoiceFromTheAncientPast/Sea/The Green Sea-Monster.jpg
+        portrait: false
     items:
       - name: Migroun's Shortsword
         description: "The pirate captain's enchanted shortsword, its keen edge bound by lasting magic."
+        image: /compendium/Adventures/TheVoiceFromTheAncientPast/Sea/Migrouns Shortsword.jpg
+        portrait: true
+        fit: contain
   - title: Falcon Island
     description: "An island fortress where two necromancer brothers hijack passing ships and break their crews - and where a staff-piece lies forgotten in a forbidden vault."
     places:
-      - name: The Castle on Falkon
+      - name: The Castle on Falcon
         description: "The Zeen brothers' island stronghold, where hijacked crews are brainwashed or worse: a hall and kitchen, libraries and a laboratory of poisons, a torture chamber, a magic-sealed tower-prison, and a forbidden treasure vault that holds a staff-piece. One tower stands half-collapsed from a botched demolition spell."
+        image: /compendium/Adventures/TheVoiceFromTheAncientPast/Falcon Island/The Castle on Falcon.jpg
     npcs:
       - name: Fulrach Zeen
         description: "Master of the castle on Falkon, a tall, thin, black-eyed necromancer obsessed with seizing the throne through brainwashed soldiers and the dead. He hijacks passing ships for their crews, and never suspects a staff-piece lies in his own vault."
@@ -96,6 +113,7 @@ sections:
         image: /compendium/Adventures/TheVoiceFromTheAncientPast/Falcon Island/Karish Nerek.jpg
       - name: Belgandar Seline
         description: "A kindly old magician held in the castle's magic-sealed tower-top, a faithful friend to whoever frees him. Robbed of his staff, he can work no magic while his spellbook lies lost among the shelves of the castle library."
+        image: /compendium/Adventures/TheVoiceFromTheAncientPast/Falcon Island/Belgandar Seline.jpg
     creatures:
       - name: The Graveyard Zombies
         entry: zombie
@@ -103,24 +121,33 @@ sections:
     items:
       - name: The Executioner's Axe
         description: "Alghaan's enchanted axe, the prized instrument of the torturer's grim trade."
+        image: /compendium/Adventures/TheVoiceFromTheAncientPast/Falcon Island/The Executioners Axe.jpg
+        fit: contain
       - name: The Magic Library
         description: "Shelves of study-tomes in the Zeen brothers' library that sharpen a reader's craft - and, among them, Belgandar Seline's stolen spellbook."
+        image: /compendium/Adventures/TheVoiceFromTheAncientPast/Falcon Island/The Magic Library.jpg
   - title: The Kings' Grave-Temple
     description: "A walled necropolis of royal mausoleums east of Faltrax, where grave-curses guard the bronze-coffined dead - and the usurper who began the whole tragedy lies with the last staff-piece through his heart."
     places:
       - name: The Grave-Temple
         description: "Three gold-adorned mausoleums - the old, the half-old and the new - ringed by a spiked wall and entered by a single rusted grate, lined with statued bronze coffins and graven curses. Some chests are deadly to open, loosing a roaring spirit or a killing gas."
+        image: /compendium/Adventures/TheVoiceFromTheAncientPast/Grave-Temple/The Grave-Temple.jpg
+        portrait: true
     npcs:
       - name: King Aldorg Zeen
         entry: mummy
         description: "The usurper who four hundred years ago murdered Valland and cursed his soul to wander. His strangely preserved body lies in the newest mausoleum with a wooden staff driven through its heart and no trace of blood - and that staff is the third and last piece."
+        image: /compendium/Adventures/TheVoiceFromTheAncientPast/Grave-Temple/King Aldorg Zeen.jpg
     creatures:
       - name: The Roused Ghost
         entry: ghost
         description: "A roaring spirit loosed from one of the oldest mausoleum's chests upon the careless who disturb it."
     items:
-      - name: The Grave-Temple Blades
-        description: "Enchanted weapons sealed among the royal dead - a silver dagger, and a fearsome broadsword whose every stroke drains the wielder's own spirit."
+      - name: The Grave-Temple Broadsword
+        description: "A fearsome enchanted broadsword sealed away among the royal dead, hungry enough that every blow it lands feeds on the spirit of the one who swings it."
+        image: /compendium/Adventures/TheVoiceFromTheAncientPast/Grave-Temple/The Grave-Temple Broadsword.jpg
+        portrait: true
+        fit: contain
 ---
 
 ## Plot

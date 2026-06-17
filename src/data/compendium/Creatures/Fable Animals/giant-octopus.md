@@ -8,7 +8,7 @@ A pale, rubbery body trailing eight long, sucker-lined tentacles, with a hard, h
 
 ## Behaviour
 
-It is an ambush hunter of the deep, lying still among reefs, drowned ruins and the dark of the sea-floor until prey passes near. It seizes fish, seals and the unlucky crews of small craft alike, dragging them down to its beak, and it will haunt a single rich water for years. Such a beast is known to plague the pearl-divers of Zoduda in the Montures isles, to lair in the drowned lagoon beneath the Dead City of the Gideon Chasm, and and to trouble the warm seas about Trakorien.
+It is an ambush hunter of the deep, lying still among reefs, drowned ruins and the dark of the sea-floor until prey passes near. It seizes fish, seals and the unlucky crews of small craft alike, dragging them down to its beak, and it will haunt a single rich water for years. Such a beast is known to plague the pearl-divers of Zoduda in the Montures isles, to lair in the drowned lagoon beneath the Dead City of the Gideon Chasm, and to trouble the warm seas about Trakorien.
 
 ## Abilities
 

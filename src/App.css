@@ -1226,6 +1226,63 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
+/* Adventure group header: a clickable title row that opens the adventure. */
+.chronicles-group__hd {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  padding: 0 0 0.5rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color var(--transition);
+}
+
+.chronicles-group__hd:hover {
+  border-bottom-color: var(--gold-dim);
+}
+
+/* Bare title variant used inside the group header (the row owns the border). */
+.chronicles-sub__title--bare {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+  color: var(--gold-light);
+}
+
+.chronicles-group__cta {
+  flex-shrink: 0;
+  font-family: var(--font-heading);
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  transition: color var(--transition);
+}
+
+.chronicles-group__hd:hover .chronicles-group__cta {
+  color: var(--gold);
+}
+
+/* A card-type block (People / Places / Locations / Items) within a group. */
+.chronicles-type + .chronicles-type {
+  margin-top: 2rem;
+}
+
+.chronicles-type__title {
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
 .media-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -1368,6 +1425,22 @@ body {
   font-size: 0.95rem;
   line-height: 1.55;
   color: var(--text-muted);
+}
+
+/* A lore card that links to its Compendium page (Places / Locations). */
+.lore-card--link {
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.lore-card--link:hover {
+  border-left-color: var(--gold);
+}
+
+.lore-card--link:hover .lore-card__cta {
+  color: var(--gold);
 }
 
 /* ─── Location Panel ─────────────────────────────────────── */
@@ -2640,6 +2713,13 @@ body {
   transition: transform 0.3s ease;
 }
 
+/* Full-frame art (e.g. a weapon shot that fills the frame corner to corner)
+   that would lose its ends to a cover-crop: show the whole image, letterboxed
+   against the card's raised background instead. */
+.codex-card--fit .codex-card__image {
+  object-fit: contain;
+}
+
 .codex-card:hover .codex-card__image {
   transform: scale(1.03);
 }
@@ -3083,8 +3163,7 @@ body {
 
 .lightbox__content {
   position: relative;
-  max-width: min(90vw, 700px);
-  width: 100%;
+  max-width: 96vw;
   display: flex;
   flex-direction: column;
 }
@@ -3108,8 +3187,9 @@ body {
 
 .lightbox__track {
   display: grid;
-  grid-template-columns: 2.5rem 1fr 2.5rem;
+  grid-template-columns: 2.5rem auto 2.5rem;
   align-items: center;
+  justify-content: center;
 }
 
 .lightbox__arrow {
@@ -3138,9 +3218,11 @@ body {
 }
 
 .lightbox__image {
-  width: 100%;
   display: block;
-  max-height: 75vh;
+  width: auto;
+  height: auto;
+  max-width: min(84vw, 1100px);
+  max-height: 84vh;
   object-fit: contain;
 }
 

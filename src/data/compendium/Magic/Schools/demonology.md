@@ -1,6 +1,6 @@
 # Demonology
 
-Demonology is the art of trafficking with the demons of Demonicum — of calling them across the dimension walls, binding them to one's will, and driving them back whence they came. It is the most perilous of all the magical disciplines, for its every working deals with a being that hates the magician and seeks his ruin, and it is feared and hunted across nearly every land of Ereb. Yet for all that, there has never been a shortage of those willing to pay its price.
+Demonology is the art of trafficking with the demons of Demonicum - of calling them across the dimension walls, binding them to one's will, and driving them back whence they came. It is the most perilous of all the magical disciplines, for its every working deals with a being that hates the magician and seeks his ruin, and it is feared and hunted across nearly every land of Ereb. Yet for all that, there has never been a shortage of those willing to pay its price.
 
 ## Overview
 

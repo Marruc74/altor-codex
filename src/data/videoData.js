@@ -433,9 +433,17 @@ export const videosBySection = Object.fromEntries(
 // the entry path; EntryDetail hides the "Watch" button when an entry has noVideo.
 const EXTRA_PEOPLES = [
   { group: "Animal Humanoids", name: "Brown Duck" },
+  { group: "Animal Humanoids", name: "Shark-Man" },
   { group: "Animal Humanoids", name: "White Duck" },
+  { group: "Animal Humanoids", name: "Hengeyokai" },
+  { group: "Animal Humanoids", name: "Kojin" },
+  { group: "Dark Folks", name: "Shikome" },
   { group: "Elves", name: "Wood Elf" },
+  { group: "Elves", name: "Water Elf" },
   { group: "Humans", name: "Pamperna" },
+  { group: "Humans", name: "Jih-mono" },
+  { group: "Humans", name: "Ainu" },
+  { group: "Other Humanoids", name: "Dyler" },
   { group: "Other Humanoids", name: "Half-elf" },
   { group: "Other Humanoids", name: "Half-orc" },
   { group: "Other Humanoids", name: "Halfling" },
@@ -443,7 +451,11 @@ const EXTRA_PEOPLES = [
   { group: "Other Humanoids", name: "Lindskiarn" },
   { group: "Other Humanoids", name: "Magir" },
   { group: "Other Humanoids", name: "Raggman" },
+  { group: "Other Humanoids", name: "Sharg" },
+  { group: "Other Humanoids", name: "Wolf-Rider" },
   { group: "Other Humanoids", name: "Woodman" },
+  { group: "Beasts", name: "Talking Animals" },
+  { group: "Dark Folks", name: "Troll" },
 ].map((p, i) => ({
   id: `x-people-${i}`,
   title: `Peoples ${p.group}: ${p.name}`,
@@ -481,6 +493,8 @@ const EXTRA_CREATURES = [
   { group: "Demons", name: "Greater Demon" },
   { group: "Demons", name: "Demon Noble" },
   { group: "Demons", name: "Demon Prince" },
+  { group: "Demons", name: "Urbaug the Insane" },
+  { group: "Demons", name: "Echram Schroedel" },
   { group: "Chaos Warriors", name: "Chaos Cardinal" },
   { group: "Chaos Warriors", name: "Chaos Knight" },
   { group: "Chaos Warriors", name: "Chaos Corporal" },
@@ -506,11 +520,24 @@ const EXTRA_CREATURES = [
   { group: "Magical Creatures", name: "Guludur Abomination" },
   { group: "Magical Creatures", name: "Guardian" },
   { group: "Magical Creatures", name: "Dragon Warrior" },
+  { group: "Magical Creatures", name: "Warden" },
+  { group: "Magical Undead", name: "Imariot" },
   { group: "Fable Animals", name: "Drinnen" },
+  { group: "Fable Animals", name: "Forgyor" },
   { group: "Fable Animals", name: "Ghertûm" },
+  { group: "Fable Animals", name: "Brook Bear" },
+  { group: "Fable Animals", name: "Elefantine" },
+  { group: "Fable Animals", name: "Elephant Bird" },
+  { group: "Fable Animals", name: "Harebir" },
   { group: "Fable Animals", name: "Giant Octopus" },
   { group: "Fable Animals", name: "Insectoid" },
+  { group: "Fable Animals", name: "Rock Lizard" },
+  { group: "Fable Animals", name: "Shranck" },
+  { group: "Fable Animals", name: "Silver Shark" },
+  { group: "Fable Animals", name: "Ziplodit" },
+  { group: "Fable Animals", name: "Dwarf Horse" },
   { group: "Plants", name: "Tree Master" },
+  { group: "Plants", name: "Nargur Giant Oak" },
   { group: "Shapeshifters", name: "Shapeshifter" },
   { group: "Demons of Demonicum", name: "Azoth" },
   { group: "Demons of Demonicum", name: "Karnack" },
@@ -521,6 +548,25 @@ const EXTRA_CREATURES = [
   { group: "Demons of Demonicum", name: "Fire Demon" },
   { group: "Demons of Demonicum", name: "Ice Demon" },
   { group: "Demons of Demonicum", name: "Knowledge Demon" },
+  { group: "Heralds of the Apocalypse", name: "Stilakor" },
+  { group: "Heralds of the Apocalypse", name: "Evolakasa" },
+  { group: "Heralds of the Apocalypse", name: "Aryxamast" },
+  { group: "Heralds of the Apocalypse", name: "Kalembri" },
+  { group: "Jih-Pun", name: "Tatsu" },
+  { group: "Jih-Pun", name: "Kappa" },
+  { group: "Jih-Pun", name: "Rokurokubi" },
+  { group: "Jih-Pun", name: "Shutendoji" },
+  { group: "Jih-Pun", name: "Kumo" },
+  { group: "Jih-Pun", name: "Uba" },
+  { group: "Jih-Pun", name: "Orochi" },
+  { group: "Jih-Pun", name: "Gaki" },
+  { group: "Jih-Pun", name: "Mi" },
+  { group: "Jih-Pun", name: "Mukade" },
+  { group: "Jih-Pun", name: "Nymph" },
+  { group: "Jih-Pun", name: "Shishi" },
+  { group: "Jih-Pun", name: "Shura" },
+  { group: "Jih-Pun", name: "Tako" },
+  { group: "Jih-Pun", name: "Oni" },
 ].map((p, i) => ({
   id: `x-creature-${i}`,
   title: `Creatures ${p.group}: ${p.name}`,
@@ -555,34 +601,65 @@ const EXTRA_LORE = [
   { group: "Cosmology", name: "The Gods" },
   { group: "Cosmology", name: "The Heavenly Bodies" },
   { group: "Cosmology", name: "Constellations" },
+  { group: "Cosmology", name: "Tiamat" },
+  { group: "Cosmology", name: "The Rainbow" },
   { group: "Factions", name: "Burned Earth Clan" },
   { group: "Factions", name: "Grokashak Oggra" },
   { group: "Factions", name: "Kharynos" },
+  { group: "Factions", name: "Sybiall" },
   { group: "Factions", name: "The Blood-spattered Feather" },
   { group: "Factions", name: "Ordo Magica" },
+  { group: "Factions", name: "Ordo Nova" },
+  { group: "Factions", name: "House Festglade" },
   { group: "Factions", name: "The Brotherhood of the Eternally Shining Star" },
+  { group: "Factions", name: "The Brotherhood of the Red Fish" },
   { group: "Religions", name: "The Oktagon" },
+  { group: "Religions", name: "Kabrinzi" },
+  { group: "Religions", name: "Sbintor" },
+  { group: "Religions", name: "Mokylider" },
   { group: "Religions", name: "Eledain" },
+  { group: "Religions", name: "Slergolis" },
+  { group: "Religions", name: "Kastyke" },
+  { group: "Religions", name: "Trocuspa" },
+  { group: "Religions", name: "Remuntra" },
+  { group: "Religions", name: "Enki" },
+  { group: "Religions", name: "Anxalis" },
+  { group: "Religions", name: "Marduk" },
+  { group: "Religions", name: "Luvena" },
+  { group: "Religions", name: "Ereshkigal" },
+  { group: "Religions", name: "Valliman and Drigel" },
+  { group: "Religions", name: "Tigwalvan" },
   { group: "Magical Phenomena", name: "The Black Water" },
+  { group: "Magical Phenomena", name: "Meh-Zadria's Pillar" },
+  { group: "Magical Phenomena", name: "The Devil's Palace" },
   { group: "Magical Phenomena", name: "The Bane Storm" },
   { group: "Magical Phenomena", name: "The City of Angels" },
   { group: "Magical Phenomena", name: "Ley Lines and Magic-Dead Lands" },
   { group: "Magical Phenomena", name: "Magic Nodes and Storms" },
+  { group: "Magical Phenomena", name: "Khab-Hemi" },
   { group: "The Multiverse", name: "The Multiverse" },
   { group: "The Multiverse", name: "The Grey Halls" },
   { group: "The Multiverse", name: "Demonicum" },
+  { group: "The Multiverse", name: "Inferno" },
+  { group: "The Multiverse", name: "Dimension Travel" },
   { group: "The Multiverse", name: "Nehcrom" },
   { group: "The Multiverse", name: "Bemoth" },
   { group: "The Multiverse", name: "Caliban" },
   { group: null, name: "Climate" },
   { group: null, name: "The Calendar" },
   { group: null, name: "Trade" },
+  { group: null, name: "Coins and Measures" },
+  { group: null, name: "Craft Guilds" },
+  { group: null, name: "Dwarven Architecture" },
+  { group: null, name: "The Catacombs of Nohstril" },
+  { group: null, name: "The Dragon-Masters" },
   { group: null, name: "Languages" },
   { group: null, name: "Weapon Academies" },
   { group: null, name: "The Underworld Guilds" },
   { group: null, name: "Crime and Punishment" },
   { group: null, name: "Heroes" },
   { group: null, name: "The Aspects of Magic" },
+  { group: null, name: "Magical Symbols" },
   { group: null, name: "The Shaul Deck" },
   { group: null, name: "Familiars" },
 ].map((p, i) => ({
@@ -622,6 +699,16 @@ const EXTRA_MAGIC = [
   { group: "Items", name: "Demonic Artifacts" },
   { group: "Items", name: "Notable Magic Items" },
   { group: "Items", name: "Soul-Bound Weapons" },
+  { group: "Items", name: "The White Staff" },
+  { group: "Items", name: "The Demon Sledge" },
+  { group: "Items", name: "The Queen of the Sea" },
+  { group: "Items", name: "The Hynsolge Weapons" },
+  { group: "Items", name: "The Crown Jewels" },
+  { group: "Items", name: "Neverind's Magic Sack" },
+  { group: "Items", name: "Qhriz" },
+  { group: "Items", name: "The Kabrinzi Artifacts" },
+  { group: "Items", name: "The Staff of Mokylider" },
+  { group: "Items", name: "The Hammer of Eshwan Theard" },
 ].map((p, i) => ({
   id: `x-magic-${i}`,
   title: `Magic: ${p.name}`,
@@ -638,6 +725,74 @@ const EXTRA_MAGIC = [
     if (!grp) { grp = { group: entry.group, videos: [] }; sec.push(grp); }
     grp.videos.push(entry);
   }
+  for (const g of sec) g.videos.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+// Markdown-only Characters with no chronicle video (e.g. notable NPCs drawn
+// from the source material). Same treatment as the other EXTRA pages: they
+// surface in the Characters nav and load their own .md, with the "Watch"
+// button hidden by EntryDetail.
+const EXTRA_CHARACTERS = [
+  { group: null, name: "Baron Piet Steeljaw" },
+  { group: null, name: "Houd Istimam" },
+  { group: null, name: "The Man on the Mountain" },
+  { group: null, name: "Serek the Dark" },
+  { group: null, name: "Tamanrasset" },
+  { group: null, name: "Tara" },
+  { group: null, name: "The Three Wolves" },
+  { group: null, name: "Karaleia" },
+  { group: null, name: "The Hunter" },
+  { group: null, name: "Arn Dunkelbrink" },
+  { group: null, name: "Kenvadsin Lao'Geraftjan" },
+  { group: null, name: "Naurudun" },
+  { group: null, name: "Ozuno" },
+].map((p, i) => ({
+  id: `x-character-${i}`,
+  title: `Characters: ${p.name}`,
+  section: "characters",
+  group: p.group,
+  name: p.name,
+  noVideo: true,
+}));
+
+{
+  const sec = videosBySection.characters ?? (videosBySection.characters = []);
+  for (const entry of EXTRA_CHARACTERS) {
+    let grp = sec.find((g) => g.group === entry.group);
+    if (!grp) { grp = { group: entry.group, videos: [] }; sec.push(grp); }
+    grp.videos.push(entry);
+  }
+  sec.sort((a, b) =>
+    a.group === null ? -1 : b.group === null ? 1 : a.group.localeCompare(b.group)
+  );
+  for (const g of sec) g.videos.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+// Markdown-only Geography pages with no chronicle video and no fixed map pin
+// (e.g. Caranor, the silver elves' drifting flying island). Grouped by
+// continent so they surface under it in the Geography nav, the same way the
+// other EXTRA pages do, with the "Watch" button hidden by EntryDetail.
+const EXTRA_GEO = [
+  { group: "Ereb", name: "Caranor" },
+].map((p, i) => ({
+  id: `x-geo-${i}`,
+  title: `Geography ${p.group}: ${p.name}`,
+  section: "geography",
+  group: p.group,
+  name: p.name,
+  noVideo: true,
+}));
+
+{
+  const sec = videosBySection.geography ?? (videosBySection.geography = []);
+  for (const entry of EXTRA_GEO) {
+    let grp = sec.find((g) => g.group === entry.group);
+    if (!grp) { grp = { group: entry.group, videos: [] }; sec.push(grp); }
+    grp.videos.push(entry);
+  }
+  sec.sort((a, b) =>
+    a.group === null ? -1 : b.group === null ? 1 : a.group.localeCompare(b.group)
+  );
   for (const g of sec) g.videos.sort((a, b) => a.name.localeCompare(b.name));
 }
 

@@ -14,4 +14,8 @@ Silver elves are a hardy folk, tough against the strains of an airborne life and
 
 ## Abilities
 
-Silver elves can freeze a cloud by an effort of will, hardening all the cloud-stuff within thirty metres to the hardness of wood for a week. Their flight lets them fly at a fair speed, though not for very long before they must rest. Like all elves they are immune to disease and do not visibly age.
+Silver elves can freeze a cloud by an effort of will, hardening all the cloud-stuff within thirty metres to the hardness of wood for a week, and with it they shape dwellings and footholds straight out of the clouds. Their flight lets them fly at a fair speed, though not for very long before they must rest. Like all elves they are immune to disease and do not visibly age.
+
+## Religion
+
+The silver elves were made by Tevatenu, whom they know as Mother Earth, and set over the air-sea to guard nature against plunder and abuse. Like all elf-folk they worship her in the open, with no grand temples; each dawn the people gather to sing, dance and make poetry, and three times a year, at the breaking of the leaves, the summer solstice and the autumn equinox, they hold their great festivals, when many travel to the holy flying island of Caranor, which all the scattered tribes acknowledge as their centre. There is no ordered priesthood. Instead the goddess chooses Messengers, who go clad all in green, carry nothing of metal, and live in the manner of monks.

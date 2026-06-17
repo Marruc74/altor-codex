@@ -2,6 +2,10 @@
 
 The guludur abominations are magical creatures from an unknown universe. They live by drinking in magical energy, whether from magical items or from the energy released in the casting of spells. They are dreadfully rare, and there are probably no more than a dozen in all of Ereb Altor.
 
+## Origin
+
+The first to trouble Ereb was loosed by accident. During a commotion at Tricilve's magicians' academy, the magician Eoran Guludur miscast and called the thing through from its own universe, whereupon it set at once about devouring the academy's artifacts. The magicians put a bounty of a thousand gold on its head, to anyone who could catch or kill it, while Eoran himself slipped away to a distant dimension. The abomination has carried his name ever since.
+
 ## Appearance
 
 The abominations are serpent-like creatures between ten and fifteen metres long, with four short legs and a lizard-like, very pointed snout. They are wholly white, and as they run through the air little blue sparks scatter where they set down their paws. Their only sound is a discreet tittering, which in a fight draws out into a loud, delighted peal of laughter.

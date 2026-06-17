@@ -4,7 +4,7 @@ Among the rarest and most coveted arms in Ereb are those into which a living spi
 
 ## The Ensouled Blade
 
-A soul-bound weapon is no dead thing. It has a measure of strength, quickness, wit and will, and it lends these to the hand that wields it — striking harder, parrying faster, sometimes carrying a spell bound within it that the bearer may loose by spending a little of his own spirit. But every such weapon carries the weakness of the thing sealed inside it: a blade housing a fire-spirit fears the cold, one housing a water-spirit fears the flame, and a wise enemy learns which is which.
+A soul-bound weapon is no dead thing. It has a measure of strength, quickness, wit and will, and it lends these to the hand that wields it - striking harder, parrying faster, sometimes carrying a spell bound within it that the bearer may loose by spending a little of his own spirit. But every such weapon carries the weakness of the thing sealed inside it: a blade housing a fire-spirit fears the cold, one housing a water-spirit fears the flame, and a wise enemy learns which is which.
 
 ## Weapons of the Elements
 

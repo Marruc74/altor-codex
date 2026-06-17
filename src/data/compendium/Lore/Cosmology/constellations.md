@@ -16,11 +16,11 @@ The hero Akkillo hunted the dragon Harablos across sky and sea, sailing in his s
 
 ## The Lute
 
-The Lute recalls the magic instrument Alofon, which belonged to the Empress Farimah. With its enchanted music she freed the Emperor Leodorn from the clutches of a giant, charming the brute or breaking its will, and so the lute was honoured with a place in the sky.
+The Lute recalls the magic instrument Alofon, which belonged to the Empress Farimah. With its enchanted music she softened the giant who held the Emperor Leodorn captive in the deepest chambers of the world, so that he could slip free. But Farimah paid for it: when the giant found his prisoner gone he killed her, and only long after did Leodorn atone for her death, returning of his own will to the underworld. The lute was honoured with a place in the sky.
 
 ## Turingwil the Wolf and Vilevin the Rider
 
-Turingwil was the giant wolf, father of all wolves, a beast so great that no blade could pierce its hide. The hero Vilevin slew it not from without but from within, and for this feat both the monstrous wolf and its slayer were set among the stars, hunter and prey side by side.
+Turingwil was the giant wolf, father of all wolves, dogs and hounds, as big as two oxen and proof against any blade beneath his dragon-scaled pelt. His own greed undid him: the cunning Vilevin clad himself in hare-skin and wagered the wolf could not swallow him whole, and when Turingwil gulped him down, Vilevin slew the beast from inside its belly. For this feat both the monstrous wolf and its slayer were set among the stars, hunter and prey side by side.
 
 ## The Staff
 
@@ -28,7 +28,7 @@ The Staff belonged to the archmage Kossel, mightiest of his age. But Kossel grew
 
 ## The Sword, the Demon and Elfhelm the Demon's Bane
 
-In the first days there was no day, only the reign of the Demon of Darkness. The boy Elfhelm took up the sword Yrbad and went against the Demon, and though he was but a child he struck it down. With the Demon slain, the light came forth and the first day dawned. The Sword, the Demon and Elfhelm the Demon's Bane shine together to mark how day itself was won.
+In the first days there was no day, only the reign of the Demon of Darkness. The sword Yrbad that could end him lay locked in a prison of iron and ice where the dark gods had shut it away, and to win it the boy Elfhelm first had to perform five great deeds: to steal the golden strength-belt of the dwarf-king Olavo, to slay the sea-monster Yngarsil, to gather fruit from the immortal garden of the moon-elf queen, to tame the mountain-giant Nidar (whose dwelling became the Nidaberg), and to choose the fairest maiden in all the world. Sword in hand at last, he struck the Demon down, and with it slain the light came forth and the first day dawned. The Sword, the Demon and Elfhelm the Demon's Bane shine together to mark how day itself was won.
 
 ## Ghazil the Dwarf
 
@@ -40,11 +40,11 @@ The barbarians tell the saga of Ilfdanur, who stole the golden helm of the gods.
 
 ## Aruros the Goat
 
-Aruros the Goat belongs to the smith-god Mingar and the hero Horgar-Nir. The myth tells of a wondrous goat forged of six metals, a creature of the smith's art made living, which served the hero in his deeds. The goat was raised to the heavens, gleaming with its many metals among the stars.
+By the old joriska legend the smith-god Mingar long withheld the art of working metals from the folk of Ereb, until the hero Horgar-Nir captured his livestock, the goat Aruros - a creature whose cloven hooves and horns were of six different metals, and which, leaping from peak to peak, left ore-deposits of each metal in the mountains it touched. So the smithing of metals came to Ereb, and the goat was raised to the heavens, gleaming with its many metals among the stars.
 
 ## The Harp
 
-The Harp is Belerofon, the harp god-smithed for Parikila, the mother of birds. From its strings came the first birdsong, and all the singing of birds since flows from that god-made music. The Harp hangs in the sky as the wellspring of every song the birds have ever sung.
+The Harp is Belerofon, the harp god-smithed for Parikila, the mother of birds, who made with it the birds' song so they might have some comfort against the Lord of Darkness. From its strings came the first birdsong, and all the singing of birds since flows from that god-made music. One bird alone has no song: the crow, who at that time was a captive of the Lord of Darkness, and so was never given a voice to sing with.
 
 ## The Sun
 

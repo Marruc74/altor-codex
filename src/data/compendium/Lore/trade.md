@@ -4,7 +4,7 @@ The wealth of Altor moves upon the water. For all the roads that wind between th
 
 ## Overview
 
-The great arteries of trade are the seas, and chief among them the Copper Sea, busiest and kindest of all the world's waters. A crossing of that sea takes a month or more, and it is no small undertaking, for the merchant ventures his goods and his crew against pirates, sudden storms, hidden reefs, and the raiders who haunt the lonely coasts. Yet the rewards are such that the ships put out year upon year, and the harbours of the trading nations are forever crowded with masts. The chief trade metropolises are Gringul in Erebos, Arno in Caddo, Tricilve in Trakorien, Mastika Agga in Barbia, and Sterborg in Kardien.
+The great arteries of trade are the seas, and chief among them the Copper Sea, busiest and kindest of all the world's waters. A crossing of that sea takes a month or more, and it is no small undertaking, for the merchant ventures his goods and his crew against pirates, sudden storms, hidden reefs, and the raiders who haunt the lonely coasts. Yet the rewards are such that the ships put out year upon year, and the harbours of the trading nations are forever crowded with masts. The chief trade metropolises are Gringul in Erebos, Arno in Caddo, Tricilve in Trakorien, Mastika Agga in Barbia, and Sterborg in Kardien - though Sterborg, for all that it sits squarely in the path of nearly every trading ship, never won real mastery of the trade, its harbour being too shallow and too small to hold it.
 
 ## Tricilve, the Heart of Trade
 
@@ -12,7 +12,7 @@ Of all the cities of commerce, none rivals Tricilve in Trakorien. It stands as t
 
 ## Waters That Cannot Be Sailed
 
-Not every sea is open to the trader. The great Golwynda Sea, a vast body of fresh water, is sealed off from the wider world by its own fierce currents and by the thundering falls of Raas Narram, which no ship may pass. Where the water will not carry goods, men must carry them overland, and so the trade of Golwynda is done by portage at the towns that have grown up beside the falls. At places such as Stabul by Raas Narram and Ircront in Nidland, cargoes are unloaded, hauled past the impassable water, and loaded once more upon ships waiting beyond, and the towns of the portage grow fat upon the labour.
+Not every sea is open to the trader. The great Golwynda Sea, a vast body of fresh water lying some two hundred and fifty metres higher than the Copper Sea, is sealed off from the wider world by its own fierce currents and by the thundering falls of Raas Narram, which no ship may pass; the same bar stands between it and the Maseva Bay, where the falls called the Demon Tongue cut the water-road. Where the water will not carry goods, men must carry them overland, and so the trade of Golwynda is done by portage at the towns that have grown up beside the falls. At places such as Stabul by Raas Narram and Ircront in Nidland, cargoes are unloaded, hauled past the impassable water, and loaded once more upon ships waiting beyond, and the towns of the portage grow fat upon the labour.
 
 ## The Pirate Coasts
 

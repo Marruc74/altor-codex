@@ -2,7 +2,11 @@
 
 
 ![Fire Pixie](/compendium/Peoples/Sylvans/fire-pixie.jpg "Fire Pixie")
-Fire-pixies are a most peculiar elf-folk that live in deep forests, often together with dryads, najads or wood elves, who provide them with food.
+Fire-pixies are a most peculiar elf-folk that live in deep forests, often together with dryads, najads or wood elves, who provide them with food. They are also called will-o'-the-wisps, or irrbloss - not to be confused with the drowned marsh-ghost that shares the name.
+
+## Origin
+
+A fire-pixie is thought to come into the world when a mighty elf-magician, or one of the Earth Mother's own messengers, is reborn into so small a shape. The soul's great force is too large for the tiny body and spills out around it as a corona of flame, and that fire is the very measure of its life: dimmed, it can be coaxed brighter again, but spent wholly, the pixie dies with it.
 
 ## Appearance
 

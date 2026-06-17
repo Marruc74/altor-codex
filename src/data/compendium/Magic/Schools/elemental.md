@@ -6,9 +6,9 @@ Elemental magic is the school of the raw stuff of the world: earth and air, fire
 
 - **School:** Elemental magic, the art of the elements
 - **Standing:** One of the three great schools of magic
-- **Domain:** Earth, air, fire, water and cold — the raw matter of the world
+- **Domain:** Earth, air, fire, water and cold - the raw matter of the world
 - **Instruments:** The Sword, power over the elements; the Scales, their balance; the Ring, their endless cycle
-- **Crowning works:** The conjured element-beasts — the stone-giant, the storm-bird, the fire-drake, the leviathan and the ice-serpent
+- **Crowning works:** The conjured element-beasts - the stone-giant, the storm-bird, the fire-drake, the leviathan and the ice-serpent
 - **A known codex:** *The Innermost Essence of Air*, set down by the elf-mage Nefertite
 
 ## Earth and Stone
@@ -21,7 +21,7 @@ The air-mage purifies foul and poisoned air and reads the weather a day or more 
 
 ## Fire
 
-The fire-mage shapes and hurls living flame — fireballs, walls and storms of fire that sweep a field like a kindled forest. He can light a fire within a victim's own body, take on a body of fire that no flame can harm, and call up the elddrake, a drake of pure fire that flies and breathes its element.
+The fire-mage shapes and hurls living flame - fireballs, walls and storms of fire that sweep a field like a kindled forest. He can light a fire within a victim's own body, take on a body of fire that no flame can harm, and call up the elddrake, a drake of pure fire that flies and breathes its element.
 
 ## Water and Ice
 

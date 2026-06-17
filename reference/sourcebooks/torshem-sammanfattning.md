@@ -1,0 +1,424 @@
+# Torshem – Barbarernas skogar
+
+*Utförlig sammanfattning & spelledarreferens*
+
+> Äventyrsmodul till **Drakar och Demoner Expert**, utspelad i kampanjvärlden **Ereb Altor**.
+> Konstruktion: Anders Simonsson & Anders Blixt. Grafisk produktion: Stefan Thulin. Omslag: Ken Kelly. Illustrationer: Stefan Nagy & Tony Darwiche. Redigering: Anders Blixt & Henrik Strandberg. Utgiven 1989 (Copyright Target Games AB; *Drakar och Demoner* ägs numera av RiotMinds AB). 99 sidor.
+>
+> Detta dokument är en sammanfattning i egna ord, avsedd att läsas och användas vid spelbordet. Det återger modulens innehåll i komprimerad form men ersätter inte originaltexten – läs alltid de kursiverade uppläsningsstyckena och de fullständiga regeldetaljerna i boken innan ett pass. Sidhänvisningar avser PDF:ens sidnummer.
+
+---
+
+## 1. Vad är Torshem?
+
+Torshem är en **vildmarksmodul**, inte ett enskilt linjärt äventyr. Tanken är att spelledaren ska få en hel levande region i knät – med geografi, historia, folkslag, gudar, politik, regelnyheter och en samling löst sammanhängande äventyr – och utifrån detta material plus sin egen fantasi bygga en kampanj som kan hålla även rastlösa rollpersoner sysselsatta under lång tid.
+
+Regionen kallas **Torshem** och består av handelsstaden **Torsborg** med omgivande land. Den ligger inbäddad i det väldiga skogsbälte som löper i öst–västlig riktning tvärs över centrala Ereb, vid den östra stranden av Storsjön. Torsborgs hela existens vilar på handel: staden är den naturliga mötesplatsen där dvärgarnas lastdjur från Nidapasset i norr möter joriska flodbåtar som kommer uppför floden Leipter söderifrån, från länderna kring Kopparhavet. Invånarna lever främst på handel men också på fiske och jordbruk.
+
+Modulen förutsätter att spelledaren har **Expertreglerna**. Båda *Monsterböckerna* och *Gigant* är till nytta – flera avsnitt (vädersystemet, gudagåvorna, shamanismreglerna, ett par besvärjelser) bygger uttryckligen på Gigant, men kan ignoreras eller förenklas av den som bara har Expert.
+
+### Hur platsbeskrivningarna är uppbyggda (s. 4)
+Modulen använder ett tvådelat beskrivningssystem som skiljer sig från äldre moduler:
+
+- **Kursiverad text** läses upp ordagrant för spelarna. Den ger en enkel, neutral beskrivning av platsen rollpersonerna befinner sig på samt synliga föremål och varelser. SL bör läsa igenom dessa i förväg och får gärna ändra i dem.
+- **Icke-kursiverad text** är enbart för SL. Den avslöjar dolda detaljer, fällor, hemligheter och instruktioner för hur situationer ska hanteras.
+
+---
+
+## 2. Äventyrskrokarna (s. 4–8)
+
+Modulen erbjuder åtta ingångar till kampanjen. Den första, *Blodsoffer*, är ryggraden; resten kan vävas in före, under eller efter den efter SL:s tycke.
+
+### 1. Blodsoffer – huvudäventyret
+En av rollpersonerna kommer från Torsborg och har följt med sällskapet hem dit för en religiös högtid i Wegils tempel. Sällskapet inkvarteras på värdshuset **Blå draken**, vars godmodige ägare **Bern Armstarke** känt rollpersonen sedan barnsben. När högtiden är över får rollpersonen ett uppdrag från kyrkans ledning: ett litet Wegilskloster uppe i Nidabergen, bebott av nyktra och fromma munkar, har slutat skicka sina sedvanliga representanter till högtiderna och svarar inte på meddelanden. Översteprästerna Ignatius och Herkin är oroliga och vill att någon "svänger förbi och kollar läget". Spåret leder via det nedbrända **munkklostret** till den dolda demonkulten i **Kashims tempel**.
+
+### 2. Kashims hämnd – uppföljning
+Om rollpersonerna stört Kashims tempel eller dödat någon av dess tjänare har de skaffat sig en fiende för livet. Det finns flera hemliga Kashimtempel spridda över Ereb, och deras tjänare hör förr eller senare talas om rollpersonernas dåd. Om och hur kulten hämnas avgör SL, men rollpersonerna bör då och då få små påminnelser om att de inte är glömda. SL kan bygga ut detta till en hel kampanj med kartor över fler tempel.
+
+### 3. Stråtrövarnas näste
+Ett anslag dyker upp på Torsborgs gator: köpmännens skrå söker stridsvana män för ett eskortuppdrag, väl betalt och med full diskretion. Den fetlagde, rödblommige köpmannen **Niels Gellek** förklarar med släpande röst att flera köpmän norrifrån har rånats. Rollpersonerna ska följa med Herr Kristiern Långes karavan norrut, hålla ögonen öppna och slå till mot rövarna – helst fånga dem levande. Karavanen blir överfallen, och rollpersonerna kan spåra rövarna tillbaka till deras fäste (lämpligen **Svartalfernas lya**) eller tas till fånga och föras dit.
+
+### 4. Grå hår
+På en nattlig resa genom skogarna stöter rollpersonerna på en skruttig gammal magiker som haltar fram på en krokig stav. Han höjer händerna mot stjärnhimlen och nedkallar en fruktansvärd förbannelse över dem – innan han faller på knä och gråtande förklarar att han tog dem för de svartalfer som nyss bränt hans stuga. Förbannelsen gör att rollpersonerna åldras tolv gånger så fort (ett år per månad), och bara hans stulna formelbok kan häva den. Magikern, **Vlempi Malcus**, har räknat ut alltihop själv: han är den ende som kan återkalla förbannelsen och tvingar därmed rollpersonerna att återta hans böcker (som ligger i Svartalfernas lya).
+
+### 5. Kungshögarnas hemlighet
+Ett ungt par som velat gifta sig mot sina föräldrars vilja har rymt ut i vildmarken. Fäderna är förtvivlade och betalar bra för att få dem tillbaka; om någon rollperson är från trakten kan en av de försvunna vara ett syskon. Efterforskningar leder mot **Kungshögarna** – men paret har redan fallit offer för likätarna där, en bitter sanning rollpersonerna måste upptäcka själva. Ledtrådar: kamrater har hört den unge Gawan tala om allt villebråd och de fina trädhus man kunde bygga i de trakterna.
+
+### 6. Borgruinen
+En gammal lärd man, **Håkon Nardus** (eller Vlempi Malcus, om han redan introducerats), har fått veta att en trollkarl för ca 500 år sedan bodde i en borg mellan Trollskogen och Gamla skogen. Trollkarlen "gick upp i rök" under ett magiskt experiment och borgen övergavs. Det ryktas att hans stora bibliotek delvis ligger kvar bland ruinerna – och det är dessa böcker uppdragsgivaren vill åt. Leder till **Borgruinen**.
+
+### 7. I Trollskogens mörker
+I ett tidigare äventyr har rollpersonerna kommit över en gammal bok om den legendariske rövaren **Khelltor**, som samlade enorma rikedomar. Boken nämner i förbigående att Khelltor var trollens vän och tänkte skänka dem sitt hemliga gömställe. Rollpersonerna möter skogsalven **Aria**, som är på väg att befria sin Elthalion ur en trollstam vid Gelto-kullen i Trollskogen. Leder till **Trollens lya**.
+
+### 8. Ankans ankomst
+En främmande flodbåt med handelshuset **Dlurings** baner kommer uppför Leipter. Dluring drivs av vita ankor i Erebos och är vida större än de lokala husen Vedort och Sagbon. Ombord: köpmannen **Constantin Dluring**, hans bror **mäster Deobald** (mästare i stridskonsten quack-fu) och tio bruna ankor som livvakter. Constantins uppdrag är att undersöka om dvärghandeln är värd att satsa på. Om Dluring slår till får både Vedort och Sagbon allvarliga problem – grunden för stadsbaserade spionage- och sabotageäventyr "med dolkar som glimmar i månskenet". Intrigen kan vändas så att rollpersonerna istället spelar Dlurings folk.
+
+---
+
+## 3. Regelnyheter
+
+### Nya droger och växter (s. 10–12)
+
+Modulen introducerar **mennonpulvret**, framställt ur roten av den sällsynta mennonblomman (en violliknande ört som växer i tempererade lövskogar och blommar på sommaren i gult, svart eller rött). En rot ger en dos pulver. Alla tre varianterna inhaleras eller blandas i alkoholfri vätska och dricks.
+
+| Drog | Effekt | Verkningstid | Efterverkningar |
+|------|--------|--------------|-----------------|
+| **Gult mennonpulver** | 1 dos läker 1T6 KP | – (väntetid 1T10 min) | Inga |
+| **Svart mennonpulver** | +1T6 PSY | 60 min (väntetid 1T10 min) | Yrsel & huvudvärk; –2 förflyttning; SMI och alla SMI-baserade färdigheter halveras i 30 min |
+| **Rött mennonpulver (GIFT)** | Total blindhet | 60 min (halveras om giftslaget klaras) | Inga |
+
+Det röda pulvret räknas som gift och får i de flesta städer inte säljas öppet. Det går att köpa svart av mindre nogräknade örthandlare, men det kräver först ett lyckat **Undre Världen**-slag att hitta en sådan. **Priser & tillgång:** rötterna 200 sm/st (gul/svart) respektive 400 sm/st (röd), pulvret 300/350/550 sm/dos. Chansen att en örthandlare har en viss vara i lager varierar (10–15 % för de vanligare, 3–5 % för de röda).
+
+### Nya hjälmar (s. 12)
+
+| Hjälm | Kroppsdel | Pris | Absorbering | Vikt | Beskrivning |
+|-------|-----------|------|-------------|------|-------------|
+| **Konhjälm** | Huvud | 150 sm | 4 | 2 BEP | Konformad så svärds- och yxhugg glider av; lämnar ansikte och nacke helt oskyddade. Hornen/vingarna på vissa exemplar gör att de väger 2,5 BEP. Bärs av bergsklaner och stadsvakter. |
+| **Vendelhjälm** | Huvud | 200 sm | 6 | 3 BEP | Rund hjälm med nässkena, ögonbågar och ett ringbrynjeskört som skyddar nacke, sidor och ansikte (alternativt nack- och kindplåtar). Bärs av skogsklaner. |
+
+### Överlevnad i vildmarken (s. 8–11)
+
+När rollpersonerna färdas i vildmarken har SL mycket att hålla reda på: hur långt de hinner per dag, vad som händer under dagen, vilka möten som uppstår. Avsnittet ger konkreta riktlinjer:
+
+- **Tält** bör resas i en cirkel med öppningarna inåt och gärna kamoufleras. **Lägerelden** ger ljus, värme, matlagning och håller vilda djur (vargar, vildhundar) borta – men lockar samtidigt andra varelser till att titta närmare på den som tänt den.
+- **Vakthållning** sker i pass om normalt 2–4 timmar; vakten håller elden vid liv och spanar. De första passen är populärast eftersom man då kan sova ut i ett sträck efteråt.
+- **Larm** kan förstärka bevakningen: magi (SIGILL kombinerat med SPÖKROST, BLIXT eller liknande hörbara/synliga besvärjelser, eventuellt som förberedda larmamuletter), snubbeltrådar som välter krukor med småsten, eller – om man stannar länge – rännsnaror och fallgropar. Räkna med 2–3 falsklarm per natt från ofarliga djur.
+- **Restider:** minst åtta timmars sömn behövs, plus vakthållning och måltider, så nattuppehållet blir minst tolv timmar; en timme för lunch och fem minuters vila per timmes färd tillkommer. Slutsumman blir ca tio timmars färd och fjorton timmars vila per dygn, vilket vanligt folk klarar i några dagar, kanske en vecka, men inte i veckor i sträck. Äventyrare är dock inte vanligt folk.
+- **Mörker:** att färdas i mörker i skog är i praktiken omöjligt (snår och hål gör att man snubblar), och facklor riskerar att tända hela skogen. På väl röjda stigar går det teoretiskt sommartid. I bergen är det omöjligt efter mörkrets inbrott utom på breda stigar.
+- **Hygien:** vid längre uppehåll måste man gräva en latringrop och en avfallsgrop strax utanför lägret för att undvika sjukdomar; groparna fylls igen när lägret överges.
+- **Stridsberedskap:** det går inte att vila ordentligt eller slå läger i rustning. En ringbrynja tar minst 20 minuter att ta på med hjälpare, en helplåt det dubbla; en sköld ungefär en minut. Att marschera till fots i full rustning en hel dag är uteslutet. En god beredskap innebär att man sover med dolk vid sidan och övriga vapen plus hjälm inom räckhåll – men varje rustning tar minst fem minuter att ta på och är omöjlig vid ett överraskande angrepp.
+
+---
+
+## 4. Gudarna (s. 13–16)
+
+Gudabeskrivningarna utelämnar medvetet grundegenskaps- och färdighetsvärden: spelarnas rollpersoner ska aldrig konfrontera en gud personligen, utan betrakta gudarna som gåtfulla väsen. Varje gud har **levnadsregler** som dyrkarna måste följa; den som bryter mot dem drabbas av samvetskval och skuldkänslor som bara försvinner genom ett botgöringsuppdrag. Reglerna fungerar som Expertreglernas Livsmål, och spelarna bör se till att rollpersonernas livsmål stämmer med deras religion.
+
+### Wegil – "Ljusets Herre"
+Wegil tillbes främst av människor och betraktas allmänt som en god gud. Han avbildas som en medelålders man med väldig kroppsbyggnad, ädla drag, långt helskägg och genomträngande blick, beväpnad med stridsklubba och långspjut och iförd en kort mithril-ringbrynja. Han tillskrivs förmågan att byta skepnad, väcka och tala med döda, påverka vädret och läsa tankar. Han vill sprida civilisation, lag och ordning, och hans tjänare uppmanas vara tappra inför mörker, barbari och kaos. Många sagor handlar om hans strider mot Kashim. Wegil är en gud från det gamla Jorpagna, dyrkas främst av jorer och är Torsborgs skyddsgud; hans tempel är stadens praktfullaste byggnad.
+
+**Tre organisationsformer:** *kyrkan* (vida vanligast; präster i ljusblå dräkter och mörkblå mantlar), *munkkloster* (på avlägsna platser; mörkblå fotsida kåpor; dagar fyllda av bön, meditation, avskrift och försörjningsarbete) och *ordenssällskap* (40–50 religiösa riddare per borg, tunga rustningar och ljusblå mantlar).
+
+**Levnadsregler:** hjälp de svaga och behövande; undvik överdrivet våld och dödande (självförsvar och jakt för försörjning är tillåtet); upprätthåll lag och ordning och bryt inte mot världsliga lagar utom sådana som strider mot Wegils lära.
+
+**Gudagåvor (Gigant):** *Oräddhet* (slår aldrig på Skräcktabellen), *Ljus* (staven lyser som LJUS E5 och bäraren kan kasta BLIXT mot PSY-kostnad), *Stålblick* (hjälteförmågan).
+
+### Kashim – "Den Härskande Flamman" / "Livsherren"
+Kashim tillbes främst av människor och betraktas av alla andra som en ond gud. Hans ursprung är okänt, men man vet att han inte kommer från Jorpagna. Han avbildas som en väldig, kraftfull varelse med lysande röda ögon, kloförsedda händer och svartbränt, skrovligt skinn, beväpnad med ett brinnande svärd och en bronsrundsköld. Han kan väcka och tala med döda, slunga eldklot och sprida dödliga sjukdomar bland dem som inte dyrkar honom.
+
+Kashims lära är enkel men brutal: den **starkes rätt**. Ett beständigt samhälle kan enligt läran bara byggas när de svaga individerna – däribland alver och invalider – rensats ut. Genom att dyrka och blidka Kashim kan man själv vinna den styrka som krävs för att bli en av de Starka. Tills detta tillstånd uppnåtts är ljuset en fiende (det skyddar de svaga); när Kashim väl härskar ska han klä sig i vitt och lysa upp världen.
+
+Dyrkarna är illa sedda och sluter sig samman i små, hemliga sällskap. De klär sig vardagligt som vem som helst men bär vid ceremonier fotsida svarta kåpor med vinrött foder, och samlas i avlägsna tempel eller underjordiska kryptor som ofta är hårt bevakade. Dyrkan omfattar djur- och människooffer: offret förs levande till ett altare med en liten Kashimstaty, dödas med ett snabbt dolkhugg, blodet samlas i en bronsskål och hälls över statyn, och kroppen bränns i en eldgrop. Statyn smyckas med stulna juveler – både för att håna Wegil och för att binda medlemmarna hårdare till sällskapet.
+
+**Levnadsregler:** besök tempel och frambär offer minst fyra gånger om året (ett offer ska vara en "otrogen" människa); ange genast spioner, inkräktare och förrädare till prästerskapet; undvik nära kontakt med Ljuset och de Svaga, och genomgå stärkande ritualer om sådan kontakt är ofrånkomlig.
+
+**Gudagåvor (Gigant):** *Eldskydd* (oskadd av all eld), *Oräddhet*, *Gastskydd* (immun mot gastattacker som sänker grundegenskaper), *Mörker* (en ca 10 m sfär där allt ljus släcks och bara sändebudet ser; bara Wegils Ljus skingrar det).
+
+> **Spelmässig poäng:** Wegil- och Kashimdyrkare kan inte länge ingå i samma sällskap. Förr eller senare avslöjas vem som dyrkar vem, och då ryker de ihop.
+
+---
+
+## 5. Geografi (s. 16–19)
+
+**Nidabergen** i norr är en väldig bergskedja vars högsta toppar når flera tusen meter och är snötäckta året runt. I väster delas kedjan av **Nidapasset**, karavanleden mot Nargurs skogar, som under sommaren trafikeras av köpmän som byter tyger och metaller mot pälsverk men som vintertid fylls av snö och blir svårframkomligt. Vid passets västsida finns rika fyndigheter av malm och ädelstenar där dvärgklanen Kvizur bryter. Bergens flora är gräs, ljung, mossa, lavar, vindpinade dvärgbjörkar och ätliga bär (blåbär, slånbär, hjortron); faunan stengetter, hjortar, bergsfår, vargar, grottlejon, grottbjörnar och rovfåglar, med laxrika bergsfloder.
+
+**Floderna** har sin upprinnelse i Nidabergen. *Gipul* rinner lugnt och är farbar med kanot eller flotte; den mynnar i Silversjön i Gamla skogen. *Hrid* och *Hrönn* är snabba, smala och slingrande – farbara men farliga – och mynnar i Storsjön. Från Storsjöns södra del fortsätter **Leipter** söderut; den är bred, djup och lugn och farbar ända till havet, vilket gör den till regionens livsnerv för handel.
+
+**Skogen** delas i tre regioner. *Järnskogen* och *Gamla skogen* (åtskilda av Leipter) domineras av bok och lönn med inslag av ek och lärk; de höga kronorna lägger marken i skugga, undervegetationen är gles och det är lätt att vandra mellan de pelarlika stammarna under ett högt lövtak. Här finns lummiga ängar, sanka myrar, gott om svamp och en rik fauna: kronhjort, rådjur, uroxe, ullhårig jättenoshörning, brunbjörn, varg, lokatt, järv, vildhund samt mängder av småfågel och smågnagare.
+
+**Trollskogen** är en avvikande, mörk och dyster del av Gamla skogen – ett bergigt område bevuxet med knotiga svarttallar och vassa törnsnår, utan stigar och mycket svårframkomligt. Avskildheten har gjort den till tillflykt för svartfolk (troll, orcher, svartalfer, resar), totalt mellan två- och trehundra individer, som ibland ger sig ut på härjningståg. Det ryktas att Trollskogens invånare är ofantligt rika, men ingen som sökt bevisa det har återvänt.
+
+**Klimat och väder:** Den som har Gigant kan använda de detaljerade väderlistorna för höst/vår, sommar och vinter (s. 18). Den som bara har Expert kan ge Torshem ett klimat något varmare och torrare än Sveriges – ungefär som Frankrike och Västtyskland, dvs. tempererat inlandsklimat. Skogen dämpar vinden (alltid en nivå lägre bland träden), och vindarna är huvudsakligen sydliga, vilket gör det möjligt att segla uppför Leipter.
+
+**Kartor (s. 18–19, 87–96):** Modulen innehåller en *spelledarkarta* (med samtliga platser) och en *spelarkarta* (endast de platser rollpersonerna rimligen känner till).
+
+---
+
+## 6. Torshems historia (s. 18–22)
+
+Tideräkningen är den dalkiska, som används i större delen av Ereb: åren räknas före eller efter att profeten **Odo** började predika om den Lysande Vägen. **fO** = före Odo, **eO** = efter Odo.
+
+| År | Period / Händelse | Beskrivning |
+|----|-------------------|-------------|
+| ~1500 fO | **Howathernas ankomst** | Howatherna kommer norrifrån på stenåldersnivå; metallsmide finns bara i söderns högkulturer. |
+| 912 fO | Mötet i Grafferburg | Kejsar Thamsun I av Jorpagna kallar barbarhövdingarna till rådslag; deras talesman skymfar kejsaren, som inleder krig. |
+| 900–700 fO | **Krigstiden** | Ständiga strider; Jorpagnas disciplinerade falanger klarar inte skogens bakhåll, men Nidapasset är strategiskt. |
+| 600-talet fO | **Bytiden** | Krigen ebbar ut av utmattning; handel med Jorpagna inleds, skrivkonsten införs, runraden anpassas till howathiska, barbarerna blir bofasta och byar växer fram. |
+| 599 fO | **Konfluxen** (den tredje) | Ett moln av miljarder "köttbitare" (armslånga köttätande gräshoppor, var och en bärande en blå sten) drar in söderifrån och halverar centrala Erebs befolkning på veckor; fyra femtedelar av husdjuren går åt. Jorpagnas och howathernas kultur kollapsar. |
+| 599 fO–0 | **Mörkertiden** | Howathernas få överlevande återvänder till skogarnas djup och förfädernas nomadliv, övergår åter till stenåldersteknik (men behåller skrivkonsten). Svartfolken kommer ned från Nidabergen och befolkar de tömda skogarna; ständiga strider om resurserna. |
+| 0– | **Nya tiden** | Odo predikar på Caddo; nya riken uppstår och den internationella handeln tar fart igen. |
+| 177 eO | **Dvärgarnas ankomst** | Dvärgklanen Kvizur vandrar norrut, lockad av malmrykten, driver bort orcherna i Nidapasset och börjar bryta malm. Goda förbindelser med howatherna uppstår (mat mot järn); med järnvapen driver howatherna tillbaka svartfolken. |
+| 189 eO | **Jorernas ankomst** | Joriska köpmän tar sig uppför Leipter och grundar **Torsborg**, uppkallad efter expeditionsledaren Tor Sagbon; ätten Sagbon blir stadens ledare. Staden ger så småningom namn åt hela regionen. |
+| 212–213 eO | **Torsborgs mur** | Fiendskap mellan jorer och howather om jakträtt och skogsavverkning leder till krig (212). Dvärgarna framtvingar fred genom utpressning mot båda parter; en gräns dras och staden börjar bygga sin mur. |
+| 247 eO | Stadshuset | Stadsmäster Hoson låter bygga Torsborgs första stadshus. |
+| 327 eO | Stentemplet | Stadens första stenbyggnad uppförs, ett tempel åt skyddsguden Wegil. |
+| 335 eO | Karsakkernas anfall | En barbarstam från Nargur anfaller genom Nidapasset; howather, stadsbor och dvärgar hamnar i oväntad allians och slår tillbaka anfallet. Detta blir en vändpunkt: fiendskap ersätts av samarbete, befäst genom giftermål mellan howatherhövdingens dotter och stadsmästarens son (339). |
+| 300-talet eO | Alvernas ankomst | Alver under animisten **Eloaner** kommer söder- och österifrån, söker en viss sorts skog för animistisk forskning och grundar akademin **Santono** (år 357). |
+| 487–488 eO | **Reserkriget** | En välorganiserad hord av orcher, svartalfer och resar under fältherren Kaursch belägrar Torsborg och blockerar handeln. Howatherna för segdragen gerillakamp, skär av fiendens försörjning; myteri bryter ut, Kaursch dräps av sina egna, och inhyrda legosoldater bryter belägringen. |
+| 500-talet eO | Ny bytid | Howatherklaner blir åter bofasta; i Torsborg växer huset Vedorts inflytande på Sagbons bekostnad. |
+| 590-talet eO | Vargmännens ankomst | **Nékhi-klanen** av vargmän vandrar till Torshem, lockad av regionens fredsrykte, och svär (598) evig vänskap med howatherna. |
+| 603 eO | Laberkus Sagbon | Den velige **Laberkus Sagbon** efterträder sin far som stadsmästare; många vill nu ersätta det ärftliga stadsmästarskapet med den dugligare Vidar Vedort. |
+| 609 eO | **Herse-fejden** | Den avsatte, halvalkoholiserade hersen Gonoser försöker mörda sin efterträdare men huggs ned av dennes bror; **Gono-klanen** och **Taros-klanen** blir bittra fiender. Shamaner ser detta som ett mycket dåligt omen. |
+
+**Nuläget:** Torshem är på ytan fredligt, men flera konflikter pyr under ytan (se nästa avsnitt).
+
+---
+
+## 7. Folkslag (s. 22–27)
+
+### Howather
+Traktens ursprungsbefolkning, besläktade med barbarerna i Nargurs skogar norr om Nidabergen, närvarande i minst 2000 år. Under bytiden byggde de en blandkultur av joriska och howathiska drag, men efter konfluxen förkastade de söderns vanor och återvände till skogarnas djup och en nomadisk livsstil. De vördar dvärgarna för deras visdom och hantverk.
+
+Howatherna är härdade av ett hårt liv och har en kärv livsfilosofi. De vördar tapperhet, lojalitet, uthållighet, generositet och vältalighet; mot vänner är de lojala och gästfria, mot fiender grymma och hämndlystna. De har ofta långt blont hår, ljus hy och blå eller stålgrå ögon, är medellånga men kraftigt byggda och tatuerar sig för att visa smärttålighet. **Kvinnorna är männens jämlikar** och kan bli hersar; det är dugligheten, inte sysslan, som ger status (män är krigare, jägare och fiskare, kvinnor sköter hem och jordbruk). De håller getter, får och jakthundar; hästar förekommer praktiskt taget inte och howather kan sällan rida.
+
+**Organisation:** Grundenheten är *klanen*, en storfamilj ledd av en *wagas* (en gammal, klok och respekterad person). Hela stammen leds av en *herse* (hövding och högste krigsledare), som varje år ställs till svars vid tinget och kan avsättas om krigslyckan eller skördarna svikit. *Völvan*, stammens kvinnliga shaman, håller historien levande i visor och berättelser, sköter sjuka, spår framtiden och rådger hersen; hon betraktas med fruktan och respekt.
+
+**Religion:** Howatherna har ingen utvecklad religion utan dyrkar andar och fallna hjältar. Platser som anses besjälade är heliga, och att skada dem (fälla trädet, flytta stenen) leder till tingets domstol. Festerna kulminerar med völvans sång om gamla hjältar.
+
+**Två grenar:** *Bergsklanerna* (~1000) bor i stenhus på bergssluttningar och i dalgångar, livnär sig på jakt och visst svedjebruk, är krigiska och plundrar – men bara jämbördiga mål – och bär läderharnesk, konhjälm och stor rundsköld (kortsvärd, kastspjut, kortbåge, handyxa). *Skogsklanerna* (~4000) bor i avlånga trähus med eldhärdar och pålverk, livnär sig på jakt, svedjebruk och insamling, och bär läder eller nitläder, medelstor rundsköld och vendelhjälm (handyxa, långspjut, kortbåge). Båda grenarna anser det fegt att angripa underlägsna motståndare och balanserar styrkorna i strid. Howathiska rollpersoner passar utmärkt – äventyrslystna och nyfikna.
+
+**Språk:** *Howathiska* (ett narguriskt språk med många joriska lånord) och det skilda *fornhowathiska* som används i alla shamanistiska ceremonier och behärskas av völvan, shamaner och deras medhjälpare.
+
+### Jorer
+Alla folk som härstammar från det forna kejsardömet Jorpagna och har **jori** som modersmål; ingen enhetlig grupp, utan vitt skilda kulturer, inklusive humanoider som halvlängdsmän. Torshems jorer kom under 100- och 200-talen från Kopparhavets stränder (Berendien, Erebos) – jordlösa bönder och utkonkurrerade hantverkare. Invandringen avstannade i början av 300-talet då mark och arbete tröt.
+
+### Dvärgar
+Klanen **Kvizur** i byn **Kvizur Kan** (~200), ursprungligen från Grynnerbergen, med **gryndur** som modersmål. De lever av gruvdrift och hantverk – järn, koppar och bly ur berget, smitt till verktyg, vapen och smycken av yppersta kvalitet som säljs dyrt i Torsborg. De har rykte om sig att vara skickliga förhandlare och spelar ut handelshusen mot varandra. De slår egna kopparmynt.
+
+### Svartfolk
+M�nga små stammar av svartalfer, svartnissar och orcher samt enstaka resar och troll lever i Nidabergen (ett par tusen totalt), en mindre del i Trollskogen. För närvarande oorganiserade och svaga, men under en karismatisk ledare skulle de kunna bli ett allvarligt hot. Howather och svartfolk hatar varandra innerligt sedan mörkertiden; dvärgar, jorer och vargmän delar inte hatet men ser svartfolken med misstänksamhet.
+
+### Vargmän
+**Nékhi-flocken** (~30, varav ~15 vuxna jägare) lever ett nomadiskt jägarliv utan fasta boplatser, undvikande Trollskogen. De liknar människor men har varghuvuden och grå päls, och deras språk är **khådrash** (några få talar bruten människospråk). De är starkt gruppinriktade – en stark "vi-känsla", svag "jag-känsla" – och samarbetar väl under en ledare (oftast den störste och starkaste). De jagar allt ätbart vilt men aldrig intelligenta varelser (tabu) och låter inget användbart förfaras. Feghet och förräderi mot flocken är dem helt främmande; människornas föreställningar om ridderlighet i strid finner de löjeväckande (besegra en fiende snabbt och effektivt). Mot dem som inte hör till flocken visar de liten lojalitet – men eden med howatherna är helig, och båda folken behandlar varandra strikt som stam-/flockfränder. Människor betraktar vargmännen som opålitliga, vargmännen ser människor som baksluga och egoistiska.
+
+### Övriga
+*Harpyor* – en nomadflock av avskyvärda fågelvarelser som jagar och stjäl men är fega och bara anfaller vid stort överläge; förtjusta i glittrande ting. *Älvfolk* – enstaka skygga dryader (skog) och oreader (berg), totalt ett hundratal, däribland den mäktige animistmästaren **Eloaner** i Santono, som respekteras av alla, t.o.m. trollen.
+
+---
+
+## 8. Konflikterna under ytan (s. 28–29)
+
+Modulen lyfter fram fyra spänningar som SL kan utnyttja för att skapa nya äventyr:
+
+- **Bofast kontra nomadisk livsstil.** Den nya bytiden är kontroversiell bland howatherna. När nytänkande klaner åter bygger byar och brukar samma jord år efter år, växer missnöjet bland de konservativa, som fruktar andarnas vrede. Dvärgarna stöttar i smyg de fasta bosättningarna (de ökar matproduktionen), medan de konservativa stöds av jorerna – särskilt bönderna, som inte vill se howathernas rikedom och makt växa.
+- **Handelskriget Vedort kontra Sagbon.** Dvärgarna vill inte att något hus får monopol, eftersom det skulle försämra deras förhandlingsläge; istället spelar de ut jorerna mot varandra. Vedort och Sagbon slåss om marknadsandelar med handfasta medel, men en total konflikt skulle skada varu- och matflödet och därmed bägge husen – spionage och sabotage är därför de yttersta metoderna.
+- **Jordbruk och överbefolkning.** Den joriska åkermarken kring Torsborg har brukats i 400 år och börjar utarmas, och antalet jordlösa torpare ökar. Bönderna vill ändra fredsavtalet och få mer mark; howatherna vägrar, och handelshusen stöder howatherna för fredens skull och förordar istället att de jordlösa lämnar regionen.
+- **Likätarna och vargmannahatet.** Försvinnandena vid Kungshögarna skylls felaktigt – av okunnighet, vidskepelse och rasism – på vargmännen, som skys i Torsborg. Den dag en jorer dräper en vargman kommer flocken att kräva mansbot (~100 gm i verktyg och förnödenheter); om staden vägrar tar vargmännen till blodshämnd, och howatherna kläms obönhörligt mellan sin ed till Nékhi och sina relationer med jorerna.
+
+---
+
+## 9. Torsborg – staden (s. 30–33)
+
+Torsborg grundades för ca 500 år sedan och har omkring 800 invånare som lever på handel, fiske och jordbruk. Det är en ganska typisk handelsstad: bofasta köpmän och hantverkare som känner varandra, sydländska köpmän i avvikande klädsel, högljudda försäljarstånd på torg och gator, och vaktpatruller som håller ordning. Husen är mest av trä (enstaka sten), gatorna i centrum trälagda, och avfallet töms rakt ut på gatan där råttor och husdjur bökar.
+
+**Styre:** En stadsmästare ur familjen Sagbon leder den dagliga administrationen från stadshuset men kan inte ensam stifta lagar. Det görs av stadsrådet som möts en gång i månaden: stadsmästaren, en representant för de fria köpmännen (i praktiken huset Vedort), en för hantverkarna och en för de självägande bönderna. Egendomslöst folk har ingen talesman – detta är ingen demokrati. Tre av fyra röster krävs för beslut.
+
+**Lag och ordning:** Stadsvakten består av 30 man, hamnvakten av 15 (med en tioplatsig roddbåt). En typisk patrull är fyra vakter (läderharnesk, läder-arm/benskenor, konhjälm, dolk + kortsvärd) och ett befäl (kort ringbrynja, metallbenskenor, "vingad" konhjälm, dolk + bredsvärd); alla bär medelstora sköldar med två korsade svärd. Portarna är öppna 06–21 och öppnas aldrig mitt i natten utom vid nödfall.
+
+**Vapenförbudet:** Alla vapen utom knivar måste lämnas till vakten vid porten och förvaras i häktet; undantaget är stadens vapensmeder, som får lagra och tillverka vapen. **Magi är förbjuden** innanför murarna – den som ertappas grips och bestraffas.
+
+**Straffsatser** (riktlinjer för SL):
+- *Mindre brott* (ficktjuveri, bråk, vandalisering, ärekränkning, vapeninnehav): spöstraff; återfall → höger hand avhuggen.
+- *Medelsvåra brott* (väpnat rån, grov misshandel/stöld, inbrott, magiutövning, innehav av illegala droger/gift): straffarbete 1T4 månader; döden vid upprepad förbrytelse.
+- *Grova brott* (mord, mordbrand, våldtäkt, rånmord, spioneri, kidnappning): dödsstraff (offentlig hängning på marknadstorget).
+
+Häktet (sten, galler, kapacitet ~20) är vakternas bas och erbjuder också värdeförvaring (1 % av värdet per vecka). Dömda av domarrådet (tre män och tre kvinnor, möts en gång i veckan).
+
+### Affärer och institutioner
+| Plats | Funktion |
+|-------|----------|
+| **Vedorts hus** | Ståtlig tvåvånings träbyggnad; Vidar Vedorts högkvarter, med lager och personalbostäder. |
+| **Sagbons hus** | Handelshus invid stadshuset; Laberkus syster **Elissa** styr verksamheten med järnhand. |
+| **Stadshuset** | Sten, två våningar; rådssal nere, stadsmästarens kansli och bostad uppe; alltid bevakat. |
+| **Häktet** | Sten med galler; ~20 fångar; värdeförvaring. |
+| **Wegils tempel** | Stadens största och praktfullaste byggnad; alltid bemannat. |
+| **Blå draken** | Enda värdshuset för resande (ägare Bern Armstarke). Räknas som "Normalt" värdshus; eget kartblad (1b) finns. |
+| **Örthandlare** | Säljer örter och droger; ny leverans ca en gång i månaden. |
+| **Bokbinderi** | Inbindning av böcker samt översättning av vanliga språk, t.ex. satenu (älviska) och gryndur (dvärgiska). |
+| **Marknadstorg** | Tidig morgonmarknad: mat & dryck, samt åsnor, mulor, ponnyer och oxar. Lockar även tiggare och tjuvar. |
+| **Handelsbod** | Diverse verktyg, behållare, lägerutrustning, diverse föremål. |
+| **Vapensmed** | Alla europeiska vapen, rustningar, rustningsdelar och sköldar. |
+| **Hästhandlare** | Alla hästar (lätt/medel/stor/ponny), sadlar och sadelväskor. |
+| **Skeppsbyggare** | Småbåtar och kanoter. |
+
+---
+
+## 10. Platserna & äventyrsmiljöerna
+
+### A. Munkklostret (ruin) (s. 34–39; karta s. 89)
+Ett fromt Wegilkloster i Nidabergen nordost om Torsborg. För ungefär en månad sedan upptäckte ett par av munkarna en grupp svartklädda män i bergen, följde efter dem och fann ingången till ett underjordiskt Kashimtempel. De smög in via en lönndörr, bevittnade ett blodigt människooffer och flydde – men kultens tjänare spårade dem till klostret och anföll. Nästan alla munkar dödades eller togs till fånga, klostret brändes och abboten **Karn Lendur**, dödligt sårad, hann skriva ett pergament med en karta innan han dog. Kulten lämnade kvar en demon för att hemlighålla klostrets förstörelse.
+
+När rollpersonerna anländer finner de en härjad gård med ett tiotal munklik (alla plundrade) och kan utforska rummen:
+- **Rum 4 – Karn Lendurs lik** ligger vid brunnen, bevakat av sex utsvultna vildhundar (kan lockas bort med fältproviant, 10 % per dagsranson). På liket: en **magisk helig silversymbol** (AURA E1, SKYDD E2, SIGILL E1+E2, PERMANENS E1+E2 – AURA ger respektingivande utstrålning, SKYDD +2 rustning över hela kroppen; SL kan begränsa den till Wegil-dyrkande präst/krigarpräst/munk), 11 km och **pergamentet med kartan** (på howathiska, kräver FV B3 i Läsa/skriva howathiska).
+- **Rum 5 – Mottagningshall** med fyra upphängda, vanställda vandrarlik (demonens offer).
+- **Rum 6 – Munkceller**: möblerna sönderslagna, men med ett lyckat *Finna dolda ting*-slag kan rollpersonerna hitta småsaker (1T20-tabell: träskedar, glasplunta med vin, oljelampa, flinta & stål, filt, helig träsymbol, tärningar, snöskor, lyra, oskrivna eller poesifyllda pergament m.m.).
+- **Rum 7 – Bönesal** med en sönderslagen Wegilstaty. Här gömmer sig demonen **Kanicaar-an-Cosh** (ca 250 cm, bevingad, mörkröd hud, klor, horn, huggtänder). Han njuter av att plåga sina offer, drar ut på mötet och försöker provocera fram det första anfallet; han förföljer flyende men inte utanför murarna. Hans skräckskrik (PSY/2 ggr/dygn) tvingar fram stridsmoral-/skräckslag, och hans bett kan suga 1T6 PSY. Bakom pelaren ligger hans rövade skatt: tre börsar, ett myntbälte, lampolja, fältflaskor, ryggsäckar, glödlådor, en dos rött mennonpulver och två pergament (**TALA MED DÖD**, **KONTROLLERA LÄGRE ODÖD**).
+
+### B. Kashims tempel (huvuddungeon, 2 nivåer) (s. 39–50; karta s. 90)
+Templet byggdes av jorpagner under bytiden men övergavs vid konfluxen. För åtta år sedan upptäckte den unga nekromantikern **Kati Löm** det, fann gamla böcker som förklarade Kashimkulten i detalj, bosatte sig där och byggde upp en kult på ~50 fanatiker. Under sig har hon tolv krigarpräster: tio är ständigt ute i världen och sprider läran (de återvänder fyra gånger om året för att offra), och två – vampyrerna **Palimas Carnor** och **Dori Thalik** – tjänar som personliga assistenter och jagar varje natt i skepnad av fladdermus, råtta, rökmoln eller varg. Livet i templet är lugnt: gemensam frukost, dagens arbete, kvällsböner och hymner i offersalen, och ungefär månatliga offer. Beskrivningarna förutsätter att rollpersonerna besöker templet på kvällen eller natten (matsalen tom, offersalen full); annars måste SL justera.
+
+Två ingångar leder in: den låsta bronsdörren (rum 1, dyrkas SG 40, kan inte krossas) eller en dold, rasad tunnel som via en lönndörr mynnar i ett gammalt gästrum (rum 2 → 6).
+
+**Nivå 1 (urval av rum):**
+- **3. Mottagningsrum** – en låst gästbok på fornhowathiska som loggar besökare utan att avslöja identiteter.
+- **4. Vaktrum** – tre vakter (nitläder, huggare). På dem finns en stor nyckelknippa som öppnar nästan alla dörrar i templet (utom rum 9, 10, 28–31, som vampyrerna och Kati har egna nycklar till).
+- **6. Gästrum med lönndörr** – svarta kåpor (men att klä ut sig är meningslöst; tjänarna är så få att de känner igen varandra).
+- **8. Upptaget gästrum** – gästerna **Hardred Revioc** (astrolog) och **Anja Sigurdsdotter** (guldsmed) från Torsborg; de inser inte genast att rollpersonerna är inkräktare men kan springa för att varna Kati.
+- **9. Palimas Carnors rum** – öppen, jordfylld likkista; vampyrens **magiska benknota** (DÖDSHAND E1, kan slita hjärtat ur en motståndare; 25 PSY). I förrådsrummen: den fängslade tjuven **Bodil Rödtopp** (möjlig framtida allierad/RP) och hennes utrustning, samt vinet "Alvglans" (460 sm).
+- **10. Dori Thaliks rum** – heraldikböcker; den 80-sidiga boken (på jori) kan ge 10 XP i Heraldik efter sex dagars studier + lyckat INT-slag.
+- **14. Läsrum/bibliotek** – stora bokhyllor med pergament och böcker på satenu, fornhowathiska och jori (dikter, krigföring, vapen, djur, alvkultur, magi, Kashim-ritualer m.m.). Vissa böcker ger XP (Historia, Kulturkännedom [alver], Kunskap om magi) efter studier + INT-slag. Kati har dock flyttat magiböckerna till rum 31.
+- **17. Förrådsrum** – mat- och dryckesförråd (öl, vin, havregryn, salt, peppar, fältproviant, lampolja).
+- **20. Försal** – groteska väggmålningar; ett skåp med vaxljus, facklor, rökelse, rituella bronsskålar och offerknivar.
+- **21. Soprum** – en ca 6 m djup grop fylld med en levande, bubblande mörkbrun sörja som suger ner och utplånar allt som faller i. Dess ursprung är ett mysterium äldre än kulten.
+- **22. Gravkamrar** – massiva stenkistor (SG 60, kan ej krossas) med skelett, guldmynt, bronshalsring (300 sm) och Kashim-symboler; 25 % chans per öppnad kista att ett spöke uppenbarar sig och förföljer rollpersonerna tills allt läggs tillbaka.
+- **25/26. Celler & tortyrkammare** – fängslade munkar (uppdragsmålet); i tortyrkammaren torterar **Dori Thalik** en medvetslös munk.
+
+**Nivå 2 (offersalen och Katis bostad):**
+- **27. Offersalen** – stor sal med en svart Kashimstaty på en plattform, tio 6 m djupa eldgropar (2T6 fallskada + brännskada) och tempeltjänare som sjunger hymner. **Kati Löm** offrar en munk när rollpersonerna kommer; hon undviker själv närstrid och kastar besvärjelser, och flyr om striden vänder via en lönndörr till sin bostad. Två lönndörrar i salen (Finna dolda ting).
+- **28. Skattkammare** – tre kistor: 750 km, 700 sm, samt 500 gm + smycken (1400 sm).
+- **29–31. Katis bostad** – förrum, sovrum och förrådsrum; i rum 31 finns en lönndörr till en ca 4 km lång flykttunnel. **Kati flyr genom den med alla sina magiböcker** och kan dyka upp igen för att hämnas i ett senare äventyr.
+
+**Upplösning:** När rollpersonerna befriat munkarna och dödat/fördrivit tjänarna återstår att eskortera munkarna till Torsborg. Kyrkans ledning prisar dem för att ha krossat kulten men ger ingen lön ("Dygden är sin egen belöning") – däremot får rollpersonerna behålla all skatt de hittat.
+
+### C. Kungshögarna (tre gravhögar) (s. 51–56; karta s. 94)
+Sydost om Torsborg, ute på öppna fält, ligger tre runda gravhögar i folkmun kallade "kungshögarna". De rymmer hjältarna **Mawasether**, **Melanowi** samt **Kathenowi** med make och två barn – stora hjältar under bytiden, ej kungliga men upphöjda av eftervärlden. Platsen är helig för howatherna, som vart nionde år vid sommarsolståndet samlas här för shamanistiska riter; gravplundring räknas som skändning och bestraffas med döden.
+
+Gravarnas stendörrar är **magiskt förseglade** (FÖRSEGLA E4, SIGILL E4, PERMANENS E4, NEXUS E2) och kan bara öppnas genom ÖPPNA som besegrar förseglingens effektgrad på motståndstabellen; en stängd dörr återförseglas automatiskt, och permanent öppning kräver en skingringsritual. Yxor och murbräckor är verkningslösa. Varje hög har också en dold, mycket trång krypingång bakom buskage (Finna dolda ting); i de trånga tunnlarna kan man bara använda korta vapen och måste krypa.
+
+Högarna har nyligen tagits i besittning av en grupp speciella **likätare** (de kan ge ifrån sig ett skräckinjagande skrik PSY/2 ggr/dygn).
+
+- **Mawasethers hög:** Förkammare med en 6 m grop, gravkammare med tömd kista (likätarna har stulit benknotor). Dolda fynd i sockeln: en **magisk bronsstridsklubba** (ELD E4 – glödhet ger +4T3 skada om den tränger igenom rustning), ett kopparamband med röda ädelstenar (~2000 sm) och sex obrukbara pergament. I grottan: tre utsvultna likätare.
+- **Melanowis hög:** Förkammare och gravkammare med väggmålningar (hon till häst, dödar ett troll, tas emot i dödsriket). Skattkammaren rymmer tre guldringar (~600 sm/st), en **magisk silvermedaljong** (HELA E1, 21 PSY), ett **magiskt bronslångspjut** (SMÄRTA E1; 1T10 skada) och två lerpluntor med giftig gul gas (styrka 2, fyller kammaren i 10 minuter). I grottan: fyra likätare och den döda förrymda kvinnan.
+- **Kathenowis hög:** Korridor med både en öppen och en dold fallgrop (6 m). Gravkammaren rymmer en **magisk bronsvendelhjälm** (MÖRKERSYN E1; absorberar 6), ett silverhalsband (~1000 sm), guldmynt och ett **magiskt bronsslagsvärd** (FROST E4 – iskallt ger +4T3 skada; 1T10 skada, BV 11). Barngravarna innehåller mynt; makens grav en silverring (~400 sm) och guldmynt. Åtta SR efter inträdet bryter likätarna (8 st totalt) in genom lösa stenar och anfaller.
+
+### D. Svartalfernas lya (s. 57–59; karta s. 91)
+I Nidabergens östra del lever en stam på 50 (svartalfer, ett par resar, en handfull svartnissar) ledd av den uråldrige (73 år) **Svirk Långskägg**, vars sinne svajar med åldern. Svartalferna är fega, grymma, lömska och opålitliga, håller sig i grottorna på dagen och jagar på natten med sina tama ulvar; de målar kroppar, vapen och rustningar svarta (vissa även mystiska men verkningslösa symboler).
+
+De elva grottorna omfattar: ingång (med svartmålad ryttarbild på dörren), vaktposter (fem ulvar dagtid, två resar nattetid), två ulvgrottor (2×15 sovande ulvar dagtid), svartnissarnas grotta (10 svartnissar; gömd lädersäck med 30 km, 10 sm och en ädelsten ~200 sm), förrådsgrotta (öl, vatten, mjöd, fältproviant), svartalfernas stora grotta (35 svartalfer; nattetid stannar bara Svirk och 3–4 av hans närmaste – SL kan låta Svirk vara förvirrad och t.ex. tro sig vara fånge), resarnas grotta (fem resar; en säck med nio avhuggna människo- och alvhuvuden), **fångarnas grotta** (syskonen **Kåre & Måne Vermundsson**, barn till köpmannen Sigbjörn i Torsborg – belöning vid hemförande), **skattgrottan** (deras beslagtagna utrustning, tre doser svart mennonpulver, pergament med FRAMMANA/SKICKA BORT UMBRA, ÅTERFINNA och STENVÄGG – samt **Vlempi Malcus formelsamling**), och en nödutgångstunnel. Fång- och skattgrottornas ingångar är blockerade av 60 BEP-stenar.
+
+### E. Trollens lya (s. 60–61)
+Djupt i Trollskogen lever en skogstrollstam på 30 ledd av det ovanligt stora och fula **Gomol Skalle**. Trollen är förtjusta i smycken (stulna halsband och ringar) och binder offrens avhuggna huvuden vid bältet som troféer. De hatar särskilt dvärgar, ankor och halvlängdsmän och torterar gärna sådana fångar. De sover på dagen och är aktiva på kvällen, då de flesta ger sig ut på jakt; återkomna håller de fest där fångar äts upp och dryck förtärs (slöa och bakfulla på dagen → –2 förflyttning, –4 SMI vid strid).
+
+Grottorna: ingång (60 BEP-sten), vaktpost (60 % chans att vakttrollet somnat dagtid), den stora grottan (29 troll + Gomol), **fångarnas grotta** (dvärgen **Brate**, alven **Elalion**, halvlängdsmännen **Ulfo & Pirjo Äppelblom** – göds upp innan de äts; hjälper gärna till mot trollen men saknar utrustning), **skattgrottan** (deras utrustning samt två doser gult och en dos rött mennonpulver) och mat-/dryckesförrådet (mest dryck, plus 11 canas-brödkakor som alven kan identifiera).
+
+### F. Borgruinen (s. 62–69; kartor s. 92–93)
+På Gipulflodens västra sida ligger ruinen av trollkarlen **Losethers** borg från bytiden. Losether försvann spårlöst under ett experiment vid konfluxen, och borgen plundrades och övergavs. Kvar finns **30 animerade skelett** som han satte att vakta huset – animerade som magiska föremål (ANIMERA DÖD E5, SIGILL E5, PERMANENS E5, NEXUS E2), alltså permanenta tills de förstörs. De känner automatiskt av alla levande inom tio rutor, tar ingen skada av stickvapen, halv skada av huggvapen och full av krossvapen, och förföljer inte inkräktare som flyr ut. Dessutom har en grupp på sju orcher och sju ulvar under **Argor Enöga** slagit sig ned i ett av tornen (de håller sig borta från huset av rädsla för skeletten) och planerar räder mot bondgårdarna.
+
+Borggården nås lätt genom de rasade murarna; vid de svarta bronsportarna står två spruckna skelettstatyer (50 % chans att gå sönder vid ovarsam behandling), och i den rasade muren bor en familj syrödlor. De fyra tornen är: **orchernas torn** (Argor uppe, sex orcher nere; om rollpersonerna är vänliga kan Argor vilja värva dem till sitt "rövarband" – en rollspelsmöjlighet snarare än oundviklig strid), **råttornas torn** (50 utsvultna råttor), ett **tomt torn** och själva borghuset. Borghuset rymmer en pelarsal med ett pentagram och tolv skelett, flera tomma rum med Losethers makabra väggmålningar, ett förrådsrum med ett lönnfack (Losethers kvarlämnade koppartackor, silverbägare, vaxljus och en **magisk dryck SYN E4**) och fängelsehålor med fler skelettväktare. Ett försvagat golvparti vid portarna kan störta ner i fängelsehålorna (30 % chans, 1T6 skada).
+
+### G. Tingsplatsen Thiwosgos (s. 70–72; karta s. 95)
+Howathernas heliga tingsplats, tom och vördad större delen av året men samlingsplats vid vårdagjämningen, då stammen håller ting i fem dagar. **Dag 1:** representanterna (klanäldste) möts, närvarolista upprättas, domstolsnämnd väljs. **Dag 2:** dom över hersens styre under det gångna året (kan leda till avsättning). **Dag 3:** lagfrågor. **Dag 4:** klantvister. **Dag 5:** övriga frågor; tinget avslutas med att völvan offrar en hjort till andarna och förfäderna. Lagarna, jämförbara med medeltida svenska landskapslagar, förs i skriftrullar av völvan, och varje howath har rätt att läsa (eller få uppläst) dem. **Tre straff finns:** böter, fördrivning (fredlös – vem som helst får dräpa den dömde) och döden (hängning). Domstolen utgörs av völvan och fyra utvalda visa; domen kan inte överklagas. Platser: altaret (den enda egentligt heliga punkten), hersens trätron och talarstenen.
+
+### H. Santono (animistakademin) (s. 73–74; karta s. 96)
+Den enda stora, permanenta älvbosättningen i Torshem, grundad 357 av animistmästaren **Eloaner** kring ett jättelikt bokträd. Den ende permanent boende är Eloaner; övriga är studenter och visa som kommer för att studera, forska och meditera. Stadgan kräver att alla – hög som låg, inklusive Eloaner – arbetar varannan dag (jordbruk, jakt, fiske, underhåll, försvar) och studerar varannan, för att skapa respekt för arbete och insikt i världen. Eloaner undervisar själv i animism; gästande lärde sköter botanik, drogkunskap, läkekonst, första hjälpen och zoologi. Många raser studerar här (alver och människor dominerar); svartfolk utestängs som alltför barbariska. Anläggningen har en huvudbyggnad i tre våningar (samlingsrum, bibliotek, laboratorium, förråd, allrum, kök/matsal, arbetsrum, sovrum) samt separata bostäder.
+
+---
+
+## 11. Viktiga spelledarpersoner (s. 75–84)
+
+Beskrivningarna nedan sammanfattar karaktär och roll; fullständiga värden finns i modulen. Stilen i statlinjerna: STY/SMI/KAR + STO/INT.
+
+### Torsborg
+- **Bern Armstarke** – vänlig, gladlynt värdshusvärd (~60) på Blå draken; har känt uppdragsgivaren sedan barnsben.
+- **Niels Gellek** – fetlagd, rödblommig köpman som ger eskortuppdraget i äventyr 3.
+- **Laberkus Sagbon** (STY 10 / SMI ? / KAR ?) – stadsmästare, ~40, överviktig av gott leverne, tunnhårig, ständigt leende. Velig och beslutsångestfylld eftersom han inte vill såra någon med ett nej; men inte dum – svår att lura och avskyr lögner. Ärvde sin post (förmodligen hans enda chans till den).
+- **Elissa Sagbon** (STY 10 / SMI 17 / KAR 14, INT 17) – Laberkus syster, leder huset Sagbon med järnhand. Beslutsam, djärv och en ledare ut i fingerspetsarna – allt det brodern saknar. Reslig, smärt, rödbrunt hår, fräknar; privat sympatisk. Har genomskådat och avskyr Vidar Vedort (vars frieri – för att förena husen "under en fast ledning" – möttes av ett hånskratt). Många vill se henne som stadens ledare.
+- **Vidar Vedort** (STY 12 / SMI 12 / KAR 15, INT 14) – charmig köpman med två ansikten: utåt älskvärd, inåt maktlysten och beräknande, med målet att kontrollera Torsborg och dvärghandeln ("milt storhetsvansinne"). ~30, gift med ett barn, rufsigt svart hår, grova drag, uppväxt i Erebos (hans jori bär en dialekt han inte kan dölja). Ovännerna kallar honom "Bogger" och säger att rösten låter som en ankas.
+
+### Howather
+- **Herse Tagaswether** (STY 16 / SMI 17 / KAR 15, INT 16) – bergsfolkets man, hårdför och kraftfull fältherre utan vankelmod, fast besluten att värna howatherna och aldrig revidera fredsfördraget. Omstridd sedan Herse-fejden; skogsbor och Gono-klanen vill se honom störtad. Äger det magiska kortsvärdet **"Stigis"** (brons; FÖRTROLLA VAPEN E3 med PERMANENS), en uråldrig hersesymbol. Hjälteförmåga: Stålblick.
+- **Völvan Sigaswitha** (STY 8 / SMI 10 / KAR 14, INT 18, PSY 24) – stammens shaman/historiker, drygt 50, fårad och böjd av ålder och upplevelser i andevärlden. Vis, svårlurad, mån om traditionerna och djupt orolig för framtiden (Herse-fejden och den kommande konfluxen är skrämmande omen). Med Gigant: Shamanism 19, med strids- och läkeandar i sin tjänst.
+- **Skogskrigare / Bergskrigare** (STY 14 / SMI 14 / KAR 10) – typiska howathiska stridsmän; skogskrigaren i nitläder + vendelhjälm (handyxa, långspjut, medelstor sköld, båge), bergskrigaren i läder + konhjälm (kortsvärd, kastspjut, stor sköld).
+
+### Svartfolk
+- **Svirk Långskägg** (STY 6 / SMI 10 / KAR 8) – senil svartalfshövding (73 år), tankspridd, oberäknelig och mentalt obalanserad; i klara stunder en typisk hård och grym hövding. Hans märkliga beteende får svartalferna att vörda honom ännu mer (de tror att andar tar hans sinne i besittning – ibland tror han det själv). Långt, smutsigt skägg.
+- **Argor Enöga** (STY 16 / SMI 13 / KAR 8, INT 13) – orchledare i borgruinen, temperamentsfull, äregirig och slug; drömmer om rikedom och makt och får fruktansvärda raserianfall vid motgång. Bär ett **magiskt björnskinn** (SPÅRLÖS E1 + ORIENTERING E1, ständigt aktiva).
+- **Gomol Skalle** (STY 30 / SMI 12 / KAR 2, STO 30) – grymt, ondskefullt trollhövding som njuter av att tortera. Bär ett stort, fult ärr i ansiktet (från en strid mot alver) som han skäms för och blir rasande om någon nämner – den som kunde avlägsna det skulle göra honom tacksam.
+- Generiska: **Svartalf** (STY 8/SMI 12/KAR 6), **Svartnisse** (STY 6/SMI 12/KAR 4), **Orch** (STY 14/SMI 12/KAR 6), **Rese** (STY 34/SMI 8/KAR 4, STO 24), **Troll** (STY 26/SMI 10/KAR 1, STO 26).
+
+### Klostret & templet
+- **Kanicaar-an-Cosh** (STY 24 / SMI 15 / KAR 6, PSY 26) – demonen i klostret; ca 250 cm, bevingad, mörkröd, klor och horn. Skräckskrik (PSY/2 ggr/dygn) och PSY-sugande bett (50 % chans, 1T6); mörkersyn, kan flyga, upplöses till röd gelé vid död.
+- **Kati Löm** (STY 12 / SMI 17 / KAR 15, INT 17, PSY 20) – kultens ledare och prästinna, nekromantiker (Nekromanti 19). Viljestark, ärelysten, energisk ensamvarg som tycker om att styra andra. Magisk bronsring (SKYDD E3, ständigt aktiv). Besvärjelser bl.a. ANTIMAGI, SKINGRA, LIVSUTTÖMNING, DÖDSHAND, RÄDSLA, KONTROLLERA LÄGRE ODÖD/ANDAR, SMÄRTA, PARALYSERING.
+- **Palimas Carnor** (STY 36 / SMI 14 / KAR 13, KP 24) – vampyr/krigarpräst, klok, viljestark och dominerande, förälskad i mystik och ockultism, plågas ibland av ångest. Magisk benknota (DÖDSHAND E1).
+- **Dori Thalik** (STY 42 / SMI 15 / KAR 16, KP 25) – vampyr/krigarpräst, djärv, slug och livsfarlig; stort heraldikintresse (målar egna vapenbilder). Bett 1T6.
+- **Bodil Rödtopp** (STY 15 / SMI 18 / KAR 16, INT 17) – fängslad i Palimas rum; vacker, intelligent, charmerande och en framstående tjuv/äventyrerska. Möjlig framtida allierad eller rollperson.
+- **Hardred Revioc** (astrolog) & **Anja Sigurdsdotter** (guldsmed) – gäster i rum 8 från Torsborg; båda dras till de mörka makterna (han högdragen och lättretad, hon envis och hänsynslös).
+- **Tempeltjänare** (×29; STY 10 / SMI 11 / KAR 13) och **vakter** (STY 11 / SMI 11 / KAR 12).
+- **Munkar** (STY 10 / SMI 9) – Karate 12, läs/skriv jori & fornhowathiska.
+
+### Trollskogen & fångar
+- **Aria** (STY 12 / SMI 18 / KAR 15, INT 16) – enveten, vildmarkshärdad skogsalv, otåligare än de flesta alver och något av en enstöring; fast besluten att rädda sin Elalion.
+- **Brate** (STY 16 / SMI 12 / KAR 10) – dvärg från Kvizur Kan, tystlåten, girig och långsint; blir en evig vän om man ger honom friheten och allt sitt gods tillbaka – och en evig fiende annars.
+- **Elalion** (STY 10 / SMI 16 / KAR 14, INT 16) – alv, humoristisk och skojfrisk men avvaktande till en början; mycket tacksam mot den som befriar honom.
+- **Ulfo & Pirjo Äppelblom** (STY 8 / SMI 15 / KAR 12) – halvlängdsmän, enäggstvillingar från Torsborg, stillsamma, försiktiga och godmodiga.
+- **Kåre Sigbjörnsson** (STY 11 / SMI 11) – köpmannason, öppen och trevlig men affärssinnad och snål; rasande men tålmodigt hämndlysten om någon lurar honom.
+- **Måne Sigbjörnsdotter** (STY 13 / SMI 12 / KAR 15) – Kåres syster, glad, nyfiken och optimistisk, affärsintresserad men mindre än brodern.
+
+### Övriga
+- **Eloaner** (STY 12 / SMI 14 / KAR 12, INT 20, PSY 30) – Santonos ledare, vis och mycket tålmodig, hängiven sin akademi; styr med mild men fast hand. Animism 20; besvärjelser bl.a. RENA, SPÅRLÖS, VÄDERFÖRUTSÄGELSE, VINDKONTROLL, REGNSTART/STOPP, DIMMA, SNABBVÄXT.
+- **Vlempi Malcus** (STY 8 / SMI 9, INT 20, PSY 26) – egoistisk, skrupelfri mentalist (Mentalism 20). Den ende i världen som känner till besvärjelsen **Åldersförbannelse** (skola M, värde 20, offret åldras ett år per månad; extra effektgrader kan drabba fler; bara formelkastaren kan häva den). Står bakom äventyr 4.
+- **Constantin Dluring** (STY 5 / SMI 12 / KAR 13, INT 16) – ytterst skicklig, sansad ankköpman som njuter av affärernas spel.
+- **Deobald Dluring** (STY 10 / SMI 12 / KAR 19, INT 16) – Constantins bror, mästare i quack-fu/judo 25, normalt lugn men livsfarlig vid behov (hjälteförmåga Järnnäve). Eskorteras av bruna ankor som **livvakter** (STY 9 / SMI 14).
+- **Shekh** – vargmannahövding (STY 20 / SMI 18 / KAR 12, SB 1T4); järnspetsade vapen.
+
+---
+
+## 12. Monster & djur (urval, s. 81–86)
+
+| Varelse | STY | SMI | Skydd | Anmärkning |
+|---------|-----|-----|-------|------------|
+| **Likätare** (Kungshögarna) | 14 | 7 | – | Skräckskrik PSY/2 ggr/dygn; 1 bett (1T8) + 2 klor (1T6) |
+| **Människoskelett** (borgen) | 22 | 11 | – | Bredsvärd/sköld; känner av allt levande inom 10 rutor; immun mot stick, halv skada av hugg, full av kross |
+| **Spöke** | – | – | – | Skräckattack; PSY 20; F10 |
+| **Kanicaar-an-Cosh** (demon) | 24 | 15 | Skinn 6 | Flyger (F18); skräckskrik; PSY-sugande bett |
+| **Vargman (krigare)** | 14 | 16 | Skinn 1 | Kortspjut/båge/sköld/dolk 16 |
+| **Brunbjörn** | 29 | 10 | Skinn 3 | Björnkram (special, 2T8) |
+| **Grottbjörn** | 35 | 11 | Skinn 4 | Björnkram (2T8) |
+| **Grottlejon** | 29 | 16 | Skinn 3 | Mycket snabb (L20) |
+| **Järv** | 14 | 14 | Päls 3 | – |
+| **Jättenoshörning** (ullhårig) | 44 | 8 | Päls 6 | Stångning; KP 50 |
+| **Kronhjort** | 21 | 13 | Skinn 1 | Stångning + 2 sparkar |
+| **Mammut** | 53 | 13 | Skinn 6 | SB 4T6 |
+| **Syrödla** | 16 | 8 | – | Familj i borgruinens mur |
+| **Ulv** | 18 | 16 | – | Svartalfernas/orchernas rid- och vaktdjur |
+| **Uroxe** | 35 | 17 | – | – |
+| **Varg** | 11 | 15 | – | – |
+| **Vildhund** | 10 | 16 | – | Sex st bevakar Karn Lendurs lik |
+| **Harpya** | 11 | 17 | Fjädrar 1 | Flyger (F14); 2 klor (1T6); stjäl glittrande ting |
+
+---
+
+## 13. Magiska föremål – snabblista
+
+| Föremål | Plats | Effekt |
+|---------|-------|--------|
+| Helig silversymbol | Karn Lendurs lik (klostret) | AURA E1 + SKYDD E2 (ev. bara Wegil-dyrkare) |
+| Magisk benknota | Palimas Carnor (templet, rum 9) | DÖDSHAND E1 (25 PSY) |
+| Bronsstridsklubba | Mawasethers hög | ELD E4 – +4T3 skada glödhet |
+| Silvermedaljong | Melanowis hög | HELA E1 (21 PSY) |
+| Bronslångspjut | Melanowis hög | SMÄRTA E1 (1T10 skada) |
+| Bronsvendelhjälm | Kathenowis hög | MÖRKERSYN E1 (abs. 6) |
+| Bronsslagsvärd | Kathenowis hög | FROST E4 – +4T3 köld (BV 11) |
+| Magisk dryck | Borgruinens lönnfack | SYN E4 |
+| Kati Löms bronsring | Kati Löm (templet) | SKYDD E3 (permanent) |
+| Kortsvärdet "Stigis" | Herse Tagaswether | FÖRTROLLA VAPEN E3 (permanent); hersesymbol |
+| Magiskt björnskinn | Argor Enöga (borgruinen) | SPÅRLÖS E1 + ORIENTERING E1 (ständigt aktiva) |
+
+---
+
+## 14. Kartblad i modulen (s. 87–97)
+
+1. Spelledarens karta över Torshem (s. 87)
+2. Blå draken (värdshus; kartblad 1b) (s. 88)
+3. Munkklostret (s. 89)
+4. Kashims tempel, nivå 1 & 2 (s. 90)
+5. Svartalfernas lya (s. 91)
+6. Borgruinen, översikt & borghus (s. 92–93)
+7. Kungshögarna (s. 94)
+8. Tingsplatsen Thiwosgos (s. 95)
+9. Santono (s. 96)
+10. Spelarnas karta över Torshem (s. 97)
+
+---
+
+*Sammanställd genom OCR (Tesseract, svenska) av den 99-sidiga skannade PDF:en. Ord, struktur och tabeller är omskrivna i sammanfattande och refererande form. Vissa siffervärden i statblock (KP, enstaka FV) kan ha små OCR-feltolkningar – kontrollera kritiska värden mot originalsidan. Läs modulens egna uppläsningsstycken för exakt ordalydelse vid bordet.*

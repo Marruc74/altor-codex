@@ -10,7 +10,7 @@ The swarm can take any form it wishes, but usually assumes the shape of a dragon
 
 ## Behaviour
 
-Though each insect is a separate individual, all share a single mind and are thus perfectly coordinated. They feed on flesh of every kind, choosing prey roughly half the swarm's own bulk. The swarm has two superb means of attack: with their combined will they can sink a victim into magical sleep, or they can bite, every insect in the swarm injecting its venom into the victim at once. They attack most often by night, when their true nature is betrayed only by a faint buzzing.
+Though each insect is a separate individual, all share a single mind and are thus perfectly coordinated. They feed on flesh of every kind, choosing prey roughly half the swarm's own bulk. The swarm has two superb means of attack: with their combined will they can sink a victim into magical sleep, or they can bite, every insect in the swarm injecting its venom into the victim at once. They attack most often by night, when their true nature is betrayed only by a faint buzzing. A ghertûm keeps mostly to rocky country, caves and ruins, and for all its menace it seldom troubles people, content to defend itself.
 
 ## Abilities
 
