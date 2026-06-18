@@ -14,4 +14,4 @@ Like all elementals, the umbra has no will of its own and acts only at the comma
 
 ## Abilities
 
-An umbra cannot be harmed by material weapons, but takes double harm from all fire-attacks. It can raise a globe of darkness in which every nearby light-source ceases to shed light, though it is not snuffed out, so that not even creatures that see in the dark can make anything out within it, save those who see by heat. An umbra that closes around a victim fills him with terror if it overcomes his will. It moves floating through the air and sees perfectly in the dark.
+An umbra cannot be harmed by material weapons, but takes double harm from all fire-attacks. It can raise a globe of darkness in which every nearby light-source ceases to shed light, though it is not snuffed out, so that not even creatures that see in the dark can make anything out within it, save those who see by heat. An umbra that closes around a victim fills him with terror if it overcomes his will. It moves floating through the air and sees perfectly in the dark. The umbra is the sworn opposite of the luminal, the light-elemental, and the two unmake one another should they ever meet.

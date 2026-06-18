@@ -6,7 +6,7 @@ The nightwolf is a fearsome undead creature, a combination of a constructed body
 
 ## Appearance
 
-The nightwolf resembles a gigantic, coal-black wolf with two or three heads. It stands about a metre and a half high and two and a half metres long, with long, dense, night-black fur. Its red eyes spread evil wherever they look.
+The nightwolf resembles a gigantic, coal-black wolf with two or three heads, built from the corpses of as many wolves bound into one body and quickened by an unhallowed ghost sealed within. It stands about a metre and a half high and two and a half metres long, with long, dense, night-black fur, and it reeks foully, a venomous spittle forever dripping from its jaws. Its red eyes spread evil wherever they look.
 
 ## Behaviour
 

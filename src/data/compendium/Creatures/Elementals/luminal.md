@@ -14,4 +14,4 @@ Like all elementals, the luminal has no will of its own and acts only at the com
 
 ## Abilities
 
-A luminal cannot be harmed by material weapons and is immune to all fire. It blinds every creature that looks upon it, the more surely those who see in the dark, leaving them for a while as though in pitch blackness.
+A luminal cannot be harmed by material weapons and is immune to all fire. It floods the space about it with clear light, and blinds every creature that looks upon it, the more surely those who see in the dark, leaving them for a while as though in pitch blackness. The luminal is the sworn opposite of the umbra, the darkness-elemental, and the two unmake one another should they ever meet.

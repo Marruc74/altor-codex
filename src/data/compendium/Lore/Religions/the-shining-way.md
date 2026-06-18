@@ -70,6 +70,12 @@ The **Sun Knights** are the official order of the church, founded at Ekeborg at 
 
 The **Order of Saint Justin** traces its founding to **Justin of Metera**, a poor cobbler's apprentice who in 233 eO was led by a dream to take a sword from a crypt in the church at Arno. Brought before the Exarch and bidden to tell his tale, he was set free, for the blade proved to be Odo's own. Justin rose to lead the Sun Knights and won great fame with the sword Gawalot, and when he died of old age in 274 he was declared a saint; the first crusade set out the very next year. The order he left behind is now among the strongest fighting forces anywhere about the Copper Sea.
 
+## The Sun Spirits
+
+On Caddo, where the faithful forbid all magic and only the god-gifted may wield power, that power takes the form of the sun-spirits. At the summer solstice a priest may call them down, one for each monk or knight who would bind one to service, and the spirit that yields becomes a servant for as long as its master keeps faith. A sun-spirit takes whatever shape its task requires: a weapon, shield or suit of armour for a knight in battle; a boat or other conveyance to carry its master on a journey; or, rarest of all, a thing of knowledge, often a ring, that answers what it is asked as a living book of lore. A sun-spirit can be hurt by nothing but magic, speaks to its master mind to mind, and gives light at command, and it leaves his service if he dies, if he breaks one of the six commandments, or if the church casts him out.
+
+Against the undead the church has another use for them. A monk or priest may summon a spirit of pure spirit-stuff and send it against a walking corpse or a restless ghost, the two locked in a contest of will until one is unmade, and by this the faithful lay the dead to rest and count it a holy duty.
+
 ## The Bright Hand
 
 The Bright Hand - Den Ljusa Handen - is the inquisition of the church. It was instituted by the exarch Zegedorn III in 314 eO. Its office is to police doctrine and to hunt out heresy wherever it takes root. The Bright Hand does not operate upon Caddo, the very land of Odo's birth, which lies beyond its reach since the Schism.
