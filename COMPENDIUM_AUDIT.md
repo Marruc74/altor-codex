@@ -21,7 +21,7 @@ record new ones).
 
 ---
 
-## Last run: 2026-06-18 — 585 files
+## Last run: 2026-06-19 — 615 files
 
 Structurally clean. All connection checks pass:
 
@@ -61,8 +61,17 @@ Structurally clean. All connection checks pass:
   pig, yak, walrus, dwarf elephant, giant shark, giant rhinoceros, predatory
   crane, cave lion), plus Alfin, Hippocampus, Giant Turtle, Peryton, Wererat,
   Hjortid, Eagle-Man, Selkie, Ghost Horse, Lantern-Man.
+- Added from Monster Book I: more **Animals** (the bears - brown, grizzly, cave,
+  black; the great cats - lion, tiger, leopard, jaguar, cheetah, saber-toothed
+  tiger; bison, elephant, mammoth, hippopotamus, hyena, fox, wolf, dire wolf,
+  wild dog, venomous snake, python, alligator, crocodile, shark, dolphin, killer
+  whale, bat swarm, rat swarm, scorpion, spider).
 
-## Known gap (not yet added)
+## Known gaps (not yet added)
+
+- **Monster Book I domestic livestock** (Nyttodjur: donkey, mule, pony, camel,
+  the horses, ox, cow, bull, water buffalo, sheep, goat) - deliberately skipped
+  as gear/livestock rather than lore creatures. Add a "Livestock" set if wanted.
 
 - **Monster Book II dinosaurs** (pp. 30–45: allosaurus, ankylosaurus, apatosaurus,
   brachiosaurus, deinonychus, pachycephalosaurus, spinosaurus, stegosaurus,
