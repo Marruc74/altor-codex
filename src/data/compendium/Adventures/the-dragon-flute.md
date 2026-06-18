@@ -1,7 +1,7 @@
 ---
 title: The Dragon Flute
 tagline: "A flute that opens the road into death, and a dragon who will lend it for a price."
-summary: With a companion dead and a legend to follow, the adventurers cross the wilds of Jih-pun to the Dragon Mountain, where the black dragon Oolong keeps a flute that opens a road into the land of the dead. He lends it for a price: to bring back a pearl stolen from his hoard and carried down among the dead. Down in the grey mist they find their fallen friend, but the gate out is held by a four-armed demon and a host of oni, and the only sure way to close the road behind them is to destroy the flute itself.
+summary: "With a companion dead and a legend to follow, the adventurers cross the wilds of Jih-pun to the Dragon Mountain, where the black dragon Oolong keeps a flute that opens a road into the land of the dead. He lends it for a price: to bring back a pearl stolen from his hoard and carried down among the dead. Down in the grey mist they find their fallen friend, but the gate out is held by a four-armed demon and a host of oni, and the only sure way to close the road behind them is to destroy the flute itself."
 videoIds: []
 series: "The Gates of the Dead"
 seriesPart: 2
