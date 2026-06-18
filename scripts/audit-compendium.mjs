@@ -1,14 +1,15 @@
-// Compendium health audit. Run:  node scripts/audit-compendium.mjs
+// Compendium health audit. Run:  node scripts/audit-compendium.mjs  (or npm run audit)
+// Runs automatically before `npm run build` (prebuild hook) and in CI; exits
+// non-zero on any HARD issue so a broken compendium can't ship.
 //
-// Checks, all deterministic (no false-positive-prone heuristics except where
-// noted), against src/data/compendium + the registration in src/data/videoData.js:
-//   1. ORPHAN files      - .md not reachable through any nav registration
-//   2. BROKEN regs       - a noVideo entry whose .md page is missing
-//   3. DUPLICATE slugs   - same basename in two+ places (possible dup page)
-//   4. EMPTY pages       - a page whose body (minus frontmatter/heading/images) is bare
-//   5. BROKEN images     - ![](...) / image: paths with no file under public/
-//   6. BROKEN entry links- adventure `entry:` values with no matching page
-//   7. BROKEN related    - RELATED_BY_SLUG keys/values with no matching page
+// Sources of truth: src/data/compendium (the files), src/data/videoData.js (real
+// chronicle videos + EXTRA_GEO), and src/data/compendiumRegistry.generated.js
+// (the markdown-only pages, produced by generate-compendium-registry.mjs).
+//
+// HARD (fail): ORPHAN files (a page missing from the registry - regenerate it),
+// BROKEN regs (a registry row whose .md is gone), BROKEN images, broken
+// adventure `entry:` links, broken RELATED_BY_SLUG refs, invalid adventure YAML.
+// WARN only: DUPLICATE slugs and EMPTY pages (the repo has a few intentional).
 //
 // Geography is pin-driven (src/data/locations.js), so its files are matched
 // against pin ids/names as well as videoData.
@@ -16,6 +17,7 @@
 import { readFileSync, readdirSync, statSync, existsSync } from "fs";
 import path from "path";
 import yaml from "js-yaml";
+import { compendiumRegistry } from "../src/data/compendiumRegistry.generated.js";
 
 const ROOT = "src/data/compendium";
 const vd = readFileSync("src/data/videoData.js", "utf8");
@@ -47,14 +49,22 @@ const reg = {};
 const add = (s, n) => { (reg[s] ??= new Set()).add(toSlug(n)); };
 for (const m of vd.matchAll(/title:\s*"([^"]+)"/g)) { const p = titleSection(m[1]); add(p.section, p.name); }
 
-const EXTRA = { EXTRA_PEOPLES: "peoples", EXTRA_CREATURES: "creatures", EXTRA_LORE: "lore", EXTRA_MAGIC: "magic", EXTRA_CHARACTERS: "characters", EXTRA_GEO: "geography" };
+// Markdown-only pages now come from the generated registry (5 content sections).
+// An orphan = a file missing from the registry (someone added a page and didn't
+// re-run generate-compendium-registry.mjs); a broken reg = a registry row whose
+// file is gone (a page deleted/renamed without regenerating). So these two
+// checks double as the "registry is in sync with the filesystem" guard.
 const extraEntries = [];
-for (const [nm, section] of Object.entries(EXTRA)) {
-  const start = vd.indexOf(`const ${nm} = [`); if (start === -1) continue;
-  const block = vd.slice(start, vd.indexOf("].map(", start));
-  for (const m of block.matchAll(/\{\s*group:\s*(null|"([^"]*)")\s*,\s*name:\s*"([^"]+)"\s*\}/g)) {
-    const group = m[1] === "null" ? null : m[2];
-    add(section, m[3]); extraEntries.push({ section, group, name: m[3] });
+for (const e of compendiumRegistry) { add(e.section, e.name); extraEntries.push({ section: e.section, group: e.group, name: e.name, slug: e.slug }); }
+// EXTRA_GEO is the one hand-kept geography list still in videoData.js.
+{
+  const start = vd.indexOf("const EXTRA_GEO = [");
+  if (start !== -1) {
+    const block = vd.slice(start, vd.indexOf("].map(", start));
+    for (const m of block.matchAll(/\{\s*group:\s*(null|"([^"]*)")\s*,\s*name:\s*"([^"]+)"\s*\}/g)) {
+      const group = m[1] === "null" ? null : m[2];
+      add("geography", m[3]); extraEntries.push({ section: "geography", group, name: m[3] });
+    }
   }
 }
 
@@ -89,7 +99,8 @@ const skipGroup = (g, s) => { if (!g) return true; g = g.toLowerCase(); s = s.to
 const cap = (s) => s[0].toUpperCase() + s.slice(1);
 const brokenReg = [];
 for (const e of extraEntries) {
-  const p = skipGroup(e.group, e.section) ? `${cap(e.section)}/${toSlug(e.name)}.md` : `${cap(e.section)}/${e.group}/${toSlug(e.name)}.md`;
+  const sl = e.slug ?? toSlug(e.name);
+  const p = skipGroup(e.group, e.section) ? `${cap(e.section)}/${sl}.md` : `${cap(e.section)}/${e.group}/${sl}.md`;
   if (!existsSync(path.join(ROOT, p))) brokenReg.push(`${e.section}/${e.group ?? "-"}/${e.name} -> expected ${p}`);
 }
 
@@ -121,3 +132,10 @@ out("Broken image refs", badImg);
 out("Broken adventure entry: links", badEntry);
 out("Broken RELATED_BY_SLUG refs", badRel);
 out("Invalid adventure YAML frontmatter", badYaml);
+
+// Hard failures fail the build/CI; duplicate slugs and empty pages are warnings
+// (the repo has a couple of intentional ones). Run the registry generator if
+// orphans/broken regs appear.
+const hard = orphans.length + brokenReg.length + badImg.length + badEntry.length + badRel.length + badYaml.length;
+console.log(`\n${hard === 0 ? "OK" : "FAIL"} — ${hard} hard issue(s); ${dups.length} duplicate slug(s), ${empties.length} empty page(s) (warnings).`);
+if (hard > 0) process.exit(1);

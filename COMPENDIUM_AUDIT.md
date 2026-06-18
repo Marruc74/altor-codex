@@ -1,18 +1,24 @@
 # Compendium Audit
 
-Health audit of `src/data/compendium`. Regenerate the findings any time with:
+Health audit of `src/data/compendium`. Run it any time with:
 
 ```bash
-node scripts/audit-compendium.mjs
+npm run audit        # node scripts/audit-compendium.mjs
 ```
 
-It checks, deterministically, against the registration in `videoData.js` (and
-`locations.js` pins for Geography): orphan files, broken registrations,
-duplicate slugs, empty/stub pages, broken image refs, broken adventure `entry:`
-links, broken `RELATED_BY_SLUG` refs, and invalid adventure YAML frontmatter.
+It also runs automatically before every `npm run build` (the `prebuild` hook)
+and in CI (`.github/workflows/ci.yml`), and **exits non-zero on any hard issue**,
+so a broken compendium can't ship.
 
-**Keep this file in step with the compendium** - after adding, removing or
-filling pages, re-run the script and update the lists below (clear fixed items,
+It checks, deterministically, against the files, `videoData.js` (real videos +
+`EXTRA_GEO`), `locations.js` pins, and `compendiumRegistry.generated.js` (the
+markdown-only pages): orphan/stale-registry, broken registrations, duplicate
+slugs, empty/stub pages, broken image refs, broken adventure `entry:` links,
+broken `RELATED_BY_SLUG` refs, and invalid adventure YAML frontmatter.
+
+**Adding a page:** drop the `.md` file, then `npm run registry` to regenerate
+the registry; the audit fails if you forget. **Keep this file in step** - after
+adding, removing or filling pages, update the lists below (clear fixed items,
 record new ones).
 
 > The adventure-YAML check matters: `adventures.js` parses frontmatter at

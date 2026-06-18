@@ -5,6 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "registry": "node scripts/generate-compendium-registry.mjs",
+    "audit": "node scripts/audit-compendium.mjs",
+    "prebuild": "node scripts/audit-compendium.mjs",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
