@@ -459,6 +459,7 @@ const EXTRA_PEOPLES = [
   { group: "Other Humanoids", name: "Alegar" },
   { group: "Beasts", name: "Talking Animals" },
   { group: "Dark Folks", name: "Troll" },
+  { group: "Sylvans", name: "Gnome" },
 ].map((p, i) => ({
   id: `x-people-${i}`,
   title: `Peoples ${p.group}: ${p.name}`,
