@@ -1,6 +1,13 @@
 # Najad
 
 
+![Najad](/compendium/Peoples/Sylvans/najad-2.jpg "Najad")
+![Najad](/compendium/Peoples/Sylvans/najad-3.jpg "Najad")
+![Najad](/compendium/Peoples/Sylvans/najad-4.jpg "Najad")
+![Najad](/compendium/Peoples/Sylvans/najad-5.jpg "Najad")
+![Najad](/compendium/Peoples/Sylvans/najad-6.jpg "Najad")
+![Najad](/compendium/Peoples/Sylvans/najad-7.jpg "Najad")
+![Najad](/compendium/Peoples/Sylvans/najad-8.jpg "Najad")
 ![Najad](/compendium/Peoples/Sylvans/najad.jpg "Najad")
 Najads, or spring-nymphs, make their home in a spring, a waterfall, a small forest tarn, a rapid or the like, and when in the water can dissolve their bodies and become water themselves. There are really several kinds: nereids of rapids and springs, oceanids of the seas, potameids of rivers and limnads of still pools. Like all nymphs a najad is bound to her home and unkillable except by its destruction, the diverting of her stream.
 

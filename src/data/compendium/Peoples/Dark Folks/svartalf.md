@@ -1,6 +1,15 @@
 # Svartalf
 
 
+![Svartalf](/compendium/Peoples/Dark Folks/svartalf-2.jpg "Svartalf")
+![Svartalf](/compendium/Peoples/Dark Folks/svartalf-3.jpg "Svartalf")
+![Svartalf](/compendium/Peoples/Dark Folks/svartalf-4.jpg "Svartalf")
+![Svartalf](/compendium/Peoples/Dark Folks/svartalf-5.jpg "Svartalf")
+![Svartalf](/compendium/Peoples/Dark Folks/svartalf-6.jpg "Svartalf")
+![Svartalf](/compendium/Peoples/Dark Folks/svartalf-7.jpg "Svartalf")
+![Svartalf](/compendium/Peoples/Dark Folks/svartalf-8.jpg "Svartalf")
+![Svartalf](/compendium/Peoples/Dark Folks/svartalf-9.jpg "Svartalf")
+![Svartalf](/compendium/Peoples/Dark Folks/svartalf-10.jpg "Svartalf")
 ![Svartalf](/compendium/Peoples/Dark Folks/svartalf.jpg "Svartalf")
 Despite the name, the svartalfs have nothing to do with elves, but they are probably the most disciplined of the dark folk, living in great robber bands that roam and plunder for their living. A clan is bound utterly to its leader, who need not be a svartalf himself, and strong clans often run protection rackets on the countryside, levying heavy tolls on passing merchants.
 

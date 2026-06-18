@@ -1,6 +1,14 @@
 # Silver Elf
 
 
+![Silver Elf](/compendium/Peoples/Elves/silver-elf-2.jpg "Silver Elf")
+![Silver Elf](/compendium/Peoples/Elves/silver-elf-3.jpg "Silver Elf")
+![Silver Elf](/compendium/Peoples/Elves/silver-elf-4.jpg "Silver Elf")
+![Silver Elf](/compendium/Peoples/Elves/silver-elf-5.jpg "Silver Elf")
+![Silver Elf](/compendium/Peoples/Elves/silver-elf-6.jpg "Silver Elf")
+![Silver Elf](/compendium/Peoples/Elves/silver-elf-7.jpg "Silver Elf")
+![Silver Elf](/compendium/Peoples/Elves/silver-elf-8.jpg "Silver Elf")
+![Silver Elf](/compendium/Peoples/Elves/silver-elf-9.jpg "Silver Elf")
 ![Silver Elf](/compendium/Peoples/Elves/silver-elf.jpg "Silver Elf")
 The winged silver elves live an airborne, nomadic life as hunters and gatherers. They live in tribes of thirty to fifty and feed chiefly on fruit, berries and birds caught in great nets. Silver elves are not especially enduring fliers, and so raise large herds of pegasi to use as mounts.
 

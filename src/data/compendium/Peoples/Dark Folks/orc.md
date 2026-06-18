@@ -1,6 +1,17 @@
 # Orc
 
 
+![Orc](/compendium/Peoples/Dark Folks/orc-2.jpg "Orc")
+![Orc](/compendium/Peoples/Dark Folks/orc-3.jpg "Orc")
+![Orc](/compendium/Peoples/Dark Folks/orc-4.jpg "Orc")
+![Orc](/compendium/Peoples/Dark Folks/orc-5.jpg "Orc")
+![Orc](/compendium/Peoples/Dark Folks/orc-6.jpg "Orc")
+![Orc](/compendium/Peoples/Dark Folks/orc-7.jpg "Orc")
+![Orc](/compendium/Peoples/Dark Folks/orc-8.jpg "Orc")
+![Orc](/compendium/Peoples/Dark Folks/orc-9.jpg "Orc")
+![Orc](/compendium/Peoples/Dark Folks/orc-10.jpg "Orc")
+![Orc](/compendium/Peoples/Dark Folks/orc-11.jpg "Orc")
+![Orc](/compendium/Peoples/Dark Folks/orc-12.jpg "Orc")
 ![Orc](/compendium/Peoples/Dark Folks/orc.jpg "Orc")
 The commonest of the dark folk and the best at building working societies, though only under a leader big, strong and clever enough to hold them, for orcs respect nothing but raw strength. Such leaders are rare, but necromancers, high elves, half-orcs and other black-hearted spellcasters sometimes seize an orc tribe and bend it to their own ends.
 
