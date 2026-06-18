@@ -17,11 +17,12 @@ jobs:
 
       # The markdown-only page registry is generated from the files. It must be
       # committed up to date - regenerate and fail if anything changed.
-      - name: Registry is in sync
+      - name: Generated indexes are in sync
         run: |
           node scripts/generate-compendium-registry.mjs
-          git diff --exit-code -- src/data/compendiumRegistry.generated.js \
-            || (echo "::error::compendiumRegistry.generated.js is stale - run 'npm run registry' and commit." && exit 1)
+          node scripts/generate-crossrefs.mjs
+          git diff --exit-code -- src/data/compendiumRegistry.generated.js src/data/crossRefs.generated.js \
+            || (echo "::error::A generated index is stale - run 'npm run registry' and 'npm run crossrefs' and commit." && exit 1)
 
       # Structural audit: orphans, broken regs/images/links, invalid adventure YAML.
       - name: Compendium audit

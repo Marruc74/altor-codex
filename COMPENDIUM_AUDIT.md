@@ -11,15 +11,17 @@ and in CI (`.github/workflows/ci.yml`), and **exits non-zero on any hard issue**
 so a broken compendium can't ship.
 
 It checks, deterministically, against the files, `videoData.js` (real videos +
-`EXTRA_GEO`), `locations.js` pins, and `compendiumRegistry.generated.js` (the
-markdown-only pages): orphan/stale-registry, broken registrations, duplicate
-slugs, empty/stub pages, broken image refs, broken adventure `entry:` links,
-broken `RELATED_BY_SLUG` refs, and invalid adventure YAML frontmatter.
+`EXTRA_GEO`), `locations.js` pins, `compendiumRegistry.generated.js` (the
+markdown-only pages), `compendiumTags.js` (themes) and `crossRefs.generated.js`
+(the page cross-reference index): orphan/stale-registry, broken registrations,
+duplicate slugs, empty/stub pages, broken image refs, broken adventure `entry:`
+links, broken `RELATED_BY_SLUG` refs, invalid adventure YAML frontmatter, theme
+slugs with no page, and stale cross-refs.
 
-**Adding a page:** drop the `.md` file, then `npm run registry` to regenerate
-the registry; the audit fails if you forget. **Keep this file in step** - after
-adding, removing or filling pages, update the lists below (clear fixed items,
-record new ones).
+**Adding a page:** drop the `.md` file, then `npm run registry`. **After editing
+page prose:** `npm run crossrefs` (rebuilds the "Referenced by"/"Related"/place→entry
+index). The audit fails if either generated file is stale. **Keep this file in
+step** - after adding, removing or filling pages, update the lists below.
 
 > The adventure-YAML check matters: `adventures.js` parses frontmatter at
 > *runtime*, so `npm run build` does NOT catch a broken block (e.g. an unquoted

@@ -7,6 +7,8 @@ import { adventures, adventureGroups } from "../data/adventures";
 import { videosForPin, relatedVideosByVideo } from "../data/crossLinks";
 import { thumbSrc, onThumbError } from "../lib/thumb";
 import { entryImages } from "../data/entryImages.generated";
+import { crossRefs } from "../data/crossRefs.generated";
+import { themes, themesBySlug, slugsByTheme, themeLabel } from "../data/compendiumTags";
 import { resolvePage, geoPlaces } from "../data/compendiumPages";
 
 // ── Image utilities ───────────────────────────────────────────────────────
@@ -442,6 +444,15 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onO
   }, [country.id]);
 
   const countryEntries = entries.filter((e) => e.tags.includes(country.id));
+  // Compendium pages whose prose names this place (from the generated cross-ref
+  // index), shown as "tied to this land". Entries only (not other lands/adventures).
+  const tiedPages = [
+    ...new Set([...(crossRefs.backlinks[toSlug(country.name)] ?? []), ...(crossRefs.backlinks[country.id] ?? [])]),
+  ]
+    .map(resolvePage)
+    .filter((p) => p && p.kind === "entry")
+    .filter((p, i, a) => a.findIndex((q) => q.id === p.id) === i)
+    .slice(0, 18);
   const pinVideos = videosForPin[country.id] ?? [];
   const mainVideo = locationData?.youtubeId
     ? (videoById[locationData.youtubeId] ?? { id: locationData.youtubeId, title: `Chronicle: ${country.name}` })
@@ -509,6 +520,26 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onO
                   <p className="codex-card__title">{a.title}</p>
                   {a.tagline && <p className="codex-card__summary">{a.tagline}</p>}
                   <span className="codex-card__entry-link">View more ↗</span>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {tiedPages.length > 0 && onOpenPage && (
+        <div className="country-detail__block">
+          <p className="location-panel__section-label">People, creatures &amp; lore of this land</p>
+          <div className="country-detail__entries-grid">
+            {tiedPages.map((t) => (
+              <button
+                key={`${t.kind}-${t.id}`}
+                className="codex-card codex-card--link"
+                onClick={() => onOpenPage(t)}
+              >
+                <div className="codex-card__body">
+                  <p className="codex-card__title">{t.name}</p>
+                  <span className="codex-card__entry-link">Lore ↗</span>
                 </div>
               </button>
             ))}
@@ -594,7 +625,7 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onO
 }
 
 // ── EntryDetail ───────────────────────────────────────────────────────────
-function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPage }) {
+function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPage, onThemeSelect, onPinSelect }) {
   const [markdown, setMarkdown] = useState(null);
 
   useEffect(() => {
@@ -618,12 +649,38 @@ function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPage }) {
   const relatedVideos = (relatedVideosByVideo[entry.id] ?? [])
     .map((id) => videoById[id])
     .filter(Boolean);
-  // Cross-references: adventures that feature this entry, plus any curated
-  // related pages (used for the conflicts → lands + adventures links).
+  // Cross-references. featuredIn = adventures that feature this entry. The rest is
+  // derived from the curated RELATED_BY_SLUG map plus the generated cross-ref index
+  // (crossRefs): pages this one mentions, and pages that mention it.
+  const slug = toSlug(entry.name);
   const featuredIn = adventuresByEntryId[entry.id] ?? [];
-  const related = (RELATED_BY_SLUG[toSlug(entry.name)] ?? [])
+  const myThemes = themesBySlug[slug] ?? [];
+  const seen = new Set([`entry-${entry.id}`, ...featuredIn.map((a) => `adventure-${a.id}`)]);
+  const toPages = (slugs) => {
+    const out = [];
+    for (const s of slugs) {
+      const p = resolvePage(s);
+      if (!p) continue;
+      const k = `${p.kind}-${p.id}`;
+      if (seen.has(k)) continue;
+      seen.add(k);
+      out.push(p);
+    }
+    return out;
+  };
+  // Related (discovery): curated first, then the pages this one points to.
+  const related = [
+    ...toPages(RELATED_BY_SLUG[slug] ?? []),
+    ...toPages(crossRefs.mentions[slug] ?? []),
+  ].slice(0, 8);
+  // Referenced by (reverse index): pages that mention this one, minus any above.
+  const referencedBy = toPages(crossRefs.backlinks[slug] ?? []).slice(0, 12);
+  // On the map: this page, or places it mentions, that are navigable map pins.
+  const mapPins = [slug, ...(crossRefs.mentions[slug] ?? [])]
     .map(resolvePage)
-    .filter(Boolean);
+    .filter((p) => p && p.kind === "country")
+    .filter((p, i, a) => a.findIndex((q) => q.id === p.id) === i)
+    .slice(0, 4);
 
   return (
     <div className="country-detail">
@@ -640,6 +697,25 @@ function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPage }) {
       </div>
 
       <div className="country-detail__divider" />
+
+      {(myThemes.length > 0 || mapPins.length > 0) && (
+        <div className="country-detail__meta">
+          {myThemes.map((id) => (
+            <button key={id} className="codex-tag" onClick={() => onThemeSelect?.(id)}>
+              {themeLabel[id]}
+            </button>
+          ))}
+          {mapPins.map((p) => (
+            <button
+              key={p.id}
+              className="codex-tag codex-tag--map"
+              onClick={() => onPinSelect?.(p.id)}
+            >
+              ◈ {p.name} on the map
+            </button>
+          ))}
+        </div>
+      )}
 
       {!loaded && <p className="country-detail__loading">Consulting the codex…</p>}
 
@@ -713,6 +789,28 @@ function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPage }) {
                   <p className="codex-card__title">{a.title}</p>
                   {a.tagline && <p className="codex-card__summary">{a.tagline}</p>}
                   <span className="codex-card__entry-link">View more ↗</span>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {referencedBy.length > 0 && onOpenPage && (
+        <div className="country-detail__block">
+          <p className="location-panel__section-label">Referenced by</p>
+          <div className="country-detail__entries-grid">
+            {referencedBy.map((t) => (
+              <button
+                key={`${t.kind}-${t.id}`}
+                className="codex-card codex-card--link"
+                onClick={() => onOpenPage(t)}
+              >
+                <div className="codex-card__body">
+                  <p className="codex-card__title">{t.name}</p>
+                  <span className="codex-card__entry-link">
+                    {t.kind === "adventure" ? "Adventure" : t.kind === "country" ? "Land" : "Lore"} ↗
+                  </span>
                 </div>
               </button>
             ))}
@@ -964,6 +1062,9 @@ export default function Compendium({
   onVideoSelect,
 }) {
   const [query, setQuery] = useState("");
+  // Active "browse by theme" facet (a cross-cutting tag from compendiumTags). When
+  // set, the sidebar lists the theme's member pages instead of the full nav tree.
+  const [themeFilter, setThemeFilter] = useState(null);
   // The open entry page (a Peoples/Creatures/Lore page, either video-backed or
   // markdown-only). Reflected in the URL as ?ce=<id> so the browser back/forward
   // buttons and refresh all work.
@@ -1075,6 +1176,37 @@ export default function Compendium({
 
     return [...matchCountries, ...matchEntries];
   }, [query]);
+
+  // Activate a theme facet (from a sidebar chip or an entry page's theme chip):
+  // clear the search and any open page so the filtered list shows.
+  const selectTheme = useCallback((id) => {
+    setQuery("");
+    setSelectedEntry(null);
+    onCountrySelect(null);
+    onAdventureSelect(null);
+    setThemeFilter(id);
+    window.scrollTo(0, 0);
+  }, [onCountrySelect, onAdventureSelect]);
+
+  // Member pages of the active theme, as sidebar result items.
+  const themeResults = useMemo(() => {
+    if (!themeFilter) return null;
+    const seen = new Set();
+    const items = [];
+    for (const s of slugsByTheme[themeFilter] ?? []) {
+      const p = resolvePage(s);
+      if (!p) continue;
+      const k = `${p.kind}-${p.id}`;
+      if (seen.has(k)) continue;
+      seen.add(k);
+      const sub = p.kind === "country" ? "Land"
+        : p.kind === "adventure" ? "Adventure"
+        : p.entry ? (p.entry.group ? `${SECTION_LABEL[p.entry.section]} · ${p.entry.group}` : SECTION_LABEL[p.entry.section])
+        : "Lore";
+      items.push({ target: p, label: p.name, sub });
+    }
+    return items.sort((a, b) => a.label.localeCompare(b.label));
+  }, [themeFilter]);
 
   const geoGroups = useMemo(() => {
     const geoVideoGroups = videosBySection["geography"] || [];
@@ -1374,6 +1506,8 @@ export default function Compendium({
               entry={selectedEntry}
               onVideoSelect={onVideoSelect}
               onOpenPage={openPage}
+              onThemeSelect={selectTheme}
+              onPinSelect={onPinSelect}
               onBack={selectedAdventure ? () => window.history.back() : null}
               backLabel={selectedAdventure ? (adventures.find((a) => a.id === selectedAdventure)?.title ?? "adventure") : ""}
             />
@@ -1394,9 +1528,46 @@ export default function Compendium({
               onOpenPage={openPage}
             />
           ) : (
-            <div className="country-detail__prompt">
-              <span className="country-detail__prompt-ornament">◉</span>
-              <p>Select an entry from the list to begin</p>
+            <div className="country-detail">
+              <div className="country-detail__header">
+                <div className="country-detail__header-text">
+                  <p className="country-detail__eyebrow">The Compendium</p>
+                  <h2 className="country-detail__name">Browse by theme</h2>
+                </div>
+              </div>
+              <div className="country-detail__divider" />
+              <div className="country-detail__meta">
+                {themes.map((t) => (
+                  <button
+                    key={t.id}
+                    className={`codex-tag${themeFilter === t.id ? " codex-tag--active" : ""}`}
+                    onClick={() => (themeFilter === t.id ? setThemeFilter(null) : selectTheme(t.id))}
+                  >
+                    {t.label}
+                  </button>
+                ))}
+              </div>
+              {themeResults ? (
+                <div className="country-detail__block">
+                  <p className="location-panel__section-label">{themeLabel[themeFilter]} — {themeResults.length} pages</p>
+                  <div className="country-detail__entries-grid">
+                    {themeResults.map((r) => (
+                      <button
+                        key={`${r.target.kind}-${r.target.id}`}
+                        className="codex-card codex-card--link"
+                        onClick={() => openPage(r.target)}
+                      >
+                        <div className="codex-card__body">
+                          <p className="codex-card__title">{r.label}</p>
+                          <span className="codex-card__entry-link">{r.sub} ↗</span>
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <p className="country-detail__empty">Pick a theme above, or search and choose an entry from the list.</p>
+              )}
             </div>
           )}
         </div>

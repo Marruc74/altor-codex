@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "registry": "node scripts/generate-compendium-registry.mjs",
+    "crossrefs": "node scripts/generate-crossrefs.mjs",
     "audit": "node scripts/audit-compendium.mjs",
     "prebuild": "node scripts/audit-compendium.mjs",
     "build": "vite build",

@@ -2094,6 +2094,18 @@ body {
   gap: 0.15rem;
 }
 
+/* Theme/map chip rows on the compendium first page and entry pages */
+.country-detail__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 1.25rem;
+}
+.codex-tag--map {
+  border-color: var(--gold-dim);
+  color: var(--gold-light);
+}
+
 .compendium-results__empty {
   font-family: var(--font-body);
   font-size: 0.85rem;
