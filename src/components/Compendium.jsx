@@ -194,11 +194,11 @@ const RELATED_BY_SLUG = {
   "animism": ["elemental", "mentalism"],
   "elemental": ["animism", "mentalism"],
   "mentalism": ["animism", "elemental", "necromancy"],
-  "necromancy": ["mentalism", "dark-magic", "familiars", "tamanrasset", "kenvadsin-laogeraftjan"],
+  "necromancy": ["mentalism", "dark-magic", "familiars", "tamanrasset", "kenvadsin-laogeraftjan", "revenant"],
   "dark-magic": ["necromancy"],
   // The necromancers drawn from the Necromancy archive feature: the goblin
   // book-thief and the mild interpreter who hides his claws.
-  "tamanrasset": ["necromancy", "kenvadsin-laogeraftjan"],
+  "tamanrasset": ["necromancy", "kenvadsin-laogeraftjan", "goblin"],
   "kenvadsin-laogeraftjan": ["necromancy", "erebos", "tamanrasset", "familiars"],
   // The Brotherhood of the Red Fish and its worked example, the thief whose
   // botched job opens The Stolen Elephant.
@@ -231,6 +231,20 @@ const RELATED_BY_SLUG = {
   // From Sinkadus 19: the deep-dwelling water elves and the dwarves' building art.
   "water-elf": ["sea-elf", "grey-elf", "shark-man"],
   "dwarven-architecture": ["dwarf", "craft-guilds"],
+  // From Sinkadus 18: the dwarves' brewing, and the seven roads to immortality.
+  "drinks-of-ereb": ["dwarf", "trade", "craft-guilds"],
+  "the-exalted": ["the-dragon-masters", "the-gods", "the-world-of-altor"],
+  // From Sinkadus 16: the persona and craft of magicians, and the seers' arts.
+  "the-ways-of-magicians": ["the-aspects-of-magic", "familiars", "magical-symbols"],
+  "divination": ["the-shaul-deck", "constellations", "the-ways-of-magicians"],
+  // From Sinkadus 15: the elven nature, the cat-folk, and the goblins (vättar).
+  "elves": ["wood-elf", "high-elf", "the-gods", "animism"],
+  "catpeople": ["elves"],
+  "goblin": ["dwarf", "cave-elf", "tamanrasset", "dwarven-architecture"],
+  // From Sinkadus 13: the self-willed undead a necromancer makes of himself,
+  // and the herb-lore of Jih-pun.
+  "revenant": ["necromancy", "vampire", "death-knight", "zombie"],
+  "herbs-of-jih-pun": ["jih-pun", "drinks-of-ereb"],
   "the-black-water": ["ley-lines-and-magic-dead-lands", "the-bane-storm"],
   "the-bane-storm": ["necromancy", "dark-magic", "the-black-water"],
   "the-city-of-angels": ["death-angel", "the-world-of-altor"],
@@ -284,7 +298,7 @@ const RELATED_BY_SLUG = {
   "eledain": ["the-brotherhood-of-the-eternally-shining-star", "the-gods"],
   "the-brotherhood-of-the-eternally-shining-star": ["eledain", "the-gods"],
   // The Magic rulebook: the further schools, the aspect framework, divination.
-  "the-aspects-of-magic": ["animism", "elemental", "mentalism", "the-multiverse"],
+  "the-aspects-of-magic": ["animism", "elemental", "mentalism", "the-multiverse", "the-ways-of-magicians"],
   "dragon-magic": ["mentalism", "illusionism", "symbolism", "the-dragon-masters"],
   "illusionism": ["mentalism", "dragon-magic", "symbolism"],
   "symbolism": ["mentalism", "dragon-magic", "illusionism"],
@@ -295,13 +309,13 @@ const RELATED_BY_SLUG = {
   "alchemy": ["notable-magic-items", "the-aspects-of-magic"],
   "magic-nodes-and-storms": ["the-bane-storm", "ley-lines-and-magic-dead-lands", "dark-magic"],
   "the-shaul-deck": ["ordo-magica", "the-heavenly-bodies"],
-  "familiars": ["witchcraft", "spiritism", "animism"],
+  "familiars": ["witchcraft", "spiritism", "animism", "the-ways-of-magicians"],
   // Worldbuilding lore cross-links.
   "coins-and-measures": ["trade"],
   "trade": ["coins-and-measures", "craft-guilds"],
   "craft-guilds": ["trade", "weapon-academies", "coins-and-measures"],
   // The dragon-masters: their title, their chronicle, and the karkion who began it.
-  "the-dragon-masters": ["cereval", "karkion", "dragon-magic"],
+  "the-dragon-masters": ["cereval", "karkion", "dragon-magic", "the-exalted"],
   // The Cauldron of Bitterness, and the dragon-haunted swordsman Arn.
   "khab-hemi": ["the-crown-jewels", "meh-zadrias-pillar", "the-black-water"],
   "arn-dunkelbrink": ["marjura", "trakorien", "the-oracles-four-eyes"],

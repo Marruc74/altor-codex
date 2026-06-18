@@ -55,6 +55,10 @@ Jih-pun is a proud and ancient civilisation, and every soul knows its rung on th
 
 Birth fixes the rung, but a warrior's profession fixes his place within it. A samurai bears the right of kirisutegomen, to cut down on the spot any commoner who insults him, and to a samurai money itself is shameful, so that his wife keeps the household's accounts while he holds himself above the touch of coin.
 
+## The Clans
+
+Deeper than class runs the clan, the chief institution of Jih-pun, whose word is very nearly law. To belong to one is to be sure of a roof and a meal wherever kin are found, of friends and contacts and loans, of help in a feud, and of an introduction-letter that opens doors no stranger could pass. A clan's great deeds raise the standing of every member, and its disgraces stain them all; a large clan lends weight to a man's word, and peril to his missteps. In return a clansman must always stand ready to fight for the clan's honour, even in quarrels he thinks pointless and not his own, and the warrior clans of the buke shed blood freely for it, hiring swords to settle their feuds. The worst fate of all is to be cast out, for the outcast is reckoned lower than the eta, with no rights, no honour and nothing left to live for; a man shamed that far will more often take his own life than bear it, though some turn hermit, and some flee to the forests, where the bandit-bands have made clans of their own.
+
 ## History
 
 The islanders reckon their years from the accession of the emperor Hakamoto, who in the year nothing of that count broke the last of the warring city-states and had himself proclaimed the first emperor of a single Jih-pun. Before him the land had been a scatter of as many as two hundred city-states, each ruled by a strongman or a council and forever feuding. Hakamoto gave the realm common law and standard measures, forbade all weapons but those of his own warriors, and so raised up the samurai class; his son Takamori set down the first full book of laws and fixed the throne upon the eldest son.

@@ -2,6 +2,7 @@
 figures:
   - name: "King Mefimor IV"
     description: "Ruler of Hynsolge, who stands with the common folk against his own nobility"
+    image: /compendium/Geography/Ereb/Countries/Hynsolge/King Mefimor IV.jpg
   - name: "Fingal Gorrond"
     description: "The deified hero 'Orchnackare,' patron god of the realm"
   - name: "Abrahim Stenklo"
@@ -22,19 +23,25 @@ figures:
     description: "The Soul-eater, the demon whose corruption lies at the realm's root"
   - name: "Korumil Gormowac"
     description: "The blood-elf whose orc army Fingal destroyed at the future Orkovia"
+    image: /compendium/Geography/Ereb/Countries/Hynsolge/Korumil Gormowac.jpg
 places:
   - name: "Orkovia"
     description: "The capital, in the royal province of Hamellien, raised where Fingal Gorrond defeated Korumil Gormowac's orc army; a circular-walled city of marble streets and glass windows with no slum"
+    image: /compendium/Geography/Ereb/Countries/Hynsolge/Orkovia.jpg
   - name: "The Orc Knoll"
     description: "A sixty-meter mound near Orkovia where Fingal burned the fallen orcs for eight days, now an execution site"
+    image: /compendium/Geography/Ereb/Countries/Hynsolge/The Orc Knoll.jpg
   - name: "Fervidun"
     description: "The realm's only true harbor, in Sirigon, seat of the Angusia cult and the rebel nobility's wealth"
+    image: /compendium/Geography/Ereb/Countries/Hynsolge/Fervidun.jpg
   - name: "Greyburg"
     description: "The free craft city of Brangoria, famed for Master Guldorf's silver and Master Klack-Soeren's footwear, neutral by contract since 538"
   - name: "Gormowac's Forest"
     description: "A dense and dreaded forest of strangling vines, monstrous boars, and blood-leeching leeches"
+    image: /compendium/Geography/Ereb/Countries/Hynsolge/Gormowac Forest.jpg
   - name: "Hyllmar Forest"
     description: "A forest rich in game and home to the rare brook-bear"
+    image: /compendium/Geography/Ereb/Countries/Hynsolge/Hyllmar Forest.jpg
   - name: "Olakia"
     description: "A flood-ruined province where bandit-bands have revived tribal society and shamanism"
 ---

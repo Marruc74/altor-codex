@@ -440,6 +440,7 @@ const EXTRA_PEOPLES = [
   { group: "Dark Folks", name: "Shikome" },
   { group: "Elves", name: "Wood Elf" },
   { group: "Elves", name: "Water Elf" },
+  { group: "Elves", name: "Elves" },
   { group: "Humans", name: "Pamperna" },
   { group: "Humans", name: "Jih-mono" },
   { group: "Humans", name: "Ainu" },
@@ -454,6 +455,7 @@ const EXTRA_PEOPLES = [
   { group: "Other Humanoids", name: "Sharg" },
   { group: "Other Humanoids", name: "Wolf-Rider" },
   { group: "Other Humanoids", name: "Woodman" },
+  { group: "Other Humanoids", name: "Alegar" },
   { group: "Beasts", name: "Talking Animals" },
   { group: "Dark Folks", name: "Troll" },
 ].map((p, i) => ({
@@ -486,6 +488,7 @@ const EXTRA_PEOPLES = [
 // video. Same treatment as the extra peoples: they surface in the Creatures nav
 // and load their own .md, with the "Watch" button hidden by EntryDetail.
 const EXTRA_CREATURES = [
+  { group: "Corporeal Undead", name: "Revenant" },
   { group: "Spirits", name: "Poltergeist" },
   { group: "Demonic Creatures", name: "Death Cherub" },
   { group: "Demonic Creatures", name: "Death Angel" },
@@ -603,6 +606,7 @@ const EXTRA_LORE = [
   { group: "Cosmology", name: "Constellations" },
   { group: "Cosmology", name: "Tiamat" },
   { group: "Cosmology", name: "The Rainbow" },
+  { group: "Cosmology", name: "The Exalted" },
   { group: "Factions", name: "Burned Earth Clan" },
   { group: "Factions", name: "Grokashak Oggra" },
   { group: "Factions", name: "Kharynos" },
@@ -651,6 +655,10 @@ const EXTRA_LORE = [
   { group: null, name: "Coins and Measures" },
   { group: null, name: "Craft Guilds" },
   { group: null, name: "Dwarven Architecture" },
+  { group: null, name: "Drinks of Ereb" },
+  { group: null, name: "Herbs of Jih-pun" },
+  { group: null, name: "The Ways of Magicians" },
+  { group: null, name: "Divination" },
   { group: null, name: "The Catacombs of Nohstril" },
   { group: null, name: "The Dragon-Masters" },
   { group: null, name: "Languages" },
