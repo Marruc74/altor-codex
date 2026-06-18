@@ -444,6 +444,7 @@ const EXTRA_PEOPLES = [
   { group: "Humans", name: "Pamperna" },
   { group: "Humans", name: "Jih-mono" },
   { group: "Humans", name: "Ainu" },
+  { group: "Humans", name: "Hedemi" },
   { group: "Other Humanoids", name: "Dyler" },
   { group: "Other Humanoids", name: "Half-elf" },
   { group: "Other Humanoids", name: "Half-orc" },
@@ -488,7 +489,9 @@ const EXTRA_PEOPLES = [
 // video. Same treatment as the extra peoples: they surface in the Creatures nav
 // and load their own .md, with the "Watch" button hidden by EntryDetail.
 const EXTRA_CREATURES = [
+  { group: "Dragons", name: "Dragon" },
   { group: "Corporeal Undead", name: "Revenant" },
+  { group: "Fable Animals", name: "Megas" },
   { group: "Spirits", name: "Poltergeist" },
   { group: "Demonic Creatures", name: "Death Cherub" },
   { group: "Demonic Creatures", name: "Death Angel" },
@@ -754,6 +757,8 @@ const EXTRA_CHARACTERS = [
   { group: null, name: "Kenvadsin Lao'Geraftjan" },
   { group: null, name: "Naurudun" },
   { group: null, name: "Ozuno" },
+  { group: null, name: "Sebastian Marol" },
+  { group: null, name: "Gadirm" },
 ].map((p, i) => ({
   id: `x-character-${i}`,
   title: `Characters: ${p.name}`,

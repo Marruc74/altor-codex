@@ -20,7 +20,9 @@ The dwarves are a people of many tongues, divided as their many holds are divide
 
 ## The Dragon Language
 
-Hardest of all the world's tongues is the Dragon Language, a speech so deep and strange that it cannot truly be translated, for every word must be wholly redefined before it can be carried into another tongue. Dragons and humans, try as they might, can never fully understand one another across this gulf. Within the Dragon Language lies the deep and perilous concept of the true name - the secret word that is the very essence of a being. To know another's true name and to speak it is to gain full power over that being, and so the dragons guard such knowledge with a jealousy beyond all reckoning.
+Hardest of all the world's tongues is the Dragon Language, a speech so deep and strange that it cannot truly be translated, for every word must be wholly redefined before it can be carried into another tongue. Roughly a tenth of all its words cannot be rendered at all and must be learned by definition alone, and this is why dragons hold so wholly different a view of the world than any other creature. Stranger yet, the tongue is shaped to a way of seeing that matches a magician's own so closely that scholars cannot believe the likeness mere chance. Dragons and humans, try as they might, can never fully understand one another across this gulf.
+
+The tongue carries a magic woven into the words themselves. One word binds whoever speaks it to the truth for a set number of sentences thereafter, so long as the dragon-tongue is spoken; dragons, true to their nature, delight in slipping its hold by twisting a sentence, telling only the bare letter of the truth, or leaving the most of it unsaid. Deeper and more perilous still is the true name, the secret word that is the very essence of a being. To know another's true name and to speak it is to gain full power over that being, and so the dragons guard such knowledge with a jealousy beyond all reckoning.
 
 ## The Lesser and Stranger Tongues
 

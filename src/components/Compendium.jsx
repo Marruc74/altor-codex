@@ -245,6 +245,8 @@ const RELATED_BY_SLUG = {
   // and the herb-lore of Jih-pun.
   "revenant": ["necromancy", "vampire", "death-knight", "zombie"],
   "herbs-of-jih-pun": ["jih-pun", "drinks-of-ereb"],
+  // From Sinkadus 11: the mercenary captain shaped by the Sulphur Winter.
+  "sebastian-marol": ["zorakin", "marjura", "sulphur-winter"],
   "the-black-water": ["ley-lines-and-magic-dead-lands", "the-bane-storm"],
   "the-bane-storm": ["necromancy", "dark-magic", "the-black-water"],
   "the-city-of-angels": ["death-angel", "the-world-of-altor"],
