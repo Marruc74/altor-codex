@@ -48,6 +48,10 @@ A long island split lengthwise by the **Appobergen**, a range rising up to about
 - The plains are near overpopulated, intensively farmed for wheat and olives
 - Only the high mountains remain wild
 
+## Wildlife
+
+The high Appobergen are the island's one wild place, and a few creatures are found there and nowhere else. The grey mountain-panther, a soft-grey, brown-flecked cousin of the mainland lions, keeps to the heights and preys on stray livestock rather than people. The one-horned cliff-goat, a shy beast with a single horn rising from its brow, leaps the crags and flees sooner than fight. Overhead rides the black eagle, all black but for its yellowish beak, bold enough to stoop at a shepherd to drive him off its hunting-grounds. Down on the farmed plains the dalker keep two beasts of their own peculiar stock: the dwarf elephant, a placid miniature of the great elephant, bred as a beast of burden and shipped abroad for the same, and the running-mouse, a kangaroo-like animal raised in great fenced herds for its excellent meat and among the swiftest runners in all the land.
+
 ## People
 
 Caddo is almost entirely inhabited by the **dalker** (dalcoi, "island folk"). Tall and fair-haired, blue or grey-eyed, and deeply sun-tanned beneath their island sun, they are an energetic people, industrious almost to a fault, and superb craftsmen, merchants and shipbuilders. Of unknown origin, they are unrelated to the *jorer*. They prize equality above all, judging a person by conduct and office rather than inherited rank - a habit that irritates visiting nobles. They dress mostly in light hose and a short, long-sleeved jacket of velvet or silk.

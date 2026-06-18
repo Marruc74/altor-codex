@@ -10,8 +10,8 @@ Frost elves have white hair and green eyes, and dress almost entirely in clothes
 
 ## Behaviour
 
-In the cold, harsh north not many besides the frost elves get by, so visitors are greatly prized, for the frost elves are very good listeners. They are generally peaceable and will flee rather than fight if threatened.
+In the cold, harsh north not many besides the frost elves get by, so visitors are greatly prized, for the frost elves are very good listeners. They are generally peaceable and will flee rather than fight a stranger, yet they have warred since time out of mind against the black-folk and the ice-barbarians who covet their reindeer herds, and many an orc-band has perished in a rain of their unerring arrows.
 
 ## Abilities
 
-Frost elves endure temperatures far below freezing without trouble, but fare worse in warm climates, where their nimbleness fails as the heat rises. Like all elves they have keen sight and hearing, see well by night, are immune to disease and do not visibly age.
+Frost elves endure temperatures far below freezing without trouble, but fare worse in warm climates, where their nimbleness fails as the heat rises. On ski and skate they are without equal, crossing the snows faster and surer than any other people. Like all elves they have keen sight and hearing, see well by night, are immune to disease and do not visibly age.

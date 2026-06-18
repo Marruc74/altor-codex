@@ -280,6 +280,7 @@ const SECTION_MAP = {
   Geography:          "geography",
   Countries:          "countries",
   Magic:              "magic",
+  Animals:            "creatures",
   Dragons:            "creatures",
   "Fable Animals":    "creatures",
   Elementals:         "creatures",
@@ -459,6 +460,7 @@ const EXTRA_PEOPLES = [
   { group: "Other Humanoids", name: "Alegar" },
   { group: "Beasts", name: "Talking Animals" },
   { group: "Dark Folks", name: "Troll" },
+  { group: "Dark Folks", name: "Olog-hai" },
   { group: "Sylvans", name: "Gnome" },
 ].map((p, i) => ({
   id: `x-people-${i}`,
@@ -490,6 +492,11 @@ const EXTRA_PEOPLES = [
 // video. Same treatment as the extra peoples: they surface in the Creatures nav
 // and load their own .md, with the "Watch" button hidden by EntryDetail.
 const EXTRA_CREATURES = [
+  { group: "Animals", name: "Gorilla" },
+  { group: "Animals", name: "Yeti" },
+  { group: "Animals", name: "Polar Bear" },
+  { group: "Fable Animals", name: "Tarantellid" },
+  { group: "Plants", name: "Mushroom-Man" },
   { group: "Dragons", name: "Dragon" },
   { group: "Corporeal Undead", name: "Revenant" },
   { group: "Fable Animals", name: "Megas" },
@@ -674,6 +681,8 @@ const EXTRA_LORE = [
   { group: null, name: "Magical Symbols" },
   { group: null, name: "The Shaul Deck" },
   { group: null, name: "Familiars" },
+  { group: null, name: "Galvorn" },
+  { group: null, name: "Metals" },
 ].map((p, i) => ({
   id: `x-lore-${i}`,
   title: `Lore${p.group ? " " + p.group : ""}: ${p.name}`,
