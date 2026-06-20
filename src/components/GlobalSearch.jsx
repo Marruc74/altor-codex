@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from "react";
 import { pins } from "../data/locations";
-import { entries } from "../data/codex/index.js";
 import { videos, allEntries } from "../data/videoData";
 import { adventures } from "../data/adventures";
 import { mentionIndex } from "../data/searchIndex.generated";
@@ -50,19 +49,6 @@ function buildGroups(query) {
       data: p, flatIdx: flatIdx++,
     }));
 
-  const matchedEntries = entries
-    .filter((e) =>
-      e.title.toLowerCase().includes(q) ||
-      e.summary.toLowerCase().includes(q) ||
-      e.tags.some((t) => t.toLowerCase().includes(q))
-    )
-    .slice(0, 5)
-    .map((e) => ({
-      type: "entry", key: e.id, label: e.title,
-      sub: e.tags.slice(0, 3).join(" · "),
-      data: e, flatIdx: flatIdx++,
-    }));
-
   const matchedAdventures = adventures
     .filter((a) => adventureText(a).includes(q))
     .slice(0, 5)
@@ -109,7 +95,6 @@ function buildGroups(query) {
 
   if (matchedPins.length)       groups.push({ category: "Locations",  items: matchedPins });
   if (matchedAdventures.length) groups.push({ category: "Adventures", items: matchedAdventures });
-  if (matchedEntries.length)    groups.push({ category: "Codex",      items: matchedEntries });
   if (matchedCompendium.length) groups.push({ category: "Compendium", items: matchedCompendium });
   if (matchedMentions.length)   groups.push({ category: "Mentions",   items: matchedMentions });
   if (matchedEpisodes.length)   groups.push({ category: "Chronicles", items: matchedEpisodes });
@@ -117,7 +102,7 @@ function buildGroups(query) {
   return groups;
 }
 
-export default function GlobalSearch({ onPinSelect, onEntrySelect, onVideoSelect, onAdventureSelect, onCompendiumEntrySelect, onCountryOpen, onClose }) {
+export default function GlobalSearch({ onPinSelect, onVideoSelect, onAdventureSelect, onCompendiumEntrySelect, onCountryOpen, onClose }) {
   const [query, setQuery]           = useState("");
   const [focusedIdx, setFocusedIdx] = useState(0);
   const inputRef  = useRef(null);
@@ -139,7 +124,6 @@ export default function GlobalSearch({ onPinSelect, onEntrySelect, onVideoSelect
 
   const handleSelect = (item) => {
     if (item.type === "pin")       onPinSelect(item.data.id);
-    if (item.type === "entry")     onEntrySelect(item.data.id);
     if (item.type === "video")     onVideoSelect(item.data);
     if (item.type === "adventure") onAdventureSelect(item.data.id);
     if (item.type === "centry")    onCompendiumEntrySelect(item.data.id);
@@ -172,7 +156,7 @@ export default function GlobalSearch({ onPinSelect, onEntrySelect, onVideoSelect
             ref={inputRef}
             className="gs__input"
             type="search"
-            placeholder="Search locations, adventures, codex, chronicles…"
+            placeholder="Search locations, adventures, compendium, chronicles…"
             value={query}
             onChange={(e) => changeQuery(e.target.value)}
             onKeyDown={handleKeyDown}
@@ -201,8 +185,7 @@ export default function GlobalSearch({ onPinSelect, onEntrySelect, onVideoSelect
                     {item.type === "pin"
                       ? <span className="gs__dot" style={{ background: item.color }} />
                       : <span className="gs__sigil">{
-                          item.type === "entry" ? "◈"
-                            : item.type === "adventure" ? "❖"
+                          item.type === "adventure" ? "❖"
                             : item.type === "centry" ? "◆"
                             : item.type === "mention" ? "✦"
                             : "▶"

@@ -2294,6 +2294,24 @@ body {
   font-size: 0.85rem;
 }
 
+/* Sub-places nested under their parent country (e.g. Beyural under Erebos). */
+.compendium-nav__sublist {
+  list-style: none;
+  margin: 0 0 0.1rem 0;
+}
+.compendium-nav__item--child {
+  padding-left: 1.4rem;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+.compendium-nav__item--child::before {
+  content: "└ ";
+  color: var(--border-light);
+}
+.compendium-nav__item--child.compendium-nav__item--active {
+  padding-left: calc(1.4rem - 2px);
+}
+
 /* Main content panel */
 .compendium-main {
   flex: 1;

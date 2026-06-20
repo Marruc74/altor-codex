@@ -1,5 +1,5 @@
-// Shared markdown image helpers, used by Compendium and CodexPanel so the two
-// can't drift. extractImages pulls every ![alt](src "caption") out of a body;
+// Shared markdown image helpers. extractImages pulls every ![alt](src "caption")
+// out of a body;
 // stripImages removes them (leaving the prose) and collapses the gaps.
 const IMAGE_RE = /!\[([^\]]*)\]\(([^")]+?)(?:\s+"([^"]*)")?\)/g;
 

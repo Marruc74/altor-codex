@@ -64,7 +64,7 @@ for (const e of compendiumRegistry) { add(e.section, e.name); extraEntries.push(
   const start = vd.indexOf("const EXTRA_GEO = [");
   if (start !== -1) {
     const block = vd.slice(start, vd.indexOf("].map(", start));
-    for (const m of block.matchAll(/\{\s*group:\s*(null|"([^"]*)")\s*,\s*name:\s*"([^"]+)"\s*\}/g)) {
+    for (const m of block.matchAll(/\{\s*group:\s*(null|"([^"]*)")\s*,\s*name:\s*"([^"]+)"/g)) {
       const group = m[1] === "null" ? null : m[2];
       add("geography", m[3]); extraEntries.push({ section: "geography", group, name: m[3] });
     }

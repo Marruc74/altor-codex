@@ -18,7 +18,6 @@ const TAGLINE = "A compendium of the known world of Altor — its regions, citie
 const imp = (rel) => import(pathToFileURL(path.join(root, rel)).href);
 const { allEntries, SECTIONS } = await imp("src/data/videoData.js");
 const { pins } = await imp("src/data/locations.js");
-const { entries: codexEntries } = await imp("src/data/codex/index.js");
 const { entryImages } = await imp("src/data/entryImages.generated.js");
 
 const SECTION_LABEL = Object.fromEntries(SECTIONS.map((s) => [s.id, s.label]));
@@ -57,13 +56,7 @@ for (const v of allEntries) {
   put(`ce:${v.id}`, v.name, `${where} in the world of Ereb Altor. ${TAGLINE}`, img);
 }
 
-// 2) Codex entries (opened via ?entry=)
-for (const e of codexEntries) {
-  const img = e.image ? fullImg(e.image) : (fullImg(entryImages[toSlug(e.title ?? e.name ?? "")]) || HERO);
-  put(`entry:${e.id}`, e.title ?? e.name ?? e.id, e.summary || TAGLINE, img);
-}
-
-// 3) Lands (?country=) and any map pin (?pin=). Read locations/<id>.js for a
+// 2) Lands (?country=) and any map pin (?pin=). Read locations/<id>.js for a
 //    description + chronicle video to enrich the country pages.
 const locDir = path.join(root, "src/data/locations");
 const locInfo = {};

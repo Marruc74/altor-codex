@@ -2,7 +2,6 @@ import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import ReactMarkdown from "react-markdown";
 import yaml from "js-yaml";
 import { SECTIONS, videosBySection, videos as allVideos, allEntries } from "../data/videoData";
-import { entries } from "../data/codex/index.js";
 import { adventures, adventureGroups } from "../data/adventures";
 import { adventuresByPin, adventuresByEntryId } from "../data/adventureLinks";
 import { videosForPin, relatedVideosByVideo } from "../data/crossLinks";
@@ -268,7 +267,7 @@ function PageActions({ target }) {
 // Breadcrumb trail for a detail view. The root "Compendium" crumb returns to
 // the landing; the section/group crumbs are context labels; the leaf is the
 // current page. (Defined after CONTINENTS / SECTION_LABEL / adventureGroups.)
-function Breadcrumbs({ entry, country, adventure, onHome }) {
+function Breadcrumbs({ entry, country, adventure, onHome, onOpenPage }) {
   const trail = [];
   if (entry) {
     trail.push(SECTION_LABEL[entry.section] ?? "Codex");
@@ -288,20 +287,30 @@ function Breadcrumbs({ entry, country, adventure, onHome }) {
   } else {
     return null;
   }
+  const lastI = trail.length - 1;
   return (
     <nav className="breadcrumbs" aria-label="Breadcrumb">
       <button className="breadcrumbs__crumb breadcrumbs__crumb--link" onClick={onHome}>Compendium</button>
-      {trail.map((label, i) => (
-        <span key={i} className="breadcrumbs__seg">
-          <span className="breadcrumbs__sep" aria-hidden="true">›</span>
-          <span
-            className={`breadcrumbs__crumb${i === trail.length - 1 ? " breadcrumbs__crumb--current" : ""}`}
-            aria-current={i === trail.length - 1 ? "page" : undefined}
-          >
-            {label}
+      {trail.map((label, i) => {
+        // A middle crumb whose label is itself a page (e.g. the "Beyural" group,
+        // which is also the island's place page) becomes a link to it.
+        const target = i < lastI ? resolvePage(label) : null;
+        return (
+          <span key={i} className="breadcrumbs__seg">
+            <span className="breadcrumbs__sep" aria-hidden="true">›</span>
+            {target && onOpenPage ? (
+              <button className="breadcrumbs__crumb breadcrumbs__crumb--link" onClick={() => onOpenPage(target)}>{label}</button>
+            ) : (
+              <span
+                className={`breadcrumbs__crumb${i === lastI ? " breadcrumbs__crumb--current" : ""}`}
+                aria-current={i === lastI ? "page" : undefined}
+              >
+                {label}
+              </span>
+            )}
           </span>
-        </span>
-      ))}
+        );
+      })}
     </nav>
   );
 }
@@ -374,6 +383,15 @@ const PAGE_UNIVERSE = (() => {
   return ks;
 })();
 const TOTAL_PAGES = PAGE_UNIVERSE.size;
+
+// Geography sub-places (parent set) that nest under their parent country in the
+// nav: parent country id → [child geo entries].
+const geoChildrenByParent = (() => {
+  const m = {};
+  for (const g of videosBySection["geography"] || [])
+    for (const v of g.videos) if (v.parent) (m[v.parent] ??= []).push(v);
+  return m;
+})();
 
 // ── Path helpers ──────────────────────────────────────────────────────────
 function toSlug(str) {
@@ -569,7 +587,7 @@ const RELATED_BY_SLUG = {
 };
 
 // ── CountryDetail ─────────────────────────────────────────────────────────
-function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onOpenPage }) {
+function CountryDetail({ country, onPinSelect, onVideoSelect, onOpenPage }) {
   const [locationData, setLocationData] = useState(null);
   const [markdown, setMarkdown] = useState(null);
   const [lightbox, setLightbox] = useState(null);
@@ -601,10 +619,6 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onO
   // eslint-disable-next-line react-hooks/exhaustive-deps -- record on id change only
   useEffect(() => { recordView({ kind: "country", id: country.id, name: country.name }); }, [country.id]);
 
-  const countryEntries = useMemo(
-    () => entries.filter((e) => e.tags.includes(country.id)),
-    [country.id]
-  );
   // Compendium pages whose prose names this place (from the generated cross-ref
   // index), shown as "tied to this land". Entries only (not other lands/adventures).
   const tiedPages = useMemo(() => [
@@ -739,29 +753,6 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onO
         </div>
       )}
 
-      {countryEntries.length > 0 && (
-        <div className="country-detail__block">
-          <p className="location-panel__section-label">Codex Entries</p>
-          <div className="country-detail__entries-grid">
-            {countryEntries.map((entry) => (
-              <button key={entry.id} className="codex-card" onClick={() => onEntrySelect(entry.id)}>
-                <div className="codex-card__image-wrap">
-                  {entry.image ? (
-                    <CardImage src={entry.image} alt={entry.title} />
-                  ) : (
-                    <span className="codex-card__placeholder">◈</span>
-                  )}
-                </div>
-                <div className="codex-card__body">
-                  <p className="codex-card__title">{entry.title}</p>
-                  {entry.summary && <p className="codex-card__summary">{entry.summary}</p>}
-                </div>
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
-
       {loaded && relatedVideos.length > 0 && (
         <div className="country-detail__block">
           <p className="location-panel__section-label">Related Videos</p>
@@ -786,7 +777,7 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onO
         </div>
       )}
 
-      {loaded && !mainVideo && countryEntries.length === 0 && relatedVideos.length === 0 && images.length === 0 && !bodyText && (
+      {loaded && !mainVideo && relatedVideos.length === 0 && images.length === 0 && !bodyText && (
         <p className="country-detail__empty">Details coming soon.</p>
       )}
 
@@ -1212,7 +1203,6 @@ export default function Compendium({
   selectedAdventure,
   onAdventureSelect,
   onPinSelect,
-  onEntrySelect,
   onVideoSelect,
 }) {
   const [query, setQuery] = useState("");
@@ -1414,7 +1404,9 @@ export default function Compendium({
 
     for (const continent of CONTINENTS) {
       const cs = geoPlaces.filter((c) => c.continent === continent.id);
-      const geoVids = geoByName[continent.name] || [];
+      // Sub-places that nest under a country (parent set) are rendered beneath it,
+      // not in the flat list.
+      const geoVids = (geoByName[continent.name] || []).filter((v) => !v.parent);
       if (cs.length || geoVids.length)
         result.push({ id: continent.id, name: continent.name, countries: cs, videos: geoVids });
     }
@@ -1608,6 +1600,20 @@ export default function Compendium({
                                   >
                                     {c.name}
                                   </button>
+                                  {geoChildrenByParent[c.id] && (
+                                    <ul className="compendium-nav__sublist">
+                                      {geoChildrenByParent[c.id].map((v) => (
+                                        <li key={`v-${v.id}`}>
+                                          <button
+                                            className={`compendium-nav__item compendium-nav__item--entry compendium-nav__item--child${selectedEntry?.id === v.id ? " compendium-nav__item--active" : ""}`}
+                                            onClick={() => { onAdventureSelect(null); setSelectedEntry(v); onCountrySelect(null); window.scrollTo(0, 0); }}
+                                          >
+                                            {v.name}
+                                          </button>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  )}
                                 </li>
                               ))}
                               {group.videos.map((v) => (
@@ -1703,6 +1709,7 @@ export default function Compendium({
               country={selectedPin}
               adventure={selectedAdventureObj}
               onHome={goHome}
+              onOpenPage={openPage}
             />
           )}
           {selectedEntry ? (
@@ -1721,7 +1728,6 @@ export default function Compendium({
               key={selectedPin.id}
               country={selectedPin}
               onPinSelect={onPinSelect}
-              onEntrySelect={onEntrySelect}
               onVideoSelect={onVideoSelect}
               onOpenPage={openPage}
             />

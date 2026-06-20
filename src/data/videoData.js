@@ -437,6 +437,9 @@ export const videosBySection = Object.fromEntries(
 // (section, slug) is not already covered by a real chronicle video is surfaced
 // in the nav and loads its own .md, with the "Watch" button hidden by
 // EntryDetail. Geography keeps its small EXTRA list below (pin/continent rules).
+// Pages with `hidden: true` frontmatter: kept in allEntries (so they resolve,
+// search and cross-reference) but never placed in the nav tree.
+const hiddenEntries = [];
 {
   const slugify = (str) =>
     str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()
@@ -444,9 +447,10 @@ export const videosBySection = Object.fromEntries(
   const videoKeys = new Set(videos.map((v) => `${v.section}|${slugify(v.name)}`));
   const touched = new Set();
   let i = 0;
-  for (const { section, group, name, slug } of compendiumRegistry) {
+  for (const { section, group, name, slug, hidden } of compendiumRegistry) {
     if (videoKeys.has(`${section}|${slug}`)) continue; // a real video already covers this page
-    const entry = { id: `x-${section}-${i++}`, title: `${section}: ${name}`, section, group, name, noVideo: true };
+    const entry = { id: `x-${section}-${i++}`, title: `${section}: ${name}`, section, group, name, noVideo: true, hidden: !!hidden };
+    if (hidden) { hiddenEntries.push(entry); continue; } // off the nav tree, still resolvable
     const sec = videosBySection[section] ?? (videosBySection[section] = []);
     let grp = sec.find((g) => g.group === group);
     if (!grp) { grp = { group, videos: [] }; sec.push(grp); }
@@ -466,6 +470,7 @@ export const videosBySection = Object.fromEntries(
 // other EXTRA pages do, with the "Watch" button hidden by EntryDetail.
 const EXTRA_GEO = [
   { group: "Ereb", name: "Caranor" },
+  { group: "Ereb", name: "Beyural", parent: "erebos" }, // an island of Erebos; nests under it
 ].map((p, i) => ({
   id: `x-geo-${i}`,
   title: `Geography ${p.group}: ${p.name}`,
@@ -473,6 +478,7 @@ const EXTRA_GEO = [
   group: p.group,
   name: p.name,
   noVideo: true,
+  parent: p.parent ?? null, // a country id this place nests under in the nav
 }));
 
 {
@@ -491,9 +497,10 @@ const EXTRA_GEO = [
 // Flat list of every entry shown in the compendium (real videos + the
 // markdown-only EXTRA pages), used by the global search index and the
 // cross-reference resolver so the noVideo pages are reachable too.
-export const allEntries = Object.values(videosBySection)
-  .flat()
-  .flatMap((g) => g.videos);
+export const allEntries = [
+  ...Object.values(videosBySection).flat().flatMap((g) => g.videos),
+  ...hiddenEntries,
+];
 
 export const SECTIONS = [
   { id: "characters", label: "Characters", sigil: "◇" },

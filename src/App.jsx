@@ -2,7 +2,6 @@ import { useState, useEffect, useCallback, useRef, lazy, Suspense } from "react"
 import Navbar from "./components/Navbar";
 import InteractiveMap from "./components/InteractiveMap";
 import LocationPanel from "./components/LocationPanel";
-import CodexSection from "./components/CodexSection";
 import VideoModal from "./components/VideoModal";
 import GlobalSearch from "./components/GlobalSearch";
 import EmberCanvas from "./components/EmberCanvas";
@@ -11,9 +10,13 @@ import EmberCanvas from "./components/EmberCanvas";
 const Timeline   = lazy(() => import("./components/Timeline"));
 const Compendium = lazy(() => import("./components/Compendium"));
 const MediaSection = lazy(() => import("./components/MediaSection"));
-import { entries } from "./data/codex/index.js";
+import { allEntries } from "./data/videoData";
 import { pins } from "./data/locations";
 import "./App.css";
+
+// Compendium pages openable directly, for the random "Surprise me".
+const ENTRY_SECTIONS = new Set(["peoples", "creatures", "lore", "magic", "history", "conflicts", "characters"]);
+const SURPRISE_ENTRIES = allEntries.filter((v) => ENTRY_SECTIONS.has(v.section));
 
 // ── URL helpers ──────────────────────────────────────────────
 function getParam(key) {
@@ -29,16 +32,26 @@ function setParam(key, value) {
   history.replaceState(null, "", url);
 }
 
+// Migrate legacy ?entry= deep links (the retired Codex) to the compendium's ?ce=.
+(function migrateLegacyParams() {
+  const u = new URL(window.location);
+  const e = u.searchParams.get("entry");
+  if (e && !u.searchParams.get("ce")) {
+    u.searchParams.delete("entry");
+    u.searchParams.set("ce", e);
+    history.replaceState(null, "", u);
+  }
+})();
+
 function getInitialPage() {
   // URL params take priority — navigate to the relevant section
   if (getParam("pin"))     return "map";
-  if (getParam("entry"))   return "codex";
   if (getParam("country")) return "catalog";
   if (getParam("adventure")) return "catalog";
   if (getParam("ce")) return "catalog";
   // Otherwise read hash
   const hash = window.location.hash.replace("#", "");
-  const valid = ["about", "history", "map", "codex", "chronicles", "catalog"];
+  const valid = ["about", "history", "map", "chronicles", "catalog"];
   return valid.includes(hash) ? hash : null;
 }
 
@@ -57,7 +70,6 @@ export default function App() {
   const [activePage, setActivePage] = useState(getInitialPage);
 
   const mapRef      = useRef(null);
-  const codexRef    = useRef(null);
   const imageWrapRef = useRef(null);
 
   const handleHeroMouseMove = useCallback((e) => {
@@ -115,24 +127,7 @@ export default function App() {
     setTimeout(() => mapRef.current?.selectPin(pinId), 150);
   }, [navigate]);
 
-  const handleGlobalEntrySelect = useCallback((id) => {
-    navigate("codex");
-    setTimeout(() => codexRef.current?.openEntry(id), 150);
-  }, [navigate]);
-
-  const handleSurprise = useCallback(() => {
-    if (Math.random() < 0.5) {
-      const entry = entries[Math.floor(Math.random() * entries.length)];
-      navigate("codex");
-      setTimeout(() => codexRef.current?.openEntry(entry.id), 150);
-    } else {
-      const pin = pins[Math.floor(Math.random() * pins.length)];
-      handlePinSelect(pin.id);
-    }
-  }, [navigate, handlePinSelect]);
-
   const [initialPinId]   = useState(() => getParam("pin"));
-  const [initialEntryId] = useState(() => getParam("entry"));
 
   // Deep-link: select pin or entry after mount
   useEffect(() => {
@@ -146,9 +141,6 @@ export default function App() {
     if (selectedLocation) setParam("pin", selectedLocation.id);
     else setParam("pin", null);
   }, [selectedLocation]);
-
-  const handleEntryOpen  = useCallback((id) => setParam("entry", id), []);
-  const handleEntryClose = useCallback(() => setParam("entry", null), []);
 
   const [selectedCountry, setSelectedCountry] = useState(() => getParam("country"));
   const handleCountrySelect = useCallback((id) => {
@@ -201,6 +193,17 @@ export default function App() {
       window.dispatchEvent(new PopStateEvent("popstate"));
     }, 150);
   }, [navigate]);
+
+  // "Surprise me": a random compendium page or a random map pin.
+  const handleSurprise = useCallback(() => {
+    if (Math.random() < 0.5 && SURPRISE_ENTRIES.length) {
+      const entry = SURPRISE_ENTRIES[Math.floor(Math.random() * SURPRISE_ENTRIES.length)];
+      handleGlobalCompendiumEntry(entry.id);
+    } else {
+      const pin = pins[Math.floor(Math.random() * pins.length)];
+      handlePinSelect(pin.id);
+    }
+  }, [handleGlobalCompendiumEntry, handlePinSelect]);
 
   // From a Chronicles card: open the Compendium page that shares its subject.
   // Dispatches on the resolved page kind to the matching deep-link handler.
@@ -339,7 +342,7 @@ export default function App() {
         <section id="map" className="map-section">
           <div className="section-header">
             <h2 className="section-title">The Known World</h2>
-            <p className="section-sub">Pan and zoom to explore. Click a marker to open its codex entry.</p>
+            <p className="section-sub">Pan and zoom to explore. Click a marker to open its details.</p>
           </div>
           <div className="map-container">
             <InteractiveMap ref={mapRef} onLocationSelect={handleLocationSelect} />
@@ -352,18 +355,6 @@ export default function App() {
           onAdventureSelect={handleGlobalAdventureSelect}
         />
       </div>
-
-      {/* Codex */}
-      {activePage === "codex" && (
-        <div className="page">
-          <CodexSection
-            ref={codexRef}
-            initialEntryId={initialEntryId}
-            onEntryOpen={handleEntryOpen}
-            onEntryClose={handleEntryClose}
-          />
-        </div>
-      )}
 
       {/* Chronicles */}
       {activePage === "chronicles" && (
@@ -385,7 +376,6 @@ export default function App() {
               selectedAdventure={selectedAdventure}
               onAdventureSelect={handleAdventureSelect}
               onPinSelect={handlePinSelect}
-              onEntrySelect={handleGlobalEntrySelect}
               onVideoSelect={handleVideoSelect}
             />
           </Suspense>
@@ -401,7 +391,6 @@ export default function App() {
       {searchOpen && (
         <GlobalSearch
           onPinSelect={handlePinSelect}
-          onEntrySelect={handleGlobalEntrySelect}
           onVideoSelect={handleVideoSelect}
           onAdventureSelect={handleGlobalAdventureSelect}
           onCompendiumEntrySelect={handleGlobalCompendiumEntry}

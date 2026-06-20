@@ -37,6 +37,10 @@ const PAGE_BY_SLUG = (() => {
   for (const a of adventures) add(toSlug(a.title), { kind: "adventure", id: a.id, name: a.title });
   for (const v of allEntries)
     if (ENTRY_SECTIONS.has(v.section)) add(toSlug(v.name), { kind: "entry", id: v.id, name: v.name, entry: v });
+  // Non-pin Geography pages (e.g. Caranor, Beyural) open as entries too, so links
+  // and cross-references can reach them. Country pins above keep priority.
+  for (const v of allEntries)
+    if (v.section === "geography") add(toSlug(v.name), { kind: "entry", id: v.id, name: v.name, entry: v });
   return map;
 })();
 
