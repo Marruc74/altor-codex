@@ -1,6 +1,15 @@
 # Goblin
 
 
+![Goblin](/compendium/Peoples/Dark Folks/goblin-2.jpg "Goblin")
+![Goblin](/compendium/Peoples/Dark Folks/goblin-3.jpg "Goblin")
+![Goblin](/compendium/Peoples/Dark Folks/goblin-4.jpg "Goblin")
+![Goblin](/compendium/Peoples/Dark Folks/goblin-5.jpg "Goblin")
+![Goblin](/compendium/Peoples/Dark Folks/goblin-6.jpg "Goblin")
+![Goblin](/compendium/Peoples/Dark Folks/goblin-7.jpg "Goblin")
+![Goblin](/compendium/Peoples/Dark Folks/goblin-8.jpg "Goblin")
+![Goblin](/compendium/Peoples/Dark Folks/goblin-9.jpg "Goblin")
+![Goblin](/compendium/Peoples/Dark Folks/goblin-10.jpg "Goblin")
 ![Goblin](/compendium/Peoples/Dark Folks/goblin.jpg "Goblin")
 Goblins live in tight-knit clans in great underground mining complexes and have reached almost the same level of craft as dwarves, at least in practical function if not in beauty, so they trade their work to the less skilled dark folk. Their cities are well planned and well built, ringed by defensive labyrinths of tunnel against thieves, and the greatest of them hold as many as ten thousand. By their own lore they were the last of the dark folk to be made, shaped by the over-god Ouahran after he had seen the flaws in all the rest, and given a keener wit and a small, lithe body fitted for the deep earth.
 

@@ -43,6 +43,7 @@ suffixed `-alt`.
 | `aventyrspaket-1.md` | Adventure Pack 1 (Black Duel + Beauty and the Beasts) |
 | `aventyrspaket-1-gm.md` | Adventure Pack 1 (GM summary) |
 | `kopparhavets-kapare.md` | Raiders of the Copper Sea |
+| `ereb-altor-aventyrsboken.md` | Ereb Altor: The Adventure Book (The Unicorn and the Dragon-Serpent + The Oathbreakers of Erebos) |
 | `krilloan-aventyrsboken-detailed.md` | Krilloan II: The Adventure Book (detailed) |
 | `krilloan-aventyrsboken-summary.md` | Krilloan II: The Adventure Book (summary) |
 

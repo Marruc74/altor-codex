@@ -63,6 +63,7 @@ const SWEDISH_TITLE = {
   "dimon": "Dimön", "kopparhavets-kapare": "Kopparhavets kapare",
   "krilloan-aventyrsboken": "Krilloan: Äventyrsboken", "aventyrspaket-1": "Äventyrspaket 1",
   "arans-vag-4": "Arans väg", "auktionen": "Auktionen", "demonprinsen": "Demonprinsen",
+  "ereb-altor-aventyrsboken": "Ereb Altor: Äventyrsboken",
 };
 
 // Distinctive proper nouns in a text (capitalized, ≥4 letters), for matching an

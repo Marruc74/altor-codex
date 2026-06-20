@@ -1,6 +1,14 @@
 # Peerie
 
 
+![Peerie](/compendium/Peoples/Sylvans/peerie-2.jpg "Peerie")
+![Peerie](/compendium/Peoples/Sylvans/peerie-3.jpg "Peerie")
+![Peerie](/compendium/Peoples/Sylvans/peerie-4.jpg "Peerie")
+![Peerie](/compendium/Peoples/Sylvans/peerie-5.jpg "Peerie")
+![Peerie](/compendium/Peoples/Sylvans/peerie-6.jpg "Peerie")
+![Peerie](/compendium/Peoples/Sylvans/peerie-7.jpg "Peerie")
+![Peerie](/compendium/Peoples/Sylvans/peerie-8.jpg "Peerie")
+![Peerie](/compendium/Peoples/Sylvans/peerie-9.jpg "Peerie")
 ![Peerie](/compendium/Peoples/Sylvans/peerie.jpg "Peerie")
 Peeries live the summer in beautiful, blossoming meadows and the winter in underground workshops, where they spend the whole dark season at their cobbling. Their favourite pastime, next to shoemaking, is playing tricks on humans and driving them to distraction with their pranks.
 

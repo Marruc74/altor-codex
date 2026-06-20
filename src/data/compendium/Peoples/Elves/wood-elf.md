@@ -1,6 +1,15 @@
 # Wood Elf
 
 
+![Wood Elf](/compendium/Peoples/Elves/wood-elf-2.jpg "Wood Elf")
+![Wood Elf](/compendium/Peoples/Elves/wood-elf-3.jpg "Wood Elf")
+![Wood Elf](/compendium/Peoples/Elves/wood-elf-4.jpg "Wood Elf")
+![Wood Elf](/compendium/Peoples/Elves/wood-elf-5.jpg "Wood Elf")
+![Wood Elf](/compendium/Peoples/Elves/wood-elf-6.jpg "Wood Elf")
+![Wood Elf](/compendium/Peoples/Elves/wood-elf-7.jpg "Wood Elf")
+![Wood Elf](/compendium/Peoples/Elves/wood-elf-8.jpg "Wood Elf")
+![Wood Elf](/compendium/Peoples/Elves/wood-elf-9.jpg "Wood Elf")
+![Wood Elf](/compendium/Peoples/Elves/wood-elf-10.jpg "Wood Elf")
 ![Wood Elf](/compendium/Peoples/Elves/wood-elf.jpg "Wood Elf")
 The wood elves, who call themselves the satari, build their homes in the crowns of great trees. Their magicians can make a tree grow into the shape they want, so they need little else to build with, and the silver-linden is the best wood for it. They live quietly as hunters and gatherers and grow a fine grain called eniri. Their dress and woodcraft let them avoid all contact with other peoples when they choose to, and their villages, set around a central glade with the dwellings hidden in the leaves and reached by tunnels or rope-ladders, are almost impossible to find unless you already know where they are. They are the best archers of all the elf-folk.
 

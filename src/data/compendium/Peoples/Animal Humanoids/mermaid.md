@@ -1,6 +1,13 @@
 # Mermaid
 
 
+![Mermaid](/compendium/Peoples/Animal Humanoids/mermaid-2.jpg "Mermaid")
+![Mermaid](/compendium/Peoples/Animal Humanoids/mermaid-3.jpg "Mermaid")
+![Mermaid](/compendium/Peoples/Animal Humanoids/mermaid-4.jpg "Mermaid")
+![Mermaid](/compendium/Peoples/Animal Humanoids/mermaid-5.jpg "Mermaid")
+![Mermaid](/compendium/Peoples/Animal Humanoids/mermaid-6.jpg "Mermaid")
+![Mermaid](/compendium/Peoples/Animal Humanoids/mermaid-7.jpg "Mermaid")
+![Mermaid](/compendium/Peoples/Animal Humanoids/mermaid-8.jpg "Mermaid")
 ![Mermaid](/compendium/Peoples/Animal Humanoids/mermaid.jpg "Mermaid")
 Mermaids are a sea-dwelling folk, a woman to the waist and a fish below, who keep to the coastal shallows and the reefs and are seldom seen by those who live on land. They are shy of ships and shore alike, and a glimpse of one is held by sailors to be an omen, for good or ill depending on the telling.
 

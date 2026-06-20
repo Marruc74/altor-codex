@@ -126,7 +126,8 @@ export const generatedSources = {
   ],
   "blood-sacrifice": [
     "Demonprinsen",
-    "Den femte konfluxen"
+    "Den femte konfluxen",
+    "Ereb Altor: Äventyrsboken"
   ],
   "boggart": [
     "Monsterboxen II: De humanoida raserna",
@@ -1171,7 +1172,7 @@ export const generatedSources = {
     "Demonprinsen",
     "Den femte konfluxen",
     "Enhörningshornet",
-    "Helvetesfortet"
+    "Ereb Altor: Äventyrsboken"
   ],
   "siren": [
     "Monsterboken",
@@ -1271,6 +1272,7 @@ export const generatedSources = {
     "Marsklandet"
   ],
   "the-copper-sea-raiders": [
+    "Ereb Altor: Äventyrsboken",
     "Kopparhavets kapare"
   ],
   "the-crown-jewels": [
@@ -1383,6 +1385,9 @@ export const generatedSources = {
   "the-nova-stone": [
     "Novastenen"
   ],
+  "the-oathbreakers-of-erebos": [
+    "Ereb Altor: Äventyrsboken"
+  ],
   "the-oracles-four-eyes": [
     "Oraklets fyra ögon"
   ],
@@ -1418,6 +1423,9 @@ export const generatedSources = {
   ],
   "the-twin-mountains": [
     "Tvillingbergen"
+  ],
+  "the-unicorn-and-the-dragon-serpent": [
+    "Ereb Altor: Äventyrsboken"
   ],
   "the-unicorn-horn": [
     "Enhörningshornet"
@@ -1600,6 +1608,7 @@ export const generatedSources = {
     "Ereb Altor: Spelledarboken"
   ],
   "zygosunds-bridge": [
+    "Ereb Altor: Äventyrsboken",
     "Kopparhavets kapare",
     "Sinkadus 3"
   ]
