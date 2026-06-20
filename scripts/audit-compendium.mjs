@@ -20,6 +20,7 @@ import yaml from "js-yaml";
 import { compendiumRegistry } from "../src/data/compendiumRegistry.generated.js";
 import { themes } from "../src/data/compendiumTags.js";
 import { crossRefs } from "../src/data/crossRefs.generated.js";
+import { sourcesBySlug } from "../src/data/sources.js";
 
 const ROOT = "src/data/compendium";
 const vd = readFileSync("src/data/videoData.js", "utf8");
@@ -114,6 +115,10 @@ const allValid = new Set([...slugs, ...geoSlugs]);
 const badTag = [];
 for (const t of themes) for (const s of t.slugs) if (!allValid.has(s)) badTag.push(`${t.id} -> ${s}`);
 
+// sources.js: every attributed slug must be a real page
+const badSource = [];
+for (const s of Object.keys(sourcesBySlug)) if (!allValid.has(s)) badSource.push(s);
+
 // crossRefs.generated: every referenced slug must be a real page (catches a stale
 // index pointing at a deleted/renamed page; "forgot to regenerate" after adding a
 // mention is caught by the CI git-diff check, like the registry).
@@ -152,11 +157,12 @@ out("Broken adventure entry: links", badEntry);
 out("Broken RELATED_BY_SLUG refs", badRel);
 out("Invalid adventure YAML frontmatter", badYaml);
 out("Theme slugs with no page (compendiumTags.js)", badTag);
+out("Source slugs with no page (sources.js)", badSource);
 out("Cross-ref slugs with no page (crossRefs stale)", badXref);
 
 // Hard failures fail the build/CI; duplicate slugs and empty pages are warnings
 // (the repo has a couple of intentional ones). Run the registry/crossrefs
 // generators if orphans, broken regs or stale cross-refs appear.
-const hard = orphans.length + brokenReg.length + badImg.length + badEntry.length + badRel.length + badYaml.length + badTag.length + badXref.length;
+const hard = orphans.length + brokenReg.length + badImg.length + badEntry.length + badRel.length + badYaml.length + badTag.length + badSource.length + badXref.length;
 console.log(`\n${hard === 0 ? "OK" : "FAIL"} — ${hard} hard issue(s); ${dups.length} duplicate slug(s), ${empties.length} empty page(s) (warnings).`);
 if (hard > 0) process.exit(1);

@@ -3902,6 +3902,62 @@ body {
   .chronicles-sections { max-width: 1500px; }
 }
 
+/* ─── Breadcrumbs ─────────────────────────────────────────── */
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.1rem 0.15rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+}
+.breadcrumbs__seg { display: inline-flex; align-items: center; gap: 0.15rem; }
+.breadcrumbs__sep { color: var(--text-dim); margin: 0 0.2rem; }
+.breadcrumbs__crumb { color: var(--text-muted); }
+.breadcrumbs__crumb--link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--gold-dim);
+  font: inherit;
+  letter-spacing: inherit;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+.breadcrumbs__crumb--link:hover { color: var(--gold-light); }
+.breadcrumbs__crumb--current { color: var(--gold-light); }
+
+/* ─── Reading progress (landing) ──────────────────────────── */
+.home-progress {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.home-progress__track {
+  flex: 1;
+  height: 6px;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  overflow: hidden;
+}
+.home-progress__fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold-dim), var(--gold));
+  transition: width 0.4s ease;
+}
+.home-progress__label {
+  font-family: var(--font-heading);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
 /* ─── Page actions (bookmark / copy-link) ─────────────────── */
 .country-detail__header-actions {
   display: flex;
@@ -4071,3 +4127,72 @@ body {
   color: var(--text-muted);
 }
 .cgraph__legend-dot { width: 9px; height: 9px; border-radius: 50%; }
+
+/* ─── Source credit (book / Sinkadus issue per page) ──────── */
+.source-credit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 1rem 0 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+.source-credit__label {
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0.85;
+}
+.source-credit__item {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--text-muted);
+  padding: 0.1rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  background: var(--bg-surface);
+}
+
+/* ─── Adventures on the map's location panel ──────────────── */
+.location-panel__adventures { margin-top: 1.25rem; }
+.location-panel__adventure-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.location-panel__adventure {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  text-align: left;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--gold-dim);
+  border-radius: 2px;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.location-panel__adventure:hover {
+  border-color: var(--gold-dim);
+  border-left-color: var(--gold);
+  background: var(--bg-raised);
+}
+.location-panel__adventure-title {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  color: var(--gold-light);
+  letter-spacing: 0.02em;
+}
+.location-panel__adventure-tagline {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.35;
+}

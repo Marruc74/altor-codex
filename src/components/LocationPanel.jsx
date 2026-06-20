@@ -1,10 +1,11 @@
 import { useEffect, useRef } from "react";
 import { videosForPin } from "../data/crossLinks";
 import { videos } from "../data/videoData";
+import { adventuresByPin } from "../data/adventureLinks";
 
 const videoById = Object.fromEntries(videos.map((v) => [v.id, v]));
 
-export default function LocationPanel({ location, onClose, onVideoSelect }) {
+export default function LocationPanel({ location, onClose, onVideoSelect, onAdventureSelect }) {
   const panelRef = useRef(null);
 
   useEffect(() => {
@@ -27,6 +28,8 @@ export default function LocationPanel({ location, onClose, onVideoSelect }) {
   const mainVideo = location.youtubeId
     ? (videoById[location.youtubeId] ?? { id: location.youtubeId, title: `Chronicle: ${location.name}` })
     : null;
+
+  const adventuresHere = adventuresByPin[location.id] ?? [];
 
   const TYPE_LABELS = {
     capital: "Capital City",
@@ -122,6 +125,24 @@ export default function LocationPanel({ location, onClose, onVideoSelect }) {
                     />
                     <div className="location-panel__video-thumb-overlay">▶</div>
                     <span className="location-panel__video-thumb-label">{video.name}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {!location.loading && adventuresHere.length > 0 && onAdventureSelect && (
+            <div className="location-panel__adventures">
+              <p className="location-panel__section-label">Adventures set here</p>
+              <div className="location-panel__adventure-list">
+                {adventuresHere.map((a) => (
+                  <button
+                    key={a.id}
+                    className="location-panel__adventure"
+                    onClick={() => onAdventureSelect(a.id)}
+                  >
+                    <span className="location-panel__adventure-title">{a.title}</span>
+                    {a.tagline && <span className="location-panel__adventure-tagline">{a.tagline}</span>}
                   </button>
                 ))}
               </div>

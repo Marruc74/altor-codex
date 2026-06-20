@@ -8,7 +8,9 @@
     "registry": "node scripts/generate-compendium-registry.mjs",
     "crossrefs": "node scripts/generate-crossrefs.mjs",
     "audit": "node scripts/audit-compendium.mjs",
-    "prebuild": "node scripts/audit-compendium.mjs",
+    "og": "node scripts/generate-og-index.mjs",
+    "sources": "node scripts/generate-sources.mjs",
+    "prebuild": "node scripts/generate-sources.mjs && node scripts/generate-og-index.mjs && node scripts/audit-compendium.mjs",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

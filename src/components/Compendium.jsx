@@ -4,14 +4,16 @@ import yaml from "js-yaml";
 import { SECTIONS, videosBySection, videos as allVideos, allEntries } from "../data/videoData";
 import { entries } from "../data/codex/index.js";
 import { adventures, adventureGroups } from "../data/adventures";
+import { adventuresByPin, adventuresByEntryId } from "../data/adventureLinks";
 import { videosForPin, relatedVideosByVideo } from "../data/crossLinks";
 import { thumbSrc, onThumbError } from "../lib/thumb";
 import { entryImages } from "../data/entryImages.generated";
 import { crossRefs } from "../data/crossRefs.generated";
 import { themes, themesBySlug, slugsByTheme, themeLabel } from "../data/compendiumTags";
+import { sourcesBySlug } from "../data/sources";
 import { resolvePage, geoPlaces } from "../data/compendiumPages";
 import { extractImages, stripImages } from "../lib/markdown.js";
-import { recordView, toggleBookmark, useIsBookmarked, useRecents, useBookmarks } from "../lib/library.js";
+import { recordView, toggleBookmark, useIsBookmarked, useRecents, useBookmarks, useSeenKeys } from "../lib/library.js";
 import Gazetteer from "./Gazetteer";
 import ConnectionsGraph from "./ConnectionsGraph";
 
@@ -149,7 +151,9 @@ function CardGrid({ label, items, portrait = false, onOpenPage, onVideoSelect, o
           const linkable = target && onOpenPage;
           const borrowed = target ? entryImages[toSlug(target.name)] : null;
           const cardImage = it.image ?? borrowed ?? null;
-          const key = it.entry ?? it.name ?? it.videoId ?? i;
+          // Suffix with the index: a grid can list two cards that resolve to the
+          // same entry slug (e.g. two "Ogre" cards), so the slug alone collides.
+          const key = `${it.entry ?? it.name ?? it.videoId ?? "card"}-${i}`;
           const imageWrap = cardImage && (
             <div className="codex-card__image-wrap">
               <CardImage src={cardImage} alt={it.name} />
@@ -261,6 +265,60 @@ function PageActions({ target }) {
   );
 }
 
+// Breadcrumb trail for a detail view. The root "Compendium" crumb returns to
+// the landing; the section/group crumbs are context labels; the leaf is the
+// current page. (Defined after CONTINENTS / SECTION_LABEL / adventureGroups.)
+function Breadcrumbs({ entry, country, adventure, onHome }) {
+  const trail = [];
+  if (entry) {
+    trail.push(SECTION_LABEL[entry.section] ?? "Codex");
+    if (entry.group && !skipGroup(entry.group, entry.section)) trail.push(entry.group);
+    trail.push(entry.name);
+  } else if (country) {
+    trail.push("Geography");
+    const cont = CONTINENTS.find((c) => c.id === country.continent);
+    if (cont) trail.push(cont.name);
+    trail.push(country.name);
+  } else if (adventure) {
+    trail.push("Adventures");
+    const grp = adventureGroups.groups.find((g) => g.adventures.some((a) => a.id === adventure.id));
+    if (grp) trail.push(grp.name);
+    else if (adventureGroups.standalone.some((a) => a.id === adventure.id)) trail.push("Standalone");
+    trail.push(adventure.title);
+  } else {
+    return null;
+  }
+  return (
+    <nav className="breadcrumbs" aria-label="Breadcrumb">
+      <button className="breadcrumbs__crumb breadcrumbs__crumb--link" onClick={onHome}>Compendium</button>
+      {trail.map((label, i) => (
+        <span key={i} className="breadcrumbs__seg">
+          <span className="breadcrumbs__sep" aria-hidden="true">›</span>
+          <span
+            className={`breadcrumbs__crumb${i === trail.length - 1 ? " breadcrumbs__crumb--current" : ""}`}
+            aria-current={i === trail.length - 1 ? "page" : undefined}
+          >
+            {label}
+          </span>
+        </span>
+      ))}
+    </nav>
+  );
+}
+
+// A "Sources" credit line: the book(s) / Sinkadus issue(s) a page draws on.
+function SourceCredit({ sources }) {
+  if (!sources || sources.length === 0) return null;
+  return (
+    <p className="source-credit">
+      <span className="source-credit__label">{sources.length > 1 ? "Sources" : "Source"}</span>
+      {sources.map((s, i) => (
+        <span key={i} className="source-credit__item">{s}</span>
+      ))}
+    </p>
+  );
+}
+
 const REF_KIND_WORD = { country: "Land", adventure: "Adventure", entry: "Lore" };
 
 // A row of cards for a list of library refs (recently-viewed / bookmarks).
@@ -306,6 +364,17 @@ const placeKind = (pin) => {
 
 const SECTION_LABEL = Object.fromEntries(SECTIONS.map((s) => [s.id, s.label]));
 
+// The full set of navigable Compendium pages (section entries + lands +
+// adventures), as "kind-id" keys - the denominator for reading-progress.
+const PAGE_UNIVERSE = (() => {
+  const ks = new Set();
+  for (const v of allEntries) if (v.section !== "countries" && v.section !== "episodes") ks.add(`entry-${v.id}`);
+  for (const p of geoPlaces) ks.add(`country-${p.id}`);
+  for (const a of adventures) ks.add(`adventure-${a.id}`);
+  return ks;
+})();
+const TOTAL_PAGES = PAGE_UNIVERSE.size;
+
 // ── Path helpers ──────────────────────────────────────────────────────────
 function toSlug(str) {
   return str
@@ -329,34 +398,6 @@ function entryMdPath(entry) {
     : `${sec}/${entry.group}/${slug}.md`;
 }
 
-// ── Cross-reference indexes ────────────────────────────────────────────────
-// Every card (place / npc / creature / item) an adventure declares.
-function adventureCards(a) {
-  const out = [];
-  const push = (arr) => { for (const it of arr ?? []) out.push(it); };
-  push(a.places); push(a.items); push(a.characters);
-  for (const s of a.sections ?? []) { push(s.places); push(s.npcs); push(s.creatures); push(s.items); }
-  return out;
-}
-// adventuresByPin: country/region id → adventures set there (a place card naming
-// it, or a mention in the title/tagline/summary). adventuresByEntryId:
-// section-entry id → adventures featuring it (the reverse of the card links).
-const adventuresByPin = {};
-const adventuresByEntryId = {};
-const countryPins = geoPlaces.filter((p) => p.type === "country");
-for (const a of adventures) {
-  const pinIds = new Set();
-  const entryIds = new Set();
-  for (const c of adventureCards(a)) {
-    const t = resolvePage(c.entry ?? c.name);
-    if (t?.kind === "country") pinIds.add(t.id);
-    else if (t?.kind === "entry") entryIds.add(t.id);
-  }
-  const hay = `${a.title ?? ""} ${a.tagline ?? ""} ${a.summary ?? ""}`.toLowerCase();
-  for (const p of countryPins) if (hay.includes(p.name.toLowerCase())) pinIds.add(p.id);
-  for (const id of pinIds) (adventuresByPin[id] ??= []).push(a);
-  for (const id of entryIds) (adventuresByEntryId[id] ??= []).push(a);
-}
 
 // Curated "Related" links for entries not captured structurally — chiefly the
 // three live conflicts, which tie to their belligerent lands and the adventures
@@ -749,6 +790,8 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onO
         <p className="country-detail__empty">Details coming soon.</p>
       )}
 
+      {loaded && <SourceCredit sources={sourcesBySlug[toSlug(country.name)] ?? sourcesBySlug[country.id]} />}
+
       {lightbox && (
         <Lightbox images={lightbox} startIdx={0} onClose={() => setLightbox(null)} />
       )}
@@ -759,6 +802,7 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onO
 // ── EntryDetail ───────────────────────────────────────────────────────────
 function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPage, onThemeSelect, onPinSelect }) {
   const [markdown, setMarkdown] = useState(null);
+  const [lightbox, setLightbox] = useState(null);
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect -- reset before async load (keyed by entry.id)
@@ -775,10 +819,24 @@ function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPage, onTh
   useEffect(() => { recordView({ kind: "entry", id: entry.id, name: entry.name }); }, [entry.id, entry.name]);
 
   const loaded = markdown !== null;
-  const { images, bodyText } = useMemo(() => ({
-    images: markdown ? extractImages(markdown) : [],
-    bodyText: markdown ? stripImages(markdown).replace(/^#[^\n]*\n/, "").trim() : "",
-  }), [markdown]);
+  // Some entry pages (e.g. the flying-island Caranor) carry a YAML frontmatter
+  // block of notable figures/places/items, like country pages do. Parse and
+  // strip it so the raw YAML never renders, and surface the cards below.
+  const { images, bodyText, figures, notablePlaces, notableItems } = useMemo(() => {
+    const fm = markdown && markdown.startsWith("---")
+      ? markdown.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/)
+      : null;
+    let meta = {};
+    if (fm) { try { meta = yaml.load(fm[1]) ?? {}; } catch { meta = {}; } }
+    const body = fm ? fm[2] : (markdown ?? "");
+    return {
+      images: body ? extractImages(body) : [],
+      bodyText: body ? stripImages(body).replace(/^#[^\n]*\n/, "").trim() : "",
+      figures: meta.figures ?? [],
+      notablePlaces: meta.places ?? [],
+      notableItems: meta.items ?? [],
+    };
+  }, [markdown]);
   const eyebrow = entry.group && !skipGroup(entry.group, entry.section)
     ? `${SECTION_LABEL[entry.section]} · ${entry.group}`
     : SECTION_LABEL[entry.section];
@@ -884,6 +942,10 @@ function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPage, onTh
           <ReactMarkdown>{bodyText}</ReactMarkdown>
         </div>
       )}
+
+      {loaded && <CardGrid label="Notable Figures" items={figures} portrait onOpenPage={onOpenPage} onLightbox={setLightbox} />}
+      {loaded && <CardGrid label="Notable Places" items={notablePlaces} onOpenPage={onOpenPage} onLightbox={setLightbox} />}
+      {loaded && <CardGrid label="Notable Items" items={notableItems} onOpenPage={onOpenPage} onLightbox={setLightbox} />}
 
       {loaded && !bodyText && images.length === 0 && (
         <p className="country-detail__empty">
@@ -1007,6 +1069,12 @@ function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPage, onTh
           </div>
         </div>
       )}
+
+      {loaded && <SourceCredit sources={sourcesBySlug[toSlug(entry.name)]} />}
+
+      {lightbox && (
+        <Lightbox images={lightbox} startIdx={0} onClose={() => setLightbox(null)} />
+      )}
     </div>
   );
 }
@@ -1128,6 +1196,8 @@ function AdventureDetail({ adventure, onVideoSelect, onOpenPage }) {
         </div>
       )}
 
+      <SourceCredit sources={sourcesBySlug[toSlug(adventure.title)] ?? sourcesBySlug[adventure.id]} />
+
       {lightbox && (
         <Lightbox images={lightbox} startIdx={0} onClose={() => setLightbox(null)} />
       )}
@@ -1154,6 +1224,25 @@ export default function Compendium({
   // The reader's library (recently-viewed + bookmarks), persisted to localStorage.
   const recents = useRecents();
   const bookmarks = useBookmarks();
+  // Reading progress: which pages have been opened, totalled per section.
+  const seenKeys = useSeenKeys();
+  const { seenBySection, advSeen, geoSeen, explored } = useMemo(() => {
+    const seenBySection = {};
+    for (const s of SECTIONS) {
+      if (s.id === "geography" || s.id === "countries" || s.id === "episodes") continue;
+      let n = 0;
+      for (const g of videosBySection[s.id] || []) for (const v of g.videos) if (seenKeys.has(`entry-${v.id}`)) n++;
+      seenBySection[s.id] = n;
+    }
+    const advSeen = adventures.filter((a) => seenKeys.has(`adventure-${a.id}`)).length;
+    let geoSeen = 0;
+    for (const p of geoPlaces) if (seenKeys.has(`country-${p.id}`)) geoSeen++;
+    for (const g of videosBySection["geography"] || []) for (const v of g.videos) if (seenKeys.has(`entry-${v.id}`)) geoSeen++;
+    let explored = 0;
+    for (const k of seenKeys) if (PAGE_UNIVERSE.has(k)) explored++;
+    return { seenBySection, advSeen, geoSeen, explored };
+  }, [seenKeys]);
+  const badge = (seen, total) => (seen > 0 ? `${seen}/${total}` : String(total));
   // The open entry page (a Peoples/Creatures/Lore page, either video-backed or
   // markdown-only). Reflected in the URL as ?ce=<id> so the browser back/forward
   // buttons and refresh all work.
@@ -1220,6 +1309,14 @@ export default function Compendium({
     }
     window.scrollTo(0, 0);
   }, [openEntry, onAdventureSelect, onCountrySelect]);
+
+  // Return to the Compendium landing from a breadcrumb (clear every selection).
+  const goHome = useCallback(() => {
+    setSelectedEntry(null);
+    onCountrySelect(null);
+    onAdventureSelect(null);
+    window.scrollTo(0, 0);
+  }, [onCountrySelect, onAdventureSelect]);
   // Expand the nav section that holds the current selection on first render, so
   // a deep-link (e.g. ?adventure=kandra) reveals and highlights it in the menu.
   const [openSections, setOpenSections] = useState(() => ({
@@ -1402,7 +1499,7 @@ export default function Compendium({
                     >
                       <span className="compendium-nav__sigil">❖</span>
                       <span className="compendium-nav__title">Adventures</span>
-                      <span className="compendium-nav__count">{adventures.length}</span>
+                      <span className="compendium-nav__count">{badge(advSeen, adventures.length)}</span>
                       <span className="compendium-nav__toggle">{advOpen ? "▲" : "▼"}</span>
                     </button>
                     {advOpen && (() => {
@@ -1482,7 +1579,7 @@ export default function Compendium({
                     >
                       <span className="compendium-nav__sigil">{geoSec.sigil}</span>
                       <span className="compendium-nav__title">Geography</span>
-                      <span className="compendium-nav__count">{geoTotal}</span>
+                      <span className="compendium-nav__count">{badge(geoSeen, geoTotal)}</span>
                       <span className="compendium-nav__toggle">{geoOpen ? "▲" : "▼"}</span>
                     </button>
 
@@ -1551,7 +1648,7 @@ export default function Compendium({
                     >
                       <span className="compendium-nav__sigil">{section.sigil}</span>
                       <span className="compendium-nav__title">{section.label}</span>
-                      <span className="compendium-nav__count">{total}</span>
+                      <span className="compendium-nav__count">{badge(seenBySection[section.id] ?? 0, total)}</span>
                       <span className="compendium-nav__toggle">{secOpen ? "▲" : "▼"}</span>
                     </button>
 
@@ -1600,6 +1697,14 @@ export default function Compendium({
 
         {/* ── Right panel ── */}
         <div className="compendium-main">
+          {(selectedEntry || selectedPin || selectedAdventureObj) && (
+            <Breadcrumbs
+              entry={selectedEntry}
+              country={selectedPin}
+              adventure={selectedAdventureObj}
+              onHome={goHome}
+            />
+          )}
           {selectedEntry ? (
             <EntryDetail
               key={selectedEntry.id}
@@ -1636,6 +1741,16 @@ export default function Compendium({
                 </div>
               </div>
               <div className="country-detail__divider" />
+
+              <div className="home-progress">
+                <div className="home-progress__track">
+                  <div
+                    className="home-progress__fill"
+                    style={{ width: `${TOTAL_PAGES ? Math.round((explored / TOTAL_PAGES) * 100) : 0}%` }}
+                  />
+                </div>
+                <span className="home-progress__label">Explored {explored} of {TOTAL_PAGES} pages</span>
+              </div>
 
               {recents.length > 0 && <RefStrip label="Continue exploring" refs={recents} onOpen={openPage} />}
               {bookmarks.length > 0 && <RefStrip label="Saved" refs={bookmarks} onOpen={openPage} />}

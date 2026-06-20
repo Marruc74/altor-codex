@@ -7,6 +7,7 @@ import { useSyncExternalStore } from "react";
 
 const RECENTS_KEY = "altor:recents";
 const BOOKMARKS_KEY = "altor:bookmarks";
+const SEEN_KEY = "altor:seen";
 const RECENTS_MAX = 12;
 
 function load(key) {
@@ -27,6 +28,10 @@ function save(key, val) {
 
 let recents = load(RECENTS_KEY);
 let bookmarks = load(BOOKMARKS_KEY);
+// Every page ever opened (uncapped), for reading-progress. Kept both as the
+// stored array and as a Set of "kind-id" keys for O(1) lookups in the nav.
+let seen = load(SEEN_KEY);
+let seenKeys = new Set(seen.map((r) => `${r.kind}-${r.id}`));
 
 const listeners = new Set();
 const emit = () => listeners.forEach((l) => l());
@@ -39,12 +44,19 @@ const sameRef = (a, b) => a.kind === b.kind && a.id === b.id;
 const cleanRef = (ref) => ({ kind: ref.kind, id: ref.id, name: ref.name ?? ref.id });
 const isRef = (ref) => ref && ref.kind && ref.id != null;
 
-// Record a page view: move it to the front of the recents list (deduped, capped).
+// Record a page view: move it to the front of the recents list (deduped,
+// capped) and add it to the uncapped "seen" set that drives reading-progress.
 export function recordView(ref) {
   if (!isRef(ref)) return;
   const entry = cleanRef(ref);
   recents = [entry, ...recents.filter((r) => !sameRef(r, entry))].slice(0, RECENTS_MAX);
   save(RECENTS_KEY, recents);
+  const k = `${entry.kind}-${entry.id}`;
+  if (!seenKeys.has(k)) {
+    seen = [...seen, entry];
+    seenKeys = new Set(seenKeys).add(k);
+    save(SEEN_KEY, seen);
+  }
   emit();
 }
 
@@ -74,4 +86,8 @@ export function useBookmarks() {
 export function useIsBookmarked(ref) {
   const bm = useBookmarks();
   return isRef(ref) ? bm.some((b) => sameRef(b, ref)) : false;
+}
+// Set of "kind-id" keys for every page seen - for reading-progress badges.
+export function useSeenKeys() {
+  return useSyncExternalStore(subscribe, () => seenKeys, () => seenKeys);
 }

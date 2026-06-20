@@ -349,6 +349,7 @@ export default function App() {
           location={selectedLocation}
           onClose={handlePanelClose}
           onVideoSelect={handleVideoSelect}
+          onAdventureSelect={handleGlobalAdventureSelect}
         />
       </div>
 
