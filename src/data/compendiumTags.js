@@ -33,7 +33,7 @@ export const themes = [
     ...inGroups("Elementals", "Elemental Creatures", "Elemental Lords"), "elemental",
   ]),
   theme("aquatic", "Aquatic & the Seas", [
-    "sea-dragon", "sea-serpent", "dragonsnake", "mermaid", "najad", "sea-elf", "water-elf",
+    "sea-dragon", "sea-serpent", "dragonsnake", "mermaid", "naiad", "sea-elf", "water-elf",
     "kappa", "giant-octopus", "dolphin", "killer-whale", "shark", "stingray", "barracuda",
   ]),
   theme("magic", "Magic & Magicians", [

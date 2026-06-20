@@ -176,7 +176,7 @@ export const rawVideos = [
   { id: "32Hjh6PELKg", title: "Fable Animals: Giant Spider", views: 6 },
   { id: "oQHioPvfP7E", title: "Fable Animals: Onaqui", views: 6 },
   { id: "Ga0plmKw6vY", title: "Stonekin: Dwarf", views: 6 },
-  { id: "m9m510nJTAw", title: "Sylvans: Najad", views: 6 },
+  { id: "m9m510nJTAw", title: "Sylvans: Naiad", views: 6 },
   { id: "I238uC9pxLQ", title: "Fable Animals: Kalydon", views: 5 },
   { id: "-6x3huqel8E", title: "The Altor Codex - Chapter 2A - The Misty Island", views: 5 },
   { id: "SkHa9w8liis", title: "The Altor Codex - Chapter 1 - The Secret of Skeleton Village", views: 5 },

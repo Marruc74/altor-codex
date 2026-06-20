@@ -139,7 +139,7 @@ sections:
         description: "Ottar's grieving undead queen, who hates the witch Rirba and would betray the doll of hair by which the king holds her bound."
     creatures:
       - name: Inadrel
-        entry: najad
+        entry: naiad
         description: "The naiad of the earthblood spring, who rises from the blood to counsel the king toward conquest and to fight to the death any who would quench her well."
       - name: The Crurer
         entry: living-dead

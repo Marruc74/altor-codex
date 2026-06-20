@@ -168,7 +168,7 @@ export const entryImages = {
   "fire-pixie": "/compendium/Peoples/Sylvans/fire-pixie-2.jpg",
   "hag": "/compendium/Peoples/Sylvans/hag-2.jpg",
   "hob": "/compendium/Peoples/Sylvans/hob.jpg",
-  "najad": "/compendium/Peoples/Sylvans/najad-2.jpg",
+  "naiad": "/compendium/Peoples/Sylvans/naiad-2.jpg",
   "oread": "/compendium/Peoples/Sylvans/oread-2.jpg",
   "peerie": "/compendium/Peoples/Sylvans/peerie-2.jpg",
   "satyr": "/compendium/Peoples/Sylvans/satyr-2.jpg"

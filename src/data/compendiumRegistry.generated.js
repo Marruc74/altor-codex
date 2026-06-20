@@ -466,7 +466,7 @@ export const compendiumRegistry = [
   { section: "peoples", group: "Sylvans", name: "Gnome", slug: "gnome" },
   { section: "peoples", group: "Sylvans", name: "Hag", slug: "hag" },
   { section: "peoples", group: "Sylvans", name: "Hob", slug: "hob" },
-  { section: "peoples", group: "Sylvans", name: "Najad", slug: "najad" },
+  { section: "peoples", group: "Sylvans", name: "Naiad", slug: "naiad" },
   { section: "peoples", group: "Sylvans", name: "Oread", slug: "oread" },
   { section: "peoples", group: "Sylvans", name: "Peerie", slug: "peerie" },
   { section: "peoples", group: "Sylvans", name: "Satyr", slug: "satyr" },

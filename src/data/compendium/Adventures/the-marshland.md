@@ -154,10 +154,10 @@ sections:
         description: "Open water where the drowned drift - and where reptile-men strike from below at any boat that lingers."
     npcs:
       - name: Ereli
-        entry: najad
+        entry: naiad
         description: "One of the two naiads of the lagoon, bound to her place, who keeps a mithril dagger and trades only for rare herbs, fine songs and beautiful craft."
       - name: Eelin
-        entry: najad
+        entry: naiad
         description: "The other naiad of the lagoon, who may take a fair, kind-hearted guest into her underwater hut, and grant him the breathing of fresh water for all his life."
       - name: Gandimon
         entry: karkion

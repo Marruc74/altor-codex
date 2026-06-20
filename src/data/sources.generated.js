@@ -891,9 +891,8 @@ export const generatedSources = {
     "Monsterboken",
     "Monsterboken II"
   ],
-  "najad": [
-    "Alver",
-    "Monsterboxen II: De humanoida raserna"
+  "naiad": [
+    "Alver"
   ],
   "nargur-giant-oak": [
     "Monsterboken",
