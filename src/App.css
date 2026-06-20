@@ -37,6 +37,16 @@
 
 html { scroll-behavior: smooth; }
 
+/* Visible keyboard focus indicator. The UI is almost entirely <button>s (nav
+   tree, cards, lightbox controls, theme chips) and several have outline:none, so
+   without this keyboard users get no focus ring. :focus-visible keeps it to
+   keyboard navigation - mouse clicks don't show it. */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
 body {
   background: var(--bg);
   color: var(--text);
@@ -3186,7 +3196,7 @@ body {
   right: 0;
   background: none;
   border: none;
-  color: var(--text-muted);
+  color: var(--text);
   font-size: 1.2rem;
   cursor: pointer;
   padding: 0.25rem 0.5rem;
@@ -3207,7 +3217,7 @@ body {
 .lightbox__arrow {
   background: rgba(0, 0, 0, 0.5);
   border: 1px solid var(--border);
-  color: var(--text-muted);
+  color: var(--text);
   font-size: 1.8rem;
   line-height: 1;
   padding: 0;
@@ -3891,3 +3901,173 @@ body {
   .lore-grid { max-width: 1860px; }
   .chronicles-sections { max-width: 1500px; }
 }
+
+/* ─── Page actions (bookmark / copy-link) ─────────────────── */
+.country-detail__header-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+.page-actions { display: flex; gap: 0.4rem; }
+.page-action {
+  background: none;
+  border: 1px solid var(--border-light);
+  color: var(--gold-dim);
+  font-family: var(--font-heading);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  border-radius: 2px;
+  white-space: nowrap;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+.page-action:hover { border-color: var(--gold-dim); color: var(--gold-light); }
+.page-action--on {
+  border-color: var(--gold);
+  color: var(--gold-light);
+  background: color-mix(in srgb, var(--gold-dim) 18%, transparent);
+}
+
+/* ─── Compendium landing: view tabs + clear chip ──────────── */
+.home-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+.home-tab {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--text-muted);
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.5rem 0.25rem;
+  margin-bottom: -1px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+.home-tab:hover { color: var(--gold-light); }
+.home-tab--active { color: var(--gold-light); border-bottom-color: var(--gold); }
+.codex-tag--clear { border-style: dashed; text-transform: none; }
+
+/* ─── Gazetteer (A–Z index of named figures & places) ─────── */
+.gazetteer { margin-top: 0.5rem; }
+.gazetteer__bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.gazetteer__search { flex: 1; }
+.gazetteer__count {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+.gazetteer__alphabet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.35rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+.gazetteer__letter-link {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  color: var(--gold-dim);
+  text-decoration: none;
+  padding: 0.1rem 0.3rem;
+}
+.gazetteer__letter-link:hover { color: var(--gold-light); }
+.gazetteer__letter-link--off { color: var(--text-dim); opacity: 0.35; pointer-events: none; }
+.gazetteer__group { margin-bottom: 1.5rem; scroll-margin-top: 80px; }
+.gazetteer__letter {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--gold);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.6rem;
+}
+.gazetteer__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.4rem;
+}
+.gazetteer__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s, background 0.15s;
+}
+.gazetteer__item:hover { border-color: var(--gold-dim); background: var(--bg-raised); }
+.gazetteer__name { font-family: var(--font-body); color: var(--text); font-size: 0.95rem; }
+.gazetteer__place {
+  font-family: var(--font-heading);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+}
+
+/* ─── Connections graph (web of cross-references) ─────────── */
+.cgraph { margin-top: 0.5rem; }
+.cgraph__svg {
+  width: 100%;
+  height: auto;
+  max-width: 660px;
+  display: block;
+  margin: 0 auto;
+}
+.cgraph__edge { stroke-width: 1; opacity: 0.35; }
+.cgraph__node { cursor: pointer; }
+.cgraph__node circle { transition: r 0.12s; }
+.cgraph__node:hover circle { r: 9; }
+.cgraph__label {
+  fill: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 13px;
+}
+.cgraph__node:hover .cgraph__label { fill: var(--gold-light); }
+.cgraph__center { fill: var(--gold); stroke: #0a0807; stroke-width: 2; }
+.cgraph__center-label {
+  fill: var(--gold-light);
+  font-family: var(--font-heading);
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+.cgraph__legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 1rem;
+  margin-top: 0.5rem;
+}
+.cgraph__legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-heading);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.cgraph__legend-dot { width: 9px; height: 9px; border-radius: 50%; }

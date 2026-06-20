@@ -10,18 +10,12 @@ import { entryImages } from "../data/entryImages.generated";
 import { crossRefs } from "../data/crossRefs.generated";
 import { themes, themesBySlug, slugsByTheme, themeLabel } from "../data/compendiumTags";
 import { resolvePage, geoPlaces } from "../data/compendiumPages";
+import { extractImages, stripImages } from "../lib/markdown.js";
+import { recordView, toggleBookmark, useIsBookmarked, useRecents, useBookmarks } from "../lib/library.js";
+import Gazetteer from "./Gazetteer";
+import ConnectionsGraph from "./ConnectionsGraph";
 
 // ── Image utilities ───────────────────────────────────────────────────────
-const IMAGE_RE = /!\[([^\]]*)\]\(([^")]+?)(?:\s+"([^"]*)")?\)/g;
-function extractImages(md) {
-  const imgs = []; let m; IMAGE_RE.lastIndex = 0;
-  while ((m = IMAGE_RE.exec(md)) !== null) imgs.push({ alt: m[1], src: m[2], caption: m[3] || null });
-  return imgs;
-}
-function stripImages(md) {
-  return md.replace(IMAGE_RE, "").replace(/\n{3,}/g, "\n\n").trim();
-}
-
 // A card image: shows the thumbnail, falls back to the full image if the
 // thumbnail is missing. The full image is loaded by the lightbox / detail page.
 function CardImage({ src, alt }) {
@@ -39,6 +33,7 @@ function CardImage({ src, alt }) {
 // ── Lightbox ──────────────────────────────────────────────────────────────
 function Lightbox({ images, startIdx, onClose }) {
   const [idx, setIdx] = useState(startIdx);
+  const dialogRef = useRef(null);
   const img = images[idx];
   const prev = useCallback(() => setIdx((i) => (i - 1 + images.length) % images.length), [images.length]);
   const next = useCallback(() => setIdx((i) => (i + 1) % images.length), [images.length]);
@@ -53,14 +48,44 @@ function Lightbox({ images, startIdx, onClose }) {
     return () => window.removeEventListener("keydown", onKey);
   }, [prev, next, onClose]);
 
+  // Move focus into the dialog on open, restore it to the trigger on close, so
+  // keyboard users aren't stranded on the now-hidden card behind the overlay.
+  useEffect(() => {
+    const trigger = document.activeElement;
+    dialogRef.current?.focus();
+    return () => { if (trigger instanceof HTMLElement) trigger.focus(); };
+  }, []);
+
+  // Trap Tab within the dialog while it's open.
+  const onTrapKey = (e) => {
+    if (e.key !== "Tab") return;
+    const focusable = dialogRef.current?.querySelectorAll(
+      'button:not([disabled]), [href], [tabindex]:not([tabindex="-1"])'
+    );
+    if (!focusable || focusable.length === 0) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  };
+
   return (
     <div className="lightbox" onClick={onClose}>
-      <div className="lightbox__content" onClick={(e) => e.stopPropagation()}>
-        <button className="lightbox__close" onClick={onClose}>✕</button>
+      <div
+        className="lightbox__content"
+        ref={dialogRef}
+        tabIndex={-1}
+        role="dialog"
+        aria-modal="true"
+        aria-label={img.caption || img.alt || "Image viewer"}
+        onClick={(e) => e.stopPropagation()}
+        onKeyDown={onTrapKey}
+      >
+        <button className="lightbox__close" onClick={onClose} aria-label="Close image viewer">✕</button>
         <div className="lightbox__track">
-          <button className="lightbox__arrow" onClick={prev} disabled={images.length === 1}>‹</button>
+          <button className="lightbox__arrow" onClick={prev} disabled={images.length === 1} aria-label="Previous image">‹</button>
           <img src={img.src} alt={img.alt} className="lightbox__image" />
-          <button className="lightbox__arrow" onClick={next} disabled={images.length === 1}>›</button>
+          <button className="lightbox__arrow" onClick={next} disabled={images.length === 1} aria-label="Next image">›</button>
         </div>
         <div className="lightbox__footer">
           {img.caption && <p className="lightbox__caption">{img.caption}</p>}
@@ -71,6 +96,8 @@ function Lightbox({ images, startIdx, onClose }) {
                   key={i}
                   className={`lightbox__dot${i === idx ? " lightbox__dot--active" : ""}`}
                   onClick={() => setIdx(i)}
+                  aria-label={`Image ${i + 1}`}
+                  aria-current={i === idx ? "true" : undefined}
                 />
               ))}
             </div>
@@ -101,6 +128,162 @@ function ImageGallery({ images }) {
   );
 }
 
+// ── Card grid ───────────────────────────────────────────────────────────────
+// Shared renderer for notable figures/places/items (CountryDetail) and an
+// adventure's NPCs / Creatures / Places / Items (AdventureDetail). A card whose
+// name (or explicit `entry`) resolves to another page becomes a link; if it also
+// has an image, the image opens the lightbox and "View more" navigates. A card
+// with a `videoId` (and onVideoSelect) plays the video. A card with no image of
+// its own borrows the image of the page it links to. `excludeCountryId` stops a
+// card linking back to the very country page it sits on. Renders nothing when empty.
+function CardGrid({ label, items, portrait = false, onOpenPage, onVideoSelect, onLightbox, excludeCountryId }) {
+  if (!items || items.length === 0) return null;
+  return (
+    <div className="country-detail__block">
+      <p className="location-panel__section-label">{label}</p>
+      <div className="country-detail__entries-grid">
+        {items.map((it, i) => {
+          const cls = `codex-card${(it.portrait ?? portrait) ? " codex-card--portrait" : ""}${it.fit === "contain" ? " codex-card--fit" : ""}`;
+          let target = resolvePage(it.entry ?? it.name);
+          if (excludeCountryId && target && target.kind === "country" && target.id === excludeCountryId) target = null;
+          const linkable = target && onOpenPage;
+          const borrowed = target ? entryImages[toSlug(target.name)] : null;
+          const cardImage = it.image ?? borrowed ?? null;
+          const key = it.entry ?? it.name ?? it.videoId ?? i;
+          const imageWrap = cardImage && (
+            <div className="codex-card__image-wrap">
+              <CardImage src={cardImage} alt={it.name} />
+            </div>
+          );
+          const openLightbox = () => onLightbox([{ src: cardImage, alt: it.name, caption: it.name }]);
+
+          // Both an image and a "View more" link: keep them independently
+          // clickable - the image opens the lightbox, the link opens the entry.
+          if (linkable && cardImage)
+            return (
+              <div key={key} className={`${cls} codex-card--split`}>
+                <button className="codex-card__image-btn" onClick={openLightbox} aria-label={`View image of ${it.name}`}>
+                  {imageWrap}
+                </button>
+                <div className="codex-card__body">
+                  <p className="codex-card__title">{it.name}</p>
+                  {it.description && <p className="codex-card__summary">{it.description}</p>}
+                  <button className="codex-card__entry-link codex-card__entry-link--btn" onClick={() => onOpenPage(target)}>
+                    View more ↗
+                  </button>
+                </div>
+              </div>
+            );
+
+          const inner = (
+            <>
+              {imageWrap}
+              <div className="codex-card__body">
+                <p className="codex-card__title">{it.name}</p>
+                {it.description && <p className="codex-card__summary">{it.description}</p>}
+                {linkable && <span className="codex-card__entry-link">View more ↗</span>}
+              </div>
+            </>
+          );
+          if (linkable)
+            return (
+              <button key={key} className={`${cls} codex-card--link`} onClick={() => onOpenPage(target)}>
+                {inner}
+              </button>
+            );
+          if (it.videoId && onVideoSelect)
+            return (
+              <button key={key} className={cls} onClick={() => onVideoSelect(videoById[it.videoId] ?? { id: it.videoId, title: it.name })}>
+                {inner}
+              </button>
+            );
+          if (cardImage)
+            return (
+              <button key={key} className={cls} onClick={openLightbox}>
+                {inner}
+              </button>
+            );
+          return <div key={key} className={cls}>{inner}</div>;
+        })}
+      </div>
+    </div>
+  );
+}
+
+// ── Library / sharing helpers ───────────────────────────────────────────────
+// A stored library ref → an openable page target. Entry refs need their video/
+// entry object rehydrated; country/adventure refs open by id alone.
+function refToTarget(ref) {
+  if (!ref) return null;
+  if (ref.kind === "entry") {
+    const entry = videoById[ref.id] ?? allEntries.find((v) => v.id === ref.id) ?? null;
+    return entry ? { kind: "entry", id: ref.id, entry, name: ref.name ?? entry.name } : null;
+  }
+  return { kind: ref.kind, id: ref.id, name: ref.name };
+}
+
+// A shareable deep-link URL for a page target (mirrors App.jsx's param scheme).
+function pageUrl(target) {
+  const url = new URL(window.location.origin + window.location.pathname);
+  if (target.kind === "country") url.searchParams.set("country", target.id);
+  else if (target.kind === "adventure") url.searchParams.set("adventure", target.id);
+  else if (target.kind === "entry") url.searchParams.set("ce", target.id);
+  url.hash = "catalog";
+  return url.href;
+}
+
+// Bookmark + copy-link actions shown in every detail header.
+function PageActions({ target }) {
+  const ref = { kind: target.kind, id: target.id, name: target.name };
+  const bookmarked = useIsBookmarked(ref);
+  const [copied, setCopied] = useState(false);
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(pageUrl(target));
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1600);
+    } catch { /* clipboard blocked - no-op */ }
+  };
+  return (
+    <div className="page-actions">
+      <button
+        className={`page-action${bookmarked ? " page-action--on" : ""}`}
+        onClick={() => toggleBookmark(ref)}
+        aria-pressed={bookmarked}
+        aria-label={bookmarked ? "Remove bookmark" : "Bookmark this page"}
+      >
+        {bookmarked ? "★ Saved" : "☆ Save"}
+      </button>
+      <button className="page-action" onClick={copy} aria-label="Copy link to this page">
+        {copied ? "✓ Copied" : "🔗 Link"}
+      </button>
+    </div>
+  );
+}
+
+const REF_KIND_WORD = { country: "Land", adventure: "Adventure", entry: "Lore" };
+
+// A row of cards for a list of library refs (recently-viewed / bookmarks).
+function RefStrip({ label, refs, onOpen }) {
+  const targets = refs.map(refToTarget).filter(Boolean);
+  if (targets.length === 0) return null;
+  return (
+    <div className="country-detail__block">
+      <p className="location-panel__section-label">{label}</p>
+      <div className="country-detail__entries-grid">
+        {targets.map((t) => (
+          <button key={`${t.kind}-${t.id}`} className="codex-card codex-card--link" onClick={() => onOpen(t)}>
+            <div className="codex-card__body">
+              <p className="codex-card__title">{t.name}</p>
+              <span className="codex-card__entry-link">{REF_KIND_WORD[t.kind] ?? "Lore"} ↗</span>
+            </div>
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 // ── Data setup ────────────────────────────────────────────────────────────
 const videoById = Object.fromEntries(allVideos.map((v) => [v.id, v]));
 
@@ -116,8 +299,10 @@ const CONTINENTS = [
   { id: "western-sea",  name: "The Western Sea"  },
 ];
 
-const placeKind = (pin) =>
-  pin.type === "country" ? "Country" : pin.type[0].toUpperCase() + pin.type.slice(1);
+const placeKind = (pin) => {
+  const t = pin.type || "place";
+  return t === "country" ? "Country" : t[0].toUpperCase() + t.slice(1);
+};
 
 const SECTION_LABEL = Object.fromEntries(SECTIONS.map((s) => [s.id, s.label]));
 
@@ -348,78 +533,7 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onO
   const [markdown, setMarkdown] = useState(null);
   const [lightbox, setLightbox] = useState(null);
 
-  // Notable figures/places/items render as cards. A card whose name (or explicit
-  // `entry`) matches another page in the compendium becomes a link to it; if it
-  // also has an image, the image opens the lightbox and a "View more" link
-  // navigates. Cards with no matching page keep their plain/lightbox behaviour.
-  const notableGrid = (label, list, portrait = false) =>
-    list.length > 0 && (
-      <div className="country-detail__block">
-        <p className="location-panel__section-label">{label}</p>
-        <div className="country-detail__entries-grid">
-          {list.map((it, i) => {
-            const cls = `codex-card${(it.portrait ?? portrait) ? " codex-card--portrait" : ""}${it.fit === "contain" ? " codex-card--fit" : ""}`;
-            const t = resolvePage(it.entry ?? it.name);
-            // Don't link a card back to the very page it sits on.
-            const target = t && !(t.kind === "country" && t.id === country.id) ? t : null;
-            const linkable = target && onOpenPage;
-            // A card with no image of its own borrows the image of the page its
-            // "View more" link points to (e.g. a card linking to Orc shows the orc).
-            const borrowed = target ? entryImages[toSlug(target.name)] : null;
-            const cardImage = it.image ?? borrowed ?? null;
-            const imageWrap = cardImage && (
-              <div className="codex-card__image-wrap">
-                <CardImage src={cardImage} alt={it.name} />
-              </div>
-            );
-            const openLightbox = () => setLightbox([{ src: cardImage, alt: it.name, caption: it.name }]);
-
-            if (linkable && cardImage)
-              return (
-                <div key={it.name ?? i} className={`${cls} codex-card--split`}>
-                  <button className="codex-card__image-btn" onClick={openLightbox} aria-label={`View image of ${it.name}`}>
-                    {imageWrap}
-                  </button>
-                  <div className="codex-card__body">
-                    <p className="codex-card__title">{it.name}</p>
-                    {it.description && <p className="codex-card__summary">{it.description}</p>}
-                    <button className="codex-card__entry-link codex-card__entry-link--btn" onClick={() => onOpenPage(target)}>
-                      View more ↗
-                    </button>
-                  </div>
-                </div>
-              );
-
-            const inner = (
-              <>
-                {imageWrap}
-                <div className="codex-card__body">
-                  <p className="codex-card__title">{it.name}</p>
-                  {it.description && <p className="codex-card__summary">{it.description}</p>}
-                  {linkable && <span className="codex-card__entry-link">View more ↗</span>}
-                </div>
-              </>
-            );
-            if (linkable)
-              return (
-                <button key={it.name ?? i} className={`${cls} codex-card--link`} onClick={() => onOpenPage(target)}>
-                  {inner}
-                </button>
-              );
-            if (cardImage)
-              return (
-                <button key={it.name ?? i} className={cls} onClick={openLightbox}>
-                  {inner}
-                </button>
-              );
-            return <div key={it.name ?? i} className={cls}>{inner}</div>;
-          })}
-        </div>
-      </div>
-    );
-
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- reset before async load (keyed by country.id)
     setLocationData(null);
     setMarkdown(null);
     const locKey = `../data/locations/${country.id}.js`;
@@ -443,16 +557,23 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onO
       .catch(() => { setLocationData({}); setMarkdown(""); });
   }, [country.id]);
 
-  const countryEntries = entries.filter((e) => e.tags.includes(country.id));
+  // eslint-disable-next-line react-hooks/exhaustive-deps -- record on id change only
+  useEffect(() => { recordView({ kind: "country", id: country.id, name: country.name }); }, [country.id]);
+
+  const countryEntries = useMemo(
+    () => entries.filter((e) => e.tags.includes(country.id)),
+    [country.id]
+  );
   // Compendium pages whose prose names this place (from the generated cross-ref
   // index), shown as "tied to this land". Entries only (not other lands/adventures).
-  const tiedPages = [
+  const tiedPages = useMemo(() => [
     ...new Set([...(crossRefs.backlinks[toSlug(country.name)] ?? []), ...(crossRefs.backlinks[country.id] ?? [])]),
   ]
     .map(resolvePage)
     .filter((p) => p && p.kind === "entry")
     .filter((p, i, a) => a.findIndex((q) => q.id === p.id) === i)
-    .slice(0, 18);
+    .slice(0, 18),
+  [country.id, country.name]);
   const pinVideos = videosForPin[country.id] ?? [];
   const mainVideo = locationData?.youtubeId
     ? (videoById[locationData.youtubeId] ?? { id: locationData.youtubeId, title: `Chronicle: ${country.name}` })
@@ -461,17 +582,23 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onO
 
   const loaded = locationData !== null && markdown !== null;
   // The page md may carry a YAML frontmatter block of notable figures/places/items.
-  const fm = markdown && markdown.startsWith("---")
-    ? markdown.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/)
-    : null;
-  let meta = {};
-  if (fm) { try { meta = yaml.load(fm[1]) ?? {}; } catch { meta = {}; } }
-  const body = fm ? fm[2] : (markdown ?? "");
-  const figures = meta.figures ?? [];
-  const notablePlaces = meta.places ?? [];
-  const notableItems = meta.items ?? [];
-  const images = body ? extractImages(body) : [];
-  const bodyText = body ? stripImages(body).replace(/^#[^\n]*\n/, "").trim() : "";
+  // Parse it (and split the prose body off) only when the markdown changes - not on
+  // every render (e.g. opening the lightbox), which would re-run yaml.load each time.
+  const { figures, notablePlaces, notableItems, images, bodyText } = useMemo(() => {
+    const fm = markdown && markdown.startsWith("---")
+      ? markdown.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/)
+      : null;
+    let meta = {};
+    if (fm) { try { meta = yaml.load(fm[1]) ?? {}; } catch { meta = {}; } }
+    const body = fm ? fm[2] : (markdown ?? "");
+    return {
+      figures: meta.figures ?? [],
+      notablePlaces: meta.places ?? [],
+      notableItems: meta.items ?? [],
+      images: body ? extractImages(body) : [],
+      bodyText: body ? stripImages(body).replace(/^#[^\n]*\n/, "").trim() : "",
+    };
+  }, [markdown]);
 
   return (
     <div className="country-detail">
@@ -481,9 +608,12 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onO
           <h2 className="country-detail__name">{country.name}</h2>
           {country.tagline && <p className="country-detail__tagline">"{country.tagline}"</p>}
         </div>
-        <button className="country-detail__map-btn" onClick={() => onPinSelect(country.id)}>
-          View on Map ↗
-        </button>
+        <div className="country-detail__header-actions">
+          <button className="country-detail__map-btn" onClick={() => onPinSelect(country.id)}>
+            View on Map ↗
+          </button>
+          <PageActions target={{ kind: "country", id: country.id, name: country.name }} />
+        </div>
       </div>
 
       <div className="country-detail__divider" />
@@ -502,9 +632,9 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onO
         </div>
       )}
 
-      {loaded && notableGrid("Notable Figures", figures, true)}
-      {loaded && notableGrid("Notable Places", notablePlaces)}
-      {loaded && notableGrid("Notable Items", notableItems)}
+      {loaded && <CardGrid label="Notable Figures" items={figures} portrait onOpenPage={onOpenPage} onLightbox={setLightbox} excludeCountryId={country.id} />}
+      {loaded && <CardGrid label="Notable Places" items={notablePlaces} onOpenPage={onOpenPage} onLightbox={setLightbox} excludeCountryId={country.id} />}
+      {loaded && <CardGrid label="Notable Items" items={notableItems} onOpenPage={onOpenPage} onLightbox={setLightbox} excludeCountryId={country.id} />}
 
       {(adventuresByPin[country.id] ?? []).length > 0 && onOpenPage && (
         <div className="country-detail__block">
@@ -558,6 +688,7 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onO
             <img
               src={`https://img.youtube.com/vi/${mainVideo.id}/mqdefault.jpg`}
               alt={mainVideo.title}
+              loading="lazy"
             />
             <div className="location-panel__watch-overlay">
               <span className="location-panel__watch-play">▶</span>
@@ -604,6 +735,7 @@ function CountryDetail({ country, onPinSelect, onEntrySelect, onVideoSelect, onO
                 <img
                   src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`}
                   alt={video.name}
+                  loading="lazy"
                 />
                 <div className="location-panel__video-thumb-overlay">▶</div>
                 <span className="location-panel__video-thumb-label">{video.name}</span>
@@ -640,47 +772,70 @@ function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPage, onTh
     }
   }, [entry]);
 
+  useEffect(() => { recordView({ kind: "entry", id: entry.id, name: entry.name }); }, [entry.id, entry.name]);
+
   const loaded = markdown !== null;
-  const images = markdown ? extractImages(markdown) : [];
-  const bodyText = markdown ? stripImages(markdown).replace(/^#[^\n]*\n/, "").trim() : "";
+  const { images, bodyText } = useMemo(() => ({
+    images: markdown ? extractImages(markdown) : [],
+    bodyText: markdown ? stripImages(markdown).replace(/^#[^\n]*\n/, "").trim() : "",
+  }), [markdown]);
   const eyebrow = entry.group && !skipGroup(entry.group, entry.section)
     ? `${SECTION_LABEL[entry.section]} · ${entry.group}`
     : SECTION_LABEL[entry.section];
-  const relatedVideos = (relatedVideosByVideo[entry.id] ?? [])
+  const relatedVideos = useMemo(() => (relatedVideosByVideo[entry.id] ?? [])
     .map((id) => videoById[id])
-    .filter(Boolean);
+    .filter(Boolean), [entry.id]);
   // Cross-references. featuredIn = adventures that feature this entry. The rest is
   // derived from the curated RELATED_BY_SLUG map plus the generated cross-ref index
-  // (crossRefs): pages this one mentions, and pages that mention it.
-  const slug = toSlug(entry.name);
-  const featuredIn = adventuresByEntryId[entry.id] ?? [];
-  const myThemes = themesBySlug[slug] ?? [];
-  const seen = new Set([`entry-${entry.id}`, ...featuredIn.map((a) => `adventure-${a.id}`)]);
-  const toPages = (slugs) => {
-    const out = [];
-    for (const s of slugs) {
-      const p = resolvePage(s);
-      if (!p) continue;
-      const k = `${p.kind}-${p.id}`;
-      if (seen.has(k)) continue;
-      seen.add(k);
-      out.push(p);
-    }
-    return out;
-  };
-  // Related (discovery): curated first, then the pages this one points to.
-  const related = [
-    ...toPages(RELATED_BY_SLUG[slug] ?? []),
-    ...toPages(crossRefs.mentions[slug] ?? []),
-  ].slice(0, 8);
-  // Referenced by (reverse index): pages that mention this one, minus any above.
-  const referencedBy = toPages(crossRefs.backlinks[slug] ?? []).slice(0, 12);
-  // On the map: this page, or places it mentions, that are navigable map pins.
-  const mapPins = [slug, ...(crossRefs.mentions[slug] ?? [])]
-    .map(resolvePage)
-    .filter((p) => p && p.kind === "country")
-    .filter((p, i, a) => a.findIndex((q) => q.id === p.id) === i)
-    .slice(0, 4);
+  // (crossRefs): pages this one mentions, and pages that mention it. Memoized on the
+  // entry so unrelated re-renders don't rebuild the whole related-pages graph.
+  const { featuredIn, myThemes, related, referencedBy, mapPins, graphNodes } = useMemo(() => {
+    const slug = toSlug(entry.name);
+    const featuredIn = adventuresByEntryId[entry.id] ?? [];
+    const myThemes = themesBySlug[slug] ?? [];
+    const seen = new Set([`entry-${entry.id}`, ...featuredIn.map((a) => `adventure-${a.id}`)]);
+    const toPages = (slugs) => {
+      const out = [];
+      for (const s of slugs) {
+        const p = resolvePage(s);
+        if (!p) continue;
+        const k = `${p.kind}-${p.id}`;
+        if (seen.has(k)) continue;
+        seen.add(k);
+        out.push(p);
+      }
+      return out;
+    };
+    // Related (discovery): curated first, then the pages this one points to.
+    const related = [
+      ...toPages(RELATED_BY_SLUG[slug] ?? []),
+      ...toPages(crossRefs.mentions[slug] ?? []),
+    ].slice(0, 8);
+    // Referenced by (reverse index): pages that mention this one, minus any above.
+    const referencedBy = toPages(crossRefs.backlinks[slug] ?? []).slice(0, 12);
+    // On the map: this page, or places it mentions, that are navigable map pins.
+    const mapPins = [slug, ...(crossRefs.mentions[slug] ?? [])]
+      .map(resolvePage)
+      .filter((p) => p && p.kind === "country")
+      .filter((p, i, a) => a.findIndex((q) => q.id === p.id) === i)
+      .slice(0, 4);
+
+    // Web-of-connections graph: merge every neighbour kind, dedupe, cap.
+    const graphSeen = new Set();
+    const graphNodes = [];
+    const addNode = (target, label, relation) => {
+      const k = `${target.kind}-${target.id}`;
+      if (graphSeen.has(k)) return;
+      graphSeen.add(k);
+      graphNodes.push({ target, label, relation });
+    };
+    for (const t of related) addNode(t, t.name, t.kind === "adventure" ? "adventure" : t.kind === "country" ? "map" : "related");
+    for (const a of featuredIn) addNode({ kind: "adventure", id: a.id, name: a.title }, a.title, "adventure");
+    for (const t of referencedBy) addNode(t, t.name, "ref");
+    for (const p of mapPins) addNode({ kind: "country", id: p.id, name: p.name }, p.name, "map");
+
+    return { featuredIn, myThemes, related, referencedBy, mapPins, graphNodes: graphNodes.slice(0, 16) };
+  }, [entry.id, entry.name]);
 
   return (
     <div className="country-detail">
@@ -693,6 +848,9 @@ function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPage, onTh
         <div className="country-detail__header-text">
           <p className="country-detail__eyebrow">{eyebrow}</p>
           <h2 className="country-detail__name">{entry.name}</h2>
+        </div>
+        <div className="country-detail__header-actions">
+          <PageActions target={{ kind: "entry", id: entry.id, name: entry.name }} />
         </div>
       </div>
 
@@ -744,12 +902,20 @@ function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPage, onTh
             <img
               src={`https://img.youtube.com/vi/${entry.id}/mqdefault.jpg`}
               alt={entry.name}
+              loading="lazy"
             />
             <div className="location-panel__watch-overlay">
               <span className="location-panel__watch-play">▶</span>
               <span className="location-panel__watch-label">Watch</span>
             </div>
           </button>
+        </div>
+      )}
+
+      {graphNodes.length > 0 && onOpenPage && (
+        <div className="country-detail__block">
+          <p className="location-panel__section-label">Web of connections</p>
+          <ConnectionsGraph center={entry.name} nodes={graphNodes} onOpen={onOpenPage} />
         </div>
       )}
 
@@ -832,6 +998,7 @@ function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPage, onTh
                 <img
                   src={`https://img.youtube.com/vi/${rv.id}/mqdefault.jpg`}
                   alt={rv.name}
+                  loading="lazy"
                 />
                 <div className="location-panel__video-thumb-overlay">▶</div>
                 <span className="location-panel__video-thumb-label">{rv.name}</span>
@@ -870,107 +1037,20 @@ function AdventureDetail({ adventure, onVideoSelect, onOpenPage }) {
 
   const [lightbox, setLightbox] = useState(null); // {src, alt, caption}[] for image cards
 
-  // Card grid reused for NPCs / Creatures / Places / Items. Each entry has an
-  // optional image, description and videoId: a card with a videoId plays it; a
-  // card with only an image opens it in the lightbox (e.g. view the map full-size).
-  const cardGrid = (label, items, portrait = false) =>
-    items.length > 0 && (
-      <div className="country-detail__block">
-        <p className="location-panel__section-label">{label}</p>
-        <div className="country-detail__entries-grid">
-          {items.map((it, i) => {
-            const cls = `codex-card${(it.portrait ?? portrait) ? " codex-card--portrait" : ""}${it.fit === "contain" ? " codex-card--fit" : ""}`;
-            // A card may carry an explicit `entry: <slug>`, or simply share its
-            // name with another page (a creature, a country, an adventure…). Either
-            // way it deep-links there.
-            const target = resolvePage(it.entry ?? it.name);
-            const linkable = target && onOpenPage;
-            // A card with no image of its own borrows the image of the page its
-            // "View more" link points to (e.g. a card linking to Orc shows the orc).
-            const borrowed = target ? entryImages[toSlug(target.name)] : null;
-            const cardImage = it.image ?? borrowed ?? null;
-            const imageWrap = cardImage && (
-              <div className="codex-card__image-wrap">
-                <CardImage src={cardImage} alt={it.name} />
-              </div>
-            );
-            const openLightbox = () => setLightbox([{ src: cardImage, alt: it.name, caption: it.name }]);
-
-            // Both an image and a "View more" link: keep them independently
-            // clickable - the image opens the lightbox, the link opens the entry.
-            if (linkable && cardImage)
-              return (
-                <div key={it.name ?? i} className={`${cls} codex-card--split`}>
-                  <button
-                    className="codex-card__image-btn"
-                    onClick={openLightbox}
-                    aria-label={`View image of ${it.name}`}
-                  >
-                    {imageWrap}
-                  </button>
-                  <div className="codex-card__body">
-                    <p className="codex-card__title">{it.name}</p>
-                    {it.description && <p className="codex-card__summary">{it.description}</p>}
-                    <button
-                      className="codex-card__entry-link codex-card__entry-link--btn"
-                      onClick={() => onOpenPage(target)}
-                    >
-                      View more ↗
-                    </button>
-                  </div>
-                </div>
-              );
-
-            const inner = (
-              <>
-                {imageWrap}
-                <div className="codex-card__body">
-                  <p className="codex-card__title">{it.name}</p>
-                  {it.description && <p className="codex-card__summary">{it.description}</p>}
-                  {linkable && (
-                    <span className="codex-card__entry-link">View more ↗</span>
-                  )}
-                </div>
-              </>
-            );
-            if (linkable)
-              return (
-                <button
-                  key={it.name ?? i}
-                  className={`${cls} codex-card--link`}
-                  onClick={() => onOpenPage(target)}
-                >
-                  {inner}
-                </button>
-              );
-            if (it.videoId)
-              return (
-                <button
-                  key={it.videoId}
-                  className={cls}
-                  onClick={() => onVideoSelect(videoById[it.videoId] ?? { id: it.videoId, title: it.name })}
-                >
-                  {inner}
-                </button>
-              );
-            if (cardImage)
-              return (
-                <button
-                  key={it.name ?? i}
-                  className={cls}
-                  onClick={openLightbox}
-                >
-                  {inner}
-                </button>
-              );
-            return <div key={it.name ?? i} className={cls}>{inner}</div>;
-          })}
-        </div>
-      </div>
-    );
+  useEffect(() => { recordView({ kind: "adventure", id: adventure.id, name: adventure.title }); }, [adventure.id, adventure.title]);
 
   // A named section groups its own Places / NPCs / Creatures / Items beneath a
-  // title heading. Empty sub-grids hide themselves (see cardGrid).
+  // title heading. Empty sub-grids hide themselves (CardGrid renders nothing).
+  const grid = (label, items, portrait = false) => (
+    <CardGrid
+      label={label}
+      items={items}
+      portrait={portrait}
+      onOpenPage={onOpenPage}
+      onVideoSelect={onVideoSelect}
+      onLightbox={setLightbox}
+    />
+  );
   const sectionBlock = (section, i) => (
     <div className="country-detail__section" key={section.title ?? i}>
       {section.title && (
@@ -979,10 +1059,10 @@ function AdventureDetail({ adventure, onVideoSelect, onOpenPage }) {
       {section.description && (
         <p className="country-detail__section-desc">{section.description}</p>
       )}
-      {cardGrid("Places", section.places ?? [])}
-      {cardGrid("NPCs", section.npcs ?? [], true)}
-      {cardGrid("Creatures", section.creatures ?? [], true)}
-      {cardGrid("Items", section.items ?? [])}
+      {grid("Places", section.places ?? [])}
+      {grid("NPCs", section.npcs ?? [], true)}
+      {grid("Creatures", section.creatures ?? [], true)}
+      {grid("Items", section.items ?? [])}
     </div>
   );
 
@@ -993,6 +1073,9 @@ function AdventureDetail({ adventure, onVideoSelect, onOpenPage }) {
           <p className="country-detail__eyebrow">Adventure</p>
           <h2 className="country-detail__name">{adventure.title}</h2>
           {adventure.tagline && <p className="country-detail__tagline">"{adventure.tagline}"</p>}
+        </div>
+        <div className="country-detail__header-actions">
+          <PageActions target={{ kind: "adventure", id: adventure.id, name: adventure.title }} />
         </div>
       </div>
 
@@ -1014,10 +1097,10 @@ function AdventureDetail({ adventure, onVideoSelect, onOpenPage }) {
         sections.map(sectionBlock)
       ) : (
         <>
-          {cardGrid("NPCs", npcs, true)}
-          {cardGrid("Creatures", creatures, true)}
-          {cardGrid("Places", places)}
-          {cardGrid("Items", items)}
+          {grid("NPCs", npcs, true)}
+          {grid("Creatures", creatures, true)}
+          {grid("Places", places)}
+          {grid("Items", items)}
         </>
       )}
 
@@ -1035,6 +1118,7 @@ function AdventureDetail({ adventure, onVideoSelect, onOpenPage }) {
                 <img
                   src={`https://img.youtube.com/vi/${rv.id}/mqdefault.jpg`}
                   alt={rv.name}
+                  loading="lazy"
                 />
                 <div className="location-panel__video-thumb-overlay">▶</div>
                 <span className="location-panel__video-thumb-label">{rv.name}</span>
@@ -1062,9 +1146,14 @@ export default function Compendium({
   onVideoSelect,
 }) {
   const [query, setQuery] = useState("");
-  // Active "browse by theme" facet (a cross-cutting tag from compendiumTags). When
-  // set, the sidebar lists the theme's member pages instead of the full nav tree.
-  const [themeFilter, setThemeFilter] = useState(null);
+  // Active "browse by theme" facets (cross-cutting tags from compendiumTags).
+  // Multiple can be active at once - the landing shows pages in ALL of them.
+  const [themeFilter, setThemeFilter] = useState([]);
+  // Landing view: the theme browser, or the A-Z gazetteer of named figures/places.
+  const [homeView, setHomeView] = useState("themes");
+  // The reader's library (recently-viewed + bookmarks), persisted to localStorage.
+  const recents = useRecents();
+  const bookmarks = useBookmarks();
   // The open entry page (a Peoples/Creatures/Lore page, either video-backed or
   // markdown-only). Reflected in the URL as ?ce=<id> so the browser back/forward
   // buttons and refresh all work.
@@ -1177,23 +1266,34 @@ export default function Compendium({
     return [...matchCountries, ...matchEntries];
   }, [query]);
 
-  // Activate a theme facet (from a sidebar chip or an entry page's theme chip):
-  // clear the search and any open page so the filtered list shows.
+  // Activate a single theme (from an entry page's theme chip): clear the search
+  // and any open page, switch the landing to the theme browser, and show it.
   const selectTheme = useCallback((id) => {
     setQuery("");
     setSelectedEntry(null);
     onCountrySelect(null);
     onAdventureSelect(null);
-    setThemeFilter(id);
+    setHomeView("themes");
+    setThemeFilter([id]);
     window.scrollTo(0, 0);
   }, [onCountrySelect, onAdventureSelect]);
 
-  // Member pages of the active theme, as sidebar result items.
+  // Toggle a theme in/out of the active set (landing chips). Combining themes
+  // narrows to pages that carry all of them.
+  const toggleTheme = useCallback((id) => {
+    setThemeFilter((prev) => (prev.includes(id) ? prev.filter((t) => t !== id) : [...prev, id]));
+  }, []);
+
+  // Pages that belong to ALL active themes (intersection), as result cards.
   const themeResults = useMemo(() => {
-    if (!themeFilter) return null;
+    if (!themeFilter.length) return null;
+    const sets = themeFilter.map((id) => slugsByTheme[id]).filter(Boolean);
+    if (!sets.length) return [];
+    const [first, ...rest] = sets;
+    const slugs = [...first].filter((s) => rest.every((set) => set.has(s)));
     const seen = new Set();
     const items = [];
-    for (const s of slugsByTheme[themeFilter] ?? []) {
+    for (const s of slugs) {
       const p = resolvePage(s);
       if (!p) continue;
       const k = `${p.kind}-${p.id}`;
@@ -1532,41 +1632,77 @@ export default function Compendium({
               <div className="country-detail__header">
                 <div className="country-detail__header-text">
                   <p className="country-detail__eyebrow">The Compendium</p>
-                  <h2 className="country-detail__name">Browse by theme</h2>
+                  <h2 className="country-detail__name">Explore</h2>
                 </div>
               </div>
               <div className="country-detail__divider" />
-              <div className="country-detail__meta">
-                {themes.map((t) => (
-                  <button
-                    key={t.id}
-                    className={`codex-tag${themeFilter === t.id ? " codex-tag--active" : ""}`}
-                    onClick={() => (themeFilter === t.id ? setThemeFilter(null) : selectTheme(t.id))}
-                  >
-                    {t.label}
-                  </button>
-                ))}
+
+              {recents.length > 0 && <RefStrip label="Continue exploring" refs={recents} onOpen={openPage} />}
+              {bookmarks.length > 0 && <RefStrip label="Saved" refs={bookmarks} onOpen={openPage} />}
+
+              <div className="home-tabs">
+                <button
+                  className={`home-tab${homeView === "themes" ? " home-tab--active" : ""}`}
+                  onClick={() => setHomeView("themes")}
+                >
+                  Browse by theme
+                </button>
+                <button
+                  className={`home-tab${homeView === "gazetteer" ? " home-tab--active" : ""}`}
+                  onClick={() => setHomeView("gazetteer")}
+                >
+                  A–Z index
+                </button>
               </div>
-              {themeResults ? (
-                <div className="country-detail__block">
-                  <p className="location-panel__section-label">{themeLabel[themeFilter]} — {themeResults.length} pages</p>
-                  <div className="country-detail__entries-grid">
-                    {themeResults.map((r) => (
+
+              {homeView === "gazetteer" ? (
+                <Gazetteer onOpen={(m) => openPage({ kind: "country", id: m.pinId, name: m.page })} />
+              ) : (
+                <>
+                  <div className="country-detail__meta">
+                    {themes.map((t) => (
                       <button
-                        key={`${r.target.kind}-${r.target.id}`}
-                        className="codex-card codex-card--link"
-                        onClick={() => openPage(r.target)}
+                        key={t.id}
+                        className={`codex-tag${themeFilter.includes(t.id) ? " codex-tag--active" : ""}`}
+                        onClick={() => toggleTheme(t.id)}
                       >
-                        <div className="codex-card__body">
-                          <p className="codex-card__title">{r.label}</p>
-                          <span className="codex-card__entry-link">{r.sub} ↗</span>
-                        </div>
+                        {t.label}
                       </button>
                     ))}
+                    {themeFilter.length > 0 && (
+                      <button className="codex-tag codex-tag--clear" onClick={() => setThemeFilter([])}>
+                        Clear ✕
+                      </button>
+                    )}
                   </div>
-                </div>
-              ) : (
-                <p className="country-detail__empty">Pick a theme above, or search and choose an entry from the list.</p>
+                  {themeResults ? (
+                    themeResults.length > 0 ? (
+                      <div className="country-detail__block">
+                        <p className="location-panel__section-label">
+                          {themeFilter.map((id) => themeLabel[id]).join(" + ")} — {themeResults.length} {themeResults.length === 1 ? "page" : "pages"}{themeFilter.length > 1 ? " in all" : ""}
+                        </p>
+                        <div className="country-detail__entries-grid">
+                          {themeResults.map((r) => (
+                            <button
+                              key={`${r.target.kind}-${r.target.id}`}
+                              className="codex-card codex-card--link"
+                              onClick={() => openPage(r.target)}
+                            >
+                              <div className="codex-card__body">
+                                <p className="codex-card__title">{r.label}</p>
+                                <span className="codex-card__entry-link">{r.sub} ↗</span>
+                              </div>
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    ) : (
+                      <p className="country-detail__empty">No pages share all {themeFilter.length} selected themes. Try removing one.</p>
+                    )
+                  ) : (
+                    <p className="country-detail__empty">Pick one or more themes to combine, or search and choose an entry from the list.</p>
+                  )}
+                </>
               )}
             </div>
           )}

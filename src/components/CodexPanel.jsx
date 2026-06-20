@@ -2,25 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { entries } from "../data/codex/index.js";
 import { videos } from "../data/videoData.js";
+import { extractImages, stripImages } from "../lib/markdown.js";
 
 // Statically-analyzable markdown loader (avoids vite:dynamic-import-vars warning)
 const markdownModules = import.meta.glob("../data/codex/**/*.md", { query: "?raw", import: "default" });
-
-const IMAGE_RE = /!\[([^\]]*)\]\(([^")]+?)(?:\s+"([^"]*)")?\)/g;
-
-function extractImages(markdown) {
-  const images = [];
-  let m;
-  IMAGE_RE.lastIndex = 0;
-  while ((m = IMAGE_RE.exec(markdown)) !== null) {
-    images.push({ alt: m[1], src: m[2], caption: m[3] || null });
-  }
-  return images;
-}
-
-function stripImages(markdown) {
-  return markdown.replace(IMAGE_RE, "").replace(/\n{3,}/g, "\n\n").trim();
-}
 
 function ImageCarousel({ images }) {
   const [idx, setIdx] = useState(0);
