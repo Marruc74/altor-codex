@@ -7,6 +7,8 @@ import { adventuresByPin, adventuresByEntryId } from "../data/adventureLinks";
 import { videosForPin, relatedVideosByVideo } from "../data/crossLinks";
 import { thumbSrc, onThumbError } from "../lib/thumb";
 import { entryImages } from "../data/entryImages.generated";
+import { portraitSlugs } from "../data/entryImagePortrait.generated";
+import { entryBlurbs } from "../data/entryBlurbs.generated";
 import { crossRefs } from "../data/crossRefs.generated";
 import { themes, themesBySlug, slugsByTheme, themeLabel } from "../data/compendiumTags";
 import { sourcesBySlug } from "../data/sources";
@@ -400,8 +402,10 @@ function HubView({ hub, geoGroups, onOpenHub, onOpenPage }) {
     }
   }
 
-  const repImage = (items) => {
-    for (const it of items) { const img = entryImages[toSlug(it.name)]; if (img) return img; }
+  // The first item with art: its slug (so the group card can borrow both the
+  // image and its portrait orientation).
+  const repSlug = (items) => {
+    for (const it of items) { const s = toSlug(it.name); if (entryImages[s]) return s; }
     return null;
   };
 
@@ -412,11 +416,14 @@ function HubView({ hub, geoGroups, onOpenHub, onOpenPage }) {
       <div className="country-detail__entries-grid">
         {items.map((it, i) => {
           const target = resolvePage(it.entry ?? it.name);
-          const img = (target && entryImages[toSlug(target.name)]) || entryImages[toSlug(it.name)] || null;
+          const slug = target ? toSlug(target.name) : toSlug(it.name);
+          const img = entryImages[slug] || null;
+          const blurb = entryBlurbs[slug] || null;
+          const cls = `codex-card codex-card--link hub-card${portraitSlugs.has(slug) ? " codex-card--portrait" : ""}`;
           return (
             <button
               key={`${target ? `${target.kind}-${target.id}` : it.name}-${i}`}
-              className="codex-card codex-card--link hub-card"
+              className={cls}
               onClick={() => target && onOpenPage(target)}
               disabled={!target}
             >
@@ -425,6 +432,7 @@ function HubView({ hub, geoGroups, onOpenHub, onOpenPage }) {
               </div>
               <div className="codex-card__body">
                 <p className="codex-card__title">{it.name}</p>
+                {blurb && <p className="codex-card__summary">{blurb}</p>}
               </div>
             </button>
           );
@@ -469,9 +477,11 @@ function HubView({ hub, geoGroups, onOpenHub, onOpenPage }) {
           <p className="location-panel__section-label">{named.length} groups · {total} pages</p>
           <div className="country-detail__entries-grid">
             {named.map((g) => {
-              const img = repImage(g.items);
+              const rs = repSlug(g.items);
+              const img = rs ? entryImages[rs] : null;
+              const cls = `codex-card codex-card--link hub-card${rs && portraitSlugs.has(rs) ? " codex-card--portrait" : ""}`;
               return (
-                <button key={g.name} className="codex-card codex-card--link hub-card" onClick={() => onOpenHub(section, g.name)}>
+                <button key={g.name} className={cls} onClick={() => onOpenHub(section, g.name)}>
                   <div className="codex-card__image-wrap">
                     {img ? <CardImage src={img} alt={g.name} /> : <span className="codex-card__placeholder">{sigil}</span>}
                   </div>
@@ -1643,21 +1653,25 @@ export default function Compendium({
   // label, total page count, seen count, and a representative image (first page
   // in the section that has art) or null (falls back to the section sigil).
   const sectionCards = useMemo(() => {
-    const repImage = (names) => {
-      for (const n of names) { const img = entryImages[toSlug(n)]; if (img) return img; }
-      return null;
+    // First member with art → { image, portrait } so the card frames it right.
+    const rep = (names) => {
+      for (const n of names) {
+        const s = toSlug(n);
+        if (entryImages[s]) return { image: entryImages[s], portrait: portraitSlugs.has(s) };
+      }
+      return { image: null, portrait: false };
     };
     const cards = [];
     cards.push({
       id: "adventures", label: "Adventures", sigil: "❖",
       total: adventures.length, seen: advSeen,
-      image: repImage(adventures.map((a) => a.title)),
+      ...rep(adventures.map((a) => a.title)),
     });
     const geoTotal = geoGroups.reduce((n, g) => n + g.countries.length + g.videos.length, 0);
     cards.push({
       id: "geography", label: "Geography", sigil: SECTIONS.find((s) => s.id === "geography")?.sigil ?? "◈",
       total: geoTotal, seen: geoSeen,
-      image: repImage(geoGroups.flatMap((g) => [...g.countries.map((c) => c.name), ...g.videos.map((v) => v.name)])),
+      ...rep(geoGroups.flatMap((g) => [...g.countries.map((c) => c.name), ...g.videos.map((v) => v.name)])),
     });
     for (const s of SECTIONS) {
       if (["geography", "countries", "episodes"].includes(s.id)) continue;
@@ -1667,7 +1681,7 @@ export default function Compendium({
       cards.push({
         id: s.id, label: s.label, sigil: s.sigil,
         total, seen: seenBySection[s.id] ?? 0,
-        image: repImage(groups.flatMap((g) => g.videos.map((v) => v.name))),
+        ...rep(groups.flatMap((g) => g.videos.map((v) => v.name))),
       });
     }
     return cards;
@@ -2050,7 +2064,7 @@ export default function Compendium({
                 <p className="location-panel__section-label">Browse by section</p>
                 <div className="country-detail__entries-grid">
                   {sectionCards.map((s) => (
-                    <button key={s.id} className="codex-card codex-card--link hub-card" onClick={() => openHub(s.id)}>
+                    <button key={s.id} className={`codex-card codex-card--link hub-card${s.portrait ? " codex-card--portrait" : ""}`} onClick={() => openHub(s.id)}>
                       <div className="codex-card__image-wrap">
                         {s.image ? <CardImage src={s.image} alt={s.label} /> : <span className="codex-card__placeholder">{s.sigil}</span>}
                       </div>

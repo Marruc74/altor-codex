@@ -10,6 +10,7 @@
     "audit": "node scripts/audit-compendium.mjs",
     "og": "node scripts/generate-og-index.mjs",
     "sources": "node scripts/generate-sources.mjs",
+    "blurbs": "node scripts/generate-entry-blurbs.mjs",
     "prebuild": "node scripts/generate-sources.mjs && node scripts/generate-og-index.mjs && node scripts/audit-compendium.mjs",
     "build": "vite build",
     "lint": "eslint .",

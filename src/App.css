@@ -3938,10 +3938,12 @@ body {
   .chronicles-sections { max-width: 1500px; }
 }
 
-/* Hub / section browse cards: reuse the codex-card look; the whole card is the
-   click target, so keep the entry-link as a quiet caption. */
-.hub-card { cursor: pointer; }
+/* Hub / section browse cards reuse the standard codex-card layout (the same
+   cards used within a compendium page: portrait image left, title + blurb
+   right). The whole card is the click target. */
 .hub-card:disabled { opacity: 0.5; cursor: default; }
+/* Anchor portrait crops to the top so heads/faces aren't cut. */
+.hub-card .codex-card__image { object-position: center top; }
 
 /* ─── Breadcrumbs ─────────────────────────────────────────── */
 .breadcrumbs {
