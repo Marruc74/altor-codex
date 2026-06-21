@@ -393,6 +393,21 @@ const geoChildrenByParent = (() => {
   return m;
 })();
 
+// Section entries (Peoples/Creatures/…) that nest under a parent page of the
+// same section (e.g. cave-orcs under orc): parent slug → [child entries]. The
+// nav renders these indented beneath the parent and drops them from the flat list.
+const childrenByParentSlug = (() => {
+  const m = {};
+  for (const [sec, groups] of Object.entries(videosBySection)) {
+    if (sec === "geography") continue; // geography handled separately above
+    for (const g of groups) for (const v of g.videos) if (v.parent) {
+      (m[v.parent] ??= []).push(v);
+    }
+  }
+  for (const arr of Object.values(m)) arr.sort((a, b) => a.name.localeCompare(b.name));
+  return m;
+})();
+
 // ── Path helpers ──────────────────────────────────────────────────────────
 function toSlug(str) {
   return str
@@ -1679,16 +1694,34 @@ export default function Compendium({
                           ) : null}
                           {(flat ? true : subOpen) && (
                             <ul className="compendium-nav__list">
-                              {g.videos.map((v) => (
-                                <li key={v.id}>
-                                  <button
-                                    className={`compendium-nav__item compendium-nav__item--entry${selectedEntry?.id === v.id ? " compendium-nav__item--active" : ""}`}
-                                    onClick={() => { onAdventureSelect(null); setSelectedEntry(v); onCountrySelect(null); window.scrollTo(0, 0); }}
-                                  >
-                                    {v.name}
-                                  </button>
-                                </li>
-                              ))}
+                              {/* Children (parent set) render nested under their parent, not flat. */}
+                              {g.videos.filter((v) => !v.parent).map((v) => {
+                                const kids = childrenByParentSlug[toSlug(v.name)];
+                                return (
+                                  <li key={v.id}>
+                                    <button
+                                      className={`compendium-nav__item compendium-nav__item--entry${selectedEntry?.id === v.id ? " compendium-nav__item--active" : ""}`}
+                                      onClick={() => { onAdventureSelect(null); setSelectedEntry(v); onCountrySelect(null); window.scrollTo(0, 0); }}
+                                    >
+                                      {v.name}
+                                    </button>
+                                    {kids && (
+                                      <ul className="compendium-nav__sublist">
+                                        {kids.map((c) => (
+                                          <li key={c.id}>
+                                            <button
+                                              className={`compendium-nav__item compendium-nav__item--entry compendium-nav__item--child${selectedEntry?.id === c.id ? " compendium-nav__item--active" : ""}`}
+                                              onClick={() => { onAdventureSelect(null); setSelectedEntry(c); onCountrySelect(null); window.scrollTo(0, 0); }}
+                                            >
+                                              {c.name}
+                                            </button>
+                                          </li>
+                                        ))}
+                                      </ul>
+                                    )}
+                                  </li>
+                                );
+                              })}
                             </ul>
                           )}
                         </div>

@@ -447,9 +447,9 @@ const hiddenEntries = [];
   const videoKeys = new Set(videos.map((v) => `${v.section}|${slugify(v.name)}`));
   const touched = new Set();
   let i = 0;
-  for (const { section, group, name, slug, hidden } of compendiumRegistry) {
+  for (const { section, group, name, slug, hidden, parent } of compendiumRegistry) {
     if (videoKeys.has(`${section}|${slug}`)) continue; // a real video already covers this page
-    const entry = { id: `x-${section}-${i++}`, title: `${section}: ${name}`, section, group, name, noVideo: true, hidden: !!hidden };
+    const entry = { id: `x-${section}-${i++}`, title: `${section}: ${name}`, section, group, name, noVideo: true, hidden: !!hidden, parent: parent ?? null };
     if (hidden) { hiddenEntries.push(entry); continue; } // off the nav tree, still resolvable
     const sec = videosBySection[section] ?? (videosBySection[section] = []);
     let grp = sec.find((g) => g.group === group);
@@ -492,6 +492,23 @@ const EXTRA_GEO = [
     a.group === null ? -1 : b.group === null ? 1 : a.group.localeCompare(b.group)
   );
   for (const g of sec) g.videos.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+// Apply `parent` from the registry (frontmatter) onto every matching entry,
+// including video-backed ones (which take their data from `videos`, not the
+// registry, so they'd otherwise miss the nesting hint). Keyed by section|slug.
+{
+  const slugify = (str) =>
+    str.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase()
+      .replace(/['‘’ʼ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  const parentByKey = {};
+  for (const r of compendiumRegistry) if (r.parent) parentByKey[`${r.section}|${r.slug}`] = r.parent;
+  for (const groups of Object.values(videosBySection))
+    for (const g of groups)
+      for (const v of g.videos) {
+        const p = parentByKey[`${v.section}|${slugify(v.name)}`];
+        if (p) v.parent = p;
+      }
 }
 
 // Flat list of every entry shown in the compendium (real videos + the

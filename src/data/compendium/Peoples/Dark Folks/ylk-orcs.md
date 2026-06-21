@@ -1,3 +1,7 @@
+---
+parent: orc
+---
+
 # Ylk Orcs
 
 The ylk-orcs are the orcs made by the black god Ylkaur, and they are the largest, most muscular and most aggressive of all the orc races. Where the common kraukh-orc is merely brutal, the ylk-orc is cruel by nature, murderous and full of hate.

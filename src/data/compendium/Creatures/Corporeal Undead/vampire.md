@@ -1,7 +1,15 @@
 # Vampire
 
 
+![Vampire](/compendium/Creatures/Corporeal Undead/vampire-2.jpg "Vampire")
+![Vampire](/compendium/Creatures/Corporeal Undead/vampire-3.jpg "Vampire")
+![Vampire](/compendium/Creatures/Corporeal Undead/vampire-4.jpg "Vampire")
+![Vampire](/compendium/Creatures/Corporeal Undead/vampire-5.jpg "Vampire")
 ![Vampire](/compendium/Creatures/Corporeal Undead/vampire.jpg "Vampire")
+![Female Vampire](/compendium/Creatures/Corporeal Undead/vampire-female-1.jpg "Female Vampire")
+![Female Vampire](/compendium/Creatures/Corporeal Undead/vampire-female-2.jpg "Female Vampire")
+![Female Vampire](/compendium/Creatures/Corporeal Undead/vampire-female-3.jpg "Female Vampire")
+![Female Vampire](/compendium/Creatures/Corporeal Undead/vampire-female-4.jpg "Female Vampire")
 Vampires are ordinary humans infected with vampirism, a mixture of disease, curse and divine gift. Vampirism drastically changes the metabolism and bodily powers of the afflicted, for the better according to some vampires, for the worse according to others.
 
 ## Appearance

@@ -1,7 +1,15 @@
 # High Elf
 
 
+![High Elf](/compendium/Peoples/Elves/high-elf-2.jpg "High Elf")
+![High Elf](/compendium/Peoples/Elves/high-elf-3.jpg "High Elf")
+![High Elf](/compendium/Peoples/Elves/high-elf-4.jpg "High Elf")
+![High Elf](/compendium/Peoples/Elves/high-elf-5.jpg "High Elf")
 ![High Elf](/compendium/Peoples/Elves/high-elf.jpg "High Elf")
+![Female High Elf](/compendium/Peoples/Elves/high-elf-female-1.jpg "Female High Elf")
+![Female High Elf](/compendium/Peoples/Elves/high-elf-female-2.jpg "Female High Elf")
+![Female High Elf](/compendium/Peoples/Elves/high-elf-female-3.jpg "Female High Elf")
+![Female High Elf](/compendium/Peoples/Elves/high-elf-female-4.jpg "Female High Elf")
 The high elves descend from the firstborn, and they are the oldest of the elf-kindreds. They live apart from the world in great bone-white towers on empty plains, and they care for little beyond their own studies and the silence of their halls. No high elves are born any more, so their numbers only fall as the ages pass. They are aloof, arrogant and hard to read, masters of magic, and they regard the younger peoples with cool indifference.
 
 ## Appearance

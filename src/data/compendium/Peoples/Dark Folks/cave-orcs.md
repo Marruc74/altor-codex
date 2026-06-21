@@ -1,3 +1,7 @@
+---
+parent: orc
+---
+
 # Cave Orcs
 
 The cave orcs are the branch of the orc race that went underground, drawing down into the great cave-systems around four thousand years before Odo and staying there ever since. They are smaller and weaker than their kin above ground, and the most peaceable of all the orc races, if that word can be used of any orc at all.

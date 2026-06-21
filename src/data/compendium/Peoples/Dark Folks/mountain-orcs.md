@@ -1,3 +1,7 @@
+---
+parent: orc
+---
+
 # Mountain Orcs
 
 The mountain orcs, the girnackh, are the orcs of the high peaks. They are heavier and stronger of body than the common kraukh-orc, hardened by life in the cold and the heights.

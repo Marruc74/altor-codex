@@ -6,10 +6,10 @@
 ![Ogre](/compendium/Peoples/Dark Folks/ogre-4.jpg "Ogre")
 ![Ogre](/compendium/Peoples/Dark Folks/ogre-5.jpg "Ogre")
 ![Ogre](/compendium/Peoples/Dark Folks/ogre-6.jpg "Ogre")
-![Ogre](/compendium/Peoples/Dark Folks/ogre-7.jpg "Ogre")
-![Ogre](/compendium/Peoples/Dark Folks/ogre-8.jpg "Ogre")
-![Ogre](/compendium/Peoples/Dark Folks/ogre-9.jpg "Ogre")
-![Ogre](/compendium/Peoples/Dark Folks/ogre-10.jpg "Ogre")
+![Female Ogre](/compendium/Peoples/Dark Folks/ogre-female-1.jpg "Female Ogre")
+![Female Ogre](/compendium/Peoples/Dark Folks/ogre-female-2.jpg "Female Ogre")
+![Female Ogre](/compendium/Peoples/Dark Folks/ogre-female-3.jpg "Female Ogre")
+![Female Ogre](/compendium/Peoples/Dark Folks/ogre-female-4.jpg "Female Ogre")
 ![Ogre](/compendium/Peoples/Dark Folks/ogre.jpg "Ogre")
 Something between a great orc and a giant, even dimmer than orcs but sharing their values. They live alone or in small bands, often among orc clans or svartalf groups where they serve as prized warriors but seldom as leaders, and very rarely join with trolls.
 

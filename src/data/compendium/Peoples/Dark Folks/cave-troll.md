@@ -1,3 +1,7 @@
+---
+parent: troll
+---
+
 # Cave Troll
 
 

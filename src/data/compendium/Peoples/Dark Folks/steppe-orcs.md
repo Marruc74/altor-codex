@@ -1,3 +1,7 @@
+---
+parent: orc
+---
+
 # Steppe Orcs
 
 The steppe orcs, the brackhs, are the orcs of the open plains, nomads who took to a wandering life without fixed homes some six thousand years before Odo and never gave it up. They move with the seasons and live out of their camps.

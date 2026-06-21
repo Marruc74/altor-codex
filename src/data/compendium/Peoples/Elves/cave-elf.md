@@ -1,7 +1,17 @@
 # Cave Elf
 
 
+![Cave Elf](/compendium/Peoples/Elves/cave-elf-2.jpg "Cave Elf")
+![Cave Elf](/compendium/Peoples/Elves/cave-elf-3.jpg "Cave Elf")
+![Cave Elf](/compendium/Peoples/Elves/cave-elf-4.jpg "Cave Elf")
+![Cave Elf](/compendium/Peoples/Elves/cave-elf-5.jpg "Cave Elf")
+![Cave Elf](/compendium/Peoples/Elves/cave-elf-6.jpg "Cave Elf")
+![Cave Elf](/compendium/Peoples/Elves/cave-elf-7.jpg "Cave Elf")
 ![Cave Elf](/compendium/Peoples/Elves/cave-elf.jpg "Cave Elf")
+![Female Cave Elf](/compendium/Peoples/Elves/cave-elf-female-1.jpg "Female Cave Elf")
+![Female Cave Elf](/compendium/Peoples/Elves/cave-elf-female-2.jpg "Female Cave Elf")
+![Female Cave Elf](/compendium/Peoples/Elves/cave-elf-female-3.jpg "Female Cave Elf")
+![Female Cave Elf](/compendium/Peoples/Elves/cave-elf-female-4.jpg "Female Cave Elf")
 Most elf-folk love the light and the open forest. The cave elves do not. They have settled deep beneath the mountains, in natural cave-systems that they widen into great halls and smithies lit by magical fire, glowstones and ever-burning flame. Like other underground peoples they live mostly on mushrooms, with a little mining besides, though the metal they dig becomes art rather than tools. Their smithwork matches the dwarves' for beauty, even if dwarves make the sturdier, more useful gear; their stonework is the same story, the elves the finer artists and the dwarves the better builders.
 
 ## Appearance
