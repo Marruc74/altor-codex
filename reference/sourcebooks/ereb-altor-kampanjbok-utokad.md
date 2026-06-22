@@ -38,7 +38,7 @@ Three "högkulturer" grew up and came to dominate their surroundings. Trade betw
 - **Yndarkulturen** — On the far island of **Yndar** lived a peaceful, primitive people who ate what the rich land gave and farmed modestly — until the **margyler** of SE Akrogal, having learned enough seamanship, **invaded**. The margyler swiftly enslaved the natives, who had no idea how to defend themselves, and raised a high culture dominated by the conquerors but built on the labour of the conquered. Free of toil, the margyler grew **learned, proud, and cruel**: they laid the foundations of mathematics and the first abstract written language, and amused themselves with war-craft, magic and torture. On Yndar the dark arts of **nekromanti (necromancy) and spiritism** were born.
 
 ### Other Bronze Age culture areas
-- **Södra Akrogal** — The great southern steppes of Akrogal were peopled by **nomads** following the herds. They were the first to tame animals: the silky-furred steppe-horse for riding, the long-fanged **vargill** (war-spider) as a hunting partner, and the **enhornsbuffel** as a draught beast. Herding spread quickly to the Golwynda farmers, who expanded their useful species and improved them through breeding; from the steppes came the **bow** as both hunting and war gear, and mounted nomads who would one day wreak havoc far away in Ereb.
+- **Södra Akrogal** — The great southern steppes of Akrogal were peopled by **nomads** following the herds. They were the first to tame animals: the silky-furred **stäpplama** (steppe-llama) for riding, the long-legged **vargill** as a hunting partner, and the **enhornsbuffel** (one-horned buffalo) as a draught beast. Herding spread quickly to the Golwynda farmers, who expanded their useful species and improved them through breeding; from the steppes came the **bow** as both hunting and war gear, and mounted nomads who would one day wreak havoc far away in Ereb.
 - **Efaro** — In the jungles of NW Farbanda, several hunter-warrior cultures rose, flourishing largely on **slaves** taken from the lands beyond the mountains around Ormsjön. The Efaro folk perfected **seamanship and navigation** and excelled at craft and engineering in wood and stone. Their magic was a form of **shamanism** that came to influence most of the later schools.
 - **Norra Erebs barbarer** — In the vast forests covering NE Ereb, well-organized **alliances between communities** appeared in the late Bronze Age. The barbarians had already been forced into fairly large villages (200–300 souls), because smaller groups could scarcely survive; the growth and pressure of **svartfolk (black-folk/orc-kin)** forced them to organize defenses, war-bands and (when needed) chosen **war-chiefs or kings** — though these never held much power, for the barbarians' love of freedom ran deep. They worshipped **nature-gods** plus a pantheon stressing manly ideals of strength and honour, and held the elf-folk in deep, superstitious respect; peaceful coexistence was the rule despite the barbarians' combative, dominant nature.
 
@@ -86,6 +86,57 @@ A **konflux** is a moment when the stars take ominous positions and great, far-r
 
 ### The Dark Age and the Age of States (599 fO – 610 eO)
 Through the **Mörkertiden (599–1 fO)** Ereb's civilizations declined; in many places both writing and metalwork were forgotten. Slowly the regions regathered their strength, rediscovering lost knowledge and forging new states. One thing held in common across the southwest: the old Jorpagna tongue, **jori**, became — in its many dialects — the folk-language of nearly every land the Empire had once ruled. In the **Statsbildningarnas tid (0–610 eO)** new states rose in old Jorpagna's ruins: **Zorakin, Kardien, Berendien, Erebos** and others. Some of the old joriska culture survived, warped by local custom and geography, developing in different directions in different regions.
+
+### Legendary prehistory: the war of origins and the Confluxes
+The deepest past survives only in myth, but the book scatters several pieces of it that together form a kind of legendary prehistory:
+- **Urstriden (the war of origins)** — By legend the mountain-chain **Drakryggen** is the petrified primeval being **Tiamat**, and **Geardons gap** — the single break in the range — is the wound left when **Marduk's axe Geardon** first struck the monster in the war of origins. The hurricane that forever howls through the gap is bound up with that ancient blow.
+- **The creation of day** — In the elder days the boy-hero **Elfhelm**, wielding the sword **Yrbad**, slew the **Mörkrets Demon** and so brought **day** itself into being, freeing the sun's light from the dark gods' grip (memorialized among the stars; see §4).
+- **Origin-myths of the crafts and creatures** — The constellation-tales preserve creation legends: the smith-god **Mingar** and the metal-hooved goat **Aruros** (whence ore-deposits), **Túringwil** father of all wolves and hounds, **Parikila** mother of the birds, and **Ghâzil** forefather of all dwarves (see §4).
+- **The Confluxes** — A **konflux** is a moment when the stars take ruinous positions and world-shaking events follow. At least three are remembered: the **First Conflux**, in which the moon **Azuria** (the Blue Moon, which once gave the sea-folk light) was destroyed; an implied **Second**; and the **Third Conflux (599–598 fO)**, which felled both Jorpagna and Yndar. Each was foreseen with dread by astrologers across Altor.
+- **"Gudarnas vrede"** — Even before its final fall, Yndar had repeatedly been struck by god-sent disasters of the kind called "the gods' wrath" — the same pattern that later spirited the necromantic city of **Krau-ki** away to Marjura.
+
+### Intellectual history & the blame for the Third Conflux
+A telling thread runs through the book's treatment of learning and faith. In **612 fO** the Furgian astronomer **Dykos Barrha** presented the rationalist **Dykiska världsbilden**, with its implication that all the gods men worship are mere illusions — and barely thirteen years later the **Third Conflux** shattered Jorpagna. By **610 eO**, no serious scholar in Ereb still accepts Dykos's *view of the gods*; the common verdict is that his theories were a product of the **general godlessness that reigned before the Third Conflux** — and that this very godlessness **indirectly caused the catastrophe**. The lesson drawn is religious as much as historical: the fall of the old world is read as divine judgement on impiety, which helps explain the zeal of the post-Conflux faiths. (Dykos's cosmology is nonetheless still used as the working astronomy, even by those who reject its theology.)
+
+### A dated chronology (consolidated)
+Pulling together the dates scattered across the History, Religion, Magic and Conflicts chapters (and the footnotes):
+
+**Before Odo (fO)**
+- **~10,000–9,000 fO** — Cataclysms of the prehistoric purge; craters, petrified forests, dried sea-floors.
+- **~9,000 fO** — Elves, humans and dwarves created.
+- **~4,000 fO** — Population boom in the Golwynda culture.
+- **~3,700 fO** — Dwarves learn to cast copper; **~3,500 fO** — and bronze.
+- **during the 2,000s fO** — Grey-elf ships carry bronze-craft to coasts across the world.
+- **~1,700 fO** — Dwarves smith iron in the Grynnerbergen.
+- **1,500–1,300 fO** — Krun founds colonies along the Copper Sea's north coast (Berendien, Erebos born).
+- **1,080–1,065 fO** — The **Krunska kriget**; the hynsolger win the **battle of Grivela (1065 fO)** and found **Jorpagna**.
+- **1,080–950 fO** — The **Härarnas tid**.
+- **1,040 fO** — Morelvidyn raids Sivoa and takes **Melukha** (king **Haieg-hamu** had died 1038 fO).
+- **1,025–710 fO** — The Empire of Jorpagna expands to its greatest extent.
+- **912 fO** — The council of **Grafferburg**; emperor **Thamsul** executes the barbarian chiefs.
+- **~750–600 fO** — The Akrogal nomads rise (hippogriff cavalry).
+- **617 fO** — The **Sanithsid** ice-folk strike their "holy alliance" with the isherrarna.
+- **612 fO** — **Dykos Barrha** presents his cosmology.
+- **599–598 fO** — The **Third Conflux**: fall of Jorpagna (the köttbitare swarm) and of Yndar (Krau-ki, the slempukar).
+- **599–1 fO** — The **Mörkertiden**.
+
+**After Odo (eO)**
+- **0 eO** — The **Statsbildningarnas tid** begins; Zorakin, Kardien, Berendien and Erebos form from the Empire's ruins.
+- **late 100s eO** — **Den Lysande Vägen** takes firm hold in Zorakin and Kardien (Caddo has already been a century under Odo's teaching); Erebos and Berendien join the church's fellowship.
+- **212 eO** — Exark **Arcival** devises the Arcivalska calendar.
+- **278 eO** — The great **Schism** in the Lysande Vägen (over magic).
+- **281 eO** — The final break: the exarks of **Arno** and **Ekeborg** excommunicate each other; the church splits in two.
+- **306–384 eO** — Lifetime of **Cessilu** of **Atrema in Berendien**, who devised a temperature scale (one *Cessilu-grad* ≈ one °C).
+- **314 eO** — Exark **Zegedorn III** founds the inquisition, **Den Ljusa Handen**.
+- **370–394 eO** — An earlier **Felician war**.
+- **380s–390s eO** — Illusism wins a mass following in Kardien (the surge that forces its condemnation in 403).
+- **392 eO** — The **sea-battle of Selim**: the Felician fleet annihilates Zorakin's, and Zorakin's undefended coasts are plundered (why Zorakin shuns the present war).
+- **400–464 eO** — Reign of Kardien's **King Vidar II** (his arms pass into Kardien's heraldry).
+- **403 eO** — Exark **Pergon IV** condemns **illusism**; its followers are banished to Trakorien.
+- **468 eO** — **Vicotnik Ärkemagikern** reaches **Nidland** from Akrogal and forges a dark magocracy.
+- **early 600s eO** — King **Kuthegil Halvskägg** of Felicien escalates the letters of marque, kindling the **Felician pirate war**.
+- **610 eO** — The book's **present**: the Felician pirate war, the Ransard threat and the Nidland purge all loom; the once-a-century **Palinor crusade** is due.
+- **612 eO** — The year prophesied for **Vicotnik's crusade** against the world — "a dozen-dozen" (144) years after his arrival in 468.
 
 ---
 

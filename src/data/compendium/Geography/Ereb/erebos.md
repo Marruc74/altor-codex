@@ -1,24 +1,34 @@
 ---
+figures:
+  - name: "The Council of Five Houses"
+    description: "the five great merchant houses that have ruled Erebos from Nohstril since the civil war of 512 to 514, each holding a single seat and a veto over the rest"
+  - name: "Fraschikel"
+    description: "the blind goddess of justice and the realm's chief faith, a survival from old Jorpagna, who weighs good deeds against evil and is patron of all merchants and craftsmen"
+  - name: "The massiver"
+    description: "the island's original inhabitants, driven up into the mountains by the jorisk settlers in the early days"
 places:
   - name: "Beyural"
+    entry: "beyural"
     description: "The largest and most fertile island and the realm's unofficial heart, holding most of its people, towns and harbours; the city of Gringul and the sunstone-bearing Bey-bergen lie here"
   - name: "Dakkilo"
+    entry: "dakkilo"
     description: "The smallest island, given over almost wholly to the capital Nohstril, with only poor goat-pasture and prized-wool sheep beyond the city"
   - name: "Targero"
+    entry: "targero"
     description: "The largest but poorest island, rugged and troubled by orcs and trolls, where the fleet recruits its toughest soldiers and old Jorpagna ruins draw treasure-hunters"
   - name: "Tolokfe"
+    entry: "tolokfe"
     description: "The fog-bound Cyclops' Isle, shunned by all sailors"
   - name: "Nohstril"
+    entry: "nohstril"
     description: "The capital, on Dakkilo, seat of the Council of Five Houses"
-  - name: "Gringul"
-    description: "The greatest city of Beyural, of palaces and canals at the mouth of the Elspet"
-  - name: "Bey-bergen"
-    description: "The mountains of Beyural, sole source of the sunstones"
-  - name: "Jorpagna ruins"
-    description: "Ancient ruins in the mountains of Targero, a lure for treasure-hunters"
 items:
   - name: "Sunstones"
-    description: "Yellow gems that glow with warm light and instill courage"
+    description: "Yellow gems found only in Beyural's Bey-bergen that glow with their own warm light and instill courage, the foundation of the realm's wealth"
+  - name: "Erebosian fabric"
+    description: "the prized warm cloth woven from the long-wooled sheep of Dakkilo, lately fashionable in Kardien and Felicien"
+  - name: "Iron-book and trill"
+    description: "the rare native hardwoods of Beyural, whose last remnant forests are protected by law"
   - name: "Entorning"
     description: "One-horned cattle raised by the serfs of Beyural"
   - name: "Hersch"
@@ -51,41 +61,12 @@ There is a quiet order beneath the movement, a balance between risk and reward. 
 
 ## Geography
 
-Erebos consists of three rocky volcanic islands lying roughly thirty mil northeast of Caddo, together with two further isles. The land is poor in farmland but rich in harbors, and every island turns its face toward the sea.
+Erebos consists of three rocky volcanic islands lying roughly thirty mil northeast of Caddo, together with two further isles. The land is poor in farmland but rich in harbors, and every island turns its face toward the sea. Each island has a page of its own, listed under Erebos in the codex and as cards below.
 
-### Beyural
-
-- The largest and most fertile island, lying to the southwest, and the realm's unofficial heart
-- Holds most of the people, most of the towns, and most of the harbors
-- Largest city: **Gringul**, a place of palaces and canals at the mouth of the river **Elspet**
-- Other towns include Jachindo, Behrill, Josch, and Yrrtik
-
-Serfs here raise **entorningar**, one-horned cattle, grow wine, the giant wheat called **hersch**, and **lullader**, a small bitter stone-fruit pressed for spice and cooking oil. Remnant forests of **trill** and **iron book** trees are protected by law. In the **Bey-bergen** lie the only sunstones found anywhere in Ereb: yellow gems that glow with their own warm light. Immensely valuable, they were the foundation of the wealth Erebos amassed in the 400s eO. They are rumored, without proof, to ward off dragons, dark folk, demons, undead, magic, and disease, and they do at least instill courage in those who carry them.
-
-### Dakkilo
-
-- The smallest island
-- Capital: **Nohstril**, which is essentially the whole of the island's life
-- The remainder is poor pasture for steppe-goats and long-wooled sheep
-
-The wool of Dakkilo's sheep is woven into prized warm fabric, lately grown fashionable in Kardien and Felicien.
-
-### Targero
-
-- The largest but poorest island
-- Its people are bigger and tougher, and most of the fleet's soldiers are recruited here
-- Lively fishing sustains its coasts
-- Old **Jorpagna ruins** lie in its mountains and draw treasure-hunters
-
-Targero is the only Erebos island troubled by dark folk, both orcs and trolls. There are rumors of perytons, hydras, basilisks, and even dragon-serpents lurking in its high places.
-
-### Tolokfe
-
-- A smaller island called the Cyclops' Isle, shunned by all
-- By legend the cyclopes were cursed there in ancient times
-- No trees grow upon it, so the shipwrecked have no means of escape
-
-Treacherous currents, the **Megalossundet** and the **Gensnuporgraven**, together with perpetual fog, keep Tolokfe almost unexplored. The very few who return come back mad. One invasion of some five hundred men vanished entirely. The cyclopes dwell in vast cave-cities and raise steppe-goats; they are not evil, only hungry, and wish above all to be left alone.
+- **Beyural** - the largest and most fertile island and the realm's unofficial heart, holding most of its people, towns and harbours, the great city Gringul and the sunstone-bearing Bey-bergen.
+- **Dakkilo** - the smallest island, given over almost wholly to the capital Nohstril, with only poor pasture beyond the city.
+- **Targero** - the largest but poorest island, rugged and troubled by dark folk, where the fleet recruits its toughest soldiers and old Jorpagna ruins draw treasure-hunters.
+- **Tolokfe** - the fog-bound Cyclops' Isle, shunned by all sailors.
 
 ## People
 
