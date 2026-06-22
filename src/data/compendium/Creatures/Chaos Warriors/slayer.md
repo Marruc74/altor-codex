@@ -1,5 +1,9 @@
 # Slayer
 
+
+![Slayer](/compendium/Creatures/Chaos Warriors/slayer.jpg "Slayer")
+![Slayer](/compendium/Creatures/Chaos Warriors/slayer-2.jpg "Slayer")
+![Chaos Warrior True Form](/compendium/Creatures/Chaos Warriors/chaos-warrior-true-form.jpg "Chaos Warrior True Form")
 Slayers are chaos warriors extremely specialised in stealth, in hiding, and in dealing instantly killing strikes; they are not much good at fighting in the open.
 
 ## Appearance

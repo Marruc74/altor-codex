@@ -4,6 +4,14 @@ parent: orc
 
 # Ylk Orcs
 
+
+![Ylk Orc](/compendium/Peoples/Dark Folks/ylk-orcs-2.jpg "Ylk Orc")
+![Ylk Orc](/compendium/Peoples/Dark Folks/ylk-orcs-3.jpg "Ylk Orc")
+![Female Ylk Orc](/compendium/Peoples/Dark Folks/ylk-orcs-female-1.jpg "Female Ylk Orc")
+![Female Ylk Orc](/compendium/Peoples/Dark Folks/ylk-orcs-female-2.jpg "Female Ylk Orc")
+![Female Ylk Orc](/compendium/Peoples/Dark Folks/ylk-orcs-female-3.jpg "Female Ylk Orc")
+![Female Ylk Orc](/compendium/Peoples/Dark Folks/ylk-orcs-female-4.jpg "Female Ylk Orc")
+![Ylk Orc](/compendium/Peoples/Dark Folks/ylk-orcs.jpg "Ylk Orc")
 The ylk-orcs are the orcs made by the black god Ylkaur, and they are the largest, most muscular and most aggressive of all the orc races. Where the common kraukh-orc is merely brutal, the ylk-orc is cruel by nature, murderous and full of hate.
 
 ## Behaviour

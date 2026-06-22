@@ -1,6 +1,8 @@
 # Dark Wraith
 
 
+![Dark Wraith](/compendium/Creatures/Wraiths & Wights/dark-wraith-2.jpg "Dark Wraith")
+![Dark Wraith](/compendium/Creatures/Wraiths & Wights/dark-wraith-3.jpg "Dark Wraith")
 ![Dark Wraith](/compendium/Creatures/Wraiths & Wights/dark-wraith.jpg "Dark Wraith")
 Dark wraiths are a kind of midpoint between barrow wights and death wraiths. Their being has not, as with the barrow wights, managed to take on a form solid enough to handle objects; in this respect they are more like the bodiless spirits.
 

@@ -1,6 +1,12 @@
 # Death Wraith
 
 
+![Death Wraith](/compendium/Creatures/Wraiths & Wights/death-wraith-2.jpg "Death Wraith")
+![Death Wraith](/compendium/Creatures/Wraiths & Wights/death-wraith-3.jpg "Death Wraith")
+![Death Wraith](/compendium/Creatures/Wraiths & Wights/death-wraith-4.jpg "Death Wraith")
+![Death Wraith](/compendium/Creatures/Wraiths & Wights/death-wraith-5.jpg "Death Wraith")
+![Death Wraith](/compendium/Creatures/Wraiths & Wights/death-wraith-6.jpg "Death Wraith")
+![Female Death Wraith](/compendium/Creatures/Wraiths & Wights/death-wraith-female-1.jpg "Female Death Wraith")
 ![Death Wraith](/compendium/Creatures/Wraiths & Wights/death-wraith.jpg "Death Wraith")
 Wraiths are very powerful spirits that arise from people whose strength of soul in life was so great that they could remain in the world after death, a magician obsessed with some single spell, a thief consumed by the theft of one particular treasure, a warrior bent on vengeance for a wrong real or imagined. The death wraith is usually the spirit of an extremely mighty magician, though in rare cases an ordinary fighter may become one. They are by far the most powerful of all the undead, if one does not count the death angel and the black avengers among them.
 

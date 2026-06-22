@@ -1,5 +1,7 @@
 # Drinnen
 
+
+![Drinnen](/compendium/Creatures/Fable Animals/drinnen.jpg "Drinnen")
 The drinnen is a strange beast of the Aidne marshes, found nowhere else: a low, scaled hunter of the reeds and shallows. It is small but fierce, and one of the few marsh creatures the local folk truly fear to meet, since it gives no ground.
 
 ## Appearance

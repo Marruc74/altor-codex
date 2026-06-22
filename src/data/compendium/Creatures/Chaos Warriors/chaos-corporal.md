@@ -1,5 +1,9 @@
 # Chaos Corporal
 
+
+![Chaos Corporal](/compendium/Creatures/Chaos Warriors/chaos-corporal.jpg "Chaos Corporal")
+![Chaos Corporal](/compendium/Creatures/Chaos Warriors/chaos-corporal-2.jpg "Chaos Corporal")
+![Chaos Warrior True Form](/compendium/Creatures/Chaos Warriors/chaos-warrior-true-form.jpg "Chaos Warrior True Form")
 A chaos corporal is less powerful than a chaos knight. The chief difference is that they always appear in the company of ravagers and slayers; they usually arrive in our world in groups of five to fifteen chaos warriors led by a corporal. The group commonly seeks work as hired swords or mercenaries, and failing that may fall to raiding small villages and farms.
 
 ## Appearance

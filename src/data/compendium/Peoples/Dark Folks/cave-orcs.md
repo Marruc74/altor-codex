@@ -4,6 +4,14 @@ parent: orc
 
 # Cave Orcs
 
+
+![Cave Orc](/compendium/Peoples/Dark Folks/cave-orcs-2.jpg "Cave Orc")
+![Cave Orc](/compendium/Peoples/Dark Folks/cave-orcs-3.jpg "Cave Orc")
+![Cave Orc](/compendium/Peoples/Dark Folks/cave-orcs-4.jpg "Cave Orc")
+![Female Cave Orc](/compendium/Peoples/Dark Folks/cave-orcs-female-1.jpg "Female Cave Orc")
+![Female Cave Orc](/compendium/Peoples/Dark Folks/cave-orcs-female-2.jpg "Female Cave Orc")
+![Female Cave Orc](/compendium/Peoples/Dark Folks/cave-orcs-female-3.jpg "Female Cave Orc")
+![Cave Orc](/compendium/Peoples/Dark Folks/cave-orcs.jpg "Cave Orc")
 The cave orcs are the branch of the orc race that went underground, drawing down into the great cave-systems around four thousand years before Odo and staying there ever since. They are smaller and weaker than their kin above ground, and the most peaceable of all the orc races, if that word can be used of any orc at all.
 
 ## Behaviour

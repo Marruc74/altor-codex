@@ -1,5 +1,9 @@
 # Ravager
 
+
+![Ravager](/compendium/Creatures/Chaos Warriors/ravager.jpg "Ravager")
+![Ravager](/compendium/Creatures/Chaos Warriors/ravager-2.jpg "Ravager")
+![Chaos Warrior True Form](/compendium/Creatures/Chaos Warriors/chaos-warrior-true-form.jpg "Chaos Warrior True Form")
 Ravagers are the absolute opposite of slayers. Going into battle they grow utterly savage and attack until the foe has fallen, heedless of their own wounds.
 
 ## Appearance

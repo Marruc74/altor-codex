@@ -1,5 +1,7 @@
 # Giant Octopus
 
+
+![Giant Octopus](/compendium/Creatures/Fable Animals/giant-octopus.jpg "Giant Octopus")
 A monstrous octopus of the coastal depths and the open sea, the common kind some six metres across the reach of its arms, though the oldest grow far larger.
 
 ## Appearance

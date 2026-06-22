@@ -1,5 +1,8 @@
 # Elefantine
 
+
+![Elefantine](/compendium/Creatures/Fable Animals/elefantine.jpg "Elefantine")
+![Elefantine](/compendium/Creatures/Fable Animals/elefantine-2.jpg "Elefantine")
 The elefantiner are tiny wild "elephants" of Magilre, scarcely a metre tall and famously ferocious for their size. For all that they look like miniatures of the great beasts, they are no one's idea of harmless.
 
 ## Appearance

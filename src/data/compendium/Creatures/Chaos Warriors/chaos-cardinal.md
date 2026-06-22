@@ -1,5 +1,9 @@
 # Chaos Cardinal
 
+
+![Chaos Cardinal](/compendium/Creatures/Chaos Warriors/chaos-cardinal.jpg "Chaos Cardinal")
+![Chaos Cardinal](/compendium/Creatures/Chaos Warriors/chaos-cardinal-2.jpg "Chaos Cardinal")
+![Chaos Warrior True Form](/compendium/Creatures/Chaos Warriors/chaos-warrior-true-form.jpg "Chaos Warrior True Form")
 Chaos warriors are very rare but extremely dangerous visitors to our dimension, beings from a chaotic and warlike plane who sometimes end up in our human world by mistake; no known spell can summon or banish them. Chaos cardinals have been met chiefly at shrines and monasteries.
 
 ## Appearance
