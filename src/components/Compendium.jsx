@@ -7,6 +7,8 @@ import { adventuresByPin, adventuresByEntryId } from "../data/adventureLinks";
 import { videosForPin, relatedVideosByVideo } from "../data/crossLinks";
 import { thumbSrc, onThumbError } from "../lib/thumb";
 import { entryImages } from "../data/entryImages.generated";
+import { portraitSlugs } from "../data/entryImagePortrait.generated";
+import { entryBlurbs } from "../data/entryBlurbs.generated";
 import { crossRefs } from "../data/crossRefs.generated";
 import { themes, themesBySlug, slugsByTheme, themeLabel } from "../data/compendiumTags";
 import { sourcesBySlug } from "../data/sources";
@@ -264,48 +266,67 @@ function PageActions({ target }) {
   );
 }
 
-// Breadcrumb trail for a detail view. The root "Compendium" crumb returns to
-// the landing; the section/group crumbs are context labels; the leaf is the
-// current page. (Defined after CONTINENTS / SECTION_LABEL / adventureGroups.)
-function Breadcrumbs({ entry, country, adventure, onHome, onOpenPage }) {
-  const trail = [];
-  if (entry) {
-    trail.push(SECTION_LABEL[entry.section] ?? "Codex");
-    if (entry.group && !skipGroup(entry.group, entry.section)) trail.push(entry.group);
-    trail.push(entry.name);
+const sectionLabelFor = (id) =>
+  SECTION_LABEL[id] ?? (id === "adventures" ? "Adventures" : id === "geography" ? "Geography" : id);
+
+// Breadcrumb trail for a detail view or a hub. The root "Compendium" crumb
+// returns to the landing; section/group crumbs link to their hubs (so on a
+// dragon page, "Creatures" and "Dragons" jump to those hubs); the leaf is the
+// current page or hub. Each crumb is { label, go } where go is null for the
+// current location.
+function Breadcrumbs({ entry, country, adventure, hub, onHome, onOpenPage, onOpenHub }) {
+  const crumbs = [];
+  const sectionCrumb = (secId) => ({ label: sectionLabelFor(secId), go: () => onOpenHub(secId) });
+  // A group crumb that names an actual page (e.g. "Beyural") links to that page;
+  // otherwise it opens the group hub.
+  const groupCrumb = (secId, group) => {
+    const page = resolvePage(group);
+    return { label: group, go: page ? () => onOpenPage(page) : () => onOpenHub(secId, group) };
+  };
+
+  if (hub) {
+    if (hub.group == null) {
+      crumbs.push({ label: sectionLabelFor(hub.section), go: null });
+    } else {
+      crumbs.push(sectionCrumb(hub.section));
+      crumbs.push({ label: hub.group, go: null });
+    }
+  } else if (entry) {
+    crumbs.push(sectionCrumb(entry.section));
+    if (entry.group && !skipGroup(entry.group, entry.section)) crumbs.push(groupCrumb(entry.section, entry.group));
+    crumbs.push({ label: entry.name, go: null });
   } else if (country) {
-    trail.push("Geography");
+    crumbs.push(sectionCrumb("geography"));
     const cont = CONTINENTS.find((c) => c.id === country.continent);
-    if (cont) trail.push(cont.name);
-    trail.push(country.name);
+    if (cont) crumbs.push({ label: cont.name, go: () => onOpenHub("geography", cont.name) });
+    crumbs.push({ label: country.name, go: null });
   } else if (adventure) {
-    trail.push("Adventures");
+    crumbs.push(sectionCrumb("adventures"));
     const grp = adventureGroups.groups.find((g) => g.adventures.some((a) => a.id === adventure.id));
-    if (grp) trail.push(grp.name);
-    else if (adventureGroups.standalone.some((a) => a.id === adventure.id)) trail.push("Standalone");
-    trail.push(adventure.title);
+    if (grp) crumbs.push({ label: grp.name, go: () => onOpenHub("adventures", grp.name) });
+    else if (adventureGroups.standalone.some((a) => a.id === adventure.id)) crumbs.push({ label: "Standalone", go: () => onOpenHub("adventures", "Standalone") });
+    crumbs.push({ label: adventure.title, go: null });
   } else {
     return null;
   }
-  const lastI = trail.length - 1;
+
+  const lastI = crumbs.length - 1;
   return (
     <nav className="breadcrumbs" aria-label="Breadcrumb">
       <button className="breadcrumbs__crumb breadcrumbs__crumb--link" onClick={onHome}>Compendium</button>
-      {trail.map((label, i) => {
-        // A middle crumb whose label is itself a page (e.g. the "Beyural" group,
-        // which is also the island's place page) becomes a link to it.
-        const target = i < lastI ? resolvePage(label) : null;
+      {crumbs.map((c, i) => {
+        const current = i === lastI;
         return (
           <span key={i} className="breadcrumbs__seg">
             <span className="breadcrumbs__sep" aria-hidden="true">›</span>
-            {target && onOpenPage ? (
-              <button className="breadcrumbs__crumb breadcrumbs__crumb--link" onClick={() => onOpenPage(target)}>{label}</button>
+            {c.go && !current ? (
+              <button className="breadcrumbs__crumb breadcrumbs__crumb--link" onClick={c.go}>{c.label}</button>
             ) : (
               <span
-                className={`breadcrumbs__crumb${i === lastI ? " breadcrumbs__crumb--current" : ""}`}
-                aria-current={i === lastI ? "page" : undefined}
+                className={`breadcrumbs__crumb${current ? " breadcrumbs__crumb--current" : ""}`}
+                aria-current={current ? "page" : undefined}
               >
-                {label}
+                {c.label}
               </span>
             )}
           </span>
@@ -347,6 +368,139 @@ function RefStrip({ label, refs, onOpen }) {
           </button>
         ))}
       </div>
+    </div>
+  );
+}
+
+// ── Hub view (section / group browse) ───────────────────────────────────────
+// A visual index of a section (its groups as cards) or a group (its pages as
+// image cards). Drilled into from the nav headers and the landing's section
+// grid; reuses entryImages for art and resolvePage to open each page. geoGroups
+// (computed in the main component) is passed in since this is a sibling.
+function HubView({ hub, geoGroups, onOpenHub, onOpenPage }) {
+  const { section, group } = hub;
+  const sigil = section === "adventures" ? "❖" : (SECTIONS.find((s) => s.id === section)?.sigil ?? "◈");
+  const label = sectionLabelFor(section);
+
+  // Normalize the section into named groups + a flat bucket of ungrouped pages.
+  const named = [];
+  const flat = [];
+  if (section === "adventures") {
+    for (const g of adventureGroups.groups) named.push({ name: g.name, items: g.adventures.map((a) => ({ name: a.title })) });
+    if (adventureGroups.standalone.length) named.push({ name: "Standalone", items: adventureGroups.standalone.map((a) => ({ name: a.title })) });
+  } else if (section === "geography") {
+    for (const g of geoGroups) {
+      const items = [...g.countries.map((c) => ({ name: c.name })), ...g.videos.map((v) => ({ name: v.name }))];
+      if (g.name) named.push({ name: g.name, items });
+      else flat.push(...items);
+    }
+  } else {
+    for (const g of videosBySection[section] ?? []) {
+      const items = g.videos.map((v) => ({ name: v.name }));
+      if (g.group && !skipGroup(g.group, section)) named.push({ name: g.group, items });
+      else flat.push(...items);
+    }
+  }
+
+  // The first item with art: its slug (so the group card can borrow both the
+  // image and its portrait orientation).
+  const repSlug = (items) => {
+    for (const it of items) { const s = toSlug(it.name); if (entryImages[s]) return s; }
+    return null;
+  };
+
+  // Whole-card-clickable page cards (bestiary-style browse). A plain render
+  // helper (not a component) so it isn't re-created on every render.
+  const renderPageCards = (items) =>
+    items.length === 0 ? null : (
+      <div className="country-detail__entries-grid">
+        {items.map((it, i) => {
+          const target = resolvePage(it.entry ?? it.name);
+          const slug = target ? toSlug(target.name) : toSlug(it.name);
+          const img = entryImages[slug] || null;
+          const blurb = entryBlurbs[slug] || null;
+          const cls = `codex-card codex-card--link hub-card${portraitSlugs.has(slug) ? " codex-card--portrait" : ""}`;
+          return (
+            <button
+              key={`${target ? `${target.kind}-${target.id}` : it.name}-${i}`}
+              className={cls}
+              onClick={() => target && onOpenPage(target)}
+              disabled={!target}
+            >
+              <div className="codex-card__image-wrap">
+                {img ? <CardImage src={img} alt={it.name} /> : <span className="codex-card__placeholder">{sigil}</span>}
+              </div>
+              <div className="codex-card__body">
+                <p className="codex-card__title">{it.name}</p>
+                {blurb && <p className="codex-card__summary">{blurb}</p>}
+              </div>
+            </button>
+          );
+        })}
+      </div>
+    );
+
+  // Group hub: one group's pages.
+  if (group) {
+    const g = named.find((x) => x.name === group);
+    const items = g ? g.items : flat;
+    return (
+      <div className="country-detail">
+        <div className="country-detail__header">
+          <div className="country-detail__header-text">
+            <p className="country-detail__eyebrow">{label}</p>
+            <h2 className="country-detail__name">{group}</h2>
+          </div>
+        </div>
+        <div className="country-detail__divider" />
+        <div className="country-detail__block">
+          <p className="location-panel__section-label">{items.length} {items.length === 1 ? "page" : "pages"}</p>
+          {renderPageCards(items)}
+        </div>
+      </div>
+    );
+  }
+
+  // Section hub: group cards, then any ungrouped pages.
+  const total = named.reduce((n, g) => n + g.items.length, 0) + flat.length;
+  return (
+    <div className="country-detail">
+      <div className="country-detail__header">
+        <div className="country-detail__header-text">
+          <p className="country-detail__eyebrow">The Compendium</p>
+          <h2 className="country-detail__name">{label}</h2>
+        </div>
+      </div>
+      <div className="country-detail__divider" />
+      {named.length > 0 && (
+        <div className="country-detail__block">
+          <p className="location-panel__section-label">{named.length} groups · {total} pages</p>
+          <div className="country-detail__entries-grid">
+            {named.map((g) => {
+              const rs = repSlug(g.items);
+              const img = rs ? entryImages[rs] : null;
+              const cls = `codex-card codex-card--link hub-card${rs && portraitSlugs.has(rs) ? " codex-card--portrait" : ""}`;
+              return (
+                <button key={g.name} className={cls} onClick={() => onOpenHub(section, g.name)}>
+                  <div className="codex-card__image-wrap">
+                    {img ? <CardImage src={img} alt={g.name} /> : <span className="codex-card__placeholder">{sigil}</span>}
+                  </div>
+                  <div className="codex-card__body">
+                    <p className="codex-card__title">{g.name}</p>
+                    <span className="codex-card__entry-link">{g.items.length} {g.items.length === 1 ? "page" : "pages"} ↗</span>
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+      {flat.length > 0 && (
+        <div className="country-detail__block">
+          <p className="location-panel__section-label">{named.length ? "Other pages" : `${flat.length} pages`}</p>
+          {renderPageCards(flat)}
+        </div>
+      )}
     </div>
   );
 }
@@ -1226,6 +1380,9 @@ export default function Compendium({
   const [themeFilter, setThemeFilter] = useState([]);
   // Landing view: the theme browser, or the A-Z gazetteer of named figures/places.
   const [homeView, setHomeView] = useState("themes");
+  // Active browse "hub": { section, group } shows a card-grid index of a section
+  // (its groups) or a group (its pages) in the main panel. null = no hub.
+  const [hub, setHub] = useState(null);
   // The reader's library (recently-viewed + bookmarks), persisted to localStorage.
   const recents = useRecents();
   const bookmarks = useBookmarks();
@@ -1295,6 +1452,7 @@ export default function Compendium({
     const url = new URL(window.location);
     url.searchParams.set("ce", entry.id);
     window.history.pushState(null, "", url);
+    setHub(null);
     setSelectedEntry(entry);
     window.scrollTo(0, 0);
   }, []);
@@ -1304,6 +1462,7 @@ export default function Compendium({
   const openPage = useCallback((target) => {
     if (!target) return;
     if (target.kind === "entry") { openEntry(target.entry); return; }
+    setHub(null);
     setSelectedEntry(null);
     if (target.kind === "country") {
       onAdventureSelect(null);
@@ -1317,6 +1476,7 @@ export default function Compendium({
 
   // Return to the Compendium landing from a breadcrumb (clear every selection).
   const goHome = useCallback(() => {
+    setHub(null);
     setSelectedEntry(null);
     onCountrySelect(null);
     onAdventureSelect(null);
@@ -1337,6 +1497,56 @@ export default function Compendium({
   const toggleSection  = (id) => setOpenSections( (p) => ({ ...p, [id]: !p[id] }));
   const toggleGeoGroup = (id) => setOpenGeoGroups((p) => ({ ...p, [id]: !p[id] }));
   const toggleSubGroup = (id) => setOpenSubGroups((p) => ({ ...p, [id]: !p[id] }));
+
+  // Open a browse hub: a section's groups, or a group's pages. Clears any open
+  // page and expands the section inline so the tree and the hub stay in step.
+  const openHub = useCallback((section, group = null) => {
+    setSelectedEntry(null);
+    onCountrySelect(null);
+    onAdventureSelect(null);
+    setHub({ section, group });
+    if (group == null) setOpenSections((p) => ({ ...p, [section]: true }));
+    window.scrollTo(0, 0);
+  }, [onCountrySelect, onAdventureSelect]);
+
+  // When a page is opened from the right panel (a hub card, a related link, a
+  // breadcrumb, the map, or browser back/forward), reveal it in the left tree:
+  // expand the section + group that holds it, then scroll its highlighted item
+  // into view. Deferred in a timeout so the expansion isn't a synchronous
+  // setState in the effect, and so the expanded list has rendered before the
+  // scroll (see memory: deep-link timing is intentional).
+  useEffect(() => {
+    if (!selectedEntry && !selectedCountry && !selectedAdventure) return;
+    const t = setTimeout(() => {
+      if (selectedEntry) {
+        const sec = selectedEntry.section;
+        if (sec === "geography") {
+          setOpenSections((p) => ({ ...p, geography: true }));
+          const cont = CONTINENTS.find((c) => c.name === selectedEntry.group);
+          if (cont) setOpenGeoGroups((p) => ({ ...p, [cont.id]: true }));
+        } else {
+          setOpenSections((p) => ({ ...p, [sec]: true }));
+          if (selectedEntry.group && !skipGroup(selectedEntry.group, sec))
+            setOpenSubGroups((p) => ({ ...p, [`${sec}-${selectedEntry.group}`]: true }));
+        }
+      } else if (selectedCountry) {
+        setOpenSections((p) => ({ ...p, geography: true }));
+        const cont = geoPlaces.find((c) => c.id === selectedCountry)?.continent;
+        if (cont) setOpenGeoGroups((p) => ({ ...p, [cont]: true }));
+      } else if (selectedAdventure) {
+        setOpenSections((p) => ({ ...p, adventures: true }));
+        const grp = adventureGroups.groups.find((g) => g.adventures.some((a) => a.id === selectedAdventure));
+        const subKey = grp ? `adv-${grp.name}`
+          : adventureGroups.standalone.some((a) => a.id === selectedAdventure) ? "adv-standalone" : null;
+        if (subKey) setOpenSubGroups((p) => ({ ...p, [subKey]: true }));
+      }
+      // Scroll after another tick so the freshly-expanded list is in the DOM.
+      setTimeout(() => {
+        document.querySelector(".compendium-nav__item--active")?.scrollIntoView({ block: "nearest" });
+      }, 50);
+    }, 0);
+    return () => clearTimeout(t);
+  }, [selectedEntry, selectedCountry, selectedAdventure]);
 
   // Flat search across countries + entries (entries cover both video-backed and
   // markdown-only Peoples/Creatures/Lore pages, via allEntries).
@@ -1372,6 +1582,7 @@ export default function Compendium({
   // and any open page, switch the landing to the theme browser, and show it.
   const selectTheme = useCallback((id) => {
     setQuery("");
+    setHub(null);
     setSelectedEntry(null);
     onCountrySelect(null);
     onAdventureSelect(null);
@@ -1438,6 +1649,44 @@ export default function Compendium({
     return result;
   }, []);
 
+  // Top-level sections for the landing's "Browse by section" front door: id,
+  // label, total page count, seen count, and a representative image (first page
+  // in the section that has art) or null (falls back to the section sigil).
+  const sectionCards = useMemo(() => {
+    // First member with art → { image, portrait } so the card frames it right.
+    const rep = (names) => {
+      for (const n of names) {
+        const s = toSlug(n);
+        if (entryImages[s]) return { image: entryImages[s], portrait: portraitSlugs.has(s) };
+      }
+      return { image: null, portrait: false };
+    };
+    const cards = [];
+    cards.push({
+      id: "adventures", label: "Adventures", sigil: "❖",
+      total: adventures.length, seen: advSeen,
+      ...rep(adventures.map((a) => a.title)),
+    });
+    const geoTotal = geoGroups.reduce((n, g) => n + g.countries.length + g.videos.length, 0);
+    cards.push({
+      id: "geography", label: "Geography", sigil: SECTIONS.find((s) => s.id === "geography")?.sigil ?? "◈",
+      total: geoTotal, seen: geoSeen,
+      ...rep(geoGroups.flatMap((g) => [...g.countries.map((c) => c.name), ...g.videos.map((v) => v.name)])),
+    });
+    for (const s of SECTIONS) {
+      if (["geography", "countries", "episodes"].includes(s.id)) continue;
+      const groups = videosBySection[s.id] || [];
+      const total = groups.reduce((n, g) => n + g.videos.length, 0);
+      if (!total) continue;
+      cards.push({
+        id: s.id, label: s.label, sigil: s.sigil,
+        total, seen: seenBySection[s.id] ?? 0,
+        ...rep(groups.flatMap((g) => g.videos.map((v) => v.name))),
+      });
+    }
+    return cards;
+  }, [geoGroups, advSeen, geoSeen, seenBySection]);
+
   const selectedPin = geoPlaces.find((c) => c.id === selectedCountry) ?? null;
   const selectedAdventureObj = adventures.find((a) => a.id === selectedAdventure) ?? null;
 
@@ -1500,15 +1749,16 @@ export default function Compendium({
                 const advOpen = openSections["adventures"] ?? false;
                 return (
                   <div className="compendium-nav__section">
-                    <button
-                      className="compendium-nav__section-hd"
-                      onClick={() => toggleSection("adventures")}
-                    >
-                      <span className="compendium-nav__sigil">❖</span>
-                      <span className="compendium-nav__title">Adventures</span>
-                      <span className="compendium-nav__count">{badge(advSeen, adventures.length)}</span>
-                      <span className="compendium-nav__toggle">{advOpen ? "▲" : "▼"}</span>
-                    </button>
+                    <div className="compendium-nav__section-hd">
+                      <button className="compendium-nav__hd-title" onClick={() => openHub("adventures")}>
+                        <span className="compendium-nav__sigil">❖</span>
+                        <span className="compendium-nav__title">Adventures</span>
+                        <span className="compendium-nav__count">{badge(advSeen, adventures.length)}</span>
+                      </button>
+                      <button className="compendium-nav__toggle-btn" onClick={() => toggleSection("adventures")} aria-label={advOpen ? "Collapse" : "Expand"}>
+                        <span className="compendium-nav__toggle">{advOpen ? "▲" : "▼"}</span>
+                      </button>
+                    </div>
                     {advOpen && (() => {
                       const advItem = (a, label) => (
                         <li key={a.id}>
@@ -1527,14 +1777,15 @@ export default function Compendium({
                             const subOpen = openSubGroups[subKey] ?? false;
                             return (
                               <div key={g.name} className="compendium-nav__group">
-                                <button
-                                  className="compendium-nav__group-hd"
-                                  onClick={() => toggleSubGroup(subKey)}
-                                >
-                                  <span>{g.name}</span>
-                                  <span className="compendium-nav__count">{g.adventures.length}</span>
-                                  <span className="compendium-nav__toggle">{subOpen ? "▲" : "▼"}</span>
-                                </button>
+                                <div className="compendium-nav__group-hd">
+                                  <button className="compendium-nav__hd-title" onClick={() => openHub("adventures", g.name)}>
+                                    <span>{g.name}</span>
+                                    <span className="compendium-nav__count">{g.adventures.length}</span>
+                                  </button>
+                                  <button className="compendium-nav__toggle-btn" onClick={() => toggleSubGroup(subKey)} aria-label={subOpen ? "Collapse" : "Expand"}>
+                                    <span className="compendium-nav__toggle">{subOpen ? "▲" : "▼"}</span>
+                                  </button>
+                                </div>
                                 {subOpen && (
                                   <ul className="compendium-nav__list">
                                     {g.adventures.map((a) =>
@@ -1550,14 +1801,15 @@ export default function Compendium({
                             const subOpen = openSubGroups[subKey] ?? false;
                             return (
                               <div className="compendium-nav__group">
-                                <button
-                                  className="compendium-nav__group-hd"
-                                  onClick={() => toggleSubGroup(subKey)}
-                                >
-                                  <span>Standalone</span>
-                                  <span className="compendium-nav__count">{adventureGroups.standalone.length}</span>
-                                  <span className="compendium-nav__toggle">{subOpen ? "▲" : "▼"}</span>
-                                </button>
+                                <div className="compendium-nav__group-hd">
+                                  <button className="compendium-nav__hd-title" onClick={() => openHub("adventures", "Standalone")}>
+                                    <span>Standalone</span>
+                                    <span className="compendium-nav__count">{adventureGroups.standalone.length}</span>
+                                  </button>
+                                  <button className="compendium-nav__toggle-btn" onClick={() => toggleSubGroup(subKey)} aria-label={subOpen ? "Collapse" : "Expand"}>
+                                    <span className="compendium-nav__toggle">{subOpen ? "▲" : "▼"}</span>
+                                  </button>
+                                </div>
                                 {subOpen && (
                                   <ul className="compendium-nav__list">
                                     {adventureGroups.standalone.map((a) => advItem(a, a.title))}
@@ -1580,15 +1832,16 @@ export default function Compendium({
                 const geoOpen = openSections["geography"] ?? false;
                 return (
                   <div className="compendium-nav__section">
-                    <button
-                      className="compendium-nav__section-hd"
-                      onClick={() => toggleSection("geography")}
-                    >
-                      <span className="compendium-nav__sigil">{geoSec.sigil}</span>
-                      <span className="compendium-nav__title">Geography</span>
-                      <span className="compendium-nav__count">{badge(geoSeen, geoTotal)}</span>
-                      <span className="compendium-nav__toggle">{geoOpen ? "▲" : "▼"}</span>
-                    </button>
+                    <div className="compendium-nav__section-hd">
+                      <button className="compendium-nav__hd-title" onClick={() => openHub("geography")}>
+                        <span className="compendium-nav__sigil">{geoSec.sigil}</span>
+                        <span className="compendium-nav__title">Geography</span>
+                        <span className="compendium-nav__count">{badge(geoSeen, geoTotal)}</span>
+                      </button>
+                      <button className="compendium-nav__toggle-btn" onClick={() => toggleSection("geography")} aria-label={geoOpen ? "Collapse" : "Expand"}>
+                        <span className="compendium-nav__toggle">{geoOpen ? "▲" : "▼"}</span>
+                      </button>
+                    </div>
 
                     {geoOpen && geoGroups.map((group) => {
                       const groupCount = group.countries.length + group.videos.length;
@@ -1596,14 +1849,15 @@ export default function Compendium({
                       return (
                         <div key={group.id} className="compendium-nav__group">
                           {group.name && (
-                            <button
-                              className="compendium-nav__group-hd"
-                              onClick={() => toggleGeoGroup(group.id)}
-                            >
-                              <span>{group.name}</span>
-                              <span className="compendium-nav__count">{groupCount}</span>
-                              <span className="compendium-nav__toggle">{isOpen ? "▲" : "▼"}</span>
-                            </button>
+                            <div className="compendium-nav__group-hd">
+                              <button className="compendium-nav__hd-title" onClick={() => openHub("geography", group.name)}>
+                                <span>{group.name}</span>
+                                <span className="compendium-nav__count">{groupCount}</span>
+                              </button>
+                              <button className="compendium-nav__toggle-btn" onClick={() => toggleGeoGroup(group.id)} aria-label={isOpen ? "Collapse" : "Expand"}>
+                                <span className="compendium-nav__toggle">{isOpen ? "▲" : "▼"}</span>
+                              </button>
+                            </div>
                           )}
                           {(group.name ? isOpen : true) && (
                             <ul className="compendium-nav__list">
@@ -1663,15 +1917,16 @@ export default function Compendium({
                 const secOpen = openSections[section.id] ?? false;
                 return (
                   <div key={section.id} className="compendium-nav__section">
-                    <button
-                      className="compendium-nav__section-hd"
-                      onClick={() => toggleSection(section.id)}
-                    >
-                      <span className="compendium-nav__sigil">{section.sigil}</span>
-                      <span className="compendium-nav__title">{section.label}</span>
-                      <span className="compendium-nav__count">{badge(seenBySection[section.id] ?? 0, total)}</span>
-                      <span className="compendium-nav__toggle">{secOpen ? "▲" : "▼"}</span>
-                    </button>
+                    <div className="compendium-nav__section-hd">
+                      <button className="compendium-nav__hd-title" onClick={() => openHub(section.id)}>
+                        <span className="compendium-nav__sigil">{section.sigil}</span>
+                        <span className="compendium-nav__title">{section.label}</span>
+                        <span className="compendium-nav__count">{badge(seenBySection[section.id] ?? 0, total)}</span>
+                      </button>
+                      <button className="compendium-nav__toggle-btn" onClick={() => toggleSection(section.id)} aria-label={secOpen ? "Collapse" : "Expand"}>
+                        <span className="compendium-nav__toggle">{secOpen ? "▲" : "▼"}</span>
+                      </button>
+                    </div>
 
                     {secOpen && groups.map((g, i) => {
                       // A group whose name just repeats the section (e.g. the
@@ -1683,14 +1938,15 @@ export default function Compendium({
                       return (
                         <div key={g.group ?? `__g${i}`} className="compendium-nav__group">
                           {!flat ? (
-                            <button
-                              className="compendium-nav__group-hd"
-                              onClick={() => toggleSubGroup(subKey)}
-                            >
-                              <span>{g.group}</span>
-                              <span className="compendium-nav__count">{g.videos.length}</span>
-                              <span className="compendium-nav__toggle">{subOpen ? "▲" : "▼"}</span>
-                            </button>
+                            <div className="compendium-nav__group-hd">
+                              <button className="compendium-nav__hd-title" onClick={() => openHub(section.id, g.group)}>
+                                <span>{g.group}</span>
+                                <span className="compendium-nav__count">{g.videos.length}</span>
+                              </button>
+                              <button className="compendium-nav__toggle-btn" onClick={() => toggleSubGroup(subKey)} aria-label={subOpen ? "Collapse" : "Expand"}>
+                                <span className="compendium-nav__toggle">{subOpen ? "▲" : "▼"}</span>
+                              </button>
+                            </div>
                           ) : null}
                           {(flat ? true : subOpen) && (
                             <ul className="compendium-nav__list">
@@ -1736,13 +1992,15 @@ export default function Compendium({
 
         {/* ── Right panel ── */}
         <div className="compendium-main">
-          {(selectedEntry || selectedPin || selectedAdventureObj) && (
+          {(selectedEntry || selectedPin || selectedAdventureObj || hub) && (
             <Breadcrumbs
               entry={selectedEntry}
               country={selectedPin}
               adventure={selectedAdventureObj}
+              hub={!selectedEntry && !selectedPin && !selectedAdventureObj ? hub : null}
               onHome={goHome}
               onOpenPage={openPage}
+              onOpenHub={openHub}
             />
           )}
           {selectedEntry ? (
@@ -1771,6 +2029,14 @@ export default function Compendium({
               onVideoSelect={onVideoSelect}
               onOpenPage={openPage}
             />
+          ) : hub ? (
+            <HubView
+              key={`${hub.section}-${hub.group ?? ""}`}
+              hub={hub}
+              geoGroups={geoGroups}
+              onOpenHub={openHub}
+              onOpenPage={openPage}
+            />
           ) : (
             <div className="country-detail">
               <div className="country-detail__header">
@@ -1793,6 +2059,23 @@ export default function Compendium({
 
               {recents.length > 0 && <RefStrip label="Continue exploring" refs={recents} onOpen={openPage} />}
               {bookmarks.length > 0 && <RefStrip label="Saved" refs={bookmarks} onOpen={openPage} />}
+
+              <div className="country-detail__block">
+                <p className="location-panel__section-label">Browse by section</p>
+                <div className="country-detail__entries-grid">
+                  {sectionCards.map((s) => (
+                    <button key={s.id} className={`codex-card codex-card--link hub-card${s.portrait ? " codex-card--portrait" : ""}`} onClick={() => openHub(s.id)}>
+                      <div className="codex-card__image-wrap">
+                        {s.image ? <CardImage src={s.image} alt={s.label} /> : <span className="codex-card__placeholder">{s.sigil}</span>}
+                      </div>
+                      <div className="codex-card__body">
+                        <p className="codex-card__title">{s.label}</p>
+                        <span className="codex-card__entry-link">{badge(s.seen, s.total)} pages ↗</span>
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              </div>
 
               <div className="home-tabs">
                 <button

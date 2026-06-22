@@ -1,7 +1,15 @@
 # Dark Elf
 
 
+![Dark Elf](/compendium/Peoples/Elves/dark-elf-2.jpg "Dark Elf")
+![Dark Elf](/compendium/Peoples/Elves/dark-elf-3.jpg "Dark Elf")
+![Dark Elf](/compendium/Peoples/Elves/dark-elf-4.jpg "Dark Elf")
+![Dark Elf](/compendium/Peoples/Elves/dark-elf-5.jpg "Dark Elf")
 ![Dark Elf](/compendium/Peoples/Elves/dark-elf.jpg "Dark Elf")
+![Female Dark Elf](/compendium/Peoples/Elves/dark-elf-female-1.jpg "Female Dark Elf")
+![Female Dark Elf](/compendium/Peoples/Elves/dark-elf-female-2.jpg "Female Dark Elf")
+![Female Dark Elf](/compendium/Peoples/Elves/dark-elf-female-3.jpg "Female Dark Elf")
+![Female Dark Elf](/compendium/Peoples/Elves/dark-elf-female-4.jpg "Female Dark Elf")
 The dark elves are the corrupted kindred of the elf-folk, a people given over to Chaos. They live in grim castles high among the mountain peaks and leave them only to ride to war beside the dark folk, to raid and to plunder. They despise life, enslave those they beat, and are the most warlike of all the elf-races. Where other elves revere nature, the dark elves serve ruin.
 
 ## Appearance

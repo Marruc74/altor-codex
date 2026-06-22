@@ -2175,22 +2175,43 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
+/* Header row = a title button (opens the hub) + a chevron button (toggles the
+   inline list). The row itself is a plain flex container. */
 .compendium-nav__section-hd {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+.compendium-nav__hd-title {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  width: 100%;
+  flex: 1;
+  min-width: 0;
   background: none;
   border: none;
   cursor: pointer;
   padding: 0.55rem 0.5rem;
   text-align: left;
-  transition: background 0.15s;
+  font: inherit;
+  color: inherit;
+  transition: background 0.15s, color 0.15s;
 }
+.compendium-nav__hd-title:hover { background: var(--bg-raised); }
+.compendium-nav__hd-title:hover .compendium-nav__title,
+.compendium-nav__hd-title:hover .compendium-nav__sigil { color: var(--gold-light); }
 
-.compendium-nav__section-hd:hover {
-  background: var(--bg-raised);
+.compendium-nav__toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 0.55rem;
+  flex-shrink: 0;
+  color: var(--text-dim);
+  transition: background 0.15s, color 0.15s;
 }
+.compendium-nav__toggle-btn:hover { background: var(--bg-raised); color: var(--gold-light); }
 
 .compendium-nav__sigil {
   font-size: 0.75rem;
@@ -2225,26 +2246,23 @@ body {
 
 .compendium-nav__group-hd {
   display: flex;
-  align-items: center;
-  gap: 0.4rem;
+  align-items: stretch;
   width: 100%;
-  background: none;
-  border: none;
-  cursor: pointer;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0.2rem;
+}
+
+.compendium-nav__group-hd .compendium-nav__hd-title {
+  gap: 0.4rem;
   padding: 0.3rem 0.5rem;
   font-family: var(--font-heading);
   font-size: 0.6rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
-  text-align: left;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 0.2rem;
 }
-
-.compendium-nav__group-hd > span:first-child {
-  flex: 1;
-}
+.compendium-nav__group-hd .compendium-nav__hd-title:hover { color: var(--gold-light); }
+.compendium-nav__group-hd .compendium-nav__hd-title > span:first-child { flex: 1; }
 
 .compendium-nav__group-label {
   font-family: var(--font-heading);
@@ -3919,6 +3937,13 @@ body {
   .lore-grid { max-width: 1860px; }
   .chronicles-sections { max-width: 1500px; }
 }
+
+/* Hub / section browse cards reuse the standard codex-card layout (the same
+   cards used within a compendium page: portrait image left, title + blurb
+   right). The whole card is the click target. */
+.hub-card:disabled { opacity: 0.5; cursor: default; }
+/* Anchor portrait crops to the top so heads/faces aren't cut. */
+.hub-card .codex-card__image { object-position: center top; }
 
 /* ─── Breadcrumbs ─────────────────────────────────────────── */
 .breadcrumbs {

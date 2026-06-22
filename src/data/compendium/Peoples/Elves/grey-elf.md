@@ -1,7 +1,15 @@
 # Grey Elf
 
 
+![Grey Elf](/compendium/Peoples/Elves/grey-elf-2.jpg "Grey Elf")
+![Grey Elf](/compendium/Peoples/Elves/grey-elf-3.jpg "Grey Elf")
+![Grey Elf](/compendium/Peoples/Elves/grey-elf-4.jpg "Grey Elf")
+![Grey Elf](/compendium/Peoples/Elves/grey-elf-5.jpg "Grey Elf")
 ![Grey Elf](/compendium/Peoples/Elves/grey-elf.jpg "Grey Elf")
+![Female Grey Elf](/compendium/Peoples/Elves/grey-elf-female-1.jpg "Female Grey Elf")
+![Female Grey Elf](/compendium/Peoples/Elves/grey-elf-female-2.jpg "Female Grey Elf")
+![Female Grey Elf](/compendium/Peoples/Elves/grey-elf-female-3.jpg "Female Grey Elf")
+![Female Grey Elf](/compendium/Peoples/Elves/grey-elf-female-4.jpg "Female Grey Elf")
 Grey elves live far out at sea, on floating islands and the swift ships they call goldiner. They are skilled sailors, shipwrights and navigators, and rarely leave their floating homes. The islands are made of many sea-lindens grown together, a tree that lives out on the open ocean and feeds on saltwater plankton. Five-sixths of each tree is root below the surface; only the ten-metre trunk and its wide crown rise above. By rigging sails between the trunks, the grey elves can steer an island along the ocean currents.
 
 ## Appearance
