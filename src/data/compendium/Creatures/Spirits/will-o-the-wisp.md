@@ -2,7 +2,7 @@
 
 
 ![Will-o'-the-Wisp](/compendium/Creatures/Spirits/will-o-the-wisp.jpg "Will-o'-the-Wisp")
-Will-o'-the-wisps are the ghosts of wicked people who drowned or met a violent death in marshes, swamps or small forest tarns. Like all such spirits they are bound to the place of their death, born of a soul that died full of hatred, and they would sooner lure others to the same fate than save them from it.
+Will-o'-the-wisps, called lantern-men on the bogs and moors for the pale light seen bobbing through the dark, are the ghosts of wicked people who drowned or met a violent death in marshes, swamps or small forest tarns. Like all such spirits they are bound to the place of their death, born of a soul that died full of hatred, and they would sooner lure others to the same fate than save them from it.
 
 The name is shared with another creature entirely: the fire-pixie, or irrbloss, a forest sprite that drifts in a ball of flame. That is a thing of the living forest, no kin to this drowned and hateful ghost of the marshes (see the Fire Pixie).
 

@@ -264,7 +264,6 @@ export const compendiumRegistry = [
   { section: "creatures", group: "Wraiths & Wights", name: "Barrow Wight", slug: "barrow-wight" },
   { section: "creatures", group: "Wraiths & Wights", name: "Dark Wraith", slug: "dark-wraith" },
   { section: "creatures", group: "Wraiths & Wights", name: "Death Wraith", slug: "death-wraith" },
-  { section: "creatures", group: "Wraiths & Wights", name: "Lantern-Man", slug: "lantern-man" },
   { section: "creatures", group: "Wraiths & Wights", name: "Phantom", slug: "phantom" },
   { section: "lore", group: null, name: "Climate", slug: "climate" },
   { section: "lore", group: null, name: "Coins and Measures", slug: "coins-and-measures" },

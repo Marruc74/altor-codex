@@ -770,10 +770,6 @@ export const generatedSources = {
   "krugal-svylses-curse": [
     "Sinkadus 11"
   ],
-  "lantern-man": [
-    "Monsterboken",
-    "Monsterboken II"
-  ],
   "leopard": [
     "Monsterboken",
     "Monsterboken II"
