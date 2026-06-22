@@ -1,5 +1,14 @@
 # Water Elf
 
+
+![Water Elf](/compendium/Peoples/Elves/water-elf-2.jpg "Water Elf")
+![Water Elf](/compendium/Peoples/Elves/water-elf-3.jpg "Water Elf")
+![Water Elf](/compendium/Peoples/Elves/water-elf-4.jpg "Water Elf")
+![Water Elf](/compendium/Peoples/Elves/water-elf.jpg "Water Elf")
+![Female Water Elf](/compendium/Peoples/Elves/water-elf-female-1.jpg "Female Water Elf")
+![Female Water Elf](/compendium/Peoples/Elves/water-elf-female-2.jpg "Female Water Elf")
+![Female Water Elf](/compendium/Peoples/Elves/water-elf-female-3.jpg "Female Water Elf")
+![Female Water Elf](/compendium/Peoples/Elves/water-elf-female-4.jpg "Female Water Elf")
 Water elves are a rare elf-folk wholly given over to life beneath the waves, dwelling in undersea cities among the selkies, the sea-fae, the mermaids and the dolphins. Unlike their cousins the sea elves, who breathe both air and water, the water elf can breathe only water, and drowns in the open air as surely as a landsman drowns in the deep.
 
 ## Appearance

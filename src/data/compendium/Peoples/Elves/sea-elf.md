@@ -1,7 +1,16 @@
 # Sea Elf
 
 
+![Sea Elf](/compendium/Peoples/Elves/sea-elf-2.jpg "Sea Elf")
+![Sea Elf](/compendium/Peoples/Elves/sea-elf-3.jpg "Sea Elf")
+![Sea Elf](/compendium/Peoples/Elves/sea-elf-4.jpg "Sea Elf")
+![Sea Elf](/compendium/Peoples/Elves/sea-elf-5.jpg "Sea Elf")
+![Sea Elf](/compendium/Peoples/Elves/sea-elf-6.jpg "Sea Elf")
+![Sea Elf](/compendium/Peoples/Elves/sea-elf-7.jpg "Sea Elf")
 ![Sea Elf](/compendium/Peoples/Elves/sea-elf.jpg "Sea Elf")
+![Female Sea Elf](/compendium/Peoples/Elves/sea-elf-female-1.jpg "Female Sea Elf")
+![Female Sea Elf](/compendium/Peoples/Elves/sea-elf-female-2.jpg "Female Sea Elf")
+![Female Sea Elf](/compendium/Peoples/Elves/sea-elf-female-3.jpg "Female Sea Elf")
 Sea elves are an elf-kin that, like their cousins the grey elves, live in the sea, but who, like the shark-men, can breathe both air and water. They make their homes in caves five to ten metres down and very rarely leave the sea, and then only to trade. They live on fish, shellfish, seals, dolphins and algae, hunting with tridents and harpoons.
 
 ## Appearance

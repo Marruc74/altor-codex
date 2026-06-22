@@ -165,6 +165,7 @@ export const portraitSlugs = new Set([
   "uzorak",
   "vampire",
   "vampire-butterfly",
+  "water-elf",
   "werewolf",
   "will-o-the-wisp",
   "wolfman",
