@@ -1,5 +1,9 @@
 # Chaos Knight
 
+
+![Chaos Knight](/compendium/Creatures/Chaos Warriors/chaos-knight.jpg "Chaos Knight")
+![Chaos Knight](/compendium/Creatures/Chaos Warriors/chaos-knight-2.jpg "Chaos Knight")
+![Chaos Warrior True Form](/compendium/Creatures/Chaos Warriors/chaos-warrior-true-form.jpg "Chaos Warrior True Form")
 Chaos knights are about as powerful as the chaos cardinals, but command no magic save the illusion that hides their true identity; they are, on the other hand, extremely good fighters. Coming to the human world, they are often drawn to violence, to wars or to bands of adventurers, so as to drink the life-force of the slain unnoticed.
 
 ## Appearance

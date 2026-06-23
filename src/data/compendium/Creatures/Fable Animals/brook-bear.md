@@ -1,5 +1,7 @@
 # Brook Bear
 
+
+![Brook Bear](/compendium/Creatures/Fable Animals/brook-bear.jpg "Brook Bear")
 The brook bear is a good-natured little creature, no taller than a metre when it rears up on its hind legs, and despite the name it puts one more in mind of a monkey than a bear. It lives wild only in lush deciduous woodland, along the shallow streams where it fishes.
 
 ## Appearance

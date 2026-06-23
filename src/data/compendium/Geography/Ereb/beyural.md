@@ -1,4 +1,13 @@
 ---
+places:
+  - name: "Gringul"
+    description: "the great city of Beyural, of palaces and canals at the mouth of the river Elspet, and one of the foremost trade-metropolises of the whole Copper Sea"
+  - name: "The Bey-bergen"
+    description: "the mountains of Beyural, the only source of sunstones anywhere in Ereb"
+  - name: "The Elspet"
+    description: "the river at whose mouth the city of Gringul stands"
+  - name: "Lesser towns"
+    description: "Jachindo, Behrill, Josch, Yrrtik, Thurbel and Klostro, the harbour-towns scattered across the island"
 items:
   - name: Sunstone
     entry: sunstone

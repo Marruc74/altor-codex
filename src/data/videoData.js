@@ -471,6 +471,14 @@ const hiddenEntries = [];
 const EXTRA_GEO = [
   { group: "Ereb", name: "Caranor" },
   { group: "Ereb", name: "Beyural", parent: "erebos" }, // an island of Erebos; nests under it
+  { group: "Ereb", name: "Dakkilo", parent: "erebos" },
+  { group: "Ereb", name: "Targero", parent: "erebos" },
+  { group: "Ereb", name: "Tolokfe", parent: "erebos" },
+  // The four main islands of Trakorien, each nesting under it in the nav.
+  { group: "Ereb", name: "Saphyna", parent: "trakorien" },
+  { group: "Ereb", name: "Palamux", parent: "trakorien" },
+  { group: "Ereb", name: "Paratorna", parent: "trakorien" },
+  { group: "Ereb", name: "Trinsmyra", parent: "trakorien" },
 ].map((p, i) => ({
   id: `x-geo-${i}`,
   title: `Geography ${p.group}: ${p.name}`,

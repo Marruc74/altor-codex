@@ -1,5 +1,7 @@
 # Dwarf Horse
 
+
+![Dwarf Horse](/compendium/Creatures/Fable Animals/dwarf-horse.jpg "Dwarf Horse")
 The dwarf-horse is a small, hardy horse of the Montures, running wild on the pasture-isle of Jalujak. Left to itself it lives a free enough life, but few of its kind are left to it.
 
 ## The Mine-Beast

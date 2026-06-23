@@ -4,6 +4,16 @@ parent: orc
 
 # Mountain Orcs
 
+
+![Mountain Orc](/compendium/Peoples/Dark Folks/mountain-orcs-2.jpg "Mountain Orc")
+![Mountain Orc](/compendium/Peoples/Dark Folks/mountain-orcs-3.jpg "Mountain Orc")
+![Mountain Orc](/compendium/Peoples/Dark Folks/mountain-orcs-4.jpg "Mountain Orc")
+![Female Mountain Orc](/compendium/Peoples/Dark Folks/mountain-orcs-female-1.jpg "Female Mountain Orc")
+![Female Mountain Orc](/compendium/Peoples/Dark Folks/mountain-orcs-female-2.jpg "Female Mountain Orc")
+![Female Mountain Orc](/compendium/Peoples/Dark Folks/mountain-orcs-female-3.jpg "Female Mountain Orc")
+![Female Mountain Orc](/compendium/Peoples/Dark Folks/mountain-orcs-female-4.jpg "Female Mountain Orc")
+![Female Mountain Orc](/compendium/Peoples/Dark Folks/mountain-orcs-female-5.jpg "Female Mountain Orc")
+![Mountain Orc](/compendium/Peoples/Dark Folks/mountain-orcs.jpg "Mountain Orc")
 The mountain orcs, the girnackh, are the orcs of the high peaks. They are heavier and stronger of body than the common kraukh-orc, hardened by life in the cold and the heights.
 
 ## Behaviour

@@ -1,5 +1,8 @@
 # Elephant Bird
 
+
+![Elephant Bird](/compendium/Creatures/Fable Animals/elephant-bird.jpg "Elephant Bird")
+![Elephant Bird](/compendium/Creatures/Fable Animals/elephant-bird-2.jpg "Elephant Bird")
 The elephant bird is the largest bird that has ever lived, standing more than three and a half metres tall and weighing upward of six hundred kilos. It resembles a vast ostrich, and its eggs are so big, well over two kilos apiece, that a single one makes a meal.
 
 ## Appearance

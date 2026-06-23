@@ -1,6 +1,12 @@
 // Historical eras of Ereb Altor.
 // Reorder the eras array to change their position on the timeline.
 // videoIds reference IDs from rawVideos in videoData.js.
+// Years are counted fO (före Odo / before Odo) and eO (efter Odo / after Odo);
+// the "present" of the source books is 610 eO. Drawn chiefly from the Ereb
+// Altor campaign book, Spelledarbok and Imperium Jorpagnum, with regional
+// detail from the Trakorien, Aidne, Torshem, Magilre, Monturerna, Krilloan and
+// Cereval material. An event with a `region` is local to that land and carries
+// a chip you can filter on; events without one are continental in scope.
 
 export const eras = [
   {
@@ -9,6 +15,15 @@ export const eras = [
     period: "The Early Ages",
     description:
       "The oldest recorded age of Ereb, the elder peoples taking root across the continent, the first civilisations rising along the Golwynda Sea, the discovery of bronze among the dwarves, and the early ascent of Yndar and Melukha.",
+    events: [
+      { year: "Mythic past", text: `In the oldest legends the heavens have turned ruinous before. The First Conflux is said to have destroyed Azuria, the Blue Moon that once gave the sea-folk light, the earliest of the star-cataclysms the astrologers still dread.` },
+      { year: "c. 9000 fO", text: `The gods wipe away the monstrous races of the first world and begin again, making elves, humans and dwarves. Only the dragons carry any memory of the age before.` },
+      { year: "9000–3500 fO", text: `The long Stone Age. The young peoples live by hunting, fishing and gathering, in scattered bands and villages with no realm larger than a valley.` },
+      { year: "c. 3700 fO", text: `Deep in the Grynnerbergen the dwarves learn to cast copper, and bronze two centuries later. They guard the craft jealously until the vättar steal it and sell it to the humans at Golwynda.` },
+      { year: "3600–1700 fO", region: "Cereval", text: `On the moon-silver peaks of Cereval the moon-elves raise a glittering high culture of their own, before trolls by night and gathering dragons by day wear them down and their last hidden city fades from the world around 1040 fO.` },
+      { year: "c. 3500 fO", text: `Three high cultures rise and begin to overshadow their neighbours: Melukha the garden-isle, warlike Golwynda on its freshwater sea, and proud Yndar, raised by conquerors on the backs of slaves.` },
+      { year: "3500–1500 fO", text: `The Bronze Age. Each culture cradles a school of magic - animism in Melukha, the elemental, symbolist and mentalist arts in Golwynda, necromancy and spiritism on Yndar - while grey-elf ships carry bronze to every coast.` },
+    ],
     videoIds: ["BhcaUkSNLM0", "SBXkOqDA_tg", "Qah-qTeo2S0", "8-8xTec9W7k", "owgalEc7obg", "9YaUvXHYdgY", "pik2483Xubg"],
   },
   {
@@ -17,6 +32,13 @@ export const eras = [
     period: "Age of Kings",
     description:
       "Bronze gave way to iron, and with it came a new era of organised power. Dwarven society reached an early peak under strong kings, with figures like Targald Hardfoot forging the stonekin realms into lasting dominions.",
+    events: [
+      { year: "c. 1700 fO", text: `The dwarves learn to smith iron in the Grynnerbergen and keep the secret even closer than bronze, for whoever holds it holds the upper hand in war.` },
+      { year: "1534 fO", text: `The Iron War. The war-prince Targald Karskfot leads the dwarven host down onto the plains of Krun to drive the humans into the sea, but is beaten and captured.` },
+      { year: "1534 fO", text: `To ransom their captured nobles the dwarves give up the craft of iron. Their alloy-arts they never reveal, and they remain Altor's supreme smiths to this day.` },
+      { year: "c. 1500 fO", region: "Torshem", text: `The howather wander down out of the north into the lands later called Torshem, a stone-age people far from the southern realms.` },
+      { year: "from 1500 fO", text: `Iron spreads through the human realms and remakes the balance of power. Krun, the victor, enters a golden age on the strength of its hard-won secret.` },
+    ],
     videoIds: ["Nt8NekPK6IY"],
   },
   {
@@ -25,6 +47,13 @@ export const eras = [
     period: "Age of Expansion",
     description:
       "Ambitious powers stretched beyond their original borders, Krun expanded its reach across new territories while Furgia launched its sweeping invasion from the west. The strain of expansion eventually erupted into civil war.",
+    events: [
+      { year: "1500–1300 fO", text: `At peace with Furgia and Sombatze, Krun turns west and plants colonies along the whole north coast of the Copper Sea, as far as Aidne. The realms of Berendien and Erebos are born.` },
+      { year: "1500–1200 fO", text: `The cruel margyler of Yndar invade across the water, seizing the Kamsun coast and at last Furgia itself, which they hold until around 800 fO.` },
+      { year: "c. 1300 fO", region: "Monturerna", text: `Krunish seafarers find and settle the far Monturerna isles, the outermost reach of the colonising age.` },
+      { year: "1040 fO", text: `Sea-raiders out of Morelvidyn fall on the elf-shores of Sivoa, a sorrow the elves still sing of, then take the gentle, ill-defended island of Melukha.` },
+      { year: "1038 fO", text: `The Morelvidyn king Haieg-hamu drowns and leaves his realm to two hundred and sixteen sons. Their squabbling kindles the long civil war the chronicles call the nudelhärvan.` },
+    ],
     videoIds: ["ALidc3KBcMM", "WhdOfB3csG0", "AruWSq23ibw"],
   },
   {
@@ -33,6 +62,13 @@ export const eras = [
     period: "Era of Conflict",
     description:
       "A brutal era of pitched battles and shifting alliances. Krun clashed with Hynsolge, Efaro and Sombatze fought for dominance in the south, and ancient Melukha fell to the tide of war. Only the exhaustion of all sides brought it to an end.",
+    events: [
+      { year: "1080 fO", text: `Long-simmering pride between Krun and its old barbarian ward Hynsolge breaks into open war. Krun, backed by Sombatze and its colonies, rules the sea; the hynsolger call on barbarian kin in Nargur and on the chiefs of Efaro.` },
+      { year: "1065 fO", text: `After fifteen years the hynsolger win the battle of Grivela. On that ground, held to be charged with power, they raise the capital of a new kingdom: Jorpagna, which will rule Ereb for centuries. The old Krunish colonies swear fealty to Grivela.` },
+      { year: "1018 fO", region: "Monturerna", text: `On the far Monturerna isles the vision-touched queen Karaleia frees the goddess Imåria from her mountain grotto. Her whole people pass into undeath and raise a city beneath the sea, and the queen herself becomes a vampire.` },
+      { year: "c. 1000 fO", text: `In the south, Efaro's war-bands sack Sombatze and break apart into robber-companies, and chaos rules northern Soluna for a generation.` },
+      { year: "1080–950 fO", text: `A discharge of pressure built up all around the Copper Sea. When every side is spent the wars burn out at last, and the shape of the age to come is set.` },
+    ],
     videoIds: ["DFh81Ma7rZY", "VYCg3-s0mKc", "DRW_sluSjFc", "-nx3Ec_DWKw"],
   },
   {
@@ -41,6 +77,21 @@ export const eras = [
     period: "Imperial Era",
     description:
       "The Jorpagna Empire rose to become the dominant force on the continent, extending its reach into new territories and bringing peoples like the Akrogal nomads under its influence. Cities such as Grafferburg became symbols of imperial power, and Sanithsid emerged as a major seat of authority within the growing dominion.",
+    events: [
+      { year: "1025 fO", text: `The young empire annexes Tolan, joining its eastern and western halves. After years of talks the elves of Landori bind their realm to Jorpagna in return for full inner freedom.` },
+      { year: "935 fO", text: `When the barbarians of Mirel invade and are crushed at Lake Trasimo, the Empire conquers north from Mirel to Magilre, its widest reach ever. South of that line jori becomes the common tongue.` },
+      { year: "912 fO", text: `The council of Grafferburg. When the barbarian spokesman calls Emperor Thamsul "a southern dog and crone," the emperor has every chief seized and executed, and a century of bitter forest-war begins.` },
+      { year: "906 fO", text: `Seven legions march into Nargur's forests to end the forest-folk for good. They are annihilated in the trackless woods; a few hundred crawl back through the Nida pass, and it is said the emperor wept.` },
+      { year: "c. 900 fO", region: "Hynsolge", text: `Jorpagna conquers Hynsolge; its jorisk upper class flourishes while the old hynsolger sink into poverty.` },
+      { year: "900–700 fO", region: "Torshem", text: `For two centuries the howather of Torshem are caught at the edge of the long war between Jorpagna and the northern barbarians.` },
+      { year: "863 fO", text: `Aurelion II, philosopher and last of the founding line, dies without an heir. His reign is reckoned the close of Jorpagna's golden age, and the realm splinters into the Generals' War.` },
+      { year: "828 fO", text: `Out of the chaos the archmage Zenobia is raised to empress. She rules wisely for a full century, an era folk remember as the Silver Age.` },
+      { year: "750–600 fO", text: `The Akrogal nomads swell in number and master the riding of hippogriffs, harrying both Jorpagna and Yndar with sudden raids out of the air.` },
+      { year: "727 fO", text: `The despot Domion, hailed as the Sun-Emperor, seizes the throne and rules with an iron hand, even as the barbarians of Nargur unite under the war-leader Tharaksos.` },
+      { year: "c. 620 fO", region: "Klomellien", text: `Jorpagna's colonists at last cross the mountains into Klomellien, the empire's farthest frontier.` },
+      { year: "617 fO", region: "Sanithsid", text: `Far to the north the Ice Lords make contact with the Orghin chiefs of Sanithsid and strike a holy alliance, and the island rises as a seat of their worship.` },
+      { year: "612 fO", text: `The Furgian astronomer Dykos Barrha sets out a rationalist cosmology that names the gods mere illusions. Thirteen years later the Conflux falls, and ever after the age's impiety is blamed for the ruin.` },
+    ],
     videoIds: ["zcEQ6NCRJss", "tHd_GeoVJUc", "-Q1YkEz_TI0", "UBmZfo00xVU"],
   },
   {
@@ -49,6 +100,80 @@ export const eras = [
     period: "Age of Ruin",
     description:
       "The Jorpagna Empire collapsed, and in the chaos that followed, new powers scrambled to fill the void. The ancient realm of Yndar, overconfident in their power, finally fell, marking the end of the old world order.",
+    events: [
+      { year: "599 fO", text: `The Third Conflux. Astrologers across Altor had long dreaded the hour the stars would take their ominous places. Now at midday the southern sky goes dark over the Copper Sea.` },
+      { year: "599 fO", text: `A cloud of billions of köttbitare, arm-long flesh-eating locusts, sinks out of the Samkarna marshes. Within weeks central Ereb's people are halved and most of its livestock devoured. The Empire of Jorpagna falls like a house of cards.` },
+      { year: "599 fO", text: `On Yndar the magicians reach too far and call down the wrath of the gods: the city of Krau-ki vanishes in a single night of thunder, carried whole across the world to the isle of Marjura.` },
+      { year: "599–595 fO", region: "Kardien", text: `In Kardien a civil war between the houses Jegher and Dirivin is ended by the cunning ruse of Valentin Echthe.` },
+      { year: "598 fO", text: `The pale slempukar pour endlessly out of Slimpaku, raze the cities of Kamsun, then rise again on Yndar's shores and wipe the proud realm from the earth before withdrawing behind their wall.` },
+      { year: "599–1 fO", text: `The Dark Age. Writing and metalwork are forgotten in many lands. Slowly the regions gather their strength again, and the old imperial tongue, jori, becomes the speech of nearly every people the Empire once ruled.` },
+      { year: "598–250 fO", region: "Marjura", text: `On Marjura the exiled city of Krau-ki lives on as the kingdom of Cruri, sinking ever deeper into necromancy and the worship of demons while it enslaves the tribes around it.` },
+      { year: "412 fO", region: "Hynsolge", text: `The warrior Gordil Mauroc unites the realm of Hynsolge and founds its capital Fervidun, only to be murdered a decade later.` },
+      { year: "401–367 fO", region: "Zorakin", text: `Even in the long dark, learning stirs again in the west: the Mandelorden is founded in 401 fO and the Lyceum of Pendon in 367 fO.` },
+      { year: "312 fO", region: "Caddo", text: `On Caddo a jorisk descendant, Vasker Bruushane, unites the dalker tribes and is made their king.` },
+      { year: "c. 250–55 fO", region: "Zorakin", text: `The telepathic Lindskiarnar raise the city of Pharynx and wage long wars of conquest, until Valien Rikesbyggare breaks their power at last in 55 fO.` },
+      { year: "c. 200 fO", region: "Marjura", text: `The gods tire of Cruri's evil and seal the whole isle beneath ice: the Svavelvinter, the Sulphur Winter, which will not thaw for eight hundred years.` },
+      { year: "34 fO", region: "Magilre", text: `In Kaibab a score of seekers found the Kabrinzi order, sworn to find the one true religion.` },
+      { year: "27 fO", region: "Ransard", text: `Ransard is forged into a single realm under Omric den Store.` },
+      { year: "4 fO", region: "Magilre", text: `Zumlit Zaar murders his fellow Kabrinzi founders and vanishes; from the wreck of the order the robber-knights are born.` },
+    ],
     videoIds: ["lgl4AIXfrjk", "ds06t4BLezY", "KCHzUfFU73U", "yI3mUwIbFFA"],
+  },
+  {
+    id: "age-of-states",
+    label: "Age of States",
+    period: "The Present Age",
+    description:
+      "From the Empire's wreckage a new world takes shape. The prophet Odo's teaching, the Lysande Vägen, spreads across the Copper Sea lands, young kingdoms such as Zorakin, Kardien and Berendien harden into states, and old powers stir once more. By 610 eO, the present day, more than one realm stands on the brink of war.",
+    events: [
+      { year: "c. 0 eO", text: `In Arno on Caddo a potter's son named Odo is born. The years of the new age are counted from his coming, fO giving way to eO.` },
+      { year: "27 eO", text: `Odo receives a revelation from Etin and begins to preach the Lysande Vägen, the Shining Way. Within a few generations the new faith dominates the Copper Sea lands.` },
+      { year: "50 eO", region: "Ransard", text: `Ransarder cross the water to plant a colony on the Trakorian isle of Saphyna, the seed of long wars to come.` },
+      { year: "104–111 eO", region: "Caddo", text: `On Caddo the civil war called the Ödesfejden ends when Gerlo den Långe gathers the clans at Arno; the Arno Oath divides the land into thirty-seven cantons, each with its own assembly.` },
+      { year: "142 eO", region: "Hynsolge", text: `In Hynsolge the childless king dies as the astrologers sight a new star, and the warrior-saint Fingal is raised up; his seven-pointed star still flies on temple-knights' banners.` },
+      { year: "100–151 eO", region: "Magilre", text: `The Klavyker wrest the island of Bzegusta from Magilre; in 151 eO Capaz Ry'caril is crowned Capaz I and swears his line will win it back.` },
+      { year: "189 eO", region: "Torshem", text: `Jorisk merchants found the river-town of Torsborg in Torshem.` },
+      { year: "204 eO", region: "Krilloan", text: `Admiral Krillo founds the haven of Krilloan where a great maelstrom opens in the strait the sailors call Vägen bort, the road up from the southern seas.` },
+      { year: "212 eO", text: `Arcival, exark of the Lysande Vägen, sets down the calendar that the lands of the Shining Way keep to this day, the reckoning by which these very chronicles are dated.` },
+      { year: "248 eO", region: "Krilloan", text: `The RhabdinRhaluk earthquake heaves Krilloan's ground twenty-five metres skyward and kills half its people.` },
+      { year: "278–281 eO", text: `The great Schism. The church tears itself in two over whether magic can be reconciled with Odo's teaching, until the exarks of Arno and Ekeborg name each other heretics, and the mission never fully recovers.` },
+      { year: "287 eO", region: "Cereval", text: `On Cereval the long Great Disorder ends as the last human cities bow to the dragon-masters' Moon Law; Drakonia is founded soon after, and a guarded peace settles on the moon-silver peaks.` },
+      { year: "304 eO", region: "Trakorien", text: `Paratorna throws off the old Klavyker realm under the goddess Kastyke, and the kingdom of Trakorien is born; its name is said to mean to breathe freely.` },
+      { year: "314 eO", text: `The exark Zegedorn III founds the church's inquisition, Den Ljusa Handen, the Bright Hand, to root out heresy and forbidden magic across the lands of the Shining Way.` },
+      { year: "370–373 eO", region: "Monturerna", text: `Mauritz Bergenswäärd, stripped of rank in Kardien, sails out and rediscovers the Monturerna, raising the fortress-city of Timar.` },
+      { year: "374 eO", region: "Krilloan", text: `In Krilloan the magicians Vlad Kamantur, Shaza Sahivann and Toalpios T'ahhah found the Ordo Magica, the great order that will gather and govern the magical arts across Ereb.` },
+      { year: "370–394 eO", region: "Felicien", text: `In a long Felician war, the sea-battle of Selim in 392 eO sees the Felician fleet annihilate Zorakin's and plunder its open coasts, a wound that keeps Zorakin from war for generations.` },
+      { year: "401 eO", region: "Cereval", text: `Cereval's Moon Council outlaws the svartfolk; save for Cereval's own trolls, they may thereafter be killed unpunished.` },
+      { year: "403 eO", text: `The exark Pergon IV condemns illusism as a forbidden art, and its practitioners are driven out to take refuge in faraway Trakorien.` },
+      { year: "405 eO", region: "Trakorien", text: `Ganfryd Åålskalle nails the nobles' boxes of grievance to the sea and declares himself king of Trinsmyra; the freethinkers flee to Marjura.` },
+      { year: "408 eO", region: "Cereval", text: `The waters of Trollfjärden are forbidden to all human ships.` },
+      { year: "419 eO", region: "Hynsolge", text: `The Dwarves' March toward Cereval forces Hynsolge to turn the marchers back, and the effort weakens the crown.` },
+      { year: "424 eO", region: "Kardien", text: `King Beronrik is deposed; the echther reorganise Kardien, move the capital to Ekeborg and bring in the Lysande Vägen, while the wood-elves found the forest realm of Goiana.` },
+      { year: "440 eO", region: "Trakorien", text: `For betraying the holy Kishatet, the isle of Stegos is struck with unending night by the wrath of Shamash.` },
+      { year: "456 eO", region: "Klomellien", text: `With the death of Harald Krokig the last forts fall, and the blended realm of Hamur endures in southern Klomellien.` },
+      { year: "466–467 eO", region: "Zorakin", text: `Zorakin throws back a Morelvidyn invasion, the mage Lodekhiz breaking the enemy fleet.` },
+      { year: "468 eO", region: "Nidland", text: `A short man in a black silk robe walks out of the east over the Demontungan: Vicotnik the Archmage seizes the province of Lasutyp, makes of it the realm of Nidland, and gives the world twelve dozen years to submit to him.` },
+      { year: "480 eO", region: "Trakorien", text: `After humiliating talks of threats and bribes the last klavyker colonies pass to the Trakoriska riket, and the old Klavyker realm, some two and a half centuries old, comes to its end.` },
+      { year: "486 eO", region: "Krilloan", text: `The Great Fire devours nine parts in ten of Krilloan, and the mage-council is cast down.` },
+      { year: "487–488 eO", region: "Torshem", text: `The Reser War: the warlord Kaursch besieges Torsborg until howather guerrillas and their dwarf allies break him.` },
+      { year: "498 eO", region: "Kardien", text: `Morelvidyn pirates harry the Kardien coast as far as Arntuna; King Vidar III duels their chief Illerest.` },
+      { year: "502–541 eO", region: "Nidland", text: `Vicotnik raises the Great Wall of Nidland, four decades' labour wrung from slaves and prisoners.` },
+      { year: "515 eO", region: "Erebos", text: `After a merchants' civil war, Nohstril becomes the capital of Erebos and the seat of its Council of Five Houses.` },
+      { year: "520–525 eO", region: "Trakorien", text: `The Saphyni rising is crushed at Ylarnas afton when Trakorien looses an army of zombies raised by the drug Zombin.` },
+      { year: "538 eO", region: "Hynsolge", text: `Gråborg buys a hundred years of neutrality and becomes a refuge for the realm's political fugitives.` },
+      { year: "546–555 eO", region: "Zorakin", text: `Zorakin goes to war against the Svarta Tornet, the Black Tower, a rising seat of dark power that stirs the svartfolk against the realms of men.` },
+      { year: "550 eO", region: "Trakorien", text: `Bodåken's expeditions cross the western ocean and find the far lands of Jih-puhn and Tsun-kuo.` },
+      { year: "580–587 eO", region: "Hynsolge", text: `Agila Dubbelhand leads a small revolt in Mergilia and, imprisoned, smuggles out the poems that make him a legend.` },
+      { year: "595 eO", region: "Trakorien", text: `Trakorien seizes Arhem on Marjura, hungry for the sulphur that has begun to seep from the thawing ice.` },
+      { year: "c. 600 eO", region: "Felicien", text: `King Kuthegil Halvskägg of Felicien hands out letters of marque without restraint, kindling the Felician pirate war that now troubles the whole Copper Sea.` },
+      { year: "604–610 eO", region: "Hynsolge", text: `Abrahim Stenklo's New Army carries the king's wars to Sirigon and Mergilia.` },
+      { year: "608 eO", region: "Krilloan", text: `Plague takes Krilloan; the quarter called Peststaden is sealed off behind undead guards.` },
+      { year: "609 eO", region: "Torshem", text: `The Herse Feud: Gonoser is deposed and slain, setting the Gono and Taros clans at lasting odds.` },
+      { year: "610 eO", text: `The present day. After eight hundred years the Svavelvinter breaks and drowned Cruri begins to stir beneath the ice; Ransard musters against Trakorien, Hynsolge marches on its own rebel lands, and across Ereb more than one realm stands a hair's breadth from war while the astrologers whisper that the stars again draw toward a Conflux.` },
+      { year: "612 eO", region: "Nidland", text: `The hour of Vicotnik's prophecy falls due. From Nidland the Archmage proclaims the Nidländska Reningen, a great cleansing-crusade meant to bring all Ereb to its knees before him.` },
+      { year: "612 eO", region: "Trakorien", text: `The two-hundred-year night over Stegos lifts at last as Arn Dunkelbrink lands upon his dragon and is hailed king.` },
+      { year: "613–614 eO", text: `The Fifth Conflux. The omens of the age come to a head, and it is said the world's fate must be settled even beyond Altor, on the far world of Bythos, lest a thousand-year ruin fall.` },
+    ],
+    videoIds: [],
   },
 ];

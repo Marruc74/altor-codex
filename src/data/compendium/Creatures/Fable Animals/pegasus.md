@@ -1,6 +1,8 @@
 # Pegasus
 
 
+![Pegasus](/compendium/Creatures/Fable Animals/pegasus-2.jpg "Pegasus")
+![Pegasus](/compendium/Creatures/Fable Animals/pegasus-3.jpg "Pegasus")
 ![Pegasus](/compendium/Creatures/Fable Animals/pegasus.jpg "Pegasus")
 Pegasi are shy, flying horses that live alone on lonely mountain peaks, grazing the untouched grass of the highlands. Yet should one manage to tame a pegasus and make it a mount, it becomes a most faithful companion for life, for a tamed pegasus lives as long as its master, unless it meets a violent death before then.
 

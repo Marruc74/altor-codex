@@ -193,6 +193,7 @@ Berättaren är munken **Brior Brådfot**, som färdas under "råttans triad" (6
 - **Festivalen i HOXOH 68 fO:** Furstarna i Naströl erbjöd allians med klavykerna mot Kargom; illusionisten **Shaseluk Dimspride** dolde en klavykisk här med magisk genomskinlighet; nastrôlerna massakrerades → **Klavykiska riket** föds (Moskorien, Fokale, Nastrôl, Kishatet). Rikets styrande organ: **bodåken**; huvudstad **Fontra Cilor** vid Quafachas strand; adeln har all makt.
 - **Eniakens födelse 62–25 fO:** Den levande svampen flöt iland i Lasemos från väst; planterades i norra Nastrôl; **hyphererorden** bildades för att vaka över den; tre andra ordnar bildades (Nastrôls politiska struktur).
 - **Kristallens sekler 50 fO–150 eO:** Upprepade misslyckade försök att rensa Kargom från måndyrkare, nekromanti och svartfolk.
+- **Kolonier på öarna (under samma period):** Efter att ha säkrat makten över Palamoxi slättland seglade klavykiska kolonister vidare till **Stegos** och **Paratorna**, där städerna **Zaroflas**, **Siola** och **Melse** grundades.
 
 ### Ny era (efter Odo)
 - **År 0 — De heliga svanarnas seglats:** Den heliga ön **Kymm** sjönk; melukhierna bad klavykerna om hjälp; en gigantisk flotta räddade tusentals melukhier ("stora be-kymmret"). Grundlade Trakoriens vänskap med **Melukha**. (Året för Odos födelse.)
@@ -203,11 +204,15 @@ Berättaren är munken **Brior Brådfot**, som färdas under "råttans triad" (6
   - *Milacki enande:* palamoxiska nybyggare försökte kolonisera södra Trinsmyra; Milacke enades mot dem.
   - *Frihetskriget mot Palamux 250–293 eO:* klavykiska flottan besegrad; **vildeld** (från Cruri) användes; rungler/milacker/karker + isbarbarer landsteg vid HOXOH.
   - **~277 eO:** **Hiatus Neffro** ("den galne Milacken") vald till diktator; lovade bort Saphyna till Magilre/Ransard; erövrade Palamux slättland; förstörde i vredesmod sin egen invasionsstyrka vid Frimbole Olvi; blev eremit i Matagdebergen.
+
+> *Bokens egen epokindelning fortsätter med tre namngivna tidsåldrar: **Väckelsetiden (304–360 eO)**, **Utvecklingstiden (385–450 eO)** och **Åålskallarnas ätt (405–530 eO)**, delvis överlappande, samt **Paratornas storhetstid (450–? eO)**.*
+
+#### Väckelsetiden 304–360 eO
 - **304 eO — Kastykiska omvändelsen:** Paratorna förklarar sig fritt från det mörbultade Klavykiska riket; gudinnan **Kastyke** officiellt skyddsväsen; den nya nationen (Bralorge + Karramak) kallar sig **Trakorien** (av "traekor" = "att andas fritt").
 - **311 eO — Det heliga Kishatet grundas:** Shamashkulten uppstod i Frand; Kishatet bildat utan större motstånd (Frand med omgivning, snart utökat).
 - **349–350 eO — Klastobrest Dimvetts seglats:** Predikade **Remuntra** (först på Saphyna, sedan Palamux); seglade bort mot väster med halva Lasemos flotta (öde okänt).
-- **370–385 eO — Andra Ransarderkriget:** Klavykiska riket mattades; ransarderna landsteg på Saphyna och södra Paratorna; Trakorien allierar sig med Kishatet; **Soblak** skänks till trakorierna.
-- **380 eO — Dvärgslavar till Kopparbergen:** Kishatet tillfångatog dvärgar nära Klomellien; skeppades som slavar; dvärgarna gjorde sig fria och grundade ett rike på Palamux.
+- **370–385 eO — Andra Ransarderkriget:** Klavykiska riket mattades; ransarderna landsteg på Saphyna och södra Paratorna; Trakorien allierar sig med Kishatet och driver bort dem. Trakorierna skickade dessutom en mäktig flotta ända till Kishatets gränstrakter för att leta ransarder — vilket gjorde **Shar Kishatin** i Albarunzia så nervös att han **skänkte Soblak** till trakorierna för att de inte skulle segla vidare norrut.
+- **380 eO — Dvärgslavar till Kopparbergen:** Under förföljandet av ransarder stötte Kishatets trupper av misstag på ett mindre **dvärgrike nära Klomelliens gräns**; dvärgyngel tillfångatogs och skeppades som slavar till **Kopparbergen** för att bryta malm åt Kishatet; dvärgarna gjorde sig snart fria och grundade ett eget rike på Palamux (där de fortfarande bor).
 - **385–450 eO — Utvecklingstiden:**
   - *Trakoriska riket grundas:* med Soblak som första koloni; förklarar sig arvtagare till Klavykiska riket; vill "försvara nordens ljus mot barbariet"; kallar Palamux sin åldrade mor.
   - *Kriget mot svartfolken:* utrotningskrig på Paratorna.
@@ -215,7 +220,10 @@ Berättaren är munken **Brior Brådfot**, som färdas under "råttans triad" (6
   - *Missmötet i Vumbra (405 eO):* **Ganfryd Åålskalle** spikade adelns klagolådor och kastade dem i havet; utropade sig till kung → Åålskallarnas ätt.
   - *Fritänkare flyr till Marjura (405 eO):* grundar **Arhem** och andra kolonier.
 - **440 eO — Stegosi förmörkelse:** Kishatets inflytande; "de storkäftade prelaterna"s krig; Stegos planerade plundra Albarunzia men förrådde Kishatet → Shamashs vrede → permanent mörker över ön.
-- **~460 eO:** Trakoriska riket rensar Paratorna från svartfolk; **Ilibaurien erövras** (via opiander).
+
+#### Paratornas storhetstid 450–? eO
+- **~460 eO:** Trakoriska riket rensar Paratorna från svartfolk och bygger upp en lönsam handel; **Ilibaurien erövras** (utan strid — den onde alkemikern **Astrumal diFoldt** lanserar **opianderkryddan**, varpå landet kommer under drogernas välde).
+- **Kolonierna erövras (~480 eO):** Efter förödmjukande förhandlingar (hot och mutor) överlät klavykerna sina kolonier till Trakoriska riket. **Klavykiska riket** (som bestått 68 fO–480 eO enligt bokens index) upphörde i praktiken; man talar nu istället om Moskorien, Fokale osv. som delar av Trakoriska riket.
 - **497–507 eO — Tredje Ransarderkriget:** **Gudienerslätten** införlivas (fast brohuvud på Saphyna); barbarerna drivs tillbaka.
 - **510 eO:** **Shaguliterna** (kargomitisk sekt) fördrivs → flyr till Marjura.
 - **520–525 eO — Saphyni uppror:** nationalistiska kretsar; drogen **zombin** (av **Harlevold Hakeborst**); zombinerhären lydde varje order, även fiendens; vid "**Ylarnas afton**" (525 eO, Gudienerslätten) röstades sidorna över varandra; häpolden **Skrynk**; upproret krossas.

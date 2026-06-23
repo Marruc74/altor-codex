@@ -1,75 +1,42 @@
 ---
 figures:
-  - name: "Baskimer Brushane"
-    description: "the legendary hero and first uniting king of Lasemos, who overthrew the grey eminences and freed the land from their magic-tyranny"
-  - name: "Klastobrest Dimvett"
-    description: "the prophet who founded the dreaded faith of Remuntra and sailed west with half of Lasemos's fleet"
-  - name: "Ganfryd Aalskalle"
-    description: "who declared himself king of Trinsmyra and founded the Aalskalle line that still resists from the mountain-land of Rung"
-  - name: "Hiatus Neffro"
-    description: "the Mad Milacker, the dictator who ruled Trinsmyra at the height of its independence"
-  - name: "Astrumal diFolt"
-    description: "the demon from Melse, the sorcerer who conquered freedom-loving Ilibaurien with the addictive drug opiander"
-  - name: "Shar Kishati'n"
-    description: "the god-king of the holy Kishatet, who rules its Shamash theocracy with thirteen krystalokrater (crystal-lords)"
   - name: "Makulon Nihivelli"
     description: "one of the cold thinkers whose writings shaped the Trakorian oligarchy after the realm's founding"
+  - name: "Pisarus"
+    description: "the philosopher who, with Makulon Nihivelli, gave the merchant-republic its hard-eyed creed"
   - name: "Brior Bradfot"
     description: "the wandering monk whose travelogue chronicles all four islands"
-  - name: "Harlevold Hakeborst"
-    description: "the alchemist of Gudiena who first distilled the numbing drug zombin"
-  - name: "Cymba"
-    description: "the kondottiar (mercenary captain) who works the slave-mines of Hymbergond on Trinsmyra"
-  - name: "Ao'ya"
-    description: "the Evil Bite, the legendary wolf-queen of the Vulferveden forest"
-  - name: "Sabarga"
-    description: "the renowned astrologer-sage (astromatissa) of feuding Lasemos"
 places:
-  - name: "Tricilve"
-    description: "the capital, on Paratorna; seat of the academy and library-park, and of the great folly-clock the Kronolabe, with no deep harbour of its own"
   - name: "Paratorna"
-    description: "the heart-island of the realm, holding the capital"
+    entry: "paratorna"
+    description: "the heart-island of the realm, holding the capital Tricilve"
   - name: "Palamux"
-    description: "the mother island, oldest of the four cultures, which favours diplomacy over force"
+    entry: "palamux"
+    description: "the oldest mother island, which favours diplomacy over force"
   - name: "Saphyna"
-    description: "the fertile, fairly peaceful southernmost island, the realm's breadbasket"
+    entry: "saphyna"
+    description: "the fertile, fairly peaceful southern breadbasket"
   - name: "Trinsmyra"
-    description: "the northernmost, music-loving island, only partly under imperial rule"
-  - name: "The Holy Kishatet"
-    description: "the Shamash theocracy of eastern Palamux, with its holy city Albarunzia"
-  - name: "Kargomvaggen"
-    description: "the thousand-metre mirror-glazed cliff of inner Palamux, near the ancient city Yoh Niur"
-  - name: "The Swamp of Shadows"
-    description: "the vast marsh near Kamest, home to its own nightmarish monsters"
-  - name: "The Copper Mountains"
-    description: "the reclusive dwarf realm of Palamux, where dwarves fled slavery for the Kishatet's copper"
-  - name: "Stegos"
-    description: "the cursed, darkened island that lies under Shamash's eternal wrath for its betrayal of the Kishatet"
-  - name: "Krindenland"
-    description: "the magically warped land of light-tremors, thought to be a seam to a parallel world, where the Remuntra cult arose"
-  - name: "Eniaken"
-    description: "the colossal living fungus-wall of northern Nastrol, guarded by the monks of the Hypherer order"
-  - name: "Isakra"
-    description: "one of the realm's oldest cities, holding the ever-growing all-temple Etemenanki and its whale-luring singers"
+    entry: "trinsmyra"
+    description: "the rocky, music-loving north, only partly under imperial rule"
   - name: "Marjura"
-    description: "the ice-bound colony island of the sulfur trade, sealed beneath the ice for eight centuries until the present day"
+    entry: "marjura"
+    description: "the ice-bound sulfur colony, sealed beneath the ice for eight centuries until the present day"
+  - name: "Bzegusta"
+    description: "the freed colony land across the sea"
+  - name: "Torilia"
+    description: "the realm's small mainland holding"
+  - name: "Staden O"
+    description: "the lawless free city that trades with all and answers to none"
 items:
-  - name: "Zombin"
-    description: "the numbing drug first distilled in Saphyna"
-  - name: "Opiander"
-    description: "the addictive drug outlawed everywhere but Ilibaurien"
-  - name: "Vildeld"
-    description: "Trinsmyra's dreaded incendiary weapon"
-  - name: "Sylvoleum"
-    description: "the oil pressed from the oil-willow, burned in lamps and used for vildeld and the airships"
-  - name: "The Pata"
-    description: "the Moskorian noble duelling-sword, a weapon of the banzikan art"
-  - name: "The Saryng"
-    description: "the giant-folk cavalry sabre whose whine terrifies beasts and dark folk alike"
-  - name: "Asbast"
-    description: "the fireproof fibre spun from the kryffermara plant"
   - name: "The Guldtrakin"
     description: "the realm's gold coin, struck by the empire, the guilds and private houses alike"
+  - name: "Asbast"
+    description: "the fireproof fibre spun from the kryffermara plant"
+  - name: "Algsilke"
+    description: "a fine cloth spun from cultured algae in the dam-farms of Bralorge"
+  - name: "The Saryng"
+    description: "the giant-folk cavalry sabre whose whine terrifies beasts and dark folk alike"
 ---
 # Trakorien
 
@@ -101,32 +68,12 @@ A maritime merchant-oligarchy of four islands, bound together by trade, treaty, 
 
 ## The Four Islands
 
-Trakorien is built upon four great islands, each older than the empire that binds them and each holding fast to its own temper.
+Trakorien is built upon four great islands, each older than the empire that binds them and each holding fast to its own temper. Each has a page of its own, listed under Trakorien in the codex and as cards below.
 
-### Paratorna
-
-The heart of the realm and the seat of its power, ruled from the capital **Tricilve**. The northern province **Ilibaurien** was once a freedom-loving land, until it was broken not by arms but by the addictive drug **opiander**. To the east lies **Kryfferskogen**, choked by the thorny **kryffermara** vine and home only to the spotted, dog-headed **skecker**. At the island's center spreads the **Swamp of Shadows**, where unnatural creatures unhinge the minds of those who wander in. The south is gentle country of golden grain and rich pasture, and along the coast lie the trade-town **Kamest**, the holy city **Fam Kvalvi**, and the wool-spinning **Siola** with its imperial arsenal.
-
-### Palamux
-
-The oldest and most populous island, the realm's **mother island**, where statecraft is preferred to the sword. Here stands the **Holy Kishatet**, the strongest seat of the truth-god **Shamash**. The inner plain about **Fokale** is scorched almost beyond habitation, ringed by the mirror-glazed **Kargomvaggen** and ruined by centuries of salt-water irrigation. The feared dark folk of northern **Kargom** are walled away from the rest by the living fungus-rampart **Eniaken**. In the south lie the elf-oaks of **Gwondel Leigu** and the clay plains of **Moskorien**, while the giant-folk **tolgulder** hold the western marches against the horrors beyond. The cradle of the whole realm, feud-ridden **Lasemos**, lies on this island too.
-
-### Saphyna
-
-The southernmost island and the realm's breadbasket, fertile and fairly peaceful. The very rich **Frimboliner Plain** is tended by the good-natured, simple farmers of Saphyna, dotted with villages and famed for its black beer and its herb-gardens. The island is split north and south by the snowy **Matagde Mountains**, where evil dark folk lair, while the eastern cape holds the impassable **Tocmer Forest**. North of the mountains lies pleasant **Korjulme** with its orchards. The whole western reach is **Krindenland**, a warped zone too strange to truly chart. The drug-towns of **Gudiena**, where zombin was first distilled, and the harbour of **Krindenmaar** lie here.
-
-### Trinsmyra
-
-The northernmost island, rocky and never wholly subdued, and the most musical of the four. It is rich in tin, lead, copper, and silver, shipped out from the music-loving capital **Vumbra**. Its plains hold cliff-climbing livestock that haul carts up the crags, and the **Vulferveden** forest is ruled by the wolf-queen **Ao'ya**. In the highlands the rebellious **rungler** ride the giant millipede **skolopod** over the steeps, and dwarves dwell in friendship with them at **Ard Gachlaf**. Slaves toil in the metal mines of **Hymbergond**, the beautiful region of **Milacke** keeps its independence, and one of the realm's oldest cities, **Isakra**, holds the ever-growing temple **Etemenanki**.
-
-## Notable Lands and Wonders
-
-- **Kargomvaggen**: a wall of mirror-glazed rock a thousand metres high, ringing the inner plain of Palamux near the ancient city Yoh Niur and its salt mines; it bakes the basin within to a furnace heat.
-- **The Swamp of Shadows**: a vast marsh near Kamest on Paratorna, breeding nightmares of its own, from blood-flies that sow madness to telepaths that force their dreams upon sleepers.
-- **The Copper Mountains**: the reclusive dwarf realm of Palamux, settled by dwarves who fled slavery in the Kishatet's copper-pits and carved out a kingdom of their own.
-- **Eniaken**: a colossal living fungus-wall grown across northern Nastrol, drifted in long ago and planted as a barrier; the monks of the **Hypherer** order tend and guard it from their fortress.
-- **Krindenland**: a magically warped land of light-tremors and shifting geography on Saphyna, thought to be a seam where the world presses against a parallel universe; the dreaded faith of Remuntra first arose here.
-- **Stegos**: an island cast into permanent darkness under Shamash's eternal wrath for its ancient betrayal of the Kishatet, its capital and sound alike given names of divine vengeance.
+- **Paratorna** - the heart of the realm and the seat of its power, ruled from the capital Tricilve.
+- **Palamux** - the oldest and most populous island, the mother island, where statecraft is preferred to the sword and the Holy Kishatet keeps its truth-god's law.
+- **Saphyna** - the southernmost island and the realm's breadbasket, fertile and fairly peaceful, with the warped land of Krindenland along its western reach.
+- **Trinsmyra** - the northernmost island, rocky, music-loving and never wholly subdued, rich in metals and proud of its independence.
 
 ## People
 
