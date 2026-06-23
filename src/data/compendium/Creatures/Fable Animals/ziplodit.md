@@ -1,5 +1,7 @@
 # Ziplodit
 
+![Ziplodit](/compendium/Creatures/Fable Animals/ziplodit.jpg "Ziplodit")
+![Ziplodit](/compendium/Creatures/Fable Animals/ziplodit-2.jpg "Ziplodit")
 The ziploditer are the native beasts of Magilre, a family of creatures that come in several kinds, set apart by their size and their temper. Some are the curse of the farmer and some the friend of the carter, but all of them belong to that flat and watery land as nothing else does.
 
 ## The Swamp Ziplodit

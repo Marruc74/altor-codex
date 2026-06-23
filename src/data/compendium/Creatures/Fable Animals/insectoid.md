@@ -1,5 +1,11 @@
 # Insectoid
 
+![Insectoid Queen (female)](/compendium/Creatures/Fable Animals/insectoid-queen.jpg "Insectoid Queen (female)")
+![Insectoid Leader](/compendium/Creatures/Fable Animals/insectoid-leader.jpg "Insectoid Leader")
+![Insectoid Messenger](/compendium/Creatures/Fable Animals/insectoid-messenger.jpg "Insectoid Messenger")
+![Insectoid Warrior](/compendium/Creatures/Fable Animals/insectoid-warrior.jpg "Insectoid Warrior")
+![Insectoid Digger](/compendium/Creatures/Fable Animals/insectoid-digger.jpg "Insectoid Digger")
+![Insectoid Worker](/compendium/Creatures/Fable Animals/insectoid-worker.jpg "Insectoid Worker")
 Ant-like beings that raise vast, ordered colonies ruled by a single queen, their society split into rigid castes from scholar-leaders down to mindless workers.
 
 ## Appearance

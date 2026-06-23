@@ -1,5 +1,6 @@
 # Rock Lizard
 
+![Rock Lizard](/compendium/Creatures/Fable Animals/rock-lizard.jpg "Rock Lizard")
 The rock lizard is a large lizard of the mountains and high country, easily known by the heavy store of fat it carries in its tail. That tail is reckoned a delicacy, which has not been kind to the creature.
 
 ## Appearance

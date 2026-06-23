@@ -1,5 +1,6 @@
 # Harebir
 
+![Harebir](/compendium/Creatures/Fable Animals/harebir.jpg "Harebir")
 The harebir is a huge, frog-like beast of the deep sea, so rarely seen that most who live by the coast never lay eyes on one in a lifetime. When it does break the surface, it brings foul weather with it, and sailors have learned to dread the sudden storm that comes out of a clear sky.
 
 ## Appearance

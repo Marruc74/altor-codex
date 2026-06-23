@@ -1,5 +1,6 @@
 # Shranck
 
+![Shranck](/compendium/Creatures/Fable Animals/shranck.jpg "Shranck")
 Shranck is a giant shark of prehistoric size, worshipped as a god by the shark-men of Bychow on the Montures. Far larger than the great sharks the bestiaries already know, it is a thing of the deep that the villagers both fear and revere.
 
 ## The Shark-God

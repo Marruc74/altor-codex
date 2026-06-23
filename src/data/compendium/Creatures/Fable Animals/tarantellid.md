@@ -1,5 +1,6 @@
 # Tarantellid
 
+![Tarantellid](/compendium/Creatures/Fable Animals/tarantellid.jpg "Tarantellid")
 The tarantellids, or spider-men, are a loathsome crossbreed, thought by most to be the get of barbarian men and giant spiders, though nothing has ever proved it. They lair in earth-burrows in the dark forest country near marsh and fen, in families of a handful led by the largest male, or now and then in colonies many dozens strong.
 
 ## Appearance
