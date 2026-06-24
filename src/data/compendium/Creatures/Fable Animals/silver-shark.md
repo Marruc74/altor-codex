@@ -1,5 +1,6 @@
 # Silver Shark
 
+![Silver Shark](/compendium/Creatures/Fable Animals/silver-shark.jpg "Silver Shark")
 The silver-shark is a common predator of the warm seas about the Montures, a cowardly fish on its own but a deadly one in numbers. It gathers in shoals, and the smell of blood in the water turns the whole shoal savage at once.
 
 ## Behaviour

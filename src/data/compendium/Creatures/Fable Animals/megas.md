@@ -1,5 +1,7 @@
 # Megas
 
+![Megas](/compendium/Creatures/Fable Animals/megas.jpg "Megas")
+
 The megas is a legendary little beast, found only in a handful of specimens across the whole world, and looks like nothing so much as a small piglet with stout little wings and outsized tusks. Its plain food is raw, unworked wood, but its delight is the thin, crisp leaves of old books, and one is remembered for having gnawed its way clean through a royal library.
 
 ## Habits
