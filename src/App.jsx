@@ -49,6 +49,7 @@ function getInitialPage() {
   if (getParam("country")) return "catalog";
   if (getParam("adventure")) return "catalog";
   if (getParam("ce")) return "catalog";
+  if (getParam("hub")) return "catalog";
   // Otherwise read hash
   const hash = window.location.hash.replace("#", "");
   const valid = ["about", "history", "map", "chronicles", "catalog"];
@@ -215,7 +216,8 @@ export default function App() {
   }, [handleGlobalCountryOpen, handleGlobalAdventureSelect, handleGlobalCompendiumEntry]);
 
   // Main-menu navigation (nav links + brand): start the destination page fresh.
-  // Drop any deep-link query params (?entry, ?pin, ?country, ?adventure, ?ce) and
+  // Drop any deep-link query params (?entry, ?pin, ?country, ?adventure, ?ce,
+  // ?hub) and
   // the selections they drove, so a menu click never lands on a filtered or
   // pre-opened view.
   const handleMenuNavigate = useCallback((id) => {

@@ -527,6 +527,19 @@ const placeKind = (pin) => {
 
 const SECTION_LABEL = Object.fromEntries(SECTIONS.map((s) => [s.id, s.label]));
 
+// Sections that can back a browse hub, for validating a ?hub= URL param on load.
+const HUB_SECTIONS = new Set(["adventures", "geography", ...SECTIONS.map((s) => s.id)]);
+
+// Read a valid { section, group } hub from the current URL, or null. An open
+// entry (?ce=) takes the main panel, so a hub is ignored while one is set.
+function hubFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("ce")) return null;
+  const section = params.get("hub");
+  if (!section || !HUB_SECTIONS.has(section)) return null;
+  return { section, group: params.get("hubg") || null };
+}
+
 // The full set of navigable Compendium pages (section entries + lands +
 // adventures), as "kind-id" keys - the denominator for reading-progress.
 const PAGE_UNIVERSE = (() => {
@@ -1382,7 +1395,8 @@ export default function Compendium({
   const [homeView, setHomeView] = useState("themes");
   // Active browse "hub": { section, group } shows a card-grid index of a section
   // (its groups) or a group (its pages) in the main panel. null = no hub.
-  const [hub, setHub] = useState(null);
+  // Reflected in the URL as ?hub=<section>(&hubg=<group>) so a click survives F5.
+  const [hub, setHub] = useState(hubFromUrl);
   // The reader's library (recently-viewed + bookmarks), persisted to localStorage.
   const recents = useRecents();
   const bookmarks = useBookmarks();
@@ -1424,11 +1438,27 @@ export default function Compendium({
     if (url.href !== window.location.href) window.history.replaceState(null, "", url);
   }, [selectedEntry]);
 
+  // Keep the ?hub= (and ?hubg=) param in step with the open browse hub, so the
+  // section/group a reader clicks into is restored on refresh.
+  useEffect(() => {
+    const url = new URL(window.location);
+    if (hub) {
+      url.searchParams.set("hub", hub.section);
+      if (hub.group) url.searchParams.set("hubg", hub.group);
+      else url.searchParams.delete("hubg");
+    } else {
+      url.searchParams.delete("hub");
+      url.searchParams.delete("hubg");
+    }
+    if (url.href !== window.location.href) window.history.replaceState(null, "", url);
+  }, [hub]);
+
   // Browser back/forward: drive the entry view from the ?ce= param.
   useEffect(() => {
     const onPop = () => {
       const id = new URLSearchParams(window.location.search).get("ce");
       if (id) {
+        setHub(null);
         setSelectedEntry(videoById[id] ?? allEntries.find((v) => v.id === id) ?? null);
       } else {
         setSelectedEntry((prev) => {
@@ -1439,6 +1469,7 @@ export default function Compendium({
           }
           return null;
         });
+        setHub(hubFromUrl());
       }
     };
     window.addEventListener("popstate", onPop);
@@ -1487,6 +1518,7 @@ export default function Compendium({
   const [openSections, setOpenSections] = useState(() => ({
     ...(selectedAdventure ? { adventures: true } : {}),
     ...(selectedCountry ? { geography: true } : {}),
+    ...(hub ? { [hub.section]: true } : {}),
   }));
   const selectedContinent = geoPlaces.find((c) => c.id === selectedCountry)?.continent;
   const [openGeoGroups, setOpenGeoGroups] = useState(() =>
