@@ -1,5 +1,14 @@
 # Sharg
 
+![Sharg](/compendium/Peoples/Other Humanoids/sharg.jpg "Sharg")
+![Sharg](/compendium/Peoples/Other Humanoids/sharg-2.jpg "Sharg")
+![Sharg](/compendium/Peoples/Other Humanoids/sharg-3.jpg "Sharg")
+![Sharg](/compendium/Peoples/Other Humanoids/sharg-4.jpg "Sharg")
+![Female Sharg](/compendium/Peoples/Other Humanoids/sharg-female.jpg "Female Sharg")
+![Female Sharg](/compendium/Peoples/Other Humanoids/sharg-female-2.jpg "Female Sharg")
+![Female Sharg](/compendium/Peoples/Other Humanoids/sharg-female-3.jpg "Female Sharg")
+![Female Sharg](/compendium/Peoples/Other Humanoids/sharg-female-4.jpg "Female Sharg")
+
 The sharg are a nomadic people of the great open plains of northern Ereb. A hardy race, they bear low temperatures without feeling the cold, though they still wrap themselves in furs and leather.
 
 ## Appearance

@@ -1,5 +1,14 @@
 # Wolf-Rider
 
+![Wolf-Rider](/compendium/Peoples/Other Humanoids/wolf-rider.jpg "Wolf-Rider")
+![Wolf-Rider](/compendium/Peoples/Other Humanoids/wolf-rider-2.jpg "Wolf-Rider")
+![Wolf-Rider](/compendium/Peoples/Other Humanoids/wolf-rider-3.jpg "Wolf-Rider")
+![Wolf-Rider](/compendium/Peoples/Other Humanoids/wolf-rider-4.jpg "Wolf-Rider")
+![Female Wolf-Rider](/compendium/Peoples/Other Humanoids/wolf-rider-female.jpg "Female Wolf-Rider")
+![Female Wolf-Rider](/compendium/Peoples/Other Humanoids/wolf-rider-female-2.jpg "Female Wolf-Rider")
+![Female Wolf-Rider](/compendium/Peoples/Other Humanoids/wolf-rider-female-3.jpg "Female Wolf-Rider")
+![Female Wolf-Rider](/compendium/Peoples/Other Humanoids/wolf-rider-female-4.jpg "Female Wolf-Rider")
+
 The wolf-riders are a fierce, warlike people of Ereb Altor's forests. Small and gifted at hiding, they have all but escaped the notice of the wider world. They are said to descend from humans who were first twisted to serve some evil purpose, and a wolf-rider lives and dies for one thing above all: the wolves it rides.
 
 ## Appearance
