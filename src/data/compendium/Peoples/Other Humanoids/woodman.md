@@ -1,5 +1,14 @@
 # Woodman
 
+![Woodman](/compendium/Peoples/Other Humanoids/woodman.jpg "Woodman")
+![Woodman](/compendium/Peoples/Other Humanoids/woodman-2.jpg "Woodman")
+![Woodman](/compendium/Peoples/Other Humanoids/woodman-3.jpg "Woodman")
+![Woodman](/compendium/Peoples/Other Humanoids/woodman-4.jpg "Woodman")
+![Female Woodman](/compendium/Peoples/Other Humanoids/woodman-female.jpg "Female Woodman")
+![Female Woodman](/compendium/Peoples/Other Humanoids/woodman-female-2.jpg "Female Woodman")
+![Female Woodman](/compendium/Peoples/Other Humanoids/woodman-female-3.jpg "Female Woodman")
+![Female Woodman](/compendium/Peoples/Other Humanoids/woodman-female-4.jpg "Female Woodman")
+
 An ancient race driven by humans, dwarves and dark folk into the shelter of the remote forests. Like the raggmen they are hunters, and with blowpipes two or three metres long firing poisoned darts they can fell even large game at a distance. The forest has become their natural home, and they are masters of tracking, hiding and the hunt.
 
 ## Appearance

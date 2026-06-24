@@ -1,5 +1,14 @@
 # Raggman
 
+![Raggman](/compendium/Peoples/Other Humanoids/raggman.jpg "Raggman")
+![Raggman](/compendium/Peoples/Other Humanoids/raggman-2.jpg "Raggman")
+![Raggman](/compendium/Peoples/Other Humanoids/raggman-3.jpg "Raggman")
+![Raggman](/compendium/Peoples/Other Humanoids/raggman-4.jpg "Raggman")
+![Female Raggman](/compendium/Peoples/Other Humanoids/raggman-female.jpg "Female Raggman")
+![Female Raggman](/compendium/Peoples/Other Humanoids/raggman-female-2.jpg "Female Raggman")
+![Female Raggman](/compendium/Peoples/Other Humanoids/raggman-female-3.jpg "Female Raggman")
+![Female Raggman](/compendium/Peoples/Other Humanoids/raggman-female-4.jpg "Female Raggman")
+
 Raggmen live in small, heavily armed tribes in great remote forests, hunters and gatherers who seldom leave their clearly marked territory. They have a deep bond with nature and its creatures, and wild animals never attack them.
 
 ## Appearance

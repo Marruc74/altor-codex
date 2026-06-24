@@ -1,5 +1,13 @@
 # Magir
 
+![Magir](/compendium/Peoples/Other Humanoids/magir.jpg "Magir")
+![Magir](/compendium/Peoples/Other Humanoids/magir-2.jpg "Magir")
+![Magir](/compendium/Peoples/Other Humanoids/magir-3.jpg "Magir")
+![Female Magir](/compendium/Peoples/Other Humanoids/magir-female.jpg "Female Magir")
+![Female Magir](/compendium/Peoples/Other Humanoids/magir-female-2.jpg "Female Magir")
+![Female Magir](/compendium/Peoples/Other Humanoids/magir-female-3.jpg "Female Magir")
+![Female Magir](/compendium/Peoples/Other Humanoids/magir-female-4.jpg "Female Magir")
+
 The magir are the remnant of an ancient people who lived in the world long before humans spread across it, kin to neither elf, dark folk nor stone-folk. They linger now as hermits in caves and hills, their few surviving communities strictly divided into four classes: warriors, priests, mages and farmers. Once a fiercely expansive people, they are still known for producing superb warriors and mages.
 
 ## Appearance

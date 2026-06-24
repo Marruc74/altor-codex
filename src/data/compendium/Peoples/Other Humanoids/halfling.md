@@ -1,5 +1,14 @@
 # Halfling
 
+![Halfling](/compendium/Peoples/Other Humanoids/halfling.jpg "Halfling")
+![Halfling](/compendium/Peoples/Other Humanoids/halfling-2.jpg "Halfling")
+![Halfling](/compendium/Peoples/Other Humanoids/halfling-3.jpg "Halfling")
+![Halfling](/compendium/Peoples/Other Humanoids/halfling-4.jpg "Halfling")
+![Female Halfling](/compendium/Peoples/Other Humanoids/halfling-female.jpg "Female Halfling")
+![Female Halfling](/compendium/Peoples/Other Humanoids/halfling-female-2.jpg "Female Halfling")
+![Female Halfling](/compendium/Peoples/Other Humanoids/halfling-female-3.jpg "Female Halfling")
+![Female Halfling](/compendium/Peoples/Other Humanoids/halfling-female-4.jpg "Female Halfling")
+
 A peaceful folk who live in dwellings dug into hills and cliffs, getting their living by farming, craft and trade. Some halfling cultures keep wholly apart from the Big Folk, while others live right among humans in their towns.
 
 ## Appearance

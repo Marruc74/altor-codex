@@ -1,5 +1,14 @@
 # Half-orc
 
+![Half-orc](/compendium/Peoples/Other Humanoids/half-orc.jpg "Half-orc")
+![Half-orc](/compendium/Peoples/Other Humanoids/half-orc-2.jpg "Half-orc")
+![Half-orc](/compendium/Peoples/Other Humanoids/half-orc-3.jpg "Half-orc")
+![Half-orc](/compendium/Peoples/Other Humanoids/half-orc-4.jpg "Half-orc")
+![Female Half-orc](/compendium/Peoples/Other Humanoids/half-orc-female.jpg "Female Half-orc")
+![Female Half-orc](/compendium/Peoples/Other Humanoids/half-orc-female-2.jpg "Female Half-orc")
+![Female Half-orc](/compendium/Peoples/Other Humanoids/half-orc-female-3.jpg "Female Half-orc")
+![Female Half-orc](/compendium/Peoples/Other Humanoids/half-orc-female-4.jpg "Female Half-orc")
+
 Half-orcs seem a grim blend of human and orc, but are in practice humans with orcish traits, far more human than orc; unlike any of the dark folk, they can even learn magic. They are born of unions between humans and orcs, usually violent ones, and so are rare, though they tend to appear several at a time.
 
 ## Appearance

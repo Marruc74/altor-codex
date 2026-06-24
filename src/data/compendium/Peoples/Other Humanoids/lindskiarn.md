@@ -1,5 +1,13 @@
 # Lindskiarn
 
+![Lindskiarn](/compendium/Peoples/Other Humanoids/lindskiarn.jpg "Lindskiarn")
+![Lindskiarn](/compendium/Peoples/Other Humanoids/lindskiarn-2.jpg "Lindskiarn")
+![Lindskiarn](/compendium/Peoples/Other Humanoids/lindskiarn-3.jpg "Lindskiarn")
+![Female Lindskiarn](/compendium/Peoples/Other Humanoids/lindskiarn-female.jpg "Female Lindskiarn")
+![Female Lindskiarn](/compendium/Peoples/Other Humanoids/lindskiarn-female-2.jpg "Female Lindskiarn")
+![Female Lindskiarn](/compendium/Peoples/Other Humanoids/lindskiarn-female-3.jpg "Female Lindskiarn")
+![Female Lindskiarn](/compendium/Peoples/Other Humanoids/lindskiarn-female-4.jpg "Female Lindskiarn")
+
 The lindskiarn, also called the pharynkier, are a people of unknown origin, and most who have studied them think them magical in some way. They came as conquerors and were broken as conquerors, and where they once raised a dazzling city they now cling to life in a few hidden valleys. They were feared as warriors and admired as craftsmen, but today they are nearly gone, so few and so secret that anyone who stumbles on one usually takes it for a giant or a troll.
 
 ## Appearance

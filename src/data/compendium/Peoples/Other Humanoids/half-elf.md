@@ -1,5 +1,14 @@
 # Half-elf
 
+![Half-elf](/compendium/Peoples/Other Humanoids/half-elf.jpg "Half-elf")
+![Half-elf](/compendium/Peoples/Other Humanoids/half-elf-2.jpg "Half-elf")
+![Half-elf](/compendium/Peoples/Other Humanoids/half-elf-3.jpg "Half-elf")
+![Half-elf](/compendium/Peoples/Other Humanoids/half-elf-4.jpg "Half-elf")
+![Female Half-elf](/compendium/Peoples/Other Humanoids/half-elf-female.jpg "Female Half-elf")
+![Female Half-elf](/compendium/Peoples/Other Humanoids/half-elf-female-2.jpg "Female Half-elf")
+![Female Half-elf](/compendium/Peoples/Other Humanoids/half-elf-female-3.jpg "Female Half-elf")
+![Female Half-elf](/compendium/Peoples/Other Humanoids/half-elf-female-4.jpg "Female Half-elf")
+
 Half-elves are a rare crossing of elf and human, uncommon mostly for cultural reasons, since any elf race can bear children with humans. Whoever the elven parent, the child takes far more after the human side.
 
 ## Appearance

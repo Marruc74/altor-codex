@@ -1,5 +1,12 @@
 # Highman
 
+![Highman](/compendium/Peoples/Other Humanoids/highman.jpg "Highman")
+![Highman](/compendium/Peoples/Other Humanoids/highman-2.jpg "Highman")
+![Highman](/compendium/Peoples/Other Humanoids/highman-3.jpg "Highman")
+![Female Highman](/compendium/Peoples/Other Humanoids/highman-female.jpg "Female Highman")
+![Female Highman](/compendium/Peoples/Other Humanoids/highman-female-2.jpg "Female Highman")
+![Female Highman](/compendium/Peoples/Other Humanoids/highman-female-3.jpg "Female Highman")
+
 The origin of the highmen is still debated, though they themselves claim descent from a people raised up in the elder days by the presence of a god they call Tarban. Over the ages their small numbers have dwindled further through mingling with ordinary humans, so they are now very rare.
 
 ## Appearance
