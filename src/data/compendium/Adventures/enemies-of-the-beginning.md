@@ -7,27 +7,36 @@ summary: "Hired to find the commandant's vanished son, a band of adventurers unc
 videoIds: []
 characters:
   - name: Yrea Destanior
+    image: /compendium/Adventures/EnemiesOfTheBeginning/Yrea.jpg
     description: "The commandant's only daughter, a bard who loves her brother and loathes the dark arts, and who hires the band in secret to find him while her father pays a ransom and tells no one."
   - name: Groffotor Destanior
+    image: /compendium/Adventures/EnemiesOfTheBeginning/Groffotor.jpg
     description: "The commandant's son, an apprentice magician who left the elements to study among the necromancers, kidnapped because his master needed him out of the way. His skin has turned green from a slow change he hides under paint."
   - name: Jesefael Bamilit
+    image: /compendium/Adventures/EnemiesOfTheBeginning/Jesefael.jpg
     description: "An ageless animist and free-thinker who has plotted the ruin of Krilloan's necromancers for over fifty years, out of an old hatred all his own. Patient, green-skinned, and unmoved by the deaths his scheme requires."
   - name: Mystiria Bentonor
+    image: /compendium/Adventures/EnemiesOfTheBeginning/Mystiria.jpg
     description: "A harmonist of Ordo Magica whose enchanted hair makes music without an instrument, and who turns a peaceful crowd into a murderous mob with a few bars of song."
   - name: Lauritz Huggard
     description: "A fat, pale priest of the Shining Way who sits on the city council and despises Tannatopol, and who poisons the holy water so that the faithful leave worship hating the necromancers."
   - name: Lucretia Meleagros
+    image: /compendium/Adventures/EnemiesOfTheBeginning/Lucretia.jpg
     description: "A vain seductress and tattoo-witch in Jesefael's service, terrified of growing old, whose inked skin carries charms of beauty and paralysis."
   - name: Melchior Desdemonikon
     description: "An illusionist who hides his true age behind forged papers, an apprentice of Jesefael who works on the poisoned faithful to bend their minds against the necromancers."
   - name: Torquivel
+    image: /compendium/Adventures/EnemiesOfTheBeginning/Torquivel.jpg
     description: "A white witch hired to age the cloned dragon to its full growth, half in love with Jesefael and devoted to the beast she helped raise, who may yet turn on her master."
   - name: Narnie Santhan
+    image: /compendium/Adventures/EnemiesOfTheBeginning/Narnie.jpg
     description: "A young spiritist whose uncanny gift comes from a nature-spirit lodged in her mind, drugged and used against her will to drive the dead dragon's soul into its new body."
   - name: Guazzo Arathaso
+    image: /compendium/Adventures/EnemiesOfTheBeginning/Guazzo.jpg
     description: "A dwarf demonologer, alchemist and inventor, the city's great industrialist, who helps the band and gives them a gilded apple that can break any enchantment once."
 creatures:
   - name: Helsikel
+    image: /compendium/Adventures/EnemiesOfTheBeginning/Helsikel.jpg
     entry: fire-dragon
     description: "The dragon Morriart raised anew: grown from a scrap of the dead beast's hide into a great egg, hatched, and aged to full size by witchcraft, its old soul driven back into it. Jesefael means to ride it against Tannatopol."
   - name: Elmer

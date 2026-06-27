@@ -1,5 +1,16 @@
 # Ainu
 
+
+![Ainu](/compendium/Peoples/Humans/ainu.jpg "Ainu")
+![Ainu](/compendium/Peoples/Humans/ainu-2.jpg "Ainu")
+![Ainu](/compendium/Peoples/Humans/ainu-3.jpg "Ainu")
+![Ainu](/compendium/Peoples/Humans/ainu-4.jpg "Ainu")
+![Female Ainu](/compendium/Peoples/Humans/ainu-female-1.jpg "Female Ainu")
+![Female Ainu](/compendium/Peoples/Humans/ainu-female-2.jpg "Female Ainu")
+![Female Ainu](/compendium/Peoples/Humans/ainu-female-3.jpg "Female Ainu")
+![Female Ainu](/compendium/Peoples/Humans/ainu-female-4.jpg "Female Ainu")
+![Female Ainu](/compendium/Peoples/Humans/ainu-female-5.jpg "Female Ainu")
+
 The Ainu are the first people of Jih-pun, and quite unlike the Jih-mono who came after them: fair of skin, dark of hair, and heavily bearded, where the islanders of the south are black-haired and smooth-faced. They were the hunters and gatherers of the island in the age before rice and before the newcomers crossed from the mainland.
 
 ## Driven North

@@ -7,17 +7,23 @@ summary: In the city of Krilloan a band of adventurers comes by chance into poss
 videoIds: []
 characters:
   - name: Auxin Mendel
+    image: /compendium/Adventures/ShadowOfARose/Auxin.jpg
     description: "The frightened courier who carries the silver chalice into Krilloan to have it destroyed, run down in a dark alley and dying in the adventurers' arms before he can say why it matters."
   - name: Mildred Yeovil
+    image: /compendium/Adventures/ShadowOfARose/Mildred.jpg
     description: "A renowned herb-mistress and the foremost of the Black Rose Brotherhood in the city, ageless by a pact with Hemaquiel. She first sends others against the band, then comes to them openly and asks their help against the vampire who has betrayed her order."
   - name: Hilja Adriagoles
+    image: /compendium/Adventures/ShadowOfARose/Hilja.jpg
     description: "A paralysed medium of the Brotherhood who sends her soul out of her wasted body, slips into one of the adventurers unseen, and rides along inside the band as their hidden spy."
   - name: Lerajie Dantalion
+    image: /compendium/Adventures/ShadowOfARose/Lerajie.jpg
     entry: vampire
     description: "An ancient vampire-sorcerer of Imária's cult, once a queen's counsellor, freed from his sarcophagus by miners. Impatient for the chalice, he raises a death-knight to butcher everyone who resembles the band, and so turns the whole city against the necromancers."
   - name: Karcist Kataris
+    image: /compendium/Adventures/ShadowOfARose/Karcist.jpg
     description: "A masked assassin of the Gendilj cult and the band's mysterious benefactor, who shadows them in the hope they will lead him to Imária's worshippers, and fights at their side when the reckoning comes."
   - name: Scargil
+    image: /compendium/Adventures/ShadowOfARose/Scargil.jpg
     description: "A hideous, scrupleless hermit-mage, his skin like turned earth, hired by the Brotherhood to defile a temple of the Shining Way and cast the blame upon the band."
   - name: Hemaquiel
     entry: the-oktagon
@@ -26,12 +32,15 @@ characters:
     description: "The riddling demon-librarian of the Black Library, who alone can say which of its doors a fleeing soul has taken, and only to those who answer his riddle."
 creatures:
   - name: Eberhard
+    image: /compendium/Adventures/ShadowOfARose/Eberhard.jpg
     entry: nightwolf
     description: "Lerajie's night-wolf and bodyguard, the bound spirit of a queen's favourite slain long ago, fettered now into the body of a great wolf."
   - name: Rafael
+    image: /compendium/Adventures/ShadowOfARose/Rafael.jpg
     entry: death-knight
     description: "The death-knight Lerajie raises from the bones of a dead judge, a thing in armour that feels no pain and can call up corpse-servants of its own. He looses it to butcher everyone in the city who resembles the band, and so turns Krilloan against the necromancers."
   - name: Nolgor
+    image: /compendium/Adventures/ShadowOfARose/Nolgor.jpg
     entry: deadmans-hand
     description: "A severed, crawling hand worked by the medium Hilja's necromancy, sent creeping after the silver chalice to steal it from the band while they sleep."
   - name: The Banemän

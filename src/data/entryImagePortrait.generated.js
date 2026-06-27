@@ -2,6 +2,7 @@
 // Slugs whose first image is portrait (taller than wide), for card framing.
 export const portraitSlugs = new Set([
   "acid-lizard",
+  "ainu",
   "alegar",
   "alfin",
   "ambiorm",

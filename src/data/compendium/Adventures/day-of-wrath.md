@@ -15,6 +15,7 @@ characters:
   - name: Migael Kalvuonos
     description: "An aged, dark-skinned scholar and historian who keeps a copy of the prophecy and can tell the band of the long-dead order that first took it to heart."
   - name: Mildred Yeovil
+    image: /compendium/Adventures/ShadowOfARose/Mildred.jpg
     description: "The Black Rose Brotherhood's envoy, who comes to the band with the one answer the churches cannot give: that an angel can be matched only by a devil, and that the Brotherhood knows how to raise one."
   - name: Teitan
     entry: demon-prince

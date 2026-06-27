@@ -190,6 +190,7 @@ export const entryImages = {
   "silver-elf": "/compendium/Peoples/Elves/silver-elf-2.jpg",
   "water-elf": "/compendium/Peoples/Elves/water-elf-2.jpg",
   "wood-elf": "/compendium/Peoples/Elves/wood-elf-2.jpg",
+  "ainu": "/compendium/Peoples/Humans/ainu.jpg",
   "hedemi": "/compendium/Peoples/Humans/hedemi.jpg",
   "jih-mono": "/compendium/Peoples/Humans/jih-mono.jpg",
   "pamperna": "/compendium/Peoples/Humans/pamperna.jpg",
