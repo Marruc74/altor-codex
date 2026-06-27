@@ -949,6 +949,12 @@ export const generatedSources = {
     "Alver",
     "Monsterboxen II: De humanoida raserna"
   ],
+  "palamux": [
+    "Trakorien"
+  ],
+  "paratorna": [
+    "Trakorien"
+  ],
   "pazuzu": [
     "Kaos Väktare",
     "Monsterboxen III: Kaos"
@@ -1079,6 +1085,9 @@ export const generatedSources = {
     "Monsterboken",
     "Monsterboken II"
   ],
+  "saphyna": [
+    "Trakorien"
+  ],
   "satyr": [
     "Alver",
     "Monsterboxen II: De humanoida raserna"
@@ -1120,8 +1129,7 @@ export const generatedSources = {
     "Monsterboken II"
   ],
   "shadow-of-a-rose": [
-    "Demonprinsen",
-    "Kopparhavets kapare"
+    "Krilloan: Äventyrsboken"
   ],
   "shadows-over-nohstril": [
     "Sinkadus 37"
@@ -1453,6 +1461,9 @@ export const generatedSources = {
   "tree-master": [
     "Monsterboken",
     "Monsterboken II"
+  ],
+  "trinsmyra": [
+    "Trakorien"
   ],
   "troglodyte": [
     "Monsterboxen II: De humanoida raserna"

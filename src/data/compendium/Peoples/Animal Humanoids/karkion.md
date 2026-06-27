@@ -1,5 +1,9 @@
 # Karkion
 
+
+![Karkion](/compendium/Peoples/Animal Humanoids/karkion.jpg "Karkion")
+![Karkion](/compendium/Peoples/Animal Humanoids/karkion-2.jpg "Karkion")
+
 The karkions are not of this world. Almost every thinking creature of Altor was made by its gods and set in its place, but the karkions came from another universe entirely, one that collapsed a few thousand years ago in a reversed unmaking. They had grown so deep in magic by then that most fled in time across the spiritual plane to the many worlds of the multiverse, and so came, among many other places, to Altor. They have wandered here for fifteen hundred years and more, named in the old chronicles of Jorpagna, Yndar and Tsunkuo, but they have always been very few and keep to the margins, and so have left little mark on humanity.
 
 ## Appearance

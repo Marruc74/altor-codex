@@ -7,6 +7,10 @@
 //   /compendium/Adventures/X/Culexis.jpg
 //   → /compendium/Adventures/X/Thumbnails/Culexis.jpg
 
+// Shown on a card that has no image of its own, so every card keeps the same
+// framed shape instead of an empty or sigil-only slot. Served from public/.
+export const IMAGE_MISSING = "/image-missing.svg";
+
 export function thumbSrc(src) {
   if (!src) return src;
   const slash = src.lastIndexOf("/");

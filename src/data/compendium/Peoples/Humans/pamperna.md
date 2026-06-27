@@ -1,5 +1,15 @@
 # Pamperna
 
+
+![Pamperna](/compendium/Peoples/Humans/pamperna.jpg "Pamperna")
+![Pamperna](/compendium/Peoples/Humans/pamperna-2.jpg "Pamperna")
+![Pamperna](/compendium/Peoples/Humans/pamperna-3.jpg "Pamperna")
+![Pamperna](/compendium/Peoples/Humans/pamperna-4.jpg "Pamperna")
+![Female Pamperna](/compendium/Peoples/Humans/pamperna-female-1.jpg "Female Pamperna")
+![Female Pamperna](/compendium/Peoples/Humans/pamperna-female-2.jpg "Female Pamperna")
+![Female Pamperna](/compendium/Peoples/Humans/pamperna-female-3.jpg "Female Pamperna")
+![Female Pamperna](/compendium/Peoples/Humans/pamperna-female-4.jpg "Female Pamperna")
+
 The Pamperna, the horse-folk of Zorakin, are a small and unusual people, barely a thousand of them, who keep the most sought-after horses anywhere on the Copper Sea. They live apart from the kingdom around them and ask nothing of it but to be left alone, and the crown guards them closely, because the animals they raise are worth a small fortune.
 
 ## The Horses

@@ -1,5 +1,12 @@
 # White Duck
 
+
+![White Duck](/compendium/Peoples/Animal Humanoids/white-duck.jpg "White Duck")
+![White Duck](/compendium/Peoples/Animal Humanoids/white-duck-2.jpg "White Duck")
+![White Duck](/compendium/Peoples/Animal Humanoids/white-duck-3.jpg "White Duck")
+![Female White Duck](/compendium/Peoples/Animal Humanoids/white-duck-female-1.jpg "Female White Duck")
+![Female White Duck](/compendium/Peoples/Animal Humanoids/white-duck-female-2.jpg "Female White Duck")
+
 The duck-folk come in three kinds: the dreaded black ducks, seafaring pirates and the commonest of all; the far more peaceable white ducks, who are almost all traders; and the rarer, more warlike brown ducks, who often grow up to be mercenaries. The white ducks are the gentlest of the three, making their living almost entirely by trade. They usually live among humans in human cities, though there are pure duck-towns and duck-quarters as well.
 
 ## Appearance
