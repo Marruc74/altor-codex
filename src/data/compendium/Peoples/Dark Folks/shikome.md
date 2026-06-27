@@ -1,5 +1,15 @@
 # Shikome
 
+
+![Shikome](/compendium/Peoples/Dark Folks/shikome.jpg "Shikome")
+![Shikome](/compendium/Peoples/Dark Folks/shikome-2.jpg "Shikome")
+![Shikome](/compendium/Peoples/Dark Folks/shikome-3.jpg "Shikome")
+![Shikome](/compendium/Peoples/Dark Folks/shikome-4.jpg "Shikome")
+![Female Shikome](/compendium/Peoples/Dark Folks/shikome-female-1.jpg "Female Shikome")
+![Female Shikome](/compendium/Peoples/Dark Folks/shikome-female-2.jpg "Female Shikome")
+![Female Shikome](/compendium/Peoples/Dark Folks/shikome-female-3.jpg "Female Shikome")
+![Female Shikome](/compendium/Peoples/Dark Folks/shikome-female-4.jpg "Female Shikome")
+
 The shikome are the mountain-orcs of Jih-pun, a folk of the high stone who hate all human-kind, for it was the islanders who long ago drove them up out of the good country and into the peaks. They live in cave-complexes deep in the Fujimuri range, and they eat the very rock.
 
 ## Raiders

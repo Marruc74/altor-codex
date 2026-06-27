@@ -1,6 +1,7 @@
 ---
 title: Day of Wrath
 series: "Krilloan"
+seriesPart: 3
 tagline: "An archangel walks Krilloan by night, killing sinners one by one toward a four-hundred-year-old prophecy, and there may be no way to stop him but to raise a devil out of one of your own."
 summary: A mad prophecy is coming true in Krilloan. The archangel Angarion, wearing the body of an old hermit-monk, murders sinners toward a count of forty-nine, after which the prophecy promises the world's end and a paradise for the righteous alone. A band of adventurers must trace the killings to an abandoned mountain cloister, and may find that the only thing that can stand against an angel is a devil raised from one of themselves.
 videoIds: []

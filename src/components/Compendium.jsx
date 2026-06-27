@@ -5,7 +5,7 @@ import { SECTIONS, videosBySection, videos as allVideos, allEntries } from "../d
 import { adventures, adventureGroups } from "../data/adventures";
 import { adventuresByPin, adventuresByEntryId } from "../data/adventureLinks";
 import { videosForPin, relatedVideosByVideo } from "../data/crossLinks";
-import { thumbSrc, onThumbError } from "../lib/thumb";
+import { thumbSrc, onThumbError, IMAGE_MISSING } from "../lib/thumb";
 import { entryImages } from "../data/entryImages.generated";
 import { portraitSlugs } from "../data/entryImagePortrait.generated";
 import { entryBlurbs } from "../data/entryBlurbs.generated";
@@ -22,6 +22,12 @@ import ConnectionsGraph from "./ConnectionsGraph";
 // A card image: shows the thumbnail, falls back to the full image if the
 // thumbnail is missing. The full image is loaded by the lightbox / detail page.
 function CardImage({ src, alt }) {
+  // No image of its own: show the shared "image missing" placeholder so the card
+  // keeps the same framed shape as the rest.
+  if (!src)
+    return (
+      <img className="codex-card__image codex-card__image--missing" src={IMAGE_MISSING} alt="" aria-hidden="true" />
+    );
   return (
     <img
       className="codex-card__image"
@@ -155,7 +161,7 @@ function CardGrid({ label, items, portrait = false, onOpenPage, onVideoSelect, o
           // Suffix with the index: a grid can list two cards that resolve to the
           // same entry slug (e.g. two "Ogre" cards), so the slug alone collides.
           const key = `${it.entry ?? it.name ?? it.videoId ?? "card"}-${i}`;
-          const imageWrap = cardImage && (
+          const imageWrap = (
             <div className="codex-card__image-wrap">
               <CardImage src={cardImage} alt={it.name} />
             </div>
@@ -428,7 +434,7 @@ function HubView({ hub, geoGroups, onOpenHub, onOpenPage }) {
               disabled={!target}
             >
               <div className="codex-card__image-wrap">
-                {img ? <CardImage src={img} alt={it.name} /> : <span className="codex-card__placeholder">{sigil}</span>}
+                <CardImage src={img} alt={it.name} />
               </div>
               <div className="codex-card__body">
                 <p className="codex-card__title">{it.name}</p>

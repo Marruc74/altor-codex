@@ -147,6 +147,18 @@ const GROUP_BOOKS = {
   "Schools": [MAGE], "Items": [KRIGARE], "The Multiverse": [KAOS],
 };
 
+// Adventures that come from one known book, listed authoritatively because the
+// reference file uses the Swedish adventure title (e.g. "Skuggan av en ros"), so
+// the English page title can't title-match and the proper-noun fallback would
+// otherwise mis-score them against setting-sharing siblings. The whole Krilloan
+// campaign (Shadow of a Rose, Enemies of the Beginning, Day of Wrath) is in the
+// one Krilloan adventure book and nothing else.
+const ADVENTURE_BOOK = {
+  "shadow-of-a-rose": "Krilloan: Äventyrsboken",
+  "enemies-of-the-beginning": "Krilloan: Äventyrsboken",
+  "day-of-wrath": "Krilloan: Äventyrsboken",
+};
+
 // Registry → slug → group.
 const { compendiumRegistry } = await import(pathToFileURL(path.join(root, "src/data/compendiumRegistry.generated.js")).href);
 const groupBySlug = {};
@@ -160,6 +172,10 @@ for (const fp of walk(compDir)) {
   const slug = path.basename(fp).replace(/\.md$/, "");
   const text = fs.readFileSync(fp, "utf8");
   const isAdventure = fp.replace(/\\/g, "/").includes("/Adventures/");
+
+  // Authoritative single-book adventures: set the one source and skip all other
+  // matching (including the proper-noun fallback), so no stray book is added.
+  if (ADVENTURE_BOOK[slug]) { add(slug, ADVENTURE_BOOK[slug]); continue; }
 
   let title = text.match(/^#\s+(.+)$/m)?.[1]?.trim();
   let advMeta = null;

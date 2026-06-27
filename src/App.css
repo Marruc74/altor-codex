@@ -1361,72 +1361,66 @@ body {
   gap: 3.5rem;
 }
 
-.chronicles-sub__title {
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--gold-dim);
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--border);
-}
+/* Chronicles uses the Compendium's sidebar layout (.compendium-layout /
+   -sidebar / -nav / -main). The story chapters carry a numeral (0, I–V). */
+.chron-nav__hd { cursor: default; }
+.chron-nav__hd:hover { background: none; }
+.chron-nav__hd:hover .compendium-nav__title,
+.chron-nav__hd:hover .compendium-nav__sigil { color: var(--gold-dim); }
 
-/* Adventure group header: a clickable title row that opens the adventure. */
-.chronicles-group__hd {
-  width: 100%;
+.chron-nav__item {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
-  background: none;
-  border: none;
-  border-bottom: 1px solid var(--border);
-  padding: 0 0 0.5rem;
-  margin-bottom: 1.5rem;
-  cursor: pointer;
-  text-align: left;
-  transition: border-color var(--transition);
+  gap: 0.55rem;
 }
 
-.chronicles-group__hd:hover {
-  border-bottom-color: var(--gold-dim);
-}
-
-/* Bare title variant used inside the group header (the row owns the border). */
-.chronicles-sub__title--bare {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: none;
-  color: var(--gold-light);
-}
-
-.chronicles-group__cta {
+.chron-nav__num {
   flex-shrink: 0;
+  width: 1.3rem;
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+  text-align: right;
+}
+
+/* "Read the adventure" button above an adventure's cards. */
+.chron-read-cta {
+  display: inline-block;
+  background: none;
+  border: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+  margin: 0 0 2rem;
+  cursor: pointer;
   font-family: var(--font-heading);
   font-size: 0.68rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--gold-dim);
-  transition: color var(--transition);
+  transition: color var(--transition), border-color var(--transition);
 }
 
-.chronicles-group__hd:hover .chronicles-group__cta {
+.chron-read-cta:hover {
   color: var(--gold);
+  border-color: var(--gold-dim);
 }
 
-/* A card-type block (People / Places / Locations / Items) within a group. */
-.chronicles-type + .chronicles-type {
-  margin-top: 2rem;
-}
-
-.chronicles-type__title {
+/* Chronicles cards reuse the Compendium card; add the small kicker/eyebrow the
+   lore carries, and calm the hover on cards that do not link anywhere. */
+.codex-card__kicker {
   font-family: var(--font-heading);
-  font-size: 0.72rem;
+  font-size: 0.62rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 1rem;
+  color: var(--gold-dim);
+}
+
+.chron-card .codex-card__body { gap: 0.4rem; }
+
+.chron-card:not(.codex-card--link) { cursor: default; }
+.chron-card:not(.codex-card--link):hover {
+  transform: none;
+  border-color: var(--border);
 }
 
 .media-grid {
@@ -2916,6 +2910,18 @@ body {
 
 .codex-card:hover .codex-card__image {
   transform: scale(1.03);
+}
+
+/* The "image missing" placeholder: show the whole glyph (not cropped), and skip
+   the hover zoom since there is nothing to zoom into. */
+.codex-card__image--missing {
+  object-fit: contain;
+  padding: 8%;
+  box-sizing: border-box;
+}
+
+.codex-card:hover .codex-card__image--missing {
+  transform: none;
 }
 
 .codex-card__placeholder {

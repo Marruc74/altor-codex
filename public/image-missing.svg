@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img" aria-label="Image missing">
+  <g fill="none" stroke="#8a7340" stroke-width="2.5" opacity="0.55">
+    <rect x="62" y="40" width="116" height="78" rx="4"/>
+    <circle cx="92" cy="66" r="9"/>
+    <path d="M66 112 L104 80 L126 98 L150 74 L174 104 L174 114 L66 114 Z" fill="#8a7340" fill-opacity="0.18" stroke-linejoin="round"/>
+    <line x1="70" y1="124" x2="170" y2="34" stroke-width="3"/>
+  </g>
+  <text x="120" y="150" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" letter-spacing="3" fill="#8a7340" opacity="0.7">IMAGE MISSING</text>
+</svg>

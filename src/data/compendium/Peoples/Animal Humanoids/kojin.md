@@ -1,5 +1,15 @@
 # Kojin
 
+
+![Kojin](/compendium/Peoples/Animal Humanoids/kojin.jpg "Kojin")
+![Kojin](/compendium/Peoples/Animal Humanoids/kojin-2.jpg "Kojin")
+![Kojin](/compendium/Peoples/Animal Humanoids/kojin-3.jpg "Kojin")
+![Kojin](/compendium/Peoples/Animal Humanoids/kojin-4.jpg "Kojin")
+![Female Kojin](/compendium/Peoples/Animal Humanoids/kojin-female-1.jpg "Female Kojin")
+![Female Kojin](/compendium/Peoples/Animal Humanoids/kojin-female-2.jpg "Female Kojin")
+![Female Kojin](/compendium/Peoples/Animal Humanoids/kojin-female-3.jpg "Female Kojin")
+![Female Kojin](/compendium/Peoples/Animal Humanoids/kojin-female-4.jpg "Female Kojin")
+
 The kojin are a sea-dwelling folk of Jih-pun, half shark and half human, who keep whole societies beneath the waves much like those of the islanders above. They breathe through gills and can last only an hour or so on land before they must return to the water.
 
 ## Way of Life

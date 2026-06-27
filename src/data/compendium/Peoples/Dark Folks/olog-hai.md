@@ -1,5 +1,15 @@
 # Olog-hai
 
+
+![Olog-hai](/compendium/Peoples/Dark Folks/olog-hai.jpg "Olog-hai")
+![Olog-hai](/compendium/Peoples/Dark Folks/olog-hai-2.jpg "Olog-hai")
+![Olog-hai](/compendium/Peoples/Dark Folks/olog-hai-3.jpg "Olog-hai")
+![Olog-hai](/compendium/Peoples/Dark Folks/olog-hai-4.jpg "Olog-hai")
+![Female Olog-hai](/compendium/Peoples/Dark Folks/olog-hai-female-1.jpg "Female Olog-hai")
+![Female Olog-hai](/compendium/Peoples/Dark Folks/olog-hai-female-2.jpg "Female Olog-hai")
+![Female Olog-hai](/compendium/Peoples/Dark Folks/olog-hai-female-3.jpg "Female Olog-hai")
+![Female Olog-hai](/compendium/Peoples/Dark Folks/olog-hai-female-4.jpg "Female Olog-hai")
+
 The olog-hai are a troll-kind unlike all the others, for they can bear the light of day. Where common trolls turn to stone in the sun and must sleep the daylight hours away, the olog-hai walk abroad by day untroubled, though they like it little and keep to shade where they can. They do not much resemble orcs, yet some hold they were bred from orc stock among other things.
 
 ## Appearance

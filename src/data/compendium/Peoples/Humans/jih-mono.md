@@ -1,5 +1,15 @@
 # Jih-mono
 
+
+![Jih-mono](/compendium/Peoples/Humans/jih-mono.jpg "Jih-mono")
+![Jih-mono](/compendium/Peoples/Humans/jih-mono-2.jpg "Jih-mono")
+![Jih-mono](/compendium/Peoples/Humans/jih-mono-3.jpg "Jih-mono")
+![Jih-mono](/compendium/Peoples/Humans/jih-mono-4.jpg "Jih-mono")
+![Female Jih-mono](/compendium/Peoples/Humans/jih-mono-female-1.jpg "Female Jih-mono")
+![Female Jih-mono](/compendium/Peoples/Humans/jih-mono-female-2.jpg "Female Jih-mono")
+![Female Jih-mono](/compendium/Peoples/Humans/jih-mono-female-3.jpg "Female Jih-mono")
+![Female Jih-mono](/compendium/Peoples/Humans/jih-mono-female-4.jpg "Female Jih-mono")
+
 The Jih-mono are the people of Jih-pun, very nearly all of its ten million souls. They are short of stature beside the folk of the West, with straight black hair, flat noses and narrow eyes, and they speak a tongue, Jih-wen, that belongs to no Western family of speech.
 
 ## Out of the Sea

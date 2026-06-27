@@ -1,5 +1,15 @@
 # Hedemi
 
+
+![Hedemi](/compendium/Peoples/Humans/hedemi.jpg "Hedemi")
+![Hedemi](/compendium/Peoples/Humans/hedemi-2.jpg "Hedemi")
+![Hedemi](/compendium/Peoples/Humans/hedemi-3.jpg "Hedemi")
+![Hedemi](/compendium/Peoples/Humans/hedemi-4.jpg "Hedemi")
+![Female Hedemi](/compendium/Peoples/Humans/hedemi-female-1.jpg "Female Hedemi")
+![Female Hedemi](/compendium/Peoples/Humans/hedemi-female-2.jpg "Female Hedemi")
+![Female Hedemi](/compendium/Peoples/Humans/hedemi-female-3.jpg "Female Hedemi")
+![Female Hedemi](/compendium/Peoples/Humans/hedemi-female-4.jpg "Female Hedemi")
+
 The Hedemi are one of the stranger human peoples of Ereb, wanderers without a homeland whose horse-drawn wagons have rolled across the mainland for as long as anyone can record. The oldest writings that name them are more than five hundred years old, and even then their wagons were already a familiar sight over much of the continent. They keep a tongue of their own, unrelated to the common speech, and a culture all their own, and their name in that tongue, hedemi, means "the unbound," for the endless road they have always travelled.
 
 ## Appearance

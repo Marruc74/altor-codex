@@ -1,6 +1,7 @@
 ---
 title: Enemies of the Beginning
 series: "Krilloan"
+seriesPart: 2
 tagline: "The commandant's son is gone, the mob is burning necromancers in the streets, and behind it all wait an old animist's fifty-year grudge and a dragon raised from the dead."
 summary: "Hired to find the commandant's vanished son, a band of adventurers uncovers a long conspiracy against the necromancers of Tannatopol. The animist Jesefael Bamilit has spent half a century preparing his revenge, and has grown the dead dragon Morriart anew, turned the city into a mob against its necromancers, and means to lead Krilloan to war upon the isle. The trail runs from a magician's pillar-tower to a treasure-cave beneath the mountains."
 videoIds: []
