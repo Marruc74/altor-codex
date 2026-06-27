@@ -2,6 +2,7 @@
 // Slugs whose first image is portrait (taller than wide), for card framing.
 export const portraitSlugs = new Set([
   "acid-lizard",
+  "alegar",
   "alfin",
   "ambiorm",
   "angyon",
@@ -48,6 +49,7 @@ export const portraitSlugs = new Set([
   "dryad",
   "dwarf",
   "dwarf-horse",
+  "dyler",
   "efaro",
   "elefantine",
   "elephant-bird",
@@ -161,6 +163,7 @@ export const portraitSlugs = new Set([
   "sea-serpent",
   "serpent",
   "severed-head",
+  "sharg",
   "shranck",
   "silver-elf",
   "silver-shark",
@@ -197,6 +200,7 @@ export const portraitSlugs = new Set([
   "water-elf",
   "werewolf",
   "will-o-the-wisp",
+  "wolf-rider",
   "wolfman",
   "wood-elf",
   "woodman",

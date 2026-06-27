@@ -1,5 +1,14 @@
 # Dyler
 
+![Dyler](/compendium/Peoples/Other Humanoids/dyler.jpg "Dyler")
+![Dyler](/compendium/Peoples/Other Humanoids/dyler-2.jpg "Dyler")
+![Dyler](/compendium/Peoples/Other Humanoids/dyler-3.jpg "Dyler")
+![Dyler](/compendium/Peoples/Other Humanoids/dyler-4.jpg "Dyler")
+![Dyler](/compendium/Peoples/Other Humanoids/dyler-5.jpg "Dyler")
+![Female Dyler](/compendium/Peoples/Other Humanoids/dyler-female.jpg "Female Dyler")
+![Female Dyler](/compendium/Peoples/Other Humanoids/dyler-female-2.jpg "Female Dyler")
+![Female Dyler](/compendium/Peoples/Other Humanoids/dyler-female-3.jpg "Female Dyler")
+
 The Dyler are an ancient barbarian folk of the mountains, the aboriginal people of the land that became Magilre. Once they rolled across the whole peninsula; now they are penned back in the heights, nursing a grudge a thousand years old.
 
 ## Appearance

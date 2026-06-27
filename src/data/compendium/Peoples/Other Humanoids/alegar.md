@@ -1,5 +1,14 @@
 # Alegar
 
+![Alegar](/compendium/Peoples/Other Humanoids/alegar.jpg "Alegar")
+![Alegar](/compendium/Peoples/Other Humanoids/alegar-2.jpg "Alegar")
+![Alegar](/compendium/Peoples/Other Humanoids/alegar-3.jpg "Alegar")
+![Alegar](/compendium/Peoples/Other Humanoids/alegar-4.jpg "Alegar")
+![Female Alegar](/compendium/Peoples/Other Humanoids/alegar-female.jpg "Female Alegar")
+![Female Alegar](/compendium/Peoples/Other Humanoids/alegar-female-2.jpg "Female Alegar")
+![Female Alegar](/compendium/Peoples/Other Humanoids/alegar-female-3.jpg "Female Alegar")
+![Female Alegar](/compendium/Peoples/Other Humanoids/alegar-female-4.jpg "Female Alegar")
+
 The alegar are an ancient humanoid folk of Ereb's wild mountains and forests, the work of some unknown god and little changed since the day they were made. They call themselves aleg; other men call them cave-people, for they dwell in caves, though not under the earth. Squat and heavily built, with strong, sinewy muscle, great heads on low sloping brows, heavy ridges over the eyes and almost no chin, thickly haired and clad in skins, they are near kin in look to the old neanderthal men, and are at bottom ordinary folk but for two things that set them wholly apart.
 
 ## The Two Gifts
