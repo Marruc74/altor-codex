@@ -380,13 +380,11 @@ const CHRONICLE_IDS = new Set(["6LBJzNV1ELE", "uwAW1TD2hi4", "SkHa9w8liis", "-6x
 
 // Videos surfaced only as "Related Videos" on another entry's page (e.g. an elf
 // sub-topic on the Cave Elf page). They stay in `videos` (resolvable by id for
-// those links) but are hidden from the standalone Compendium nav — no own page.
-export const CONNECTED_ONLY_IDS = new Set([
-  "SPxoPRwTtDY", // Cities beneath ground → Cave Elf
-  "QA00fO4mqNU", // Floating Islands     → Grey Elf
-  "pf3G1J3vqWI", // White Towers         → High Elf
-  "6JVP0Wpgd20", // Fortress             → Dark Elf
-]);
+// those links) but are hidden from the standalone Compendium nav - no own page.
+// The four elf-home videos (White Towers, Fortress, Cities beneath ground,
+// Floating Islands) now have their own pages nested under their kindred, so
+// they are no longer connected-only.
+export const CONNECTED_ONLY_IDS = new Set([]);
 
 // Build { sectionId → [ { group: string|null, videos[] }, ... ] }
 // Ungrouped entries (group===null) come first, then named groups sorted alphabetically

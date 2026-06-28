@@ -1,5 +1,10 @@
 # Grogol Gribb
 
+![Grogol Gribb](/compendium/Lore/Factions/grogol-gribb.jpg "Grogol Gribb")
+![Grogol Gribb](/compendium/Lore/Factions/grogol-gribb-2.jpg "Grogol Gribb")
+![Girnackh bonemen](/compendium/Lore/Factions/grogol-gribb-girnackh-bonemen.jpg "Girnackh bonemen")
+![Skuddnigh](/compendium/Lore/Factions/grogol-gribb-skuddnigh.jpg "Skuddnigh")
+
 Grogol Gribb, the Dwarf-stranglers, is the Burned Earth Clan's tribe of mountain-orcs, the girnackh. It is the smallest of the clan's main tribes, about a hundred and seventy strong with some hundred and ten warriors, led by the chieftain Dooghrack and served by two bone-men, Nacklock and Ylknogh. It dwells high in the hollows of the Aidne Mountains. Its mark is two bits of bone braided through holes in the outer ear, and its warriors carry dwarf-scalps at the belt. Its shields are faced with dwarf-bones, scalps and beard-braids, the base painted red, and its war-cry is "Gribb, gribb, gribb," strangle, over and over.
 
 As mountain-orcs they are heavier and stronger than the clan's kraukh-orcs, and as their name promises they are above all the enemies of the dwarves of the Aidne Mountains, whom they hunt and kill wherever the high passes bring the two peoples together. They are heavily armed and armoured, with metal-reinforced shields, and they are both disciplined and loyal, much of that the work of Skuddnigh, their smith-master, who turned the tribe into a heavily armoured host and whose weapons bite harder and last longer than common work. They are fanatical worshippers of the moon, and their bone-men labour to turn them toward Kraukh.

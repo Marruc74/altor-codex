@@ -1,5 +1,8 @@
 # Imária
 
+![Imária](/compendium/Lore/Religions/imaria.jpg "Imária")
+![Imária](/compendium/Lore/Religions/imaria-2.jpg "Imária")
+
 Imária is the goddess of the undead and of eternal torment, and the mightiest of the eight demon-princes of the Oktagon, who are bound to Raukhra, the evil red moon. Hers is a worship of the grave and of suffering made sacrament, kept in secret wherever the dead are made to serve and pain is offered up as a gift.
 
 ## The Chained Goddess

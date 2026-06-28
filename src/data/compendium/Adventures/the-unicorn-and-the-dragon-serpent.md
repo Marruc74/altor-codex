@@ -16,12 +16,14 @@ sections:
         description: The stretch of Hynsolge coast where fishing boats ferry the new recruits ashore from their ship by night, to begin the long march inland.
     npcs:
       - name: Abrahim Stenklo
+        image: /compendium/Adventures/TheUnicornAndTheDragonSerpent/abrahim.jpg
         description: Leader of the rebellion and lord of the New Army, raised to baron of Ansorvia after he led the rising that toppled its old lord. Son of the warrior Gornnan Stenklo, who was tortured to death by a baron, he has hated the nobility since boyhood and now takes his revenge. A patient, level-headed man and a fine speaker, though something of a womaniser - a failing that nearly killed him weeks ago when a woman tried to poison him. He and his generals have taken rooms at the Dead Rooster to plan the coming attack.
       - name: Serter Dubbelhand
         description: A handsome young man with a black ponytail, son of the imprisoned poet Agila, who signs the new mercenaries onto the rolls in the harbour and is active in the rebellion's cause.
       - name: Otho
         description: A general of the New Army who welcomes the mercenaries to Gråborg and sets them to drill and weapons-training while the host waits for more fighters.
       - name: Eb-Bolthar
+        image: /compendium/Adventures/TheUnicornAndTheDragonSerpent/Eb-Bolthar.jpg
         description: A famed and solitary warrior of ninety-eight years, high priest of the Bolthar cult, who looks barely forty. Sent by his god to fight in the war and stop Parikila's plans, he carries an enormous two-handed axe and says nothing he need not say. He sits alone over his cup at the Dead Rooster, and answers a friendly word with a glare.
   - title: The Dead Rooster
     description: The inn by the fortress's south-west tower, kept by a respected town councillor, where the rebel leaders scheme in a hired back room and where the heroes first catch the thread of the cult's plot.
@@ -32,8 +34,10 @@ sections:
       - name: Morkil Kregebo
         description: Called "the Rooster," keeper of the Dead Rooster and a member of Gråborg's town council, a respected man whose standing keeps his house orderly. His wife Adale runs the kitchen and his daughters Teja and Yana serve the bar.
       - name: Aldred Stenwaard
+        image: /compendium/Adventures/TheUnicornAndTheDragonSerpent/Aldred.jpg
         description: A young adventurer of great repute, one of the few ever to enter Gormowac's forest and return. Two years ago he killed a werewolf in Galdinor and was infected himself, a secret he keeps with Salah's help. He eats with a wooden fork to avoid touching silver, and warns off any man who looks too long at his woman.
-      - name: Salah Guldhiärta
+      - name: Salah Goldheart
+        image: /compendium/Adventures/TheUnicornAndTheDragonSerpent/Salah.jpg
         description: A beautiful, dark-haired spell-caster and adventurer, sworn to the dream-goddess Bolgove, and Aldred's beloved of four years. She chains him at the full moon and keeps watch over him, and she plays a fiddle she built herself.
       - name: Angus Grimtand
         description: A nervous young man and a member of the Star Lore cult, son of a priest of the Fingal temple. He comes to the inn to leave a sealed message under a wine cup, then is mistaken for a brawler and thrown out before he can retrieve it - the cult's instructions falling instead into the heroes' hands.
@@ -66,12 +70,14 @@ sections:
     description: The astrologer-cult at the heart of the plot, sworn to a comet and a demon, with the baron's spies working their own treachery alongside.
     npcs:
       - name: Parikila Omurtaag
+        image: /compendium/Adventures/TheUnicornAndTheDragonSerpent/Parikila.jpg
         description: Baron Riikov's trusted adviser, in truth the son of the demon Onaabys, near two hundred years old though he looks twenty-five. Milk-white, pupil-less eyes betray his nature, so he hoods his face. He feels neither pity nor human warmth, has worked cruel experiments on Brangoria's peasants for sport, and means to study mankind a few more centuries before wiping it out with the comet. With the rebellion closing in, he plans to take the stone and flee to his son in Soluna. He once bore the name Tervel, and took the name Parikila, the father-slayer, after murdering his stepfather Mustansir.
       - name: Helper Adrewol
         description: A warehouse foreman and spiritist of the cult, who works the ritual at grave ninety-three, raising the dead founder to wring from him the recipe for an alchemical elixir. He runs the laboratory and cells beneath the grain warehouse, and flees through the earth rather than be taken, the recipe being too vital to lose.
       - name: Hantvir Slägga
         description: A merchant and one of the cult's astrologers, who kidnapped the owner of a stolen necklace and gave him to Parikila. He owns the beer warehouse, and went into hiding underground once the theft was discovered.
       - name: Rigurt Riikov
+        image: /compendium/Adventures/TheUnicornAndTheDragonSerpent/Rigurt.jpg
         description: Baron of Brangoria, short, fat and choleric, raised to believe the nobility superior in body and mind to the common folk. He trusts Parikila wholly and knows nothing of his or the cult's true nature, though he is himself among its novices. He has sent agents to spy on, sabotage and murder the rebels, and has bought an orc army from Sirigon to relieve his castle.
     creatures:
       - name: Werewolf
@@ -108,6 +114,7 @@ sections:
         description: The baron's hold, stormed if the rebels prevail. In its old library lie the diaries of the cult's founder, with much about the comet, and in Parikila's chambers a near-complete alchemist's outfit, glass tubes of preserved creatures, and his own chronicles of the Red Stone.
     npcs:
       - name: Agila Dubbelhand
+        image: /compendium/Adventures/TheUnicornAndTheDragonSerpent/Agila.jpg
         description: A freedom-fighter better known for his poems than his deeds, arrested decades ago and held in the baron's dungeons ever since, broken by torture but still burning with hope. Father of Serter, he is freed when the castle falls.
       - name: Boris Guldstenck
         description: The former baron of Mergilia, who tortured Abrahim's father to death, taken with Baron Riikov when the castle falls and executed beside him at dawn.

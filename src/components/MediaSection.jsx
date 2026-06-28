@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import VideoModal from "./VideoModal";
 import { resolvePage } from "../data/compendiumPages";
 import { adventures } from "../data/adventures";
@@ -129,8 +129,10 @@ const LORE_GROUPS = [
       { label: "The New Army", name: "Abrahim Stoneclaw", link: "The Unicorn and the Dragon-Serpent", description: "New baron of Ansorvia and field-leader of the freed-serf New Army, marching under the white unicorn, whose father a baron tortured to death years before. A grave, merciful commander who steadies men by being looked at, and wins his country in the lemon groves." },
       { label: "The Star Doctrine", name: "Parikila Omurtaag", link: "The Unicorn and the Dragon-Serpent", description: "Half-demon master of the Star Doctrine and murderer of its founder, who wields a blade that drinks light and souls and serves Onaabys of the Red Moon. Old, patient, and certain of more time. He escapes the climax by teleport, carrying the spent star south." },
       { label: "Bolthar", name: "Eb-Bolthar", link: "The Unicorn and the Dragon-Serpent", description: "An old war-priest of the axe-god Bolthar, no metal on him, who came east hunting the half-demon, arrived too late, and threw his weight into the battle instead and turned it. The one figure who carries cosmic-scale weight, so the trio can stay human." },
-      { label: "Hynsolge", name: "Agila & Serter Doublehand", link: "The Unicorn and the Dragon-Serpent", description: "Agila, the crippled poet whose smuggled verse gave the war its slogan of the twisted horn, held thirty years in a baron's cell; Serter, his son, the recruiter who hired the trio without knowing his father still lived. Freed and reunited at the close." },
-      { label: "The cult's captives", name: "Aldred Stoneward & Salah Goldheart", link: "The Unicorn and the Dragon-Serpent", description: "A Berendien-born werewolf and a sorceress, taken by the cult for the recipe's blood and freed by the trio in the under-temple. Salah spends the last of her power on a sending that brings the trio to them." },
+      { label: "Hynsolge", name: "Agila", link: "The Unicorn and the Dragon-Serpent", description: "The crippled poet whose smuggled verse gave the war its slogan of the twisted horn, held thirty years in a baron's cell. Freed and reunited with his son at the close." },
+      { label: "The New Army", name: "Serter Doublehand", link: "The Unicorn and the Dragon-Serpent", description: "Agila's son, the recruiter on the Berendien coast who signs the trio onto the rebel rolls, not knowing his imprisoned father still lives." },
+      { label: "The cult's captives", name: "Aldred Stoneward", link: "The Unicorn and the Dragon-Serpent", description: "A Berendien-born adventurer and secret werewolf, taken by the star-cult for the blood its rite needs and freed by the trio in the under-temple." },
+      { label: "The cult's captives", name: "Salah Goldheart", link: "The Unicorn and the Dragon-Serpent", description: "A sorceress and Aldred's beloved, taken by the cult for the recipe's blood. She spends the last of her power on a sending that brings the trio to them." },
     ],
     places: [
       { label: "Copper Sea", name: "Hynsolge", link: "Hynsolge", description: "A small, sun-baked land on the far shore of the Copper Sea, all lemon groves and river cities and more little gods than it can use, in the tenth year of a civil war between a freed-serf New Army and the old baronage." },
@@ -156,7 +158,7 @@ const LORE_GROUPS = [
       { label: "Black Rose Brotherhood", name: "Hilja", link: "Shadow of a Rose", description: "The Brotherhood's finest mind-walker, a lame, bedbound woman whose soul leaves her broken body to ride at a distance. She is the cold that chose in the lane and the passenger that walked Bram into a poisoned kitchen and heard everything the trio said for a fortnight." },
       { label: "Imaria's cult", name: "Lerajie", link: "Shadow of a Rose", description: "An old, pale, deathless vampire, emissary of the imprisoned goddess Imaria, grown out of patience with the coven's century of quiet. He raises the dead in the trio's stolen faces and sets the city alight to flush them out, and so betrays his own coven. Ended in the Black Library by Bram's fire." },
       { label: "The Gendilj", name: "Karcist Kataris", link: "Shadow of a Rose", description: "The masked benefactor who shadows the trio from the tower onward and breaks them out of the condemned cell on the eve of the pyre, because he hunts the same enemy and they serve him alive. Motive half-lit; a player with a hand of his own." },
-      { label: "Ordo Magica", name: "Guazzo Arathaso", link: "Shadow of a Rose", description: "A broad, one-eyed old dwarf, a master of Ordo Magica who throws no reflection. He identifies the cup at once, offers too much gold to take it off the trio's hands, swallows the cult's name, and sends word the moment they leave. The order's cold interest in a dangerous thing loose in its city." },
+      { label: "Ordo Magica", name: "Guazzo Arathaso", link: "Enemies of the Beginning", description: "A broad, one-eyed old dwarf, a master of Ordo Magica who throws no reflection. He identifies the cup at once, offers too much gold to take it off the trio's hands, swallows the cult's name, and sends word the moment they leave. The order's cold interest in a dangerous thing loose in its city." },
       { label: "Sabertooth Guard", name: "Sereth Vohr", link: "Shadow of a Rose", description: "Guazzo's sworn sword, plain-faced and flat-eyed, in a helm wrought as a sabertooth's skull. She marks the trio at the tower, watches their trial, and charges the walking dead beside them in the square, soldier to soldier. Neither friend nor enemy." },
       { label: "The Oktagon", name: "Hemaquiel", link: "Shadow of a Rose", description: "A horned, goat-footed demon-prince, the Brotherhood's god, an enemy of the light who prizes wisdom and joy and rarely strikes directly. He keeps three owned pocket-worlds, is bound absolutely by his own word, and grants the trio the vampire's life because the vampire betrayed his coven. A transaction, not the cold." },
       { label: "The Black Library", name: "Jazeriel", link: "Shadow of a Rose", description: "The bored, ancient demon-librarian who keeps Hemaquiel's labyrinth and points the way to a quarry only for a riddle answered. He gives the trio a dagger that points to the undead." },
@@ -343,10 +345,43 @@ function LoreImage({ src, alt }) {
   );
 }
 
+// A single-image viewer: click the backdrop or press Escape to close.
+function Lightbox({ image, onClose }) {
+  const ref = useRef(null);
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === "Escape") onClose(); };
+    window.addEventListener("keydown", onKey);
+    ref.current?.focus();
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onClose]);
+  return (
+    <div className="lightbox" onClick={onClose}>
+      <div
+        className="lightbox__content"
+        ref={ref}
+        tabIndex={-1}
+        role="dialog"
+        aria-modal="true"
+        aria-label={image.caption || "Image viewer"}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button className="lightbox__close" onClick={onClose} aria-label="Close image viewer">✕</button>
+        <div className="lightbox__track">
+          <img src={image.src} alt={image.alt} className="lightbox__image" />
+        </div>
+        {image.caption && (
+          <div className="lightbox__footer"><p className="lightbox__caption">{image.caption}</p></div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 // One Chronicles lore card, built from the Compendium's card so borrowed images
-// fit the same way (2:3 portraits, 16:9 places). The whole card links to the
-// Compendium page it shares a subject with.
-function LoreCard({ item, onOpenPage, groupTarget }) {
+// fit the same way (2:3 portraits, 16:9 places). The card never navigates on its
+// own: clicking the image opens it full size, and only the "view more" link goes
+// to the Compendium page it shares a subject with.
+function LoreCard({ item, onOpenPage, groupTarget, onLightbox }) {
   const match = matchAdventureCard(item);
   const img = loreCardImage(item, match);
   // Shared cards take their text from the adventure (single source of truth); a
@@ -358,50 +393,46 @@ function LoreCard({ item, onOpenPage, groupTarget }) {
   const sameAsGroup = groupTarget && target && groupTarget.kind === target.kind && groupTarget.id === target.id;
   const cls =
     "codex-card chron-card" +
-    (linkable ? " codex-card--link" : "") +
     (img?.portrait ? " codex-card--portrait" : "") +
-    (img?.fit === "contain" ? " codex-card--fit" : "");
+    (img?.fit === "contain" ? " codex-card--fit" : "") +
+    (img ? " codex-card--split" : "");
 
-  const inner = (
-    <>
-      <div className="codex-card__image-wrap">
-        {img ? (
-          <img
-            className="codex-card__image"
-            src={thumbSrc(img.src)}
-            alt={item.name}
-            loading="lazy"
-            onError={onThumbError(img.src)}
-          />
-        ) : (
+  return (
+    <article className={cls}>
+      {img ? (
+        <button
+          className="codex-card__image-btn"
+          onClick={() => onLightbox({ src: img.src, alt: item.name, caption: item.name })}
+          aria-label={`View image of ${item.name}`}
+        >
+          <div className="codex-card__image-wrap">
+            <img className="codex-card__image" src={thumbSrc(img.src)} alt={item.name} loading="lazy" onError={onThumbError(img.src)} />
+          </div>
+        </button>
+      ) : (
+        <div className="codex-card__image-wrap">
           <img className="codex-card__image codex-card__image--missing" src={IMAGE_MISSING} alt="" aria-hidden="true" />
-        )}
-      </div>
+        </div>
+      )}
       <div className="codex-card__body">
         <span className="codex-card__kicker">{item.label}</span>
         <p className="codex-card__title">{item.name}</p>
         <p className="codex-card__summary">{description}</p>
         {linkable && !sameAsGroup && (
-          <span className="codex-card__entry-link">
+          <button className="codex-card__entry-link codex-card__entry-link--btn" onClick={() => onOpenPage(target)}>
             {target.kind === "adventure" ? "Read the adventure" : "Open in compendium"} ↗
-          </span>
+          </button>
         )}
       </div>
-    </>
-  );
-
-  return linkable ? (
-    <button className={cls} onClick={() => onOpenPage(target)}>{inner}</button>
-  ) : (
-    <article className={cls}>{inner}</article>
+    </article>
   );
 }
 
-function LoreGrid({ items, onOpenPage, groupTarget }) {
+function LoreGrid({ items, onOpenPage, groupTarget, onLightbox }) {
   return (
     <div className="country-detail__entries-grid">
       {items.map((item) => (
-        <LoreCard key={item.name} item={item} onOpenPage={onOpenPage} groupTarget={groupTarget} />
+        <LoreCard key={item.name} item={item} onOpenPage={onOpenPage} groupTarget={groupTarget} onLightbox={onLightbox} />
       ))}
     </div>
   );
@@ -446,7 +477,7 @@ function WatchContent({ onSelect }) {
   );
 }
 
-function GroupContent({ group, onOpenPage }) {
+function GroupContent({ group, onOpenPage, onLightbox }) {
   const groupTarget = group.link ? resolvePage(group.link) : null;
   const title = group.numeral != null ? `${group.numeral}. ${group.title}` : group.title;
   return (
@@ -462,7 +493,7 @@ function GroupContent({ group, onOpenPage }) {
         group[key]?.length ? (
           <div key={key} className="country-detail__block">
             <p className="location-panel__section-label">{label}</p>
-            <LoreGrid items={group[key]} onOpenPage={onOpenPage} groupTarget={groupTarget} />
+            <LoreGrid items={group[key]} onOpenPage={onOpenPage} groupTarget={groupTarget} onLightbox={onLightbox} />
           </div>
         ) : null
       )}
@@ -472,6 +503,7 @@ function GroupContent({ group, onOpenPage }) {
 
 export default function MediaSection({ onOpenPage }) {
   const [active, setActive] = useState(null); // open video, if any
+  const [lightbox, setLightbox] = useState(null); // open image, if any
   // The story reads in order from its prequel, so Episode 0 (the backstory and
   // prologue) is the landing chapter.
   const [selected, setSelected] = useState("backstory");
@@ -518,12 +550,13 @@ export default function MediaSection({ onOpenPage }) {
           {selected === "watch" ? (
             <WatchContent onSelect={setActive} />
           ) : (
-            group && <GroupContent group={group} onOpenPage={onOpenPage} />
+            group && <GroupContent group={group} onOpenPage={onOpenPage} onLightbox={setLightbox} />
           )}
         </div>
       </div>
 
       <VideoModal video={active} onClose={() => setActive(null)} />
+      {lightbox && <Lightbox image={lightbox} onClose={() => setLightbox(null)} />}
     </section>
   );
 }

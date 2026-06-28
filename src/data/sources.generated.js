@@ -55,6 +55,10 @@ export const generatedSources = {
     "Kaos Väktare",
     "Monsterboxen III: Kaos"
   ],
+  "baahl": [
+    "Kaos Väktare",
+    "Monsterboxen III: Kaos"
+  ],
   "baneman": [
     "Monsterboken",
     "Monsterboken II",
@@ -159,6 +163,10 @@ export const generatedSources = {
   "caliban": [
     "Kaos Väktare"
   ],
+  "carry-beetle": [
+    "Monsterboken",
+    "Monsterboken II"
+  ],
   "catpeople": [
     "Monsterboxen II: De humanoida raserna"
   ],
@@ -206,6 +214,9 @@ export const generatedSources = {
   "chimera": [
     "Monsterboken",
     "Monsterboken II"
+  ],
+  "cities-beneath-ground": [
+    "Alver"
   ],
   "climate": [
     "Aidne",
@@ -305,6 +316,10 @@ export const generatedSources = {
   "desert-lord": [
     "Monsterboken",
     "Monsterboken II"
+  ],
+  "diabolin": [
+    "Kaos Väktare",
+    "Monsterboxen III: Kaos"
   ],
   "dimension-travel": [
     "Kaos Väktare"
@@ -429,6 +444,9 @@ export const generatedSources = {
   "fire-pixie": [
     "Alver"
   ],
+  "floating-islands": [
+    "Alver"
+  ],
   "flying-lizard": [
     "Monsterboken",
     "Monsterboken II"
@@ -441,6 +459,9 @@ export const generatedSources = {
     "Monsterboken",
     "Monsterboken II"
   ],
+  "fortress": [
+    "Alver"
+  ],
   "fox": [
     "Monsterboken",
     "Monsterboken II"
@@ -449,6 +470,10 @@ export const generatedSources = {
     "Alver"
   ],
   "frost-wolf": [
+    "Monsterboken",
+    "Monsterboken II"
+  ],
+  "fur-lizard": [
     "Monsterboken",
     "Monsterboken II"
   ],
@@ -598,7 +623,8 @@ export const generatedSources = {
     "Monsterboken II"
   ],
   "hengeyokai": [
-    "Monsterboxen II: De humanoida raserna",
+    "Monsterboken",
+    "Monsterboken II",
     "Samuraj Jih Pun"
   ],
   "high-elf": [
@@ -770,6 +796,14 @@ export const generatedSources = {
   "krugal-svylses-curse": [
     "Sinkadus 11"
   ],
+  "lava-lizard": [
+    "Monsterboken",
+    "Monsterboken II"
+  ],
+  "leather-bird": [
+    "Monsterboken",
+    "Monsterboken II"
+  ],
   "leopard": [
     "Monsterboken",
     "Monsterboken II"
@@ -797,6 +831,9 @@ export const generatedSources = {
   "living-dead": [
     "Monsterboken",
     "Monsterboken II"
+  ],
+  "lizardfolk": [
+    "Monsterboxen II: De humanoida raserna"
   ],
   "llama": [
     "Monsterboken",
@@ -867,6 +904,10 @@ export const generatedSources = {
     "Sinkadus 30",
     "Sinkadus 37"
   ],
+  "mountain-goat": [
+    "Monsterboken",
+    "Monsterboken II"
+  ],
   "mountain-orcs": [
     "Monsterboxen II: De humanoida raserna",
     "Svartfolk"
@@ -913,6 +954,10 @@ export const generatedSources = {
   ],
   "nidland": [
     "Ereb Altor: Spelledarboken"
+  ],
+  "night-cat": [
+    "Monsterboken",
+    "Monsterboken II"
   ],
   "nightmare-in-darkness": [
     "Den femte konfluxen",
@@ -1024,6 +1069,10 @@ export const generatedSources = {
   "qhriz": [
     "Krigarens handbok"
   ],
+  "quetzal": [
+    "Kaos Väktare",
+    "Monsterboxen III: Kaos"
+  ],
   "raggman": [
     "Monsterboxen II: De humanoida raserna"
   ],
@@ -1082,6 +1131,10 @@ export const generatedSources = {
     "Monsterboken II"
   ],
   "sand-demon": [
+    "Monsterboken",
+    "Monsterboken II"
+  ],
+  "sand-rassler": [
     "Monsterboken",
     "Monsterboken II"
   ],
@@ -1154,7 +1207,8 @@ export const generatedSources = {
     "Monsterboken II"
   ],
   "shark-man": [
-    "Monsterboxen II: De humanoida raserna"
+    "Monsterboken",
+    "Monsterboken II"
   ],
   "shikome": [
     "Monsterboxen II: De humanoida raserna",
@@ -1554,11 +1608,18 @@ export const generatedSources = {
     "Monsterboken",
     "Monsterboken II"
   ],
+  "white-towers": [
+    "Alver"
+  ],
   "wild-boar": [
     "Monsterboken",
     "Monsterboken II"
   ],
   "wild-dog": [
+    "Monsterboken",
+    "Monsterboken II"
+  ],
+  "wildcat": [
     "Monsterboken",
     "Monsterboken II"
   ],

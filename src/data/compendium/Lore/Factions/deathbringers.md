@@ -1,5 +1,10 @@
 # Deathbringers
 
+![Deathbringer](/compendium/Lore/Factions/deathbringers.jpg "Deathbringer")
+![Deathbringer](/compendium/Lore/Factions/deathbringers-2.jpg "Deathbringer")
+![Deathbringer](/compendium/Lore/Factions/deathbringers-3.jpg "Deathbringer")
+![Deathbringer](/compendium/Lore/Factions/deathbringers-4.jpg "Deathbringer")
+
 The deathbringers are small bands of elves, usually three to seven strong, who have given their lives to fighting the powers of darkness. They wander the world hunting evil, and they seem to know where and when it will surface, so they are often found waiting where trouble is about to break.
 
 ## Appearance

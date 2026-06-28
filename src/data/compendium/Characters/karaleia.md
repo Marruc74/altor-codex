@@ -1,5 +1,8 @@
 # Karaleia
 
+![Karaleia](/compendium/Characters/karaleia.jpg "Karaleia")
+![Karaleia](/compendium/Characters/karaleia-2.jpg "Karaleia")
+
 Karaleia VII was once the queen of the Montures, and is now an undying vampire and the faithful servant of the demigoddess she loosed upon her own people. She lies sealed in an obsidian sarcophagus in the Agino Mountains, and on her freedom hangs the fate of the isles.
 
 ## The Queen Who Damned Her People

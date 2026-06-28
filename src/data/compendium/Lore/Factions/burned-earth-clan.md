@@ -1,5 +1,7 @@
 # Burned Earth Clan
 
+![Likhh Drogh](/compendium/Lore/Factions/burned-earth-clan-likhh-drogh.jpg "Likhh Drogh")
+
 The Burned Earth Clan, in the black tongue Ignarth Bogglf, is a great orc power of the northern Aidne Mountains, some two thousand fighting warriors strong. It takes its name from the way it makes war: it burns everything it cannot carry off, leaving scorched fields and dead villages behind it. The clan is mostly kraukh-orcs and mountain-orcs, with a tribe of svartalfs and a small band of svartnissar trailing along.
 
 ## Tribes

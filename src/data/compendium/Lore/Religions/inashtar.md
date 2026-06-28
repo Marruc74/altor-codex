@@ -1,5 +1,7 @@
 # Inashtar
 
+![Inashtar](/compendium/Lore/Religions/inashtar.jpg "Inashtar")
+
 Inashtar came down from the ice-barbarians of the northeast, and she is the patron goddess of the Runglers and of all Trinsmyra. She is the goddess of fire, of war, and of unbridled desire, shown as a beautiful and devastating woman bearing a spear and pieces of armour, wreathed in wild flame. Her signs are the dove with a hawk's head and the strings of a harp.
 
 ## Ecstatic Worship

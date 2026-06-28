@@ -25,7 +25,14 @@ characters:
   - name: Scargil
     image: /compendium/Adventures/ShadowOfARose/Scargil.jpg
     description: "A hideous, scrupleless hermit-mage, his skin like turned earth, hired by the Brotherhood to defile a temple of the Shining Way and cast the blame upon the band."
+  - name: Maca Sarion
+    image: /compendium/Adventures/ShadowOfARose/Maca.jpg
+    description: "A Black Rose Brotherhood agent set to shadow the thief sent after the chalice, a poisoner with a thrown knife and a quiet hand for magic. He silences the brothel's contact and slips away on a light-path through the window, calling down lightning or a blade of blue fire if he is cornered, and says nothing under questioning, for he fears his own master's fire far more than anything the band can threaten."
+  - name: Xaviera
+    image: /compendium/Adventures/ShadowOfARose/Xaviera.jpg
+    description: "The madam of Bordell Xavier, the pleasure-house where the murdered girl Elisie worked. Treated civilly, she gives up in confidence the one thing the band needs: that a pale lord with a great black beard and four black poodles on leashes went up to Elisie's room one night and never came down again."
   - name: Hemaquiel
+    image: /compendium/Adventures/ShadowOfARose/Hemaquiel.jpg
     entry: the-oktagon
     description: "The goat-footed demon-lord whom the Black Rose Brotherhood serves, wise and proud, who keeps his word and punishes betrayal without mercy. He grants the band passage to settle their quarrel with the vampire in his own realm."
   - name: Jazeriel

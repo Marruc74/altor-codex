@@ -12,6 +12,8 @@ places:
 ---
 # Goiana
 
+![Goiana](/compendium/Geography/goiana.jpg "Goiana")
+
 Goiana is a small forest-realm of the elf-folk, set in the hilly country between the rivers Goio and Firkax on the eastern edge of the Aidne peninsula. It was once a corner of Kardien before it broke away to stand on its own, and its people live with the woods rather than ruling over them. Oak and pine cover the low hills, and beneath them live some ten thousand souls, almost all of them wood-elves, who govern themselves without king or noble and ask only to be left in peace.
 
 One thing sets Goiana apart from every other realm of the Copper Sea: the forest itself is awake. Since the great meditation at Golena, the woods have been bound to a living spirit, and land and people are joined together in a way no army has managed to break.

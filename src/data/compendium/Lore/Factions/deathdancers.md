@@ -1,5 +1,11 @@
 # Deathdancers
 
+![Deathdancer](/compendium/Lore/Factions/deathdancers.jpg "Deathdancer")
+![Deathdancer](/compendium/Lore/Factions/deathdancers-2.jpg "Deathdancer")
+![Deathdancer](/compendium/Lore/Factions/deathdancers-3.jpg "Deathdancer")
+![Deathdancer](/compendium/Lore/Factions/deathdancers-4.jpg "Deathdancer")
+![Deathdancer](/compendium/Lore/Factions/deathdancers-5.jpg "Deathdancer")
+
 The deathdancers are elves who have given their lives to one thing: perfection in battle, what they call dancing with death. They live apart and wander alone, given to meditation and a hard, ascetic life, and they keep so much to the wild that many take them for forest-spirits rather than elves.
 
 ## Ways

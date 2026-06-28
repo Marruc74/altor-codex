@@ -1,5 +1,9 @@
 # Brothers of Darkness
 
+![Brother of Darkness](/compendium/Lore/Factions/brothers-of-darkness.jpg "Brother of Darkness")
+![Brother of Darkness](/compendium/Lore/Factions/brothers-of-darkness-2.jpg "Brother of Darkness")
+![Brother of Darkness](/compendium/Lore/Factions/brothers-of-darkness-3.jpg "Brother of Darkness")
+
 The Brothers of Darkness are a warrior brotherhood of the dark elves, sworn to the Bloody Chalice. Other elves call them the colini, and they are among the most feared of all the dark elves' servants of Chaos.
 
 ## Ways
