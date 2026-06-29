@@ -13,7 +13,7 @@ npm run lint      # Run ESLint
 node scripts/generate-stubs.mjs   # Generate missing markdown stubs from video metadata
 node scripts/generate-tiles.mjs   # Generate Leaflet map tile layers
 node scripts/generate-thumbnails.mjs   # Generate card thumbnails (Thumbnails/ siblings); --force rebuilds all
-node scripts/generate-entry-images.mjs   # Index each compendium page's first image (for linked cards to borrow)
+node scripts/generate-entry-images.mjs   # Index compendium page images: first image (for linked cards to borrow) + all images (for randomized browse cards)
 
 npm run registry    # Regenerate the markdown-only page registry (after adding/removing pages)
 npm run crossrefs   # Regenerate the page cross-reference index (after editing page prose)
@@ -24,7 +24,11 @@ Card images load a small thumbnail from a sibling `Thumbnails/` folder (see `src
 
 Compendium images must be JPG, not PNG. If any `.png` lands under `public/compendium`, convert it to `.jpg` (flatten transparency onto white), delete the PNG, update every `.png` reference to `.jpg` (markdown `image:`/`![]()` paths and `src/data/entryImages.generated.js`), then run `generate-thumbnails.mjs`.
 
-A card with a "View more" link but no image of its own borrows the linked page's image (e.g. a card that links to the Orc page shows the orc). That mapping lives in `src/data/entryImages.generated.js` (page slug → first embedded image); re-run `generate-entry-images.mjs` after adding or changing page images.
+A card with a "View more" link but no image of its own borrows the linked page's image (e.g. a card that links to the Orc page shows the orc). That mapping lives in `src/data/entryImages.generated.js` (page slug → first embedded image).
+
+Browse cards (the Compendium landing's section cards, group cards, and the page cards in `HubView`) show a *random* image from the page rather than always the first. That mapping lives in `src/data/entryImagesAll.generated.js` (page slug → every embedded image, with per-image portrait flags). The pick is seeded once per visit so a card stays put across re-renders but re-rolls on a new hub or reload.
+
+After adding or changing page images, re-run `generate-entry-images.mjs` - it regenerates all three maps (`entryImages`, `entryImagePortrait`, `entryImagesAll`) together.
 
 No test framework is configured.
 
