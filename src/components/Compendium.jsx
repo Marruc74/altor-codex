@@ -8,6 +8,7 @@ import { videosForPin, relatedVideosByVideo } from "../data/crossLinks";
 import { thumbSrc, onThumbError, IMAGE_MISSING } from "../lib/thumb";
 import { entryImages } from "../data/entryImages.generated";
 import { portraitSlugs } from "../data/entryImagePortrait.generated";
+import { entryImagesAll } from "../data/entryImagesAll.generated";
 import { entryBlurbs } from "../data/entryBlurbs.generated";
 import { crossRefs } from "../data/crossRefs.generated";
 import { themes, themesBySlug, slugsByTheme, themeLabel } from "../data/compendiumTags";
@@ -387,6 +388,11 @@ function HubView({ hub, geoGroups, onOpenHub, onOpenPage }) {
   const { section, group } = hub;
   const sigil = section === "adventures" ? "❖" : (SECTIONS.find((s) => s.id === section)?.sigil ?? "◈");
   const label = sectionLabelFor(section);
+  // One random salt per hub-visit: keeps each card's pick stable while you
+  // browse, but re-rolls the art when you open a different hub or reload.
+  // HubView is keyed on the hub (see parent), so a new hub remounts it and the
+  // lazy initializer re-runs - giving fresh art each visit without flicker.
+  const [imgSalt] = useState(() => Math.floor(Math.random() * 0x7fffffff));
 
   // Normalize the section into named groups + a flat bucket of ungrouped pages.
   const named = [];
@@ -408,11 +414,13 @@ function HubView({ hub, geoGroups, onOpenHub, onOpenPage }) {
     }
   }
 
-  // The first item with art: its slug (so the group card can borrow both the
-  // image and its portrait orientation).
-  const repSlug = (items) => {
-    for (const it of items) { const s = toSlug(it.name); if (entryImages[s]) return s; }
-    return null;
+  // A random representative image for a group card: pick a random page in the
+  // group that has art, then a random image from it. Returns { src, portrait }.
+  const repChoice = (groupName, items) => {
+    const cands = items.map((it) => toSlug(it.name)).filter((s) => entryImagesAll[s]?.length);
+    if (cands.length === 0) return null;
+    const slug = cands[hashStr("grp:" + groupName, imgSalt) % cands.length];
+    return pickEntryImage(slug, imgSalt);
   };
 
   // Whole-card-clickable page cards (bestiary-style browse). A plain render
@@ -423,9 +431,10 @@ function HubView({ hub, geoGroups, onOpenHub, onOpenPage }) {
         {items.map((it, i) => {
           const target = resolvePage(it.entry ?? it.name);
           const slug = target ? toSlug(target.name) : toSlug(it.name);
-          const img = entryImages[slug] || null;
+          const choice = pickEntryImage(slug, imgSalt);
+          const img = choice?.src ?? entryImages[slug] ?? null;
           const blurb = entryBlurbs[slug] || null;
-          const cls = `codex-card codex-card--link hub-card${portraitSlugs.has(slug) ? " codex-card--portrait" : ""}`;
+          const cls = `codex-card codex-card--link hub-card${choice?.portrait ?? portraitSlugs.has(slug) ? " codex-card--portrait" : ""}`;
           return (
             <button
               key={`${target ? `${target.kind}-${target.id}` : it.name}-${i}`}
@@ -483,9 +492,9 @@ function HubView({ hub, geoGroups, onOpenHub, onOpenPage }) {
           <p className="location-panel__section-label">{named.length} groups · {total} pages</p>
           <div className="country-detail__entries-grid">
             {named.map((g) => {
-              const rs = repSlug(g.items);
-              const img = rs ? entryImages[rs] : null;
-              const cls = `codex-card codex-card--link hub-card${rs && portraitSlugs.has(rs) ? " codex-card--portrait" : ""}`;
+              const choice = repChoice(g.name, g.items);
+              const img = choice?.src ?? null;
+              const cls = `codex-card codex-card--link hub-card${choice?.portrait ? " codex-card--portrait" : ""}`;
               return (
                 <button key={g.name} className={cls} onClick={() => onOpenHub(section, g.name)}>
                   <div className="codex-card__image-wrap">
@@ -595,6 +604,23 @@ function skipGroup(group, section) {
   if (!group) return true;
   const g = group.toLowerCase(), s = section.toLowerCase();
   return g === s || g + "s" === s || g === s + "s";
+}
+
+// Seeded random image pick for browse cards. A page often has several images;
+// instead of always borrowing the first, choose one by hashing the slug with a
+// per-visit salt. Same salt + slug → same pick, so cards stay put across
+// re-renders (no flicker); a fresh salt on the next visit re-rolls the art.
+function hashStr(str, salt) {
+  let h = salt >>> 0;
+  for (let i = 0; i < str.length; i++) h = (Math.imul(h, 31) + str.charCodeAt(i)) >>> 0;
+  return h >>> 0;
+}
+// Returns { src, portrait } for a random image on the page, or null. `key`
+// (defaults to slug) diversifies the roll when a card represents a group.
+function pickEntryImage(slug, salt, key = slug) {
+  const all = entryImagesAll[slug];
+  if (!all || all.length === 0) return null;
+  return all[hashStr(key, salt) % all.length];
 }
 function entryMdPath(entry) {
   const sec  = entry.section[0].toUpperCase() + entry.section.slice(1);
@@ -1394,6 +1420,9 @@ export default function Compendium({
   onVideoSelect,
 }) {
   const [query, setQuery] = useState("");
+  // One random salt per Compendium mount, so the landing's section cards show a
+  // random representative image (not always the first) and re-roll on reload.
+  const [imgSalt] = useState(() => Math.floor(Math.random() * 0x7fffffff));
   // Active "browse by theme" facets (cross-cutting tags from compendiumTags).
   // Multiple can be active at once - the landing shows pages in ALL of them.
   const [themeFilter, setThemeFilter] = useState([]);
@@ -1691,25 +1720,27 @@ export default function Compendium({
   // label, total page count, seen count, and a representative image (first page
   // in the section that has art) or null (falls back to the section sigil).
   const sectionCards = useMemo(() => {
-    // First member with art → { image, portrait } so the card frames it right.
-    const rep = (names) => {
-      for (const n of names) {
-        const s = toSlug(n);
-        if (entryImages[s]) return { image: entryImages[s], portrait: portraitSlugs.has(s) };
-      }
-      return { image: null, portrait: false };
+    // A random member with art → { image, portrait } so the card frames it
+    // right. Pick a random page in the section, then a random image from it;
+    // `key` keeps the roll stable per section across re-renders (see imgSalt).
+    const rep = (names, key) => {
+      const cands = names.map(toSlug).filter((s) => entryImagesAll[s]?.length);
+      if (cands.length === 0) return { image: null, portrait: false };
+      const slug = cands[hashStr("sec:" + key, imgSalt) % cands.length];
+      const choice = pickEntryImage(slug, imgSalt);
+      return { image: choice?.src ?? null, portrait: !!choice?.portrait };
     };
     const cards = [];
     cards.push({
       id: "adventures", label: "Adventures", sigil: "❖",
       total: adventures.length, seen: advSeen,
-      ...rep(adventures.map((a) => a.title)),
+      ...rep(adventures.map((a) => a.title), "adventures"),
     });
     const geoTotal = geoGroups.reduce((n, g) => n + g.countries.length + g.videos.length, 0);
     cards.push({
       id: "geography", label: "Geography", sigil: SECTIONS.find((s) => s.id === "geography")?.sigil ?? "◈",
       total: geoTotal, seen: geoSeen,
-      ...rep(geoGroups.flatMap((g) => [...g.countries.map((c) => c.name), ...g.videos.map((v) => v.name)])),
+      ...rep(geoGroups.flatMap((g) => [...g.countries.map((c) => c.name), ...g.videos.map((v) => v.name)]), "geography"),
     });
     for (const s of SECTIONS) {
       if (["geography", "countries", "episodes"].includes(s.id)) continue;
@@ -1719,11 +1750,11 @@ export default function Compendium({
       cards.push({
         id: s.id, label: s.label, sigil: s.sigil,
         total, seen: seenBySection[s.id] ?? 0,
-        ...rep(groups.flatMap((g) => g.videos.map((v) => v.name))),
+        ...rep(groups.flatMap((g) => g.videos.map((v) => v.name)), s.id),
       });
     }
     return cards;
-  }, [geoGroups, advSeen, geoSeen, seenBySection]);
+  }, [geoGroups, advSeen, geoSeen, seenBySection, imgSalt]);
 
   const selectedPin = geoPlaces.find((c) => c.id === selectedCountry) ?? null;
   const selectedAdventureObj = adventures.find((a) => a.id === selectedAdventure) ?? null;
