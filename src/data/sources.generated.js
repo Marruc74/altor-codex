@@ -55,10 +55,6 @@ export const generatedSources = {
     "Kaos Väktare",
     "Monsterboxen III: Kaos"
   ],
-  "baahl": [
-    "Kaos Väktare",
-    "Monsterboxen III: Kaos"
-  ],
   "baneman": [
     "Monsterboken",
     "Monsterboken II",

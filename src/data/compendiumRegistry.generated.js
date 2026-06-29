@@ -108,7 +108,6 @@ export const compendiumRegistry = [
   { section: "creatures", group: "Demonic Creatures", name: "Quetzal", slug: "quetzal" },
   { section: "creatures", group: "Demonic Creatures", name: "Servant", slug: "servant" },
   { section: "creatures", group: "Demonic Creatures", name: "Vampire Butterfly", slug: "vampire-butterfly" },
-  { section: "creatures", group: "Demons", name: "Baahl", slug: "baahl" },
   { section: "creatures", group: "Demons", name: "Demon Noble", slug: "demon-noble" },
   { section: "creatures", group: "Demons", name: "Demon Prince", slug: "demon-prince" },
   { section: "creatures", group: "Demons", name: "Echram Schroedel", slug: "echram-schroedel" },

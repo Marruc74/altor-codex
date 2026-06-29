@@ -31,7 +31,8 @@ sections:
         description: "Videric's loaned bodyguards, loyal to the death, who know the road to Luciano's tower on the Abyss edge."
     creatures:
       - name: The Baahl
-        description: "The war-race of the Abyss: taller and stronger than men, with rainbow-sheened black skin, double-jointed limbs and knees bent backward. They live only for power won in battle, assassination and treachery, and march in clans and armies that number from the thousands to the millions."
+        entry: uzorak
+        description: "The war-race of the Abyss, called uzorak in the bestiary: taller and stronger than men, with rainbow-sheened black skin, double-jointed limbs and knees bent backward. They live only for power won in battle, assassination and treachery, and march in clans and armies that number from the thousands to the millions."
   - title: Luciano's Tower
     description: "A tower of bone and steel on the Abyss edge, where Luciano took his leisure in torture - but he has already gone ahead to his master, and Videric sends the heroes on by magic to the Circle of Shadows."
     places:
