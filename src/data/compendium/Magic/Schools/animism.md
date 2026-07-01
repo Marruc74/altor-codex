@@ -1,5 +1,9 @@
 # Animism
 
+![Animism](/compendium/Magic/Schools/animism.jpg "Animism")
+![Animism](/compendium/Magic/Schools/animism-2.jpg "Animism")
+![Animism](/compendium/Magic/Schools/animism-3.jpg "Animism")
+
 Animism is the eldest of the three great schools of magic, the art of the living world, of beasts and growing things, of the wild places and the green. Where the elementalist commands fire and stone and the mentalist the mind, the animist speaks to what breathes and grows, and bends it to his will. It is the oldest art men remember, older than the academies, and its mages have always kept closer to the wilderness than to the city.
 
 ## Overview

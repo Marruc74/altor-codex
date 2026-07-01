@@ -2894,6 +2894,14 @@ body {
   aspect-ratio: 2 / 3;
 }
 
+/* Square cards (e.g. a religion's ~1:1 sigil) — a square frame shows the whole
+   image instead of cropping its top and bottom to the widescreen default. */
+.codex-card--square .codex-card__image-wrap {
+  width: 170px;
+  flex-basis: 170px;
+  aspect-ratio: 1 / 1;
+}
+
 .codex-card__image {
   width: 100%;
   height: 100%;
@@ -3312,6 +3320,7 @@ body {
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   gap: 0.5rem;
   margin: 0 0 0.75rem;
 }
@@ -3326,16 +3335,22 @@ body {
   display: flex;
   flex-direction: column;
   transition: border-color 0.15s;
-  width: 100px;
+  width: auto;
 }
 
 .image-gallery__thumb:hover {
   border-color: var(--border-light);
 }
 
+/* Thumbnails share one height and let their width follow each image's own
+   aspect ratio, so wide, square and portrait art all sit in a tidy equal-height
+   row and show whole - no fixed box forcing a crop. Ultra-wide art is capped by
+   max-width and only then cover-crops a little at the sides. */
 .image-gallery__thumb img {
-  width: 100px;
   height: 150px;
+  width: auto;
+  max-width: 320px;
+  min-width: 60px;
   object-fit: cover;
   display: block;
 }
@@ -4038,6 +4053,11 @@ body {
   .codex-card--portrait .codex-card__image-wrap {
     width: 110px;
     flex-basis: 110px;
+  }
+
+  .codex-card--square .codex-card__image-wrap {
+    width: 130px;
+    flex-basis: 130px;
   }
 }
 

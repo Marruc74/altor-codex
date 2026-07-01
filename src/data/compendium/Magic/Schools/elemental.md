@@ -1,5 +1,9 @@
 # Elemental
 
+![Elemental magic](/compendium/Magic/Schools/elemental.jpg "Elemental magic")
+![Elemental magic](/compendium/Magic/Schools/elemental-2.jpg "Elemental magic")
+![Elemental magic](/compendium/Magic/Schools/elemental-3.jpg "Elemental magic")
+
 Elemental magic is the school of the raw stuff of the world: earth and air, fire and water and bitter cold. Its mages bend the elements themselves, raising walls of flame and tides of water, splitting the ground and calling the storm. Of the three great schools it is the most openly terrible in war, for its workings are loud and vast and leave the land marked behind them.
 
 ## Overview

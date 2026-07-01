@@ -338,7 +338,6 @@ export const compendiumRegistry = [
   { section: "lore", group: "Magical Phenomena", name: "The City of Angels", slug: "the-city-of-angels" },
   { section: "lore", group: "Magical Phenomena", name: "The Devil's Palace", slug: "the-devils-palace" },
   { section: "lore", group: "Religions", name: "Anxalis", slug: "anxalis" },
-  { section: "lore", group: "Religions", name: "Church of Sbintor", slug: "church-of-sbintor" },
   { section: "lore", group: "Religions", name: "Eledain", slug: "eledain" },
   { section: "lore", group: "Religions", name: "Enki", slug: "enki" },
   { section: "lore", group: "Religions", name: "Ereshkigal", slug: "ereshkigal" },

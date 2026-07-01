@@ -146,6 +146,15 @@ function ImageGallery({ images }) {
 // with a `videoId` (and onVideoSelect) plays the video. A card with no image of
 // its own borrows the image of the page it links to. `excludeCountryId` stops a
 // card linking back to the very country page it sits on. Renders nothing when empty.
+// Card frame modifier for a picked image's orientation ({ portrait, square }).
+// Portrait art gets a tall frame, square art a square frame; anything else uses
+// the default widescreen frame. Portrait and square never both apply.
+function orientClass(o) {
+  if (o?.portrait) return " codex-card--portrait";
+  if (o?.square) return " codex-card--square";
+  return "";
+}
+
 function CardGrid({ label, items, portrait = false, onOpenPage, onVideoSelect, onLightbox, excludeCountryId }) {
   if (!items || items.length === 0) return null;
   return (
@@ -153,7 +162,7 @@ function CardGrid({ label, items, portrait = false, onOpenPage, onVideoSelect, o
       <p className="location-panel__section-label">{label}</p>
       <div className="country-detail__entries-grid">
         {items.map((it, i) => {
-          const cls = `codex-card${(it.portrait ?? portrait) ? " codex-card--portrait" : ""}${it.fit === "contain" ? " codex-card--fit" : ""}`;
+          const cls = `codex-card${it.square ? " codex-card--square" : (it.portrait ?? portrait) ? " codex-card--portrait" : ""}${it.fit === "contain" ? " codex-card--fit" : ""}`;
           let target = resolvePage(it.entry ?? it.name);
           if (excludeCountryId && target && target.kind === "country" && target.id === excludeCountryId) target = null;
           const linkable = target && onOpenPage;
@@ -434,7 +443,7 @@ function HubView({ hub, geoGroups, onOpenHub, onOpenPage }) {
           const choice = pickEntryImage(slug, imgSalt);
           const img = choice?.src ?? entryImages[slug] ?? null;
           const blurb = entryBlurbs[slug] || null;
-          const cls = `codex-card codex-card--link hub-card${choice?.portrait ?? portraitSlugs.has(slug) ? " codex-card--portrait" : ""}`;
+          const cls = `codex-card codex-card--link hub-card${choice ? orientClass(choice) : portraitSlugs.has(slug) ? " codex-card--portrait" : ""}`;
           return (
             <button
               key={`${target ? `${target.kind}-${target.id}` : it.name}-${i}`}
@@ -494,7 +503,7 @@ function HubView({ hub, geoGroups, onOpenHub, onOpenPage }) {
             {named.map((g) => {
               const choice = repChoice(g.name, g.items);
               const img = choice?.src ?? null;
-              const cls = `codex-card codex-card--link hub-card${choice?.portrait ? " codex-card--portrait" : ""}`;
+              const cls = `codex-card codex-card--link hub-card${orientClass(choice)}`;
               return (
                 <button key={g.name} className={cls} onClick={() => onOpenHub(section, g.name)}>
                   <div className="codex-card__image-wrap">
@@ -1725,10 +1734,10 @@ export default function Compendium({
     // `key` keeps the roll stable per section across re-renders (see imgSalt).
     const rep = (names, key) => {
       const cands = names.map(toSlug).filter((s) => entryImagesAll[s]?.length);
-      if (cands.length === 0) return { image: null, portrait: false };
+      if (cands.length === 0) return { image: null, portrait: false, square: false };
       const slug = cands[hashStr("sec:" + key, imgSalt) % cands.length];
       const choice = pickEntryImage(slug, imgSalt);
-      return { image: choice?.src ?? null, portrait: !!choice?.portrait };
+      return { image: choice?.src ?? null, portrait: !!choice?.portrait, square: !!choice?.square };
     };
     const cards = [];
     cards.push({
@@ -2133,7 +2142,7 @@ export default function Compendium({
                 <p className="location-panel__section-label">Browse by section</p>
                 <div className="country-detail__entries-grid">
                   {sectionCards.map((s) => (
-                    <button key={s.id} className={`codex-card codex-card--link hub-card${s.portrait ? " codex-card--portrait" : ""}`} onClick={() => openHub(s.id)}>
+                    <button key={s.id} className={`codex-card codex-card--link hub-card${orientClass(s)}`} onClick={() => openHub(s.id)}>
                       <div className="codex-card__image-wrap">
                         {s.image ? <CardImage src={s.image} alt={s.label} /> : <span className="codex-card__placeholder">{s.sigil}</span>}
                       </div>

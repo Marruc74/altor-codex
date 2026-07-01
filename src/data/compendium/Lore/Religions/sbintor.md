@@ -1,6 +1,16 @@
 # Sbintor
 
+![Sbintor](/compendium/Lore/Religions/sbintor.jpg "Sbintor")
+![Symbol of Sbintor](/compendium/Lore/Religions/sbintor-symbol.jpg "Symbol of Sbintor")
+![Priest of Sbintor](/compendium/Lore/Religions/sbintor-priest.jpg "Priest of Sbintor")
+![Benoval I](/compendium/Lore/Religions/sbintor-benoval.jpg "Benoval I, who founded the church")
+![Abina](/compendium/Lore/Religions/sbintor-abina.jpg "Abina, co-founder of the church")
+
 Sbintor is the state religion of the island duchy of Montures, a faith raised around a sun-god who does not exist. The rulers themselves invented him, to bind the people together and to draw money from them, and the worship was later made obligatory by law. Only the Councillors and a handful of high priests know the truth.
+
+## The Church
+
+The church was founded in 434 by Duke Benoval I and his sister Abina, who ruled the duchy between them, and it grew over the years into a power in its own right, its head seated among the rulers of the realm. What began as a tool of state has become an institution that reaches into every corner of island life, through its hold on faith, record and ceremony.
 
 ## The Great Temple
 
@@ -8,4 +18,4 @@ Every grown islander is bound to make a yearly offering, the worth of a fair sum
 
 ## The Priesthood and the Wrath
 
-The priests are men of the upper and middle classes, marked with a sun tattooed on breast and back and schooled in administration, astrology, heraldry, history and theology, and they keep a martial art of their own. Only four high priests know the god for the invention he is. The dead of the faith are decked in jewels and cremated, and the priests quietly keep the jewels, which find their way to the duke's treasury, while the ashes go to the heirs in a jar. Those who fail to pay their offering meet "Sbintor's wrath": on the first day of each year the high priests search the records, and the one who has not paid is visited by assassins and burns in his home, without witnesses.
+The priests are men of the upper and middle classes, as much officers of state as men of religion, marked with a sun tattooed on breast and back and schooled in administration, astrology, heraldry, history and theology, and they keep a martial art of their own. The order's wandering monks are known by their pale-yellow robes, dyed with the root of the munkrygg grass. Only four high priests know the god for the invention he is. The dead of the faith are decked in jewels and cremated, and the priests quietly keep the jewels, which find their way to the duke's treasury, while the ashes go to the heirs in a jar. Those who fail to pay their offering meet "Sbintor's wrath": on the first day of each year the high priests search the records, and the one who has not paid is visited by assassins and burns in his home, without witnesses.

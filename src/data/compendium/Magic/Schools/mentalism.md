@@ -1,5 +1,13 @@
 # Mentalism
 
+![Mentalism](/compendium/Magic/Schools/mentalism.jpg "Mentalism")
+![Mentalism](/compendium/Magic/Schools/mentalism-2.jpg "Mentalism")
+![Mentalism](/compendium/Magic/Schools/mentalism-3.jpg "Mentalism")
+![Mentalism](/compendium/Magic/Schools/mentalism-4.jpg "Mentalism")
+![Mentalism](/compendium/Magic/Schools/mentalism-5.jpg "Mentalism")
+![Mentalism](/compendium/Magic/Schools/mentalism-6.jpg "Mentalism")
+![Mentalism](/compendium/Magic/Schools/mentalism-7.jpg "Mentalism")
+
 Mentalism is the school of body and soul, the art of the mind, the senses and the flesh, and of illusion and death besides. It is the youngest of the three great schools and the widest-ranging, still growing where the elder arts have long since settled into their forms. Its workings are quiet ones, worked upon thought and memory and the body's own substance, and for that they are often the most feared: the elementalist's fire can be seen coming, but the mentalist's hand falls unseen.
 
 ## Overview

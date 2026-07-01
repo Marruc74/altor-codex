@@ -1,5 +1,8 @@
 # Mokylider
 
+![Mokylider](/compendium/Lore/Religions/mokylider.jpg "Mokylider")
+![Attar Sparrowheart](/compendium/Lore/Religions/mokylider-attar-sparrowheart.jpg "Attar Sparrowheart, the last priest of Mokylider")
+
 Mokylider is the true forest-god of the Montures, the protector of the woods, set against the invented state-god Sbintor. Where Sbintor is worshipped by law and by fear, Mokylider is worshipped by those who know the worth of the wild: the hunters and woodsmen of the Vergili Forest, who keep his timber temples among the trees.
 
 ## The God of the Wood

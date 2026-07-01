@@ -1,5 +1,10 @@
 # The Shining Way
 
+![Etin](/compendium/Lore/Religions/the-shining-way-etin.jpg "Etin, the one true God")
+![The sun](/compendium/Lore/Religions/the-shining-way-sun.jpg "The sun, symbol of the Shining Way")
+![The eternally shining star](/compendium/Lore/Religions/the-shining-way-star.jpg "The eternally shining star")
+![Odo](/compendium/Lore/Religions/the-shining-way-odo.jpg "Odo, the prophet of the Shining Way")
+
 The Shining Way - in the old tongue Den Lysande Vagen - is the dominant faith of the lands about the Copper Sea. It teaches that there is but one true God, the sun-god Etin, whose light fills all creation and whose all-seeing eye weighs the deeds of every living soul. From a single revelation granted to a potter's son some six hundred years past, the faith has grown into the mightiest and wealthiest institution of the civilised West, crowning kings and condemning heretics alike.
 
 ## Overview

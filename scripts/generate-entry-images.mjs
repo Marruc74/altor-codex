@@ -43,25 +43,31 @@ for (const file of walk(compDir).sort()) {
   }
 }
 
-// Orientation of every image, so browse cards can frame portrait figures (the
-// bulk of the art) without a wide-crop. Portrait = taller than wide. Cached by
-// src so a shared image is only probed once.
+// Orientation of every image, so browse cards can frame each shape without an
+// ugly crop: portrait art (the bulk) gets a tall frame, roughly-square art a
+// square frame, and the rest the default wide frame. A ~1:1 image is "square"
+// (within 20% of equal sides) so it is not stretched into the widescreen card.
+// Cached by src so a shared image is only probed once.
 const isPortrait = {};
+const isSquare = {};
 for (const src of [...new Set(Object.values(allMap).flat())]) {
   try {
     const meta = await sharp(path.join(publicDir, decodeURIComponent(src))).metadata();
-    isPortrait[src] = !!(meta.height && meta.width && meta.height > meta.width);
-  } catch { isPortrait[src] = false; /* missing/unreadable image — leave unmarked */ }
+    const { width: w, height: h } = meta;
+    const r = w && h ? w / h : 0;
+    isSquare[src] = r > 0 && r > 0.83 && r < 1.2;
+    isPortrait[src] = !!(h && w && h > w) && !isSquare[src];
+  } catch { isPortrait[src] = false; isSquare[src] = false; /* missing/unreadable image — leave unmarked */ }
 }
 // First-image portrait set, kept for the stable "borrow" path.
 const portrait = Object.entries(map)
   .filter(([, src]) => isPortrait[src])
   .map(([slug]) => slug)
   .sort();
-// Per-image variant for randomized browse: slug → [{ src, portrait }, ...].
+// Per-image variant for randomized browse: slug → [{ src, portrait, square }, ...].
 const allImages = {};
 for (const [slug, srcs] of Object.entries(allMap)) {
-  allImages[slug] = srcs.map((src) => ({ src, portrait: isPortrait[src] }));
+  allImages[slug] = srcs.map((src) => ({ src, portrait: isPortrait[src], square: isSquare[src] }));
 }
 
 fs.writeFileSync(

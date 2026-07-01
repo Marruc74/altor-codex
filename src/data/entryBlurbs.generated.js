@@ -472,7 +472,6 @@ export const entryBlurbs = {
   "the-city-of-angels": "High above the peaks of the Aralern, among the clouds where no road climbs, drifts a city of impossible splendour, towers and halls of light hanging in the…",
   "the-devils-palace": "A ruined palace high on the mountain called the Shadow-Watcher, in the Mountains of Darkness.",
   "anxalis": "Anxalis is the capricious queen of the sea-deeps, worshipped wherever folk live by the water and fear it.",
-  "church-of-sbintor": "The Church of Sbintor is the established church of the island duchy of Montures, the institution built around the invented sun-god Sbintor to bind the…",
   "eledain": "Eledain is a god of light and of the stars, and to his followers the giver of life, creation, magnanimity and good fortune.",
   "enki": "Enki is the lord of fresh water and of wisdom, one of the old archetypal gods that Ereb's southern cultures inherited from Jorpagna.",
   "ereshkigal": "Ereshkigal is the goddess of the death-realm, and though the living fear her she is not reckoned an evil power.",

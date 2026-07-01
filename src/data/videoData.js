@@ -252,7 +252,7 @@ export const rawVideos = [
   { id: "qmsuI9xPeJ8", title: "Countries: Mereld", views: 2 },
   { id: "6JVP0Wpgd20", title: "Elves: Fortress", views: 2 },
   { id: "eBEsZSzhUXA", title: "Religions: Shamash", views: 2 },
-  { id: "CiDrS5KhZdU", title: "Religions: Church of Sbintor", views: 1 },
+  { id: "CiDrS5KhZdU", title: "Religions: Sbintor", views: 1 },
   { id: "Iv8lu99cndA", title: "Factions: Urgh Grobb", views: 1 },
   { id: "2zu0EkzUrwE", title: "Factions: Mistali", views: 1 },
   { id: "qtpWTQSOoJA", title: "Factions: Deathbringers", views: 1 },

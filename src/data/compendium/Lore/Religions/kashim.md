@@ -1,5 +1,10 @@
 # Kashim
 
+![Kashim](/compendium/Lore/Religions/kashim.jpg "Kashim, the Ruling Flame")
+![Priests of Kashim](/compendium/Lore/Religions/kashim-priests.jpg "Priests of Kashim")
+![Sacrifice to Kashim](/compendium/Lore/Religions/kashim-sacrifice.jpg "Sacrifice to Kashim")
+![Symbol of Kashim](/compendium/Lore/Religions/kashim-symbol.jpg "Symbol of Kashim")
+
 Kashim, the Ruling Flame, also called the Lord of Life, is worshipped by some few humans and held by everyone else to be an evil god. Where he came from no one knows, only that it was not Jorpagna. He is the eternal foe of Wegil, the Lord of Light, and where Wegil's faith stands open in its grand temples, Kashim's is a thing of secret cellars and hidden altars.
 
 ## The Ruling Flame

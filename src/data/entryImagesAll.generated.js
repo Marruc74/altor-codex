@@ -5,3777 +5,4754 @@ export const entryImagesAll = {
   "karaleia": [
     {
       "src": "/compendium/Characters/karaleia.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Characters/karaleia-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "chaos-cardinal": [
     {
       "src": "/compendium/Creatures/Chaos Warriors/chaos-cardinal.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Chaos Warriors/chaos-cardinal-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Chaos Warriors/chaos-warrior-true-form.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "chaos-corporal": [
     {
       "src": "/compendium/Creatures/Chaos Warriors/chaos-corporal.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Chaos Warriors/chaos-corporal-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Chaos Warriors/chaos-warrior-true-form.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "chaos-knight": [
     {
       "src": "/compendium/Creatures/Chaos Warriors/chaos-knight.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Chaos Warriors/chaos-knight-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Chaos Warriors/chaos-warrior-true-form.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "ravager": [
     {
       "src": "/compendium/Creatures/Chaos Warriors/ravager.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Chaos Warriors/ravager-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Chaos Warriors/chaos-warrior-true-form.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "slayer": [
     {
       "src": "/compendium/Creatures/Chaos Warriors/slayer.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Chaos Warriors/slayer-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Chaos Warriors/chaos-warrior-true-form.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "corpse-eaters": [
     {
       "src": "/compendium/Creatures/Corporeal Undead/corpse-eaters.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "deadmans-hand": [
     {
       "src": "/compendium/Creatures/Corporeal Undead/deadmans-hand.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "death-knight": [
     {
       "src": "/compendium/Creatures/Corporeal Undead/death-knight.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "hell-steed": [
     {
       "src": "/compendium/Creatures/Corporeal Undead/hell-steed.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "mara": [
     {
       "src": "/compendium/Creatures/Corporeal Undead/mara.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "severed-head": [
     {
       "src": "/compendium/Creatures/Corporeal Undead/severed-head.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "vampire": [
     {
       "src": "/compendium/Creatures/Corporeal Undead/vampire-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Corporeal Undead/vampire-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Corporeal Undead/vampire-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Corporeal Undead/vampire-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Corporeal Undead/vampire.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Corporeal Undead/vampire-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Corporeal Undead/vampire-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Corporeal Undead/vampire-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Corporeal Undead/vampire-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "black-avenger": [
     {
       "src": "/compendium/Creatures/Demonic Creatures/black-avenger.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "black-unicorn": [
     {
       "src": "/compendium/Creatures/Demonic Creatures/black-unicorn.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "cold-beast": [
     {
       "src": "/compendium/Creatures/Demonic Creatures/cold-beast.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "vampire-butterfly": [
     {
       "src": "/compendium/Creatures/Demonic Creatures/vampire-butterfly.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "chaos-dragon": [
     {
       "src": "/compendium/Creatures/Dragons/chaos-dragon.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "dragonsnake": [
     {
       "src": "/compendium/Creatures/Dragons/dragonsnake.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "fire-dragon": [
     {
       "src": "/compendium/Creatures/Dragons/fire-dragon.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "gold-dragon": [
     {
       "src": "/compendium/Creatures/Dragons/gold-dragon.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "ice-dragon": [
     {
       "src": "/compendium/Creatures/Dragons/ice-dragon.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "light-dragon": [
     {
       "src": "/compendium/Creatures/Dragons/light-dragon.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "lindworm": [
     {
       "src": "/compendium/Creatures/Dragons/lindworm.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "sea-dragon": [
     {
       "src": "/compendium/Creatures/Dragons/sea-dragon.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "sea-serpent": [
     {
       "src": "/compendium/Creatures/Dragons/sea-serpent.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "glacial": [
     {
       "src": "/compendium/Creatures/Elementals/glacial.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "gnom": [
     {
       "src": "/compendium/Creatures/Elementals/gnom.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "luminal": [
     {
       "src": "/compendium/Creatures/Elementals/luminal.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "salamander": [
     {
       "src": "/compendium/Creatures/Elementals/salamander.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "sylf": [
     {
       "src": "/compendium/Creatures/Elementals/sylf.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "therm": [
     {
       "src": "/compendium/Creatures/Elementals/therm.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "umbran": [
     {
       "src": "/compendium/Creatures/Elementals/umbran.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "undin": [
     {
       "src": "/compendium/Creatures/Elementals/undin.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "acid-lizard": [
     {
       "src": "/compendium/Creatures/Fable Animals/acid-lizard.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "alfin": [
     {
       "src": "/compendium/Creatures/Fable Animals/alfin.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "ambiorm": [
     {
       "src": "/compendium/Creatures/Fable Animals/ambiorm.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "angyon": [
     {
       "src": "/compendium/Creatures/Fable Animals/angyon.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "arboreal-leech": [
     {
       "src": "/compendium/Creatures/Fable Animals/arboreal-leech.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "aries": [
     {
       "src": "/compendium/Creatures/Fable Animals/aries.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "basilisk": [
     {
       "src": "/compendium/Creatures/Fable Animals/basilisk.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "brook-bear": [
     {
       "src": "/compendium/Creatures/Fable Animals/brook-bear.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "chimera": [
     {
       "src": "/compendium/Creatures/Fable Animals/chimera.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "cockatrice": [
     {
       "src": "/compendium/Creatures/Fable Animals/cockatrice.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "death-owl": [
     {
       "src": "/compendium/Creatures/Fable Animals/death-owl.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "demon-cat": [
     {
       "src": "/compendium/Creatures/Fable Animals/demon-cat.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "drinnen": [
     {
       "src": "/compendium/Creatures/Fable Animals/drinnen.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "dwarf-horse": [
     {
       "src": "/compendium/Creatures/Fable Animals/dwarf-horse.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "elefantine": [
     {
       "src": "/compendium/Creatures/Fable Animals/elefantine.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Fable Animals/elefantine-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "elephant-bird": [
     {
       "src": "/compendium/Creatures/Fable Animals/elephant-bird.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Fable Animals/elephant-bird-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "eye-beast": [
     {
       "src": "/compendium/Creatures/Fable Animals/eye-beast.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "flying-lizard": [
     {
       "src": "/compendium/Creatures/Fable Animals/flying-lizard.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "forgyor": [
     {
       "src": "/compendium/Creatures/Fable Animals/forgyor.jpg",
-      "portrait": false
+      "portrait": false,
+      "square": false
     }
   ],
   "gargoyle": [
     {
       "src": "/compendium/Creatures/Fable Animals/gargoyle.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "ghertum": [
     {
       "src": "/compendium/Creatures/Fable Animals/ghertum.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "giant-amoeba": [
     {
       "src": "/compendium/Creatures/Fable Animals/giant-amoeba.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "giant-octopus": [
     {
       "src": "/compendium/Creatures/Fable Animals/giant-octopus.jpg",
-      "portrait": false
+      "portrait": false,
+      "square": false
     }
   ],
   "giant-spider": [
     {
       "src": "/compendium/Creatures/Fable Animals/giant-spider.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "giant-turtle": [
     {
       "src": "/compendium/Creatures/Fable Animals/giant-turtle.jpg",
-      "portrait": false
+      "portrait": false,
+      "square": false
     }
   ],
   "gorgon": [
     {
       "src": "/compendium/Creatures/Fable Animals/gorgon.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "grey-mareskunk": [
     {
       "src": "/compendium/Creatures/Fable Animals/grey-mareskunk.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "griffin": [
     {
       "src": "/compendium/Creatures/Fable Animals/griffin.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "harebir": [
     {
       "src": "/compendium/Creatures/Fable Animals/harebir.jpg",
-      "portrait": false
+      "portrait": false,
+      "square": false
     }
   ],
   "harpy": [
     {
       "src": "/compendium/Creatures/Fable Animals/harpy.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "high-warden-tiger": [
     {
       "src": "/compendium/Creatures/Fable Animals/high-warden-tiger.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "hippocampus": [
     {
       "src": "/compendium/Creatures/Fable Animals/hippocampus.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "hippogriff": [
     {
       "src": "/compendium/Creatures/Fable Animals/hippogriff.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "huldre": [
     {
       "src": "/compendium/Creatures/Fable Animals/huldre.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "hydra": [
     {
       "src": "/compendium/Creatures/Fable Animals/hydra-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Fable Animals/hydra.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "insectoid": [
     {
       "src": "/compendium/Creatures/Fable Animals/insectoid-queen.jpg",
-      "portrait": true
+      "portrait": false,
+      "square": true
     },
     {
       "src": "/compendium/Creatures/Fable Animals/insectoid-leader.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Fable Animals/insectoid-messenger.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Fable Animals/insectoid-warrior.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Fable Animals/insectoid-digger.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Fable Animals/insectoid-worker.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "kalydon": [
     {
       "src": "/compendium/Creatures/Fable Animals/kalydon.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "kelpie": [
     {
       "src": "/compendium/Creatures/Fable Animals/kelpie.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "kerberos": [
     {
       "src": "/compendium/Creatures/Fable Animals/kerberos.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "manticore": [
     {
       "src": "/compendium/Creatures/Fable Animals/manticore.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "megas": [
     {
       "src": "/compendium/Creatures/Fable Animals/megas.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "murder-vulture": [
     {
       "src": "/compendium/Creatures/Fable Animals/murder-vulture.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "onaqui": [
     {
       "src": "/compendium/Creatures/Fable Animals/onaqui.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "pegasus": [
     {
       "src": "/compendium/Creatures/Fable Animals/pegasus-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Fable Animals/pegasus-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Fable Animals/pegasus.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "peryton": [
     {
       "src": "/compendium/Creatures/Fable Animals/peryton.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "phoenix": [
     {
       "src": "/compendium/Creatures/Fable Animals/phoenix.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "primeval-monster": [
     {
       "src": "/compendium/Creatures/Fable Animals/primeval-monster.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "roc": [
     {
       "src": "/compendium/Creatures/Fable Animals/roc.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "rock-lizard": [
     {
       "src": "/compendium/Creatures/Fable Animals/rock-lizard.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "rust-monster": [
     {
       "src": "/compendium/Creatures/Fable Animals/rust-monster.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "sand-demon": [
     {
       "src": "/compendium/Creatures/Fable Animals/sand-demon.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "shranck": [
     {
       "src": "/compendium/Creatures/Fable Animals/shranck.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "silver-shark": [
     {
       "src": "/compendium/Creatures/Fable Animals/silver-shark.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "siren": [
     {
       "src": "/compendium/Creatures/Fable Animals/siren.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "snake-sphere": [
     {
       "src": "/compendium/Creatures/Fable Animals/snake-sphere.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "sphinx": [
     {
       "src": "/compendium/Creatures/Fable Animals/sphinx.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "tarantellid": [
     {
       "src": "/compendium/Creatures/Fable Animals/tarantellid.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "tunnel-worm": [
     {
       "src": "/compendium/Creatures/Fable Animals/tunnel-worm.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "unicorn": [
     {
       "src": "/compendium/Creatures/Fable Animals/unicorn-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Fable Animals/unicorn.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "ziplodit": [
     {
       "src": "/compendium/Creatures/Fable Animals/ziplodit.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Fable Animals/ziplodit-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "belmon": [
     {
       "src": "/compendium/Creatures/Lesser Demons/belmon.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "grazur": [
     {
       "src": "/compendium/Creatures/Lesser Demons/grazur.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "pazuzu": [
     {
       "src": "/compendium/Creatures/Lesser Demons/pazuzu.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "uzorak": [
     {
       "src": "/compendium/Creatures/Lesser Demons/uzorak.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "baneman": [
     {
       "src": "/compendium/Creatures/Magical Undead/baneman.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "living-dead": [
     {
       "src": "/compendium/Creatures/Magical Undead/living-dead.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "mummy": [
     {
       "src": "/compendium/Creatures/Magical Undead/mummy.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "nightwolf": [
     {
       "src": "/compendium/Creatures/Magical Undead/nightwolf.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "skeleton": [
     {
       "src": "/compendium/Creatures/Magical Undead/skeleton-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Magical Undead/skeleton-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Magical Undead/skeleton.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "zombie": [
     {
       "src": "/compendium/Creatures/Magical Undead/zombie.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "elf-eater": [
     {
       "src": "/compendium/Creatures/Plants/elf-eater.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "illusion-tree": [
     {
       "src": "/compendium/Creatures/Plants/illusion-tree.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "primeval-tree": [
     {
       "src": "/compendium/Creatures/Plants/primeval-tree.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "spider-vine": [
     {
       "src": "/compendium/Creatures/Plants/spider-vine.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "strangler-vine": [
     {
       "src": "/compendium/Creatures/Plants/strangler-vine.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "ghost": [
     {
       "src": "/compendium/Creatures/Spirits/ghost.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "spectre": [
     {
       "src": "/compendium/Creatures/Spirits/spectre.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "will-o-the-wisp": [
     {
       "src": "/compendium/Creatures/Spirits/will-o-the-wisp.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "barrow-wight": [
     {
       "src": "/compendium/Creatures/Wraiths & Wights/barrow-wight-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Wraiths & Wights/barrow-wight-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Wraiths & Wights/barrow-wight.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "dark-wraith": [
     {
       "src": "/compendium/Creatures/Wraiths & Wights/dark-wraith-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Wraiths & Wights/dark-wraith-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Wraiths & Wights/dark-wraith.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "death-wraith": [
     {
       "src": "/compendium/Creatures/Wraiths & Wights/death-wraith-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Wraiths & Wights/death-wraith-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Wraiths & Wights/death-wraith-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Wraiths & Wights/death-wraith-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Wraiths & Wights/death-wraith-6.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Wraiths & Wights/death-wraith-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Wraiths & Wights/death-wraith.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "phantom": [
     {
       "src": "/compendium/Creatures/Wraiths & Wights/phantom-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Creatures/Wraiths & Wights/phantom.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "furgia": [
     {
       "src": "/compendium/Geography/Akrogal/Countries/Furgia/Furgia1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Akrogal/Countries/Furgia/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Akrogal/Countries/Furgia/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "kalmurri": [
     {
       "src": "/compendium/Geography/Akrogal/Countries/Kalmurri/Kalmurri1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Akrogal/Countries/Kalmurri/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Akrogal/Countries/Kalmurri/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Akrogal/Countries/Kalmurri/Leader1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "barbia": [
     {
       "src": "/compendium/Geography/Ereb/Countries/Barbia/Barbia1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Barbia/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Barbia/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "berendien": [
     {
       "src": "/compendium/Geography/Ereb/Countries/Berendien/Berendien1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Berendien/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Berendien/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "caddo": [
     {
       "src": "/compendium/Geography/Ereb/Countries/Caddo/Caddo1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Caddo/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Caddo/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "cereval": [
     {
       "src": "/compendium/Geography/Ereb/Countries/Cereval/Cereval1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Cereval/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Cereval/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Cereval/Dragon Master1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Cereval/Dragon Master2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Cereval/Trollmaster1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "erebos": [
     {
       "src": "/compendium/Geography/Ereb/Countries/Erebos/Erebos1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Erebos/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Erebos/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "felicien": [
     {
       "src": "/compendium/Geography/Ereb/Countries/Felicien/Felicien1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Felicien/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Felicien/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "hynsolge": [
     {
       "src": "/compendium/Geography/Ereb/Countries/Hynsolge/Hynsolge1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Hynsolge/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Hynsolge/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "jorduashur": [
     {
       "src": "/compendium/Geography/Ereb/Countries/Jorduashur/Jorduashur1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Jorduashur/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Jorduashur/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "jorpagna": [
     {
       "src": "/compendium/Geography/Ereb/Countries/Jorpagna/Jorpagna1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Jorpagna/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Jorpagna/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "kardien": [
     {
       "src": "/compendium/Geography/Ereb/Countries/Kardien/Kardien1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Kardien/Kardien2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Kardien/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Kardien/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Kardien/Knight1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "klomellien": [
     {
       "src": "/compendium/Geography/Ereb/Countries/Klomellien/Klomellien1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Klomellien/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Klomellien/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "krun": [
     {
       "src": "/compendium/Geography/Ereb/Countries/Krun/Krun1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Krun/Krun2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Krun/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Krun/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "magilre": [
     {
       "src": "/compendium/Geography/Ereb/Countries/Magilre/Magilre1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Magilre/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Magilre/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "montures": [
     {
       "src": "/compendium/Geography/Ereb/Countries/Montures/Montures1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Montures/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Montures/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "nidland": [
     {
       "src": "/compendium/Geography/Ereb/Countries/Nidland/Nidland1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Nidland/Nidland2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Nidland/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Nidland/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Nidland/Magistrate1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Nidland/Soldier1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "ransard": [
     {
       "src": "/compendium/Geography/Ereb/Countries/Ransard/Ransard1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Ransard/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Ransard/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Ransard/Griffinrider1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "torsheim": [
     {
       "src": "/compendium/Geography/Ereb/Countries/Torsheim/Torsheim1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Torsheim/Torsheim2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Torsheim/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Torsheim/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Torsheim/HowathMale1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "trakorien": [
     {
       "src": "/compendium/Geography/Ereb/Countries/Trakorien/Trakorien1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Trakorien/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Trakorien/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "zorakin": [
     {
       "src": "/compendium/Geography/Ereb/Countries/Zorakin/Zorakin1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Zorakin/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Zorakin/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Ereb/Countries/Zorakin/Knight1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "melukha": [
     {
       "src": "/compendium/Geography/Samkarna/Countries/Melukha/Melukha1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Samkarna/Countries/Melukha/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Samkarna/Countries/Melukha/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "morelvidyn": [
     {
       "src": "/compendium/Geography/Samkarna/Countries/Morelvidyn/Morelvidyn1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Samkarna/Countries/Morelvidyn/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Samkarna/Countries/Morelvidyn/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "niferland": [
     {
       "src": "/compendium/Geography/Other/Niferland/Niferland1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Other/Niferland/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Other/Niferland/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "efaro": [
     {
       "src": "/compendium/Geography/Soluna/Countries/Efaro/Efaro1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Soluna/Countries/Efaro/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Soluna/Countries/Efaro/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "sombatze": [
     {
       "src": "/compendium/Geography/Soluna/Countries/Sombatze/Sombatze1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Soluna/Countries/Sombatze/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Soluna/Countries/Sombatze/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "thelgul": [
     {
       "src": "/compendium/Geography/Soluna/Countries/Thelgul/Thelgul1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Soluna/Countries/Thelgul/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Soluna/Countries/Thelgul/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "traxilme": [
     {
       "src": "/compendium/Geography/Soluna/Countries/Traxilme/Traxilme1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Soluna/Countries/Traxilme/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Soluna/Countries/Traxilme/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "jih-pun": [
     {
       "src": "/compendium/Geography/Other/Jih-Pun/Jih-Pun1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Other/Jih-Pun/Male1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Geography/Other/Jih-Pun/Female1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "goiana": [
     {
       "src": "/compendium/Geography/goiana.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "mereld": [
     {
       "src": "/compendium/Geography/mereld.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "hersch": [
     {
       "src": "/compendium/Lore/Beyural/hersch.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "hornox": [
     {
       "src": "/compendium/Lore/Beyural/hornox.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "lullad": [
     {
       "src": "/compendium/Lore/Beyural/lullad.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "sunstone": [
     {
       "src": "/compendium/Lore/Beyural/sunstone.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "brothers-of-darkness": [
     {
       "src": "/compendium/Lore/Factions/brothers-of-darkness.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/brothers-of-darkness-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/brothers-of-darkness-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "burned-earth-clan": [
     {
       "src": "/compendium/Lore/Factions/burned-earth-clan-likhh-drogh.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "deathbringers": [
     {
       "src": "/compendium/Lore/Factions/deathbringers.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/deathbringers-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/deathbringers-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/deathbringers-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "deathdancers": [
     {
       "src": "/compendium/Lore/Factions/deathdancers.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/deathdancers-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/deathdancers-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/deathdancers-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/deathdancers-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "dekkadorel-gnubbt": [
     {
       "src": "/compendium/Lore/Factions/dekkadorel-gnubbt.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/dekkadorel-gnubbt-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "grogol-gribb": [
     {
       "src": "/compendium/Lore/Factions/grogol-gribb.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/grogol-gribb-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/grogol-gribb-girnackh-bonemen.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/grogol-gribb-skuddnigh.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "grokashak-oggra": [
     {
       "src": "/compendium/Lore/Factions/grokashak-oggra.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "gylk-lobbnack": [
     {
       "src": "/compendium/Lore/Factions/gylk-lobbnack.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/gylk-lobbnack-funglobb.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/gylk-lobbnack-gagnaf.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/gylk-lobbnack-ruin.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "rulgh-borgnag": [
     {
       "src": "/compendium/Lore/Factions/rulgh-borgnag.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/rulgh-borgnag-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/rulgh-borgnag-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/rulgh-borgnag-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/rulgh-borgnag-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/rulgh-borgnag-6.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/rulgh-borgnag-7.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/rulgh-borgnag-8.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/rulgh-borgnag-9.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/rulgh-borgnag-urughk-grigg.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "urgh-grobb": [
     {
       "src": "/compendium/Lore/Factions/urgh-grobb.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/urgh-grobb-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/urgh-grobb-brylk.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Factions/urgh-grobb-drogh.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "imaria": [
     {
       "src": "/compendium/Lore/Religions/imaria.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Lore/Religions/imaria-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "inashtar": [
     {
       "src": "/compendium/Lore/Religions/inashtar.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "kashim": [
+    {
+      "src": "/compendium/Lore/Religions/kashim.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Lore/Religions/kashim-priests.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Lore/Religions/kashim-sacrifice.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Lore/Religions/kashim-symbol.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "mokylider": [
+    {
+      "src": "/compendium/Lore/Religions/mokylider.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Lore/Religions/mokylider-attar-sparrowheart.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "sbintor": [
+    {
+      "src": "/compendium/Lore/Religions/sbintor.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Lore/Religions/sbintor-symbol.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Lore/Religions/sbintor-priest.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Lore/Religions/sbintor-benoval.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Lore/Religions/sbintor-abina.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "the-shining-way": [
+    {
+      "src": "/compendium/Lore/Religions/the-shining-way-etin.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Lore/Religions/the-shining-way-sun.jpg",
+      "portrait": false,
+      "square": true
+    },
+    {
+      "src": "/compendium/Lore/Religions/the-shining-way-star.jpg",
+      "portrait": false,
+      "square": true
+    },
+    {
+      "src": "/compendium/Lore/Religions/the-shining-way-odo.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "animism": [
+    {
+      "src": "/compendium/Magic/Schools/animism.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Magic/Schools/animism-2.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Magic/Schools/animism-3.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "elemental": [
+    {
+      "src": "/compendium/Magic/Schools/elemental.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Magic/Schools/elemental-2.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Magic/Schools/elemental-3.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "mentalism": [
+    {
+      "src": "/compendium/Magic/Schools/mentalism.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Magic/Schools/mentalism-2.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Magic/Schools/mentalism-3.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Magic/Schools/mentalism-4.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Magic/Schools/mentalism-5.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Magic/Schools/mentalism-6.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Magic/Schools/mentalism-7.jpg",
+      "portrait": true,
+      "square": false
     }
   ],
   "black-duck": [
     {
       "src": "/compendium/Peoples/Animal Humanoids/black-duck.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/black-duck-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/black-duck-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/black-duck-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/black-duck-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "brown-duck": [
     {
       "src": "/compendium/Peoples/Animal Humanoids/brown-duck.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/brown-duck-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/brown-duck-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/brown-duck-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/brown-duck-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "catpeople": [
     {
       "src": "/compendium/Peoples/Animal Humanoids/catpeople-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/catpeople-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/catpeople-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/catpeople-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/catpeople.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/catpeople-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/catpeople-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/catpeople-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "centaur": [
     {
       "src": "/compendium/Peoples/Animal Humanoids/centaur-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/centaur-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/centaur.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/centaur-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/centaur-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "karkion": [
     {
       "src": "/compendium/Peoples/Animal Humanoids/karkion.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/karkion-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "kojin": [
     {
       "src": "/compendium/Peoples/Animal Humanoids/kojin.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/kojin-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/kojin-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/kojin-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/kojin-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/kojin-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/kojin-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/kojin-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "lizardfolk": [
     {
       "src": "/compendium/Peoples/Animal Humanoids/lizardfolk.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/lizardfolk-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/lizardfolk-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/lizardfolk-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/lizardfolk-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/lizardfolk-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/lizardfolk-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/lizardfolk-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/lizardfolk-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "mermaid": [
     {
       "src": "/compendium/Peoples/Animal Humanoids/mermaid-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/mermaid-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/mermaid-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/mermaid-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/mermaid-6.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/mermaid-7.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/mermaid-8.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/mermaid.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "minotaur": [
     {
       "src": "/compendium/Peoples/Animal Humanoids/minotaur-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/minotaur-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/minotaur-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/minotaur-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/minotaur.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/minotaur-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/minotaur-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "ratman": [
     {
       "src": "/compendium/Peoples/Animal Humanoids/ratman.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "reptileman": [
     {
       "src": "/compendium/Peoples/Animal Humanoids/reptileman.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "serpent": [
     {
       "src": "/compendium/Peoples/Animal Humanoids/serpent.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "white-duck": [
     {
       "src": "/compendium/Peoples/Animal Humanoids/white-duck.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/white-duck-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/white-duck-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/white-duck-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/white-duck-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "wolfman": [
     {
       "src": "/compendium/Peoples/Animal Humanoids/wolfman.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "boggart": [
     {
       "src": "/compendium/Peoples/Dark Folks/boggart-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/boggart-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/boggart-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/boggart-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/boggart-6.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/boggart-7.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/boggart-8.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/boggart-9.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/boggart-10.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/boggart.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "boggle": [
     {
       "src": "/compendium/Peoples/Dark Folks/boggle-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/boggle-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/boggle-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/boggle-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/boggle-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/boggle-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/boggle-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/boggle-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/boggle.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "cave-orcs": [
     {
       "src": "/compendium/Peoples/Dark Folks/cave-orcs-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/cave-orcs-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/cave-orcs-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/cave-orcs-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/cave-orcs-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/cave-orcs-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/cave-orcs.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "cave-troll": [
     {
       "src": "/compendium/Peoples/Dark Folks/cave-troll.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "forest-troll": [
     {
       "src": "/compendium/Peoples/Dark Folks/forest-troll.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "goblin": [
     {
       "src": "/compendium/Peoples/Dark Folks/goblin-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/goblin-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/goblin-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/goblin-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/goblin-6.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/goblin-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/goblin-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/goblin-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/goblin-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/goblin.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "mountain-orcs": [
     {
       "src": "/compendium/Peoples/Dark Folks/mountain-orcs-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/mountain-orcs-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/mountain-orcs-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/mountain-orcs-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/mountain-orcs-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/mountain-orcs-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/mountain-orcs-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/mountain-orcs-female-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/mountain-orcs.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "ogre": [
     {
       "src": "/compendium/Peoples/Dark Folks/ogre-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/ogre-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/ogre-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/ogre-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/ogre-6.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/ogre-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/ogre-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/ogre-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/ogre-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/ogre.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "olog-hai": [
     {
       "src": "/compendium/Peoples/Dark Folks/olog-hai.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/olog-hai-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/olog-hai-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/olog-hai-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/olog-hai-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/olog-hai-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/olog-hai-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/olog-hai-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "orc": [
     {
       "src": "/compendium/Peoples/Dark Folks/orc-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/orc-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/orc-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/orc-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/orc-6.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/orc-7.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/orc-8.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/orc-9.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/orc-10.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/orc-11.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/orc-12.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/orc.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "raukk": [
     {
       "src": "/compendium/Peoples/Dark Folks/raukk.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/raukk-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/raukk-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/raukk-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/raukk-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/raukk-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/raukk-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/raukk-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "shikome": [
     {
       "src": "/compendium/Peoples/Dark Folks/shikome.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/shikome-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/shikome-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/shikome-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/shikome-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/shikome-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/shikome-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/shikome-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "steppe-orcs": [
     {
       "src": "/compendium/Peoples/Dark Folks/steppe-orcs-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/steppe-orcs-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/steppe-orcs-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/steppe-orcs-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/steppe-orcs-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/steppe-orcs-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/steppe-orcs-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/steppe-orcs.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "svartalf": [
     {
       "src": "/compendium/Peoples/Dark Folks/svartalf-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/svartalf-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/svartalf-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/svartalf-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/svartalf-6.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/svartalf-7.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/svartalf-8.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/svartalf-9.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/svartalf-10.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/svartalf.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "ylk-orcs": [
     {
       "src": "/compendium/Peoples/Dark Folks/ylk-orcs-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/ylk-orcs-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/ylk-orcs-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/ylk-orcs-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/ylk-orcs-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/ylk-orcs-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/ylk-orcs.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "blood-elf": [
     {
       "src": "/compendium/Peoples/Elves/blood-elf-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/blood-elf-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/blood-elf-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/blood-elf-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/blood-elf.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/blood-elf-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/blood-elf-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/blood-elf-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/blood-elf-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "cave-elf": [
     {
       "src": "/compendium/Peoples/Elves/cave-elf-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/cave-elf-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/cave-elf-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/cave-elf-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/cave-elf-6.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/cave-elf-7.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/cave-elf.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/cave-elf-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/cave-elf-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/cave-elf-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/cave-elf-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "dark-elf": [
     {
       "src": "/compendium/Peoples/Elves/dark-elf-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/dark-elf-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/dark-elf-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/dark-elf-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/dark-elf.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/dark-elf-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/dark-elf-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/dark-elf-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/dark-elf-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "floating-islands": [
     {
       "src": "/compendium/Peoples/Elves/floating-islands.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/floating-islands-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/floating-islands-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "fortress": [
     {
       "src": "/compendium/Peoples/Elves/fortress.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/fortress-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/fortress-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "frost-elf": [
     {
       "src": "/compendium/Peoples/Elves/frost-elf-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/frost-elf-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/frost-elf-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/frost-elf-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/frost-elf-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/frost-elf-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/frost-elf-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/frost-elf-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/frost-elf-female-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/frost-elf.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "grey-elf": [
     {
       "src": "/compendium/Peoples/Elves/grey-elf-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/grey-elf-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/grey-elf-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/grey-elf-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/grey-elf.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/grey-elf-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/grey-elf-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/grey-elf-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/grey-elf-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "high-elf": [
     {
       "src": "/compendium/Peoples/Elves/high-elf-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/high-elf-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/high-elf-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/high-elf-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/high-elf.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/high-elf-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/high-elf-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/high-elf-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/high-elf-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "injir": [
     {
       "src": "/compendium/Peoples/Elves/injir-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/injir-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/injir-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/injir-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/injir-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/injir-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/injir-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/injir-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/injir.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "light-elf": [
     {
       "src": "/compendium/Peoples/Elves/light-elf-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/light-elf-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/light-elf-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/light-elf-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/light-elf-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/light-elf-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/light-elf-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/light-elf-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/light-elf.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "sea-elf": [
     {
       "src": "/compendium/Peoples/Elves/sea-elf-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/sea-elf-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/sea-elf-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/sea-elf-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/sea-elf-6.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/sea-elf-7.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/sea-elf-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/sea-elf-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/sea-elf-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/sea-elf.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "silver-elf": [
     {
       "src": "/compendium/Peoples/Elves/silver-elf-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/silver-elf-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/silver-elf-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/silver-elf-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/silver-elf-6.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/silver-elf-7.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/silver-elf-8.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/silver-elf-9.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/silver-elf.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "water-elf": [
     {
       "src": "/compendium/Peoples/Elves/water-elf-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/water-elf-3.jpg",
-      "portrait": false
+      "portrait": false,
+      "square": true
     },
     {
       "src": "/compendium/Peoples/Elves/water-elf-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/water-elf.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/water-elf-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/water-elf-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/water-elf-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/water-elf-female-4.jpg",
-      "portrait": false
+      "portrait": false,
+      "square": true
     }
   ],
   "white-towers": [
     {
       "src": "/compendium/Peoples/Elves/white-towers.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/white-towers-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/white-towers-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/white-towers-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "wood-elf": [
     {
       "src": "/compendium/Peoples/Elves/wood-elf-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/wood-elf-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/wood-elf-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/wood-elf-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/wood-elf-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/wood-elf-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/wood-elf-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/wood-elf-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/wood-elf-female-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Elves/wood-elf.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "ainu": [
     {
       "src": "/compendium/Peoples/Humans/ainu.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/ainu-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/ainu-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/ainu-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/ainu-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/ainu-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/ainu-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/ainu-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/ainu-female-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "hedemi": [
     {
       "src": "/compendium/Peoples/Humans/hedemi.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/hedemi-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/hedemi-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/hedemi-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/hedemi-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/hedemi-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/hedemi-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/hedemi-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "jih-mono": [
     {
       "src": "/compendium/Peoples/Humans/jih-mono.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/jih-mono-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/jih-mono-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/jih-mono-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/jih-mono-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/jih-mono-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/jih-mono-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/jih-mono-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "pamperna": [
     {
       "src": "/compendium/Peoples/Humans/pamperna.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/pamperna-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/pamperna-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/pamperna-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/pamperna-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/pamperna-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/pamperna-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Humans/pamperna-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "alegar": [
     {
       "src": "/compendium/Peoples/Other Humanoids/alegar.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/alegar-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/alegar-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/alegar-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/alegar-female.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/alegar-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/alegar-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/alegar-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "dyler": [
     {
       "src": "/compendium/Peoples/Other Humanoids/dyler.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/dyler-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/dyler-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/dyler-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/dyler-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/dyler-female.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/dyler-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/dyler-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "half-elf": [
     {
       "src": "/compendium/Peoples/Other Humanoids/half-elf.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/half-elf-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/half-elf-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/half-elf-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/half-elf-female.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/half-elf-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/half-elf-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/half-elf-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "half-orc": [
     {
       "src": "/compendium/Peoples/Other Humanoids/half-orc.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/half-orc-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/half-orc-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/half-orc-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/half-orc-female.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/half-orc-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/half-orc-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/half-orc-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "halfling": [
     {
       "src": "/compendium/Peoples/Other Humanoids/halfling.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/halfling-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/halfling-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/halfling-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/halfling-female.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/halfling-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/halfling-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/halfling-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "highman": [
     {
       "src": "/compendium/Peoples/Other Humanoids/highman.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/highman-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/highman-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/highman-female.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/highman-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/highman-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "lindskiarn": [
     {
       "src": "/compendium/Peoples/Other Humanoids/lindskiarn.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/lindskiarn-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/lindskiarn-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/lindskiarn-female.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/lindskiarn-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/lindskiarn-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/lindskiarn-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "magir": [
     {
       "src": "/compendium/Peoples/Other Humanoids/magir.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/magir-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/magir-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/magir-female.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/magir-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/magir-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/magir-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "raggman": [
     {
       "src": "/compendium/Peoples/Other Humanoids/raggman.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/raggman-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/raggman-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/raggman-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/raggman-female.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/raggman-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/raggman-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/raggman-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "sharg": [
     {
       "src": "/compendium/Peoples/Other Humanoids/sharg.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/sharg-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/sharg-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/sharg-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/sharg-female.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/sharg-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/sharg-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/sharg-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "wolf-rider": [
     {
       "src": "/compendium/Peoples/Other Humanoids/wolf-rider.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/wolf-rider-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/wolf-rider-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/wolf-rider-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/wolf-rider-female.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/wolf-rider-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/wolf-rider-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/wolf-rider-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "woodman": [
     {
       "src": "/compendium/Peoples/Other Humanoids/woodman.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/woodman-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/woodman-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/woodman-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/woodman-female.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/woodman-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/woodman-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Other Humanoids/woodman-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "shark-man": [
     {
       "src": "/compendium/Peoples/Shapeshifters/shark-man.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Shapeshifters/shark-man-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Shapeshifters/shark-man-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Shapeshifters/shark-man-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Shapeshifters/shark-man-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Shapeshifters/shark-man-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Shapeshifters/shark-man-female-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Shapeshifters/shark-man-female-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "swan-maiden": [
     {
       "src": "/compendium/Peoples/Shapeshifters/swan-maiden.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "werewolf": [
     {
       "src": "/compendium/Peoples/Shapeshifters/werewolf.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "cyclop": [
     {
       "src": "/compendium/Peoples/Stonekin/cyclop.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "dwarf": [
     {
       "src": "/compendium/Peoples/Stonekin/dwarf.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "gargant": [
     {
       "src": "/compendium/Peoples/Stonekin/gargant.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "giant": [
     {
       "src": "/compendium/Peoples/Stonekin/giant.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "stone-biter": [
     {
       "src": "/compendium/Peoples/Stonekin/stone-biter.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "titan": [
     {
       "src": "/compendium/Peoples/Stonekin/titan.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "troglodyte": [
     {
       "src": "/compendium/Peoples/Stonekin/troglodyte.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "dryad": [
     {
       "src": "/compendium/Peoples/Sylvans/dryad-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/dryad-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/dryad-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/dryad-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/dryad-6.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/dryad-7.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/dryad-8.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/dryad-9.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/dryad.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "faerie": [
     {
       "src": "/compendium/Peoples/Sylvans/faerie-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/faerie-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/faerie-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/faerie-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/faerie-6.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/faerie-7.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/faerie-8.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/faerie.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "fire-pixie": [
     {
       "src": "/compendium/Peoples/Sylvans/fire-pixie-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/fire-pixie-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/fire-pixie-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/fire-pixie-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/fire-pixie-6.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/fire-pixie-7.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/fire-pixie-8.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/fire-pixie-9.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/fire-pixie-10.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/fire-pixie.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "hag": [
     {
       "src": "/compendium/Peoples/Sylvans/hag-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/hag-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/hag-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/hag-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/hag-6.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/hag.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "hob": [
     {
       "src": "/compendium/Peoples/Sylvans/hob.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "naiad": [
     {
       "src": "/compendium/Peoples/Sylvans/naiad-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/naiad-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/naiad-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/naiad-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/naiad-6.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/naiad-7.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/naiad-8.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/naiad.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "oread": [
     {
       "src": "/compendium/Peoples/Sylvans/oread-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/oread-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/oread-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/oread-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/oread-6.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/oread-7.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/oread-8.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/oread-9.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/oread-10.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/oread.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "peerie": [
     {
       "src": "/compendium/Peoples/Sylvans/peerie-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/peerie-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/peerie-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/peerie-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/peerie-6.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/peerie-7.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/peerie-female-1.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/peerie-female-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/peerie.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ],
   "satyr": [
     {
       "src": "/compendium/Peoples/Sylvans/satyr-2.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/satyr-3.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/satyr-4.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/satyr-5.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/satyr-6.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/satyr.jpg",
-      "portrait": true
+      "portrait": true,
+      "square": false
     }
   ]
 };
