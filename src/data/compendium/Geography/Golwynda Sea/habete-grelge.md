@@ -1,5 +1,10 @@
 # Habete Grelge
 
+![Habete Grelge](/compendium/Geography/Golwynda Sea/Habete Grelge/Habete Grelge1.jpg "Habete Grelge")
+![Habete Grelge](/compendium/Geography/Golwynda Sea/Habete Grelge/Habete Grelge2.jpg "Habete Grelge")
+![Habete Grelge](/compendium/Geography/Golwynda Sea/Habete Grelge/Habete Grelge3.jpg "Habete Grelge")
+![Habete Grelge](/compendium/Geography/Golwynda Sea/Habete Grelge/Habete Grelge4.jpg "Habete Grelge")
+
 Habete Grelge is an ancient island principality that sits within the eastern outflow of the Golwynda Sea, amid the falls known as Grelgifallen. Where Raas Narram pours down in one great cataract and the Demon Tongue bores through stone, the eastern falls take a gentler but grander shape - they are lower than the others, yet far broader, a wide curtain of falling water rather than a single plunging column. In the midst of this broad descent lies the island, set like a stone in the very throat of the sea's eastward escape.
 
 The principality is old, and it is ruled by magicians. Cut off by the falls that surround it and guarded by the arts of its sorcerer-rulers, Habete Grelge has kept its independence and its mysteries through long ages. Few outsiders pass its waters, for the same broad falls that cradle the island make any approach a perilous thing.

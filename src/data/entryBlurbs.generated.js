@@ -392,7 +392,6 @@ export const entryBlurbs = {
   "faryngia": "Faryngia, which sailors name \"the World's Throat,\" is a vast whirlpool that turns without rest in the western reaches of the Serpent Lake.",
   "maar-lacra": "Maar Lacra, named \"the Ocean of Tears,\" lies among the deadly seas to the south of the Serpent Lake.",
   "niferland": "In the wide waters of the Serpent Lake, the sea that lies between Samkarna and Soluna, the Nivral Isles rise like scattered crowns of green and stone.",
-  "nivral-isles": "The Nivral Isles are a long chain of islands set in the Serpent Lake, the sea that lies between Samkarna and Soluna.",
   "the-way-out": "The Way Out is the northern inlet of the Serpent Lake, the great sea that lies between Samkarna and Soluna.",
   "efaro": "Efaro lies in the northwestern reaches of Soluna, where heat shapes both land and people.",
   "sombatze": "Sombatze lies far from the great struggles of Ereb, along the shores of Golwynda's vast freshwater sea.",

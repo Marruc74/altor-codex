@@ -1,5 +1,10 @@
 # Dragonback
 
+![Dragonback](/compendium/Geography/Samkarna/Dragonback/Dragonback1.jpg "Dragonback")
+![Dragonback](/compendium/Geography/Samkarna/Dragonback/Dragonback2.jpg "Dragonback")
+![Dragonback](/compendium/Geography/Samkarna/Dragonback/Dragonback3.jpg "Dragonback")
+![Dragonback](/compendium/Geography/Samkarna/Dragonback/Dragonback4.jpg "Dragonback")
+
 The Dragonback, called Drakryggen by those who dwell in its shadow, is the highest mountain chain in all of Altor. Its peaks rise beyond fifteen thousand metres, a wall of stone and ice flung across the western reaches of the great southern continent of Samkarna. No range in the known world stands taller, and from a distance its ridged silhouette truly suggests the spine of some vast sleeping beast.
 
 The chain does more than dominate the horizon. It stands across the path of the western winds and wrings them dry, so that the rain falls upon its slopes and never reaches the lands beyond. For this reason the Serpent Lake and the western parts of Soluna lie parched in the rain-shadow of the Dragonback, while the rest of Samkarna drowns in wet and swamp. A single breach pierces the whole length of the wall - Geardon's Gap - and beyond it the western slopes fall away into isolated, alien realms few outsiders have ever crossed.

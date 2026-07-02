@@ -1580,6 +1580,16 @@ export default function Compendium({
     setSelectedEntry(null);
     onCountrySelect(null);
     onAdventureSelect(null);
+    // Push a real history entry so browser Back returns to the previous view.
+    // (The hub sync effect below is a guarded replaceState and won't double-push.)
+    const url = new URL(window.location);
+    url.searchParams.delete("ce");
+    url.searchParams.delete("country");
+    url.searchParams.delete("adventure");
+    url.searchParams.set("hub", section);
+    if (group) url.searchParams.set("hubg", group);
+    else url.searchParams.delete("hubg");
+    if (url.href !== window.location.href) window.history.pushState(null, "", url);
     setHub({ section, group });
     if (group == null) setOpenSections((p) => ({ ...p, [section]: true }));
     window.scrollTo(0, 0);
@@ -1707,8 +1717,13 @@ export default function Compendium({
     for (const continent of CONTINENTS) {
       const cs = geoPlaces.filter((c) => c.continent === continent.id);
       // Sub-places that nest under a country (parent set) are rendered beneath it,
-      // not in the flat list.
-      const geoVids = (geoByName[continent.name] || []).filter((v) => !v.parent);
+      // not in the flat list. A geography video whose name matches a place pin in
+      // this continent is already represented by that pin (e.g. Niferland, whose
+      // chronicle video is attached to the country page), so drop the duplicate.
+      const csNames = new Set(cs.map((c) => c.name.toLowerCase()));
+      const geoVids = (geoByName[continent.name] || []).filter(
+        (v) => !v.parent && !csNames.has(v.name.toLowerCase())
+      );
       if (cs.length || geoVids.length)
         result.push({ id: continent.id, name: continent.name, countries: cs, videos: geoVids });
     }

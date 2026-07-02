@@ -1,5 +1,11 @@
 # Mosgilak
 
+![Mosgilak](/compendium/Geography/Samkarna/Mosgilak/Mosgilak1.jpg "Mosgilak")
+![Mosgilak - Lizardman](/compendium/Geography/Samkarna/Mosgilak/Mosgilak - Lizardman.jpg "Mosgilak - Lizardman")
+![Mosgilak - Slaves](/compendium/Geography/Samkarna/Mosgilak/Mosgilak - Slaves.jpg "Mosgilak - Slaves")
+![Mosgilak - Slaves](/compendium/Geography/Samkarna/Mosgilak/Mosgilak - Slaves 2.jpg "Mosgilak - Slaves")
+![Mosgilak - Worship](/compendium/Geography/Samkarna/Mosgilak/Mosgilak - Worship.jpg "Mosgilak - Worship")
+
 Mosgilak is a realm of the reptile-men, set within the wet and teeming expanse of Samkarna. The reptile-men who hold it are a people far advanced beyond the crude lizard-folk known in Ereb - builders of a true civilisation, ordered and old, with knowledge and craft that the swamp-dwelling lizards of the north could never match.
 
 Theirs is a faith turned toward the south, for they worship the great salamanders of the south pole and look to them as their gods. Toward all others they show neither mercy nor kinship. Outsiders who come within their reach are taken as slaves, and in time they are eaten. To stray into Mosgilak is to be counted not as a guest nor even as an enemy, but as meat.
