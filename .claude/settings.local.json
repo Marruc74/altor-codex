@@ -170,7 +170,9 @@
       "Bash(xargs cat)",
       "Bash(cp \"C:\\\\Users\\\\DANIEL~1.AND\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-daniel-andersson-claude-test-altor-codex\\\\99178057-4388-46bf-8855-5fe0f9a092d3\\\\scratchpad\\\\convert.mjs\" ./_convert_tmp.mjs)",
       "Bash(rm -f ./_convert_tmp.mjs)",
-      "Bash(echo \"exit: $?\")"
+      "Bash(echo \"exit: $?\")",
+      "Bash(grep -nE \"^#|^[A-Z][A-Za-z ':&-]{2,60}$\" \"C:\\\\tmp\\\\day-of-wrath-bible.md\")",
+      "Bash(echo \"eslint exit: $?\")"
     ]
   },
   "enableAllProjectMcpServers": true,
