@@ -2,6 +2,1437 @@
 // Compendium page slug → every embedded image [{ src, portrait }], so browse
 // cards can show a random one instead of always the first.
 export const entryImagesAll = {
+  "beauty-and-the-beast": [
+    {
+      "src": "/compendium/Adventures/BeautyAndTheBeast/Eskilsby and the Trail/Brother Franz.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BeautyAndTheBeast/Lake Anja and the Bandits/Rickard Hawkwing.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BeautyAndTheBeast/Lake Anja and the Bandits/Silverfoot.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BeautyAndTheBeast/Lake Anja and the Bandits/Panther.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BeautyAndTheBeast/Lake Anja and the Bandits/Carnation.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BeautyAndTheBeast/Lake Anja and the Bandits/Krannish.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BeautyAndTheBeast/The Drowned Temple/Edvard Eskilsson.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "black-duel": [
+    {
+      "src": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Brascht.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Littleclink.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Gorm.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Chack.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Gursch.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Vrasch.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Sledgehammer.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Chopblock.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Grumble.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Sphinx.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Guard House/Olb.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Guard House/Sadh.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Guard House/Omer.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Guard House/Torsehk.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Guard House/Kaerk.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Guard House/Jishnak.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Guard House/Grum.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Tower/Whaisszg.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Cave System/Ghashan.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Cave System/Janosch.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Cave System/Ork.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Cave System/Rural.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Cave System/Shondor.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Cave System/Tahg.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Cave System/Telach.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Cave System/Tirban.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Cave System/Tork.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "day-of-wrath": [
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Mildred.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "enemies-of-the-beginning": [
+    {
+      "src": "/compendium/Adventures/EnemiesOfTheBeginning/Yrea.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/EnemiesOfTheBeginning/Groffotor.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/EnemiesOfTheBeginning/Jesefael.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/EnemiesOfTheBeginning/Mystiria.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/EnemiesOfTheBeginning/Lucretia.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/EnemiesOfTheBeginning/Torquivel.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/EnemiesOfTheBeginning/Narnie.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/EnemiesOfTheBeginning/Guazzo.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/EnemiesOfTheBeginning/Helsikel.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "horrors-of-the-deep": [
+    {
+      "src": "/compendium/Adventures/HorrorsOfTheDeep/North Hall/Gervar Roarer.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/HorrorsOfTheDeep/North Hall/Klamorkan Grey.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/HorrorsOfTheDeep/North Hall/Nilkand Fungusfriend.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/HorrorsOfTheDeep/North Hall/Ehalen Likvis.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/HorrorsOfTheDeep/Cave of Cave Elves/Garafin.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/HorrorsOfTheDeep/Cave of Cave Elves/Senadi.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/HorrorsOfTheDeep/Goblin Cave/Kassits.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/HorrorsOfTheDeep/Goblin Cave/Mustuf.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/HorrorsOfTheDeep/Castle/Baron Boltshield.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "kandra": [
+    {
+      "src": "/compendium/Adventures/Kandra/Mages Guild/Myndol.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/Kandra/Mages Guild/Castor.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/Kandra/Mages Guild/Crondo.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/Kandra/Mages Guild/Isokles.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/Kandra/Mages Guild/Kyhara.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/Kandra/Council/Miandrick Span.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/Kandra/Military/Kvarhant.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/Kandra/Military/Milrik of Remos.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/Kandra/Military/Ziosiana.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/Kandra/Crime World/Ärnvard Ote.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/Kandra/Scenarios/Fladus.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/Kandra/Scenarios/Greper.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/Kandra/Scenarios/Schims.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/Kandra/Scenarios/Ellirind.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "shadow-of-a-rose": [
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Auxin.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Mildred.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Hilja.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Lerajie.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Karcist.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Scargil.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Maca.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Xaviera.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Hemaquiel.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Eberhard.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Rafael.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Nolgor.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "sulphur-winter": [
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Hildur Ornetand.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Osara Ornetand.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Miritti Ornetand.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Moska.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Rurik Ornetand.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Asimund Mogger.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Gizmo Mogger.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Ronald Mogger.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Bodvill Skoffare.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Gwellmyn.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Bydlo.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Malek Mangus.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Grubertin Greyskin.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Shulaban Snaketongue.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Abenazer.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Gistacki.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Robur Rudd.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Guster Blackbolt.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Gottard of Melse.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Selisia Gottardskona.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/The Sulphur Swamps/Abrelax.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/The Sulphur Swamps/Sulidon Rumperlak.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/The Sulphur Swamps/Guzier de Ollach.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Kmorda/Perrima.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Wilderness/Basimor Armstrong.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Wilderness/Big-Thule.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Wilderness/Råbald Nithing.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Wilderness/Umma.jpg",
+      "portrait": false,
+      "square": true
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Wilderness/Uxu.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Cruri/King Ottar.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/The Mercury Mine/Blatifagus the Pale.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/The Mercury Mine/Trodax Draconicus of Tricilve.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/The Iron Tower/Prior Grafficanus Majus.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/The Iron Tower/Gobrugda.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/The Iron Tower/Barbica.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/The Iron Tower/Jomoreff.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/The Iron Tower/Doctor Rufat Zeed.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/The Iron Tower/Melobin Handsome.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "the-crystal-bull": [
+    {
+      "src": "/compendium/Adventures/TheCrystalBull/Melealina.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheCrystalBull/Arn Dunkelbrink da Kharasme.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheCrystalBull/Enu Garasuga.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheCrystalBull/Naramsi of the Eastern Canyon.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheCrystalBull/Noscapio.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheCrystalBull/Leatherrat.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheCrystalBull/Pultry.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheCrystalBull/Koklai.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheCrystalBull/Bax.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheCrystalBull/Bugalatman.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheCrystalBull/Culexis.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheCrystalBull/Wafna.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheCrystalBull/Mister Merinor.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheCrystalBull/Zahembra.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheCrystalBull/Wifi.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheCrystalBull/Rafler.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "the-dead-forest": [
+    {
+      "src": "/compendium/Adventures/TheDeadForest/The Inn/Filundrus.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDeadForest/The Inn/Ivil.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDeadForest/The Inn/Doriath.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDeadForest/Wilderness/Grim.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDeadForest/Wilderness/Grum.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDeadForest/Wilderness/Ketolus.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDeadForest/Wilderness/Black Knight.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDeadForest/Wilderness/Ariel.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDeadForest/Wilderness/Kara.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDeadForest/House of Elusia/Elusia.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDeadForest/Water Pond/Vindhand.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDeadForest/Canyon/Blackhand.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "the-fifth-conflux": [
+    {
+      "src": "/compendium/Adventures/TheCrystalBull/Melealina.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "the-gates-of-power": [
+    {
+      "src": "/compendium/Adventures/TheGatesOfPower/Outside/Doriath.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheGatesOfPower/Outside/Tefalas.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheGatesOfPower/Outside/Windhand.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheGatesOfPower/Upper Level/Mogdath.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheGatesOfPower/The City/Blacktooth.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheGatesOfPower/The City/Sharch.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheGatesOfPower/The Forge and Mine/Daz.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheGatesOfPower/The Forge and Mine/Gozer.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "the-heart-of-darkness": [
+    {
+      "src": "/compendium/Adventures/TheHeartOfDarkness/Before/Tefalas.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheHeartOfDarkness/Before/Mogdath.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheHeartOfDarkness/Mountain Temple/Godvindel.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheHeartOfDarkness/Mountain Temple/Ellindor.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheHeartOfDarkness/Mountain Temple/Verdel.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheHeartOfDarkness/Mountain Temple/Gardon.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheHeartOfDarkness/Mountain Temple/Tyger.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheHeartOfDarkness/Mountain Temple/Mordag.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheHeartOfDarkness/Mountain Temple/Gort.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheHeartOfDarkness/Mountain Temple/Hertzog.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheHeartOfDarkness/Dakoths Fortress/Dormund.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheHeartOfDarkness/The Heart of Darkness/Dakoth.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "the-misty-island": [
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Outskirt.jpg",
+      "portrait": false,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Stone Chapel.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Three Stags.jpg",
+      "portrait": false,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Great Farm.jpg",
+      "portrait": false,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Mifalodors Hut.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Badinor.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Biorn.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Bryte.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Hårde.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Okald.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Rabindranath.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Sirter.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Throin.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Ulvar.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Vagnhild.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Fogden.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Jore.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Mifalodor.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Vagn.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Warge.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Map.jpg",
+      "portrait": false,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Dragonslayer.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Elf Bow.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/Outskirt/Brews.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/Sacrificial Tower.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/Underground Complex.jpg",
+      "portrait": false,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/Cadal.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/Sith.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/Emrys.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/Tuviol.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/Akrae.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/Khaa.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/Okvir.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/Deathbringer.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/Cadors Medallion.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/Verkons Medallion.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/The Black Books.jpg",
+      "portrait": false,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/The Demon Eyes.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "the-oracles-four-eyes": [
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Prophecy of Ranz/Peatro Petralba of Ranz.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Prophecy of Ranz/Bodonius.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Prophecy of Ranz/Didra Damagi of Krimbydh.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Prophecy of Ranz/Manghalde.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The White Eye - Raoga/Evil Bite.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The White Eye - Raoga/Rauga.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The White Eye - Raoga/Kamalkus.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The White Eye - Raoga/Fundibera.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The White Eye - Raoga/Salmello.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The White Eye - Raoga/Nekromordus.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Blue Eye - the Blue Child/The Blue Child.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Blue Eye - the Blue Child/Gozcana da Skugre.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Blue Eye - the Blue Child/Cymba.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Nastigast.jpg",
+      "portrait": false,
+      "square": true
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Bhrullist.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Sigisnar of Godlar.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Moliax.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Godael.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Bhe-yell.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Ghu-tha.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Mountain Goat.jpg",
+      "portrait": false,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Melealina.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Kestur.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Grimhild.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Gaddagormgald.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Pipo.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Piso.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Sipo.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Siso.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Kornaldon.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Alame.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Elux.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/Foes and Factions/Mashmashu Goda da Grummi.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/Foes and Factions/Lugal Praanz da Kaelve.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "the-unicorn-and-the-dragon-serpent": [
+    {
+      "src": "/compendium/Adventures/TheUnicornAndTheDragonSerpent/abrahim.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheUnicornAndTheDragonSerpent/Eb-Bolthar.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheUnicornAndTheDragonSerpent/Aldred.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheUnicornAndTheDragonSerpent/Salah.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheUnicornAndTheDragonSerpent/Parikila.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheUnicornAndTheDragonSerpent/Rigurt.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheUnicornAndTheDragonSerpent/Agila.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "the-unicorn-horn": [
+    {
+      "src": "/compendium/Adventures/TheUnicornHorn/The Temple/The Sanctified.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheUnicornHorn/The Temple/Liethon.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheUnicornHorn/Kandra/Liva Legast.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheUnicornHorn/House 247/Gallahan The Alchemist.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheUnicornHorn/House 247/Moira.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheUnicornHorn/House 247/Liella.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "the-voice-from-the-ancient-past": [
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Wilderness/The Death-Glade.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Wilderness/Sir Valland de Klochard.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Wilderness/Argol Thengel.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Wilderness/The Three Staff-Pieces.jpg",
+      "portrait": false,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Wilderness/The Kings Treasure.jpg",
+      "portrait": false,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/El Nhassiv/Castle El Nhassiv.jpg",
+      "portrait": false,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/El Nhassiv/Orta.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/El Nhassiv/Lorrf.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/El Nhassiv/Bagmol.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/El Nhassiv/Ortas Hoard.jpg",
+      "portrait": false,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Faltrax/Faltrax Harbor.jpg",
+      "portrait": false,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Faltrax/Borune Camaar.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Faltrax/Londuine Camaar.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Sea/Migroun.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Sea/The Pirate Crew.jpg",
+      "portrait": false,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Sea/The Green Sea-Monster.jpg",
+      "portrait": false,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Sea/Migrouns Shortsword.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Falcon Island/The Castle on Falcon.jpg",
+      "portrait": false,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Falcon Island/Fulrach Zeen.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Falcon Island/Chameeth Zeen.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Falcon Island/Alghaan Gharhd.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Falcon Island/Karish Nerek.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Falcon Island/Belgandar Seline.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Falcon Island/The Executioners Axe.jpg",
+      "portrait": false,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Falcon Island/The Magic Library.jpg",
+      "portrait": false,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Grave-Temple/The Grave-Temple.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Grave-Temple/King Aldorg Zeen.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Grave-Temple/The Grave-Temple Broadsword.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
   "aelthira-moonveil": [
     {
       "src": "/compendium/Characters/aelthira-moonveil.jpg",

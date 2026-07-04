@@ -37,6 +37,15 @@ for (const file of walk(compDir).sort()) {
     const src = m[2].trim();
     if (!srcs.includes(src)) srcs.push(src); // dedupe, keep page order
   }
+  // Adventures keep their art in YAML frontmatter `image:` fields (on their NPC /
+  // place / item cards) rather than in markdown image syntax, so pull those in
+  // too - otherwise the Adventures browse hub has nothing to borrow.
+  if (file.includes(`${path.sep}Adventures${path.sep}`)) {
+    for (const m of body.matchAll(/^\s*image:\s*["']?(\/[^"'\n]+?)["']?\s*$/gm)) {
+      const src = m[1].trim();
+      if (!srcs.includes(src)) srcs.push(src);
+    }
+  }
   if (srcs.length) {
     map[slug] = srcs[0];
     allMap[slug] = srcs;

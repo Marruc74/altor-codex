@@ -83,7 +83,7 @@ sections:
       - name: The Enslaved Dwarves
         entry: dwarf
         description: "Dwarves taken in iron collars and set to building the archmage's great black war-machine."
-      - name: The Dark Elves
+      - name: The Svartalfer
         entry: svartalf
         description: "Svartalfer of the archmage's hordes, manning roadblocks across the broken land."
     items:

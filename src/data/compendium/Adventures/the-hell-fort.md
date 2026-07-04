@@ -68,11 +68,11 @@ sections:
     description: "An abandoned dwarf-city, its wards broken by the archmage's disciple and seized by a dark folk tribe who mine its ore for the coming war."
     places:
       - name: Ghan-toth
-        description: "A once-great dwarf-city, abandoned and trap-laden and half-buried in a great cave-in, now a teeming dark folk colony of orcs, dark elves and slaves, its smithies forging ore for Nidland day and night."
+        description: "A once-great dwarf-city, abandoned and trap-laden and half-buried in a great cave-in, now a teeming dark folk colony of orcs, svartalfer and slaves, its smithies forging ore for Nidland day and night."
       - name: The Council Seat
         description: "The old council-hall of the dwarf-city, now the residence of the orc-chief and his sorcerer: a library, a torture-chamber, an arena, a menagerie, and the tribe's hoarded treasure."
       - name: The Mines
-        description: "A pitch-black warren beneath the city, worked by dark elves and orcs, where strange mushrooms grow in the dark and a runaway ore-wagon can plunge the unwary into a forgotten tomb."
+        description: "A pitch-black warren beneath the city, worked by svartalfer and orcs, where strange mushrooms grow in the dark and a runaway ore-wagon can plunge the unwary into a forgotten tomb."
     npcs:
       - name: Gartach the Great
         entry: orc
@@ -81,7 +81,7 @@ sections:
         entry: orc
         description: "Gartach's half-mad orc sorcerer and adviser, scarred by his own carelessness and in love with fire above all things, who keeps a caged fire-salamander and a black wolf for his familiar."
       - name: Fritch
-        description: "The cunning, bulge-eyed leader of Ghan-toth's dark elves, set over them by the orc-chief and milking the post for all it is worth, yet careful never to push the orcs too far."
+        description: "The cunning, bulge-eyed leader of Ghan-toth's svartalfer, set over them by the orc-chief and milking the post for all it is worth, yet careful never to push the orcs too far."
       - name: Bartolom
         description: "A gentle svartnisse raised by a human hunter and enslaved when orcs killed his master, who loves human folk and begs to follow brave warriors out of the dark."
     creatures:
@@ -94,7 +94,7 @@ sections:
       - name: The Orcs
         entry: orc
         description: "The dark folk tribe that holds Ghan-toth, hundreds strong under their chief and his underchieftains, with the picked Blue Sword Guard for his fist."
-      - name: The Dark Elves
+      - name: The Svartalfer
         entry: svartalf
         description: "The svartalfer of Ghan-toth, set beneath the orcs and made to dwell in the mines, keeping wolves and svartnisse slaves of their own."
       - name: The Giants
@@ -144,7 +144,7 @@ A band of mercenaries, just dismissed from the rebel army of a war-torn land, ga
 
 ## The Road to the Wall
 
-The road north runs through ravaged country and a robber-haunted forest, where a courteous elf-prince beset by dark elves repays his rescue with a boon that will matter more than any blade; through the magic-muddling Grynner mountains and an oracle's fiery prophecy; to a dwarf-realm whose one open gate is barred to men. Turned away there, the heroes must pass instead through Ghan-toth - an abandoned dwarf-city now swarming with orcs - and down into its mines, where a runaway ore-wagon casts them into the forgotten tomb of a king older than the elder races, and into the keeping of the relic that will decide everything.
+The road north runs through ravaged country and a robber-haunted forest, where a courteous elf-prince beset by svartalfer repays his rescue with a boon that will matter more than any blade; through the magic-muddling Grynner mountains and an oracle's fiery prophecy; to a dwarf-realm whose one open gate is barred to men. Turned away there, the heroes must pass instead through Ghan-toth - an abandoned dwarf-city now swarming with orcs - and down into its mines, where a runaway ore-wagon casts them into the forgotten tomb of a king older than the elder races, and into the keeping of the relic that will decide everything.
 
 ## The Hell Fort
 
