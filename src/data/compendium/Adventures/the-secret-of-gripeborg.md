@@ -13,12 +13,16 @@ sections:
         description: "The village at the castle's foot, its streets empty and its windows barred, the folk hiding behind their shutters since the dark came down on Gripeborg once more."
     npcs:
       - name: Marquis Thorvald Grip
+        image: /compendium/Adventures/TheSecretOfGripeborg/ThorvaldGrip.jpg
         description: "The lord of Gripeborg, who reclaimed the abandoned castle and held an inspection of its wine-cellar, only to cry out, fall white and ice-cold, and vanish from his locked room soon after. He is found chained and senseless in the demon's grotto far below, and will not wake for weeks unless powerful healing is laid on him."
       - name: The Marquise
+        image: /compendium/Adventures/TheSecretOfGripeborg/TheMarquise.jpg
         description: "Grip's wife, who has locked herself in her room since her husband vanished and the laughter rose from the cellar stair. She can add nothing to the mystery."
       - name: Master Runek
+        image: /compendium/Adventures/TheSecretOfGripeborg/Runek.jpg
         description: "A big, bushy-bearded stonemason out of Luksilo, hired to restore the castle, who received the adventurers and tells the tale of the marquis's disappearance. He will not go down into the cellar himself, pleading weak nerves and no skill at arms, and keeps watch above instead."
       - name: Knight Svein
+        image: /compendium/Adventures/TheSecretOfGripeborg/Svein.jpg
         description: "The marquis's knight, away carrying the summons to a tournament Grip meant to hold, and so absent when the dark closed in."
   - title: Into the Dark
     description: "Behind a wall of fallen wine-racks lies an ancient crypt, and the demon seals the way shut behind any who enter."
@@ -45,11 +49,13 @@ sections:
         description: "The Heart of Darkness, a winged, bat-headed horror with a red, pulsing heart, that strayed into the crypt in elder days and is held there by the demon. It greets intruders with a working of panic and a clawing reach for the heart, and fights to the death."
     items:
       - name: Whaladrugh
+        image: /compendium/Adventures/TheSecretOfGripeborg/Whaladrugh.jpg
         description: "The Sword of Power, a gilded broadsword with a blued blade and jewelled hilt, locked in the iron chest at the crypt's heart. It carries one virtue and one only, but a decisive one: against demons it bites as no ordinary steel can, and it is the single weapon that can harm the thing ruling Gripeborg."
   - title: The Demon
     description: "At the foot of the crypt waits the master of the castle, the laughter from the stair, with the marquis chained at its side."
     npcs:
       - name: The Demon
+        image: /compendium/Adventures/TheSecretOfGripeborg/Demon.jpg
         description: "A horror the size of a house, three-armed and three-horned with vast tusks and a black-gleaming hide, wielding a spiked club and a great morning-star. It was the demon that sealed the cellar and laughed the servants into flight; it guards the sword Whaladrugh, keeps the marquis chained, and is proof against every weapon but that one blade. Beyond its grotto, a hidden door conceals its reeking hoard of coin, gems and a handful of charmed arms."
 ---
 

@@ -1451,7 +1451,7 @@ export const generatedSources = {
     "Havets Vargar"
   ],
   "the-secret-of-gripeborg": [
-    "Gripeborgs Hemlighet"
+    "Sinkadus 17"
   ],
   "the-shoguns-wrath": [
     "Shoguns Vrede"

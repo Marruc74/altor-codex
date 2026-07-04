@@ -55,6 +55,7 @@ const SWEDISH_TITLE = {
   // Adventures
   "den-femte-konfluxen": "Den femte konfluxen", "svavelvinter": "Svavelvinter",
   "doda-skogen": "Döda skogen", "helvetesfortet": "Helvetesfortet", "kristalltjuren": "Kristalltjuren",
+  "gripeborgs-hemlighet": "Sinkadus 17", // adventure published in Sinkadus nr 17
   "marsklandet": "Marsklandet", "melindors-aterkomst": "Melindors återkomst", "novastenen": "Novastenen",
   "oraklets-fyra-ogon": "Oraklets fyra ögon", "rosten-fran-forntiden": "Rösten från forntiden",
   "slutstriden": "Slutstriden", "spindelkonungens-pyramid": "Spindelkonungens pyramid",

@@ -8,6 +8,7 @@ import Lightbox from "./Lightbox";
 import { refToTarget, pageUrl, sectionLabelFor, CONTINENTS, toSlug, skipGroup, videoById } from "./compendiumHelpers";
 import { CountryDetail, AdventureDetail } from "./compendiumDetails";
 import { entryImages } from "../data/entryImages.generated";
+import { imageOrientation } from "../data/imageOrientation.generated";
 import { resolvePage } from "../data/compendiumPages";
 import { toggleBookmark, useIsBookmarked } from "../lib/library.js";
 
@@ -69,12 +70,18 @@ export function CardGrid({ label, items, portrait = false, onOpenPage, onVideoSe
       <p className="location-panel__section-label">{label}</p>
       <div className="country-detail__entries-grid">
         {items.map((it, i) => {
-          const cls = `codex-card${it.square ? " codex-card--square" : (it.portrait ?? portrait) ? " codex-card--portrait" : ""}${it.fit === "contain" ? " codex-card--fit" : ""}`;
           let target = resolvePage(it.entry ?? it.name);
           if (excludeCountryId && target && target.kind === "country" && target.id === excludeCountryId) target = null;
           const linkable = target && onOpenPage;
           const borrowed = target ? entryImages[toSlug(target.name)] : null;
           const cardImage = it.image ?? borrowed ?? null;
+          // Frame to the image's real shape when it has one (so a portrait item
+          // like a sword is not cropped in a wide frame); fall back to the
+          // per-type default only for an imageless card. Explicit flags win.
+          const oimg = cardImage ? imageOrientation[cardImage] : null;
+          const isSquare = it.square ?? (cardImage ? oimg === "square" : false);
+          const isPortrait = it.portrait ?? (cardImage ? oimg === "portrait" : portrait);
+          const cls = `codex-card${isSquare ? " codex-card--square" : isPortrait ? " codex-card--portrait" : ""}${it.fit === "contain" ? " codex-card--fit" : ""}`;
           // Suffix with the index: a grid can list two cards that resolve to the
           // same entry slug (e.g. two "Ogre" cards), so the slug alone collides.
           const key = `${it.entry ?? it.name ?? it.videoId ?? "card"}-${i}`;

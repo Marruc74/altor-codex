@@ -36,6 +36,7 @@ characters:
     entry: the-oktagon
     description: "The goat-footed demon-lord whom the Black Rose Brotherhood serves, wise and proud, who keeps his word and punishes betrayal without mercy. He grants the band passage to settle their quarrel with the vampire in his own realm."
   - name: Jazeriel
+    image: /compendium/Adventures/ShadowOfARose/Jazeriel.jpg
     description: "The riddling demon-librarian of the Black Library, who alone can say which of its doors a fleeing soul has taken, and only to those who answer his riddle."
 creatures:
   - name: Eberhard
@@ -57,6 +58,7 @@ creatures:
     entry: poltergeist
     description: "A spiteful, unseen spirit Hilja calls up to wreck a temple and sow confusion, flinging furniture and fittings about to cover the Brotherhood's work."
   - name: Diabolins
+    image: /compendium/Adventures/ShadowOfARose/Diabolin.jpg
     description: "The small horned demons of Hemaquiel's world, raised from black poodles by a witch's rite, that serve for a few hours and vanish."
 places:
   - name: Krilloan
@@ -71,11 +73,13 @@ places:
     description: "An endless underground labyrinth that borders a hundred worlds and is said to hold a copy of everything ever written, said or thought in Altor. Its corridors rearrange themselves behind the traveller, and only the librarian and one deathless keeper can find a way through."
 items:
   - name: The Silver Chalice
-    entry: imaria
+    image: /compendium/Adventures/ShadowOfARose/SilverChalice.jpg
     description: "The holiest relic of Imária's cult, a cup ringed with grinning skulls and graven 'after death no rest,' fifteen centuries old and steeped in an evil that no ordinary craft can destroy. The cult needs it for the rite that would loose their goddess's chains."
   - name: The Black Book
+    image: /compendium/Adventures/ShadowOfARose/BlackBook.jpg
     description: "The Brotherhood's grimoire, bound in black leather over a silver pentagram with a pressed black rose between its boards, written in a tongue no outsider can read."
   - name: The Bone-handled Dagger
+    image: /compendium/Adventures/ShadowOfARose/BoneHandledDagger.jpg
     description: "A blackened iron dagger hafted in human bone, found in the Black Library, that glows when an undead lord draws near and, laid down, points the way to him."
 ---
 

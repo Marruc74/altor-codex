@@ -3,7 +3,7 @@
 export const entryImages = {
   "beauty-and-the-beast": "/compendium/Adventures/BeautyAndTheBeast/Eskilsby and the Trail/Brother Franz.jpg",
   "black-duel": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Brascht.jpg",
-  "day-of-wrath": "/compendium/Adventures/ShadowOfARose/Mildred.jpg",
+  "day-of-wrath": "/compendium/Adventures/DayOfWrath/Angarion.jpg",
   "enemies-of-the-beginning": "/compendium/Adventures/EnemiesOfTheBeginning/Yrea.jpg",
   "horrors-of-the-deep": "/compendium/Adventures/HorrorsOfTheDeep/North Hall/Gervar Roarer.jpg",
   "kandra": "/compendium/Adventures/Kandra/Mages Guild/Myndol.jpg",
@@ -16,6 +16,7 @@ export const entryImages = {
   "the-heart-of-darkness": "/compendium/Adventures/TheHeartOfDarkness/Before/Tefalas.jpg",
   "the-misty-island": "/compendium/Adventures/TheMistyIsland/Outskirt/Outskirt.jpg",
   "the-oracles-four-eyes": "/compendium/Adventures/TheOraclesFourEyes/The Prophecy of Ranz/Peatro Petralba of Ranz.jpg",
+  "the-secret-of-gripeborg": "/compendium/Adventures/TheSecretOfGripeborg/ThorvaldGrip.jpg",
   "the-unicorn-and-the-dragon-serpent": "/compendium/Adventures/TheUnicornAndTheDragonSerpent/abrahim.jpg",
   "the-unicorn-horn": "/compendium/Adventures/TheUnicornHorn/The Temple/The Sanctified.jpg",
   "the-voice-from-the-ancient-past": "/compendium/Adventures/TheVoiceFromTheAncientPast/Wilderness/The Death-Glade.jpg",

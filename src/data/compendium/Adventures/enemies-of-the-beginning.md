@@ -19,11 +19,13 @@ characters:
     image: /compendium/Adventures/EnemiesOfTheBeginning/Mystiria.jpg
     description: "A harmonist of Ordo Magica whose enchanted hair makes music without an instrument, and who turns a peaceful crowd into a murderous mob with a few bars of song."
   - name: Lauritz Huggard
+    image: /compendium/Adventures/EnemiesOfTheBeginning/Lauritz.jpg
     description: "A fat, pale priest of the Shining Way who sits on the city council and despises Tannatopol, and who poisons the holy water so that the faithful leave worship hating the necromancers."
   - name: Lucretia Meleagros
     image: /compendium/Adventures/EnemiesOfTheBeginning/Lucretia.jpg
     description: "A vain seductress and tattoo-witch in Jesefael's service, terrified of growing old, whose inked skin carries charms of beauty and paralysis."
   - name: Melchior Desdemonikon
+    image: /compendium/Adventures/EnemiesOfTheBeginning/Melchior.jpg
     description: "An illusionist who hides his true age behind forged papers, an apprentice of Jesefael who works on the poisoned faithful to bend their minds against the necromancers."
   - name: Torquivel
     image: /compendium/Adventures/EnemiesOfTheBeginning/Torquivel.jpg
@@ -65,10 +67,13 @@ places:
     description: "Morriart's old lair beneath the mountains, reached by a teleporting stone plate: a laboratory of stuffed and mutated beasts, a dungeon of caged monsters, and a treasure-hall heaped with the dragon's ancient hoard."
 items:
   - name: The Lirisin
+    image: /compendium/Adventures/EnemiesOfTheBeginning/Lirisin.jpg
     description: "A sun-crystal, a weapon against the undead, which Jesefael means to wield from dragon-back over Tannatopol. Brought near the isle's node of death-magic, its power would turn on itself and destroy it."
   - name: Guazzo's Gilded Apple
+    image: /compendium/Adventures/EnemiesOfTheBeginning/GildedApple.jpg
     description: "A golden apple that scatters any enchantment once, whatever its strength, enough to undo a dragon and leave a helpless hatchling in its place."
   - name: Caliban's Stone Plates
+    image: /compendium/Adventures/EnemiesOfTheBeginning/CalibansStonePlates.jpg
     entry: caliban
     description: "A pair of matched stone plates that carry the one who stands on them from the one to the other in an instant, named for the mad Guardian, by which Jesefael's tower is joined to the hidden Dragon Cave."
 ---

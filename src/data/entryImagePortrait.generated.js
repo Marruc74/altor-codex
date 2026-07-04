@@ -245,6 +245,7 @@ export const portraitSlugs = new Set([
   "the-glass-sea",
   "the-heart-of-darkness",
   "the-oracles-four-eyes",
+  "the-secret-of-gripeborg",
   "the-shining-way",
   "the-unicorn-and-the-dragon-serpent",
   "the-unicorn-horn",

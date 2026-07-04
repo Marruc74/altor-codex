@@ -7,17 +7,22 @@ summary: A mad prophecy is coming true in Krilloan. The archangel Angarion, wear
 videoIds: []
 characters:
   - name: Angarion
+    image: /compendium/Adventures/DayOfWrath/Angarion.jpg
     description: "An archangel of the sun-god Etin, descended to punish the wicked. Wearing the body of a hermit-monk by night, unseen but for the moment of each killing, he works through the prophecy's seven sevens of deaths, for in his order's reading a sinner is anyone who ever broke a single commandment, which is to say everyone."
   - name: Ulrik Oddbratt
+    image: /compendium/Adventures/DayOfWrath/Ulrik.jpg
     description: "A half-mad hermit of seventy-eight, the last dweller in an abandoned cloister above the city, chosen by the ghosts of its dead monks to receive the angel's soul and become its host."
   - name: Herger
+    image: /compendium/Adventures/DayOfWrath/Herger.jpg
     description: "A street-madman whose ravings about blood from the sky and the wrath of Etin first point the band toward the churches and the old prophecy."
   - name: Migael Kalvuonos
+    image: /compendium/Adventures/DayOfWrath/Migael.jpg
     description: "An aged, dark-skinned scholar and historian who keeps a copy of the prophecy and can tell the band of the long-dead order that first took it to heart."
   - name: Mildred Yeovil
     image: /compendium/Adventures/ShadowOfARose/Mildred.jpg
     description: "The Black Rose Brotherhood's envoy, who comes to the band with the one answer the churches cannot give: that an angel can be matched only by a devil, and that the Brotherhood knows how to raise one."
   - name: Teitan
+    image: /compendium/Adventures/DayOfWrath/Teitan.jpg
     entry: demon-prince
     description: "The abyssal champion of the demon-lord Hemaquiel, the dark mirror of Angarion, into which one of the band, marked from birth with a rose, may be transformed to fight the angel on equal terms."
 creatures:

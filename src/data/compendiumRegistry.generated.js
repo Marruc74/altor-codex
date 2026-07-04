@@ -323,6 +323,7 @@ export const compendiumRegistry = [
   { section: "lore", group: "Factions", name: "RhobdoRana", slug: "rhobdorana" },
   { section: "lore", group: "Factions", name: "Rulgh Borgnag", slug: "rulgh-borgnag" },
   { section: "lore", group: "Factions", name: "Sybiall", slug: "sybiall" },
+  { section: "lore", group: "Factions", name: "The Black Rose Brotherhood", slug: "the-black-rose-brotherhood" },
   { section: "lore", group: "Factions", name: "The Blood-spattered Feather", slug: "the-blood-spattered-feather" },
   { section: "lore", group: "Factions", name: "The Brotherhood of the Eternally Shining Star", slug: "the-brotherhood-of-the-eternally-shining-star" },
   { section: "lore", group: "Factions", name: "The Brotherhood of the Red Fish", slug: "the-brotherhood-of-the-red-fish" },

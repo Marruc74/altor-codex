@@ -178,7 +178,32 @@ export const entryImagesAll = {
   ],
   "day-of-wrath": [
     {
+      "src": "/compendium/Adventures/DayOfWrath/Angarion.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/DayOfWrath/Ulrik.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/DayOfWrath/Herger.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/DayOfWrath/Migael.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
       "src": "/compendium/Adventures/ShadowOfARose/Mildred.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/DayOfWrath/Teitan.jpg",
       "portrait": true,
       "square": false
     }
@@ -205,7 +230,17 @@ export const entryImagesAll = {
       "square": false
     },
     {
+      "src": "/compendium/Adventures/EnemiesOfTheBeginning/Lauritz.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
       "src": "/compendium/Adventures/EnemiesOfTheBeginning/Lucretia.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/EnemiesOfTheBeginning/Melchior.jpg",
       "portrait": true,
       "square": false
     },
@@ -226,6 +261,21 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Adventures/EnemiesOfTheBeginning/Helsikel.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/EnemiesOfTheBeginning/Lirisin.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/EnemiesOfTheBeginning/GildedApple.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/EnemiesOfTheBeginning/CalibansStonePlates.jpg",
       "portrait": true,
       "square": false
     }
@@ -396,6 +446,11 @@ export const entryImagesAll = {
       "square": false
     },
     {
+      "src": "/compendium/Adventures/ShadowOfARose/Jazeriel.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
       "src": "/compendium/Adventures/ShadowOfARose/Eberhard.jpg",
       "portrait": true,
       "square": false
@@ -407,6 +462,26 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Adventures/ShadowOfARose/Nolgor.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Diabolin.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/SilverChalice.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/BlackBook.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/BoneHandledDagger.jpg",
       "portrait": true,
       "square": false
     }
@@ -1218,6 +1293,38 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Adventures/TheOraclesFourEyes/Foes and Factions/Lugal Praanz da Kaelve.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "the-secret-of-gripeborg": [
+    {
+      "src": "/compendium/Adventures/TheSecretOfGripeborg/ThorvaldGrip.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheSecretOfGripeborg/TheMarquise.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheSecretOfGripeborg/Runek.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheSecretOfGripeborg/Svein.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheSecretOfGripeborg/Whaladrugh.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Adventures/TheSecretOfGripeborg/Demon.jpg",
       "portrait": true,
       "square": false
     }
