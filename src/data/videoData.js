@@ -368,10 +368,19 @@ const GROUP_OVERRIDES = {
   "ogDV_W-G6uU": "Schools",      // Magic: Elemental
 };
 
+// Explicit display-name overrides by video id, to disambiguate two pages that
+// would otherwise share a slug. The ancient civilisation of Melukha and the
+// present-day country of the same name both parsed to "melukha"; the antique one
+// becomes "Ancient Melukha" so each keeps its own page, image and cross-refs.
+const NAME_OVERRIDES = {
+  "BhcaUkSNLM0": "Ancient Melukha", // History: Melukha (the antique culture, not the country)
+};
+
 // Build the enriched video list
 export const videos = rawVideos.map((v) => {
   const parsed = parse(v.title);
   if (GROUP_OVERRIDES[v.id]) parsed.group = GROUP_OVERRIDES[v.id];
+  if (NAME_OVERRIDES[v.id]) parsed.name = NAME_OVERRIDES[v.id];
   return { ...v, ...parsed };
 });
 

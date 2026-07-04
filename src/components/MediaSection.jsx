@@ -1,5 +1,6 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import VideoModal from "./VideoModal";
+import { useModal } from "../lib/useModal";
 import { resolvePage } from "../data/compendiumPages";
 import { adventures } from "../data/adventures";
 import { entryImages } from "../data/entryImages.generated";
@@ -429,12 +430,8 @@ function LoreImage({ src, alt }) {
 // A single-image viewer: click the backdrop or press Escape to close.
 function Lightbox({ image, onClose }) {
   const ref = useRef(null);
-  useEffect(() => {
-    const onKey = (e) => { if (e.key === "Escape") onClose(); };
-    window.addEventListener("keydown", onKey);
-    ref.current?.focus();
-    return () => window.removeEventListener("keydown", onKey);
-  }, [onClose]);
+  // Escape to close, Tab trapped inside, body scroll locked, focus restored.
+  useModal(ref, onClose);
   return (
     <div className="lightbox" onClick={onClose}>
       <div

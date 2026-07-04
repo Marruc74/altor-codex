@@ -6,6 +6,7 @@ import { adventures, adventureGroups } from "../data/adventures";
 import { adventuresByPin, adventuresByEntryId } from "../data/adventureLinks";
 import { videosForPin, relatedVideosByVideo } from "../data/crossLinks";
 import { thumbSrc, onThumbError, IMAGE_MISSING } from "../lib/thumb";
+import { useModal } from "../lib/useModal";
 import { entryImages } from "../data/entryImages.generated";
 import { portraitSlugs } from "../data/entryImagePortrait.generated";
 import { entryImagesAll } from "../data/entryImagesAll.generated";
@@ -48,36 +49,18 @@ function Lightbox({ images, startIdx, onClose }) {
   const prev = useCallback(() => setIdx((i) => (i - 1 + images.length) % images.length), [images.length]);
   const next = useCallback(() => setIdx((i) => (i + 1) % images.length), [images.length]);
 
+  // Escape to close, Tab trapped inside, body scroll locked, focus restored.
+  useModal(dialogRef, onClose);
+
+  // Arrow keys page through the set.
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === "ArrowLeft") prev();
       else if (e.key === "ArrowRight") next();
-      else if (e.key === "Escape") onClose();
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [prev, next, onClose]);
-
-  // Move focus into the dialog on open, restore it to the trigger on close, so
-  // keyboard users aren't stranded on the now-hidden card behind the overlay.
-  useEffect(() => {
-    const trigger = document.activeElement;
-    dialogRef.current?.focus();
-    return () => { if (trigger instanceof HTMLElement) trigger.focus(); };
-  }, []);
-
-  // Trap Tab within the dialog while it's open.
-  const onTrapKey = (e) => {
-    if (e.key !== "Tab") return;
-    const focusable = dialogRef.current?.querySelectorAll(
-      'button:not([disabled]), [href], [tabindex]:not([tabindex="-1"])'
-    );
-    if (!focusable || focusable.length === 0) return;
-    const first = focusable[0];
-    const last = focusable[focusable.length - 1];
-    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
-  };
+  }, [prev, next]);
 
   return (
     <div className="lightbox" onClick={onClose}>
@@ -89,7 +72,6 @@ function Lightbox({ images, startIdx, onClose }) {
         aria-modal="true"
         aria-label={img.caption || img.alt || "Image viewer"}
         onClick={(e) => e.stopPropagation()}
-        onKeyDown={onTrapKey}
       >
         <button className="lightbox__close" onClick={onClose} aria-label="Close image viewer">✕</button>
         <div className="lightbox__track">
@@ -519,7 +501,34 @@ function HubView({ hub, geoGroups, onOpenHub, onOpenPage }) {
           </div>
         </div>
       )}
-      {flat.length > 0 && (
+      {flat.length > 0 && section === "characters" ? (() => {
+        // The Chronicles trio are original to the video series, not published
+        // Ereb Altor lore, so they get their own headed block set apart from the
+        // canon figures instead of sitting unmarked in the same grid.
+        const chronSlugs = new Set(["kaelene-fenholt", "bram-kestrel", "aelthira-moonveil"]);
+        const chron = flat.filter((it) => chronSlugs.has(toSlug(it.name)));
+        const canon = flat.filter((it) => !chronSlugs.has(toSlug(it.name)));
+        return (
+          <>
+            {chron.length > 0 && (
+              <div className="country-detail__block">
+                <p className="location-panel__section-label">The Chronicles</p>
+                <p className="hub-note">
+                  Original characters from the Chronicles video series, not part of the official
+                  Ereb Altor canon.
+                </p>
+                {renderPageCards(chron)}
+              </div>
+            )}
+            {canon.length > 0 && (
+              <div className="country-detail__block">
+                <p className="location-panel__section-label">Ereb Altor · {canon.length} pages</p>
+                {renderPageCards(canon)}
+              </div>
+            )}
+          </>
+        );
+      })() : flat.length > 0 && (
         <div className="country-detail__block">
           <p className="location-panel__section-label">{named.length ? "Other pages" : `${flat.length} pages`}</p>
           {renderPageCards(flat)}
@@ -816,19 +825,21 @@ function CountryDetail({ country, onPinSelect, onVideoSelect, onOpenPage }) {
   const [lightbox, setLightbox] = useState(null);
 
   useEffect(() => {
+    let cancelled = false; // a newer country replaced this one: drop late results
     setLocationData(null);
     setMarkdown(null);
     const locKey = `../data/locations/${country.id}.js`;
     const locLoader = locationModules[locKey];
-    if (!locLoader) { setLocationData({}); setMarkdown(""); return; }
+    if (!locLoader) { setLocationData({}); setMarkdown(""); return undefined; }
     locLoader()
       .then((m) => {
+        if (cancelled) return;
         setLocationData(m.default);
         if (m.default.detail) {
           const mdKey = `../data/compendium/${m.default.detail}`;
           const mdLoader = markdownModules[mdKey];
           if (mdLoader) {
-            mdLoader().then((md) => setMarkdown(md)).catch(() => setMarkdown(""));
+            mdLoader().then((md) => { if (!cancelled) setMarkdown(md); }).catch(() => { if (!cancelled) setMarkdown(""); });
           } else {
             setMarkdown("");
           }
@@ -836,7 +847,8 @@ function CountryDetail({ country, onPinSelect, onVideoSelect, onOpenPage }) {
           setMarkdown("");
         }
       })
-      .catch(() => { setLocationData({}); setMarkdown(""); });
+      .catch(() => { if (!cancelled) { setLocationData({}); setMarkdown(""); } });
+    return () => { cancelled = true; };
   }, [country.id]);
 
   // eslint-disable-next-line react-hooks/exhaustive-deps -- record on id change only
@@ -1019,15 +1031,17 @@ function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPage, onTh
   const [lightbox, setLightbox] = useState(null);
 
   useEffect(() => {
+    let cancelled = false; // a newer entry replaced this one: drop late results
     // eslint-disable-next-line react-hooks/set-state-in-effect -- reset before async load (keyed by entry.id)
     setMarkdown(null);
     const mdKey = `../data/compendium/${entryMdPath(entry)}`;
     const mdLoader = markdownModules[mdKey];
     if (mdLoader) {
-      mdLoader().then((md) => setMarkdown(md)).catch(() => setMarkdown(""));
+      mdLoader().then((md) => { if (!cancelled) setMarkdown(md); }).catch(() => { if (!cancelled) setMarkdown(""); });
     } else {
       setMarkdown("");
     }
+    return () => { cancelled = true; };
   }, [entry]);
 
   useEffect(() => { recordView({ kind: "entry", id: entry.id, name: entry.name }); }, [entry.id, entry.name]);

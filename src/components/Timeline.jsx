@@ -9,7 +9,7 @@ export default function Timeline({ onVideoSelect }) {
   const [region, setRegion] = useState(null);
   const trackRef = useRef(null);
 
-  const activeEra = eras.find((e) => e.id === activeId);
+  const activeEra = eras.find((e) => e.id === activeId) ?? eras[0];
   const activeVideos = activeEra.videoIds.map((id) => videoById[id]).filter(Boolean);
 
   // All events flattened in chronological order (eras and events are authored
@@ -83,8 +83,8 @@ export default function Timeline({ onVideoSelect }) {
               <span className="timeline-panel__region-title">{region}</span> through the ages
             </p>
             <ol className="timeline-events">
-              {regionEvents.map((ev, i) => (
-                <li key={i} className="timeline-event">
+              {regionEvents.map((ev) => (
+                <li key={`${ev.eraLabel}-${ev.year}-${ev.text}`} className="timeline-event">
                   <span className="timeline-event__meta">
                     <span className="timeline-event__year">{ev.year}</span>
                     <span className="timeline-event__era">{ev.eraLabel}</span>
@@ -100,8 +100,8 @@ export default function Timeline({ onVideoSelect }) {
 
             {activeEra.events?.length > 0 && (
               <ol className="timeline-events">
-                {activeEra.events.map((ev, i) => (
-                  <li key={i} className="timeline-event">
+                {activeEra.events.map((ev) => (
+                  <li key={`${ev.year}-${ev.text}`} className="timeline-event">
                     <span className="timeline-event__meta">
                       <span className="timeline-event__year">{ev.year}</span>
                       {ev.region && (

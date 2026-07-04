@@ -1,4 +1,5 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
+import { useModal } from "../lib/useModal";
 import { videosForPin } from "../data/crossLinks";
 import { videos } from "../data/videoData";
 import { adventuresByPin } from "../data/adventureLinks";
@@ -8,17 +9,8 @@ const videoById = Object.fromEntries(videos.map((v) => [v.id, v]));
 export default function LocationPanel({ location, onClose, onVideoSelect, onAdventureSelect }) {
   const panelRef = useRef(null);
 
-  useEffect(() => {
-    if (location) {
-      panelRef.current?.focus();
-    }
-  }, [location]);
-
-  useEffect(() => {
-    const onKey = (e) => { if (e.key === "Escape") onClose(); };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [onClose]);
+  // Escape to close, Tab trapped inside, body scroll locked, focus restored.
+  useModal(panelRef, onClose, !!location);
 
   if (!location) return null;
 
@@ -55,6 +47,7 @@ export default function LocationPanel({ location, onClose, onVideoSelect, onAdve
         ref={panelRef}
         tabIndex={-1}
         role="dialog"
+        aria-modal="true"
         aria-label={location.name}
       >
         <div className="location-panel__header">

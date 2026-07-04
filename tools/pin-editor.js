@@ -22,7 +22,7 @@ function readPins() {
   const text = fs.readFileSync(LOCATIONS, 'utf8');
   const match = text.match(/export const pins = (\[[\s\S]*\]);/);
   if (!match) throw new Error('Could not parse pins array in locations.js');
-  return new Function('return ' + match[1])(); // eslint-disable-line no-new-func
+  return new Function('return ' + match[1])();
 }
 
 const TYPE_ORDER = [

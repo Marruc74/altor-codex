@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from "react";
+import { useModal } from "../lib/useModal";
 import { pins } from "../data/locations";
 import { videos, allEntries } from "../data/videoData";
 import { adventures } from "../data/adventures";
@@ -105,10 +106,11 @@ function buildGroups(query) {
 export default function GlobalSearch({ onPinSelect, onVideoSelect, onAdventureSelect, onCompendiumEntrySelect, onCountryOpen, onClose }) {
   const [query, setQuery]           = useState("");
   const [focusedIdx, setFocusedIdx] = useState(0);
-  const inputRef  = useRef(null);
+  const dialogRef = useRef(null);
   const resultsRef = useRef(null);
 
-  useEffect(() => { inputRef.current?.focus(); }, []);
+  // Escape to close, Tab trapped inside, body scroll locked, focus restored.
+  useModal(dialogRef, onClose);
 
   const groups     = useMemo(() => buildGroups(query), [query]);
   const flatItems  = useMemo(() => groups.flatMap((g) => g.items), [groups]);
@@ -148,12 +150,12 @@ export default function GlobalSearch({ onPinSelect, onVideoSelect, onAdventureSe
   return (
     <>
       <div className="gs-backdrop" onClick={onClose} />
-      <div className="gs" role="dialog" aria-label="Global search" aria-modal="true">
+      <div className="gs" role="dialog" aria-label="Global search" aria-modal="true" ref={dialogRef} tabIndex={-1}>
 
         <div className="gs__input-wrap">
           <span className="gs__icon">⌕</span>
           <input
-            ref={inputRef}
+            data-autofocus
             className="gs__input"
             type="search"
             placeholder="Search locations, adventures, compendium, chronicles…"

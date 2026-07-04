@@ -136,12 +136,25 @@ body {
   backdrop-filter: blur(8px);
 }
 
+.navbar__brand-h {
+  margin: 0;
+  font: inherit;
+  font-weight: inherit;
+  line-height: 0;
+}
+
 .navbar__brand {
   display: flex;
   align-items: center;
   gap: 0.6rem;
   cursor: pointer;
   user-select: none;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font: inherit;
 }
 
 .navbar__sigil {
@@ -4451,4 +4464,97 @@ body {
   font-size: 0.8rem;
   color: var(--text-muted);
   line-height: 1.35;
+}
+
+/* A section-hub notice (e.g. flagging the non-canon Chronicles characters) */
+.hub-note {
+  margin: 0 0 1.5rem;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--accent, #c8a951);
+  background: var(--bg-raised);
+  background: color-mix(in srgb, var(--accent, #c8a951) 8%, transparent);
+  border-radius: 2px;
+  font-family: var(--font-body);
+  font-size: 0.86rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--text-muted);
+  max-width: 68ch;
+}
+
+/* Route loading fallback */
+.page-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 50vh;
+  color: var(--text-muted);
+}
+
+.page-loader__spinner {
+  width: 34px;
+  height: 34px;
+  border: 2px solid var(--border);
+  border-top-color: var(--accent, #c8a951);
+  border-radius: 50%;
+  animation: page-loader-spin 0.8s linear infinite;
+}
+
+.page-loader__text {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+}
+
+@keyframes page-loader-spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-loader__spinner { animation-duration: 2.4s; }
+}
+
+/* Route error fallback */
+.error-boundary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-height: 50vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.error-boundary__title {
+  font-family: var(--font-display, var(--font-body));
+  font-size: 1.15rem;
+  color: var(--text);
+}
+
+.error-boundary__msg {
+  font-family: var(--font-body);
+  color: var(--text-muted);
+  max-width: 32ch;
+}
+
+.error-boundary__btn {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  background: none;
+  border: 1px solid var(--border-light, var(--border));
+  border-radius: 2px;
+  color: var(--text);
+  font-family: var(--font-body);
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.error-boundary__btn:hover {
+  border-color: var(--accent, #c8a951);
+  color: var(--accent, #c8a951);
 }

@@ -1,19 +1,13 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
+import { useModal } from "../lib/useModal";
 import { pinForVideo } from "../data/crossLinks";
 
 export default function VideoModal({ video, onClose, onPinSelect }) {
   const ref = useRef(null);
   const label = video?.title ?? video?.name ?? "";
 
-  useEffect(() => {
-    if (video) ref.current?.focus();
-  }, [video]);
-
-  useEffect(() => {
-    const onKey = (e) => { if (e.key === "Escape") onClose(); };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [onClose]);
+  // Escape to close, Tab trapped inside, body scroll locked, focus restored.
+  useModal(ref, onClose, !!video);
 
   if (!video) return null;
 

@@ -140,8 +140,10 @@ const InteractiveMap = forwardRef(function InteractiveMap({ onLocationSelect }, 
         onSelectRef.current({ ...pin, loading: true });
         try {
           const detail = await import(`../data/locations/${pin.id}.js`);
+          if (selectedPinRef.current !== pin.id) return; // a newer pin was picked
           onSelectRef.current({ ...pin, ...detail.default, loading: false });
         } catch {
+          if (selectedPinRef.current !== pin.id) return;
           onSelectRef.current({ ...pin, loading: false });
         }
       });
@@ -230,8 +232,10 @@ const InteractiveMap = forwardRef(function InteractiveMap({ onLocationSelect }, 
     onSelectRef.current({ ...pin, loading: true });
     try {
       const detail = await import(`../data/locations/${pin.id}.js`);
+      if (selectedPinRef.current !== pin.id) return; // a newer pin was picked
       onSelectRef.current({ ...pin, ...detail.default, loading: false });
     } catch {
+      if (selectedPinRef.current !== pin.id) return;
       onSelectRef.current({ ...pin, loading: false });
     }
   };

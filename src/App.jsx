@@ -5,6 +5,7 @@ import LocationPanel from "./components/LocationPanel";
 import VideoModal from "./components/VideoModal";
 import GlobalSearch from "./components/GlobalSearch";
 import EmberCanvas from "./components/EmberCanvas";
+import ErrorBoundary from "./components/ErrorBoundary";
 
 // Heavy, route-only views — split into their own chunks (loaded on first visit)
 const Timeline   = lazy(() => import("./components/Timeline"));
@@ -13,6 +14,26 @@ const MediaSection = lazy(() => import("./components/MediaSection"));
 import { allEntries } from "./data/videoData";
 import { pins } from "./data/locations";
 import "./App.css";
+
+// Shown while a route chunk downloads, so the view isn't a blank screen. A failed
+// chunk (e.g. a stale tab after a deploy) is caught by ErrorBoundary instead.
+function PageLoader() {
+  return (
+    <div className="page page-loader">
+      <span className="page-loader__spinner" aria-hidden="true" />
+      <p className="page-loader__text">Consulting the codex…</p>
+    </div>
+  );
+}
+
+// A lazy route: recoverable on chunk-load failure, with a loading fallback.
+function LazyRoute({ children }) {
+  return (
+    <ErrorBoundary>
+      <Suspense fallback={<PageLoader />}>{children}</Suspense>
+    </ErrorBoundary>
+  );
+}
 
 // Compendium pages openable directly, for the random "Surprise me".
 const ENTRY_SECTIONS = new Set(["peoples", "creatures", "lore", "magic", "history", "conflicts", "characters"]);
@@ -362,9 +383,9 @@ export default function App() {
       {/* History */}
       {activePage === "history" && (
         <div className="page">
-          <Suspense fallback={<div className="page" />}>
+          <LazyRoute>
             <Timeline onVideoSelect={handleVideoSelect} />
-          </Suspense>
+          </LazyRoute>
         </div>
       )}
 
@@ -390,16 +411,16 @@ export default function App() {
       {/* Chronicles */}
       {activePage === "chronicles" && (
         <div className="page">
-          <Suspense fallback={<div className="page" />}>
+          <LazyRoute>
             <MediaSection onOpenPage={handleChroniclePageOpen} />
-          </Suspense>
+          </LazyRoute>
         </div>
       )}
 
       {/* Compendium */}
       {activePage === "catalog" && (
         <div className="page">
-          <Suspense fallback={<div className="page" />}>
+          <LazyRoute>
             <Compendium
               key={compendiumKey}
               selectedCountry={selectedCountry}
@@ -409,7 +430,7 @@ export default function App() {
               onPinSelect={handlePinSelect}
               onVideoSelect={handleVideoSelect}
             />
-          </Suspense>
+          </LazyRoute>
         </div>
       )}
 

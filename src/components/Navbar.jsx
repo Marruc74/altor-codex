@@ -18,12 +18,14 @@ export default function Navbar({ activePage, onNavigate, onSearchOpen }) {
 
   return (
     <nav className="navbar navbar--scrolled">
-      <div className="navbar__brand" onClick={() => navigate(null)}>
-        <span className="navbar__sigil">✦</span>
-        <span className="navbar__title">The Altor Codex</span>
-      </div>
+      <h1 className="navbar__brand-h">
+        <button className="navbar__brand" onClick={() => navigate(null)} aria-label="The Altor Codex — home">
+          <span className="navbar__sigil" aria-hidden="true">✦</span>
+          <span className="navbar__title">The Altor Codex</span>
+        </button>
+      </h1>
 
-      <ul className={`navbar__links ${menuOpen ? "navbar__links--open" : ""}`}>
+      <ul id="navbar-links" className={`navbar__links ${menuOpen ? "navbar__links--open" : ""}`}>
         {navLinks.map((link) => (
           <li key={link.id}>
             <button
@@ -47,6 +49,8 @@ export default function Navbar({ activePage, onNavigate, onSearchOpen }) {
         className="navbar__burger"
         onClick={() => setMenuOpen((o) => !o)}
         aria-label="Toggle menu"
+        aria-expanded={menuOpen}
+        aria-controls="navbar-links"
       >
         <span /><span /><span />
       </button>

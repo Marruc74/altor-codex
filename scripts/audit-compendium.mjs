@@ -52,6 +52,20 @@ const reg = {};
 const add = (s, n) => { (reg[s] ??= new Set()).add(toSlug(n)); };
 for (const m of vd.matchAll(/title:\s*"([^"]+)"/g)) { const p = titleSection(m[1]); add(p.section, p.name); }
 
+// videoData NAME_OVERRIDES rename a video page (by id), changing its slug so two
+// same-named pages don't collide. The registry generator imports videoData and
+// sees these; this raw-text audit must mirror them or the renamed .md looks like
+// an orphan.
+{
+  const idTitle = {};
+  for (const m of vd.matchAll(/\{\s*id:\s*"([^"]+)",\s*title:\s*"([^"]+)"/g)) idTitle[m[1]] = m[2];
+  const ov = vd.match(/const NAME_OVERRIDES = \{([\s\S]*?)\};/);
+  if (ov) for (const m of ov[1].matchAll(/"([^"]+)":\s*"([^"]+)"/g)) {
+    const t = idTitle[m[1]];
+    if (t) add(titleSection(t).section, m[2]);
+  }
+}
+
 // Markdown-only pages now come from the generated registry (5 content sections).
 // An orphan = a file missing from the registry (someone added a page and didn't
 // re-run generate-compendium-registry.mjs); a broken reg = a registry row whose
