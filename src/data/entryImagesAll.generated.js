@@ -2,6 +2,27 @@
 // Compendium page slug → every embedded image [{ src, portrait }], so browse
 // cards can show a random one instead of always the first.
 export const entryImagesAll = {
+  "aelthira-moonveil": [
+    {
+      "src": "/compendium/Characters/aelthira-moonveil.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "bram-kestrel": [
+    {
+      "src": "/compendium/Characters/bram-kestrel.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "kaelene-fenholt": [
+    {
+      "src": "/compendium/Characters/kaelene-fenholt.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
   "karaleia": [
     {
       "src": "/compendium/Characters/karaleia.jpg",

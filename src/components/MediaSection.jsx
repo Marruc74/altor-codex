@@ -24,6 +24,16 @@ const CHARACTERS = [
   { id: "i-ydrEYHeCk", label: "Character", title: "Aelthira Moonveil" },
 ];
 
+// General Chronicles art that belongs to no single road job: the trio together,
+// mood pieces, and the like. Each opens full size in the lightbox.
+const GALLERY = [
+  {
+    src: "/compendium/Chronicles/Gallery/three-adventurers.jpg",
+    title: "Kaelene, Bram & Aelthira",
+    caption: "The trio on the road together.",
+  },
+];
+
 // Lore drawn from the series bible, grouped by the adventure each card belongs
 // to. An adventure group's `link` resolves to its Compendium page (the source
 // module behind the trio's version); each card may also carry its own `link`.
@@ -258,15 +268,15 @@ const LORE_GROUPS = [
     blurb:
       "The prequel the road jobs grow out of: the closed worlds the trio each walked out of, the mentors who shaped them, and the cold thing that woke in a southern tomb and began to follow Kaelene's thread. The lands they came from, and the wound the whole series turns on.",
     people: [
-      { label: "Kaelene's mentor", name: "Tarek", description: "The quiet man who saw the skill behind a starving thief and trained Kaelene in Poane. He taught her to read rooms and marks, the Shining Way's sunburst-and-sword among them. He fell in the Jorpagna tomb; whether he truly died is left open." },
+      { label: "Kaelene's mentor", name: "Tarek", image: "/compendium/Chronicles/tarek.jpg", description: "The quiet man who saw the skill behind a starving thief and trained Kaelene in Poane. He taught her to read rooms and marks, the Shining Way's sunburst-and-sword among them. He fell in the Jorpagna tomb; whether he truly died is left open." },
       { label: "The threat", name: "The Crowned One", description: "The ancient, crowned thing woken in the Jorpagna tomb. It crosses distance without seeming to move, carries a killing cold, and took Tarek. Now it follows a thread that leads to Kaelene, and after the working beneath Kandra it has begun to climb it." },
-      { label: "Bram's mentor", name: "Orvith", description: "The lean, weathered caravan guard who taught Bram his craft by showing rather than telling, and gave him his first real respect on the Morral run." },
-      { label: "Aelthira's friend", name: "Fen Marwick", description: "Aelthira's steady study-partner of five years at the Academy. He counsels caution, then carries her bag to the gate when she leaves. Her tether back to Atrema." },
-      { label: "Aelthira's mentor", name: "Professor Carenthal", description: "The long-tenured faculty member who always took Aelthira seriously, and in the end was part of the institution's refusal. He never told her she was wrong, which was the most honest thing he could do." },
-      { label: "Bram's road", name: "Corvel", description: "The soft-voiced merchant who lends to villages at terms they can't pay and collects in forced labour. Warning Mern about him cost Bram his post." },
-      { label: "Bram's road", name: "The Caravan Master", description: "The pragmatic woman who runs the Vesket-to-Morral caravan and first takes Bram on as muscle, then lets him go over the Mern affair without rancour. In his tall tales she slips into a former employer he calls Corvin." },
-      { label: "Brinewatch", name: "Bram's Father", description: "The dock master of Brinewatch, hard and precise and never loud, who loves through work and expectation. The home Bram hasn't gone back to." },
-      { label: "Brinewatch", name: "Bram's Brother", description: "Bram's quiet, steadying brother, who gave him the worn ship-coin and stayed to keep their father's dock. The one Bram writes to and means to go back for." },
+      { label: "Bram's mentor", name: "Orvith", image: "/compendium/Chronicles/orvith.jpg", description: "The lean, weathered caravan guard who taught Bram his craft by showing rather than telling, and gave him his first real respect on the Morral run." },
+      { label: "Aelthira's friend", name: "Fen Marwick", image: "/compendium/Chronicles/fen-marwick.jpg", description: "Aelthira's steady study-partner of five years at the Academy. He counsels caution, then carries her bag to the gate when she leaves. Her tether back to Atrema." },
+      { label: "Aelthira's mentor", name: "Professor Carenthal", image: "/compendium/Chronicles/professor-carenthal.jpg", description: "The long-tenured faculty member who always took Aelthira seriously, and in the end was part of the institution's refusal. He never told her she was wrong, which was the most honest thing he could do." },
+      { label: "Bram's road", name: "Corvel", image: "/compendium/Chronicles/corvel.jpg", description: "The soft-voiced merchant who lends to villages at terms they can't pay and collects in forced labour. Warning Mern about him cost Bram his post." },
+      { label: "Bram's road", name: "The Caravan Master", image: "/compendium/Chronicles/caravan-master.jpg", description: "The pragmatic woman who runs the Vesket-to-Morral caravan and first takes Bram on as muscle, then lets him go over the Mern affair without rancour. In his tall tales she slips into a former employer he calls Corvin." },
+      { label: "Brinewatch", name: "Bram's Father", image: "/compendium/Chronicles/brams-father.jpg", description: "The dock master of Brinewatch, hard and precise and never loud, who loves through work and expectation. The home Bram hasn't gone back to." },
+      { label: "Brinewatch", name: "Bram's Brother", image: "/compendium/Chronicles/brams-brother.jpg", description: "Bram's quiet, steadying brother, who gave him the worn ship-coin and stayed to keep their father's dock. The one Bram writes to and means to go back for." },
     ],
     places: [
       { label: "Klomellien", name: "Klomellien", link: "Klomellien", description: "A salt-rich land in the cold north of Ereb, off the Copper Sea. Fish, salt and coal come out of its working ports, and so do people who stay and get used up." },
@@ -359,9 +369,11 @@ function matchAdventureCard(item) {
   return null;
 }
 
-// The image for a Chronicles card as { src, portrait, fit }, or null: the matched
-// adventure card's art, or a linked country page's first image (shown landscape).
+// The image for a Chronicles card as { src, portrait, fit }, or null: the card's
+// own image (the cold-plot and backstory figures no Compendium page holds), the
+// matched adventure card's art, or a linked country page's first image (landscape).
 function loreCardImage(item, match) {
+  if (item.image) return { src: item.image, portrait: item.portrait ?? true, fit: item.fit };
   if (match?.src) return { src: match.src, portrait: match.portrait, fit: match.fit };
   const target = item.link ? resolvePage(item.link) : null;
   if (target && target.kind !== "adventure") {
@@ -507,9 +519,11 @@ function LoreGrid({ items, onOpenPage, groupTarget, onLightbox }) {
   );
 }
 
-// Sidebar order: Watch (the videos), then Episode 0 and the five road jobs.
+// Sidebar order: Watch (the videos), the general art Gallery, then Episode 0 and
+// the road jobs.
 const NAV_ITEMS = [
   { id: "watch", numeral: null, title: "Watch" },
+  { id: "gallery", numeral: null, title: "Gallery" },
   ...ORDERED_GROUPS.map((g) => ({ id: g.id, numeral: g.numeral, title: g.title })),
 ];
 
@@ -542,6 +556,30 @@ function WatchContent({ onSelect }) {
           <MediaGrid items={items} onSelect={onSelect} />
         </div>
       ))}
+    </>
+  );
+}
+
+function GalleryContent({ onLightbox }) {
+  return (
+    <>
+      <ContentHeader eyebrow="The Chronicles" title="Gallery" />
+      <p className="country-detail__section-desc">
+        Art from across the trio's road, not tied to any one job.
+      </p>
+      <div className="chron-gallery">
+        {GALLERY.map((img) => (
+          <button
+            key={img.src}
+            className="chron-gallery__thumb"
+            onClick={() => onLightbox({ src: img.src, alt: img.title, caption: img.caption || img.title })}
+            aria-label={`View ${img.title}`}
+          >
+            <img src={thumbSrc(img.src)} alt={img.title} loading="lazy" onError={onThumbError(img.src)} />
+            {img.title && <span className="chron-gallery__caption">{img.title}</span>}
+          </button>
+        ))}
+      </div>
     </>
   );
 }
@@ -618,6 +656,8 @@ export default function MediaSection({ onOpenPage }) {
         <div className="compendium-main">
           {selected === "watch" ? (
             <WatchContent onSelect={setActive} />
+          ) : selected === "gallery" ? (
+            <GalleryContent onLightbox={setLightbox} />
           ) : (
             group && <GroupContent group={group} onOpenPage={onOpenPage} onLightbox={setLightbox} />
           )}
