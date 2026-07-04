@@ -1,5 +1,8 @@
 # Maminira me Delema
 
+![Maminira me Delema](/compendium/Geography/Samkarna/Maminira me Delema/Maminira1.jpg "Maminira me Delema")
+![Maminira me Delema](/compendium/Geography/Samkarna/Maminira me Delema/Maminira2.jpg "Maminira me Delema")
+
 Maminira me Delema, the archipelago of the rustling races, is a scatter of islands off the great southern continent of Samkarna. Its name comes from the dry, ceaseless rustling that fills its forests and shores, for the islands are home to insectoids of enormous size - and these are no mindless vermin, but creatures possessed of true intelligence, with purposes and patience of their own.
 
 The archipelago is little known to the wider world, and that ignorance has been bought at a terrible price. For it was from here, long ages past, that the doom of an empire crawled forth.

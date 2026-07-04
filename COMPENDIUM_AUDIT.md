@@ -29,7 +29,7 @@ step** - after adding, removing or filling pages, update the lists below.
 
 ---
 
-## Last run: 2026-06-19 — 615 files
+## Last run: 2026-07-02 — 644 files
 
 Structurally clean. All connection checks pass:
 
@@ -57,6 +57,14 @@ Structurally clean. All connection checks pass:
 
 ## Resolved (history)
 
+- Added images (JPG) to sixteen Geography pages from a new art batch: the Demon
+  Tongue, Golwynda Sea, Habete Grelge, Raas Narram, Dragonback, Jurona (incl.
+  dinosaur / dinosauroid), Maminira me Delema, Mosgilak (incl. lizardman / slaves
+  / worship), Geardon's Gap, Faryngia, Maar Lacra, the Way Out, the Glass Sea,
+  Valgus Lake, Yndar, and the Nivral Isles.
+- Merged `nivral-isles` into `niferland` (same place - the kingdom and its
+  isles): folded the isles art onto the Niferland page, moved the "Nivral Isles"
+  chronicle video to it, and removed the duplicate page and map pin.
 - Filled from references: the four classical elementals (salamander, sylf, undin,
   gnom), angyon, mermaid, ratman, church-of-sbintor, and the Ereb Altor continent
   overview.

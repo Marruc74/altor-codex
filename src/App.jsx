@@ -32,6 +32,18 @@ function setParam(key, value) {
   history.replaceState(null, "", url);
 }
 
+// Like setParam, but pushes a NEW history entry so the browser Back button
+// returns to the previous view. Used for user-driven navigation (opening a
+// country/adventure); setParam (replaceState) is for keeping the URL in step
+// without growing the history stack.
+function pushParam(key, value) {
+  const url = new URL(window.location);
+  if (value) url.searchParams.set(key, value);
+  else url.searchParams.delete(key);
+  if (url.href !== window.location.href) window.history.pushState(null, "", url);
+  else history.replaceState(null, "", url);
+}
+
 // Migrate legacy ?entry= deep links (the retired Codex) to the compendium's ?ce=.
 (function migrateLegacyParams() {
   const u = new URL(window.location);
@@ -146,13 +158,30 @@ export default function App() {
   const [selectedCountry, setSelectedCountry] = useState(() => getParam("country"));
   const handleCountrySelect = useCallback((id) => {
     setSelectedCountry(id);
-    setParam("country", id);
+    if (id) pushParam("country", id);
+    else setParam("country", null);
   }, []);
 
   const [selectedAdventure, setSelectedAdventure] = useState(() => getParam("adventure"));
   const handleAdventureSelect = useCallback((id) => {
     setSelectedAdventure(id);
-    setParam("adventure", id);
+    if (id) pushParam("adventure", id);
+    else setParam("adventure", null);
+  }, []);
+
+  // Browser Back/Forward: re-derive the top-level page and the open country /
+  // adventure from the URL. The Compendium has its own popstate listener that
+  // restores the open hub (?hub) and entry (?ce); both read the same URL, so
+  // they stay consistent. Setters run directly (no setParam), so this never
+  // writes back to history and can't loop.
+  useEffect(() => {
+    const onPop = () => {
+      setActivePage(getInitialPage());
+      setSelectedCountry(getParam("country"));
+      setSelectedAdventure(getParam("adventure"));
+    };
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
   }, []);
 
   // Bumped on main-menu navigation to remount the Compendium, which otherwise

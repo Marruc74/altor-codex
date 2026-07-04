@@ -1,5 +1,9 @@
 # The Demon Tongue
 
+![The Demon Tongue](/compendium/Geography/Golwynda Sea/The Demon Tongue/The Demon Tongue1.jpg "The Demon Tongue")
+![The Demon Tongue](/compendium/Geography/Golwynda Sea/The Demon Tongue/The Demon Tongue2.jpg "The Demon Tongue")
+![The Demon Tongue](/compendium/Geography/Golwynda Sea/The Demon Tongue/The Demon Tongue3.jpg "The Demon Tongue")
+
 The Demon Tongue, called Demontungan by those who dwell near it, is the strangest of the three outflows of the Golwynda Sea. Here the upper sea does not simply fall over a cliff. Instead it bores clean through the great stone bridge that links Ereb to Akrogal, driving through the rock in a single roaring channel before bursting out the far side to jet far over the Maseva Bay below. The water leaps from the stone like a vast grey tongue thrust from the mouth of the world, and it is from this sight that the outflow takes its name.
 
 So awesome is the spectacle that the peoples of the bay do not see mere water in it. They worship the Demon Tongue as the god Okasu, and the thunder of its falling is taken for the voice of the god himself. Pilgrims and offerings come to the shores of the Maseva Bay where the tongue strikes the sea, and the moods of the water are read as the favour or anger of Okasu.

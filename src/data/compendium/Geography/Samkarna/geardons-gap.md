@@ -1,5 +1,8 @@
 # Geardon's Gap
 
+![Geardon's Gap](/compendium/Geography/Samkarna/Geardons Gap/Geardons Gap1.jpg "Geardon's Gap")
+![Geardon's Gap](/compendium/Geography/Samkarna/Geardons Gap/Geardons Gap2.jpg "Geardon's Gap")
+
 Geardon's Gap is the one breach in the great wall of the Dragonback, the sole pass through the highest mountains in all of Altor. Where the chain otherwise rises in an unbroken rampart of ice and stone, here the rock falls away into a single corridor that links the drowned lands of eastern Samkarna with the strange, isolated realms of the western slopes.
 
 It is no gentle road. A hurricane blows through the Gap without pause, funnelled and quickened by the towering walls to either side, so that any traveller who would cross must do so against a wind that never dies. For all its violence it remains the only way through, and those few who pass between the two halves of the continent have no other choice but to brave it.

@@ -183,6 +183,75 @@ const LORE_GROUPS = [
     ],
   },
   {
+    id: "made-dragon",
+    numeral: "VI",
+    title: "The Made Dragon",
+    link: "Enemies of the Beginning",
+    blurb:
+      "The trio's sixth road job and their first as settled residents of Krilloan. The Commandant's daughter hires them to find her vanished brother, and the thread runs under the whole city: a conspiracy to whip Krilloan into a mob and march it on the necromancer-isle of Tannatopol. Behind it lie an old animist's fifty-year grudge and a dragon regrown from the dead. Bram carries the black sword into the dragon's cave as plain steel and never wakes its fire; the beast is undone by an apple, not a blade. Adapted from the Drakar och Demoner module Enemies of the Beginning.",
+    people: [
+      { label: "The conspiracy", name: "Jesefael Bamilit", link: "Enemies of the Beginning", description: "A Kardian animist of a hundred and twenty-six who wears the face of forty, maker of the dragon and architect of the war on Tannatopol. He is certain he is the only kind man in a cruel world, and kills by the score to prove it. He dies at the island, burst apart by his own sun-crystal in a wild node he never knew was there." },
+      { label: "The conspiracy", name: "Torquivel", link: "Enemies of the Beginning", description: "A witch whose gift is the aging of living things. She grew the dragon's hatchling to full size in a single season and loved it as her own child, then turned on Jesefael the moment the apple gave her back the small bewildered thing it truly was. Spared, she keeps the hatchling now in a long penance." },
+      { label: "The made dragon", name: "Helsikel", link: "Enemies of the Beginning", description: "Morriart, a dragon dead an age, regrown from a scrap of her hide in a giant tortoise's egg and filled with her own vengeful soul. The dispelling apple scatters the borrowed soul and leaves a harmless hatchling behind." },
+      { label: "The conspiracy", name: "Narnie Santhan", link: "Enemies of the Beginning", description: "The order's gentle spiritist prodigy, drugged and used to call the dead dragon's soul without ever knowing what she did. The trigger no one thought to chain. Freed of her passenger, with grief still to do." },
+      { label: "The conspiracy", name: "Mystiria Bentonor", link: "Enemies of the Beginning", description: "A harmonist who drives gentle necromancers berserk and tunes a mob with music played on no instrument. The fair woman who walks calm out of a square she has turned to murder. Taken, and sentenced to the pyre." },
+      { label: "The conspiracy", name: "Melchior Desdemonikon", link: "Enemies of the Beginning", description: "An illusionist and mentalist who seeds hatred into souls laid open by tainted holy water, and nearly drops Kaelene with a working that mimics a fit. Taken, and sent to the deep cells." },
+      { label: "The conspiracy", name: "Lucretia Meleagros", link: "Enemies of the Beginning", description: "Jesefael's symbolist apprentice, a buyer of time who looks young at four hundred. Her binding is cut in three tattoos that must be looked at to take hold, and it breaks on Bram's warding medallion. She flees through the Caliban's Plate to warn the cave, and is taken there." },
+      { label: "The Shining Way", name: "Lauritz Huggard", link: "Enemies of the Beginning", description: "A corrupt bontisal of the Shining Way who taints the holy water that opens the faithful to Melchior's hatred. The trio know his face at once: he sat as a juror at their own trial in Krilloan. His appalled order defrocks him." },
+      { label: "Ordo Magica", name: "Guazzo Arathaso", link: "Enemies of the Beginning", description: "The one-eyed dwarf-magician who once only watched the trio now stands openly with them, pressing on them his gilded apple of a single unmaking, the one thing that can undo the dragon without fire." },
+      { label: "The Commandant's house", name: "Yrea Destanior", link: "Enemies of the Beginning", description: "The Commandant's daughter, a young bard who defies her father's silence and hires foreigners to find her brother, because a secret that cannot leave the city is the only kind she can trust." },
+      { label: "The Commandant's house", name: "Groffotor Destanior", link: "Enemies of the Beginning", description: "The Commandant's youngest son, taken through his family's own escape tunnel to blackmail his father, and turned green by an animism forced on him too young. A willing apprentice, then a bitterly repentant one, freed at last from the eleventh cell." },
+      { label: "Krilloan's swords", name: "The Commandant", description: "Krilloan's military commander, a hard grey man blackmailed into keeping his watch idle while the mob gathered, his son the price of his silence. Freed, he turns his swords loose at last." },
+    ],
+    places: [
+      { label: "Meh-Sylfhin", name: "Jesefael's Tower", link: "Enemies of the Beginning", description: "In Krilloan's pillar quarter, where the rich live on stone columns reached by cage-lifts and sky-traffic, Jesefael's palace stands on a single shaft some hundred and sixty metres high, a hanging garden on its roof and a hidden teleport-stone in its heart." },
+      { label: "Off Krilloan", name: "Tannatopol", link: "Tannatopol", description: "The fog-bound necromancer-isle three kilometres off Krilloan, which is also the city's hospice for the dying, tended by the only people who fear neither the dead nor the sick. Jesefael means to burn it. The wild magic buried in its rock is what saves it." },
+    ],
+    locations: [
+      { label: "Beneath the mountains", name: "The Dragon Cave", link: "Enemies of the Beginning", description: "The treasure-cave where the regrown dragon is fed and grown, reached only by the teleport-stone hidden in Jesefael's palace. Where Bram plants the apple and the beast is unmade." },
+      { label: "Tannatopol", name: "The Wild Node", link: "Tannatopol", description: "An old, strong knot of wild magic in the island's rock, fierce enough to tear a delicate working apart. It is why the dead lie so quiet on Tannatopol, and the failsafe that bursts Jesefael's sun-crystal and kills him by his own plan." },
+    ],
+    items: [
+      { label: "Relic", name: "Guazzo's Gilded Apple", link: "Enemies of the Beginning", description: "The dwarf-magician's gilded apple of a single unmaking, a one-use dispel he presses on the trio. Bram carries it into the cave and plants it on the dragon, and the borrowed soul scatters and the monster is a hatchling again." },
+      { label: "Sun-crystal", name: "The Lirisin", link: "Enemies of the Beginning", description: "An elf-made crystal from before the dark times whose light annihilates the undead. Jesefael's weapon against Tannatopol, meant to scour the isle clean. Carried into the island's wild node, it bursts instead of firing, and takes him with it." },
+      { label: "Made stone", name: "Caliban's Stone Plates", link: "Enemies of the Beginning", description: "A pair of teleport-stones of the old times, each twinned to its distant mate, so that to set a foot on one is to lift it from the other. The only road down from Jesefael's floating palace to the Dragon Cave." },
+      { label: "Blade", name: "The Deathbringer", link: "Enemies of the Beginning", description: "Bram carries the black sword into a dragon's cave as plain steel, is tempted at the worst moment to wake its fire, and does not. The lesson of the borrowed war landing at last by being unneeded: the beast is undone by an apple, and the fire stays sheathed." },
+    ],
+    seeds: [
+      { label: "Firewalled", name: "The Near Rhymes", description: "A soul poured out of death into a made body, a nature-spirit riding the girl Narnie, a crystal of pure light against the undead. Each rhymes with the buried thing, and Aelthira rules each a working with a maker and a method, a near rhyme and not the cold. The firewall holds a third time, and the Crowned One never once looks south." },
+    ],
+  },
+  {
+    id: "day-of-wrath",
+    numeral: "VII",
+    title: "The Day of Wrath",
+    link: "Day of Wrath",
+    blurb:
+      "The trio's seventh road job, and the peak of the cold plot before it is cut. Impossible murders climb through Krilloan, forty-nine sinners killed in seven sevens, each by a different wrath, fulfilling a four-century-old prophecy of the Order of Saint Kleol: the archangel Angarion, come to scour a sinful city. To stop a god the trio help the Black Rose Brotherhood raise its opposite, and the rite's crystal chooses Kaelene for its vessel. Under a god's light the Hollow Mark surfaces on her at last, and in the sky above Krilloan she cuts the cold's thread out of her own heart and ends the hunt that has driven her since the tomb. Adapted from the Drakar och Demoner module Day of Wrath.",
+    people: [
+      { label: "The Order of Saint Kleol", name: "Angarion", link: "Day of Wrath", description: "The archangel of Etin of the Shining Way, named in Saint Kleol's four-century-old prophecy to descend and scour a sinful city once forty-nine sinners die in seven sevens. He works through a living human host. Not the cold but the light's own terrible justice, on a separate axis, which Aelthira rules out. Destroyed in the sky duel over Krilloan." },
+      { label: "The Black Rose Brotherhood", name: "Teitan", link: "Day of Wrath", description: "An abyss-being of fire and the long dark, of the Oktagon and the Red Moon, prophesied as Angarion's opposite and called to meet him in the sky so the two spend their wrath on each other rather than on the city. Poured into a living vessel by the Brotherhood's rite, then drawn out again when the angel was unmade." },
+      { label: "Angarion's host", name: "Ulrik Oddbratt", link: "Day of Wrath", description: "The last mad solitary of the Order of Saint Kleol, seventy-eight and fifty years alone on the Forithos plateau, kindly and vague by day and the archangel's willing host by night. He loves the sun and talks to the burned brothers in their graves. He dies when Angarion is unmade." },
+      { label: "Krilloan", name: "Migael Kalvuonos", link: "Day of Wrath", description: "An Efarisk scholar, the one man who has studied the Order of Saint Kleol, who gives the trio the lore of Kleol, the seven sevens, and the burned monastery on Forithos." },
+      { label: "Black Rose Brotherhood", name: "Mildred Yeovil", link: "Day of Wrath", description: "Krilloan's foremost herb-mistress and a leader of the Black Rose Brotherhood, the coven the trio bought their peace from once already. She brings them the only counter her Black Book names, and the alliance that raises a devil to fight an angel." },
+      { label: "The Shining Way", name: "The Priest of Saint Minatius", description: "The honest new Kardian priest who replaced the corrupt one, and who reads Kaelene's knowledge of the order's mark as a kind of kinship. He gives her a sun-token that echoes Tarek, and a token of the order that carries the trio past the monastery's ward." },
+    ],
+    places: [
+      { label: "Forithos", name: "St Kleol's Monastery", link: "Day of Wrath", description: "The ruined mountain cloister of the Order of Saint Kleol, high on the fault-plateau four days north of Krilloan, its brothers long dead in the fire. The abbot's grave sits on holy ground no Brother of the Black Rose can walk, so the trio go in for the prayer while the burned monks still guard the catacombs." },
+      { label: "Krilloan", name: "The Temple in Meh-Phoe", link: "Day of Wrath", description: "The temple where the count of the dead is read against the prophecy, in one of Krilloan's canal quarters. A waypoint on the trail from the murders to the mad host on the mountain." },
+    ],
+    items: [
+      { label: "Prophecy", name: "The Prophecy of Angarion", link: "Day of Wrath", description: "A four-century-old book of the Shining Way that promised the archangel would come to scour a sinful city once forty-nine sinners had died in seven groups of seven, each by a different wrath. The murders are the prophecy coming true on schedule." },
+      { label: "Relic", name: "The Prayer-scroll", link: "Day of Wrath", description: "The full summoning-prayer the Brotherhood needs and cannot reach, walled in the abbot's grave on holy ground no Brother can cross. The trio fetch it out of the catacombs so the devil can be raised against the angel." },
+      { label: "Keepsake", name: "The Sun-Token", description: "The token the honest priest of Saint Minatius presses on Kaelene, an echo of Tarek's sunburst-and-sword. Read as kinship in the church, it carries the trio past the ward on the monastery gate." },
+    ],
+    seeds: [
+      { label: "The mark surfaces", name: "The Hollow Mark & the Rose", description: "What surfaces on Kaelene under the god's light is the Hollow Mark itself, the cold's own figure, with Hemaquiel's rose set in its dead centre. A single mark claimed twice over, by rivals and not by master and servant. Invisible her whole life, to a mirror, to a lover, even to Aelthira, and seen at last only now." },
+      { label: "The thread cut", name: "The Crowned One", description: "The cold reaches through the Hollow Mark once, the nearest it has ever come to the living world, a brush and not an arrival. Holding her mind inside the borrowed god by Tarek's counting drill, Kaelene takes the thread the cold ran into her in the Jorpagna tomb and cuts it. The hunt that has driven her since is over, the corridor nightmare ends, and she walks free of the Crowned One at last." },
+      { label: "A new thread", name: "Hemaquiel's Claim", link: "Shadow of a Rose", description: "Reverted to herself and falling to a death she is sure of, Kaelene is caught, not by mercy and not by the cold, but by the rose warm in the place the cold had been. The demon-prince the trio bargained with in Krilloan holds a claim on her now, a treacherous ally and keeper who would deal against the cold and turn the moment it is safe to collect her. The quieter thread Aelthira takes up alone." },
+    ],
+  },
+  {
     id: "backstory",
     numeral: "0",
     title: "Backstory & Prologue",
@@ -222,8 +291,8 @@ const LORE_GROUPS = [
   },
 ];
 
-// Reading order: the prequel (Episode 0) first, then the five road jobs.
-const GROUP_ORDER = ["backstory", "skeleton", "misty", "unicorn", "borrowed", "shadow"];
+// Reading order: the prequel (Episode 0) first, then the seven road jobs.
+const GROUP_ORDER = ["backstory", "skeleton", "misty", "unicorn", "borrowed", "shadow", "made-dragon", "day-of-wrath"];
 const ORDERED_GROUPS = [...LORE_GROUPS].sort(
   (a, b) => GROUP_ORDER.indexOf(a.id) - GROUP_ORDER.indexOf(b.id)
 );

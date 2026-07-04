@@ -46,7 +46,6 @@ export const pins = [
   { id: "kamsun",                        name: "Kamsun",                      type: "region",        tagline: "", x: 4135, y: 1521 },
   { id: "mosgilak",                      name: "Mosgilak",                    type: "region",        tagline: "", x: 1415, y: 3491 },
   { id: "yndar",                         name: "Yndar",                       type: "region",        tagline: "", x: 4937, y: 2195 },
-  { id: "nivral-isles",                  name: "Nivral Isles",                type: "region",        tagline: "", x: 2606, y: 2504 },
   { id: "maminira-me-delema",            name: "Maminira me Delema",          type: "region",        tagline: "", x: 1095, y: 2621 },
   { id: "jurona",                        name: "Jurona",                      type: "region",        tagline: "", x: 1789, y: 2553 },
   { id: "marjura",                       name: "Marjura",                     type: "country",       continent: "ereb",         tagline: "The ice-bound sulphur isle of the far north-west, where a buried demon-kingdom stirs beneath eight centuries of frost", x: 1108, y: 41 },

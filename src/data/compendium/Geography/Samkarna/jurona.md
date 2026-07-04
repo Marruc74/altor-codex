@@ -1,5 +1,11 @@
 # Jurona
 
+![Jurona](/compendium/Geography/Samkarna/Jurona/Jurona1.jpg "Jurona")
+![Jurona](/compendium/Geography/Samkarna/Jurona/Jurona2.jpg "Jurona")
+![Jurona](/compendium/Geography/Samkarna/Jurona/Jurona3.jpg "Jurona")
+![Jurona - Dinosaur](/compendium/Geography/Samkarna/Jurona/Jurona - Dinosaur.jpg "Jurona - Dinosaur")
+![Jurona - Dinosauroid](/compendium/Geography/Samkarna/Jurona/Jurona - Dinosauroid.jpg "Jurona - Dinosauroid")
+
 Jurona is the great southern swamp of Samkarna, a drowned country where the land and the water are never wholly apart. Toward its northern edge it begins as tangled mangrove, the roots wading out into brackish shallows, and as one travels south the mangroves give way to forests of giant ferns that close overhead and shut out the sky. This is the wettest end of a wet continent, where the rains scarcely cease and the heat hangs heavy over still black water.
 
 The swamp teems with monstrous life. Huge amphibians and lizards move through the shallows and the fern-shadow, grown to sizes unknown in gentler lands, and the deep interior is whispered of as the home of hidden realms where the dinosaurs still live. The great rainforest of Morginnerskogen does not so much end as drown, its margins dissolving into the Jurona swamps.

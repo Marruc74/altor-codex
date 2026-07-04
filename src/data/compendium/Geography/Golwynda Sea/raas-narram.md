@@ -1,5 +1,9 @@
 # Raas Narram
 
+![Raas Narram](/compendium/Geography/Golwynda Sea/Raas Narram/Raas Narram1.jpg "Raas Narram")
+![Raas Narram](/compendium/Geography/Golwynda Sea/Raas Narram/Raas Narram2.jpg "Raas Narram")
+![Raas Narram](/compendium/Geography/Golwynda Sea/Raas Narram/Raas Narram3.jpg "Raas Narram")
+
 Raas Narram is the western mouth of the Golwynda Sea, the place where the great glass mountain of fresh water finally tears free of its banks and falls. Here the swollen sea pours down toward the Copper Sea in a single enormous cataract, a wall of falling water whose roar can be heard long before it can be seen and whose mist hangs over the surrounding country like a low cloud. It is one of the three outflows by which the Golwynda drains its impossible height, and the only one in the west.
 
 Beside the falls stand the ruins of a work that men once hoped would tame them. Emperor Garhues of Krun, unwilling to accept that no ship could ever pass between the two seas, ordered the building of a colossal lock-stair - a stepped stair of locks meant to lift vessels the full height from the Copper Sea up into the Golwynda. The work failed, and the broken terraces of his stair still flank the cataract, a monument to the ambition of Krun and to the stubbornness of the sea that defeated it.

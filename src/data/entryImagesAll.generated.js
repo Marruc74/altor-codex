@@ -1461,6 +1461,152 @@ export const entryImagesAll = {
       "square": false
     }
   ],
+  "golwynda-sea": [
+    {
+      "src": "/compendium/Geography/Golwynda Sea/Golwynda Sea/Golwynda Sea1.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Golwynda Sea/Golwynda Sea/Golwynda Sea2.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Golwynda Sea/Golwynda Sea/Golwynda Sea3.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "habete-grelge": [
+    {
+      "src": "/compendium/Geography/Golwynda Sea/Habete Grelge/Habete Grelge1.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Golwynda Sea/Habete Grelge/Habete Grelge2.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Golwynda Sea/Habete Grelge/Habete Grelge3.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Golwynda Sea/Habete Grelge/Habete Grelge4.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "raas-narram": [
+    {
+      "src": "/compendium/Geography/Golwynda Sea/Raas Narram/Raas Narram1.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Golwynda Sea/Raas Narram/Raas Narram2.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Golwynda Sea/Raas Narram/Raas Narram3.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "the-demon-tongue": [
+    {
+      "src": "/compendium/Geography/Golwynda Sea/The Demon Tongue/The Demon Tongue1.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Golwynda Sea/The Demon Tongue/The Demon Tongue2.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Golwynda Sea/The Demon Tongue/The Demon Tongue3.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "dragonback": [
+    {
+      "src": "/compendium/Geography/Samkarna/Dragonback/Dragonback1.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Samkarna/Dragonback/Dragonback2.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Samkarna/Dragonback/Dragonback3.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Samkarna/Dragonback/Dragonback4.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "geardons-gap": [
+    {
+      "src": "/compendium/Geography/Samkarna/Geardons Gap/Geardons Gap1.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Samkarna/Geardons Gap/Geardons Gap2.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "jurona": [
+    {
+      "src": "/compendium/Geography/Samkarna/Jurona/Jurona1.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Samkarna/Jurona/Jurona2.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Samkarna/Jurona/Jurona3.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Samkarna/Jurona/Jurona - Dinosaur.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Samkarna/Jurona/Jurona - Dinosauroid.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "maminira-me-delema": [
+    {
+      "src": "/compendium/Geography/Samkarna/Maminira me Delema/Maminira1.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Samkarna/Maminira me Delema/Maminira2.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
   "melukha": [
     {
       "src": "/compendium/Geography/Samkarna/Countries/Melukha/Melukha1.jpg",
@@ -1495,9 +1641,70 @@ export const entryImagesAll = {
       "square": false
     }
   ],
+  "mosgilak": [
+    {
+      "src": "/compendium/Geography/Samkarna/Mosgilak/Mosgilak1.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Samkarna/Mosgilak/Mosgilak - Lizardman.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Samkarna/Mosgilak/Mosgilak - Slaves.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Samkarna/Mosgilak/Mosgilak - Slaves 2.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Samkarna/Mosgilak/Mosgilak - Worship.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "faryngia": [
+    {
+      "src": "/compendium/Geography/Serpent Lake/Faryngia/Faryngia1.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "maar-lacra": [
+    {
+      "src": "/compendium/Geography/Serpent Lake/Maar Lacra/Maar Lacra1.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Serpent Lake/Maar Lacra/Maar Lacra2.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Serpent Lake/Maar Lacra/Maar Lacra3.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Serpent Lake/Maar Lacra/Maar Lacra4.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
   "niferland": [
     {
       "src": "/compendium/Geography/Other/Niferland/Niferland1.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Other/Niferland/Nivralerna1.jpg",
       "portrait": true,
       "square": false
     },
@@ -1508,6 +1715,18 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Geography/Other/Niferland/Female1.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "the-way-out": [
+    {
+      "src": "/compendium/Geography/Serpent Lake/The Way Out/The Way Out1.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/Serpent Lake/The Way Out/The Way Out2.jpg",
       "portrait": true,
       "square": false
     }
@@ -1576,6 +1795,52 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Geography/Soluna/Countries/Traxilme/Female1.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "the-glass-sea": [
+    {
+      "src": "/compendium/Geography/The Eastern Seas/The Glass Sea/The Glass Sea1.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/The Eastern Seas/The Glass Sea/The Glass Sea2.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/The Eastern Seas/The Glass Sea/The Glass Sea3.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "valgus-lake": [
+    {
+      "src": "/compendium/Geography/The Eastern Seas/Valgus Lake/Valgus Lake1.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/The Eastern Seas/Valgus Lake/Valgus Lake2.jpg",
+      "portrait": true,
+      "square": false
+    }
+  ],
+  "yndar": [
+    {
+      "src": "/compendium/Geography/The Eastern Seas/Yndar/Yndar1.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/The Eastern Seas/Yndar/Yndar2.jpg",
+      "portrait": true,
+      "square": false
+    },
+    {
+      "src": "/compendium/Geography/The Eastern Seas/Yndar/Yndar3.jpg",
       "portrait": true,
       "square": false
     }

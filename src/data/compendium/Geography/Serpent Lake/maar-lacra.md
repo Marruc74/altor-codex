@@ -1,5 +1,10 @@
 # Maar Lacra
 
+![Maar Lacra](/compendium/Geography/Serpent Lake/Maar Lacra/Maar Lacra1.jpg "Maar Lacra")
+![Maar Lacra](/compendium/Geography/Serpent Lake/Maar Lacra/Maar Lacra2.jpg "Maar Lacra")
+![Maar Lacra](/compendium/Geography/Serpent Lake/Maar Lacra/Maar Lacra3.jpg "Maar Lacra")
+![Maar Lacra](/compendium/Geography/Serpent Lake/Maar Lacra/Maar Lacra4.jpg "Maar Lacra")
+
 Maar Lacra, named "the Ocean of Tears," lies among the deadly seas to the south of the Serpent Lake. The waters of the lake drain southward through Horyns gap, and beyond that gap they spill into this ocean, where the mercy of wind and weather is withdrawn. Here no rain falls and no wind stirs the surface, and the heat lies upon the water in a murderous stillness that has killed more sailors than any storm.
 
 It is a sea that punishes those who enter it. With no wind to fill a sail and no rain to refill a cask, a becalmed ship is left to the sun, and the twin banks of oars that serve elsewhere on the Serpent Lake's galleys offer only slow torment under so cruel a sky. Few who sail into the Ocean of Tears mean to, and fewer still find their way back out.

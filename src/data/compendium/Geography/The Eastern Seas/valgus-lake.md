@@ -1,5 +1,8 @@
 # Valgus Lake
 
+![Valgus Lake](/compendium/Geography/The Eastern Seas/Valgus Lake/Valgus Lake1.jpg "Valgus Lake")
+![Valgus Lake](/compendium/Geography/The Eastern Seas/Valgus Lake/Valgus Lake2.jpg "Valgus Lake")
+
 Valgus Lake, called Valgussjoen in the elder tongue, is a vast inland sea of the east whose true extent no chart has ever fully set down. Its waters remain largely unknown, and the few accounts that survive speak less of trade routes than of wonders. Across its expanse lie scattered islands said to be home to strange folk: titans of monstrous stature, one-eyed cyclopes, and brooding sphinxes that keep their own counsel among the rocks.
 
 Greatest of the lake's secrets is the Dragons' Archipelago, which mariners' lore places somewhere within these waters. There, it is said, the dragons of Altor come together to breed - a gathering that falls but once in roughly a thousand years. The archipelago is reckoned the breeding ground of the whole dragon kind, and so few living souls have witnessed the gathering that it has passed almost wholly into legend.

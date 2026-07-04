@@ -1,6 +1,7 @@
 # Niferland
 
 ![Niferland](/compendium/Geography/Other/Niferland/Niferland1.jpg "Niferland")
+![The Nivral Isles](/compendium/Geography/Other/Niferland/Nivralerna1.jpg "The Nivral Isles")
 ![Niferland male](/compendium/Geography/Other/Niferland/Male1.jpg "Niferland male")
 ![Niferland female](/compendium/Geography/Other/Niferland/Female1.jpg "Niferland female")
 

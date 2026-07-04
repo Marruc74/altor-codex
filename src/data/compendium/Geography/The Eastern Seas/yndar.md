@@ -1,5 +1,9 @@
 # Yndar
 
+![Yndar](/compendium/Geography/The Eastern Seas/Yndar/Yndar1.jpg "Yndar")
+![Yndar](/compendium/Geography/The Eastern Seas/Yndar/Yndar2.jpg "Yndar")
+![Yndar](/compendium/Geography/The Eastern Seas/Yndar/Yndar3.jpg "Yndar")
+
 Yndar is known across Altor as the evil island, the cradle of necromancy and the dark arts of the dead. Yet it was not always so. In ages past it was home to a peaceful human high culture, a people of learning and quiet accomplishment. That was before the coming of the margyler, whose invasion broke the old order and remade Yndar in a colder image.
 
 Under the margyler's shadow the island grew into a cruel, proud and deeply scholarly civilization. Its thinkers laid foundations that endure across the world to this day: the first mathematics, the art of abstract writing, and the disciplined craft of war. But the same minds that mastered numbers and letters turned as readily to darker studies - the refinement of torture, and the forbidden arts of necromancy and spiritism. What had once been a gentle culture became a power that probed every secret, however terrible.

@@ -1,5 +1,9 @@
 # Golwynda Sea
 
+![Golwynda Sea](/compendium/Geography/Golwynda Sea/Golwynda Sea/Golwynda Sea1.jpg "Golwynda Sea")
+![Golwynda Sea](/compendium/Geography/Golwynda Sea/Golwynda Sea/Golwynda Sea2.jpg "Golwynda Sea")
+![Golwynda Sea](/compendium/Geography/Golwynda Sea/Golwynda Sea/Golwynda Sea3.jpg "Golwynda Sea")
+
 The Golwynda Sea is the great freshwater sea that lies cradled between the lands of Ereb, Soluna and Akrogal. It is the largest body of sweet water known to the peoples of the three continents, and a thing of wonder to any who first look upon it, for its waters do not lie flat. The press of so vast a sea against the lands that hem it in forces the whole expanse upward, so that it bulges toward the sky like a great glass mountain. At its swollen heart the Golwynda stands roughly 250 metres higher than the Copper Sea below, and from that height it strains always to escape its banks.
 
 Because the sea sits so much higher than the waters around it, no keel can ever pass between the Golwynda and the Copper Sea. The currents that race toward the edges are too strong for any oar or sail to master, and where the sea finally breaks free it does so in thundering falls that would shatter any ship foolish enough to ride them. The Golwynda is, for all its size, a sea sealed against shipping - a sea that may be drunk and fished and worshipped, but never crossed from one sea to the next.
