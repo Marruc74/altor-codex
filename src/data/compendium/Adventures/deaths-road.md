@@ -35,6 +35,7 @@ sections:
         description: "A reclusive, short-tempered mapmaker who settled in Bergborg long ago. His charts are exact wherever the land has not shifted, and he will draw the way to the cave for the right price in brushes, ink and paper."
     creatures:
       - name: Haraxidix
+        entry: dragon
         description: "The ancient dragon drawn to the old duel by the swords' power, who burned the archmage and the hero both and bore the two blades off to his cave. The dwarves walled him in to starve; he lived on his hatred for over a century before he died, and orcs stripped the corpse of teeth, hide and claws. Only the great skeleton remains."
       - name: The Mountain Spirit
         description: "A luring thing of the high mines that has no back, only a dark hollow, and never fights hand to hand. It sings men into the deep tunnels to die, and answers a killing blow by dissolving into smoke."

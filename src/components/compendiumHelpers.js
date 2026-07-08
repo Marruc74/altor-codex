@@ -7,9 +7,11 @@ import { adventures } from "../data/adventures";
 import { entryImagesAll } from "../data/entryImagesAll.generated";
 import { geoPlaces } from "../data/compendiumPages";
 
-// Portrait art gets a tall frame, square art a square frame; anything else uses
-// the default widescreen frame. Portrait and square never both apply.
+// Portrait art gets a 2:3 frame, very tall (9:16) art an even taller frame,
+// square art a square frame; anything else uses the default widescreen frame.
+// The flags are mutually exclusive.
 export function orientClass(o) {
+  if (o?.tall) return " codex-card--tall";
   if (o?.portrait) return " codex-card--portrait";
   if (o?.square) return " codex-card--square";
   return "";

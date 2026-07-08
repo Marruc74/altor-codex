@@ -23,6 +23,7 @@ sections:
       - name: Glormelion
         description: "An elf-fair, soft-voiced necromancer who keeps a skull-knockered hill with two minotaur skeletons and signs warning visitors off. He turns friendly at once to any party bound for a hidden treasure, and will happily come along, leaving his bone-servants at home."
       - name: Rummel Trefot
+        entry: halfling
         description: "A round, jolly halfling illusionist who styles himself the prophet on earth of Gourmel, the god of food, and has raised a gaudy marble temple to him with the motto 'eat and be glad.' He feasts all comers before his vast smiling idol, and may join the party for the joy of spreading his god's good word."
   - title: Kalson's Monastery
     description: "Where the great lindens grow stands a monastery of the fertility-goddess, and it is under siege."
@@ -35,6 +36,7 @@ sections:
       - name: Ushtur
         description: "A huge, scarred uruk war-leader who marches some fifty orcs on the monastery and gives the monks two days to surrender their treasures or see every tree cut down and the walls stormed. His battle-thirst often gets the better of his wits, and he will take up any challenge offered him."
       - name: Elderion
+        entry: elves
         description: "A haughty elf knight of the city of Eglath Andoria who rides to the monastery's relief at the last hour, leading his warriors not out of charity but to be rid of orcs, and expecting no thanks for it."
     creatures:
       - name: Orcs
@@ -47,6 +49,7 @@ sections:
         description: "A dungeon Krugal built to mock all dungeons, reached through a door beneath a waterfall and strung with absurd snares and mocking signs: one-way teleport pentagrams, a false wishing-well, a lightning-floor one crosses on hands and knees, a tipping floor over a spider-pit, a bridge labelled 'this bridge is not dangerous,' a hall of sixteen identical rooms, and a maze the way out of which is a simple draught of air. The real perils are few, and the last and worst is a great demon best left undisturbed behind its curtain."
     npcs:
       - name: Uri-monocle
+        entry: cyclop
         description: "A surly old cyclops who lives in a stone-age cave behind the waterfall and bathes in the lake he calls the Bathtub, sometimes too sour even to eat his victims, flinging them instead to the hydra in the water."
     creatures:
       - name: Megas

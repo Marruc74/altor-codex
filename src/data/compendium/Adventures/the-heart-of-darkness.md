@@ -18,6 +18,7 @@ sections:
         description: "A monk in Eledain's service, known from the Gates of Power, and one of the most pivotal figures of the tale. He carries the untested mithril dagger that can bind an undead and leads the heroes out of the dwarven realm, to the mountain temple and on toward Otag and Dakoth's fortress. His uncanny gift for foreseeing parts of his own future has shown him his own death within that fortress, which he bears with quiet resolve and hides from his companions, asking only that they leave him to his fate if it comes, since the quest weighs heavier than his life. He dies in the dark lord's keep."
         image: /compendium/Adventures/TheHeartOfDarkness/Before/Tefalas.jpg
       - name: Mogdath
+        entry: death-wraith
         description: "The undead black knight from the Gates of Power, who endures only where he survived that earlier tale. Needing no breath, he swims after the heroes out of the dwarven realm and falls upon them early on the road, where Tefalas's mithril dagger may bind him so that Godvindel can destroy him for good at the mountain temple."
         image: /compendium/Adventures/TheHeartOfDarkness/Before/Mogdath.jpg
     items:

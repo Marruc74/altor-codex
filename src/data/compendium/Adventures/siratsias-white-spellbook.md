@@ -18,6 +18,7 @@ sections:
         description: "A wind-priestess secretly bewitched into the sorceress's service, set to block any who study her in the library, and to do her mistress's dark work under cover of a siege."
     creatures:
       - name: The Crystal Guardian
+        entry: golem
         description: "A mighty golem carved from the base of the Crystal Pillar and sunk in the temple's bottomless lake, that rises to destroy any who would truly threaten the pillar."
   - title: The Trail
     description: "The temple's library sets a thread of truths, half-truths and lies, leading through the capital and a string of the sorceress's old haunts."

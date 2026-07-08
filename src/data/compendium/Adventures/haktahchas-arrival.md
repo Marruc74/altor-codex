@@ -46,6 +46,7 @@ sections:
         description: "A secret eight-sided dwarf vault reached through a hidden octagonal door, its inmost chamber sealed by passwords and watched by a hidden trap, where the red gem rests on a pedestal."
     npcs:
       - name: Thodin Threebeard
+        entry: dwarf
         description: "The dwarf-lord of the Grynner hold, near two centuries old, broad and strong even for a dwarf, his fire-red beard plaited in three. Loud-voiced and dominant but true and dependable, he hates the dark folk and keeps the chamber of the Demon's Heart, its deepest password known to him and one other alone."
     creatures:
       - name: The Mad Hound
@@ -71,6 +72,7 @@ sections:
       - name: Yhan
         description: "The faithful's contact dwelling just outside Besporho, who knows how the land lies and where the silver elf may be found."
       - name: The Silver Elf
+        entry: silver-elf
         description: "An ancient silver elf, once a slave and now sheltered in Besporho, whose heart the rite demands - cut out with the black dagger and sealed in the black casket."
     creatures:
       - name: The Talking Dove
@@ -88,6 +90,7 @@ sections:
     npcs:
       - name: Echotun
         description: "Overlord of the dark riders under the old regime, a figure of the war just past who may take a hand in this last venture among the faithful."
+        image: /compendium/Adventures/MelindorsReturn/Fervidun/Echotun.jpg
     creatures:
       - name: Haktahcha
         description: "A mighty demon-being called into Altor's dimension by Isthan's rite. Given leave, it enters the judge's own body, and he swells half a meter taller as it settles into him - and in time it would take Nidland's people as Vicotnik once did, a new Punisher in the Leader's service."

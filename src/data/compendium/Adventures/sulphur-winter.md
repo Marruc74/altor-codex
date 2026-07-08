@@ -38,18 +38,22 @@ sections:
         description: Hildur's son and farmhand, athletic, proud and a little vain, hot-headed and quick to drastic decisions, who despises all Trakorians and never forgets a wrong. He is secretly part of a liberation movement some sixty strong, and seeks out any who take a stand against the occupiers.
         image: /compendium/Adventures/SulphurWinter/Arhem/Rurik Ornetand.jpg
       - name: Asimund Mogger
+        entry: white-duck
         description: A seasoned merchant of the duck-folk house of Mogger, dressed tastefully in silk and white mink, soft-spoken and correct. With Gizmo he means to break into the lucrative sulphur market and end Shakello's monopoly, spreading the house's capital across many ventures and glad to invest in interesting projects.
         image: /compendium/Adventures/SulphurWinter/Arhem/Asimund Mogger.jpg
       - name: Gizmo Mogger
+        entry: white-duck
         description: One of the two duck-folk merchants of house Mogger, partner to Asimund, a routined and correct trader in fine silks who wants a share of the sulphur trade and the breaking of Shakello's monopoly.
         image: /compendium/Adventures/SulphurWinter/Arhem/Gizmo Mogger.jpg
       - name: Ronald Mogger
+        entry: white-duck
         description: The Moggers' merchant-apprentice, a fashion-obsessed and scatterbrained young duck who dresses in garish colours and bright feathers fixed in his hair. Lazy, boastful and vain, he passes the time at games of chance and lemonade, and is keen on anything that brings quick money so long as it is not too much work.
         image: /compendium/Adventures/SulphurWinter/Arhem/Ronald Mogger.jpg
       - name: Bodvill Skoffare
         description: The merchant who represents the house of Shakello, small, lean and wiry, with pale waxy skin and grey, sharp eyes, dressed finely in velvet and noble furs. Fastidious and contemptuous of people, he dislikes the duck-folk and unlettered adventurers; he holds the contract on most of the sulphur export, keeps a bodyguard or two, and will sell costly goods or lend money at steep interest.
         image: /compendium/Adventures/SulphurWinter/Arhem/Bodvill Skoffare.jpg
       - name: Gwellmyn
+        entry: dwarf
         description: The dwarves' smith and negotiator, with mild, friendly features and a long white beard braided with silver thread. He loves wordplay and keeping his listeners in suspense, gentle of nature but stubborn in a bargain, and handles all the dwarves' dealings. It is he who seeks out help to recover the mercury mine.
         image: /compendium/Adventures/SulphurWinter/Arhem/Gwellmyn.jpg
       - name: Bydlo
@@ -123,6 +127,7 @@ sections:
         description: A strikingly, almost unearthly beautiful ice-druid who goes barefoot in light red silks, untouched by any cold, with short red hair, a black headband set with a silver snow-star, and blue-grey eyes. Tolerant and kind to all intelligent creatures but hot of temper and impatient with the timid, she wields powerful magic, and offers herself as guide to the temple because she has had no word from her fellow druids.
         image: /compendium/Adventures/SulphurWinter/Kmorda/Perrima.jpg
       - name: Girinda
+        entry: ghost
         description: Perrima's sister, found murdered in the temple's dormitory with her throat cut. Her ghost appears to reveal that the novice Melobin betrayed the druids, and gives a cryptic clue to the hidden treasure vault.
     items:
       - name: The Mammoth Horn
@@ -138,12 +143,15 @@ sections:
         description: The ice-giants' home, the peak where Big-Thule's clan dwells, who may be called by the mammoth horn.
     npcs:
       - name: Basimor Armstrong
+        entry: giant
         description: A young ice-giant with a round face and flat nose, clad in polar-bear skin and carrying a great double-axe on principle. Hot-headed, very proud and full of youthful bravado and dreams of heroism, he roams the ice to see what the humans are up to, gladly picks quarrels, but fetches his kinsmen if he is hurt.
         image: /compendium/Adventures/SulphurWinter/Wilderness/Basimor Armstrong.jpg
       - name: Big-Thule
+        entry: giant
         description: The clan-leader of the ice-giants, like an overgrown grandfather with a long white beard and a red potato of a nose. Peaceable but proud and freedom-loving, he avoids quarrels with humans yet brooks no insult, and thinks in terms of loyalty to kin, blood-vengeance and like-for-like. He can be summoned by the mammoth horn in the Kmorda temple.
         image: /compendium/Adventures/SulphurWinter/Wilderness/Big-Thule.jpg
       - name: Råbald Nithing
+        entry: giant
         description: An outcast ice-giant, filthy and foul-smelling, with a stringy grey beard and a sack of junk over his shoulder. Surly and silent, cast out of the clan for theft and forbidden the ice, he plunders lonely houses and waylays travellers but is careful not to turn the giants against him. Not to be trusted.
         image: /compendium/Adventures/SulphurWinter/Wilderness/Råbald Nithing.jpg
       - name: Umma
@@ -154,6 +162,7 @@ sections:
         image: /compendium/Adventures/SulphurWinter/Wilderness/Uxu.jpg
     creatures:
       - name: Fur Lizard
+        entry: flying-lizard
         description: A warm-blooded, more intelligent kind of flying lizard found in the wilds, its skin worth a fair sum; a half-eaten kill of one is sometimes blamed on worse things than it.
     items:
       - name: Karson Fat
@@ -169,6 +178,7 @@ sections:
         description: Beneath the grave, where the earth's own life-force wells up through a copper bull; wizards of old drew power from it, and a draught sends a person into a deep sleep.
     npcs:
       - name: King Ottar
+        entry: mummy
         description: The last king of Cruri, now a high undead mummy on his throne in the grave-chamber, warded by antimagi. He wakes if the sword Ebharing is moved, and would then reclaim crown and blade, drink from the earthblood spring and lead forth his army of the dead; woe to any who rouse him.
         image: /compendium/Adventures/SulphurWinter/Cruri/King Ottar.jpg
     items:

@@ -172,7 +172,22 @@
       "Bash(rm -f ./_convert_tmp.mjs)",
       "Bash(echo \"exit: $?\")",
       "Bash(grep -nE \"^#|^[A-Z][A-Za-z ':&-]{2,60}$\" \"C:\\\\tmp\\\\day-of-wrath-bible.md\")",
-      "Bash(echo \"eslint exit: $?\")"
+      "Bash(echo \"eslint exit: $?\")",
+      "Bash(rm _convert_tmp.mjs)",
+      "Bash(awk '/entryMdPath *=|function entryMdPath/{f=1} f{print} f&&/}/{c++; if\\(c>=2\\)exit}' src/components/Compendium.jsx)",
+      "Bash(cp src/components/Compendium.jsx __TRACKED_VAR__/Compendium.backup.jsx)",
+      "Bash(cp src/components/Compendium.jsx /tmp/Compendium.backup.jsx)",
+      "Bash(cp src/components/Compendium.jsx src/components/Compendium.jsx.bak)",
+      "Bash(awk 'NR>1081' src/components/Compendium.jsx)",
+      "Bash(rm _place_adv_images.mjs)",
+      "PowerShell(git pull *)",
+      "PowerShell(magick *)",
+      "PowerShell(node \"C:\\\\Users\\\\DANIEL~1.AND\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-daniel-andersson-claude-test-altor-codex\\\\ecb8ff16-169e-47d5-8738-1115192afca3\\\\scratchpad\\\\convert-portraits.mjs\")",
+      "PowerShell(npm run *)",
+      "PowerShell(Start-Sleep -Seconds 3; try { \\(Invoke-WebRequest -Uri \"http://localhost:5173/\" -UseBasicParsing -TimeoutSec 10\\).StatusCode } catch { \"not responding: $\\($_.Exception.Message\\)\" })",
+      "PowerShell(git fetch *)",
+      "PowerShell(try { \\(Invoke-WebRequest -Uri \"http://localhost:5173/\" -UseBasicParsing -TimeoutSec 10\\).StatusCode } catch { \"not responding\" })",
+      "PowerShell(git *)"
     ]
   },
   "enableAllProjectMcpServers": true,

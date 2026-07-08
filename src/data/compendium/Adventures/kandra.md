@@ -71,14 +71,17 @@ sections:
         description: A private bank that holds the city's wealth, run under royal licence.
     npcs:
       - name: Family Quicho
+        entry: white-duck
         description: A family of white-duck merchants resented by the human traders, whose head wars against the piracy of the black ducks.
       - name: Oken Breti
         description: Kandra's finest armorer, a master of his craft with a shop on Storgatan.
       - name: Lihand Mjödvitne
+        entry: dwarf
         description: A dwarf master-smith in Oken's service, one of the few anywhere who can forge mithril.
       - name: Tenar Krandholm
         description: Kandra's best weaponsmith, who works closely with the armorer Oken and the dwarf Lihand.
       - name: The Dwarf Jeweller
+        entry: dwarf
         description: A dwarf of phenomenal skill with gems, who keeps a shop in the city.
       - name: Vibem Ollmark
         description: A pawnbroker on the great square whose shop holds an unusual store of weapons and armour.

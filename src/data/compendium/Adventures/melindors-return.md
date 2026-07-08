@@ -16,14 +16,17 @@ sections:
     npcs:
       - name: Pargal
         description: "The ancient elf-king of Landori, a master of nature-magic turned calm philosopher, who reads in his memory-pool the fall of kingdoms to the archmage and names the heroes the one hope of Ereb."
+        image: /compendium/Adventures/MelindorsReturn/Landori/Pargal.jpg
       - name: Talyros
         description: "The forest-elf prince once saved in the mountains, who now tends his rescuers back to health and escorts them through Landori with gifts of glowing maple-sap and hiding-cloaks."
+        image: /compendium/Adventures/TheHellFort/The Road North/Talyros.jpg
       - name: Lilarion
         description: "Talyros's younger brother, who helps tend the sleeping heroes in the tree-castle."
     creatures:
       - name: Enulisor
         entry: pegasus
         description: "Talyros's pegasus, who bore the heroes out of the exploding fortress and watches over them still."
+        image: /compendium/Adventures/TheHellFort/The Road North/Enulisor.jpg
       - name: The Dryad
         entry: dryad
         description: "A flirtatious tree-spirit of Landori who may waylay travelers along the forest paths."
@@ -45,14 +48,19 @@ sections:
     npcs:
       - name: Merkato
         description: "The king's smooth, ever-calm advisor, who bars all audience with the dying king and quietly hunts the heroes. He is no Berendian at all, but the archmage's fifth disciple in a borrowed face, survived from the Hell Fort."
+        image: /compendium/Adventures/MelindorsReturn/Entika/Merkato.jpg
       - name: Harvan Rulhan
         description: "A fat, jovial Akrogalian posing as a scholar, a charming womanizer and deep-cover spymaster who burns every order he is sent."
+        image: /compendium/Adventures/MelindorsReturn/Entika/Harvan.jpg
       - name: Kharman
         description: "The archmage's loyal Akrogalian spy, who leads the theft of the golden nut and leaves behind only a torn scrap of cloak."
+        image: /compendium/Adventures/TheHellFort/The Nidlandish Cleansing/Kharman.jpg
       - name: Petlon
         description: "A Nidland-bred spy and stage-conjurer, raised and trained from boyhood alongside his partner Ytrin."
+        image: /compendium/Adventures/MelindorsReturn/Entika/Petlon.jpg
       - name: Ytrin
         description: "A rat-faced Nidland spy and sleight-of-hand trickster, partner to Petlon since they were children."
+        image: /compendium/Adventures/MelindorsReturn/Entika/Ytrin.jpg
       - name: Pontar
         description: "A bold youth who crashes a wagon through the closing watch to whisk the hunted heroes out of the city."
   - title: The Road to the Sea
@@ -65,6 +73,7 @@ sections:
     npcs:
       - name: Hagras the Counselor
         description: "The king's court-magician of twenty years, cast out when the false advisor came and began executing loyal courtiers as spies. He sees the trap laid for Berendien and sends the heroes to find the king's disowned daughter."
+        image: /compendium/Adventures/MelindorsReturn/The Road to the Sea/Hagras.jpg
       - name: Ulvan
         description: "A sour old fisherman of Hevken who, hearing the magician sent them, ferries the heroes across the sea - and is run down and killed by a Nidlandish patrol-boat as he turns for home."
   - title: War-torn Hynsolge
@@ -75,8 +84,10 @@ sections:
     npcs:
       - name: Argwin
         description: "The red-bearded warrior and old comrade, found at bay against Nidlandish soldiers, who joins the heroes once freed."
+        image: /compendium/Adventures/TheHellFort/Bedorum/Argwin.jpg
       - name: Riorik
         description: "Melindor's beloved and a leader of the Hynsolge resistance, bull-necked and short-fused but steady on a mission, who begs the heroes' help to free her from Fervidun."
+        image: /compendium/Adventures/MelindorsReturn/War-torn Hynsolge/Riorik.jpg
     creatures:
       - name: The Dark Knights
         description: "Jet-black armored riders on great steel-hooved horses, the archmage's pitiless cavalry, who cut down the fleeing without mercy."
@@ -101,17 +112,21 @@ sections:
     npcs:
       - name: Echotun
         description: "The archmage's twelfth disciple and master of Fervidun, weakest of the disciples in magic but a superb swordsman and merciless torturer, overlord of the dark knights."
+        image: /compendium/Adventures/MelindorsReturn/Fervidun/Echotun.jpg
       - name: Ruggtash
-        entry: orc
         description: "The disciplined, foul-tempered chief of one of Ereb's largest orc mercenary hosts, red-eyed and hugely muscled, who betrayed the last free county to the archmage."
+        image: /compendium/Adventures/MelindorsReturn/Fervidun/Ruggtash.jpg
       - name: Melindor
         description: "The king's disowned daughter, a brilliant archer, swordswoman and resistance leader, found broken in the catacombs and calmed only by the sight of the man she loves."
+        image: /compendium/Adventures/MelindorsReturn/Fervidun/Melindor.jpg
     creatures:
       - name: Qullog
         description: "A demon of the deep hells bound in the catacomb's pentagram to guard the prisoners, long since driven mad by its confinement - scaled and crab-clawed, and breathing fire."
+        image: /compendium/Adventures/MelindorsReturn/Fervidun/Qullog.jpg
       - name: Atachan
         entry: black-unicorn
         description: "Echotun's black unicorn of golden horn and hooves, armored in black metal, his mount for twenty years."
+        image: /compendium/Adventures/MelindorsReturn/Fervidun/Atachan.jpg
       - name: The Orcs
         entry: orc
         description: "Ruggtash's mercenary host, sword-and-wolf riders who hold the broken land for the archmage."

@@ -16,14 +16,17 @@ sections:
     npcs:
       - name: Pargal
         description: "The ancient elf-king of Landori, philosopher and master of nature-magic, who has found the one way to destroy the archmage and gives his life leading the ritual that begins it."
+        image: /compendium/Adventures/MelindorsReturn/Landori/Pargal.jpg
       - name: Talyros
         description: "The forest-elf prince and old friend of the heroes, struck down in dove-shape by a black raptor at the very outset, his death the spark of all that follows."
+        image: /compendium/Adventures/TheHellFort/The Road North/Talyros.jpg
       - name: Lilarion
         description: "Talyros's grieving brother, who guides the heroes through the tree-castle and is lost when the teleportation is sabotaged."
     creatures:
       - name: Enulisor
         entry: pegasus
         description: "The eldest pegasus of the mountains and Talyros's companion of centuries, telepathic and keen of hearing, who comes at the note of the white coral horn."
+        image: /compendium/Adventures/TheHellFort/The Road North/Enulisor.jpg
     items:
       - name: The Coral Horn
         description: "A white coral horn from the elf-king's parting gift, whose note reaches Enulisor across any distance, left with healing salve and a last message."
@@ -41,21 +44,27 @@ sections:
     npcs:
       - name: Daechetuen
         description: "The blind yet seeing high priest of the petrified god, a hunched, scarred necromancer who hates all living things and has sacrificed even his own servants, bearing a cursed ceremonial blade."
+        image: /compendium/Adventures/TheFinalBattle/Yndar/Daechetuen.jpg
     creatures:
       - name: Wuuhg
         description: "A huge black-scaled, horned serpent set to guard the Twin Staff, whose red-and-yellow eyes can freeze and hypnotize, and who fights until its strength is wholly spent."
+        image: /compendium/Adventures/TheFinalBattle/Yndar/Wuuhg.jpg
       - name: Lava-Lizards
         description: "Heat-proof red predators that bask and hunt in the molten ravine."
+        image: /compendium/Adventures/TheFinalBattle/Yndar/Lava-Lizard 1.jpg
       - name: Leather-Birds
         description: "Featherless, leather-skinned birds of wide wingspan, cowardly alone but deadly in shrieking flocks."
+        image: /compendium/Adventures/TheFinalBattle/Yndar/Leather-Bird.jpg
       - name: Night-Cats
         description: "Coal-black, razor-clawed hunters of the petrified forest, with pupil-less yellow eyes."
+        image: /compendium/Adventures/TheFinalBattle/Yndar/Night-Cat.jpg
       - name: Skeletons
         entry: skeleton
         description: "The risen dead that wander Yndar's ravine and caves."
     items:
       - name: The Twin Staff
         description: "A small winged staff of light metal, one of the mightiest things in all Altor: forever drawn toward its dark opposite, and able to summon the Good Punisher. In a mortal hand it becomes a shining sword."
+        image: /compendium/Adventures/TheFinalBattle/Yndar/The Twin Staff.jpg
   - title: Kabsah's Desert
     description: "Dropped short of their goal into a war-camp, the heroes flee into the sands and fall in with a hermit too friendly to trust."
     places:
@@ -66,6 +75,7 @@ sections:
     npcs:
       - name: Aborghin
         description: "A small, frog-eyed, disarmingly kindly hermit-mage who shelters and heals the heroes and helps them find the buried city. He is in truth Grundulf, a disgraced dark-mage who means to lead them to it and kill them for the Twin Staff."
+        image: /compendium/Adventures/TheFinalBattle/Kabsah's Desert/Aborghin.jpg
     creatures:
       - name: Sand-Dragons
         description: "Serpentine hunters of the dunes that take the unwary crossing Kabsah's sands."
@@ -81,6 +91,7 @@ sections:
     npcs:
       - name: Rashar
         description: "The expedition's chief disciple at Densel, a large, devout, black-bearded dark-mage harmed by sunlight, second only to the dark Punisher and bearing an unbreakable crystal staff."
+        image: /compendium/Adventures/TheFinalBattle/Densel/Rashar.jpg
     creatures:
       - name: The Evil Punisher
         description: "An ancient demigod, the dark half of a being that must have both light and dark, loosed from the Demon Spire and bound to the archmage's service - a destroyer that crashes through stone to reach its foes."
@@ -93,13 +104,17 @@ sections:
         description: "The allied war-capital where the whole campaign first began, its hilltop castle now the seat of the bewitched queen."
     npcs:
       - name: Melindor
-        description: "The crowned queen, once warm and free, now cold and cruel under the archmage's mark burned into her right hand and secretly bent on leading the allied army to ruin - freed only when that hand is struck away and grows anew."
+        description: "The crowned queen at the last battle, once warm and free, now cold and cruel under the archmage's mark burned into her right hand and secretly bent on leading the allied army to ruin - freed only when that hand is struck away and grows anew."
+        image: /compendium/Adventures/TheFinalBattle/Hynsolge/Melindor - The last battle.jpg
       - name: Riorik
         description: "Melindor's beloved and a leader of the resistance, who stands with the heroes once more against the thing that has taken her."
+        image: /compendium/Adventures/MelindorsReturn/War-torn Hynsolge/Riorik.jpg
       - name: Argwin
         description: "The red-bearded old comrade, ever loyal, who joins the heroes for the last road."
+        image: /compendium/Adventures/TheHellFort/Bedorum/Argwin.jpg
       - name: Hagras
         description: "The queen's former counselor, now turned by the archmage, who knows her plans only in rough outline."
+        image: /compendium/Adventures/MelindorsReturn/The Road to the Sea/Hagras.jpg
     items:
       - name: The Light-Sword
         description: "The Twin Staff in its sword-shape, a shining blade that strikes far truer than any common steel - the form it takes in a hero's hand for the cutting away of the queen's cursed hand."
@@ -111,6 +126,7 @@ sections:
     npcs:
       - name: Vicotnik
         description: "The archmage and arch-enemy of all, a shapeshifter older than kingdoms who has hungered for godhood since the dawn of the world. Across the ages he has worn many names and faces - a small stubbled man, a black raptor, the founder of the buried city - and though now but a shadow of his old power, he wields a demon-blade and the dark magic of every school."
+        image: /compendium/Adventures/TheHellFort/The Nidlandish Cleansing/Vicotnik.jpg
     creatures:
       - name: The Good Punisher
         description: "The bright half of the bound being, summoned by the Twin Staff to cast down its dark twin: a stately figure in chain-mail who darkens the moon to quench the archmage's magic and lends the heroes a giant's strength at the last."
@@ -133,3 +149,7 @@ That road runs first through Yndar, a dead land of blood-red skies and necromanc
 ## The Reckoning
 
 Sent home with the staff turned to a shining sword, the heroes learn the last evil to undo: the cursed hand by which the archmage rules the very queen they crowned. The hand struck away and the queen freed, they ride the pegasi over the Great Wall to the archmage's tower, where he shows his true and ancient face. With the moon darkened and his magic quenched, the reckoning is theirs to win - and as the Nidlandish armies break and the enslaved elves go free, the war ends. Whether evil is truly gone, or only waiting to wear a new face, the tale does not say.
+
+![A lava-lizard in the molten ravine of Yndar](/compendium/Adventures/TheFinalBattle/Yndar/Lava-Lizard 2.jpg)
+
+![A night-cat of the petrified forest](/compendium/Adventures/TheFinalBattle/Yndar/Night-Cat 2.jpg)

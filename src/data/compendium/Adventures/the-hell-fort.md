@@ -16,8 +16,10 @@ sections:
     npcs:
       - name: Vicotnik
         description: "The archmage who has ruled Nidland as dictator for an age, master of the dark magic and of twelve disciples. Long ago he foretold a crusade to cleanse the world in a dozen dozen years - a reckoning the world believes has passed, and has not."
+        image: /compendium/Adventures/TheHellFort/The Nidlandish Cleansing/Vicotnik.jpg
       - name: Kharman
         description: "An Akrogalian raised in Nidland, who has served three years as a hidden spy within a mercenary company. Dutiful to the death and a poor drunk, his cover slips, and he rides for the wall to warn his masters."
+        image: /compendium/Adventures/TheHellFort/The Nidlandish Cleansing/Kharman.jpg
   - title: Bedorum
     description: "A war-scarred market town where dismissed soldiers gather for a farewell feast, and a chance word at the tavern sets them on the trail of the Cleansing."
     places:
@@ -28,6 +30,7 @@ sections:
     npcs:
       - name: Argwin
         description: "A big, red-bearded mercenary who throws a farewell feast for his dismissed company at the Silver Spear, trusting his fellows to cover the cost he could not."
+        image: /compendium/Adventures/TheHellFort/Bedorum/Argwin.jpg
       - name: Ulbar
         description: "The lone councilman at the town hall, who cannot spare the king's soldiers but lends coin and points the way to a guide who knows the dwarves."
       - name: Old Man Otho
@@ -46,12 +49,15 @@ sections:
     npcs:
       - name: Ehrman Wall
         description: "A surly, dutiful loner who has spent his life around the Grynner mountains and keeps good faith with the dwarves. Loath to enter Nidland, he will guide the willing as far as the border, and no further."
+        image: /compendium/Adventures/TheHellFort/The Road North/Ehrman Wall.jpg
       - name: Talyros
         description: "A forest-elf prince of Landori, humble and unfailingly courteous, found beset by svartalfer in the forest. To those who save him he gives healing, the gift of darksight, and a boon: his pegasus will hear a cry of distress from six days' march away, and come."
+        image: /compendium/Adventures/TheHellFort/The Road North/Talyros.jpg
     creatures:
       - name: Enulisor
         entry: pegasus
         description: "Talyros's pegasus and companion of centuries, eldest of all the pegasi of the Grynner mountains, who speaks mind to mind and whose hearing reaches across six days' march - and who can summon the others to his aid."
+        image: /compendium/Adventures/TheHellFort/The Road North/Enulisor.jpg
   - title: Tarat-khon
     description: "A dwarven realm beneath the mountains and the Great Wall, sealed against the world since a nobleman's raid, with only one gate still open and barred to men."
     places:
@@ -60,6 +66,7 @@ sections:
     npcs:
       - name: Gidmir Hallfaste
         description: "The broad, black-bearded dwarf commandant of the North Gate, principled and iron-willed, embittered against all men since a nobleman's attack, who turns away every traveler and would die before yielding the gate's secret."
+        image: /compendium/Adventures/TheHellFort/Tarat-khon/Gidmir.jpg
     creatures:
       - name: The Dwarves
         entry: dwarf
@@ -77,31 +84,39 @@ sections:
       - name: Gartach the Great
         entry: orc
         description: "The powerful, hot-tempered orc-chief of Ghan-toth, red-eyed and scarred, who rules without mercy and never acts rashly, and bears the blued blade that gives his picked guard its name."
+        image: /compendium/Adventures/TheHellFort/Ghan-toth/Gartach.jpg
       - name: Kosh
-        entry: orc
-        description: "Gartach's half-mad orc sorcerer and adviser, scarred by his own carelessness and in love with fire above all things, who keeps a caged fire-salamander and a black wolf for his familiar."
+        description: "Gartach's court-magician and adviser, a hermit-raised loner in flame-patterned capes, so taken with fire that he grows careless and carries the scars to prove it. He keeps a caged fire-salamander in his laboratory, the black wolf Gahn for his familiar, and the tribe's trust only barely."
+        image: /compendium/Adventures/TheHellFort/Ghan-toth/Kosh.jpg
       - name: Fritch
+        entry: svartalf
         description: "The cunning, bulge-eyed leader of Ghan-toth's svartalfer, set over them by the orc-chief and milking the post for all it is worth, yet careful never to push the orcs too far."
+        image: /compendium/Adventures/TheHellFort/Ghan-toth/Fritch.jpg
       - name: Bartolom
-        description: "A gentle svartnisse raised by a human hunter and enslaved when orcs killed his master, who loves human folk and begs to follow brave warriors out of the dark."
+        entry: boggart
+        description: "A gentle boggart raised by a human hunter and enslaved when orcs killed his master, who loves human folk and begs to follow brave warriors out of the dark."
+        image: /compendium/Adventures/TheHellFort/Ghan-toth/Bartolom.jpg
     creatures:
       - name: Toch
         entry: ogre
         description: "One of the orc-chief's twin giant bodyguards, told from his brother only by the old wolf-scar on his belly, and wild past reason in a fight."
+        image: /compendium/Adventures/TheHellFort/Ghan-toth/Toch.jpg
       - name: Thord
         entry: ogre
         description: "The other of the orc-chief's giant twins, a shade cleverer than his brother and no less savage, who tends his great club like a treasured child."
+        image: /compendium/Adventures/TheHellFort/Ghan-toth/Thord.jpg
       - name: The Orcs
         entry: orc
         description: "The dark folk tribe that holds Ghan-toth, hundreds strong under their chief and his underchieftains, with the picked Blue Sword Guard for his fist."
       - name: The Svartalfer
         entry: svartalf
-        description: "The svartalfer of Ghan-toth, set beneath the orcs and made to dwell in the mines, keeping wolves and svartnisse slaves of their own."
+        description: "The svartalfer of Ghan-toth, set beneath the orcs and made to dwell in the mines, keeping wolves and boggart slaves of their own."
       - name: The Giants
         entry: ogre
         description: "The resar of the tribe, huge and dull and brutally strong, kept as guards and shock-troops."
       - name: Gahn
-        description: "Kosh's familiar, a great black wolf with fire-red eyes, who guards the sorcerer to the death."
+        description: "Kosh's familiar, a great black wolf with blood-red eyes and powerful fangs, who defends the magician without hesitation."
+        image: /compendium/Adventures/TheHellFort/Ghan-toth/Gahn.jpg
     items:
       - name: The Blue Sword
         description: "Gartach's blued-steel blade, keener than any common steel, for which his picked guard is named and whose mark they bear on crimson coats."
@@ -114,6 +129,7 @@ sections:
       - name: Ma'tho Fherengi
         entry: mummy
         description: "The mummied last king of a human-like race older than elves, dwarves or men, dead at twenty without an heir. He lies guarding the Demon Sceptre with his rune-graven sword and gold mask, and rises to destroy any who disturb his rest."
+        image: /compendium/Adventures/TheHellFort/Ma'tho Fherengi's Vault/Ma'tho.jpg
     creatures:
       - name: The Living Armor
         description: "Suits of bronze armor woken to guard the tomb's inner doors, that fight on until they are cut down and then lie still as common plate."
@@ -123,8 +139,10 @@ sections:
     items:
       - name: The Demon Sceptre
         description: "A small staff of unknown stuff, graven with troll-runes and named Guardian of the Gate. Within it is bound the Punisher, a god-sent destroyer ensnared ages ago, who will do one single deed for the one who frees him - and then break loose entire."
+        image: /compendium/Adventures/TheHellFort/Ma'tho Fherengi's Vault/Demonspiran.jpg
       - name: Fherengi Fanor
         description: "The rune-covered bronze broadsword of the old kings, crowned with a golden bird of prey, forged so that all who bore it would rule as its first master did. A mighty blade, and a slow curse: its bearer grows ever prouder and more estranged, and cannot bear to be parted from it."
+        image: /compendium/Adventures/TheHellFort/Ma'tho Fherengi's Vault/Fherengi Fanor.jpg
   - title: The Hell Fort
     description: "A black fortress in a Grynner ravine on the Nidlandish side, one of many staging-grounds for the Cleansing, where the heroes are brought as the very sacrifice the prophecy named."
     places:
@@ -133,6 +151,7 @@ sections:
     npcs:
       - name: Achatoth
         description: "The fifth disciple of the archmage and master of the Hell Fort, a calm, commanding student of dark magic, necromancy and the mind. He names himself the Punisher, and means to sacrifice the prophecy's 'unknowing ones' so his masters gain the power to launch the Cleansing."
+        image: /compendium/Adventures/TheHellFort/The Hell Fort/Achatoth.jpg
     creatures:
       - name: The Punisher
         description: "A god-sent destroyer long imprisoned in the Demon Sceptre. Freed in a heartbeat of need it sets its rescuers loose - and ten minutes later breaks out entire as a twenty-five-meter coal-black, horned demon, annihilating all for a quarter-mile around before it turns inward to serve the archmage."

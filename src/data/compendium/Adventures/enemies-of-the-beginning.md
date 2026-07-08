@@ -34,6 +34,7 @@ characters:
     image: /compendium/Adventures/EnemiesOfTheBeginning/Narnie.jpg
     description: "A young spiritist whose uncanny gift comes from a nature-spirit lodged in her mind, drugged and used against her will to drive the dead dragon's soul into its new body."
   - name: Guazzo Arathaso
+    entry: dwarf
     image: /compendium/Adventures/EnemiesOfTheBeginning/Guazzo.jpg
     description: "A dwarf demonologer, alchemist and inventor, the city's great industrialist, who helps the band and gives them a gilded apple that can break any enchantment once."
 creatures:
@@ -51,6 +52,7 @@ creatures:
     entry: giant-amoeba
     description: "A colossal, shapeless blob of dissolving plasm kept as a living weapon in Jesefael's tower, formless and slow but ruinous to anything it folds around."
   - name: Giant Scorpion
+    entry: scorpion
     description: "An immense scorpion caged in the dragon-cave, its sting loaded with a venom swift enough to kill a grown man in minutes."
   - name: The Caged Mutants
     description: "The twisted things Jesefael keeps caged in his workshop: men reshaped with claws and fangs, a tiger given a human face, a three-headed spitting reptile, the leavings of fifty years of animist experiment."

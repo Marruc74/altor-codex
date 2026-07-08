@@ -5,7 +5,7 @@ import ReactMarkdown from "react-markdown";
 import yaml from "js-yaml";
 import { SECTIONS, videosBySection } from "../data/videoData";
 import { adventureGroups } from "../data/adventures";
-import { adventuresByPin, adventuresByEntryId } from "../data/adventureLinks";
+import { adventuresByPin, adventuresByEntryId, characterArtByEntryId } from "../data/adventureLinks";
 import { videosForPin, relatedVideosByVideo } from "../data/crossLinks";
 import Lightbox from "./Lightbox";
 import { orientClass, sectionLabelFor, SECTION_LABEL, placeKind, toSlug, skipGroup, hashStr, pickEntryImage, entryMdPath, RELATED_BY_SLUG, videoById } from "./compendiumHelpers";
@@ -443,6 +443,30 @@ export function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPag
       notableItems: meta.items ?? [],
     };
   }, [markdown]);
+  // Named characters from adventures whose card links here (e.g. Thord and Toch
+  // on the Ogre page): append their custom art to the page gallery. The thumb
+  // shows only the name (a long caption widens the tile and squashes the image);
+  // the lightbox shows name and adventure. A character appearing in several
+  // adventures (e.g. Mogdath) gets one image, its lightbox caption naming every
+  // adventure ("Mogdath - The Gates of Power/The Heart of Darkness").
+  // Page-own images stay first.
+  const galleryImages = useMemo(() => {
+    const own = new Set(images.map((im) => im.src));
+    const byName = new Map();
+    for (const a of characterArtByEntryId[entry.id] ?? []) {
+      if (own.has(a.src)) continue;
+      const group = byName.get(a.name);
+      if (group) group.adventures.add(a.adventure);
+      else byName.set(a.name, { src: a.src, name: a.name, adventures: new Set([a.adventure]) });
+    }
+    const linked = [...byName.values()].map((g) => ({
+      src: g.src,
+      alt: g.name,
+      caption: `${g.name} - ${[...g.adventures].join("/")}`,
+      thumbCaption: g.name,
+    }));
+    return [...images, ...linked];
+  }, [images, entry.id]);
   const eyebrow = entry.group && !skipGroup(entry.group, entry.section)
     ? `${SECTION_LABEL[entry.section]} · ${entry.group}`
     : SECTION_LABEL[entry.section];
@@ -541,7 +565,7 @@ export function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPag
 
       {!loaded && <p className="country-detail__loading">Consulting the codex…</p>}
 
-      {loaded && images.length > 0 && <ImageGallery images={images} />}
+      {loaded && galleryImages.length > 0 && <ImageGallery images={galleryImages} />}
 
       {loaded && bodyText && (
         <div className="country-detail__body">
@@ -553,7 +577,7 @@ export function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPag
       {loaded && <CardGrid label="Notable Places" items={notablePlaces} onOpenPage={onOpenPage} onLightbox={setLightbox} />}
       {loaded && <CardGrid label="Notable Items" items={notableItems} onOpenPage={onOpenPage} onLightbox={setLightbox} />}
 
-      {loaded && !bodyText && images.length === 0 && (
+      {loaded && !bodyText && galleryImages.length === 0 && (
         <p className="country-detail__empty">
           {entry.noVideo ? "Lore entry coming soon." : "Lore entry coming soon — watch the chronicle below."}
         </p>

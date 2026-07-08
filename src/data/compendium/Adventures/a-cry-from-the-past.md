@@ -13,18 +13,27 @@ sections:
         description: "The lake under Gråhall. On a night of terrible storm a fishing boat went down in its waters, and that one wreck completed a pattern of five graves that had waited two centuries to close."
     npcs:
       - name: Dorindalil
+        entry: ghost
         description: "The weeping ghost in the cellars of Gråhall: a young woman walled up alive two hundred years ago for being a sorceress and another man's child. No weapon or spell can touch her. She wants someone carried back to the night of her death to break it, and until then she takes a living soul every few nights to make herself heard."
+        image: /compendium/Adventures/ACryFromThePast/Grahall/Dorindalil - Ghost.jpg
       - name: Sir Alserban
         description: "A loyal knight of Gråhall who went down to the cellars after the weeping and met Dorindalil. When she learned her father had been dead two centuries, despair took her, and almost without meaning to she drew his soul out of his body. He lies as though dead, breathing but empty, until she is freed."
+        image: /compendium/Adventures/ACryFromThePast/Grahall/Alserban.jpg
   - title: The Sorrowful Past
     description: "The people of the night two hundred years gone, when a proud lord killed his own daughter to cheat a prophecy."
     npcs:
+      - name: Dorindalil
+        description: "The baron's daughter as she was in life, dark-haired and strong of will, and every man who saw her loved her. In her year in Kandra her true father's magic woke in her blood, and she began quietly to study it."
+        image: /compendium/Adventures/ACryFromThePast/The Sorrowful Past/Dorindalil - Alive.jpg
       - name: Baron Amadus Odarion
         description: "Lord of Gråhall at the turn of the fifth century. A prophecy in his youth warned that a maiden who was not his daughter, though she called herself so, would be the death of him; he laughed it off. When he found that his wife's child was another man's, and a witch besides, he had her walled alive in the cellar and let it be told she had died of plague."
+        image: /compendium/Adventures/ACryFromThePast/The Sorrowful Past/Amadus Odarion.jpg
       - name: Baroness Nira
         description: "Amadus's wife and Dorindalil's mother. While her husband was away on a long hunt she loved a stately stranger of the forest folk in secret. She died soon after of grief, never able to undo what her husband had done to their daughter."
+        image: /compendium/Adventures/ACryFromThePast/The Sorrowful Past/Baroness Nira.jpg
       - name: The Forest Stranger
         description: "A lord of the wood-elves who took human shape to love the baroness Nira, and gave their daughter the name Dorindalil, 'daughter of the forest' in the elven tongue. He came to Gråhall to ask after his child, and so, all unknowing, gave away the secret that doomed her."
+        image: /compendium/Adventures/ACryFromThePast/The Sorrowful Past/The Forest Stranger.jpg
   - title: The Five Graves
     description: "Five unquiet graves set in the points of a pentagram. Dorindalil's is one; the others woke with hers the night the lake took the fishing boat. The players have no need to plunder them, but old diaries and a careful eye can map the pattern and point to them all."
     places:

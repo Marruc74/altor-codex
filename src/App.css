@@ -2907,6 +2907,14 @@ body {
   aspect-ratio: 2 / 3;
 }
 
+/* Tall cards (~9:16 art) — an even taller frame, so a full-length figure keeps
+   its head and feet instead of losing them to the 2:3 portrait crop. */
+.codex-card--tall .codex-card__image-wrap {
+  width: 130px;
+  flex-basis: 130px;
+  aspect-ratio: 9 / 16;
+}
+
 /* Square cards (e.g. a religion's ~1:1 sigil) — a square frame shows the whole
    image instead of cropping its top and bottom to the widescreen default. */
 .codex-card--square .codex-card__image-wrap {
@@ -4112,6 +4120,11 @@ body {
   .codex-card--portrait .codex-card__image-wrap {
     width: 110px;
     flex-basis: 110px;
+  }
+
+  .codex-card--tall .codex-card__image-wrap {
+    width: 95px;
+    flex-basis: 95px;
   }
 
   .codex-card--square .codex-card__image-wrap {

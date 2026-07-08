@@ -44,6 +44,7 @@ sections:
         description: A great hall with a white marble throne on a black dais flanked by warrior-statues, the seat from which Mogdath holds court. Here stand the smooth copper arch that is the focus of Dakoth's teleport portal and the locked chest of the realm's most precious salvaged treasures, with skeletons on watch. The rest of the level holds dwellings, kitchens, store-rooms and a library, mostly empty.
     npcs:
       - name: Mogdath
+        entry: death-wraith
         description: Dakoth's servant and the dark lord of the realm, a tall knight in night-black dragon-scale armour with glowing coal-eyes, a cold, dark spirit quick to anger. Once a living knight-magician of the order of the Golden Sickle, he was betrayed and nearly slain in an ambush in his own castle, then saved by Dakoth, who bound his spirit to linger after death as a death wraith sworn to eternal loyalty. He bears the magical sword Aleth-Kheloch and four copper keys, and fights by preference with magic, first to read his foe and then to strike them down, drawing his sword only as a last resort. He patrols the realm and answers the alarms of his skeleton guards.
         image: /compendium/Adventures/TheGatesOfPower/Upper Level/Mogdath.jpg
     items:
@@ -74,6 +75,7 @@ sections:
         description: The orc leader, a big warrior in black scale armour with oversized black tusks, who fights by choice with a morningstar. He rose to command Mogdath's orc horde and is the only senior orc officer to survive the cave-in. Mogdath has threatened him with the Utmost Darkness if he cannot keep better discipline, which has frightened him into being a tyrant to his fellow orcs.
         image: /compendium/Adventures/TheGatesOfPower/The City/Blacktooth.jpg
       - name: Sharch
+        entry: nightwolf
         description: A nightwolf, an enormous, two-headed black wolf with glowing eyes and venomous saliva. Once a man named Sharch, murdered and consumed by hatred, his restless spirit haunted the place of his death until Dakoth bound it into a nightwolf's body in exchange for eternal loyalty and a chance at revenge. A solitary, aggressive lone wolf whom Mogdath mostly leaves in peace, he is fixed to no one spot and prowls the realm wherever his hunger leads.
         image: /compendium/Adventures/TheGatesOfPower/The City/Sharch.jpg
       - name: The Dwarf Priest's Ghost
@@ -106,9 +108,11 @@ sections:
         description: The dwarves' old iron mine, taken up again by Mogdath, its rough two-metre galleries worked by the ogres who break and haul the ore, with a furnace-hall tended by orcs and the ogres' own cave of salted and smoked meat.
     npcs:
       - name: Daz
+        entry: dark-wraith
         description: A dark wraith and Mogdath's right hand, a faceless black shape that melts into the background and is seldom in the same place twice. Saved from death and made undead by Dakoth, he oversees the orcs and ogres in the forge and mine, and lets his dark spirit fall at once on any who disobey. His hatred of the living has festered over centuries.
         image: /compendium/Adventures/TheGatesOfPower/The Forge and Mine/Daz.jpg
       - name: Gozer
+        entry: dark-wraith
         description: Another dark wraith, once Daz's most faithful pupil, who took the same road to undeath and grasped its cost too late. His spirit has turned dark and hateful, forever seeking new souls to send to the realm of death. Mogdath has strictly forbidden him to harm the orcs and ogres, but woe to any other intelligent creature near him, for he shows no mercy and takes no prisoners.
         image: /compendium/Adventures/TheGatesOfPower/The Forge and Mine/Gozer.jpg
     creatures:

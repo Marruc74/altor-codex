@@ -340,10 +340,10 @@ export default function Compendium({
     // `key` keeps the roll stable per section across re-renders (see imgSalt).
     const rep = (names, key) => {
       const cands = names.map(toSlug).filter((s) => entryImagesAll[s]?.length);
-      if (cands.length === 0) return { image: null, portrait: false, square: false };
+      if (cands.length === 0) return { image: null, portrait: false, square: false, tall: false };
       const slug = cands[hashStr("sec:" + key, imgSalt) % cands.length];
       const choice = pickEntryImage(slug, imgSalt);
-      return { image: choice?.src ?? null, portrait: !!choice?.portrait, square: !!choice?.square };
+      return { image: choice?.src ?? null, portrait: !!choice?.portrait, square: !!choice?.square, tall: !!choice?.tall };
     };
     const cards = [];
     cards.push({

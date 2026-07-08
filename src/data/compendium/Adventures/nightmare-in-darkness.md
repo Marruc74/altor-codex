@@ -19,8 +19,10 @@ sections:
         description: "The new mine two hours into the forest, called the cursed mine by the dwarves for its cave-ins, sickness and serpents; in its deepest, richest gallery, dug into Nabo's heart, freshly painted red-and-white febrak wardings hold the rock together until the dwarves break them"
     npcs:
       - name: "Than Tamdjat"
+        entry: dwarf
         description: "The ancient, one-eyed, white-bearded dwarf who leads the Arkatskij clan and hires the heroes. Formal, proud and sharp-witted behind a wall of bureaucracy, she is certain a human rival is sabotaging her mine and cannot conceive that the forest 'savages' could be behind it. Bind her with an oath or a contract and she will hold to it to the letter; she is the hardest part of the peaceful path."
       - name: "Gesäll Rasputji"
+        entry: dwarf
         description: "The nervous, powerfully built dwarf journeyman who carries the offer to the heroes and guides them to the mine, jumping at every sound and muttering prayers; like all his kind he would never dream of suspecting the febraks."
       - name: "Don Rosario della Tabrada"
         description: "A handsome, silver-bull-masked human duellist in the service of the merchant Don Camillo, and the only guest at the Arkatskij inn. The dwarves blame him for the sabotage, but he wants the island's exotic timber for sale in Zorakin, not its silver; innocent and frightened, half-prisoner on the island, he begs the heroes for help and may aid them or turn on them. Cousin to Lucretia Machiavellio."

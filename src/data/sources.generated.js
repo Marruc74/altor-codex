@@ -1031,7 +1031,7 @@ export const generatedSources = {
     "Auktionen",
     "Demonprinsen",
     "Den femte konfluxen",
-    "Kopparhavets kapare"
+    "Helvetesfortet"
   ],
   "polar-bear": [
     "Monsterboken",

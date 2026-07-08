@@ -57,6 +57,7 @@ sections:
         description: "Home of the burgomaster, council chamber, courthouse and archive, where the records of the Minedigger family are kept."
     npcs:
       - name: Gervar Roarer
+        entry: dwarf
         description: "The dwarf burgomaster of Nordsal, a hundred and sixty-seven years old and a shrewd, seasoned politician. He steers the starving cavern-city through the caravan crisis - and, should the insectoids come, lends his counsel to whoever takes command of the host."
         image: /compendium/Adventures/HorrorsOfTheDeep/North Hall/Gervar Roarer.jpg
       - name: Klamorkan Grey
@@ -75,9 +76,11 @@ sections:
         description: "The cave elves' beautiful, fungus-lit home, reached through a hidden hollow on the shore of the Gorgora Sea. They guard its secret jealously, and withdraw their aid from any who betray it."
     npcs:
       - name: Garafin
+        entry: cave-elf
         description: "Chieftain of the cave-elf colony. He alone remembers the full, tragic history of the Minedigger castle, and shares it - and his people's help - only with those who prove the raiders are undead and swear to keep the colony's home secret."
         image: /compendium/Adventures/HorrorsOfTheDeep/Cave of Cave Elves/Garafin.jpg
       - name: Senadi
+        entry: cave-elf
         description: "Mother Earth's chosen Envoy among the cave elves, gifted to swell her own strength, melt into the rock, and speak with beast and plant. Above all she wields Curse Undead, a blessing that withers a chosen undead's power for days - the surest bane the deep can raise against the death knight."
         image: /compendium/Adventures/HorrorsOfTheDeep/Cave of Cave Elves/Senadi.jpg
   - title: Goblin Cave
@@ -87,9 +90,11 @@ sections:
         description: "Six squalid but skillfully hewn rooms by the river Elbion - hearth, dining hall, larders of salted fish and mead, and a children's room - home to the clan of thirty goblins."
     npcs:
       - name: Kassits
+        entry: goblin
         description: "The cunning chieftain of the cave's goblins. Shrewd and self-serving, he would gladly turn any outsider to the task of being rid of a rival, and warms to those who heal his sick, dazzle his clan with magic, or prove the true culprits are the dead."
         image: /compendium/Adventures/HorrorsOfTheDeep/Goblin Cave/Kassits.jpg
       - name: Mustuf
+        entry: goblin
         description: "A cocky, warlike goblin champion and Kassits's rival for power. Quick to anger, he is swift to challenge a stranger to a duel; how such a clash ends can tip the divided clan into open infighting."
         image: /compendium/Adventures/HorrorsOfTheDeep/Goblin Cave/Mustuf.jpg
   - title: Castle
@@ -101,6 +106,7 @@ sections:
         description: "The cellar vault with its gold pentagram, where the baron and the mages were remade into undead and the survivors were butchered. The stench of old death hangs so thick it sickens the living."
     npcs:
       - name: Baron Boltshield
+        entry: death-knight
         description: "Once an ambitious, ruthless baron who dreamed of ruling the whole land, he had himself remade by the necromancers' ritual into a death knight - and kept his own will and cunning. Now an armored undead juggernaut in matte-black mithril, he ambushes the caravans to build an army of zombies and enslave Nordsal. He carries the ring of keys to every lock in the castle, and the living he slays rise again as his bane-men."
         image: /compendium/Adventures/HorrorsOfTheDeep/Castle/Baron Boltshield.jpg
     creatures:

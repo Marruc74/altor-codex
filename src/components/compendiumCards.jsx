@@ -34,6 +34,8 @@ export function CardImage({ src, alt }) {
 }
 
 // ── Image gallery ─────────────────────────────────────────────────────────
+// Thumbs prefer the short `thumbCaption` (a long caption widens the tile and
+// squashes the image); the lightbox always shows the full `caption`.
 export function ImageGallery({ images }) {
   const [lightboxIdx, setLightboxIdx] = useState(null);
   return (
@@ -42,7 +44,9 @@ export function ImageGallery({ images }) {
         {images.map((img, i) => (
           <button key={i} className="image-gallery__thumb" onClick={() => setLightboxIdx(i)}>
             <img src={thumbSrc(img.src)} alt={img.alt} />
-            {img.caption && <span className="image-gallery__caption">{img.caption}</span>}
+            {(img.thumbCaption ?? img.caption) && (
+              <span className="image-gallery__caption">{img.thumbCaption ?? img.caption}</span>
+            )}
           </button>
         ))}
       </div>
@@ -80,8 +84,9 @@ export function CardGrid({ label, items, portrait = false, onOpenPage, onVideoSe
           // per-type default only for an imageless card. Explicit flags win.
           const oimg = cardImage ? imageOrientation[cardImage] : null;
           const isSquare = it.square ?? (cardImage ? oimg === "square" : false);
+          const isTall = it.tall ?? (cardImage ? oimg === "tall" : false);
           const isPortrait = it.portrait ?? (cardImage ? oimg === "portrait" : portrait);
-          const cls = `codex-card${isSquare ? " codex-card--square" : isPortrait ? " codex-card--portrait" : ""}${it.fit === "contain" ? " codex-card--fit" : ""}`;
+          const cls = `codex-card${isSquare ? " codex-card--square" : isTall ? " codex-card--tall" : isPortrait ? " codex-card--portrait" : ""}${it.fit === "contain" ? " codex-card--fit" : ""}`;
           // Suffix with the index: a grid can list two cards that resolve to the
           // same entry slug (e.g. two "Ogre" cards), so the slug alone collides.
           const key = `${it.entry ?? it.name ?? it.videoId ?? "card"}-${i}`;
