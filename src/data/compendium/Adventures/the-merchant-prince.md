@@ -7,25 +7,57 @@ summary: "The first part of the Ruler trilogy, set in the masked clan-isles of P
 videoIds: []
 characters:
   - name: Luciano Morte
+    image: /compendium/Adventures/TheMerchantPrince/Luciano Morte.jpg
     description: "The smooth, foreign-lilted broker who hires the band on DiMercio's behalf, forever stroking his bare and maskless face. He believes the staged pirate attack is only a ruse, and never learns that his own masters have marked him to die in it."
   - name: Guillano DiMercio
+    image: /compendium/Adventures/TheMerchantPrince/Guillano DiMercio.jpg
     description: "The charming, soft-spoken head of the upstart house DiMercio and the author of the whole atrocity. He is the finest of liars and must never seem a villain, for the band trusts him until the moment he names them the murderers of the very family they were set to guard."
   - name: Nicolo Machiavellio
+    image: /compendium/Adventures/TheMerchantPrince/Nicolo Machiavellio.jpg
     description: "The shrewd and kindly patriarch of the doomed merchant house, who takes the band in first as guests and then as bodyguards to his children, unable to imagine that anyone could lie at his own table."
+  - name: Maria Machiavellio
+    image: /compendium/Adventures/TheMerchantPrince/Maria Machiavellio.jpg
+    description: "The lady of the house and Nicolo's wife, a sharp mind at the chessboard and well read in heraldry and herb-lore. She welcomes the disguised band to the family table, never guessing that the guests she has taken in have already mapped the house for its killers. She dies with the rest on the night of the massacre."
   - name: Lucretia Machiavellio
+    image: /compendium/Adventures/TheMerchantPrince/Lucretia Machiavellio.jpg
     description: "The merchant's daughter and the sole survivor of the massacre, who hunts the band down and, with the Sword of Truth that beheads any liar, learns they were duped. She spares them on one condition: bring down the house DiMercio within three moons, or die."
   - name: Mario Machiavellio
+    image: /compendium/Adventures/TheMerchantPrince/Mario Machiavellio.jpg
     description: "The merchant's son, marked by a red birthmark on his hand, whom the band 'rescues' from a staged street-attack to worm their way into his father's house."
   - name: Targan
+    image: /compendium/Adventures/TheMerchantPrince/Targan.jpg
     description: "The blind magician of the Machiavellio house, who 'sees' through a medallion and wards the home with deadly spells. The band, mapping those defences, hand them to their hidden masters without ever knowing it."
   - name: Benoit the Exile
+    image: /compendium/Adventures/TheMerchantPrince/Benoit.jpg
     description: "The one-eyed pirate captain, an outcast pandar of clan Ovario, whose corsair waylays the band's ship at DiMercio's secret bidding and leaves them adrift."
   - name: El'Ramish
+    image: /compendium/Adventures/TheMerchantPrince/El'Ramish.jpg
     description: "The cold, long-nailed Grandmaster of the Brotherhood, master of the volcano isle and its flying ships, whose assassins serve DiMercio's trade and who will meet the band at last in a duel for their lives."
   - name: The Blue Priest
     description: "A blue-robed priest of the god Iao from the southern isles, come to the Brotherhood's council to claim a shipment of slaves. Discovered, he teleports away in panic, a flight beyond his power that costs him his life, yet sees him return in the tale to come."
   - name: Espero DiMercio
     description: "The villain's son, away trading in Zorakin with a great ship and deep coffers, who will swear blood-vengeance and hunt the band for years should they kill his father."
+  - name: Fredrico
+    image: /compendium/Adventures/TheMerchantPrince/Fredrico.jpg
+    description: "Master of the cog Gloria Tachami, the weathered captain who carries the band nine days west to Pandarealia. Before they land he presses cheap cloth masks on them, knowing that in the isles a bare face marks a stranger as no one at all."
+  - name: Nicolai
+    image: /compendium/Adventures/TheMerchantPrince/Nicolai.jpg
+    description: "A broad-shouldered mate aboard the Gloria Tachami, strong and slow to worry, who meets most troubles with a shrug and a word that all is well."
+  - name: Classius
+    image: /compendium/Adventures/TheMerchantPrince/Classius.jpg
+    description: "The Gloria Tachami's other mate, a quiet and thrifty man with a good head for coasts and coin, who keeps the ship's reckonings on the long crossing."
+  - name: Hepatia
+    image: /compendium/Adventures/TheMerchantPrince/Hepatia.jpg
+    description: "The cook who rules the Machiavellio kitchens, a broad, warm-tongued woman with a sure hand for a feast and a cleaver never far from it."
+  - name: Luigi
+    image: /compendium/Adventures/TheMerchantPrince/Luigi.jpg
+    description: "The kitchen boy of the house, small and sharp-eyed, forever slipping unseen through the pantries and back passages. He is twelve years old, and he does not live to be thirteen."
+  - name: Lyra
+    image: /compendium/Adventures/TheMerchantPrince/Lyra.jpg
+    description: "A young serving girl of the house in a copper sparrow-mask, quick with a needle and a healer's hand."
+  - name: Sonia
+    image: /compendium/Adventures/TheMerchantPrince/Sonia.jpg
+    description: "Lyra's fellow serving girl, paired with her in the copper masks of the house staff, who waits on the family and its guests through the long weeks before the slaughter."
 creatures:
   - name: The Brotherhood
     description: "A half-religious cult of assassins out of Krun, an extreme branch of vassidism exiled to the volcano isle, who hold that by killing and by the smoke of the ichaka-herb they commune with their dark god Vakrath. They run DiMercio's slave-trade and answer to none but their Grandmaster."
@@ -48,6 +80,7 @@ places:
     description: "The strict southern isles where the monotheism of the god Iao holds iron sway, home of the slave-buyers and the road into the tale to come."
 items:
   - name: The Sword of Truth
+    image: /compendium/Adventures/TheMerchantPrince/The Sword of Truth.jpg
     description: "An old gold-hilted broadsword of the Machiavellio house, cold-forged and faintly menacing, that knows truth from lie and strikes the head from any who lies before it. By it Lucretia learns the band's innocence."
   - name: The Forgotten God's Sword
     description: "An ancient two-handed sword out of the lands near Nidland, bound to a god whose name is lost. Its powers have faded but slowly return to a bearer who raises a cult to that god and holds to a hard road of mercy and honesty; it can call down lightning and heal."

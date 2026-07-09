@@ -23,6 +23,7 @@ sections:
         description: "A bird-masked caravel out of San Éa, three days' sail to Agriea, whose captain frets over a port that holds ships and a people gone fearful. Off the coast the dread begins, and those with the gift feel it worst."
     npcs:
       - name: Captain José
+        image: /compendium/Adventures/TheTempleLord/Captain José.jpg
         description: "The calm, pipe-smoking master of the Victoria, an absolute authority at sea and lost on land, who carries the heroes south and warns them that Agriea is not what it was."
   - title: San Paulo
     description: "Agriea's capital is a city of black lava-stone, walled into quarters by rank in the church, fearful and tight-lipped. The merchant contact the heroes are sent to is the first trap, and the streets hide worse."
@@ -35,6 +36,7 @@ sections:
         description: "An old house in the layman's quarter, its front door nailed shut, watched over by black-robed cultists. The last shipment from the volcano isle is penned in its hall, and by night drugged captives are led out of it toward the temple."
     npcs:
       - name: Tomaso Verdi
+        image: /compendium/Adventures/TheTempleLord/Tomaso Verdi.jpg
         description: "A cold, climbing merchant who lives in his forefather's white-domed observatory and cares for nothing but the stars. He receives the heroes with courtesy and contempt, waves away all talk of a cult - and the moment they leave, goes straight to the temple to betray them, for he has been a man of the Death Cult these ten years."
   - title: The San Paulo Temple
     description: "A black cathedral that is the cult's stronghold in the city, where eight captives are offered up in mockery of the eight virtues. The heroes break the rite, and from a surviving priest learn the names that matter."
@@ -43,16 +45,26 @@ sections:
         description: "A gothic cathedral of black lava-stone with dragon-headed spouts, given over to the cult behind its Iaotic face. Past the silver god-image and the outer shrine lies the defiled inner sanctum, where the offerings are made and a hidden door behind a cupboard offers a way out."
     npcs:
       - name: Enrico Gabiralli
+        image: /compendium/Adventures/TheTempleLord/Enrico Gabiralli.jpg
         description: "The temple lord of San Paulo, stark raving mad and given to fits of violent rage, who leads the cult's rites in the city and carries the demon-bound offering dagger."
       - name: Laurentius
         description: "A weak-willed temple priest who must be kept alive through the fight. Pressed, he gives up what he knows: the killers serve a death-cult, not the church; its master is one Arraquwâin; and the temple lord Luciano, on Materé, is that master's right hand and is about to lead a great sacrifice."
       - name: Ricardo Monteban
+        image: /compendium/Adventures/TheTempleLord/Ricardo Monteban.jpg
         description: "The stiff, rule-bound First Lawreader of San Paulo, who took the temple lords' authority on faith and never saw the rot. Shown the bodies, the freed slaves and the captured priest, he admits at last that he has been blind, and lends the heroes a punitive expedition."
       - name: Vincente Largo
+        image: /compendium/Adventures/TheTempleLord/Vincente Largo.jpg
         description: "A warm but iron-willed priest, his grandmother a febrak, who burns with fury at the desecration of his faith. He leads the lawreader's expedition to Materé and makes a steadfast ally."
     items:
       - name: The Offering Dagger
+        image: /compendium/Adventures/TheTempleLord/The Offering Dagger.jpg
         description: "A demon bound in a copper blade with a saw-toothed edge and a hilt wrapped in human skin, borne by the mad temple lord. It steals the soul of any it cuts, draining the life-spirit away forever into the one who wields it. No honest hand will carry it; it is a thing to be destroyed."
+      - name: The Priests' Neck-ring
+        image: /compendium/Adventures/TheTempleLord/The Priests' Neck-ring.jpg
+        description: "A silver torc worn by the ordained priests of Iao, one of the spiralled neck-rings that mark rank in the island church. It lets its wearer catch the surface thoughts of those before him and, at need, wrack a doubter with a minute of unbearable pain, though a true believer never resists it. The cult that has hollowed out the church wears these same rings over its rot."
+      - name: The Lawreaders' Neck-ring
+        image: /compendium/Adventures/TheTempleLord/The Lawreaders' Neck-ring.jpg
+        description: "The heavy gold torc of the lawreaders, the church's highest rank, who read and keep the law of Iao. Beyond what the priests' ring grants, it turns aside magic, closes wounds, shields its bearer from harm, and bends another's will to the wearer's own. The cult's temple lords wear these, and answer to no law but the dragon's."
   - title: Materé and the Golden Temple
     description: "Across the strait lies Materé and the church's holiest house, now wholly the cult's. The heroes break a second, greater sacrifice - and the temple lord slips away by magic before he can be taken."
     places:
@@ -65,8 +77,10 @@ sections:
         description: "The temple lord of the Golden Temple and Arraquwâin's right hand, ice-cold and without a trace of human feeling, his true thoughts long hidden by the dragon's magic. He leads the great sacrifice, and when the heroes break in he makes a sign, calls on his master's name, and vanishes in a cloud of smoke. He always escapes - he is not to be taken here."
     items:
       - name: Dragontongue
+        image: /compendium/Adventures/TheTempleLord/Dragontongue.jpg
         description: "Luciano's short sword, a gift from Arraquwâin forged in Zorakin an age ago: a reddish, wave-edged blade with a pommel of a dragon's claw closed about a gem, that calls fire and bends a victim's will and summons fire from the deep places."
       - name: Jormvard
+        image: /compendium/Adventures/TheTempleLord/Jormvard.jpg
         description: "A dwarven dragon-slayer of dull black steel, etched with a dragon, forged in Palinor seven centuries past and found again by Luciano in Ransard. He keeps it locked away against the day his master turns unmanageable, for it bites double through any reptile and triple through a dragon."
   - title: The Cult's Fortress
     description: "A ruined castle in the forest is the cult's true base, where the temple lord has fled to make his stand. Below its cellars a secret passage leads down toward the dragon."
@@ -90,6 +104,7 @@ sections:
         description: "Cornered at the last, the temple lord does not fight to the death but flees down the long winding passage to the portal, flinging curses behind him, and is taken up into the dark - to wait on the far side, his true nature still unrevealed."
     creatures:
       - name: Arraquwâin
+        image: /compendium/Adventures/TheTempleLord/Arraquwain.jpg
         description: "The Winged Death, an undead dragon over two hundred meters long and thirteen thousand years old, who became deathless an age ago and was caught in death rather than freed by it, and so hates all living things. Brittle-boned and foul as a grave for all his size, he means to work an ancient ritual that opens a lasting gate to the realm of the dead, fed one soul in ten until it is full. He rests on his hoard and attacks at once."
 ---
 

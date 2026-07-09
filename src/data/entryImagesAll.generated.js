@@ -1132,6 +1132,104 @@ export const entryImagesAll = {
       "tall": false
     }
   ],
+  "the-demon-prince": [
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Luciano Lupino della Peredio.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheMerchantPrince/The Sword of Truth.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Lord Videric.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Leon.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Beran.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Luciano's Demon-Sword.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Luciano's Demon-Armor.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Târg.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Târgkrizt.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Akaron.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Mara.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Quetzal.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Krazzt.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Heroniche.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Kirian.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Malkûth.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
   "the-fifth-conflux": [
     {
       "src": "/compendium/Adventures/TheCrystalBull/Melealina.jpg",
@@ -1479,6 +1577,110 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Adventures/TheHellFort/The Hell Fort/Achatoth.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "the-merchant-prince": [
+    {
+      "src": "/compendium/Adventures/TheMerchantPrince/Luciano Morte.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheMerchantPrince/Guillano DiMercio.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheMerchantPrince/Nicolo Machiavellio.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheMerchantPrince/Maria Machiavellio.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMerchantPrince/Lucretia Machiavellio.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheMerchantPrince/Mario Machiavellio.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheMerchantPrince/Targan.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMerchantPrince/Benoit.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheMerchantPrince/El'Ramish.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMerchantPrince/Fredrico.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheMerchantPrince/Nicolai.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheMerchantPrince/Classius.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheMerchantPrince/Hepatia.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMerchantPrince/Luigi.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMerchantPrince/Lyra.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheMerchantPrince/Sonia.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheMerchantPrince/The Sword of Truth.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -1956,6 +2158,74 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
+    }
+  ],
+  "the-temple-lord": [
+    {
+      "src": "/compendium/Adventures/TheTempleLord/Captain José.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheTempleLord/Tomaso Verdi.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheTempleLord/Enrico Gabiralli.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheTempleLord/Ricardo Monteban.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheTempleLord/Vincente Largo.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheTempleLord/The Offering Dagger.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheTempleLord/The Priests' Neck-ring.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheTempleLord/The Lawreaders' Neck-ring.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheTempleLord/Dragontongue.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheTempleLord/Jormvard.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheTempleLord/Arraquwain.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "the-unicorn-and-the-dragon-serpent": [

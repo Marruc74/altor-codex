@@ -74,7 +74,10 @@ export function CardGrid({ label, items, portrait = false, onOpenPage, onVideoSe
       <p className="location-panel__section-label">{label}</p>
       <div className="country-detail__entries-grid">
         {items.map((it, i) => {
-          let target = resolvePage(it.entry ?? it.name);
+          // `noLink` suppresses the name→page auto-link for a card whose name
+          // happens to collide with a page slug but is not that subject (e.g. an
+          // NPC literally named "Mara" who is not the Mara undead-creature page).
+          let target = it.noLink ? null : resolvePage(it.entry ?? it.name);
           if (excludeCountryId && target && target.kind === "country" && target.id === excludeCountryId) target = null;
           const linkable = target && onOpenPage;
           const borrowed = target ? entryImages[toSlug(target.name)] : null;
