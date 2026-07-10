@@ -9,6 +9,9 @@ export const generatedSources = {
     "Monsterboken",
     "Monsterboken II"
   ],
+  "aelthira-moonveil": [
+    "The Cold That Stays"
+  ],
   "alchemy": [
     "Magikerns handbok"
   ],
@@ -95,6 +98,9 @@ export const generatedSources = {
   "bemoth": [
     "Kaos Väktare"
   ],
+  "berendien": [
+    "The Cold That Stays"
+  ],
   "bison": [
     "Monsterboken",
     "Monsterboken II"
@@ -136,6 +142,9 @@ export const generatedSources = {
   "boggle": [
     "Monsterboxen II: De humanoida raserna",
     "Svartfolk"
+  ],
+  "bram-kestrel": [
+    "The Cold That Stays"
   ],
   "brook-bear": [
     "Monsterboken",
@@ -409,6 +418,9 @@ export const generatedSources = {
   "enemies-of-the-beginning": [
     "Krilloan: Äventyrsboken"
   ],
+  "ereb-altor": [
+    "The Cold That Stays"
+  ],
   "erebos": [
     "Ereb Altor: Spelledarboken"
   ],
@@ -671,7 +683,8 @@ export const generatedSources = {
     "Monsterboken II"
   ],
   "hynsolge": [
-    "Ereb Altor: Spelledarboken"
+    "Ereb Altor: Spelledarboken",
+    "The Cold That Stays"
   ],
   "ice-demon": [
     "Kaos Väktare",
@@ -694,7 +707,8 @@ export const generatedSources = {
   ],
   "imaria": [
     "Monturerna",
-    "Monturerna Sammanfattning"
+    "Monturerna Sammanfattning",
+    "The Cold That Stays"
   ],
   "imariot": [
     "Monsterboken",
@@ -727,13 +741,17 @@ export const generatedSources = {
   "jorduashur": [
     "Ereb Altor: Spelledarboken"
   ],
+  "jorpagna": [
+    "The Cold That Stays"
+  ],
   "kalydon": [
     "Monsterboken",
     "Monsterboken II",
     "Monsterboxen IV: Legendariska varelser"
   ],
   "kandra": [
-    "Kandra"
+    "Kandra",
+    "The Cold That Stays"
   ],
   "karaleia": [
     "Monturerna",
@@ -777,7 +795,8 @@ export const generatedSources = {
     "Monsterboken II"
   ],
   "klomellien": [
-    "Ereb Altor: Spelledarboken"
+    "Ereb Altor: Spelledarboken",
+    "The Cold That Stays"
   ],
   "knowledge-demon": [
     "Kaos Väktare",
@@ -787,7 +806,8 @@ export const generatedSources = {
     "Monsterboxen II: De humanoida raserna"
   ],
   "krilloan": [
-    "Krilloan: Kampanjboken"
+    "Krilloan: Kampanjboken",
+    "The Cold That Stays"
   ],
   "krugal-svylses-curse": [
     "Sinkadus 11"
@@ -977,14 +997,16 @@ export const generatedSources = {
   "onaqui": [
     "Monsterboken",
     "Monsterboken II",
-    "Monsterboxen IV: Legendariska varelser"
+    "Monsterboxen IV: Legendariska varelser",
+    "The Cold That Stays"
   ],
   "orc": [
     "Monsterboxen II: De humanoida raserna",
     "Svartfolk"
   ],
   "ordo-magica": [
-    "Krilloan: Kampanjboken"
+    "Krilloan: Kampanjboken",
+    "The Cold That Stays"
   ],
   "oread": [
     "Alver",
@@ -1306,6 +1328,9 @@ export const generatedSources = {
     "Magi: Regelboken",
     "Magikerns handbok"
   ],
+  "tannatopol": [
+    "The Cold That Stays"
+  ],
   "tarantellid": [
     "Monsterboken",
     "Monsterboken II"
@@ -1317,6 +1342,9 @@ export const generatedSources = {
   ],
   "the-auction": [
     "Auktionen"
+  ],
+  "the-black-rose-brotherhood": [
+    "The Cold That Stays"
   ],
   "the-copper-ring": [
     "Demonprinsen",
@@ -1427,10 +1455,7 @@ export const generatedSources = {
     "Demonprinsen"
   ],
   "the-misty-island": [
-    "Auktionen",
-    "Demonprinsen",
-    "Den femte konfluxen",
-    "Kopparhavets kapare"
+    "The Cold That Stays"
   ],
   "the-multiverse": [
     "Kaos Väktare"
@@ -1440,6 +1465,9 @@ export const generatedSources = {
   ],
   "the-oathbreakers-of-erebos": [
     "Ereb Altor: Äventyrsboken"
+  ],
+  "the-oktagon": [
+    "The Cold That Stays"
   ],
   "the-oracles-four-eyes": [
     "Oraklets fyra ögon"
@@ -1452,6 +1480,9 @@ export const generatedSources = {
   ],
   "the-secret-of-gripeborg": [
     "Sinkadus 17"
+  ],
+  "the-shining-way": [
+    "The Cold That Stays"
   ],
   "the-shoguns-wrath": [
     "Shoguns Vrede"
@@ -1481,7 +1512,8 @@ export const generatedSources = {
     "Ereb Altor: Äventyrsboken"
   ],
   "the-unicorn-horn": [
-    "Enhörningshornet"
+    "Enhörningshornet",
+    "The Cold That Stays"
   ],
   "the-voice-from-the-ancient-past": [
     "Rösten från forntiden"
@@ -1671,7 +1703,8 @@ export const generatedSources = {
     "Monsterboxen III: Kaos"
   ],
   "zorakin": [
-    "Ereb Altor: Spelledarboken"
+    "Ereb Altor: Spelledarboken",
+    "The Cold That Stays"
   ],
   "zygosunds-bridge": [
     "Ereb Altor: Äventyrsboken",
