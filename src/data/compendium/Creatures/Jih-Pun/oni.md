@@ -1,5 +1,8 @@
 # Oni
 
+![Oni](/compendium/Creatures/Jih-Pun/oni.jpg "Oni")
+![Oni](/compendium/Creatures/Jih-Pun/oni-2.jpg "Oni")
+
 The oni are the demons of Jih-pun, but they are not the summoned infernal things of the West. They are a living race, cruel and ruthless, caring for nothing but their own ends or their master's. Deathless, they do not age, though magic or steel can still kill them; and being soulless they are never reborn, so an oni slain is gone for good.
 
 ## Nature

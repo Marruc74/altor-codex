@@ -17,6 +17,7 @@ sections:
         description: "A black peak far out in the misty highlands, ringed by coloured lizards and jets of scalding water, smoke pouring from a great cleft at its foot. Through the cleft lies a vast echoing hall, and on an island in a dark lake within it sleeps the dragon Oolong upon his hoard."
     npcs:
       - name: Sulimono
+        image: /compendium/Adventures/TheDragonFlute/Sulimono.jpg
         description: "A small, bald old man who keeps a timber cabin in the storm-lashed highlands and offers travellers shelter, calling himself a pelt-hunter. He is in truth a vampire of the eastern kind, who walks by day as well as night and takes normal hurt from steel; let a guest sleep unwatched and he drains the life from them in the dark. Strewn rice will stop him, for he must halt and count every grain."
     creatures:
       - name: The Bakemono
@@ -31,6 +32,7 @@ sections:
         description: "The dead friend the adventurers have come so far to recover, a comrade or ally lost on an earlier road. They must call their name aloud in the land of the dead to draw them up out of the grey, and lead them back across the river of the dead and past its keeper."
     creatures:
       - name: Oolong
+        image: /compendium/Adventures/TheDragonFlute/Oolong.jpg
         description: "A black dragon of more than twenty metres, one of the lung of the east, ancient and learned and not cruel for all his power. He keeps a flute that opens a road into the land of the dead, and will lend it to the adventurers if they bring back from down there a pearl stolen from his hoard, for in a strong enough wizard's hands that pearl could bind him to its will. He cannot go down himself, the gate being too narrow, and gives them a demon-cleaving sword to aid them; should they fail to return the pearl, he will seal the road and leave them shut in with the dead."
     items:
       - name: The Silver Flute
@@ -46,6 +48,7 @@ sections:
         description: "A realm of grey mist beyond the flute's portal, deathly silent, where lines of standing stones mark a path to a wide still river that the dead are ferried across. Linger too long and the living turn grey and translucent themselves, losing all wish to leave; the way back is never the way down, and the standing stones lead the returning only back to the river."
     creatures:
       - name: The Yakitori
+        image: /compendium/Adventures/TheDragonFlute/Yakitori.jpg
         description: "The demon that keeps the gate out of the dead, a tall blue-skinned thing with four arms, a turtle's head, the clawed legs of a bird of prey and skin that shines like steel, wielding two great two-handed swords at once. The dragon's stolen pearl hangs at its throat. It will not let the living carry a soul back unless one of them stays behind, so it must be beaten before any may pass, and only the demon-cleaving sword can pierce its steel hide."
       - name: Oni
         entry: oni

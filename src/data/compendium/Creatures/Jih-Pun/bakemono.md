@@ -1,5 +1,7 @@
 # Bakemono
 
-Bakemono are the goblin-kin of Jih-pun, bow-legged black-folk of the forests and hills who live by waylaying travellers and demanding a toll of gold to pass. They are cowardly by nature: a band that is paid will let a road alone, and a band that is fought will usually break and run rather than die for the takings. Scorned without payment, though, they turn spiteful, dogging a road for days with thrown stones, snares and driven boar.
+![Bakemono-sho](/compendium/Creatures/Jih-Pun/bakemono-sho.jpg "Bakemono-sho")
+![Dai-bakemono](/compendium/Creatures/Jih-Pun/dai-bakemono.jpg "Dai-bakemono")
+![O-bakemono](/compendium/Creatures/Jih-Pun/o-bakemono.jpg "O-bakemono")
 
-A bakemono war-band carries spears and bows, its leader marked out by a sabre and shield, and likes to boast that the whole wood is full of its kind when it rarely is. The greater **dai-bakemono** are another matter: big, cunning orc-kin who speak the black-folk tongue, fight with a blade in either hand, and lead the lesser bakemono of the wilds. Where a wizard or warlord keeps such creatures, it is the dai-bakemono who hold the gate and loose the rest.
+Bakemono is the common name for the black-folk of Jih-pun, the evil humanoids of its forests, hills and caves, and they come in three kinds. The lesser **bakemono-sho** are the goblins, cowardly toll-takers of the woods. The greater **dai-bakemono** are their orc-kin, bigger and cleverer and cruel enough to lead the rest. The hulking **o-bakemono** are the mountain-trolls, slow of wit and heavy of hand. Between them they account for most of the wickedness laid at the black-folk's door.

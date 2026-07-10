@@ -5,6 +5,7 @@
 ![Shikome](/compendium/Peoples/Dark Folks/shikome-2.jpg "Shikome")
 ![Shikome](/compendium/Peoples/Dark Folks/shikome-3.jpg "Shikome")
 ![Shikome](/compendium/Peoples/Dark Folks/shikome-4.jpg "Shikome")
+![Shikome](/compendium/Peoples/Dark Folks/shikome-5.jpg "Shikome")
 ![Female Shikome](/compendium/Peoples/Dark Folks/shikome-female-1.jpg "Female Shikome")
 ![Female Shikome](/compendium/Peoples/Dark Folks/shikome-female-2.jpg "Female Shikome")
 ![Female Shikome](/compendium/Peoples/Dark Folks/shikome-female-3.jpg "Female Shikome")

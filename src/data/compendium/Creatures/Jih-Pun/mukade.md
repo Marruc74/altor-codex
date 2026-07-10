@@ -1,5 +1,7 @@
 # Mukade
 
+![Mukade](/compendium/Creatures/Jih-Pun/mukade.jpg "Mukade")
+
 The mukade is a giant burrowing worm, brown and slime-covered, with eyes that glow a sickly yellow and light the dark for ten metres around it. It bores its tunnels through fertile soil and eats whatever it meets, sparing nothing, and the greatest of them run twenty-five or thirty metres long and more than three metres thick.
 
 ## The Cocoons

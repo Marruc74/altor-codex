@@ -1,5 +1,7 @@
 # Tatsu
 
+![Tatsu](/compendium/Creatures/Jih-Pun/tatsu.jpg "Tatsu")
+
 The tatsu is the dragon of Jih-pun, a serpent fifteen to twenty-five metres long that bears no wings and yet runs upon the air and the clouds as easily as over the ground. Its hide shimmers like metal and is harder than any metal, green or gold or blue, and the darker the scale the older and the deadlier the beast.
 
 ## Habits

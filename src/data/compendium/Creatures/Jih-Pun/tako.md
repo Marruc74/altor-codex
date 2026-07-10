@@ -1,5 +1,7 @@
 # Tako
 
+![Tako](/compendium/Creatures/Jih-Pun/tako.jpg "Tako")
+
 The tako is a giant eight-armed octopus of the seas around Jih-pun, and unlike the dull-witted kraken of Ereb's waters it is rapacious and clever, clever enough that some of them take up weapons. It can haul itself out of the water and move on land for as much as an hour, and its eyes give it sight on every side at once.
 
 ## In Battle

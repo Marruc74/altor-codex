@@ -1,5 +1,8 @@
 # Uba
 
+![Uba](/compendium/Creatures/Jih-Pun/uba.jpg "Uba")
+![Uba](/compendium/Creatures/Jih-Pun/uba-2.jpg "Uba")
+
 An uba is a female spirit, gaunt and knotted of limb, with dark skin and stringy hair, and she may be a terror or a blessing. Some are wicked, nursemaids who devour the children left in their care; others are kindly, and more than one of Jih-pun's great heroes was raised and guarded by a good uba.
 
 ## Powers

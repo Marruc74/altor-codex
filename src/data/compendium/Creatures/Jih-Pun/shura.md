@@ -1,5 +1,7 @@
 # Shura
 
+![Shura](/compendium/Creatures/Jih-Pun/shura.jpg "Shura")
+
 A shura is the ghost of a warrior who met a sudden, needless or unnaturally violent death, and could not pass on for the wrong of it. It keeps the form it had in life, most often a stately samurai in full armour, and lingers at the place where it fell, hungry for vengeance on any who come there.
 
 ## Hard to Lay

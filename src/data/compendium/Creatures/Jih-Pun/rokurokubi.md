@@ -1,5 +1,7 @@
 # Rokurokubi
 
+![Rokurokubi](/compendium/Creatures/Jih-Pun/rokurokubi.jpg "Rokurokubi")
+
 A rokurokubi passes by day for an ordinary person, indistinguishable from any neighbour. By night the head lifts free of the body and flies off on its own, hunting living prey and carrion alike, and where one goes others follow, for they hunt in flocks of a handful at a time.
 
 ## The Severed Head

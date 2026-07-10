@@ -1,5 +1,8 @@
 # Shutendoji
 
+![Shutendoji](/compendium/Creatures/Jih-Pun/shutendoji.jpg "Shutendoji")
+![Female Shutendoji](/compendium/Creatures/Jih-Pun/shutendoji-female.jpg "Female Shutendoji")
+
 The shutendoji is the vampire of Jih-pun, and unlike the horrors that haunt the wilds of Ereb it lives openly among ordinary folk. By day it is a person like any other, going about an ordinary life; by night it becomes a bloodthirsty thing with long claws and fangs, swelling to half again a man's height.
 
 ## Feeding

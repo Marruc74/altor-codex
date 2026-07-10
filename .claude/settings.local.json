@@ -187,7 +187,19 @@
       "PowerShell(Start-Sleep -Seconds 3; try { \\(Invoke-WebRequest -Uri \"http://localhost:5173/\" -UseBasicParsing -TimeoutSec 10\\).StatusCode } catch { \"not responding: $\\($_.Exception.Message\\)\" })",
       "PowerShell(git fetch *)",
       "PowerShell(try { \\(Invoke-WebRequest -Uri \"http://localhost:5173/\" -UseBasicParsing -TimeoutSec 10\\).StatusCode } catch { \"not responding\" })",
-      "PowerShell(git *)"
+      "PowerShell(git *)",
+      "Bash(grep -i '\\\\.png$')",
+      "Bash(grep -iv '\\\\.png$')",
+      "Bash(cd *)",
+      "Bash(grep -E '\\\\.md$')",
+      "Bash(grep -E '\\\\.jpg$')",
+      "Bash(grep -E 'Creatures/Jih-Pun/.*\\\\.jpg$')",
+      "Bash(grep -E 'TheGhostGeneral/.*\\\\.jpg$')",
+      "Bash(grep -E 'TheDragonFlute/.*\\\\.jpg$')",
+      "Bash(cat)",
+      "Bash(rm -f _verify.mjs)",
+      "Bash(curl -s -o /dev/null -w '%{http_code}' http://localhost:5175/)",
+      "Bash(echo \"app on 5175: $\\(curl -s -o /dev/null -w '%{http_code}' http://localhost:5175/\\)\")"
     ]
   },
   "enableAllProjectMcpServers": true,

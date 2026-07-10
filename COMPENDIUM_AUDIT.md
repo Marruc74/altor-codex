@@ -29,7 +29,7 @@ step** - after adding, removing or filling pages, update the lists below.
 
 ---
 
-## Last run: 2026-07-02 — 644 files
+## Last run: 2026-07-10 — 647 files
 
 Structurally clean. All connection checks pass:
 
@@ -41,22 +41,22 @@ Structurally clean. All connection checks pass:
 | Broken adventure `entry:` links | 0 |
 | Broken `RELATED_BY_SLUG` refs | 0 |
 | Invalid adventure YAML | 0 |
-| Duplicate slugs | 1 (intentional) |
-| Empty / stub pages | 3 (no source available) |
-
-### Remaining duplicate (intentional)
-- `Geography/Samkarna/melukha.md` + `History/melukha.md` — a Geography place
-  page and a History article for the same subject, by design. Not a problem.
-
-### Remaining empty pages (no source to fill them)
-- `Characters/aelthira-moonveil.md`, `Characters/bram-kestrel.md`,
-  `Characters/kaelene-fenholt.md` — video-backed chronicle characters with no
-  source-book text; the YouTube videos are their content.
+| Duplicate slugs | 0 |
+| Empty / stub pages | 0 |
 
 ---
 
 ## Resolved (history)
 
+- Added a Jih-Pun / "Gates of the Dead" art batch (64 images, PNG to JPG). Wired
+  the Jih-pun creature pages (bakemono with its dai- and o-bakemono kinds, the
+  nymph's hannya/doki/nushi, the four kumo spiders, oni, uba, shutendoji incl. a
+  female portrait, and the single-image gaki, kappa, mi, mukade, orochi,
+  rokurokubi, shishi, shura, tako, tatsu, tengu), added a fifth shikome image,
+  and created two new creature pages (kirin, yokai). Added card portraits to the
+  NPCs of The Ghost General (Yamashito, Inazo, Sugimoto, Etsu, Michima, Hoshiro,
+  Nitobe, Sumie, plus a new Kinzumi Hikozane card) and The Dragon Flute (Sulimono,
+  Oolong, the Yakitori gate-demon).
 - Added images (JPG) to sixteen Geography pages from a new art batch: the Demon
   Tongue, Golwynda Sea, Habete Grelge, Raas Narram, Dragonback, Jurona (incl.
   dinosaur / dinosauroid), Maminira me Delema, Mosgilak (incl. lizardman / slaves

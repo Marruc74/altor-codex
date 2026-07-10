@@ -1,5 +1,7 @@
 # Mi
 
+![Mi](/compendium/Creatures/Jih-Pun/mi.jpg "Mi")
+
 The mi is a distant and lesser kin of the tatsu, a beast six to eight metres long with a dragon's head and four short legs. Like the true dragon it runs upon the air and the clouds, but it is a poorer thing in every way: it speaks the human and dragon tongues only badly, it cannot breathe fire, and neither its breath nor its blood will burn.
 
 ## Habits

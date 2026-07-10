@@ -8,7 +8,7 @@ import { adventureGroups } from "../data/adventures";
 import { adventuresByPin, adventuresByEntryId, characterArtByEntryId } from "../data/adventureLinks";
 import { videosForPin, relatedVideosByVideo } from "../data/crossLinks";
 import Lightbox from "./Lightbox";
-import { orientClass, sectionLabelFor, SECTION_LABEL, placeKind, toSlug, skipGroup, hashStr, pickEntryImage, entryMdPath, RELATED_BY_SLUG, videoById } from "./compendiumHelpers";
+import { orientClass, sectionLabelFor, SECTION_LABEL, placeKind, toSlug, skipGroup, hashStr, pickEntryImage, entryMdPath, RELATED_BY_SLUG, videoById, childrenByParentSlug } from "./compendiumHelpers";
 import { CardImage, ImageGallery, CardGrid, PageActions, SourceCredit } from "./compendiumCards";
 import { entryImages } from "../data/entryImages.generated";
 import { portraitSlugs } from "../data/entryImagePortrait.generated";
@@ -451,10 +451,10 @@ export function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPag
   // adventure ("Mogdath - The Gates of Power/The Heart of Darkness").
   // Page-own images stay first.
   const galleryImages = useMemo(() => {
-    const own = new Set(images.map((im) => im.src));
+    const seen = new Set(images.map((im) => im.src));
     const byName = new Map();
     for (const a of characterArtByEntryId[entry.id] ?? []) {
-      if (own.has(a.src)) continue;
+      if (seen.has(a.src)) continue;
       const group = byName.get(a.name);
       if (group) group.adventures.add(a.adventure);
       else byName.set(a.name, { src: a.src, name: a.name, adventures: new Set([a.adventure]) });
@@ -465,8 +465,20 @@ export function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPag
       caption: `${g.name} - ${[...g.adventures].join("/")}`,
       thumbCaption: g.name,
     }));
-    return [...images, ...linked];
-  }, [images, entry.id]);
+    for (const im of linked) seen.add(im.src);
+    // A parent page (e.g. Bakemono, Nymph, Orc) also gathers every image of its
+    // subpages into its own gallery, each captioned with the subpage's name, so
+    // the parent shows the whole family at once. Page-own images stay first.
+    const childImgs = [];
+    for (const kid of childrenByParentSlug[toSlug(entry.name)] ?? []) {
+      for (const im of entryImagesAll[toSlug(kid.name)] ?? []) {
+        if (seen.has(im.src)) continue;
+        seen.add(im.src);
+        childImgs.push({ src: im.src, alt: kid.name, caption: kid.name, thumbCaption: kid.name });
+      }
+    }
+    return [...images, ...linked, ...childImgs];
+  }, [images, entry.id, entry.name]);
   const eyebrow = entry.group && !skipGroup(entry.group, entry.section)
     ? `${SECTION_LABEL[entry.section]} · ${entry.group}`
     : SECTION_LABEL[entry.section];

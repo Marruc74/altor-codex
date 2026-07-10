@@ -1,5 +1,7 @@
 # Kappa
 
+![Kappa](/compendium/Creatures/Jih-Pun/kappa.jpg "Kappa")
+
 The kappa is a water-creature of the lakes and slow rivers of Jih-pun, a green and scaly thing the size of a child, with a turtle's shell on its back and a shallow bowl set into the crown of its head. That bowl holds water, and the water is the kappa's strength: spill it and all the creature's power drains away with it.
 
 ## Habits

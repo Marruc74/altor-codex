@@ -1230,6 +1230,26 @@ export const entryImagesAll = {
       "tall": true
     }
   ],
+  "the-dragon-flute": [
+    {
+      "src": "/compendium/Adventures/TheDragonFlute/Sulimono.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheDragonFlute/Oolong.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDragonFlute/Yakitori.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
   "the-fifth-conflux": [
     {
       "src": "/compendium/Adventures/TheCrystalBull/Melealina.jpg",
@@ -1396,6 +1416,62 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    }
+  ],
+  "the-ghost-general": [
+    {
+      "src": "/compendium/Adventures/TheGhostGeneral/Yamashito.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheGhostGeneral/Inazo.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheGhostGeneral/Sugimoto.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheGhostGeneral/Etsu.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheGhostGeneral/Michima.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheGhostGeneral/Hoshiro.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheGhostGeneral/Nitobe.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheGhostGeneral/Sumie.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheGhostGeneral/Kinzumi.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "the-heart-of-darkness": [
@@ -3440,6 +3516,398 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    }
+  ],
+  "bakemono-sho": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/bakemono-sho.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/bakemono-sho-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/bakemono-sho-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/bakemono-sho-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/bakemono-sho-5.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "bakemono": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/bakemono-sho.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/dai-bakemono.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/o-bakemono.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "dai-bakemono": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/dai-bakemono.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/dai-bakemono-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/dai-bakemono-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/dai-bakemono-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "doki": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/doki.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/doki-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/doki-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/doki-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/doki-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "gaki": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/gaki.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "hannya": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/hannya.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/hannya-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/hannya-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/hannya-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/hannya-5.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "kappa": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/kappa.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "kirin": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/kirin.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "kumo": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/kumo-earth-spider.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/kumo-tree-spider.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/kumo-water-spider.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/kumo-mountain-spider.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "mi": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/mi.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "mukade": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/mukade.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "nushi": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/nushi.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/nushi-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/nushi-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/nushi-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/nushi-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "nymph": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/hannya.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/doki.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/nushi.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "o-bakemono": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/o-bakemono.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/o-bakemono-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/o-bakemono-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/o-bakemono-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "oni": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/oni.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/oni-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "orochi": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/orochi.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "rokurokubi": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/rokurokubi.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "shishi": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/shishi.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "shura": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/shura.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "shutendoji": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/shutendoji.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/shutendoji-female.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "tako": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/tako.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "tatsu": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/tatsu.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "tengu": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/tengu.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "uba": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/uba.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/uba-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "yokai": [
+    {
+      "src": "/compendium/Creatures/Jih-Pun/yokai.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "belmon": [
@@ -6152,6 +6620,12 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/shikome-5.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     },
     {
       "src": "/compendium/Peoples/Dark Folks/shikome-female-1.jpg",

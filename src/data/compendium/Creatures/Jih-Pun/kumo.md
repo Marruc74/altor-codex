@@ -1,5 +1,10 @@
 # Kumo
 
+![Earth-spider](/compendium/Creatures/Jih-Pun/kumo-earth-spider.jpg "Earth-spider")
+![Tree-spider](/compendium/Creatures/Jih-Pun/kumo-tree-spider.jpg "Tree-spider")
+![Water-spider](/compendium/Creatures/Jih-Pun/kumo-water-spider.jpg "Water-spider")
+![Mountain-spider](/compendium/Creatures/Jih-Pun/kumo-mountain-spider.jpg "Mountain-spider")
+
 The kumo are the giant spiders of Jih-pun, and they come in four kinds, growing larger and cleverer and more venomous with every year they live, from a young thing newly hatched to an ancient monster of great cunning.
 
 ## The Four Kinds

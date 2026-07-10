@@ -1,6 +1,10 @@
 # Nymph
 
-The nymphs of Jih-pun are beautiful spirit-women of the wild places, and they come in three kinds. The hannya is a nymph of the mountains and caves, with a serpent's tail in place of legs; the doki keeps to the forests, lairing in hollow trees; and the nushi haunts springs and pools, dwelling in huts beneath the water and breathing as easily under it as above.
+![Hannya](/compendium/Creatures/Jih-Pun/hannya.jpg "Hannya")
+![Doki](/compendium/Creatures/Jih-Pun/doki.jpg "Doki")
+![Nushi](/compendium/Creatures/Jih-Pun/nushi.jpg "Nushi")
+
+The nymphs of Jih-pun are beautiful spirit-women of the wild places, and they come in three kinds: the **hannya** of the mountains and caves, the **doki** of the deep forests, and the **nushi** of springs and pools.
 
 ## Song and Spell
 

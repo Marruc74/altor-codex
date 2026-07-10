@@ -1,5 +1,7 @@
 # Shishi
 
+![Shishi](/compendium/Creatures/Jih-Pun/shishi.jpg "Shishi")
+
 The shishi has the body of a lion and the blunt, pug-like head of a small dog, and for all its strange look it is a noble, wise and kindly beast. It turns fearsome only against the wicked, or if it is provoked, and then there are few things in Jih-pun more dangerous to face.
 
 ## Guardian

@@ -1,5 +1,7 @@
 # Gaki
 
+![Gaki](/compendium/Creatures/Jih-Pun/gaki.jpg "Gaki")
+
 A gaki is a hungry ghost, the spirit of one who died with some craving unsatisfied, now bound restlessly to the place of its death. It passes for an ordinary person but for one mark: a grotesquely swollen belly that no amount of feeding will fill.
 
 ## The Hunger

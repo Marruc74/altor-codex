@@ -15,8 +15,10 @@ sections:
         description: "The wild wood that divides Yamashito's province from Sugimoto's, four days' march on a narrow winding road choked with fallen trees. It teems with boar, and bandit ronin, tengu and worse haunt its deeper reaches."
     npcs:
       - name: Yamashito Hakesura
+        image: /compendium/Adventures/TheGhostGeneral/Yamashito.jpg
         description: "The lord of Kushi, who takes the shipwrecked adventurers into his service and sets them their task. An old ally and close friend of Sugimoto, he is troubled by the boy Inazo's tale and by the jubilee feast he is bound to attend, the very feast that celebrates the defeat of Michima ten years gone."
       - name: Inazo
+        image: /compendium/Adventures/TheGhostGeneral/Inazo.jpg
         description: "Sugimoto's son, a boy of twelve who fled to Kushi for sanctuary. His father turned cruel and distant, hired warriors until the city became an armed camp, and assassins came for the boy in the night, so he and his mother resolved he should seek out the wise monks of Iko before he was driven from his own home."
   - title: The Lord of Takata
     description: "In the city across the forest a just lord has become a tyrant, and the cause is a dead man wearing his skin."
@@ -25,10 +27,13 @@ sections:
         description: "Sugimoto's capital, a town at the mouth of the river Hachis swollen from fifteen hundred souls to many times that by the war-mustering. Its lord's castle stands on a small island off the coast, a knot of moated houses where the warriors lodge in the outer ring and Sugimoto and his own keep the two inner houses about a courtyard."
     npcs:
       - name: Sugimoto Toshiba
+        image: /compendium/Adventures/TheGhostGeneral/Sugimoto.jpg
         description: "The lord of Takata, once one of Yamashito's truest friends and a just ruler, now turned capricious and cruel, beheading his own guard on invented charges and shunning his wife and son. He has packed his city with hired blades, claiming to fear pirates, and no longer seems himself, for he is no longer himself."
       - name: Etsu
+        image: /compendium/Adventures/TheGhostGeneral/Etsu.jpg
         description: "Sugimoto's wife, kept close within the castle and well guarded. She has watched her husband come to resemble his dead half-brother and believes him gone mad, and will help the adventurers to a secret meeting in the castle garden if they can show they have met her son, though she will not abandon her sick husband by fleeing."
       - name: Michima
+        image: /compendium/Adventures/TheGhostGeneral/Michima.jpg
         description: "The Ghost General. Sugimoto's half-brother, who ten years ago raised an army to seize the province and was crushed on the field by the joined strength of Sugimoto and Yamashito. His spirit never found rest, and now he has returned to possess his living brother, bent on murdering Sugimoto's wife and son, killing Yamashito at the jubilee feast, and turning the new army on his old enemy's lands."
     items:
       - name: The Crane Warrant
@@ -42,6 +47,7 @@ sections:
         description: "An ancient temple on Iko, sacred long ago to a forgotten god and untended for centuries, its courts overrun by chattering monkeys and toppled demon-statues. Its wall-carvings show fair-haired, pale-skinned folk kneeling in worship, the Ainu who were the first people of Jih-pun, and beneath it a sealed crypt holds the tomb of its last high priest."
     npcs:
       - name: Hoshiro
+        image: /compendium/Adventures/TheGhostGeneral/Hoshiro.jpg
         description: "An old and gentle monk of Iko, learned in meditation, healing and the casting-out of spirits, who abhors violence and would rather talk of plants. He will sail to the mainland to lay the haunting to rest, but the rite must be sung over the dead man's own bones, so he must first be told whose ghost it is and where the body lies."
     creatures:
       - name: The Waking God
@@ -60,9 +66,14 @@ sections:
         description: "A smooth round hill in the wizard's garden, crowned by a small meditation house, raised over the secret grave where Michima was buried with his rusted arms. His bones lie at its heart beneath a golden circlet, and only over them can the exorcism be sung."
     npcs:
       - name: Nitobe
+        image: /compendium/Adventures/TheGhostGeneral/Nitobe.jpg
         description: "The cruel wizard who backed Michima's coup and helped carry his body from the field. He rides cloaked to the castle by night to confer with the thing wearing Sugimoto's face, and means in the end to seize power himself through the ghost, keeping the general's mother close as a tool for blackmail when her use comes."
       - name: Sumie
+        image: /compendium/Adventures/TheGhostGeneral/Sumie.jpg
         description: "Michima's mother, past sixty and not to be trifled with, who loves her dead son above all things and helped hide his body. She knows where the grave lies but will not tell unless pressed hard, and beguiles young samurai with a love-drug to keep them at her side; she likes the wizard Nitobe little, for all that they share a cause."
+      - name: Kinzumi Hikozane
+        image: /compendium/Adventures/TheGhostGeneral/Kinzumi.jpg
+        description: "A young and guileless samurai kept at the wizard's house under Sumie's spell. He was on his way to take service when she stood him love-drugged ale at an inn in the village of Tonfu, and she has gone on dosing him ever since, so that while the drug holds he loves her past all reason and guards her with everything he has. Let it wear off and he grasps what has been done to him, and turns on her instead."
     creatures:
       - name: The Grave-Warden
         description: "A ghost-warrior set to guard Michima's tomb, the general's foremost captain who fell beside him in the battle and fights on past death. Half-seen and faintly blue, he rides a spectral horse and is felt only when the digging begins, and he and his mount glow with a cold light as they charge."

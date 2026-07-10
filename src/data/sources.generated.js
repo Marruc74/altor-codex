@@ -1658,6 +1658,9 @@ export const generatedSources = {
     "Monsterboxen II: De humanoida raserna",
     "Svartfolk"
   ],
+  "yokai": [
+    "Samuraj Jih Pun"
+  ],
   "ziplodit": [
     "Monsterboken",
     "Monsterboken II"

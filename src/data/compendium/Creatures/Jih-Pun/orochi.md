@@ -1,5 +1,7 @@
 # Orochi
 
+![Orochi](/compendium/Creatures/Jih-Pun/orochi.jpg "Orochi")
+
 The orochi is a great serpent of fresh water, a distant kin of the tatsu that keeps to the holy lakes, rivers and marshes of Jih-pun as their guardian. Its scales run from black in the young beast through blue-grey to the grey-white of the very old, and a single horn, half a metre long, juts from its head.
 
 ## In the Water
