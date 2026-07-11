@@ -12,10 +12,13 @@ sections:
     npcs:
       - name: Glockmar
         description: "An old man by the inn fire who is in truth a weakened demigod, descended from Salagir to whom the gods first gave the Nova Stone. Robbed of the ruby that is his power, he is bound in failing human form - kind, honest and weary - and asks every passing stranger to win it back. With the stone restored he grows tall and young again, blazing with power, and grants a single wish before he vanishes."
+        image: /compendium/Adventures/Glockman.jpg
       - name: Bork
         description: "The honest innkeeper of the Stopet, who alone knows where the ruby truly went and sends word by sealed letter to his brother Norg, far to the south."
+        image: /compendium/Adventures/Bork.jpg
     items:
       - name: The Nova Stone
+        noLink: true
         description: "An eight-sided ruby that grants great magic, but only to Glockmar and the bloodline of Salagir. In any other hand it is a dead jewel, which is why every thief who covets it fails to wield it."
   - title: The False Trails
     description: "Two of the three rumors lead nowhere near the ruby: a king's booby-trapped barrow in a fallen northern realm, and a dragon's smoking lair. Both are deadly, and both are rich."
@@ -28,12 +31,15 @@ sections:
       - name: Deonor
         entry: ghost
         description: "The starved, trapped spirit of a knight who once boasted himself a great dragon-slayer and proved a braggart. Forgotten and bound near Gasp's hoard, he begs to be freed by the dragon's death, and turns on any who refuse him."
+        image: /compendium/Deonor.jpg
     creatures:
       - name: Gasp
         description: "A vast, greedy, contemptuous dragon who sleeps atop a hoard of gold and silver in his mountain hall. For all the rumor, the Nova Stone was never his."
+        image: /compendium/Gasp.jpg
     items:
       - name: Glim
         description: "A magic sword left beside Deonor's bones, its edge ever-keen and its steel loosing a stroke of lightning into any living thing it wounds, though never its wielder."
+        image: /compendium/Glim.jpg
   - title: Dargomor's Castle
     description: "The true trail runs south to a tyrant's castle on a high cliff, into ambushes and a baron's siege - and a confession that the ruby is not even here."
     places:
@@ -44,20 +50,30 @@ sections:
     npcs:
       - name: Baron Dargomor
         description: "A greedy, swaggering tyrant who bleeds the folk of Siron and overrates his own gifts as a ruler. He keeps only a decoy ruby and never learns the true stone is long gone."
+        image: /compendium/Dargomor.jpg
       - name: Sigvird
         description: "A son of Dargomor, who leads an ambush band from the temple of Ariera, clad in full armor."
+        image: /compendium/Sigvird.jpg
       - name: Digor
         description: "A son of Dargomor, who leads an ambush band from the great library, clad in full armor."
       - name: Nirmila
         description: "Dargomor's wife, who keeps a fortune in jewels and screams for the guards at the first alarm."
+        image: /compendium/Nirmilla.jpg
       - name: Domiral
         description: "Dargomor's physician, a man of few scruples who secretly conspired with the wizard Dingheimul and stole the Nova Stone for him. He keeps five rings, and tells no one which is the true copper pass."
+        image: /compendium/Domiral.jpg
       - name: Norg
         description: "Bork's brother, innkeeper of the Springaren and the clear-eyed leader of Siron's resistance, willing to risk his life to see the tyrant Dargomor fall."
+        image: /compendium/Norg.jpg
+      - name: Hankar
+        description: "Dargomor's paid ear in Siron, a familiar face at the Springaren who drinks with the resistance and carries what he hears up to the castle. So long as no one names the informer, the baron knows each plan the villagers make before they can act on it."
+        image: /compendium/Hankar.jpg
       - name: Baron Gilgarm
         description: "A hard but fair neighboring lord, loved by his own peasants, who lays siege to Dargomor to end his cruelty and keeps the promises he makes."
+        image: /compendium/Gilgarm.jpg
       - name: Baron Lilvar
         description: "A distant ally of Dargomor, mustered to break the siege, who arrives only to find the besieger already gone."
+        image: /compendium/Lilvar.jpg
     items:
       - name: The Decoy Ruby Dagger
         description: "A diamond-studded dagger set with an eight-sided red ruby in Dargomor's bedchamber - a deliberate fake, laid to fool any thief who comes for the Nova Stone."

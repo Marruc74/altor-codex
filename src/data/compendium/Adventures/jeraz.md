@@ -12,23 +12,31 @@ sections:
     npcs:
       - name: Sartos
         description: "Co-owner of the Red Horse inn with his wife Nania, thirty years in the trade and hard to surprise, neither talkative nor full of news."
+        image: /compendium/Adventures/Sartos.jpg
       - name: Nania
         description: "Co-owner of the Red Horse with her husband Sartos, as unflappable as he and as sparing with word and rumor."
+        image: /compendium/Adventures/Nania.jpg
       - name: Soran
         description: "A retired mercenary and tireless teller of tall tales, and - once the wine is flowing - a more honest source of rumor than he first seems."
+        image: /compendium/Adventures/Soran.jpg
       - name: Zareth
         description: "Kharan's only full-time hunter and the one soul who truly knows the high plains, quiet and laconic, and hireable as a guide for fair coin."
+        image: /compendium/Adventures/Zareth.jpg
   - title: The Rival Expedition
     description: "A young nobleman has set out for Asiki ahead, to clear his ancestor's blackened name and claim its riches."
     npcs:
       - name: Asterion
         description: "A young, idealistic nobleman descended from a base-born son of Aram Jeraz, who has mounted his own expedition to Asiki to lift the slander of black sorcerer from his line. Generous and friendly, but proud of his blood and hungry for glory."
+        image: /compendium/Adventures/Asterion.jpg
       - name: Elissa
         description: "Asterion's magician, dark-skinned and clad all in black, cynical and misanthropic and devoted to her craft - and, beneath it, quietly fond of her young lord. Her black mantle holds a store of power she can spend and refill."
+        image: /compendium/Adventures/Elissa.jpg
       - name: Malchion
         description: "A powerfully built, black-bearded soldier of Asterion's company, fiercely loyal, brave, and tight with his coin."
+        image: /compendium/Adventures/Malchion.jpg
       - name: Gotarzes
         description: "A sinewy, scarred soldier of Asterion's company, ruthless and reckless - and badly frightened of magic and those who wield it."
+        image: /compendium/Adventures/Gotarzes.jpg
   - title: The Journey
     description: "Between Kharan and the ruin lie the parched high plains, a fallen bridge, a hidden valley of monks, and a ford held by ogres - and the heat and thirst that hunt every traveler."
     places:
@@ -43,18 +51,23 @@ sections:
     npcs:
       - name: Archelaus
         description: "The sinewy monk-elder of the hidden colony, keeper of some local lore, who tries clumsily to turn travelers away as the full moon nears, and confesses the colony's curse only to those who seem worthy of trust."
+        image: /compendium/Adventures/Archelaus.jpg
       - name: Gr'wf
         entry: wolfman
         description: "The scarred, muscular chieftain of the high-plains wolfmen, descendants of guardians the Jeraz once hired. He wears a lion-tooth necklace, speaks no human tongue, and leads his flock by bow and by sign."
+        image: /compendium/Adventures/Grwf.jpg
       - name: Glub
         entry: ogre
         description: "The loud, haggle-hating patriarch of the ogre family at the ford, who attacks small bands outright and demands a toll, in coin and in living meat, from larger ones."
+        image: /compendium/Adventures/Glub.jpg
       - name: Zlika
         entry: ogre
         description: "Glub's mate, who keeps the ford at his side by day and shares his taste for travelers' flesh."
+        image: /compendium/Adventures/Zlikas.jpg
       - name: Tsuk
         entry: ogre
         description: "The dim, cruel son of Glub and Zlika, who torments small animals in his junk-strewn den."
+        image: /compendium/Adventures/Tsuk.jpg
     creatures:
       - name: The Wolfmen
         entry: wolfman
@@ -90,12 +103,16 @@ sections:
     creatures:
       - name: Geen'r
         description: "A black-and-yellow scaled demon with three red eyes and a tail that splits in two, that sows division with honeyed words before it strikes, and knits its wounds as fast as they are dealt."
+        image: /compendium/Adventures/Geenr.jpg
       - name: Gazchak
         description: "A towering man-shaped demon crowned not with a head but with six writhing tentacles, near five metres long and clumsy under a roof, that falls upon anything it senses to be alive."
+        image: /compendium/Adventures/Gazehak.jpg
       - name: Kainaa
         description: "A demon with a woman's four-armed torso, faceless and black-haired, upon a serpent's scaled coils - a patient ambusher that drains the life and courage from its prey."
+        image: /compendium/Adventures/Kainaa.jpg
       - name: Te'on
         description: "A white-furred, gorilla-bodied demon with a hyena's head and burning blue eyes, that poses as a cursed man and covets magic above all else."
+        image: /compendium/Adventures/Teon.jpg
 ---
 
 ## The Fall of the Jeraz

@@ -436,6 +436,110 @@ export const entryImagesAll = {
       "tall": false
     }
   ],
+  "jeraz": [
+    {
+      "src": "/compendium/Adventures/Sartos.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/Nania.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/Soran.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/Zareth.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/Asterion.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/Elissa.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/Malchion.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/Gotarzes.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/Archelaus.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/Grwf.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/Glub.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/Zlikas.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/Tsuk.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/Geenr.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/Gazehak.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/Kainaa.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/Teon.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
   "kandra": [
     {
       "src": "/compendium/Adventures/Kandra/Mages Guild/Myndol.jpg",
@@ -1987,6 +2091,86 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/The Demon Eyes.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "the-nova-stone": [
+    {
+      "src": "/compendium/Adventures/Glockman.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/Bork.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Deonor.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Gasp.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Glim.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Dargomor.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Sigvird.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Nirmilla.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Domiral.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Norg.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Hankar.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Gilgarm.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Lilvar.jpg",
       "portrait": true,
       "square": false,
       "tall": false
