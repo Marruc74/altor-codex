@@ -1,5 +1,6 @@
 ---
 title: Finngaoth
+series: "Places"
 tagline: "The temple has the right kind of smell."
 summary: A hilltop temple to the demigod Pigi Magilre that rebuilds itself whenever it is torn down, shunned and guarded by a wary church.
 videoIds: []

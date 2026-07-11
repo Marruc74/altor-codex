@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import VideoModal from "./VideoModal";
 import Lightbox from "./Lightbox";
 import { resolvePage } from "../data/compendiumPages";
 import { adventures } from "../data/adventures";
 import { entryImages } from "../data/entryImages.generated";
+import { imageOrientation } from "../data/imageOrientation.generated";
+import { toSlug } from "./compendiumHelpers";
 import { thumbSrc, onThumbError, IMAGE_MISSING } from "../lib/thumb";
 import { LORE_GROUPS } from "../data/chronicles";
 
@@ -37,8 +39,8 @@ const GALLERY = [
 ];
 
 
-// Reading order: the prequel (Episode 0) first, then the seven road jobs.
-const GROUP_ORDER = ["backstory", "skeleton", "misty", "unicorn", "borrowed", "shadow", "made-dragon", "day-of-wrath"];
+// Reading order: the prequel (Episode 0) first, then the eight road jobs.
+const GROUP_ORDER = ["backstory", "skeleton", "misty", "unicorn", "borrowed", "shadow", "made-dragon", "day-of-wrath", "griffinburg"];
 const ORDERED_GROUPS = [...LORE_GROUPS].sort(
   (a, b) => GROUP_ORDER.indexOf(a.id) - GROUP_ORDER.indexOf(b.id)
 );
@@ -113,7 +115,10 @@ function loreCardImage(item, match) {
   if (match?.src) return { src: match.src, portrait: match.portrait, fit: match.fit };
   const target = item.link ? resolvePage(item.link) : null;
   if (target && target.kind !== "adventure") {
-    const src = entryImages[target.id];
+    // Borrow by slug, not target.id: markdown pages carry a synthetic id
+    // ("x-creatures-7"), so a creature/entry link only resolves its art by slug
+    // (the same key the Compendium's own cards borrow with).
+    const src = entryImages[toSlug(target.name)];
     if (src) return { src, portrait: false, fit: undefined };
   }
   return null;
@@ -176,9 +181,23 @@ function LoreCard({ item, onOpenPage, groupTarget, onLightbox }) {
   const target = item.link ? resolvePage(item.link) : null;
   const linkable = target && onOpenPage;
   const sameAsGroup = groupTarget && target && groupTarget.kind === target.kind && groupTarget.id === target.id;
+  // Frame to the borrowed image's real shape (tall 9:16, portrait 2:3, square)
+  // exactly as the Compendium's own cards do, rather than a coarse portrait flag,
+  // so the tall and square art of the later road jobs is not squashed into a 2:3
+  // frame. Cold-plot and backstory figures whose art is Chronicles-only (not on
+  // any Compendium page, so absent from the orientation map) keep the portrait
+  // default.
+  const oimg = img?.src ? imageOrientation[img.src] : null;
+  const chronOwn = !!img?.src && img.src.includes("/compendium/Chronicles/");
+  const orientCls =
+    oimg === "square" ? " codex-card--square"
+      : oimg === "tall" ? " codex-card--tall"
+      : oimg === "portrait" ? " codex-card--portrait"
+      : (!oimg && chronOwn && img?.portrait) ? " codex-card--portrait"
+      : "";
   const cls =
     "codex-card chron-card" +
-    (img?.portrait ? " codex-card--portrait" : "") +
+    orientCls +
     (img?.fit === "contain" ? " codex-card--fit" : "") +
     (img ? " codex-card--split" : "");
 
@@ -230,6 +249,12 @@ const NAV_ITEMS = [
   { id: "gallery", numeral: null, title: "Gallery" },
   ...ORDERED_GROUPS.map((g) => ({ id: g.id, numeral: g.numeral, title: g.title })),
 ];
+// Valid ?chron values, so a bogus deep link falls back to the landing chapter.
+const CHRON_IDS = new Set(NAV_ITEMS.map((it) => it.id));
+const chronFromUrl = () => {
+  const c = new URLSearchParams(window.location.search).get("chron");
+  return c && CHRON_IDS.has(c) ? c : "backstory";
+};
 
 function ContentHeader({ eyebrow, title }) {
   return (
@@ -315,10 +340,38 @@ function GroupContent({ group, onOpenPage, onLightbox }) {
 export default function MediaSection({ onOpenPage }) {
   const [active, setActive] = useState(null); // open video, if any
   const [lightbox, setLightbox] = useState(null); // open image, if any
-  // The story reads in order from its prequel, so Episode 0 (the backstory and
-  // prologue) is the landing chapter.
-  const [selected, setSelected] = useState("backstory");
+  // The open book, mirrored to the URL as ?chron=<id> so a refresh (or a shared
+  // link) restores it - the same technique the Compendium uses for ?ce. The
+  // story reads in order from its prequel, so Episode 0 (the backstory and
+  // prologue) is the landing chapter, and stays out of the URL to keep a bare
+  // /#chronicles link clean.
+  const [selected, setSelected] = useState(chronFromUrl);
   const group = ORDERED_GROUPS.find((g) => g.id === selected);
+
+  // Keep ?chron in step with the open book (replaceState, no new history entry).
+  useEffect(() => {
+    const url = new URL(window.location);
+    if (selected && selected !== "backstory") url.searchParams.set("chron", selected);
+    else url.searchParams.delete("chron");
+    history.replaceState(null, "", url);
+  }, [selected]);
+
+  // Browser back/forward: drive the open book from ?chron.
+  useEffect(() => {
+    const onPop = () => setSelected(chronFromUrl());
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
+  }, []);
+
+  // Opening a book from the nav pushes a history entry, so Back returns to the
+  // previous book (the sync effect above only replaces, to avoid a loop).
+  const openBook = (id) => {
+    const url = new URL(window.location);
+    if (id && id !== "backstory") url.searchParams.set("chron", id);
+    else url.searchParams.delete("chron");
+    if (url.href !== window.location.href) window.history.pushState(null, "", url);
+    setSelected(id);
+  };
 
   return (
     <section id="chronicles" className="media-section">
@@ -345,7 +398,7 @@ export default function MediaSection({ onOpenPage }) {
                   <li key={it.id}>
                     <button
                       className={`compendium-nav__item chron-nav__item${selected === it.id ? " compendium-nav__item--active" : ""}`}
-                      onClick={() => setSelected(it.id)}
+                      onClick={() => openBook(it.id)}
                     >
                       <span className="chron-nav__num">{it.numeral ?? ""}</span>
                       <span>{it.title}</span>

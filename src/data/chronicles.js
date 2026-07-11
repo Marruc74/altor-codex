@@ -230,6 +230,37 @@ export const LORE_GROUPS = [
     ],
   },
   {
+    id: "griffinburg",
+    numeral: "VIII",
+    title: "Griffinburg",
+    link: "The Secret of Gripeborg",
+    blurb:
+      "The trio's eighth road job, and their first back in the north. The wind that turned years early carries them up across the Copper Sea to Pendon, and an old comrade's letter is waiting: Marquis Thorvald Griffin, whom Bram once stood beside on the Vesket road, has restored his family's long-abandoned seat and bids him to the feast. They walk into the Grindanu hills to Grifton, below the castle Griffinburg, and find the feast in ruins and the marquis gone, down alone behind a sealed cellar door whose one key went with him. A poem left in a bone tube, six couplets and each couplet a room, leads them down through bats and a fire pit and a guardroom of the dead to a grotto floored with three centuries of bone, where a house-huge, many-armed horror has fed on the hill's lords since the seal first failed, and the marquis hangs in iron, kept alive for the eating. A clean haunted-castle delve with no wound in it, and no move on the cold. Adapted from the Drakar och Demoner module Gripeborgs hemlighet.",
+    people: [
+      { label: "Griffinburg", name: "Thorvald Griffin", link: "The Secret of Gripeborg", image: "/compendium/Adventures/TheSecretOfGripeborg/ThorvaldGrip.jpg", description: "Marquis of Griffinburg and a crown vassal of Zorakin, who has restored his family's long-abandoned seat in the Grindanu hills. He stood at Bram's shoulder on the Vesket road a lifetime ago and did not run, and it is his letter that brings the trio north. He goes down alone behind the sealed cellar door and is found chained in the demon's grotto, kept alive for the eating, then freed and healed and carried up into the light." },
+      { label: "Griffinburg", name: "Iselde Griffin", link: "The Secret of Gripeborg", image: "/compendium/Adventures/TheSecretOfGripeborg/TheMarquise.jpg", description: "The marquis's wife, beautiful and iron-spined, who holds the feast and the household together through her husband's disappearance. She meets the trio in the hall, and while they go down she waits at the top of the cellar stair with a kitchen knife and old Runek at her shoulder." },
+      { label: "Griffinburg", name: "Runek", link: "The Secret of Gripeborg", image: "/compendium/Adventures/TheSecretOfGripeborg/Runek.jpg", description: "The old mason of Luksilo who did the castle's stonework. He tried the whole ring of the castle's keys on the sealed cellar and not one would fit, the marquis having kept that single key on his own person. He will not leave the door, and keeps the castle's other thresholds while the trio descend." },
+      { label: "Grifton", name: "Harl", link: "The Secret of Gripeborg", description: "The innkeeper at Grifton, the village below the castle, who gives the trio the lay of the place and the shape of the trouble on the hill." },
+      { label: "The deep under Griffinburg", name: "Onaqui", link: "Onaqui", description: "A blind heart-thing chained in the dark by the demon below: a great winged shape with a red, pulsing heart hung in its empty ribs, whose beat drums the whole room. It hunts by that sound and throws off a wave of animal dread that breaks over everyone at once, mastered here by Kaelene's counting drill and Bram's fearlessness. Aelthira names it from her reading, having taken it for a story got up to frighten students." },
+      { label: "The deep under Griffinburg", name: "The Horror under Griffinburg", link: "The Secret of Gripeborg", image: "/compendium/Adventures/TheSecretOfGripeborg/Demon.jpg", description: "The true monster of the book: a house-huge, many-armed, tusked and horned demon, black as a beetle's back, sealed under the Grindanu hills since before Zorakin had a name and feeding for three centuries on the hill's pilgrims and lords since the seal first failed. Its hide turns ordinary blades, so it takes both the Deathbringer and the Grey Fang working together to open it up. Old death-work, bounded and local, and pointedly not the Crowned One." },
+    ],
+    places: [
+      { label: "Zorakin", name: "Pendon", link: "The Secret of Gripeborg", description: "The capital of Zorakin, a coastal city of the royal mint and the Lyceum, where the trio make landfall at the opening of the job before walking north into the Grindanu hills." },
+      { label: "Grindanu hills", name: "Grifton", link: "The Secret of Gripeborg", description: "A hill village in the Grindanu uplands of Zorakin, below the restored castle. It keeps one inn under the innkeeper Harl, and its people know better than to climb the hill after dark." },
+    ],
+    locations: [
+      { label: "Grifton", name: "Castle Griffinburg", link: "The Secret of Gripeborg", description: "The long-abandoned seat of the Griffin marquisate, newly restored, a griffin on its banner. Above ground it is a stately hall; below the wine cellar it opens on far older and worse workings, a buried necromantic order and the chained things and great demon it left behind." },
+      { label: "Castle Griffinburg", name: "The Deep Under Griffinburg", link: "The Secret of Gripeborg", description: "The sealed wine cellar and the crypt below it, a locked chain of trapped rooms read off a six-couplet poem: bats and a fire pit and an antimagic shaft, a guardroom of the dead, a false floor and a petrifying pillar, down to a grotto floored with three centuries of the dead. The register is rot, damp and old hunger, never frost." },
+    ],
+    items: [
+      { label: "Reward", name: "The Grey Fang", link: "The Secret of Gripeborg", image: "/compendium/Adventures/TheSecretOfGripeborg/Whaladrugh.jpg", description: "A single-edged falchion, dwarf-forged to bite exactly the kind of old horror that ordinary steel slides off, found in an iron coffer behind a petrifying pillar in the deep. Its weight rides up near the point, a cleaving working blade; Kaelene lands the demon-kill with it and carries it out as her reward and keepsake from the hill." },
+      { label: "Keepsake", name: "The Great Helm", link: "The Secret of Gripeborg", description: "An old great helm of heavy make, taken by Bram from the demon's grotto where it lay unmarked and whole amid three centuries of rot, the one untouched thing in all that ruin. It fits him as though beaten to his head, and its cold old craft turns the tusks and horns and teeth of beasts, though not a wielded weapon. It saves his skull from the demon's tusks at the climax." },
+    ],
+    seeds: [
+      { label: "Firewalled", name: "A Clean Standalone", description: "No move on the cold clock, on purpose. The evil under Griffinburg is old and undead-adjacent, a buried necromantic order and the guard-things and the demon it left behind, but it is a local horror, bounded and long-sealed, not the Crowned One's road and not the Hollow Mark. The register is kept off the cold's own signature, rot and damp and old hunger rather than frost, and Aelthira reads the death-work for exactly what it is without once mistaking it for her enemy." },
+    ],
+  },
+  {
     id: "backstory",
     numeral: "0",
     title: "Backstory & Prologue",

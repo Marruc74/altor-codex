@@ -1,5 +1,6 @@
 ---
 title: Andadax
+series: "Places"
 tagline: "A free village under the forest-god's eye."
 summary: A cooperative forest-village of hunters and woodsmen north of Lake Sango that holds hard work sacred, shelters the rebels of the Vergili Forest, and keeps the worship of the true forest-god Mokylider.
 videoIds: []

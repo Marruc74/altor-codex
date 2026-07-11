@@ -199,7 +199,11 @@
       "Bash(cat)",
       "Bash(rm -f _verify.mjs)",
       "Bash(curl -s -o /dev/null -w '%{http_code}' http://localhost:5175/)",
-      "Bash(echo \"app on 5175: $\\(curl -s -o /dev/null -w '%{http_code}' http://localhost:5175/\\)\")"
+      "Bash(echo \"app on 5175: $\\(curl -s -o /dev/null -w '%{http_code}' http://localhost:5175/\\)\")",
+      "Bash(xargs head -8)",
+      "Bash(mkdir -p reference/chronicles)",
+      "Bash(mv \"/c/Users/daniel.andersson/Downloads/the-cold-that-stays.md\" reference/chronicles/the-cold-that-stays.md)",
+      "Bash(echo \"app 5175: $\\(curl -s -o /dev/null -w '%{http_code}' http://localhost:5175/\\)\")"
     ]
   },
   "enableAllProjectMcpServers": true,

@@ -83,6 +83,7 @@ function getInitialPage() {
   if (getParam("adventure")) return "catalog";
   if (getParam("ce")) return "catalog";
   if (getParam("hub")) return "catalog";
+  if (getParam("chron")) return "chronicles";
   // Otherwise read hash
   const hash = window.location.hash.replace("#", "");
   const valid = ["about", "history", "map", "chronicles", "catalog"];
@@ -236,13 +237,16 @@ export default function App() {
     setParam("adventure", null);
     setSelectedCountry(null);
     setParam("country", null);
+    // Put ?ce in the URL *before* navigating, so a Compendium that mounts fresh
+    // when arriving from another top-level page (e.g. the Chronicles) reads it in
+    // its mount-time initializer and opens the entry at once. The delayed popstate
+    // then covers the already-mounted case (e.g. global search on the catalog),
+    // where the mounted Compendium only re-reads ?ce on a popstate.
+    const url = new URL(window.location);
+    url.searchParams.set("ce", id);
+    window.history.pushState(null, "", url);
     navigate("catalog");
-    setTimeout(() => {
-      const url = new URL(window.location);
-      url.searchParams.set("ce", id);
-      window.history.pushState(null, "", url);
-      window.dispatchEvent(new PopStateEvent("popstate"));
-    }, 150);
+    setTimeout(() => window.dispatchEvent(new PopStateEvent("popstate")), 150);
   }, [navigate]);
 
   // "Surprise me": a random compendium page or a random map pin.
