@@ -438,103 +438,103 @@ export const entryImagesAll = {
   ],
   "jeraz": [
     {
-      "src": "/compendium/Adventures/Sartos.jpg",
+      "src": "/compendium/Adventures/Jeraz/Kharan/Sartos.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Adventures/Nania.jpg",
+      "src": "/compendium/Adventures/Jeraz/Kharan/Nania.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Adventures/Soran.jpg",
+      "src": "/compendium/Adventures/Jeraz/Kharan/Soran.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Adventures/Zareth.jpg",
+      "src": "/compendium/Adventures/Jeraz/Kharan/Zareth.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Adventures/Asterion.jpg",
+      "src": "/compendium/Adventures/Jeraz/The Rival Expedition/Asterion.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Adventures/Elissa.jpg",
+      "src": "/compendium/Adventures/Jeraz/The Rival Expedition/Elissa.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Adventures/Malchion.jpg",
+      "src": "/compendium/Adventures/Jeraz/The Rival Expedition/Malchion.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Adventures/Gotarzes.jpg",
+      "src": "/compendium/Adventures/Jeraz/The Rival Expedition/Gotarzes.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Adventures/Archelaus.jpg",
+      "src": "/compendium/Adventures/Jeraz/The Journey/Archelaus.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Adventures/Grwf.jpg",
+      "src": "/compendium/Adventures/Jeraz/The Journey/Gr'wf.jpg",
       "portrait": true,
       "square": false,
       "tall": false
     },
     {
-      "src": "/compendium/Adventures/Glub.jpg",
+      "src": "/compendium/Adventures/Jeraz/The Journey/Glub.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Adventures/Zlikas.jpg",
+      "src": "/compendium/Adventures/Jeraz/The Journey/Zlika.jpg",
       "portrait": true,
       "square": false,
       "tall": false
     },
     {
-      "src": "/compendium/Adventures/Tsuk.jpg",
+      "src": "/compendium/Adventures/Jeraz/The Journey/Tsuk.jpg",
       "portrait": true,
       "square": false,
       "tall": false
     },
     {
-      "src": "/compendium/Adventures/Geenr.jpg",
+      "src": "/compendium/Adventures/Jeraz/The Demons of Asiki/Geen'r.jpg",
       "portrait": true,
       "square": false,
       "tall": false
     },
     {
-      "src": "/compendium/Adventures/Gazehak.jpg",
+      "src": "/compendium/Adventures/Jeraz/The Demons of Asiki/Gazchak.jpg",
       "portrait": true,
       "square": false,
       "tall": false
     },
     {
-      "src": "/compendium/Adventures/Kainaa.jpg",
+      "src": "/compendium/Adventures/Jeraz/The Demons of Asiki/Kainaa.jpg",
       "portrait": true,
       "square": false,
       "tall": false
     },
     {
-      "src": "/compendium/Adventures/Teon.jpg",
+      "src": "/compendium/Adventures/Jeraz/The Demons of Asiki/Te'on.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -826,6 +826,20 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    }
+  ],
+  "shamashs-finger": [
+    {
+      "src": "/compendium/Adventures/ShamashsFinger/The Crystal Cliff/Kalyphard the Far-Travelled.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/ShamashsFinger/The Crystal Cliff/Cambalum the Wise.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "sulphur-winter": [
@@ -1352,6 +1366,20 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    }
+  ],
+  "the-fate-lottery": [
+    {
+      "src": "/compendium/Adventures/TheFateLottery/Tricilve/Sansigald Silkenhand.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheFateLottery/Tricilve/The Urn of Fate.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "the-fifth-conflux": [
@@ -2098,79 +2126,79 @@ export const entryImagesAll = {
   ],
   "the-nova-stone": [
     {
-      "src": "/compendium/Adventures/Glockman.jpg",
+      "src": "/compendium/Adventures/TheNovaStone/Utmir and the Legend/Glockmar.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Adventures/Bork.jpg",
+      "src": "/compendium/Adventures/TheNovaStone/Utmir and the Legend/Bork.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Deonor.jpg",
+      "src": "/compendium/Adventures/TheNovaStone/The False Trails/Deonor.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Gasp.jpg",
+      "src": "/compendium/Adventures/TheNovaStone/The False Trails/Gasp.jpg",
       "portrait": true,
       "square": false,
       "tall": false
     },
     {
-      "src": "/compendium/Glim.jpg",
+      "src": "/compendium/Adventures/TheNovaStone/The False Trails/Glim.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Dargomor.jpg",
+      "src": "/compendium/Adventures/TheNovaStone/Dargomor's Castle/Baron Dargomor.jpg",
       "portrait": true,
       "square": false,
       "tall": false
     },
     {
-      "src": "/compendium/Sigvird.jpg",
+      "src": "/compendium/Adventures/TheNovaStone/Dargomor's Castle/Sigvird.jpg",
       "portrait": true,
       "square": false,
       "tall": false
     },
     {
-      "src": "/compendium/Nirmilla.jpg",
+      "src": "/compendium/Adventures/TheNovaStone/Dargomor's Castle/Nirmila.jpg",
       "portrait": true,
       "square": false,
       "tall": false
     },
     {
-      "src": "/compendium/Domiral.jpg",
+      "src": "/compendium/Adventures/TheNovaStone/Dargomor's Castle/Domiral.jpg",
       "portrait": true,
       "square": false,
       "tall": false
     },
     {
-      "src": "/compendium/Norg.jpg",
+      "src": "/compendium/Adventures/TheNovaStone/Dargomor's Castle/Norg.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Hankar.jpg",
+      "src": "/compendium/Adventures/TheNovaStone/Dargomor's Castle/Hankar.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Gilgarm.jpg",
+      "src": "/compendium/Adventures/TheNovaStone/Dargomor's Castle/Baron Gilgarm.jpg",
       "portrait": true,
       "square": false,
       "tall": false
     },
     {
-      "src": "/compendium/Lilvar.jpg",
+      "src": "/compendium/Adventures/TheNovaStone/Dargomor's Castle/Baron Lilvar.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -2415,6 +2443,20 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Adventures/TheSecretOfGripeborg/Demon.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "the-tattooer-of-kargom": [
+    {
+      "src": "/compendium/Adventures/TheTattooerOfKargom/Siola/Xelimogga.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheTattooerOfKargom/Siola/Kawsa da Krafans.jpg",
       "portrait": false,
       "square": false,
       "tall": true
@@ -3581,6 +3623,32 @@ export const entryImagesAll = {
   "primeval-monster": [
     {
       "src": "/compendium/Creatures/Fable Animals/primeval-monster.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "raugon": [
+    {
+      "src": "/compendium/Creatures/Fable Animals/raugon-female.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/raugon-warrior.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/raugon-swimmer.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/raugon-worker.jpg",
       "portrait": true,
       "square": false,
       "tall": false

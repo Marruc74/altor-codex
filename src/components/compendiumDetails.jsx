@@ -252,7 +252,7 @@ export function CountryDetail({ country, onPinSelect, onVideoSelect, onOpenPage 
   // The page md may carry a YAML frontmatter block of notable figures/places/items.
   // Parse it (and split the prose body off) only when the markdown changes - not on
   // every render (e.g. opening the lightbox), which would re-run yaml.load each time.
-  const { figures, notablePlaces, notableItems, images, bodyText } = useMemo(() => {
+  const { figures, notablePlaces, notableCreatures, notableItems, images, bodyText } = useMemo(() => {
     const fm = markdown && markdown.startsWith("---")
       ? markdown.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/)
       : null;
@@ -262,6 +262,7 @@ export function CountryDetail({ country, onPinSelect, onVideoSelect, onOpenPage 
     return {
       figures: meta.figures ?? [],
       notablePlaces: meta.places ?? [],
+      notableCreatures: meta.creatures ?? [],
       notableItems: meta.items ?? [],
       images: body ? extractImages(body) : [],
       bodyText: body ? stripImages(body).replace(/^#[^\n]*\n/, "").trim() : "",
@@ -302,6 +303,7 @@ export function CountryDetail({ country, onPinSelect, onVideoSelect, onOpenPage 
 
       {loaded && <CardGrid label="Notable Figures" items={figures} portrait onOpenPage={onOpenPage} onLightbox={setLightbox} excludeCountryId={country.id} />}
       {loaded && <CardGrid label="Notable Places" items={notablePlaces} onOpenPage={onOpenPage} onLightbox={setLightbox} excludeCountryId={country.id} />}
+      {loaded && <CardGrid label="Notable Creatures" items={notableCreatures} portrait onOpenPage={onOpenPage} onLightbox={setLightbox} excludeCountryId={country.id} />}
       {loaded && <CardGrid label="Notable Items" items={notableItems} onOpenPage={onOpenPage} onLightbox={setLightbox} excludeCountryId={country.id} />}
 
       {(adventuresByPin[country.id] ?? []).length > 0 && onOpenPage && (

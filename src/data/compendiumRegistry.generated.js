@@ -203,6 +203,7 @@ export const compendiumRegistry = [
   { section: "creatures", group: "Fable Animals", name: "Peryton", slug: "peryton" },
   { section: "creatures", group: "Fable Animals", name: "Phoenix", slug: "phoenix" },
   { section: "creatures", group: "Fable Animals", name: "Primeval Monster", slug: "primeval-monster" },
+  { section: "creatures", group: "Fable Animals", name: "Raugon", slug: "raugon" },
   { section: "creatures", group: "Fable Animals", name: "Roc", slug: "roc" },
   { section: "creatures", group: "Fable Animals", name: "Rock Lizard", slug: "rock-lizard" },
   { section: "creatures", group: "Fable Animals", name: "Rust Monster", slug: "rust-monster" },

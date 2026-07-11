@@ -9,8 +9,10 @@ sections:
     npcs:
       - name: Kalyphard the Far-Travelled
         description: "A monk of the Ambaquaorden and pupil of Cambalum the Wise, who carries his lost master's papers and seeks the truth he died for."
+        image: /compendium/Adventures/ShamashsFinger/The Crystal Cliff/Kalyphard the Far-Travelled.jpg
       - name: Cambalum the Wise
         description: "The sage who vanished into Krindenland in 593 eO, having reasoned that the spilled magic of all the world is drawn into Shamash's Finger by way of the warped land - and was murdered for the knowledge by a priest of the truth-god."
+        image: /compendium/Adventures/ShamashsFinger/The Crystal Cliff/Cambalum the Wise.jpg
 ---
 
 ## The Cliff That Drinks Magic

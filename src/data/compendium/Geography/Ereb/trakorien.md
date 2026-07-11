@@ -28,6 +28,16 @@ places:
     description: "the realm's small mainland holding"
   - name: "Staden O"
     description: "the lawless free city that trades with all and answers to none"
+creatures:
+  - name: "Mustelon"
+    description: "a huge golden-brown marten of the Hesiphas mountains that kills for the pleasure of it as much as for meat, and is gone again before its prey has understood it was ever there"
+    image: /compendium/Geography/Ereb/Countries/Trakorien/Mustelon.jpg
+  - name: "Skolopod"
+    description: "a giant millipede of the rebel mountain-land of Rung, grown as long as thirty metres and dull enough to ride, saddled down the length of its body by the folk of Rung"
+    image: /compendium/Geography/Ereb/Countries/Trakorien/Skolopod.jpg
+  - name: "Sexbent Stäpphörning"
+    description: "a six-legged battle-rhinoceros of well over a thousand kilos, bred on the Moskorian steppe to haul heavy war-chariots and reckoned, harnessed eight together, worth a small file of soldiers"
+    image: /compendium/Geography/Ereb/Countries/Trakorien/Sexbent stapphorning.jpg
 items:
   - name: "The Guldtrakin"
     description: "the realm's gold coin, struck by the empire, the guilds and private houses alike"

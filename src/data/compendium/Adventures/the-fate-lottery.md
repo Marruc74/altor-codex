@@ -9,9 +9,11 @@ sections:
     npcs:
       - name: Sansigald Silkenhand
         description: "A rich cloth-merchant and tailor of Tricilve who believes this year's Fate Lottery will name him outlaw, since an old rival has won the emperor's favour. He hires a double to take his place and flee the city, paying well up front - and rather less if the worst comes to the worst."
+        image: /compendium/Adventures/TheFateLottery/Tricilve/Sansigald Silkenhand.jpg
     items:
       - name: The Urn of Fate
         description: "The vessel from which Kastyke's Pillar-Father draws the name of the noble to be cast out each year - a ritual of the gods' caprice, though a name may quietly be bought back out of it."
+        image: /compendium/Adventures/TheFateLottery/Tricilve/The Urn of Fate.jpg
 ---
 
 ## A Face for Hire

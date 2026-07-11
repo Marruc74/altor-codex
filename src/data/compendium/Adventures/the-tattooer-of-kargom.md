@@ -9,8 +9,10 @@ sections:
     npcs:
       - name: Xelimogga
         description: "A master of the tattooer's craft and a moon-priest of the Ptaklun circle, who worship the lycanthrope. He works the saliva of a chained werewolf into his ink, so that every mark he gives carries the curse, and he sails the ports leaving new wolves in his wake."
+        image: /compendium/Adventures/TheTattooerOfKargom/Siola/Xelimogga.jpg
       - name: Kawsa da Krafans
         description: "The Ilibaurian silver-merchant who owns the tattooer's ship, glad to see the curse spread - for werewolves loose in the towns would send the price of silver soaring, and the silver is his."
+        image: /compendium/Adventures/TheTattooerOfKargom/Siola/Kawsa da Krafans.jpg
 ---
 
 ## The Marks That Bite
