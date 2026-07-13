@@ -15,6 +15,7 @@ export const LORE_GROUPS = [
     numeral: "I",
     title: "The Skeleton Village's Secret",
     link: "The Skeleton Village's Secret",
+    story: "book-one-where-the-dead-still-keep-watch",
     blurb:
       "The trio's first road job, and the whole of it unfolds in a single day at one ruined village. A priest's ghost stops them on the road and begs them to cleanse the skeletons a necromancer left behind a century ago. They fight through to the church, find a nameless knight's grave still intact beneath the altar, and take nothing. The cold plot stays still; the warm clock runs the day.",
     people: [
@@ -31,6 +32,7 @@ export const LORE_GROUPS = [
     numeral: "II",
     title: "The Misty Island",
     link: "The Misty Island",
+    story: "book-two-what-the-mist-keeps",
     blurb:
       "The trio's second road job, and the first told at full novel length. Three terrified dwarves bring word of an island that appears in the mist on the Grey, and against the exact shape of her nightmare, Kaelene chooses to go. Down through cold water lies a dead sorcerer's drowned hall, a grieving ghost, a bound demon, and a black-bladed sword. Only Aelthira carries the cold off the island.",
     people: [
@@ -262,40 +264,83 @@ export const LORE_GROUPS = [
   },
   {
     id: "backstory",
-    numeral: "0",
-    title: "Backstory & Prologue",
+    numeral: "0A",
+    title: "Kaelene Fenholt",
+    story: "0a-kaelene",
     blurb:
-      "The prequel the road jobs grow out of: the closed worlds the trio each walked out of, the mentors who shaped them, and the cold thing that woke in a southern tomb and began to follow Kaelene's thread. The lands they came from, and the wound the whole series turns on.",
+      "A street thief in the grey northern port of Poane, sixteen and invisible to a city that used people up and never once looked at her directly. She read crowds to eat, and it was that skill, not the stealing, that made one passing stranger stop and offer her a way out.",
     people: [
       { label: "Kaelene's mentor", name: "Tarek", image: "/compendium/Chronicles/tarek.jpg", description: "The quiet man who saw the skill behind a starving thief and trained Kaelene in Poane. He taught her to read rooms and marks, the Shining Way's sunburst-and-sword among them. He fell in the Jorpagna tomb; whether he truly died is left open." },
-      { label: "The threat", name: "The Crowned One", description: "The ancient, crowned thing woken in the Jorpagna tomb. It crosses distance without seeming to move, carries a killing cold, and took Tarek. Now it follows a thread that leads to Kaelene, and after the working beneath Kandra it has begun to climb it." },
+    ],
+    places: [
+      { label: "Klomellien", name: "Klomellien", link: "Klomellien", description: "A salt-rich land in the cold north of Ereb, off the Copper Sea. Fish, salt and coal come out of its working ports, and so do people who stay and get used up." },
+      { label: "Poane", name: "Poane", description: "The grey northern harbour city in Klomellien where Kaelene grew up and learned to read a crowd. She got out; most don't." },
+    ],
+  },
+  {
+    id: "bram",
+    numeral: "0B",
+    title: "Bram Kestrel",
+    story: "0b-bram",
+    blurb:
+      "A dock master's son from the fishing village of Brinewatch who could not make himself stay and inherit the pier. He walked out one morning for the caravan roads, learned the trade under a hard master, and found that keeping a conscience on the road costs a man his post more often than not.",
+    people: [
       { label: "Bram's mentor", name: "Orvith", image: "/compendium/Chronicles/orvith.jpg", description: "The lean, weathered caravan guard who taught Bram his craft by showing rather than telling, and gave him his first real respect on the Morral run." },
-      { label: "Aelthira's friend", name: "Fen Marwick", image: "/compendium/Chronicles/fen-marwick.jpg", description: "Aelthira's steady study-partner of five years at the Academy. He counsels caution, then carries her bag to the gate when she leaves. Her tether back to Atrema." },
-      { label: "Aelthira's mentor", name: "Professor Carenthal", image: "/compendium/Chronicles/professor-carenthal.jpg", description: "The long-tenured faculty member who always took Aelthira seriously, and in the end was part of the institution's refusal. He never told her she was wrong, which was the most honest thing he could do." },
       { label: "Bram's road", name: "Corvel", image: "/compendium/Chronicles/corvel.jpg", description: "The soft-voiced merchant who lends to villages at terms they can't pay and collects in forced labour. Warning Mern about him cost Bram his post." },
       { label: "Bram's road", name: "The Caravan Master", image: "/compendium/Chronicles/caravan-master.jpg", description: "The pragmatic woman who runs the Vesket-to-Morral caravan and first takes Bram on as muscle, then lets him go over the Mern affair without rancour. In his tall tales she slips into a former employer he calls Corvin." },
       { label: "Brinewatch", name: "Bram's Father", image: "/compendium/Chronicles/brams-father.jpg", description: "The dock master of Brinewatch, hard and precise and never loud, who loves through work and expectation. The home Bram hasn't gone back to." },
       { label: "Brinewatch", name: "Bram's Brother", image: "/compendium/Chronicles/brams-brother.jpg", description: "Bram's quiet, steadying brother, who gave him the worn ship-coin and stayed to keep their father's dock. The one Bram writes to and means to go back for." },
     ],
     places: [
-      { label: "Klomellien", name: "Klomellien", link: "Klomellien", description: "A salt-rich land in the cold north of Ereb, off the Copper Sea. Fish, salt and coal come out of its working ports, and so do people who stay and get used up." },
-      { label: "Poane", name: "Poane", description: "The grey northern harbour city in Klomellien where Kaelene grew up and learned to read a crowd. She got out; most don't." },
       { label: "Zorakin", name: "Zorakin", link: "Zorakin", description: "A feudal kingdom on the Copper Sea and, in older song, the heartland of The Shining Way. It holds both Brinewatch on the coast and Outskirt deep in the eastern forest." },
       { label: "Brinewatch", name: "Brinewatch", description: "The whitewashed fishing village on Zorakin's coast where Bram grew up under his father the dock master, and walked out one morning rather than inherit it." },
+      { label: "Bram's road", name: "Vesket, Morral, Mern & Adrath", description: "The caravan circuit Bram learned the road on: Vesket the market town, Morral the caravan city, Mern a village broken by debt-bondage, and Adrath, where his conscience cost him a post." },
+    ],
+    items: [
+      { label: "Keepsake", name: "Bram's Ship-Coin", description: "His brother's worn coin, a ship stamped almost smooth. It is Bram's unfinished goodbye, and the anchor he carries the road on." },
+    ],
+  },
+  {
+    id: "aelthira",
+    numeral: "0C",
+    title: "Aelthira Moonveil",
+    story: "0c-aelthira",
+    blurb:
+      "An elf who gave six years to the Academy at Atrema and found, in a text everyone trusted, a flaw the faculty would rather have left alone. She would not teach a thing she knew was false, so she left, carrying the loose thread that would pull far more loose than a footnote.",
+    people: [
+      { label: "Aelthira's friend", name: "Fen Marwick", image: "/compendium/Chronicles/fen-marwick.jpg", description: "Aelthira's steady study-partner of five years at the Academy. He counsels caution, then carries her bag to the gate when she leaves. Her tether back to Atrema." },
+      { label: "Aelthira's mentor", name: "Professor Carenthal", image: "/compendium/Chronicles/professor-carenthal.jpg", description: "The long-tenured faculty member who always took Aelthira seriously, and in the end was part of the institution's refusal. He never told her she was wrong, which was the most honest thing he could do." },
+    ],
+    places: [
       { label: "Berendien", name: "Berendien", link: "Berendien", description: "A realm founded after the Third Conflux, when chieftains and forest elves broke the svartfolk. Its founding myth turns on an elf-given crown, an uneasy rhyme with the thing now following Kaelene." },
       { label: "Berendien", name: "Atrema", description: "A warm-stoned university city below the Carenthi peaks, all vineyards and cypress. The Academy keeps its upper towers; Aelthira studied there six years." },
       { label: "The south", name: "Jorvaine", description: "A southern town and Aelthira's first destination, home to a reclusive scholar who published on animist boundary theory and then went silent." },
-      { label: "Copper Sea", name: "Jorpagna", link: "Jorpagna", description: "Once the dominant empire of the Copper Sea, consumed in the Third Conflux by the fleshbiters and the horrors loosed from its own magic schools. Now a haunted ruin, and the place where Tarek fell and the Crowned One woke." },
-      { label: "Bram's road", name: "Vesket, Morral, Mern & Adrath", description: "The caravan circuit Bram learned the road on: Vesket the market town, Morral the caravan city, Mern a village broken by debt-bondage, and Adrath, where his conscience cost him a post." },
     ],
     locations: [
       { label: "Atrema", name: "The Academy", description: "The institution in Atrema's upper towers where the magic schools are taught, and where a restricted archive hides documents older than the Academy itself. Aelthira left rather than teach a model she knew was a lie." },
+    ],
+    items: [
+      { label: "Text", name: "The Mireth Principles", description: "A foundational magical text cited with a tell-tale 'generally', the loose thread Aelthira pulls until the whole buried lie comes with it." },
+    ],
+  },
+  {
+    id: "prologue",
+    numeral: "0D",
+    title: "Prologue",
+    story: "0d-prologue",
+    blurb:
+      "Kaelene and Tarek go down into the ruins of Jorpagna after one last find, and wake something that should have stayed asleep. Tarek does not come back up. The cold thing that took him now follows the thread that leads to Kaelene, and the whole series turns on that wound.",
+    people: [
+      { label: "The threat", name: "The Crowned One", description: "The ancient, crowned thing woken in the Jorpagna tomb. It crosses distance without seeming to move, carries a killing cold, and took Tarek. Now it follows a thread that leads to Kaelene, and after the working beneath Kandra it has begun to climb it." },
+    ],
+    places: [
+      { label: "Copper Sea", name: "Jorpagna", link: "Jorpagna", description: "Once the dominant empire of the Copper Sea, consumed in the Third Conflux by the fleshbiters and the horrors loosed from its own magic schools. Now a haunted ruin, and the place where Tarek fell and the Crowned One woke." },
+    ],
+    locations: [
       { label: "Jorpagna", name: "The Jorpagna Tomb", description: "The ruin beneath Jorpagna that Kaelene and Tarek delved three years before the story's present, where they woke the crowned thing that took him." },
     ],
     items: [
       { label: "Sign", name: "The Hollow Mark", description: "The figure the sorcerer cut into the rock of the Misty Island, named for the pointed emptiness at its centre. Aelthira sees it is the same shape the Academy locked away: proof, cut in stone, that the buried thing is real." },
-      { label: "Text", name: "The Mireth Principles", description: "A foundational magical text cited with a tell-tale 'generally', the loose thread Aelthira pulls until the whole buried lie comes with it." },
-      { label: "Keepsake", name: "Bram's Ship-Coin", description: "His brother's worn coin, a ship stamped almost smooth. It is Bram's unfinished goodbye, and the anchor he carries the road on." },
     ],
   },
 ];
