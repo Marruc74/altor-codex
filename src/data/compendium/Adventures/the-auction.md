@@ -14,8 +14,13 @@ sections:
     npcs:
       - name: Gilimart Verandes
         description: "A well-dressed, friendly young man who offers to lead the lodging-less heroes to a cheap inn run by his cousin. The inn does not exist, the name is false - he is the thief Kalidak Ab-Mar - and the road he walks them down ends in an ambush."
-      - name: Mealin and Ernandhiz
-        description: "The couple who keep the boarding house. Mealin pulls the heroes out of the gutter; Ernandhiz, once of Kharynos, knows the city's underworld well enough to tell them their stolen gear can be won back at the Arkadum auction - though not how he knows."
+        image: /compendium/Adventures/TheAuction/The Robbery/Gilimart Verandes.jpg
+      - name: Mealin
+        description: "The kindly woman who keeps the boarding house and pulls the beaten, robbed heroes out of the gutter, nursing them back on their feet before she points them toward the Arkadum auction."
+        image: /compendium/Adventures/TheAuction/The Robbery/Mealin.jpg
+      - name: Ernandhiz
+        description: "Mealin's husband, a reformed man of the exiled crime-ring Kharynos, who knows the city's underworld well enough to tell the heroes their stolen gear can be won back at the Arkadum auction - though not how he knows."
+        image: /compendium/Adventures/TheAuction/The Robbery/Ernandhiz.jpg
     creatures:
       - name: The Thugs
         description: "A gang of street toughs, twice the heroes' number, who fall on them in a rough quarter, beat them senseless, and make off with their packs - leaving purses and pockets behind, and fencing the haul at the auction house without ever checking it for magic."
@@ -27,6 +32,7 @@ sections:
     npcs:
       - name: Barbana di Lautmaz
         description: "A grotesquely fat, wheezing merchant of the cult's outer circle, sent to buy the dead necromancer's coffer and shamed by missing it to illness. He accosts the heroes for the 'worthless' box, raising his offer far past reason - and lets slip a purse that should make them keep it."
+        image: /compendium/Adventures/TheAuction/The Auction/Barbana di Lautmaz.jpg
     items:
       - name: The Coffer
         description: "An old, worn chest with a simple lock, robbed from the heroes and sold off cheap at the auction. It once belonged to the dead necromancer Khaltem and holds a clutter of magical oddments - a self-lighting pipe, a far-seeing brass glass, a dog-whistle - and, buried among them, the thing the cult is hunting."
@@ -37,6 +43,7 @@ sections:
     items:
       - name: The Demonic Dagger
         description: "A flame-shaped blade of black-shimmering metal, its black-wood haft a claw clutching a black pearl, its runes glowing red in moonlight. The first to touch it - or, failing that, the weakest-willed - is chosen and drawn to it; the cult means to drive it into the chosen one's chest in a long rite, so a demon prince's child may grow inside the body and be loosed upon Altor."
+        image: /compendium/Adventures/TheAuction/The Demonic Dagger/The Demonic Dagger.jpg
     npcs:
       - name: The Chosen One
         description: "Whichever of the heroes first lays hand on the dagger becomes its chosen vessel, plagued by cold-sweat nightmares - a fire-breathing black dragon hunting through a misty wood, a black knife raised over an altar, slit yellow eyes watching from rising water - each a memory the demon means to make real."
@@ -48,21 +55,32 @@ sections:
     npcs:
       - name: Jargaf Sauder
         description: "A wealthy, genuinely honest and generous merchant of the cult's outer circle, who has no idea what the dagger truly is and only wants it for his collection. He bids almost anything for it, stays courteous whatever the heroes decide, and sends them off with a parting gift."
+        image: /compendium/Adventures/TheAuction/The Honest Buyer/Jargaf Sauder.jpg
       - name: Liesa Karrak
         description: "Jargaf's young envoy, who carries his invitation to the palace and offers to remain with the heroes as a hostage to soothe the suspicious. No harm is meant by it."
+        image: /compendium/Adventures/TheAuction/The Honest Buyer/Liesa.jpg
   - title: The Dragon's Society
     description: "Behind a respectable charitable order hides a demon cult of three circles, ruled by a tattooed demonologist in service to a demon prince - and willing to murder for the dagger."
     npcs:
       - name: Prenikaft
         description: "The demonologist who heads the cult's inner circle, tattooed head to foot with a great dragon, in contact with the demon prince the order serves. He runs the rituals and means to use the dagger and the chosen one to birth the prince's child into the world."
-      - name: The Merchant-Masters
-        description: "Four rich merchants - Herig, Katugi, Follo, and the doomed Kirisval - who sit the cult's inner circle beside Prenikaft, perform its rites, and pass for pillars of a charitable order. A fifth circle of brainwashed young men kills and dies on their word."
+        image: /compendium/Adventures/TheAuction/The Dragon's Society/Prenikaft.jpg
+      - name: Herig
+        description: "One of the rich merchants of the cult's inner circle, who sits beside Prenikaft, works the rites, and passes by day for a pillar of the charitable order that hides the Dragon's Society from the city."
+        image: /compendium/Adventures/TheAuction/The Dragon's Society/Herig.jpg
+      - name: Katugi
+        description: "A wealthy merchant of the inner circle and one of Prenikaft's ritual-masters, outwardly a generous patron of the same charitable order that masks the cult."
+        image: /compendium/Adventures/TheAuction/The Dragon's Society/Katugi.jpg
+      - name: Follo
+        description: "The last of the three surviving merchant-masters of the inner circle - the fourth, Kirisval, was fed to a botched ritual and became the demon-hybrid. Below them a circle of brainwashed young men kills and dies on their word."
+        image: /compendium/Adventures/TheAuction/The Dragon's Society/Follo.jpg
     creatures:
       - name: Azhkhurath
         entry: demon-prince
         description: "The demon prince the Dragon's Society serves, whose offspring the cult would loose upon Altor through the dagger and the chosen one's body, to rule as its deputy."
       - name: The Demon-Hybrid
         description: "The merchant Kirisval, fed to a botched ritual and twisted over two agonizing months into a thing of tentacled limbs, black spikes and oozing slime. It fled into the sewers - which is why the true temple can now be reached only through them - and devours any it does not know."
+        image: /compendium/Adventures/TheAuction/The Dragon's Society/Demon Hybrid.jpg
   - title: The Sewer Temple
     description: "The cult's brutal murders have ruined the assassins' guild, whose hidden Master allies with the heroes, trains them, and leads the strike on the demon temple hidden beneath the city's sewers."
     places:

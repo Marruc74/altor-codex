@@ -1,5 +1,7 @@
 # Baron Piet Steeljaw
 
+![Baron Piet Steeljaw](/compendium/Adventures/TheCopperSeaRaiders/The Pirate Captain/Baron Piet Steeljaw.jpg "Baron Piet Steeljaw")
+
 The most feared pirate of the western Copper Sea, and once a lord of Zorakin. Baron Piet Steeljaw ruled his lands with a cruelty that brought the church's ban down on him and his own king's condemnation, and rather than answer for it he took to the sea. Every attempt to capture him since has failed, and there is three thousand silver on his head.
 
 ## The Steel Jaw

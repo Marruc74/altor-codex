@@ -15,3 +15,7 @@ Harpies are notorious foulers. Cowardly, they attack only when they outnumber th
 ## Abilities
 
 Harpies are carriers of disease, and every wound one inflicts risks giving the victim a grave contagion such as plague, smallpox or cholera.
+
+![Harpy](/compendium/Creatures/Fable Animals/harpy-1.jpg "Harpy")
+
+![Harpy](/compendium/Creatures/Fable Animals/harpy-2.jpg "Harpy")

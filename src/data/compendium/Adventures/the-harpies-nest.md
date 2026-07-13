@@ -19,6 +19,7 @@ sections:
     npcs:
       - name: Fghrkahx
         description: "Leader of the harpy colony in the crater, near two meters tall and feathered in glossy coal-black, who keeps an uneasy truce with the pirates and feeds on those who break it."
+        image: /compendium/Adventures/TheHarpiesNest/The Island/Fghrkahx.jpg
     creatures:
       - name: Harpies
         entry: harpy
