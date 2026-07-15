@@ -10,7 +10,6 @@
 ![Female Goblin](/compendium/Peoples/Dark Folks/goblin-female-2.jpg "Female Goblin")
 ![Female Goblin](/compendium/Peoples/Dark Folks/goblin-female-3.jpg "Female Goblin")
 ![Female Goblin](/compendium/Peoples/Dark Folks/goblin-female-4.jpg "Female Goblin")
-![Goblin](/compendium/Peoples/Dark Folks/goblin.jpg "Goblin")
 Goblins live in tight-knit clans in great underground mining complexes and have reached almost the same level of craft as dwarves, at least in practical function if not in beauty, so they trade their work to the less skilled dark folk. Their cities are well planned and well built, ringed by defensive labyrinths of tunnel against thieves, and the greatest of them hold as many as ten thousand. By their own lore they were the last of the dark folk to be made, shaped by the over-god Ouahran after he had seen the flaws in all the rest, and given a keener wit and a small, lithe body fitted for the deep earth.
 
 ## Appearance

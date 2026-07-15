@@ -7,7 +7,6 @@
 ![Cave Elf](/compendium/Peoples/Elves/cave-elf-5.jpg "Cave Elf")
 ![Cave Elf](/compendium/Peoples/Elves/cave-elf-6.jpg "Cave Elf")
 ![Cave Elf](/compendium/Peoples/Elves/cave-elf-7.jpg "Cave Elf")
-![Cave Elf](/compendium/Peoples/Elves/cave-elf.jpg "Cave Elf")
 ![Female Cave Elf](/compendium/Peoples/Elves/cave-elf-female-1.jpg "Female Cave Elf")
 ![Female Cave Elf](/compendium/Peoples/Elves/cave-elf-female-2.jpg "Female Cave Elf")
 ![Female Cave Elf](/compendium/Peoples/Elves/cave-elf-female-3.jpg "Female Cave Elf")

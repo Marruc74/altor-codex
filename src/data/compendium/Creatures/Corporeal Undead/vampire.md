@@ -5,7 +5,6 @@
 ![Vampire](/compendium/Creatures/Corporeal Undead/vampire-3.jpg "Vampire")
 ![Vampire](/compendium/Creatures/Corporeal Undead/vampire-4.jpg "Vampire")
 ![Vampire](/compendium/Creatures/Corporeal Undead/vampire-5.jpg "Vampire")
-![Vampire](/compendium/Creatures/Corporeal Undead/vampire.jpg "Vampire")
 ![Female Vampire](/compendium/Creatures/Corporeal Undead/vampire-female-1.jpg "Female Vampire")
 ![Female Vampire](/compendium/Creatures/Corporeal Undead/vampire-female-2.jpg "Female Vampire")
 ![Female Vampire](/compendium/Creatures/Corporeal Undead/vampire-female-3.jpg "Female Vampire")

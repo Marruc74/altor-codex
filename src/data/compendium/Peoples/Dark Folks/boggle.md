@@ -9,7 +9,6 @@
 ![Female Boggle](/compendium/Peoples/Dark Folks/boggle-female-2.jpg "Female Boggle")
 ![Female Boggle](/compendium/Peoples/Dark Folks/boggle-female-3.jpg "Female Boggle")
 ![Female Boggle](/compendium/Peoples/Dark Folks/boggle-female-4.jpg "Female Boggle")
-![Boggle](/compendium/Peoples/Dark Folks/boggle.jpg "Boggle")
 Close kin to goblins but far more dangerous and malicious, said in goblin legend to be the work of a mad demigod's experiments, and the two have waged bloody war ever since. They dwell deepest of all, in great caverns as far from the sun as one can go, raising edible mushrooms and pale cave-swine.
 
 ## Appearance

@@ -5,7 +5,6 @@
 ![Blood Elf](/compendium/Peoples/Elves/blood-elf-3.jpg "Blood Elf")
 ![Blood Elf](/compendium/Peoples/Elves/blood-elf-4.jpg "Blood Elf")
 ![Blood Elf](/compendium/Peoples/Elves/blood-elf-5.jpg "Blood Elf")
-![Blood Elf](/compendium/Peoples/Elves/blood-elf.jpg "Blood Elf")
 ![Female Blood Elf](/compendium/Peoples/Elves/blood-elf-female-1.jpg "Female Blood Elf")
 ![Female Blood Elf](/compendium/Peoples/Elves/blood-elf-female-2.jpg "Female Blood Elf")
 ![Female Blood Elf](/compendium/Peoples/Elves/blood-elf-female-3.jpg "Female Blood Elf")

@@ -3160,12 +3160,6 @@ export const entryImagesAll = {
       "tall": false
     },
     {
-      "src": "/compendium/Creatures/Corporeal Undead/vampire.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
       "src": "/compendium/Creatures/Corporeal Undead/vampire-female-1.jpg",
       "portrait": true,
       "square": false,
@@ -3423,12 +3417,6 @@ export const entryImagesAll = {
     }
   ],
   "chimera": [
-    {
-      "src": "/compendium/Creatures/Fable Animals/chimera.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
     {
       "src": "/compendium/Creatures/Fable Animals/chimera-1.jpg",
       "portrait": false,
@@ -4652,12 +4640,6 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
-    },
-    {
-      "src": "/compendium/Creatures/Wraiths & Wights/barrow-wight.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "dark-wraith": [
@@ -4716,23 +4698,11 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
-    },
-    {
-      "src": "/compendium/Creatures/Wraiths & Wights/death-wraith.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "phantom": [
     {
       "src": "/compendium/Creatures/Wraiths & Wights/phantom-2.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Creatures/Wraiths & Wights/phantom.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -6304,12 +6274,6 @@ export const entryImagesAll = {
       "tall": false
     },
     {
-      "src": "/compendium/Peoples/Animal Humanoids/catpeople.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
       "src": "/compendium/Peoples/Animal Humanoids/catpeople-female-1.jpg",
       "portrait": true,
       "square": false,
@@ -6337,12 +6301,6 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/centaur-3.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Animal Humanoids/centaur.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -6692,12 +6650,6 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Dark Folks/boggart.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "boggle": [
@@ -6748,12 +6700,6 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Dark Folks/boggle.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "cave-orcs": [
@@ -6801,12 +6747,6 @@ export const entryImagesAll = {
     }
   ],
   "cave-troll": [
-    {
-      "src": "/compendium/Peoples/Dark Folks/cave-troll.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
     {
       "src": "/compendium/Peoples/Dark Folks/cave-troll-2.jpg",
       "portrait": false,
@@ -6966,12 +6906,6 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Dark Folks/goblin.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "mountain-orcs": [
@@ -7081,12 +7015,6 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Dark Folks/ogre-female-4.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Dark Folks/ogre.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -7205,12 +7133,6 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Dark Folks/orc-12.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Dark Folks/orc.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -7612,12 +7534,6 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
-    },
-    {
-      "src": "/compendium/Peoples/Dark Folks/svartalf.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "ylk-orcs": [
@@ -7690,12 +7606,6 @@ export const entryImagesAll = {
       "tall": false
     },
     {
-      "src": "/compendium/Peoples/Elves/blood-elf.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
       "src": "/compendium/Peoples/Elves/blood-elf-female-1.jpg",
       "portrait": true,
       "square": false,
@@ -7758,12 +7668,6 @@ export const entryImagesAll = {
       "tall": false
     },
     {
-      "src": "/compendium/Peoples/Elves/cave-elf.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
       "src": "/compendium/Peoples/Elves/cave-elf-female-1.jpg",
       "portrait": true,
       "square": false,
@@ -7809,12 +7713,6 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Elves/dark-elf-5.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Elves/dark-elf.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -7956,12 +7854,6 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Elves/frost-elf.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "grey-elf": [
@@ -7985,12 +7877,6 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Elves/grey-elf-5.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Elves/grey-elf.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -8059,12 +7945,6 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Elves/high-elf-5.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Elves/high-elf.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -8166,12 +8046,6 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Elves/injir.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "light-elf": [
@@ -8219,12 +8093,6 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Elves/light-elf-female-4.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Elves/light-elf.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -8281,12 +8149,6 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Elves/sea-elf-female-3.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Elves/sea-elf.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -8475,12 +8337,6 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Elves/wood-elf-female-5.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Elves/wood-elf.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -9336,12 +9192,6 @@ export const entryImagesAll = {
   ],
   "cyclop": [
     {
-      "src": "/compendium/Peoples/Stonekin/cyclop.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
       "src": "/compendium/Peoples/Stonekin/cyclop-2.jpg",
       "portrait": false,
       "square": false,
@@ -9367,12 +9217,6 @@ export const entryImagesAll = {
     }
   ],
   "dwarf": [
-    {
-      "src": "/compendium/Peoples/Stonekin/dwarf.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
     {
       "src": "/compendium/Peoples/Stonekin/dwarf-2.jpg",
       "portrait": false,
@@ -9486,12 +9330,6 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Sylvans/dryad.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "faerie": [
@@ -9533,12 +9371,6 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Sylvans/faerie-8.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Sylvans/faerie.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -9598,12 +9430,6 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Sylvans/fire-pixie.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "hag": [
@@ -9636,21 +9462,9 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
-    },
-    {
-      "src": "/compendium/Peoples/Sylvans/hag.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "hob": [
-    {
-      "src": "/compendium/Peoples/Sylvans/hob.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
     {
       "src": "/compendium/Peoples/Sylvans/hob-2.jpg",
       "portrait": false,
@@ -9836,12 +9650,6 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Sylvans/naiad.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "oread": [
@@ -9898,12 +9706,6 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Sylvans/oread.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "peerie": [
@@ -9954,12 +9756,6 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Sylvans/peerie.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "satyr": [
@@ -9992,21 +9788,9 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Sylvans/satyr.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "troll": [
-    {
-      "src": "/compendium/Peoples/Dark Folks/cave-troll.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
     {
       "src": "/compendium/Peoples/Dark Folks/cave-troll-2.jpg",
       "portrait": false,
@@ -10160,12 +9944,6 @@ export const entryImagesAll = {
       "tall": false
     },
     {
-      "src": "/compendium/Peoples/Sylvans/dryad.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
       "src": "/compendium/Peoples/Sylvans/hag-2.jpg",
       "portrait": false,
       "square": false,
@@ -10194,12 +9972,6 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
-    },
-    {
-      "src": "/compendium/Peoples/Sylvans/hag.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     },
     {
       "src": "/compendium/Peoples/Sylvans/naiad-2.jpg",
@@ -10239,12 +10011,6 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Sylvans/naiad-8.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Sylvans/naiad.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -10299,12 +10065,6 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Sylvans/oread-10.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Sylvans/oread.jpg",
       "portrait": true,
       "square": false,
       "tall": false

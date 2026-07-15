@@ -10,7 +10,6 @@
 ![Boggart](/compendium/Peoples/Dark Folks/boggart-8.jpg "Boggart")
 ![Boggart](/compendium/Peoples/Dark Folks/boggart-9.jpg "Boggart")
 ![Boggart](/compendium/Peoples/Dark Folks/boggart-10.jpg "Boggart")
-![Boggart](/compendium/Peoples/Dark Folks/boggart.jpg "Boggart")
 The smallest of the dark folk, yet dangerous in a swarm, falling on passing travellers in a great mob. They prepare for every fight by bathing in a vat of black dye and sharpening their prized battle-forks, and live in big tribes in old badger-setts and mole-runs they have seized and widened.
 
 ## Appearance

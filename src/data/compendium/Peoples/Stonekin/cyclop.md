@@ -1,7 +1,6 @@
 # Cyclop
 
 
-![Cyclop](/compendium/Peoples/Stonekin/cyclop.jpg "Cyclop")
 ![Cyclop](/compendium/Peoples/Stonekin/cyclop-2.jpg "Cyclop")
 ![Cyclop](/compendium/Peoples/Stonekin/cyclop-3.jpg "Cyclop")
 ![Cyclop](/compendium/Peoples/Stonekin/cyclop-4.jpg "Cyclop")

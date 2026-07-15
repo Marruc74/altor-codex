@@ -5,7 +5,6 @@ parent: troll
 # Cave Troll
 
 
-![Cave Troll](/compendium/Peoples/Dark Folks/cave-troll.jpg "Cave Troll")
 ![Cave Troll](/compendium/Peoples/Dark Folks/cave-troll-2.jpg "Cave Troll")
 ![Cave Troll](/compendium/Peoples/Dark Folks/cave-troll-3.jpg "Cave Troll")
 ![Cave Troll](/compendium/Peoples/Dark Folks/cave-troll-4.jpg "Cave Troll")

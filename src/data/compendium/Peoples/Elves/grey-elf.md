@@ -5,7 +5,6 @@
 ![Grey Elf](/compendium/Peoples/Elves/grey-elf-3.jpg "Grey Elf")
 ![Grey Elf](/compendium/Peoples/Elves/grey-elf-4.jpg "Grey Elf")
 ![Grey Elf](/compendium/Peoples/Elves/grey-elf-5.jpg "Grey Elf")
-![Grey Elf](/compendium/Peoples/Elves/grey-elf.jpg "Grey Elf")
 ![Female Grey Elf](/compendium/Peoples/Elves/grey-elf-female-1.jpg "Female Grey Elf")
 ![Female Grey Elf](/compendium/Peoples/Elves/grey-elf-female-2.jpg "Female Grey Elf")
 ![Female Grey Elf](/compendium/Peoples/Elves/grey-elf-female-3.jpg "Female Grey Elf")

@@ -13,7 +13,6 @@ parent: nymphs
 ![Oread](/compendium/Peoples/Sylvans/oread-8.jpg "Oread")
 ![Oread](/compendium/Peoples/Sylvans/oread-9.jpg "Oread")
 ![Oread](/compendium/Peoples/Sylvans/oread-10.jpg "Oread")
-![Oread](/compendium/Peoples/Sylvans/oread.jpg "Oread")
 Oreads are nymphs that live in mountain country, highlands, caves, ravines and valleys. There are two kinds, the limonaids, who are meadow- and flower-nymphs, and the aulonaids, who are valley-nymphs. Like all nymphs an oread is bound to her home, a crag or a cave, and unkillable except by its destruction.
 
 ## Appearance

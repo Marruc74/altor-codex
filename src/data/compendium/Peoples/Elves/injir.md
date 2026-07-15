@@ -9,7 +9,6 @@
 ![Female Injir](/compendium/Peoples/Elves/injir-female-2.jpg "Female Injir")
 ![Female Injir](/compendium/Peoples/Elves/injir-female-3.jpg "Female Injir")
 ![Female Injir](/compendium/Peoples/Elves/injir-female-4.jpg "Female Injir")
-![Injir](/compendium/Peoples/Elves/injir.jpg "Injir")
 The injir call themselves the horse-brothers. They are the second-largest of the forest-elf kindreds and, after the dark elves, the most warlike of all the elf-folk. They live in the saddle, nomads who range across plains, woodland and waste, and their whole life turns on the horse, the bow and the long knife. Quick to anger but cold and controlled in a fight, they are a proud, untamed people, marked out among elves by their painted skin and their love of open country.
 
 ## Appearance

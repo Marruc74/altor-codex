@@ -10,7 +10,6 @@ parent: nymphs
 ![Naiad](/compendium/Peoples/Sylvans/naiad-6.jpg "Naiad")
 ![Naiad](/compendium/Peoples/Sylvans/naiad-7.jpg "Naiad")
 ![Naiad](/compendium/Peoples/Sylvans/naiad-8.jpg "Naiad")
-![Naiad](/compendium/Peoples/Sylvans/naiad.jpg "Naiad")
 Naiads, or spring-nymphs, make their home in a spring, a waterfall, a small forest tarn, a rapid or the like, and when in the water can dissolve their bodies and become water themselves. There are really several kinds: nereids of rapids and springs, oceanids of the seas, potameids of rivers and limnads of still pools. Like all nymphs a naiad is bound to her home and unkillable except by its destruction, the diverting of her stream.
 
 ## Appearance

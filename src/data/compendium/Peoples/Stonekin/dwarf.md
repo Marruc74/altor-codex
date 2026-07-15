@@ -1,7 +1,6 @@
 # Dwarf
 
 
-![Dwarf](/compendium/Peoples/Stonekin/dwarf.jpg "Dwarf")
 ![Dwarf](/compendium/Peoples/Stonekin/dwarf-2.jpg "Dwarf")
 ![Dwarf](/compendium/Peoples/Stonekin/dwarf-3.jpg "Dwarf")
 ![Dwarf](/compendium/Peoples/Stonekin/dwarf-4.jpg "Dwarf")

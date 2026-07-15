@@ -5,7 +5,6 @@
 ![Dark Elf](/compendium/Peoples/Elves/dark-elf-3.jpg "Dark Elf")
 ![Dark Elf](/compendium/Peoples/Elves/dark-elf-4.jpg "Dark Elf")
 ![Dark Elf](/compendium/Peoples/Elves/dark-elf-5.jpg "Dark Elf")
-![Dark Elf](/compendium/Peoples/Elves/dark-elf.jpg "Dark Elf")
 ![Female Dark Elf](/compendium/Peoples/Elves/dark-elf-female-1.jpg "Female Dark Elf")
 ![Female Dark Elf](/compendium/Peoples/Elves/dark-elf-female-2.jpg "Female Dark Elf")
 ![Female Dark Elf](/compendium/Peoples/Elves/dark-elf-female-3.jpg "Female Dark Elf")

@@ -5,7 +5,6 @@
 ![High Elf](/compendium/Peoples/Elves/high-elf-3.jpg "High Elf")
 ![High Elf](/compendium/Peoples/Elves/high-elf-4.jpg "High Elf")
 ![High Elf](/compendium/Peoples/Elves/high-elf-5.jpg "High Elf")
-![High Elf](/compendium/Peoples/Elves/high-elf.jpg "High Elf")
 ![Female High Elf](/compendium/Peoples/Elves/high-elf-female-1.jpg "Female High Elf")
 ![Female High Elf](/compendium/Peoples/Elves/high-elf-female-2.jpg "Female High Elf")
 ![Female High Elf](/compendium/Peoples/Elves/high-elf-female-3.jpg "Female High Elf")

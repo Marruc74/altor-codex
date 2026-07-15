@@ -3,7 +3,6 @@
 
 ![Centaur](/compendium/Peoples/Animal Humanoids/centaur-2.jpg "Centaur")
 ![Centaur](/compendium/Peoples/Animal Humanoids/centaur-3.jpg "Centaur")
-![Centaur](/compendium/Peoples/Animal Humanoids/centaur.jpg "Centaur")
 ![Female Centaur](/compendium/Peoples/Animal Humanoids/centaur-female-1.jpg "Female Centaur")
 ![Female Centaur](/compendium/Peoples/Animal Humanoids/centaur-female-2.jpg "Female Centaur")
 Centaurs are chiefly a forest people, living as hunters, craftsmen, traders, warriors and farmers, and preferring bright, open woods and fields where they can move freely; they fare badly in mountains and caves where their hooves slip.

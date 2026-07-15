@@ -1,7 +1,6 @@
 # Hob
 
 
-![Hob](/compendium/Peoples/Sylvans/hob.jpg "Hob")
 ![Hob](/compendium/Peoples/Sylvans/hob-2.jpg "Hob")
 ![Hob](/compendium/Peoples/Sylvans/hob-3.jpg "Hob")
 ![Hob](/compendium/Peoples/Sylvans/hob-4.jpg "Hob")

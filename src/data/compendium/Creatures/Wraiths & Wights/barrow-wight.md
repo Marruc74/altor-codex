@@ -3,7 +3,6 @@
 
 ![Barrow Wight](/compendium/Creatures/Wraiths & Wights/barrow-wight-2.jpg "Barrow Wight")
 ![Barrow Wight](/compendium/Creatures/Wraiths & Wights/barrow-wight-3.jpg "Barrow Wight")
-![Barrow Wight](/compendium/Creatures/Wraiths & Wights/barrow-wight.jpg "Barrow Wight")
 The barrow wight shows great likeness to the death wraith, but since its strength of soul in life was not so great, neither is its power in unlife. It keeps by preference to dark grave-vaults and deep catacombs, where the sunlight seldom reaches, for sunlight burns it; yet it can move above ground without trouble, doing so by night and only when the moon is hidden. It moves floating through the air and can slip through the smallest crack or hollow.
 
 ## Appearance

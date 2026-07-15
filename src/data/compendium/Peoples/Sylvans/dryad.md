@@ -12,7 +12,6 @@ parent: nymphs
 ![Dryad](/compendium/Peoples/Sylvans/dryad-7.jpg "Dryad")
 ![Dryad](/compendium/Peoples/Sylvans/dryad-8.jpg "Dryad")
 ![Dryad](/compendium/Peoples/Sylvans/dryad-9.jpg "Dryad")
-![Dryad](/compendium/Peoples/Sylvans/dryad.jpg "Dryad")
 Dryads are tree-spirits, or forest-nymphs, that live in forest glades. One of the trees in the glade is the nymph's own, and as the tree fares, so fares the nymph: if it is felled or burned the nymph dies, and if it grows old and begins to wither she turns wrinkled, grey-haired and senile. Like all nymphs she is in truth a guardian of nature because she is nature, bound to her home and unable to stray far from it, and unkillable except by the destruction of that home.
 
 ## Appearance

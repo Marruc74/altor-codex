@@ -5,7 +5,6 @@
 ![Catpeople](/compendium/Peoples/Animal Humanoids/catpeople-3.jpg "Catpeople")
 ![Catpeople](/compendium/Peoples/Animal Humanoids/catpeople-4.jpg "Catpeople")
 ![Catpeople](/compendium/Peoples/Animal Humanoids/catpeople-5.jpg "Catpeople")
-![Catpeople](/compendium/Peoples/Animal Humanoids/catpeople.jpg "Catpeople")
 ![Female Catpeople](/compendium/Peoples/Animal Humanoids/catpeople-female-1.jpg "Female Catpeople")
 ![Female Catpeople](/compendium/Peoples/Animal Humanoids/catpeople-female-2.jpg "Female Catpeople")
 ![Female Catpeople](/compendium/Peoples/Animal Humanoids/catpeople-female-3.jpg "Female Catpeople")
