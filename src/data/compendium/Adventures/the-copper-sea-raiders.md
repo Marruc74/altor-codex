@@ -11,15 +11,21 @@ sections:
         description: "Steeljaw's hidden island base in the western Copper Sea, a reef-ringed volcanic crag. Its full account is under Places."
     npcs:
       - name: Baron Piet Steeljaw
+        entry: baron-piet-steeljaw
         description: "A Zorakin baron once excommunicated by the church and condemned by the king for his cruelty to his own people, now the most feared pirate of the western Copper Sea. A great false beard hides the steel jaw he wears since a boarding-pike took his own; to his crew he is as a god, a fair and deadly captain none have bested in a duel. There is three thousand silver on his head."
+        image: /compendium/Adventures/TheCopperSeaRaiders/The Pirate Captain/Baron Piet Steeljaw.jpg
       - name: Halvdan
         description: "Steeljaw's second, who styles himself Commandant of Steeljaw's Fort - a one-eyed, one-legged, one-armed innkeeper who never sails out, but keeps the island and its hall while the captain is at sea."
+        image: /compendium/Adventures/TheCopperSeaRaiders/The Pirate Captain/Halvdan.jpg
       - name: Jartikol Rustbeard
         description: "The Erebos-born helmsman of the Wave-Crusher, who shares the captain's cabin in the fort."
+        image: /compendium/Adventures/TheCopperSeaRaiders/The Pirate Captain/Jartikol Rustbeard.jpg
       - name: Brangulf Frolweritron
         description: "The wind-weaver who sails aboard the Wave-Crusher, calling up rune-winds, fog and squalls to run a quarry down or shake off a pursuer."
+        image: /compendium/Adventures/TheCopperSeaRaiders/The Pirate Captain/Brangulf Frolweritron.jpg
       - name: Trymgeir Thumbless
         description: "Halvdan's mute servant, a giant of a barber left thumbless by a long night in a Kardien torture-chamber, who keeps to dry land ever after."
+        image: /compendium/Adventures/TheCopperSeaRaiders/The Pirate Captain/Trymgeir Thumbless.jpg
     items:
       - name: The Wave-Crusher
         description: "Steeljaw's four-masted galleon, lightly armed and built to pass for an ordinary merchantman until it is too late. An uncommonly fast sailer, it can run down almost any defenceless trader, the more surely for the wind-weaver aboard."
@@ -33,6 +39,7 @@ sections:
     npcs:
       - name: Grand Admiral Krind'O Ulvakus
         description: "Commander of the whole Zorakin fleet, who sails aboard Valien's Light and orders the ships to lie to and ride out the storm that undoes them."
+        image: /compendium/Adventures/TheCopperSeaRaiders/Four Adrift/Grand Admiral Krind'O Ulvakus.jpg
     creatures:
       - name: The Black Anchors
         description: "A second band of raiders in two black longships, who seize the same becalmed morning to fall on the scattered convoy alongside the Wave-Crusher."

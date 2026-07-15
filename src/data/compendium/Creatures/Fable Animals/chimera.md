@@ -15,3 +15,7 @@ As the perverse creature of Chaos it is, the chimera has no rational instincts, 
 ## Abilities
 
 Because the chimera has three pairs of eyes it is very watchful, able to listen and sense danger even while it fights, which makes it extremely hard to surprise. Furthermore it can always bring its serpent-bite to bear on a foe within reach in the same moment that it uses one of its other natural weapons, and the venom of that bite is potent indeed.
+
+![Chimera](/compendium/Creatures/Fable Animals/chimera-1.jpg "Chimera")
+
+![Chimera](/compendium/Creatures/Fable Animals/chimera-2.jpg "Chimera")

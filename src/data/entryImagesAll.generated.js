@@ -1072,6 +1072,118 @@ export const entryImagesAll = {
       "tall": false
     }
   ],
+  "the-auction": [
+    {
+      "src": "/compendium/Adventures/TheAuction/The Robbery/Gilimart Verandes.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheAuction/The Robbery/Mealin.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheAuction/The Robbery/Ernandhiz.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheAuction/The Auction/Barbana di Lautmaz.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheAuction/The Demonic Dagger/The Demonic Dagger.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheAuction/The Honest Buyer/Jargaf Sauder.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheAuction/The Honest Buyer/Liesa.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheAuction/The Dragon's Society/Prenikaft.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheAuction/The Dragon's Society/Herig.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheAuction/The Dragon's Society/Katugi.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheAuction/The Dragon's Society/Follo.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheAuction/The Dragon's Society/Demon Hybrid.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "the-copper-sea-raiders": [
+    {
+      "src": "/compendium/Adventures/TheCopperSeaRaiders/The Pirate Captain/Baron Piet Steeljaw.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheCopperSeaRaiders/The Pirate Captain/Halvdan.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheCopperSeaRaiders/The Pirate Captain/Jartikol Rustbeard.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheCopperSeaRaiders/The Pirate Captain/Brangulf Frolweritron.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheCopperSeaRaiders/The Pirate Captain/Trymgeir Thumbless.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheCopperSeaRaiders/Four Adrift/Grand Admiral Krind'O Ulvakus.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
   "the-crystal-bull": [
     {
       "src": "/compendium/Adventures/TheCrystalBull/Melealina.jpg",
@@ -1606,6 +1718,14 @@ export const entryImagesAll = {
       "tall": true
     }
   ],
+  "the-harpies-nest": [
+    {
+      "src": "/compendium/Adventures/TheHarpiesNest/The Island/Fghrkahx.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
   "the-heart-of-darkness": [
     {
       "src": "/compendium/Adventures/TheHeartOfDarkness/Before/Tefalas.jpg",
@@ -1785,6 +1905,20 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Adventures/TheHellFort/The Hell Fort/Achatoth.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "the-lost-zepelond": [
+    {
+      "src": "/compendium/Adventures/TheLostZepelond/Kargom and the Eniaken/Phantango daMelasti.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheLostZepelond/Kargom and the Eniaken/The Zepelond.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -2790,6 +2924,14 @@ export const entryImagesAll = {
       "tall": false
     }
   ],
+  "baron-piet-steeljaw": [
+    {
+      "src": "/compendium/Adventures/TheCopperSeaRaiders/The Pirate Captain/Baron Piet Steeljaw.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
   "bram-kestrel": [
     {
       "src": "/compendium/Characters/bram-kestrel.jpg",
@@ -3262,6 +3404,18 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/chimera-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/chimera-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "cockatrice": [
@@ -3442,6 +3596,18 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/harpy-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/harpy-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "high-warden-tiger": [

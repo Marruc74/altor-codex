@@ -1,4 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
+import ReactMarkdown from "react-markdown";
+import yaml from "js-yaml";
 import VideoModal from "./VideoModal";
 import Lightbox from "./Lightbox";
 import { resolvePage } from "../data/compendiumPages";
@@ -8,6 +10,10 @@ import { imageOrientation } from "../data/imageOrientation.generated";
 import { toSlug } from "./compendiumHelpers";
 import { thumbSrc, onThumbError, IMAGE_MISSING } from "../lib/thumb";
 import { LORE_GROUPS } from "../data/chronicles";
+
+// Full-text story files (the novellas behind the chronicle entries), loaded on
+// demand when the reader opens. Keyed by `group.story` slug.
+const STORY_MODULES = import.meta.glob("../data/chronicles/*.md", { query: "?raw", import: "default" });
 
 const CHAPTERS = [
   { id: "6LBJzNV1ELE", label: "Prologue",   title: "The Altor Codex — Prologue" },
@@ -40,7 +46,7 @@ const GALLERY = [
 
 
 // Reading order: the prequel (Episode 0) first, then the eight road jobs.
-const GROUP_ORDER = ["backstory", "skeleton", "misty", "unicorn", "borrowed", "shadow", "made-dragon", "day-of-wrath", "griffinburg"];
+const GROUP_ORDER = ["backstory", "bram", "aelthira", "prologue", "skeleton", "misty", "unicorn", "borrowed", "shadow", "made-dragon", "day-of-wrath", "griffinburg"];
 const ORDERED_GROUPS = [...LORE_GROUPS].sort(
   (a, b) => GROUP_ORDER.indexOf(a.id) - GROUP_ORDER.indexOf(b.id)
 );
@@ -313,17 +319,26 @@ function GalleryContent({ onLightbox }) {
   );
 }
 
-function GroupContent({ group, onOpenPage, onLightbox }) {
+function GroupContent({ group, onOpenPage, onLightbox, onReadStory }) {
   const groupTarget = group.link ? resolvePage(group.link) : null;
   const title = group.numeral != null ? `${group.numeral}. ${group.title}` : group.title;
   return (
     <>
       <ContentHeader eyebrow="The Chronicles" title={title} />
       {group.blurb && <p className="country-detail__section-desc">{group.blurb}</p>}
-      {groupTarget && onOpenPage && (
-        <button className="chron-read-cta" onClick={() => onOpenPage(groupTarget)}>
-          Read the adventure ↗
-        </button>
+      {(group.story || (groupTarget && onOpenPage)) && (
+        <div className="chron-read-row">
+          {group.story && (
+            <button className="chron-read-cta" onClick={() => onReadStory(group.story)}>
+              Read the story ↗
+            </button>
+          )}
+          {groupTarget && onOpenPage && (
+            <button className="chron-read-cta chron-read-cta--alt" onClick={() => onOpenPage(groupTarget)}>
+              Read the adventure ↗
+            </button>
+          )}
+        </div>
       )}
       {LORE_TYPES.map(({ key, label }) =>
         group[key]?.length ? (
@@ -337,9 +352,123 @@ function GroupContent({ group, onOpenPage, onLightbox }) {
   );
 }
 
+// Split a story body into chapters at each level-2 heading. Anything before the
+// first heading (rare) becomes a leading, untitled section.
+function splitChapters(body) {
+  if (!body) return [];
+  return body
+    .split(/\n(?=## )/)
+    .map((chunk) => chunk.trim())
+    .filter(Boolean)
+    .map((chunk) => {
+      const m = chunk.match(/^##\s+(.+)/);
+      return { title: m ? m[1].trim() : "Opening", md: chunk };
+    });
+}
+
+// A dedicated reading page: the chapter list on the left, one chapter at a time
+// on the right. Reading a single chapter at once keeps each sitting short and
+// the top of the text always in view, rather than one endless scroll.
+function StoryPage({ story, onClose }) {
+  const [body, setBody] = useState(null); // null = loading, "" = unavailable
+  const [meta, setMeta] = useState({});
+  const [chapter, setChapter] = useState(0);
+  const topRef = useRef(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    const loader = STORY_MODULES[`../data/chronicles/${story}.md`];
+    Promise.resolve(loader ? loader() : "")
+      .then((raw) => {
+        if (cancelled) return;
+        const m = raw && raw.startsWith("---")
+          ? raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/)
+          : null;
+        let data = {};
+        if (m) {
+          try { data = yaml.load(m[1]) ?? {}; } catch { data = {}; }
+        }
+        setMeta(data);
+        setBody((m ? m[2] : raw || "").trim());
+      })
+      .catch(() => { if (!cancelled) setBody(""); });
+    return () => { cancelled = true; };
+  }, [story]);
+
+  const chapters = useMemo(() => splitChapters(body), [body]);
+
+  // Jump to the top of the reading pane whenever the chapter changes.
+  useEffect(() => {
+    topRef.current?.scrollIntoView({ block: "start", behavior: "smooth" });
+  }, [chapter]);
+
+  // Escape returns to the Chronicles overview.
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === "Escape") onClose(); };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onClose]);
+
+  return (
+    <div className="story-reader">
+      <div ref={topRef} className="story-reader__top" />
+      <button className="chron-read-cta story-reader__back" onClick={onClose}>← The Chronicles</button>
+      {body === null ? (
+        <p className="chron-reader__status">Loading…</p>
+      ) : !chapters.length ? (
+        <p className="chron-reader__status">This story isn't available yet.</p>
+      ) : (
+        <div className="compendium-layout">
+          <aside className="compendium-sidebar">
+            <nav className="compendium-nav">
+              <div className="compendium-nav__section">
+                <div className="compendium-nav__section-hd">
+                  <div className="compendium-nav__hd-title chron-nav__hd">
+                    <span className="compendium-nav__sigil">❖</span>
+                    <span className="compendium-nav__title">{meta.title || "Story"}</span>
+                  </div>
+                </div>
+                {meta.part && <p className="story-reader__eyebrow">{meta.part}</p>}
+                <ul className="compendium-nav__list">
+                  {chapters.map((c, i) => (
+                    <li key={i}>
+                      <button
+                        className={`compendium-nav__item${i === chapter ? " compendium-nav__item--active" : ""}`}
+                        onClick={() => setChapter(i)}
+                      >
+                        {c.title}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </nav>
+          </aside>
+
+          <div className="compendium-main">
+            <div className="country-detail__body story-reader__body">
+              <ReactMarkdown>{chapters[chapter]?.md ?? ""}</ReactMarkdown>
+            </div>
+            <div className="story-reader__pager">
+              <button className="chron-read-cta" disabled={chapter === 0} onClick={() => setChapter((c) => Math.max(0, c - 1))}>
+                ← Previous
+              </button>
+              <span className="story-reader__count">{chapter + 1} / {chapters.length}</span>
+              <button className="chron-read-cta" disabled={chapter === chapters.length - 1} onClick={() => setChapter((c) => Math.min(chapters.length - 1, c + 1))}>
+                Next →
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function MediaSection({ onOpenPage }) {
   const [active, setActive] = useState(null); // open video, if any
   const [lightbox, setLightbox] = useState(null); // open image, if any
+  const [reading, setReading] = useState(null); // open story slug, if any
   // The open book, mirrored to the URL as ?chron=<id> so a refresh (or a shared
   // link) restores it - the same technique the Compendium uses for ?ce. The
   // story reads in order from its prequel, so Episode 0 (the backstory and
@@ -375,6 +504,10 @@ export default function MediaSection({ onOpenPage }) {
 
   return (
     <section id="chronicles" className="media-section">
+      {reading ? (
+        <StoryPage key={reading} story={reading} onClose={() => setReading(null)} />
+      ) : (
+        <>
       <div className="section-header">
         <p className="section-eyebrow">THE CHRONICLES</p>
         <h2 className="section-title">The Story So Far</h2>
@@ -416,10 +549,12 @@ export default function MediaSection({ onOpenPage }) {
           ) : selected === "gallery" ? (
             <GalleryContent onLightbox={setLightbox} />
           ) : (
-            group && <GroupContent group={group} onOpenPage={onOpenPage} onLightbox={setLightbox} />
+            group && <GroupContent group={group} onOpenPage={onOpenPage} onLightbox={setLightbox} onReadStory={setReading} />
           )}
         </div>
       </div>
+        </>
+      )}
 
       <VideoModal video={active} onClose={() => setActive(null)} />
       {lightbox && <Lightbox images={[lightbox]} onClose={() => setLightbox(null)} />}

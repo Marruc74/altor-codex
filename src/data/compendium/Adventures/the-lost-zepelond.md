@@ -9,12 +9,14 @@ sections:
     npcs:
       - name: Phantango daMelasti
         description: "A feckless, glory-hungry Paratornian noble who flew his airship over Kargom to show off and was lost, his zepelond falling into the hands of the land's poison-brewers."
+        image: /compendium/Adventures/TheLostZepelond/Kargom and the Eniaken/Phantango daMelasti.jpg
     creatures:
       - name: The Drudd'hocider
         description: "The loathsome brew-mixers and poison-cooks of Kargom, who have seized the lost airship to spread from it a dekokt meant to destroy the Eniaken wall for all time."
     items:
       - name: The Zepelond
         description: "Phantango's airship, lifted by a sylvoleum burner and towed by a hippogriff, now in the hands of the drudd'hocider as the means to carry their wall-killing poison aloft."
+        image: /compendium/Adventures/TheLostZepelond/Kargom and the Eniaken/The Zepelond.jpg
 ---
 
 ## The Wall and the Poison
