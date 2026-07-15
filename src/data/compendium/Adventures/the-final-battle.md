@@ -50,11 +50,11 @@ sections:
         description: "A huge black-scaled, horned serpent set to guard the Twin Staff, whose red-and-yellow eyes can freeze and hypnotize, and who fights until its strength is wholly spent."
         image: /compendium/Adventures/TheFinalBattle/Yndar/Wuuhg.jpg
       - name: Lava-Lizards
+        entry: lava-lizard
         description: "Heat-proof red predators that bask and hunt in the molten ravine."
-        image: /compendium/Adventures/TheFinalBattle/Yndar/Lava-Lizard 1.jpg
       - name: Leather-Birds
+        entry: leather-bird
         description: "Featherless, leather-skinned birds of wide wingspan, cowardly alone but deadly in shrieking flocks."
-        image: /compendium/Adventures/TheFinalBattle/Yndar/Leather-Bird.jpg
       - name: Night-Cats
         description: "Coal-black, razor-clawed hunters of the petrified forest, with pupil-less yellow eyes."
         image: /compendium/Adventures/TheFinalBattle/Yndar/Night-Cat.jpg

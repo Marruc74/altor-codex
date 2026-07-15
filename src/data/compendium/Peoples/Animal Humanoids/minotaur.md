@@ -5,7 +5,6 @@
 ![Minotaur](/compendium/Peoples/Animal Humanoids/minotaur-3.jpg "Minotaur")
 ![Minotaur](/compendium/Peoples/Animal Humanoids/minotaur-4.jpg "Minotaur")
 ![Minotaur](/compendium/Peoples/Animal Humanoids/minotaur-5.jpg "Minotaur")
-![Minotaur](/compendium/Peoples/Animal Humanoids/minotaur.jpg "Minotaur")
 ![Female Minotaur](/compendium/Peoples/Animal Humanoids/minotaur-female-1.jpg "Female Minotaur")
 ![Female Minotaur](/compendium/Peoples/Animal Humanoids/minotaur-female-2.jpg "Female Minotaur")
 Minotaurs were made in the elder days by a mighty magician who failed utterly to tame his creation into the obedient servants he wanted; he was driven out, and the minotaurs spread across nearly the whole world. They live mostly in clans in harsh wilds, though lone outcasts drift to human towns as bouncers, bodyguards or hired muscle, and almost everywhere they are reckoned at the very bottom of society.

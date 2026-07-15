@@ -2,6 +2,13 @@
 
 
 ![Reptileman](/compendium/Peoples/Animal Humanoids/reptileman.jpg "Reptileman")
+![Reptileman](/compendium/Peoples/Animal Humanoids/reptileman-2.jpg "Reptileman")
+![Reptileman](/compendium/Peoples/Animal Humanoids/reptileman-3.jpg "Reptileman")
+![Reptileman](/compendium/Peoples/Animal Humanoids/reptileman-4.jpg "Reptileman")
+![Female Reptileman](/compendium/Peoples/Animal Humanoids/reptileman-female-1.jpg "Female Reptileman")
+![Female Reptileman](/compendium/Peoples/Animal Humanoids/reptileman-female-2.jpg "Female Reptileman")
+![Female Reptileman](/compendium/Peoples/Animal Humanoids/reptileman-female-3.jpg "Female Reptileman")
+![Female Reptileman](/compendium/Peoples/Animal Humanoids/reptileman-female-4.jpg "Female Reptileman")
 The undisputed lords of the marshes, the reptile-men live as hunters and fishers in small villages of reed huts, and put fear into intruders with their needle-sharp tridents.
 
 ## Appearance

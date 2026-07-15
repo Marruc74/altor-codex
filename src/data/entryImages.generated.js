@@ -47,6 +47,13 @@ export const entryImages = {
   "alligator": "/compendium/Creatures/Animals/alligator.jpg",
   "barracuda": "/compendium/Creatures/Animals/barracuda.jpg",
   "bat-swarm": "/compendium/Creatures/Animals/bat-swarm.jpg",
+  "black-bear": "/compendium/Creatures/Animals/black-bear.jpg",
+  "brown-bear": "/compendium/Creatures/Animals/brown-bear.jpg",
+  "cave-bear": "/compendium/Creatures/Animals/cave-bear.jpg",
+  "cave-lion": "/compendium/Creatures/Animals/cave-lion.jpg",
+  "lava-lizard": "/compendium/Adventures/TheFinalBattle/Yndar/Lava-Lizard 1.jpg",
+  "leather-bird": "/compendium/Adventures/TheFinalBattle/Yndar/Leather-Bird.jpg",
+  "mountain-goat": "/compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Mountain Goat.jpg",
   "chaos-cardinal": "/compendium/Creatures/Chaos Warriors/chaos-cardinal.jpg",
   "chaos-corporal": "/compendium/Creatures/Chaos Warriors/chaos-corporal.jpg",
   "chaos-knight": "/compendium/Creatures/Chaos Warriors/chaos-knight.jpg",
@@ -339,6 +346,7 @@ export const entryImages = {
   "peerie": "/compendium/Peoples/Sylvans/peerie-2.jpg",
   "satyr": "/compendium/Peoples/Sylvans/satyr-2.jpg",
   "troll": "/compendium/Peoples/Dark Folks/cave-troll-2.jpg",
+  "elves": "/compendium/Peoples/Elves/blood-elf-2.jpg",
   "nymphs": "/compendium/Peoples/Sylvans/dryad-2.jpg",
   "gnome": "/compendium/Peoples/Sylvans/house-gnome.jpg"
 };

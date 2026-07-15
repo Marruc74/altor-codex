@@ -2,6 +2,9 @@
 
 
 ![Mummy](/compendium/Creatures/Magical Undead/mummy.jpg "Mummy")
+![Mummy](/compendium/Creatures/Magical Undead/mummy-2.jpg "Mummy")
+![Mummy](/compendium/Creatures/Magical Undead/mummy-3.jpg "Mummy")
+![Female Mummy](/compendium/Creatures/Magical Undead/mummy-female-1.jpg "Female Mummy")
 By treating a corpse with various chemicals and magical spells, one can reanimate it as a mummy. They are often found as guardians of tombs and temples, since they obey blindly and need neither sleep, drink nor food.
 
 ## Appearance

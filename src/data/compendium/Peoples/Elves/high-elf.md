@@ -1,3 +1,6 @@
+---
+parent: elves
+---
 # High Elf
 
 

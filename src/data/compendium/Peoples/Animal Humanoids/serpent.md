@@ -2,6 +2,15 @@
 
 
 ![Serpent](/compendium/Peoples/Animal Humanoids/serpent.jpg "Serpent")
+![Serpent](/compendium/Peoples/Animal Humanoids/serpent-2.jpg "Serpent")
+![Serpent](/compendium/Peoples/Animal Humanoids/serpent-3.jpg "Serpent")
+![Serpent](/compendium/Peoples/Animal Humanoids/serpent-4.jpg "Serpent")
+![Serpent](/compendium/Peoples/Animal Humanoids/serpent-5.jpg "Serpent")
+![Serpent](/compendium/Peoples/Animal Humanoids/serpent-6.jpg "Serpent")
+![Female Serpent](/compendium/Peoples/Animal Humanoids/serpent-female-1.jpg "Female Serpent")
+![Female Serpent](/compendium/Peoples/Animal Humanoids/serpent-female-2.jpg "Female Serpent")
+![Female Serpent](/compendium/Peoples/Animal Humanoids/serpent-female-3.jpg "Female Serpent")
+![Female Serpent](/compendium/Peoples/Animal Humanoids/serpent-female-4.jpg "Female Serpent")
 Serpents love warm, damp places like the underworld and the jungles, distant kin of the reptile-men and living much as they do. Their tribes of twenty to forty hunt almost any creature, even reptile-men when they can, and their craft never rises above stone-age clubs.
 
 ## Appearance

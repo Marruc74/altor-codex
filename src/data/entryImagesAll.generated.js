@@ -1546,18 +1546,6 @@ export const entryImagesAll = {
       "tall": true
     },
     {
-      "src": "/compendium/Adventures/TheFinalBattle/Yndar/Lava-Lizard 1.jpg",
-      "portrait": false,
-      "square": false,
-      "tall": true
-    },
-    {
-      "src": "/compendium/Adventures/TheFinalBattle/Yndar/Leather-Bird.jpg",
-      "portrait": false,
-      "square": false,
-      "tall": true
-    },
-    {
       "src": "/compendium/Adventures/TheFinalBattle/Yndar/Night-Cat.jpg",
       "portrait": false,
       "square": false,
@@ -2460,12 +2448,6 @@ export const entryImagesAll = {
       "tall": false
     },
     {
-      "src": "/compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Mountain Goat.jpg",
-      "portrait": false,
-      "square": false,
-      "tall": false
-    },
-    {
       "src": "/compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Melealina.jpg",
       "portrait": true,
       "square": false,
@@ -2984,6 +2966,68 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
+    }
+  ],
+  "black-bear": [
+    {
+      "src": "/compendium/Creatures/Animals/black-bear.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "brown-bear": [
+    {
+      "src": "/compendium/Creatures/Animals/brown-bear.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "cave-bear": [
+    {
+      "src": "/compendium/Creatures/Animals/cave-bear.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "cave-lion": [
+    {
+      "src": "/compendium/Creatures/Animals/cave-lion.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "lava-lizard": [
+    {
+      "src": "/compendium/Adventures/TheFinalBattle/Yndar/Lava-Lizard 1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheFinalBattle/Yndar/Lava-Lizard 2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "leather-bird": [
+    {
+      "src": "/compendium/Adventures/TheFinalBattle/Yndar/Leather-Bird.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "mountain-goat": [
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Mountain Goat.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": false
     }
   ],
   "chaos-cardinal": [
@@ -4526,6 +4570,24 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Magical Undead/mummy-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Magical Undead/mummy-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Magical Undead/mummy-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "nightwolf": [
@@ -4562,6 +4624,24 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Magical Undead/zombie-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Magical Undead/zombie-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Magical Undead/zombie-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "elf-eater": [
@@ -6514,12 +6594,6 @@ export const entryImagesAll = {
       "tall": false
     },
     {
-      "src": "/compendium/Peoples/Animal Humanoids/minotaur.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
       "src": "/compendium/Peoples/Animal Humanoids/minotaur-female-1.jpg",
       "portrait": true,
       "square": false,
@@ -6538,6 +6612,54 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/ratman-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/ratman-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/ratman-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/ratman-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/ratman-female-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/ratman-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/ratman-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/ratman-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "reptileman": [
@@ -6546,11 +6668,107 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/reptileman-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/reptileman-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/reptileman-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/reptileman-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/reptileman-female-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/reptileman-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/reptileman-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "serpent": [
     {
       "src": "/compendium/Peoples/Animal Humanoids/serpent.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/serpent-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/serpent-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/serpent-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/serpent-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/serpent-6.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/serpent-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/serpent-female-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/serpent-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/serpent-female-4.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -6591,6 +6809,54 @@ export const entryImagesAll = {
   "wolfman": [
     {
       "src": "/compendium/Peoples/Animal Humanoids/wolfman.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/wolfman-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/wolfman-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/wolfman-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/wolfman-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/wolfman-female-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/wolfman-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/wolfman-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Animal Humanoids/wolfman-female-4.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -9236,7 +9502,19 @@ export const entryImagesAll = {
       "tall": true
     },
     {
+      "src": "/compendium/Peoples/Stonekin/dwarf-5.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
       "src": "/compendium/Peoples/Stonekin/dwarf-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Stonekin/dwarf-female-2.jpg",
       "portrait": false,
       "square": false,
       "tall": true
@@ -9892,6 +10170,620 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
+    }
+  ],
+  "elves": [
+    {
+      "src": "/compendium/Peoples/Elves/blood-elf-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/blood-elf-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/blood-elf-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/blood-elf-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/blood-elf-female-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/blood-elf-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/blood-elf-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/blood-elf-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/cave-elf-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/cave-elf-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Elves/cave-elf-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/cave-elf-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/cave-elf-6.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/cave-elf-7.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/cave-elf-female-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/cave-elf-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/cave-elf-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/cave-elf-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/dark-elf-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/dark-elf-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Elves/dark-elf-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/dark-elf-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/dark-elf-female-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/dark-elf-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/dark-elf-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/dark-elf-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/frost-elf-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/frost-elf-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/frost-elf-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/frost-elf-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/frost-elf-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Elves/frost-elf-female-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Elves/frost-elf-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/frost-elf-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/frost-elf-female-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/grey-elf-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Elves/grey-elf-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Elves/grey-elf-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/grey-elf-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/grey-elf-female-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/grey-elf-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/grey-elf-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/grey-elf-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/high-elf-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/high-elf-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/high-elf-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/high-elf-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/high-elf-female-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/high-elf-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/high-elf-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/high-elf-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/injir-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Elves/injir-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/injir-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/injir-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/injir-female-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/injir-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/injir-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/injir-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/light-elf-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Elves/light-elf-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Elves/light-elf-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/light-elf-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/light-elf-female-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/light-elf-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/light-elf-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/light-elf-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/sea-elf-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/sea-elf-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/sea-elf-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/sea-elf-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/sea-elf-6.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/sea-elf-7.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/sea-elf-female-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/sea-elf-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/sea-elf-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/silver-elf-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Elves/silver-elf-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Elves/silver-elf-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/silver-elf-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/silver-elf-6.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/silver-elf-7.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/silver-elf-8.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/silver-elf-9.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/silver-elf.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/water-elf-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/water-elf-3.jpg",
+      "portrait": false,
+      "square": true,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/water-elf-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/water-elf.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/water-elf-female-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/water-elf-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/water-elf-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/water-elf-female-4.jpg",
+      "portrait": false,
+      "square": true,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/wood-elf-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Elves/wood-elf-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Elves/wood-elf-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/wood-elf-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/wood-elf-female-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/wood-elf-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/wood-elf-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/wood-elf-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/wood-elf-female-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "nymphs": [

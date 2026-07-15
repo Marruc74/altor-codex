@@ -491,7 +491,7 @@ export function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPag
   // derived from the curated RELATED_BY_SLUG map plus the generated cross-ref index
   // (crossRefs): pages this one mentions, and pages that mention it. Memoized on the
   // entry so unrelated re-renders don't rebuild the whole related-pages graph.
-  const { featuredIn, myThemes, related, referencedBy, mapPins, graphNodes } = useMemo(() => {
+  const { featuredIn, myThemes, subPages, related, referencedBy, mapPins, graphNodes } = useMemo(() => {
     const slug = toSlug(entry.name);
     const featuredIn = adventuresByEntryId[entry.id] ?? [];
     const myThemes = themesBySlug[slug] ?? [];
@@ -508,6 +508,12 @@ export function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPag
       }
       return out;
     };
+    // Sub-pages: the pages that name this one as their `parent`. The sidebar
+    // only nests two levels deep, so a grandchild page (e.g. Fortress, under
+    // Dark Elf, under Elves) has no sidebar entry - listing children here keeps
+    // every sub-page reachable by clicking down from its parent. Resolved first
+    // so a child that is also cross-referenced doesn't double up under Related.
+    const subPages = toPages((childrenByParentSlug[slug] ?? []).map((v) => v.slug ?? toSlug(v.name)));
     // Related (discovery): curated first, then the pages this one points to.
     const related = [
       ...toPages(RELATED_BY_SLUG[slug] ?? []),
@@ -531,12 +537,13 @@ export function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPag
       graphSeen.add(k);
       graphNodes.push({ target, label, relation });
     };
+    for (const t of subPages) addNode(t, t.name, "related");
     for (const t of related) addNode(t, t.name, t.kind === "adventure" ? "adventure" : t.kind === "country" ? "map" : "related");
     for (const a of featuredIn) addNode({ kind: "adventure", id: a.id, name: a.title }, a.title, "adventure");
     for (const t of referencedBy) addNode(t, t.name, "ref");
     for (const p of mapPins) addNode({ kind: "country", id: p.id, name: p.name }, p.name, "map");
 
-    return { featuredIn, myThemes, related, referencedBy, mapPins, graphNodes: graphNodes.slice(0, 16) };
+    return { featuredIn, myThemes, subPages, related, referencedBy, mapPins, graphNodes: graphNodes.slice(0, 16) };
   }, [entry.id, entry.name]);
 
   return (
@@ -622,6 +629,26 @@ export function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPag
         <div className="country-detail__block">
           <p className="location-panel__section-label">Web of connections</p>
           <ConnectionsGraph center={entry.name} nodes={graphNodes} onOpen={onOpenPage} />
+        </div>
+      )}
+
+      {subPages.length > 0 && onOpenPage && (
+        <div className="country-detail__block">
+          <p className="location-panel__section-label">Sub-pages</p>
+          <div className="country-detail__entries-grid">
+            {subPages.map((t) => (
+              <button
+                key={`${t.kind}-${t.id}`}
+                className="codex-card codex-card--link"
+                onClick={() => onOpenPage(t)}
+              >
+                <div className="codex-card__body">
+                  <p className="codex-card__title">{t.name}</p>
+                  <span className="codex-card__entry-link">View more ↗</span>
+                </div>
+              </button>
+            ))}
+          </div>
         </div>
       )}
 

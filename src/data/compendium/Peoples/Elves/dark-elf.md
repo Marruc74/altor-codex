@@ -1,3 +1,6 @@
+---
+parent: elves
+---
 # Dark Elf
 
 

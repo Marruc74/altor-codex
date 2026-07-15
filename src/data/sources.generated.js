@@ -729,8 +729,7 @@ export const generatedSources = {
     "The Cold That Stays"
   ],
   "imariot": [
-    "Monsterboken",
-    "Monsterboken II"
+    "Monturerna"
   ],
   "inashtar": [
     "Trakorien"

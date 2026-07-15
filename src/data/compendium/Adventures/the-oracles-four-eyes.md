@@ -133,7 +133,7 @@ sections:
         entry: onaqui
         description: "The other flying beast of the King's Cliff cult, gorged on sacrificial hearts and versed in necromancy; should its mate die, it flees forever."
       - name: Mountain Goat
-        image: /compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Mountain Goat.jpg
+        entry: mountain-goat
         description: "Sure-footed goats that pick their way along the canyon's high ledges, above the trails to the King's Cliff."
   - title: The Green Eye - Melealina
     description: "Deepest and safest of the four: an elf astrologer who knows the seekers and their errand before ever they arrive, hidden in a giant flower-oak at the heart of a perilous forest."

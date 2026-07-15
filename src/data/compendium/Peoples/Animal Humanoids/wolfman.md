@@ -2,6 +2,14 @@
 
 
 ![Wolfman](/compendium/Peoples/Animal Humanoids/wolfman.jpg "Wolfman")
+![Wolfman](/compendium/Peoples/Animal Humanoids/wolfman-2.jpg "Wolfman")
+![Wolfman](/compendium/Peoples/Animal Humanoids/wolfman-3.jpg "Wolfman")
+![Wolfman](/compendium/Peoples/Animal Humanoids/wolfman-4.jpg "Wolfman")
+![Wolfman](/compendium/Peoples/Animal Humanoids/wolfman-5.jpg "Wolfman")
+![Female Wolfman](/compendium/Peoples/Animal Humanoids/wolfman-female-1.jpg "Female Wolfman")
+![Female Wolfman](/compendium/Peoples/Animal Humanoids/wolfman-female-2.jpg "Female Wolfman")
+![Female Wolfman](/compendium/Peoples/Animal Humanoids/wolfman-female-3.jpg "Female Wolfman")
+![Female Wolfman](/compendium/Peoples/Animal Humanoids/wolfman-female-4.jpg "Female Wolfman")
 Wolf-men are often mistaken for werewolves, whom they resemble, but they share nothing in temperament and so carry an undeserved bad name. They live in small, close-knit hunting tribes, and those who go among humans often serve as hunters or scouts in armies.
 
 ## Appearance

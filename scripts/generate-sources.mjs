@@ -184,6 +184,9 @@ const SOURCE_OVERRIDE = {
   "mushroom-man": "Sinkadus 2",
   // Renamed page: title no longer matches the reference gloss, so pin its issue.
   "the-secret-of-griffinburg": "Sinkadus 17",
+  // The imariots appear only in the Montures sourcebook, not the general bestiary
+  // its "Magical Undead" group would otherwise default to.
+  "imariot": "Monturerna",
 };
 
 // Registry → slug → group.

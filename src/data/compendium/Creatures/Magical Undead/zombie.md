@@ -2,6 +2,9 @@
 
 
 ![Zombie](/compendium/Creatures/Magical Undead/zombie.jpg "Zombie")
+![Zombie](/compendium/Creatures/Magical Undead/zombie-2.jpg "Zombie")
+![Zombie](/compendium/Creatures/Magical Undead/zombie-3.jpg "Zombie")
+![Female Zombie](/compendium/Creatures/Magical Undead/zombie-female-1.jpg "Female Zombie")
 Zombies are corpses animated into undeath by a necromancer. They are more powerful than skeletons, but the bodies used to make a zombie must be no more than a month old and must still have all their essential parts and organs.
 
 ## Appearance
