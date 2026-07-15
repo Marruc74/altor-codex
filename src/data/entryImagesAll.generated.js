@@ -2544,7 +2544,7 @@ export const entryImagesAll = {
       "tall": false
     }
   ],
-  "the-secret-of-gripeborg": [
+  "the-secret-of-griffinburg": [
     {
       "src": "/compendium/Adventures/TheSecretOfGripeborg/ThorvaldGrip.jpg",
       "portrait": false,
@@ -2960,6 +2960,30 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    }
+  ],
+  "alligator": [
+    {
+      "src": "/compendium/Creatures/Animals/alligator.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "barracuda": [
+    {
+      "src": "/compendium/Creatures/Animals/barracuda.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "bat-swarm": [
+    {
+      "src": "/compendium/Creatures/Animals/bat-swarm.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "chaos-cardinal": [
@@ -3986,6 +4010,66 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/bakemono-sho-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/bakemono-sho-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/bakemono-sho-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/bakemono-sho-5.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/dai-bakemono-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/dai-bakemono-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/dai-bakemono-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/o-bakemono-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/o-bakemono-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/o-bakemono-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "dai-bakemono": [
@@ -4191,6 +4275,78 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Creatures/Jih-Pun/nushi.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/doki-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/doki-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/doki-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/doki-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/hannya-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/hannya-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/hannya-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/hannya-5.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/nushi-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/nushi-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/nushi-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Jih-Pun/nushi-5.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -6650,6 +6806,54 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-troll-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-troll-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-troll-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-troll-5.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-troll-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-troll-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-troll-female-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-troll-female-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "forest-troll": [
@@ -6658,6 +6862,54 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/forest-troll-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/forest-troll-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/forest-troll-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/forest-troll-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/forest-troll-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/forest-troll-female-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/forest-troll-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/forest-troll-female-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "goblin": [
@@ -6959,6 +7211,192 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Dark Folks/orc.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-orcs-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-orcs-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-orcs-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-orcs-female-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-orcs-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-orcs-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-orcs.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/mountain-orcs-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/mountain-orcs-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/mountain-orcs-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/mountain-orcs-female-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/mountain-orcs-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/mountain-orcs-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/mountain-orcs-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/mountain-orcs-female-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/mountain-orcs.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/steppe-orcs-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/steppe-orcs-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/steppe-orcs-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/steppe-orcs-female-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/steppe-orcs-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/steppe-orcs-female-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/steppe-orcs-female-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/steppe-orcs.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/ylk-orcs-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/ylk-orcs-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/ylk-orcs-female-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/ylk-orcs-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/ylk-orcs-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/ylk-orcs-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/ylk-orcs.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -7404,6 +7842,24 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/fortress.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/fortress-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/fortress-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "floating-islands": [
@@ -7562,6 +8018,24 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/floating-islands.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/floating-islands-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/floating-islands-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "high-elf": [
@@ -7615,6 +8089,30 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Elves/high-elf-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/white-towers.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/white-towers-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/white-towers-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/white-towers-4.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -8842,6 +9340,30 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Stonekin/cyclop-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Stonekin/cyclop-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Stonekin/cyclop-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Stonekin/cyclop-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "dwarf": [
@@ -8850,6 +9372,30 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Stonekin/dwarf-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Stonekin/dwarf-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Stonekin/dwarf-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Stonekin/dwarf-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "gargant": [
@@ -9104,6 +9650,148 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/hob-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/hob-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/hob-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/hob-5.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/hob-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/hob-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/hob-female-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/hob-female-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "house-gnome": [
+    {
+      "src": "/compendium/Peoples/Sylvans/house-gnome.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/house-gnome-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/house-gnome-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/house-gnome-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/house-gnome-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/house-gnome-female-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/house-gnome-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/house-gnome-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "mountain-gnome": [
+    {
+      "src": "/compendium/Peoples/Sylvans/mountain-gnome.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/mountain-gnome-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/mountain-gnome-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/mountain-gnome-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/mountain-gnome-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/mountain-gnome-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/mountain-gnome-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "naiad": [
@@ -9307,6 +9995,408 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Sylvans/satyr.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "troll": [
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-troll.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-troll-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-troll-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-troll-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-troll-5.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-troll-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-troll-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-troll-female-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/cave-troll-female-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/forest-troll.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/forest-troll-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/forest-troll-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/forest-troll-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/forest-troll-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/forest-troll-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/forest-troll-female-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/forest-troll-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Dark Folks/forest-troll-female-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "nymphs": [
+    {
+      "src": "/compendium/Peoples/Sylvans/dryad-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/dryad-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/dryad-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/dryad-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/dryad-6.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/dryad-7.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/dryad-8.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/dryad-9.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/dryad.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/hag-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/hag-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/hag-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/hag-5.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/hag-6.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/hag.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/naiad-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/naiad-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/naiad-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/naiad-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/naiad-6.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/naiad-7.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/naiad-8.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/naiad.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/oread-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/oread-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/oread-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/oread-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/oread-6.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/oread-7.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/oread-8.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/oread-9.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/oread-10.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/oread.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "gnome": [
+    {
+      "src": "/compendium/Peoples/Sylvans/house-gnome.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/house-gnome-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/house-gnome-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/house-gnome-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/house-gnome-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/house-gnome-female-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/house-gnome-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/house-gnome-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/mountain-gnome.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/mountain-gnome-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/mountain-gnome-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/mountain-gnome-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/mountain-gnome-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/mountain-gnome-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Sylvans/mountain-gnome-female-3.jpg",
       "portrait": true,
       "square": false,
       "tall": false

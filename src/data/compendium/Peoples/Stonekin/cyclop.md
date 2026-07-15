@@ -2,6 +2,10 @@
 
 
 ![Cyclop](/compendium/Peoples/Stonekin/cyclop.jpg "Cyclop")
+![Cyclop](/compendium/Peoples/Stonekin/cyclop-2.jpg "Cyclop")
+![Cyclop](/compendium/Peoples/Stonekin/cyclop-3.jpg "Cyclop")
+![Cyclop](/compendium/Peoples/Stonekin/cyclop-4.jpg "Cyclop")
+![Cyclop](/compendium/Peoples/Stonekin/cyclop-5.jpg "Cyclop")
 Cyclopes are loners among the stonekin, living in remote, well-ordered caves by raising goats and sheep. Find a cyclops' cave while he is out and you will find heaps of food and wine, the whitened bones of earlier visitors, and very likely a number of well-filled treasure-chests of glittering contents.
 
 ## Appearance

@@ -33,7 +33,7 @@ export const entryImages = {
   "the-misty-island": "/compendium/Adventures/TheMistyIsland/Outskirt/Outskirt.jpg",
   "the-nova-stone": "/compendium/Adventures/TheNovaStone/Utmir and the Legend/Glockmar.jpg",
   "the-oracles-four-eyes": "/compendium/Adventures/TheOraclesFourEyes/The Prophecy of Ranz/Peatro Petralba of Ranz.jpg",
-  "the-secret-of-gripeborg": "/compendium/Adventures/TheSecretOfGripeborg/ThorvaldGrip.jpg",
+  "the-secret-of-griffinburg": "/compendium/Adventures/TheSecretOfGripeborg/ThorvaldGrip.jpg",
   "the-tattooer-of-kargom": "/compendium/Adventures/TheTattooerOfKargom/Siola/Xelimogga.jpg",
   "the-temple-lord": "/compendium/Adventures/TheTempleLord/Captain José.jpg",
   "the-unicorn-and-the-dragon-serpent": "/compendium/Adventures/TheUnicornAndTheDragonSerpent/abrahim.jpg",
@@ -44,6 +44,9 @@ export const entryImages = {
   "bram-kestrel": "/compendium/Characters/bram-kestrel.jpg",
   "kaelene-fenholt": "/compendium/Characters/kaelene-fenholt.jpg",
   "karaleia": "/compendium/Characters/karaleia.jpg",
+  "alligator": "/compendium/Creatures/Animals/alligator.jpg",
+  "barracuda": "/compendium/Creatures/Animals/barracuda.jpg",
+  "bat-swarm": "/compendium/Creatures/Animals/bat-swarm.jpg",
   "chaos-cardinal": "/compendium/Creatures/Chaos Warriors/chaos-cardinal.jpg",
   "chaos-corporal": "/compendium/Creatures/Chaos Warriors/chaos-corporal.jpg",
   "chaos-knight": "/compendium/Creatures/Chaos Warriors/chaos-knight.jpg",
@@ -329,8 +332,13 @@ export const entryImages = {
   "fire-pixie": "/compendium/Peoples/Sylvans/fire-pixie-2.jpg",
   "hag": "/compendium/Peoples/Sylvans/hag-2.jpg",
   "hob": "/compendium/Peoples/Sylvans/hob.jpg",
+  "house-gnome": "/compendium/Peoples/Sylvans/house-gnome.jpg",
+  "mountain-gnome": "/compendium/Peoples/Sylvans/mountain-gnome.jpg",
   "naiad": "/compendium/Peoples/Sylvans/naiad-2.jpg",
   "oread": "/compendium/Peoples/Sylvans/oread-2.jpg",
   "peerie": "/compendium/Peoples/Sylvans/peerie-2.jpg",
-  "satyr": "/compendium/Peoples/Sylvans/satyr-2.jpg"
+  "satyr": "/compendium/Peoples/Sylvans/satyr-2.jpg",
+  "troll": "/compendium/Peoples/Dark Folks/cave-troll.jpg",
+  "nymphs": "/compendium/Peoples/Sylvans/dryad-2.jpg",
+  "gnome": "/compendium/Peoples/Sylvans/house-gnome.jpg"
 };

@@ -6,6 +6,14 @@ parent: troll
 
 
 ![Cave Troll](/compendium/Peoples/Dark Folks/cave-troll.jpg "Cave Troll")
+![Cave Troll](/compendium/Peoples/Dark Folks/cave-troll-2.jpg "Cave Troll")
+![Cave Troll](/compendium/Peoples/Dark Folks/cave-troll-3.jpg "Cave Troll")
+![Cave Troll](/compendium/Peoples/Dark Folks/cave-troll-4.jpg "Cave Troll")
+![Cave Troll](/compendium/Peoples/Dark Folks/cave-troll-5.jpg "Cave Troll")
+![Female Cave Troll](/compendium/Peoples/Dark Folks/cave-troll-female-1.jpg "Female Cave Troll")
+![Female Cave Troll](/compendium/Peoples/Dark Folks/cave-troll-female-2.jpg "Female Cave Troll")
+![Female Cave Troll](/compendium/Peoples/Dark Folks/cave-troll-female-3.jpg "Female Cave Troll")
+![Female Cave Troll](/compendium/Peoples/Dark Folks/cave-troll-female-4.jpg "Female Cave Troll")
 The commonest kind of troll and probably the closest to the original stock, sheltering underground or in caves by day from the sun's petrifying rays and venturing out by night to find food.
 
 ## Appearance

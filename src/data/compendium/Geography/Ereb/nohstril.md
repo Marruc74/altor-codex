@@ -4,13 +4,13 @@ figures:
     description: "A Fraschikel priest of the reform faction, stripped of his office for condemning the worldliness of the church's leaders, who now preaches the goddess's pure word to the poor of the slums and has won many followers; unknown to himself, he is Fraschikel's own envoy, gifted with an uncanny charisma to set her true teaching right"
   - name: "Ilef the Weaponsmith"
     description: "Nohstril's most famous smith and president of the weaponsmiths' guild, a political power in his own right, who forges western close-arms to order, swords his specialty, and works only on weapons paid for in advance"
-  - name: "Erfedik Långe"
+  - name: "Erfedik the Tall"
     description: "The lean, near two-metre merchant nicknamed the Lighthouse, who deals in far-fetched and exotic goods; his servants meet every ship from distant parts to see what the cargo holds and leave his card behind"
-  - name: "Klamorkan Röde"
+  - name: "Klamorkan the Red"
     description: "The blind, iron-disciplined head of the mercenaries' guild, a once-renowned Erebos soldier who lost both eyes to Felician pirates and was chosen leader anyway for his honesty and skill"
-  - name: "Sister Hadiö Dimion"
+  - name: "Sister Hadio Dimion"
     description: "A travelling preacher of the dalkish branch of the Shining Way, kind, eloquent and well-liked among the people, and wrongly suspected by Ocula Negra of being a Caddo spy"
-  - name: "Captain Jän the Seafarer"
+  - name: "Captain Jan the Seafarer"
     description: "A reserved old shipmaster in the service of house Hypon, sixty years at sea, who knows every jori dialect and the run of every harbour on the Copper Sea"
 places:
   - name: "Sagrin's Colossus"
@@ -25,8 +25,8 @@ places:
     description: "One of the finest collections on the Copper Sea, some ten thousand volumes, where a score of full-time scribes copy texts for sale at a small fortune apiece"
   - name: "The Dwarf City"
     description: "A great dwarven settlement beneath Nohstril, entered through a windowless, eight-sided, inward-leaning building near the South Gate in the classic dwarven manner"
-  - name: "Solmöllan"
-    description: "A favourite inn of the far-traders on Weavers' Lane, warm of welcome and excellent of kitchen, kept by Sigollo Stensax and his wife Kansi; a natural place for newcomers to learn the lie of the city"
+  - name: "The Sun Mill"
+    description: "A favourite inn of the far-traders on Weavers' Lane, warm of welcome and excellent of kitchen, kept by Sigollo Stoneshears and his wife Kansi; a natural place for newcomers to learn the lie of the city"
 items: []
 ---
 # Nohstril
@@ -47,7 +47,7 @@ A traveller comes in by sea, under the fire-basket of the great bronze colossus 
 
 ## Government
 
-Erebos is a rare thing in Ereb, a centrally governed realm ruled outright by its business, with none of the scattered feudal power of a Zorakin or a Berendien. Its master is the Council of Five Houses, on which each of the five great merchant houses, Hinkare, Ermini, Gararin, Festglade and Hypon, seats one representative, and which decides only by unanimous vote, every member holding a veto. The Council appoints and dismisses every official, makes the realm's only law, handles its foreign affairs, and sits as its highest court, all of it set down in the Statslag, the written constitution drawn up after the merchants' victory.
+Erebos is a rare thing in Ereb, a centrally governed realm ruled outright by its business, with none of the scattered feudal power of a Zorakin or a Berendien. Its master is the Council of Five Houses, on which each of the five great merchant houses, Hinkare, Ermini, Gararin, Festglade and Hypon, seats one representative, and which decides only by unanimous vote, every member holding a veto. The Council appoints and dismisses every official, makes the realm's only law, handles its foreign affairs, and sits as its highest court, all of it set down in the State Law, the written constitution drawn up after the merchants' victory.
 
 Nohstril is reckoned one of the realm's twenty provinces, but as capital and seat of the Council it answers to a governor instead, a hard post that wears most who hold it down to nothing within a year or two, for the governor must forever balance the Council against the lesser houses and the unofficial powers, the thieves' guilds and the assassins among them. Beneath all of it the officials are loyal in practice to the house that placed them, and bribery is everywhere.
 
@@ -69,8 +69,8 @@ For all the talk of law, much of Nohstril runs in the dark. The thieves' guilds 
 
 ## The City
 
-Nohstril is built in three parts: the North City of the great houses and the academies, the South City of the harbour and the common folk, and Cloister Isle, also called Sagrinstad, where the Council sits. Most houses are two-storey stone; a few towers rise above them, the governor's spire, the elemental academy's Tower of Knowledge, and the symbolists' cone-topped tower, whose summit a botched spell once turned into something indescribable that flapped away into the night, souring the two academies' dealings ever since. The Great Library holds ten thousand books, and the Golden Cathedral the bones of Saint Gorge. Below the streets lies the dwarf city, entered by a windowless eight-sided hall near the South Gate; the ducks keep their own neat walled quarter, the Duck Town, and the halflings a quarter of half-scale houses between. Over the harbour the colossus of Sagrin holds up its fire, and around midsummer the festival of Fraschikel fills the theatre and draws crowds from across the realm.
+Nohstril is built in three parts: the North City of the great houses and the academies, the South City of the harbour and the common folk, and Cloister Isle, also called Sagrin City, where the Council sits. Most houses are two-storey stone; a few towers rise above them, the governor's spire, the elemental academy's Tower of Knowledge, and the symbolists' cone-topped tower, whose summit a botched spell once turned into something indescribable that flapped away into the night, souring the two academies' dealings ever since. The Great Library holds ten thousand books, and the Golden Cathedral the bones of Saint Gorge. Below the streets lies the dwarf city, entered by a windowless eight-sided hall near the South Gate; the ducks keep their own neat walled quarter, the Duck Town, and the halflings a quarter of half-scale houses between. Over the harbour the colossus of Sagrin holds up its fire, and around midsummer the festival of Fraschikel fills the theatre and draws crowds from across the realm.
 
 ## History
 
-In the days of Jorpagna there was likely no city here, only a village of the massiver, the islands' first people; the name is first written down in 63 fO, as the market-town of Nöstrili. In 37 fO a war-host out of Beyural was thrown back by a folk-levy under Sebast Tjurhorn, master of the fishing fleet, and his line ruled the island after. Sagrin the Conqueror seized Dakkilo briefly in 369 eO and drew it into the Erebos world, and when the merchants and the old chieftains came at last to civil war in 512 to 514, the merchants won. Nohstril, which had stayed neutral, was made the capital and seat of the new Council of Five Houses in 515 eO, and grew swiftly through the rest of the century into one of the metropolises of the Copper Sea.
+In the days of Jorpagna there was likely no city here, only a village of the massiver, the islands' first people; the name is first written down in 63 fO, as the market-town of Nostrili. In 37 fO a war-host out of Beyural was thrown back by a folk-levy under Sebast Bullhorn, master of the fishing fleet, and his line ruled the island after. Sagrin the Conqueror seized Dakkilo briefly in 369 eO and drew it into the Erebos world, and when the merchants and the old chieftains came at last to civil war in 512 to 514, the merchants won. Nohstril, which had stayed neutral, was made the capital and seat of the new Council of Five Houses in 515 eO, and grew swiftly through the rest of the century into one of the metropolises of the Copper Sea.

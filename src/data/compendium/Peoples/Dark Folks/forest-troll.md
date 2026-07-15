@@ -6,6 +6,14 @@ parent: troll
 
 
 ![Forest Troll](/compendium/Peoples/Dark Folks/forest-troll.jpg "Forest Troll")
+![Forest Troll](/compendium/Peoples/Dark Folks/forest-troll-2.jpg "Forest Troll")
+![Forest Troll](/compendium/Peoples/Dark Folks/forest-troll-3.jpg "Forest Troll")
+![Forest Troll](/compendium/Peoples/Dark Folks/forest-troll-4.jpg "Forest Troll")
+![Forest Troll](/compendium/Peoples/Dark Folks/forest-troll-5.jpg "Forest Troll")
+![Female Forest Troll](/compendium/Peoples/Dark Folks/forest-troll-female-1.jpg "Female Forest Troll")
+![Female Forest Troll](/compendium/Peoples/Dark Folks/forest-troll-female-2.jpg "Female Forest Troll")
+![Female Forest Troll](/compendium/Peoples/Dark Folks/forest-troll-female-3.jpg "Female Forest Troll")
+![Female Forest Troll](/compendium/Peoples/Dark Folks/forest-troll-female-4.jpg "Female Forest Troll")
 Far more cultivated than cave trolls, forest trolls live in small communities of three to five families, often in caves in a cliff or rock face. Besides hunting they farm great toads, water-spiders, water-snakes and the white-green trollcap mushroom, which they prize as delicacies and as ingredients for salves and brews, and they keep slaves, usually other dark folk, for the daytime work they cannot do themselves.
 
 ## Appearance

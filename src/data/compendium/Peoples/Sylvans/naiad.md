@@ -1,3 +1,6 @@
+---
+parent: nymphs
+---
 # Naiad
 
 ![Naiad](/compendium/Peoples/Sylvans/naiad-2.jpg "Naiad")

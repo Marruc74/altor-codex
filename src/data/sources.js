@@ -16,12 +16,25 @@ const from = (source, slugs) => slugs.map((s) => [s, source]);
 
 const CURATED = [
   // Sinkadus magazine issues (no reference file → not auto-derivable).
-  ...from("Sinkadus 11", ["sebastian-marol"]),
+  ...from("Sinkadus 7", ["hedemi", "gadirm"]),
+  ...from("Sinkadus 8", ["minotaur"]),
+  ...from("Sinkadus 10", ["spiritism", "voice-magic"]),
+  ...from("Sinkadus 11", ["sebastian-marol", "giant-octopus"]),
+  ...from("Sinkadus 14", ["forest-troll"]),
+  ...from("Sinkadus 17", ["witchcraft"]),
   ...from("Sinkadus 13", ["revenant", "herbs-of-jih-pun"]),
   ...from("Sinkadus 15", ["elves", "catpeople", "goblin"]),
   ...from("Sinkadus 16", ["the-ways-of-magicians", "divination"]),
   ...from("Sinkadus 18", ["drinks-of-ereb", "the-exalted"]),
-  ...from("Sinkadus 19", ["water-elf", "dwarven-architecture"]),
+  ...from("Sinkadus 19", ["water-elf", "dwarven-architecture", "sea-dragon", "blood-elf"]),
+  ...from("Sinkadus 20", ["the-brotherhood-of-the-red-fish"]),
+  ...from("Sinkadus 21", ["necromancy"]),
+  ...from("Sinkadus 22", ["montures"]),
+  ...from("Monturerna", ["montures"]),
+  ...from("Sinkadus 23", ["khab-hemi", "arn-dunkelbrink", "the-ruler-of-the-ancient-realm"]),
+  ...from("Sinkadus 24", ["the-dragon-masters"]),
+  ...from("Sinkadus 25", ["nohstril"]),
+  ...from("Sinkadus 26", ["sese-hesuoni", "karkion"]),
   ...from("Sinkadus 32", ["stilakor", "evolakasa", "aryxamast", "kalembri"]),
   // Handbooks whose pages sit in mixed groups the group→book table can't key on.
   ...from("Tjuvar och lönnmördare", [

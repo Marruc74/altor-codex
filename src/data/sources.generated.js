@@ -16,7 +16,7 @@ export const generatedSources = {
     "Magikerns handbok"
   ],
   "alegar": [
-    "Monsterboxen II: De humanoida raserna"
+    "Sinkadus 18"
   ],
   "alfin": [
     "Monsterboken",
@@ -57,6 +57,9 @@ export const generatedSources = {
   "azoth": [
     "Kaos Väktare",
     "Monsterboxen III: Kaos"
+  ],
+  "bad-water": [
+    "Sinkadus 20"
   ],
   "baneman": [
     "Monsterboken",
@@ -459,6 +462,9 @@ export const generatedSources = {
     "Monsterboken",
     "Monsterboken II"
   ],
+  "forest-gnome": [
+    "Sinkadus 2"
+  ],
   "forest-troll": [
     "Monsterboxen II: De humanoida raserna",
     "Svartfolk"
@@ -484,6 +490,9 @@ export const generatedSources = {
   "fur-lizard": [
     "Monsterboken",
     "Monsterboken II"
+  ],
+  "garden-gnome": [
+    "Sinkadus 2"
   ],
   "gargant": [
     "Monsterboxen II: De humanoida raserna"
@@ -543,7 +552,7 @@ export const generatedSources = {
     "Monsterboken II"
   ],
   "gnome": [
-    "Alver"
+    "Sinkadus 2"
   ],
   "goblin": [
     "Monsterboxen II: De humanoida raserna",
@@ -567,6 +576,9 @@ export const generatedSources = {
     "Monsterboken",
     "Monsterboken II",
     "Sinkadus 4"
+  ],
+  "grave-gnome": [
+    "Sinkadus 2"
   ],
   "grazur": [
     "Kaos Väktare",
@@ -669,6 +681,9 @@ export const generatedSources = {
   "horrors-of-the-deep": [
     "Djupets fasor"
   ],
+  "house-gnome": [
+    "Sinkadus 2"
+  ],
   "huldre": [
     "Monsterboken",
     "Monsterboken II"
@@ -692,6 +707,9 @@ export const generatedSources = {
   ],
   "ice-dragon": [
     "Monsterboxen IV: Legendariska varelser"
+  ],
+  "ice-gnome": [
+    "Sinkadus 2"
   ],
   "ice-lord": [
     "Monsterboken",
@@ -889,8 +907,6 @@ export const generatedSources = {
     "Monsterboken II"
   ],
   "megas": [
-    "Monsterboken",
-    "Monsterboken II",
     "Sinkadus 11"
   ],
   "melindors-return": [
@@ -920,6 +936,9 @@ export const generatedSources = {
     "Sinkadus 30",
     "Sinkadus 37"
   ],
+  "mountain-gnome": [
+    "Sinkadus 2"
+  ],
   "mountain-goat": [
     "Monsterboken",
     "Monsterboken II"
@@ -937,8 +956,7 @@ export const generatedSources = {
     "Monsterboken II"
   ],
   "mushroom-man": [
-    "Monsterboken",
-    "Monsterboken II"
+    "Sinkadus 2"
   ],
   "musk-ox": [
     "Monsterboken",
@@ -976,7 +994,6 @@ export const generatedSources = {
     "Monsterboken II"
   ],
   "nightmare-in-darkness": [
-    "Den femte konfluxen",
     "Sinkadus 25"
   ],
   "nightwolf": [
@@ -985,6 +1002,9 @@ export const generatedSources = {
   ],
   "notable-magic-items": [
     "Krigarens handbok"
+  ],
+  "nymphs": [
+    "Alver"
   ],
   "ogre": [
     "Monsterboxen II: De humanoida raserna",
@@ -1103,6 +1123,10 @@ export const generatedSources = {
   ],
   "ratman": [
     "Monsterboxen II: De humanoida raserna"
+  ],
+  "raugon": [
+    "Monsterboken",
+    "Monsterboken II"
   ],
   "raukk": [
     "Monsterboxen II: De humanoida raserna",
@@ -1232,6 +1256,9 @@ export const generatedSources = {
     "Monsterboxen II: De humanoida raserna",
     "Svartfolk"
   ],
+  "shore-gnome": [
+    "Sinkadus 2"
+  ],
   "shranck": [
     "Monsterboken",
     "Monsterboken II"
@@ -1347,14 +1374,12 @@ export const generatedSources = {
     "The Cold That Stays"
   ],
   "the-copper-ring": [
-    "Demonprinsen",
-    "Den femte konfluxen",
-    "Helvetesfortet",
-    "Marsklandet"
+    "Sinkadus 19"
   ],
   "the-copper-sea-raiders": [
     "Ereb Altor: Äventyrsboken",
-    "Kopparhavets kapare"
+    "Kopparhavets kapare",
+    "Sinkadus 20"
   ],
   "the-crown-jewels": [
     "Krigarens handbok"
@@ -1376,8 +1401,7 @@ export const generatedSources = {
     "Krigarens handbok"
   ],
   "the-dragon-flute": [
-    "Den femte konfluxen",
-    "Slutstriden"
+    "Sinkadus 6"
   ],
   "the-edelfara-triangle": [
     "Triangeldrama I Edelfara"
@@ -1402,10 +1426,7 @@ export const generatedSources = {
     "Maktens portar"
   ],
   "the-ghost-general": [
-    "Helvetesfortet",
-    "Melindors återkomst",
-    "Novastenen",
-    "Tvillingbergen"
+    "Sinkadus 5"
   ],
   "the-gods": [
     "Ereb Altor: Kampanjboken (utökad)"
@@ -1418,6 +1439,9 @@ export const generatedSources = {
   ],
   "the-hammer-of-eshwan-theard": [
     "Krigarens handbok"
+  ],
+  "the-harpies-nest": [
+    "Sinkadus 20"
   ],
   "the-heart-of-darkness": [
     "Mörkrets hjärta"
@@ -1478,7 +1502,7 @@ export const generatedSources = {
   "the-sea-wolves": [
     "Havets Vargar"
   ],
-  "the-secret-of-gripeborg": [
+  "the-secret-of-griffinburg": [
     "Sinkadus 17"
   ],
   "the-shining-way": [
@@ -1500,7 +1524,7 @@ export const generatedSources = {
     "Krigarens handbok"
   ],
   "the-stolen-elephant": [
-    "Djupets fasor"
+    "Sinkadus 22"
   ],
   "the-temple-lord": [
     "Demonprinsen"
@@ -1624,10 +1648,7 @@ export const generatedSources = {
     "Monsterboken II"
   ],
   "what-happened-next": [
-    "Den femte konfluxen",
-    "Oraklets fyra ögon",
-    "Spindelkonungens pyramid",
-    "Äventyrspaket 1"
+    "Sinkadus 16"
   ],
   "white-duck": [
     "Monsterboxen II: De humanoida raserna"

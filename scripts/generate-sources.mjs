@@ -64,6 +64,7 @@ const SWEDISH_TITLE = {
   "dimon": "Dimön", "kopparhavets-kapare": "Kopparhavets kapare",
   "krilloan-aventyrsboken": "Krilloan: Äventyrsboken", "aventyrspaket-1": "Äventyrspaket 1",
   "arans-vag-4": "Arans väg", "auktionen": "Auktionen", "demonprinsen": "Demonprinsen",
+  "daligt-vatten": "Sinkadus 20",
   "ereb-altor-aventyrsboken": "Ereb Altor: Äventyrsboken",
 };
 
@@ -148,16 +149,41 @@ const GROUP_BOOKS = {
   "Schools": [MAGE], "Items": [KRIGARE], "The Multiverse": [KAOS],
 };
 
-// Adventures that come from one known book, listed authoritatively because the
-// reference file uses the Swedish adventure title (e.g. "Skuggan av en ros"), so
-// the English page title can't title-match and the proper-noun fallback would
-// otherwise mis-score them against setting-sharing siblings. The whole Krilloan
-// campaign (Shadow of a Rose, Enemies of the Beginning, Day of Wrath) is in the
-// one Krilloan adventure book and nothing else.
-const ADVENTURE_BOOK = {
+// Authoritative source override, keyed by page slug: sets exactly this source
+// (a string, or an array for several) and skips ALL other matching for the page,
+// so no derived book slips in. Two uses:
+//   - adventures whose reference file uses the Swedish title (e.g. "Skuggan av
+//     en ros") or that ran in a Sinkadus issue with no reference file, where the
+//     proper-noun fallback would otherwise mis-score them against setting-sharing
+//     siblings (the whole Krilloan campaign is in the one Krilloan book);
+//   - any page whose derived attribution (e.g. a group→book default) is wrong and
+//     must be replaced outright rather than added to.
+const SOURCE_OVERRIDE = {
   "shadow-of-a-rose": "Krilloan: Äventyrsboken",
   "enemies-of-the-beginning": "Krilloan: Äventyrsboken",
   "day-of-wrath": "Krilloan: Äventyrsboken",
+  "the-ghost-general": "Sinkadus 5",
+  "the-dragon-flute": "Sinkadus 6",
+  "krugal-svylses-curse": "Sinkadus 11",
+  "megas": "Sinkadus 11",
+  "what-happened-next": "Sinkadus 16",
+  "alegar": "Sinkadus 18",
+  "the-copper-ring": "Sinkadus 19",
+  "bad-water": "Sinkadus 20",
+  "the-stolen-elephant": "Sinkadus 22",
+  "nightmare-in-darkness": "Sinkadus 25",
+  // Gnomes and mushroom men debut in Sinkadus 2 (overrides the group heuristic).
+  "gnome": "Sinkadus 2",
+  "house-gnome": "Sinkadus 2",
+  "mountain-gnome": "Sinkadus 2",
+  "shore-gnome": "Sinkadus 2",
+  "forest-gnome": "Sinkadus 2",
+  "grave-gnome": "Sinkadus 2",
+  "ice-gnome": "Sinkadus 2",
+  "garden-gnome": "Sinkadus 2",
+  "mushroom-man": "Sinkadus 2",
+  // Renamed page: title no longer matches the reference gloss, so pin its issue.
+  "the-secret-of-griffinburg": "Sinkadus 17",
 };
 
 // Registry → slug → group.
@@ -174,9 +200,9 @@ for (const fp of walk(compDir)) {
   const text = fs.readFileSync(fp, "utf8");
   const isAdventure = fp.replace(/\\/g, "/").includes("/Adventures/");
 
-  // Authoritative single-book adventures: set the one source and skip all other
-  // matching (including the proper-noun fallback), so no stray book is added.
-  if (ADVENTURE_BOOK[slug]) { add(slug, ADVENTURE_BOOK[slug]); continue; }
+  // Authoritative override: set exactly this source and skip all other matching
+  // (including the group→book default and the proper-noun fallback).
+  if (SOURCE_OVERRIDE[slug]) { for (const t of [].concat(SOURCE_OVERRIDE[slug])) add(slug, t); continue; }
 
   let title = text.match(/^#\s+(.+)$/m)?.[1]?.trim();
   let advMeta = null;

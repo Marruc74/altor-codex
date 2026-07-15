@@ -15,6 +15,7 @@ suffixed `-alt`.
 
 | File | Book |
 |---|---|
+| `daligt-vatten.md` | Bad Water (Sinkadus 20 adventure) |
 | `doda-skogen.md`, `doda-skogen-alt.md` | The Dead Forest (two captures) |
 | `dimon.md`, `dimon-alt.md` | Dimön — The Misty Island (two captures) |
 | `enhorningshornet.md` | The Unicorn Horn (OCR transcription) |

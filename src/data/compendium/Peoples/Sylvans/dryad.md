@@ -1,3 +1,6 @@
+---
+parent: nymphs
+---
 # Dryad
 
 

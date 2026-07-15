@@ -225,8 +225,10 @@ export default function Compendium({
     return () => clearTimeout(t);
   }, [selectedEntry, selectedCountry, selectedAdventure]);
 
-  // Flat search across countries + entries (entries cover both video-backed and
-  // markdown-only Peoples/Creatures/Lore pages, via allEntries).
+  // Flat search across countries + entries + adventures. Entries cover both
+  // video-backed and markdown-only Peoples/Creatures/Lore pages (via allEntries);
+  // adventures live in their own list, so they are matched separately on title,
+  // tagline, summary and the names of the cards they hold.
   const searchResults = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (!q) return null;
@@ -252,7 +254,23 @@ export default function Compendium({
         entry: v,
       }));
 
-    return [...matchCountries, ...matchEntries];
+    const advText = (a) =>
+      [
+        a.title, a.tagline, a.summary,
+        ...(a.characters ?? []).map((c) => c.name),
+        ...(a.creatures ?? []).map((c) => c.name),
+        ...(a.places ?? []).map((c) => c.name),
+        ...(a.items ?? []).map((c) => c.name),
+        ...(a.sections ?? []).flatMap((s) =>
+          [...(s.npcs ?? []), ...(s.creatures ?? []), ...(s.places ?? []), ...(s.items ?? [])].map((c) => c.name)
+        ),
+      ].filter(Boolean).join(" ").toLowerCase();
+
+    const matchAdventures = adventures
+      .filter((a) => advText(a).includes(q))
+      .map((a) => ({ kind: "adventure", id: a.id, label: a.title, sub: "Adventure" }));
+
+    return [...matchCountries, ...matchEntries, ...matchAdventures];
   }, [query]);
 
   // Activate a single theme (from an entry page's theme chip): clear the search
@@ -406,16 +424,17 @@ export default function Compendium({
               ) : (
                 searchResults.map((r) => (
                   <button
-                    key={r.id}
+                    key={`${r.kind}-${r.id}`}
                     className={`compendium-results__item${
-                      r.kind === "country" && selectedCountry === r.id
+                      (r.kind === "country" && selectedCountry === r.id) ||
+                      (r.kind === "adventure" && selectedAdventure === r.id)
                         ? " compendium-results__item--active"
                         : ""
                     }`}
                     onClick={() => {
-                      onAdventureSelect(null);
-                      if (r.kind === "country") { onCountrySelect(r.id); setSelectedEntry(null); }
-                      else { setSelectedEntry(r.entry); onCountrySelect(null); }
+                      if (r.kind === "country") { onAdventureSelect(null); onCountrySelect(r.id); setSelectedEntry(null); }
+                      else if (r.kind === "adventure") { onAdventureSelect(r.id); onCountrySelect(null); setSelectedEntry(null); }
+                      else { onAdventureSelect(null); setSelectedEntry(r.entry); onCountrySelect(null); }
                       window.scrollTo(0, 0);
                     }}
                   >

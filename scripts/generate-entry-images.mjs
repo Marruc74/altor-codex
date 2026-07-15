@@ -9,7 +9,7 @@
 // Re-run after adding/removing page images:  node scripts/generate-entry-images.mjs
 import fs from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import sharp from "sharp";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -52,6 +52,24 @@ for (const file of walk(compDir).sort()) {
     map[slug] = srcs[0];
     allMap[slug] = srcs;
   }
+}
+
+// Parent pages inherit their subpages' art. A page listed as another's `parent`
+// in the registry (e.g. Nymphs over dryad/naiad/oread, Troll over the troll
+// kinds) has no images of its own, so it pulls every subpage image into its
+// randomized browse pool and borrows a subpage's first image as its own first.
+// This lets the parent's card show a random picture from any of its subpages.
+const { compendiumRegistry } = await import(
+  pathToFileURL(path.join(root, "src/data/compendiumRegistry.generated.js")).href
+);
+const childrenOf = {};
+for (const r of compendiumRegistry) if (r.parent) (childrenOf[r.parent] ??= []).push(r.slug);
+for (const [parent, kids] of Object.entries(childrenOf)) {
+  const merged = [...(allMap[parent] ?? [])];
+  for (const kid of kids) for (const src of allMap[kid] ?? []) if (!merged.includes(src)) merged.push(src);
+  if (!merged.length) continue;
+  allMap[parent] = merged;
+  if (!map[parent]) map[parent] = merged[0];
 }
 
 // Orientation of every image, so browse cards can frame each shape without an
