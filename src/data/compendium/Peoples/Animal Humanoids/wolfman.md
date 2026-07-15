@@ -1,7 +1,6 @@
 # Wolfman
 
 
-![Wolfman](/compendium/Peoples/Animal Humanoids/wolfman.jpg "Wolfman")
 ![Wolfman](/compendium/Peoples/Animal Humanoids/wolfman-2.jpg "Wolfman")
 ![Wolfman](/compendium/Peoples/Animal Humanoids/wolfman-3.jpg "Wolfman")
 ![Wolfman](/compendium/Peoples/Animal Humanoids/wolfman-4.jpg "Wolfman")

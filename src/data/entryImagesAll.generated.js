@@ -3704,12 +3704,6 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
-    },
-    {
-      "src": "/compendium/Creatures/Fable Animals/hydra.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "insectoid": [
@@ -3967,12 +3961,6 @@ export const entryImagesAll = {
   "unicorn": [
     {
       "src": "/compendium/Creatures/Fable Animals/unicorn-2.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Creatures/Fable Animals/unicorn.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -6664,12 +6652,6 @@ export const entryImagesAll = {
   ],
   "reptileman": [
     {
-      "src": "/compendium/Peoples/Animal Humanoids/reptileman.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
       "src": "/compendium/Peoples/Animal Humanoids/reptileman-2.jpg",
       "portrait": false,
       "square": false,
@@ -6713,12 +6695,6 @@ export const entryImagesAll = {
     }
   ],
   "serpent": [
-    {
-      "src": "/compendium/Peoples/Animal Humanoids/serpent.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
     {
       "src": "/compendium/Peoples/Animal Humanoids/serpent-2.jpg",
       "portrait": false,
@@ -6807,12 +6783,6 @@ export const entryImagesAll = {
     }
   ],
   "wolfman": [
-    {
-      "src": "/compendium/Peoples/Animal Humanoids/wolfman.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
     {
       "src": "/compendium/Peoples/Animal Humanoids/wolfman-2.jpg",
       "portrait": false,
