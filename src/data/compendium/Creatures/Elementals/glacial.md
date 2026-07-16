@@ -1,3 +1,6 @@
+---
+parent: elemental-spirits
+---
 # Glacial
 
 

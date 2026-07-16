@@ -11,6 +11,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import sharp from "sharp";
+import yaml from "js-yaml";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const compDir = path.join(root, "src/data/compendium");
@@ -62,6 +63,39 @@ for (const file of walk(compDir).sort()) {
 const { compendiumRegistry } = await import(
   pathToFileURL(path.join(root, "src/data/compendiumRegistry.generated.js")).href
 );
+
+// Adventure card art whose `entry:` points at a compendium page should also feed
+// that page's browse cards, matching what the detail page already shows via
+// characterArtByEntryId. Without this a canonical page whose only art comes from
+// the adventures that link to it (e.g. Greater Demon) has empty hub cards even
+// though its detail gallery is full. Parse each adventure's YAML frontmatter and
+// map every entry-linked card's image onto the linked page's image pool.
+const knownSlugs = new Set(compendiumRegistry.map((r) => r.slug).filter(Boolean));
+const collectLinkedCards = (node, out) => {
+  if (Array.isArray(node)) { for (const n of node) collectLinkedCards(n, out); }
+  else if (node && typeof node === "object") {
+    if (typeof node.entry === "string" && typeof node.image === "string") out.push(node);
+    for (const v of Object.values(node)) collectLinkedCards(v, out);
+  }
+};
+for (const file of walk(compDir)) {
+  if (!file.includes(`${path.sep}Adventures${path.sep}`)) continue;
+  const fm = fs.readFileSync(file, "utf8").match(/^---\r?\n([\s\S]*?)\r?\n---/);
+  if (!fm) continue;
+  let data;
+  try { data = yaml.load(fm[1]); } catch { continue; }
+  const cards = [];
+  collectLinkedCards(data, cards);
+  for (const c of cards) {
+    const target = c.entry.trim();
+    if (!knownSlugs.has(target)) continue;
+    const src = c.image.trim();
+    (allMap[target] ??= []);
+    if (!allMap[target].includes(src)) allMap[target].push(src);
+    if (!map[target]) map[target] = allMap[target][0];
+  }
+}
+
 const childrenOf = {};
 for (const r of compendiumRegistry) if (r.parent) (childrenOf[r.parent] ??= []).push(r.slug);
 for (const [parent, kids] of Object.entries(childrenOf)) {

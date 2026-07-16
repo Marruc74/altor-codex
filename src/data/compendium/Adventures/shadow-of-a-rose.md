@@ -37,6 +37,7 @@ characters:
     description: "The goat-footed demon-lord whom the Black Rose Brotherhood serves, wise and proud, who keeps his word and punishes betrayal without mercy. He grants the band passage to settle their quarrel with the vampire in his own realm."
   - name: Jazeriel
     image: /compendium/Adventures/ShadowOfARose/Jazeriel.jpg
+    entry: greater-demon
     description: "The riddling demon-librarian of the Black Library, who alone can say which of its doors a fleeing soul has taken, and only to those who answer his riddle."
 creatures:
   - name: Eberhard
@@ -59,6 +60,7 @@ creatures:
     description: "A spiteful, unseen spirit Hilja calls up to wreck a temple and sow confusion, flinging furniture and fittings about to cover the Brotherhood's work."
   - name: Diabolins
     image: /compendium/Adventures/ShadowOfARose/Diabolin.jpg
+    entry: diabolin
     description: "The small horned demons of Hemaquiel's world, raised from black poodles by a witch's rite, that serve for a few hours and vanish."
 places:
   - name: Krilloan

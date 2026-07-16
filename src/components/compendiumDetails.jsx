@@ -20,7 +20,6 @@ import { sourcesBySlug } from "../data/sources";
 import { resolvePage } from "../data/compendiumPages";
 import { extractImages, stripImages } from "../lib/markdown.js";
 import { recordView } from "../lib/library.js";
-import ConnectionsGraph from "./ConnectionsGraph";
 
 // ── Hub view (section / group browse) ───────────────────────────────────────
 // A visual index of a section (its groups as cards) or a group (its pages as
@@ -409,6 +408,9 @@ export function CountryDetail({ country, onPinSelect, onVideoSelect, onOpenPage 
 export function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPage, onThemeSelect, onPinSelect }) {
   const [markdown, setMarkdown] = useState(null);
   const [lightbox, setLightbox] = useState(null);
+  // Per-mount salt so each Sub-pages card's random image pick stays stable
+  // across re-renders but re-rolls on a fresh visit (same as the hub cards).
+  const [imgSalt] = useState(() => Math.floor(Math.random() * 0x7fffffff));
 
   useEffect(() => {
     let cancelled = false; // a newer entry replaced this one: drop late results
@@ -491,7 +493,7 @@ export function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPag
   // derived from the curated RELATED_BY_SLUG map plus the generated cross-ref index
   // (crossRefs): pages this one mentions, and pages that mention it. Memoized on the
   // entry so unrelated re-renders don't rebuild the whole related-pages graph.
-  const { featuredIn, myThemes, subPages, related, referencedBy, mapPins, graphNodes } = useMemo(() => {
+  const { featuredIn, myThemes, subPages, related, referencedBy, mapPins } = useMemo(() => {
     const slug = toSlug(entry.name);
     const featuredIn = adventuresByEntryId[entry.id] ?? [];
     const myThemes = themesBySlug[slug] ?? [];
@@ -528,22 +530,7 @@ export function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPag
       .filter((p, i, a) => a.findIndex((q) => q.id === p.id) === i)
       .slice(0, 4);
 
-    // Web-of-connections graph: merge every neighbour kind, dedupe, cap.
-    const graphSeen = new Set();
-    const graphNodes = [];
-    const addNode = (target, label, relation) => {
-      const k = `${target.kind}-${target.id}`;
-      if (graphSeen.has(k)) return;
-      graphSeen.add(k);
-      graphNodes.push({ target, label, relation });
-    };
-    for (const t of subPages) addNode(t, t.name, "related");
-    for (const t of related) addNode(t, t.name, t.kind === "adventure" ? "adventure" : t.kind === "country" ? "map" : "related");
-    for (const a of featuredIn) addNode({ kind: "adventure", id: a.id, name: a.title }, a.title, "adventure");
-    for (const t of referencedBy) addNode(t, t.name, "ref");
-    for (const p of mapPins) addNode({ kind: "country", id: p.id, name: p.name }, p.name, "map");
-
-    return { featuredIn, myThemes, subPages, related, referencedBy, mapPins, graphNodes: graphNodes.slice(0, 16) };
+    return { featuredIn, myThemes, subPages, related, referencedBy, mapPins };
   }, [entry.id, entry.name]);
 
   return (
@@ -625,29 +612,27 @@ export function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPag
         </div>
       )}
 
-      {graphNodes.length > 0 && onOpenPage && (
-        <div className="country-detail__block">
-          <p className="location-panel__section-label">Web of connections</p>
-          <ConnectionsGraph center={entry.name} nodes={graphNodes} onOpen={onOpenPage} />
-        </div>
-      )}
-
       {subPages.length > 0 && onOpenPage && (
         <div className="country-detail__block">
           <p className="location-panel__section-label">Sub-pages</p>
           <div className="country-detail__entries-grid">
-            {subPages.map((t) => (
-              <button
-                key={`${t.kind}-${t.id}`}
-                className="codex-card codex-card--link"
-                onClick={() => onOpenPage(t)}
-              >
-                <div className="codex-card__body">
-                  <p className="codex-card__title">{t.name}</p>
-                  <span className="codex-card__entry-link">View more ↗</span>
-                </div>
-              </button>
-            ))}
+            {subPages.map((t) => {
+              const slug = toSlug(t.name);
+              const choice = pickEntryImage(slug, imgSalt);
+              const img = choice?.src ?? entryImages[slug] ?? null;
+              const cls = `codex-card codex-card--link${choice ? orientClass(choice) : portraitSlugs.has(slug) ? " codex-card--portrait" : ""}`;
+              return (
+                <button key={`${t.kind}-${t.id}`} className={cls} onClick={() => onOpenPage(t)}>
+                  <div className="codex-card__image-wrap">
+                    <CardImage src={img} alt={t.name} />
+                  </div>
+                  <div className="codex-card__body">
+                    <p className="codex-card__title">{t.name}</p>
+                    <span className="codex-card__entry-link">View more ↗</span>
+                  </div>
+                </button>
+              );
+            })}
           </div>
         </div>
       )}

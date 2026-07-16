@@ -1,5 +1,7 @@
 # Polar Bear
 
+![Polar Bear](/compendium/Creatures/Animals/polar-bear.jpg "Polar Bear")
+
 The polar bear is a great white bear of the frozen north, larger and stronger than the black bears of the southern forests, at home on the ice and in the cold seas. It is a powerful swimmer, as much at ease in the water as on land.
 
 ## Behaviour

@@ -62,6 +62,7 @@ sections:
         description: "The monastery's holy silver - pitchers, dishes and dozens of chalices, consecrated treasures that no brother of the Karl Order would suffer to be carried off."
     npcs:
       - name: The Prior's Ghost
+        entry: ghost
         image: /compendium/Adventures/BeautyAndTheBeast/The Drowned Temple/Edvard Eskilsson.jpg
         description: "The tortured spirit of prior Edvard Eskilsson, who drowned the temple to save its hoard. He rises by the altar when the living enter, barring the way out until his altar fire burns again, and finds release the moment it does."
     creatures:

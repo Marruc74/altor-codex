@@ -1,3 +1,6 @@
+---
+parent: demons-of-inferno
+---
 # Demon Noble
 
 Demon nobles are exceedingly mighty demons, perhaps supreme commanders or rulers of some lesser princedom or sphere of torment. It happens that they visit the human world, which is usually taken for its doom, but this is exceedingly rare; more often it is the demon nobles who lie behind the coming of lesser demons to the human world.

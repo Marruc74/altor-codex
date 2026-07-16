@@ -62,18 +62,12 @@ export const generatedSources = {
     "Sinkadus 20"
   ],
   "baneman": [
-    "Monsterboken",
-    "Monsterboken II",
     "Monsterboxen III: Kaos"
   ],
   "barbia": [
     "Barbia: Siratsias vita formelbok"
   ],
   "barracuda": [
-    "Monsterboken",
-    "Monsterboken II"
-  ],
-  "barrow-wight": [
     "Monsterboken",
     "Monsterboken II"
   ],
@@ -238,10 +232,6 @@ export const generatedSources = {
     "Kaos Väktare",
     "Monsterboxen III: Kaos"
   ],
-  "corpse-eaters": [
-    "Monsterboken",
-    "Monsterboken II"
-  ],
   "crocodile": [
     "Monsterboken",
     "Monsterboken II"
@@ -259,20 +249,12 @@ export const generatedSources = {
   "dark-magic": [
     "Magikerns handbok"
   ],
-  "dark-wraith": [
-    "Monsterboken",
-    "Monsterboken II"
-  ],
   "darubah": [
     "Kaos Väktare",
     "Monsterboxen III: Kaos"
   ],
   "day-of-wrath": [
     "Krilloan: Äventyrsboken"
-  ],
-  "deadmans-hand": [
-    "Monsterboken",
-    "Monsterboken II"
   ],
   "death-angel": [
     "Kaos Väktare",
@@ -282,15 +264,7 @@ export const generatedSources = {
     "Kaos Väktare",
     "Monsterboxen III: Kaos"
   ],
-  "death-knight": [
-    "Monsterboken",
-    "Monsterboken II"
-  ],
   "death-owl": [
-    "Monsterboken",
-    "Monsterboken II"
-  ],
-  "death-wraith": [
     "Monsterboken",
     "Monsterboken II"
   ],
@@ -315,11 +289,27 @@ export const generatedSources = {
   "demonic-artifacts": [
     "Krigarens handbok"
   ],
+  "demonic-creatures": [
+    "Kaos Väktare",
+    "Monsterboxen III: Kaos"
+  ],
   "demonicum": [
     "Kaos Väktare"
   ],
   "demonology": [
     "Magikerns handbok"
+  ],
+  "demons": [
+    "Kaos Väktare",
+    "Monsterboxen III: Kaos"
+  ],
+  "demons-of-demonicum": [
+    "Kaos Väktare",
+    "Monsterboxen III: Kaos"
+  ],
+  "demons-of-inferno": [
+    "Kaos Väktare",
+    "Monsterboxen III: Kaos"
   ],
   "desert-lord": [
     "Monsterboken",
@@ -402,6 +392,22 @@ export const generatedSources = {
   ],
   "elemental": [
     "Magikerns handbok"
+  ],
+  "elemental-creatures": [
+    "Monsterboken",
+    "Monsterboken II"
+  ],
+  "elemental-lords": [
+    "Monsterboken",
+    "Monsterboken II"
+  ],
+  "elemental-spirits": [
+    "Monsterboken",
+    "Monsterboken II"
+  ],
+  "elementals": [
+    "Monsterboken",
+    "Monsterboken II"
   ],
   "elephant": [
     "Monsterboken",
@@ -506,14 +512,6 @@ export const generatedSources = {
     "Monsterboken",
     "Monsterboken II",
     "Monsterboxen IV: Legendariska varelser"
-  ],
-  "ghost": [
-    "Monsterboken",
-    "Monsterboken II"
-  ],
-  "ghost-horse": [
-    "Monsterboken",
-    "Monsterboken II"
   ],
   "giant": [
     "Monsterboxen II: De humanoida raserna"
@@ -635,10 +633,6 @@ export const generatedSources = {
     "Magikerns handbok"
   ],
   "harpy": [
-    "Monsterboken",
-    "Monsterboken II"
-  ],
-  "hell-steed": [
     "Monsterboken",
     "Monsterboken II"
   ],
@@ -822,6 +816,10 @@ export const generatedSources = {
   "kojin": [
     "Monsterboxen II: De humanoida raserna"
   ],
+  "krazzt": [
+    "Kaos Väktare",
+    "Monsterboxen III: Kaos"
+  ],
   "krilloan": [
     "Krilloan: Kampanjboken",
     "The Cold That Stays"
@@ -861,10 +859,6 @@ export const generatedSources = {
     "Monsterboken",
     "Monsterboken II"
   ],
-  "living-dead": [
-    "Monsterboken",
-    "Monsterboken II"
-  ],
   "lizardfolk": [
     "Monsterboxen II: De humanoida raserna"
   ],
@@ -897,8 +891,6 @@ export const generatedSources = {
     "Monsterboken II"
   ],
   "mara": [
-    "Monsterboken",
-    "Monsterboken II",
     "Monsterboxen III: Kaos"
   ],
   "matter-queen": [
@@ -946,10 +938,6 @@ export const generatedSources = {
     "Monsterboxen II: De humanoida raserna",
     "Svartfolk"
   ],
-  "mummy": [
-    "Monsterboken",
-    "Monsterboken II"
-  ],
   "murder-vulture": [
     "Monsterboken",
     "Monsterboken II"
@@ -994,10 +982,6 @@ export const generatedSources = {
   ],
   "nightmare-in-darkness": [
     "Sinkadus 25"
-  ],
-  "nightwolf": [
-    "Monsterboken",
-    "Monsterboken II"
   ],
   "notable-magic-items": [
     "Krigarens handbok"
@@ -1052,10 +1036,6 @@ export const generatedSources = {
     "Monsterboken",
     "Monsterboken II"
   ],
-  "phantom": [
-    "Monsterboken",
-    "Monsterboken II"
-  ],
   "phoenix": [
     "Monsterboken",
     "Monsterboken II"
@@ -1079,8 +1059,6 @@ export const generatedSources = {
     "Monsterboken II"
   ],
   "poltergeist": [
-    "Monsterboken",
-    "Monsterboken II",
     "Monsterboxen III: Kaos"
   ],
   "portuguese-man-o-war": [
@@ -1143,10 +1121,6 @@ export const generatedSources = {
   ],
   "reptileman": [
     "Monsterboxen II: De humanoida raserna"
-  ],
-  "revenant": [
-    "Monsterboken",
-    "Monsterboken II"
   ],
   "roc": [
     "Monsterboken",
@@ -1214,10 +1188,6 @@ export const generatedSources = {
     "Kaos Väktare",
     "Monsterboxen III: Kaos"
   ],
-  "severed-head": [
-    "Monsterboken",
-    "Monsterboken II"
-  ],
   "shadow-beast": [
     "Monsterboken",
     "Monsterboken II"
@@ -1280,10 +1250,6 @@ export const generatedSources = {
     "Monsterboken II",
     "Monsterboxen IV: Legendariska varelser"
   ],
-  "skeleton": [
-    "Monsterboken",
-    "Monsterboken II"
-  ],
   "slayer": [
     "Monsterboxen III: Kaos"
   ],
@@ -1293,10 +1259,6 @@ export const generatedSources = {
   ],
   "soul-bound-weapons": [
     "Krigarens handbok"
-  ],
-  "spectre": [
-    "Monsterboken",
-    "Monsterboken II"
   ],
   "sphinx": [
     "Monsterboken",
@@ -1603,10 +1565,6 @@ export const generatedSources = {
     "Kaos Väktare",
     "Monsterboxen III: Kaos"
   ],
-  "vampire": [
-    "Monsterboken",
-    "Monsterboken II"
-  ],
   "vampire-butterfly": [
     "Kaos Väktare",
     "Monsterboxen III: Kaos"
@@ -1671,10 +1629,6 @@ export const generatedSources = {
     "Monsterboken",
     "Monsterboken II"
   ],
-  "will-o-the-wisp": [
-    "Monsterboken",
-    "Monsterboken II"
-  ],
   "witchcraft": [
     "Magikerns handbok"
   ],
@@ -1718,8 +1672,6 @@ export const generatedSources = {
     "Monsterboken II"
   ],
   "zombie": [
-    "Monsterboken",
-    "Monsterboken II",
     "Monsterboxen III: Kaos"
   ],
   "zorakin": [

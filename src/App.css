@@ -4437,51 +4437,6 @@ body {
   color: var(--gold-dim);
 }
 
-/* ─── Connections graph (web of cross-references) ─────────── */
-.cgraph { margin-top: 0.5rem; }
-.cgraph__svg {
-  width: 100%;
-  height: auto;
-  max-width: 660px;
-  display: block;
-  margin: 0 auto;
-}
-.cgraph__edge { stroke-width: 1; opacity: 0.35; }
-.cgraph__node { cursor: pointer; }
-.cgraph__node circle { transition: r 0.12s; }
-.cgraph__node:hover circle { r: 9; }
-.cgraph__label {
-  fill: var(--text-muted);
-  font-family: var(--font-body);
-  font-size: 13px;
-}
-.cgraph__node:hover .cgraph__label { fill: var(--gold-light); }
-.cgraph__center { fill: var(--gold); stroke: #0a0807; stroke-width: 2; }
-.cgraph__center-label {
-  fill: var(--gold-light);
-  font-family: var(--font-heading);
-  font-size: 14px;
-  letter-spacing: 0.04em;
-}
-.cgraph__legend {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.25rem 1rem;
-  margin-top: 0.5rem;
-}
-.cgraph__legend-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  font-family: var(--font-heading);
-  font-size: 0.62rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-}
-.cgraph__legend-dot { width: 9px; height: 9px; border-radius: 50%; }
-
 /* ─── Source credit (book / Sinkadus issue per page) ──────── */
 .source-credit {
   display: flex;

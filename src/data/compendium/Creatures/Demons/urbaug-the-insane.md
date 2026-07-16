@@ -1,3 +1,6 @@
+---
+parent: demons-of-inferno
+---
 # Urbaug the Insane
 
 A guardian demon of the ninth circle, sent to Altor to set right the ruin he himself has caused. Urbaug stands some three meters tall, his black hide rough and crawling with worms, with seven clawed arms, five red and slimy eyes, a fearsome underbite, a long purple tongue and a spined back. The small wings folded at his shoulders are useless for flight, and he is ashamed of them.

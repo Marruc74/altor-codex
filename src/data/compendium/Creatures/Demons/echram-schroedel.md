@@ -1,3 +1,6 @@
+---
+parent: demons-of-inferno
+---
 # Echram Schroedel
 
 A war-demon out of the sixth circle of Inferno, the Circle of Wars, whose true name is Z'crohederc and who hates everything that Altor is. For a century his soul has lain chained in a pauper's grave beneath Nohstril, dismembered and betrayed, counting a debt of blood he means one day to collect.

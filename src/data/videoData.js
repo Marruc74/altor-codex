@@ -366,6 +366,42 @@ const GROUP_OVERRIDES = {
   "YecsaEgivSM": "Schools",      // Magic: Animism
   "lERRxI7m5K8": "Schools",      // Magic: Mentalism
   "ogDV_W-G6uU": "Schools",      // Magic: Elemental
+  // Lesser-demon videos parse to a "Lesser Demons" group from their titles, but
+  // their pages now live in the consolidated "Demons" group (nested under the
+  // demons-of-inferno hub via frontmatter). Override so nav placement matches.
+  "N9PElcEaMhE": "Demons",       // Creatures: Pazuzu
+  "cZIE9gyEBto": "Demons",       // Creatures: Belmon
+  "ZKkrChk6mH0": "Demons",       // Creatures: Uzorak
+  "YbZdnklAJD4": "Demons",       // Creatures: Grazur
+  // Demonic-creature videos likewise parse to "Demonic Creatures" from their
+  // titles; their pages now nest under the demonic-creatures hub in "Demons".
+  "8aLVRZ3xieE": "Demons",       // Creatures: Cold Beast
+  "bkRNOOpK6KA": "Demons",       // Creatures: Black Unicorn
+  "oyCnsAC5lag": "Demons",       // Creatures: Black Avenger
+  "cVrGWmE5MZE": "Demons",       // Creatures: Vampire Butterfly
+  // Undead videos parse to the four old groups (Corporeal Undead, Magical
+  // Undead, Spirits, Wraiths & Wights) from their titles; their pages now live
+  // in the consolidated "Undead" group, nested under the matching branch hub.
+  "IKr01_Ex8oc": "Undead",       // Creatures: Ghost
+  "Susha9aI-Sg": "Undead",       // Creatures: Will-o'-the-Wisp
+  "vCnIMwbSf54": "Undead",       // Creatures: Spectre
+  "o4giy_NXols": "Undead",       // Creatures: Death Knight
+  "JQVKHSnCWOM": "Undead",       // Creatures: Death Wraith
+  "xbuIdo0QHoE": "Undead",       // Creatures: Dark Wraith
+  "3Is6_Adlhts": "Undead",       // Creatures: Nightwolf
+  "OBu-CcTxJjI": "Undead",       // Creatures: Severed Head
+  "MTeQSBnM3ns": "Undead",       // Creatures: Skeleton
+  "E5SXyZrGG3o": "Undead",       // Creatures: Mummy
+  "dBSUFzoY_r4": "Undead",       // Creatures: Corpse Eaters
+  "HP75__d4_NI": "Undead",       // Creatures: Zombie
+  "BAUZVfWuYRk": "Undead",       // Creatures: Phantom
+  "X3lCwFVHSIA": "Undead",       // Creatures: Hell Steed
+  "DgR1qzxBklM": "Undead",       // Creatures: Living Dead
+  "za-ZR10tS0k": "Undead",       // Creatures: Deadman's Hand
+  "oIfZEktDif4": "Undead",       // Creatures: Baneman
+  "T0KF37hwAYM": "Undead",       // Creatures: Barrow Wight
+  "lhEAWjCEZjQ": "Undead",       // Creatures: Mara
+  "MRa9ERgbzZw": "Undead",       // Creatures: Vampire
 };
 
 // Explicit display-name overrides by video id, to disambiguate two pages that

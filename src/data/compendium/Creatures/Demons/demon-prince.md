@@ -1,3 +1,6 @@
+---
+parent: demons-of-inferno
+---
 # Demon Prince
 
 There are eight demon princes besides Zahmet himself, ruler of Inferno. The demon princes are mighty beyond all human understanding, each holding lordship over one of Inferno's nine circles and the millions of subjects within it; truly it is all but impossible to measure them against human terms. The one described here is Caradocus, prince of the sixth circle, the Circle of War.

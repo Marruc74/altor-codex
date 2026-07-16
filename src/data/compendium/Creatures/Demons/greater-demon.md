@@ -1,3 +1,6 @@
+---
+parent: demons-of-inferno
+---
 # Greater Demon
 
 The greater demons are those that have survived long enough to climb a fair way up the ranks of Inferno. A demon of this standing may serve as a chancellor, a high officer, a judge, or the overseer of some mine. Demons are a kind of Chaos creature, and it is not certain whether they all share one origin; some seem to come from planes teeming with demon-kinds, others from planes where they are the only being of their sort.

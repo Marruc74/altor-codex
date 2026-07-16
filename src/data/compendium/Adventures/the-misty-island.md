@@ -98,6 +98,7 @@ sections:
         image: /compendium/Adventures/TheMistyIsland/The Misty Island/Underground Complex.jpg
     npcs:
       - name: Cadal
+        entry: ghost
         description: The ghost of a warrior who came to slay the magician Sith and rescue his beloved Tuviol, only to fall to the demon Akrae. He cannot rest until Akrae is dead, and pleads with any who pass to carry off his medallion, which wards against magic and glows blue when danger is near.
         image: /compendium/Adventures/TheMistyIsland/The Misty Island/Cadal.jpg
       - name: Sith
@@ -111,12 +112,15 @@ sections:
         image: /compendium/Adventures/TheMistyIsland/The Misty Island/Tuviol.jpg
     creatures:
       - name: Akrae
+        entry: greater-demon
         description: A demon bound to a pentagram stone deep in the flooded caves, set there by Sith to kill any intruder. Human in shape but with a crab's head and claws, he cannot leave his stone and does not parley, only fights.
         image: /compendium/Adventures/TheMistyIsland/The Misty Island/Akrae.jpg
       - name: Khaa
+        entry: greater-demon
         description: A fire demon in a black marble chamber, human-bodied with a lion's head, great wings and a body wreathed in flame. He challenges intruders with three riddles and devours those who answer wrongly, though his slowness can be outmanoeuvred.
         image: /compendium/Adventures/TheMistyIsland/The Misty Island/Khaa.jpg
       - name: Okvir
+        entry: cave-troll
         description: A surly old cave troll of sixty-five who guards Sith's caverns with his great club, hoarding the weapons and treasure of those he has killed. Sith lets him roam the tunnels and feeds him in return for crushing intruders.
         image: /compendium/Adventures/TheMistyIsland/The Misty Island/Okvir.jpg
       - name: Animated Skeletons

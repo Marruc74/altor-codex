@@ -95,10 +95,10 @@ sections:
         description: "A self-serving human art-thief from a parallel world, met among the ruins adrift near the Vortex. She knows the way to Malkûth's discontented commander and rides a living bird of steel."
     creatures:
       - name: Quetzal
-        image: /compendium/Adventures/TheDemonPrince/Quetzal.jpg
+        entry: quetzal
         description: "Feathered, foul-reeking flying-lizard demons, loyal and stupid mounts that will fly to their own certain deaths; two thousand of them carry Târg's legion to war."
       - name: Krazzt
-        image: /compendium/Adventures/TheDemonPrince/Krazzt.jpg
+        entry: krazzt
         description: "Enormous eyeless praying-mantises wrapped in thick spider-web, ridden by the belmôner with spurs driven into their flanks and goaded on by hunger and pain."
       - name: Heroniche
         image: /compendium/Adventures/TheDemonPrince/Heroniche.jpg

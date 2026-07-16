@@ -15,11 +15,11 @@ export const themes = [
     ...inGroups("Dragons"), "dragon", "the-dragon-masters", "dragon-magic", "tatsu", "dragon-warrior",
   ]),
   theme("undead", "Undead", [
-    ...inGroups("Corporeal Undead", "Magical Undead", "Wraiths & Wights"),
+    ...inGroups("Undead"),
     "necromancy", "spiritism", "the-bane-storm",
   ]),
   theme("demonic", "Demons & Demonic", [
-    ...inGroups("Demons", "Lesser Demons", "Demons of Demonicum", "Demonic Creatures"),
+    ...inGroups("Demons"),
     "demonology", "demonicum", "inferno",
   ]),
   theme("fey", "Fey & Elf-folk", [
@@ -30,7 +30,7 @@ export const themes = [
     "the-ghost-general", "the-dragon-flute", "the-shoguns-wrath",
   ]),
   theme("elemental", "Elemental", [
-    ...inGroups("Elementals", "Elemental Creatures", "Elemental Lords"), "elemental",
+    ...inGroups("Elementals"), "elemental",
   ]),
   theme("aquatic", "Aquatic & the Seas", [
     "sea-dragon", "sea-serpent", "dragonsnake", "mermaid", "naiad", "sea-elf", "water-elf",

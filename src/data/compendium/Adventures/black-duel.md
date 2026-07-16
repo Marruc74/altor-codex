@@ -102,6 +102,7 @@ sections:
         description: "A gold-and-silver planetarium crowned by a bolted-down astrologer's globe; a hidden door climbs toward the roof."
     creatures:
       - name: Whaisszg
+        entry: greater-demon
         description: "A Chaos demon shaped like a kangaroo, with a cat's feet, a predator's teeth, bat ears and horn-plated hide. It bites and stings with a poisoned tail and moves with demonic speed. Telach botched the ritual that summoned it and fled underground; the tower's own power keeps the demon caged inside the building, raging but unable to leave."
         image: /compendium/Adventures/BlackDuel/Tower/Whaisszg.jpg
     items:

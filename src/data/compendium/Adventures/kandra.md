@@ -146,6 +146,7 @@ sections:
         image: /compendium/Adventures/Kandra/Scenarios/Schims.jpg
     creatures:
       - name: Ellirind
+        entry: greater-demon
         description: A demon once summoned by a careless magician for a trivial errand. Now a ten-metre, stone-skinned giant who returns each month-end to extort the city, appearing on the great square whenever its name is spoken at the turn of the month.
         image: /compendium/Adventures/Kandra/Scenarios/Ellirind.jpg
 ---

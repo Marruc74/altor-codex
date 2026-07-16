@@ -1430,18 +1430,6 @@ export const entryImagesAll = {
       "tall": true
     },
     {
-      "src": "/compendium/Adventures/TheDemonPrince/Quetzal.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Adventures/TheDemonPrince/Krazzt.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
       "src": "/compendium/Adventures/TheDemonPrince/Heroniche.jpg",
       "portrait": true,
       "square": false,
@@ -2952,6 +2940,14 @@ export const entryImagesAll = {
       "tall": true
     }
   ],
+  "aurochs": [
+    {
+      "src": "/compendium/Creatures/Animals/aurochs.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
   "barracuda": [
     {
       "src": "/compendium/Creatures/Animals/barracuda.jpg",
@@ -2966,6 +2962,22 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
+    }
+  ],
+  "beaver": [
+    {
+      "src": "/compendium/Creatures/Animals/beaver.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "bison": [
+    {
+      "src": "/compendium/Creatures/Animals/bison.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "black-bear": [
@@ -3000,6 +3012,54 @@ export const entryImagesAll = {
       "tall": true
     }
   ],
+  "crocodile": [
+    {
+      "src": "/compendium/Creatures/Animals/crocodile.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "dire-wolf": [
+    {
+      "src": "/compendium/Creatures/Animals/dire-wolf.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "dwarf-elephant": [
+    {
+      "src": "/compendium/Creatures/Animals/dwarf-elephant.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "elephant": [
+    {
+      "src": "/compendium/Creatures/Animals/elephant.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "giant-rhinoceros": [
+    {
+      "src": "/compendium/Creatures/Animals/giant-rhinoceros.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "grizzly-bear": [
+    {
+      "src": "/compendium/Creatures/Animals/grizzly-bear.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
   "lava-lizard": [
     {
       "src": "/compendium/Adventures/TheFinalBattle/Yndar/Lava-Lizard 1.jpg",
@@ -3026,6 +3086,70 @@ export const entryImagesAll = {
     {
       "src": "/compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Mountain Goat.jpg",
       "portrait": false,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "polar-bear": [
+    {
+      "src": "/compendium/Creatures/Animals/polar-bear.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "rat-swarm": [
+    {
+      "src": "/compendium/Creatures/Animals/rat-swarm.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "saber-toothed-tiger": [
+    {
+      "src": "/compendium/Creatures/Animals/saber-toothed-tiger.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "shark": [
+    {
+      "src": "/compendium/Creatures/Animals/shark.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "tiger": [
+    {
+      "src": "/compendium/Creatures/Animals/tiger.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "wild-boar": [
+    {
+      "src": "/compendium/Creatures/Animals/wild-boar.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "wolf": [
+    {
+      "src": "/compendium/Creatures/Animals/wolf.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "wolverine": [
+    {
+      "src": "/compendium/Creatures/Animals/wolverine.jpg",
+      "portrait": true,
       "square": false,
       "tall": false
     }
@@ -3130,99 +3254,9 @@ export const entryImagesAll = {
       "tall": false
     }
   ],
-  "corpse-eaters": [
+  "belmon": [
     {
-      "src": "/compendium/Creatures/Corporeal Undead/corpse-eaters.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    }
-  ],
-  "deadmans-hand": [
-    {
-      "src": "/compendium/Creatures/Corporeal Undead/deadmans-hand.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    }
-  ],
-  "death-knight": [
-    {
-      "src": "/compendium/Creatures/Corporeal Undead/death-knight.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    }
-  ],
-  "hell-steed": [
-    {
-      "src": "/compendium/Creatures/Corporeal Undead/hell-steed.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    }
-  ],
-  "mara": [
-    {
-      "src": "/compendium/Creatures/Corporeal Undead/mara.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    }
-  ],
-  "severed-head": [
-    {
-      "src": "/compendium/Creatures/Corporeal Undead/severed-head.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    }
-  ],
-  "vampire": [
-    {
-      "src": "/compendium/Creatures/Corporeal Undead/vampire-2.jpg",
-      "portrait": false,
-      "square": false,
-      "tall": true
-    },
-    {
-      "src": "/compendium/Creatures/Corporeal Undead/vampire-3.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Creatures/Corporeal Undead/vampire-4.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Creatures/Corporeal Undead/vampire-5.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Creatures/Corporeal Undead/vampire-female-1.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Creatures/Corporeal Undead/vampire-female-2.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Creatures/Corporeal Undead/vampire-female-3.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Creatures/Corporeal Undead/vampire-female-4.jpg",
+      "src": "/compendium/Creatures/Demons/belmon.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -3230,7 +3264,19 @@ export const entryImagesAll = {
   ],
   "black-avenger": [
     {
-      "src": "/compendium/Creatures/Demonic Creatures/black-avenger.jpg",
+      "src": "/compendium/Creatures/Demons/black-avenger-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Demons/black-avenger-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Demons/black-avenger.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -3238,15 +3284,127 @@ export const entryImagesAll = {
   ],
   "black-unicorn": [
     {
-      "src": "/compendium/Creatures/Demonic Creatures/black-unicorn.jpg",
+      "src": "/compendium/Creatures/Demons/black-unicorn-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Demons/black-unicorn-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Demons/black-unicorn.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/MelindorsReturn/Fervidun/Atachan.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "cold-beast": [
+    {
+      "src": "/compendium/Creatures/Demons/cold-beast-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Demons/cold-beast-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Demons/cold-beast.jpg",
       "portrait": true,
       "square": false,
       "tall": false
     }
   ],
-  "cold-beast": [
+  "death-angel": [
     {
-      "src": "/compendium/Creatures/Demonic Creatures/cold-beast.jpg",
+      "src": "/compendium/Creatures/Demons/death-angel.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Demons/death-angel-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "death-cherub": [
+    {
+      "src": "/compendium/Creatures/Demons/death-cherub.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Demons/death-cherub-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "grazur": [
+    {
+      "src": "/compendium/Creatures/Demons/grazur.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "krazzt": [
+    {
+      "src": "/compendium/Creatures/Demons/krazzt.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "pazuzu": [
+    {
+      "src": "/compendium/Creatures/Demons/pazuzu.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Târgkrizt.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "quetzal": [
+    {
+      "src": "/compendium/Creatures/Demons/quetzal.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "servant": [
+    {
+      "src": "/compendium/Creatures/Demons/servant.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "uzorak": [
+    {
+      "src": "/compendium/Creatures/Demons/uzorak.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -3254,7 +3412,19 @@ export const entryImagesAll = {
   ],
   "vampire-butterfly": [
     {
-      "src": "/compendium/Creatures/Demonic Creatures/vampire-butterfly.jpg",
+      "src": "/compendium/Creatures/Demons/vampire-butterfly-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Demons/vampire-butterfly-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Demons/vampire-butterfly.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -3282,6 +3452,12 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/EnemiesOfTheBeginning/Helsikel.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "gold-dragon": [
@@ -3332,6 +3508,62 @@ export const entryImagesAll = {
       "tall": false
     }
   ],
+  "black-sultan": [
+    {
+      "src": "/compendium/Creatures/Elementals/black-sultan.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "cyclone": [
+    {
+      "src": "/compendium/Creatures/Elementals/cyclone.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "desert-lord": [
+    {
+      "src": "/compendium/Creatures/Elementals/desert-lord.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "djinn": [
+    {
+      "src": "/compendium/Creatures/Elementals/djinn.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "earth-beetle": [
+    {
+      "src": "/compendium/Creatures/Elementals/earth-beetle.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "fire-horse": [
+    {
+      "src": "/compendium/Creatures/Elementals/fire-horse.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "frost-wolf": [
+    {
+      "src": "/compendium/Creatures/Elementals/frost-wolf.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
   "glacial": [
     {
       "src": "/compendium/Creatures/Elementals/glacial.jpg",
@@ -3348,6 +3580,22 @@ export const entryImagesAll = {
       "tall": false
     }
   ],
+  "ice-lord": [
+    {
+      "src": "/compendium/Creatures/Elementals/ice-lord.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "light-bird": [
+    {
+      "src": "/compendium/Creatures/Elementals/light-bird.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
   "luminal": [
     {
       "src": "/compendium/Creatures/Elementals/luminal.jpg",
@@ -3356,9 +3604,33 @@ export const entryImagesAll = {
       "tall": false
     }
   ],
+  "magmani": [
+    {
+      "src": "/compendium/Creatures/Elementals/magmani.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "matter-queen": [
+    {
+      "src": "/compendium/Creatures/Elementals/matter-queen.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
   "salamander": [
     {
       "src": "/compendium/Creatures/Elementals/salamander.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "shadow-beast": [
+    {
+      "src": "/compendium/Creatures/Elementals/shadow-beast.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -3391,6 +3663,22 @@ export const entryImagesAll = {
   "undin": [
     {
       "src": "/compendium/Creatures/Elementals/undin.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "vulkanti": [
+    {
+      "src": "/compendium/Creatures/Elementals/vulkanti.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "water-wave": [
+    {
+      "src": "/compendium/Creatures/Elementals/water-wave.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -3447,6 +3735,12 @@ export const entryImagesAll = {
   "basilisk": [
     {
       "src": "/compendium/Creatures/Fable Animals/basilisk.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheCrystalBull/Wafna.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -3798,6 +4092,18 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Bhe-yell.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Red Eye - Nastigast/Ghu-tha.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "pegasus": [
@@ -3815,6 +4121,12 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Creatures/Fable Animals/pegasus.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheHellFort/The Road North/Enulisor.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -3940,6 +4252,12 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Sphinx.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "tarantellid": [
@@ -3961,6 +4279,12 @@ export const entryImagesAll = {
   "unicorn": [
     {
       "src": "/compendium/Creatures/Fable Animals/unicorn-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Kornaldon.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -4504,134 +4828,6 @@ export const entryImagesAll = {
       "tall": true
     }
   ],
-  "belmon": [
-    {
-      "src": "/compendium/Creatures/Lesser Demons/belmon.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    }
-  ],
-  "grazur": [
-    {
-      "src": "/compendium/Creatures/Lesser Demons/grazur.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    }
-  ],
-  "pazuzu": [
-    {
-      "src": "/compendium/Creatures/Lesser Demons/pazuzu.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    }
-  ],
-  "uzorak": [
-    {
-      "src": "/compendium/Creatures/Lesser Demons/uzorak.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    }
-  ],
-  "baneman": [
-    {
-      "src": "/compendium/Creatures/Magical Undead/baneman.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    }
-  ],
-  "living-dead": [
-    {
-      "src": "/compendium/Creatures/Magical Undead/living-dead.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    }
-  ],
-  "mummy": [
-    {
-      "src": "/compendium/Creatures/Magical Undead/mummy.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Creatures/Magical Undead/mummy-2.jpg",
-      "portrait": false,
-      "square": false,
-      "tall": true
-    },
-    {
-      "src": "/compendium/Creatures/Magical Undead/mummy-3.jpg",
-      "portrait": false,
-      "square": false,
-      "tall": true
-    },
-    {
-      "src": "/compendium/Creatures/Magical Undead/mummy-female-1.jpg",
-      "portrait": false,
-      "square": false,
-      "tall": true
-    }
-  ],
-  "nightwolf": [
-    {
-      "src": "/compendium/Creatures/Magical Undead/nightwolf.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    }
-  ],
-  "skeleton": [
-    {
-      "src": "/compendium/Creatures/Magical Undead/skeleton-2.jpg",
-      "portrait": false,
-      "square": false,
-      "tall": true
-    },
-    {
-      "src": "/compendium/Creatures/Magical Undead/skeleton-3.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Creatures/Magical Undead/skeleton.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    }
-  ],
-  "zombie": [
-    {
-      "src": "/compendium/Creatures/Magical Undead/zombie.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Creatures/Magical Undead/zombie-2.jpg",
-      "portrait": false,
-      "square": false,
-      "tall": true
-    },
-    {
-      "src": "/compendium/Creatures/Magical Undead/zombie-3.jpg",
-      "portrait": false,
-      "square": false,
-      "tall": true
-    },
-    {
-      "src": "/compendium/Creatures/Magical Undead/zombie-female-1.jpg",
-      "portrait": false,
-      "square": false,
-      "tall": true
-    }
-  ],
   "elf-eater": [
     {
       "src": "/compendium/Creatures/Plants/elf-eater.jpg",
@@ -4672,25 +4868,27 @@ export const entryImagesAll = {
       "tall": false
     }
   ],
-  "ghost": [
+  "baneman": [
     {
-      "src": "/compendium/Creatures/Spirits/ghost.jpg",
-      "portrait": true,
+      "src": "/compendium/Creatures/Undead/baneman-2.jpg",
+      "portrait": false,
       "square": false,
-      "tall": false
-    }
-  ],
-  "spectre": [
+      "tall": true
+    },
     {
-      "src": "/compendium/Creatures/Spirits/spectre.jpg",
-      "portrait": true,
+      "src": "/compendium/Creatures/Undead/baneman-3.jpg",
+      "portrait": false,
       "square": false,
-      "tall": false
-    }
-  ],
-  "will-o-the-wisp": [
+      "tall": true
+    },
     {
-      "src": "/compendium/Creatures/Spirits/will-o-the-wisp.jpg",
+      "src": "/compendium/Creatures/Undead/baneman-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/baneman.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -4698,82 +4896,530 @@ export const entryImagesAll = {
   ],
   "barrow-wight": [
     {
-      "src": "/compendium/Creatures/Wraiths & Wights/barrow-wight-2.jpg",
+      "src": "/compendium/Creatures/Undead/barrow-wight-2.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Creatures/Wraiths & Wights/barrow-wight-3.jpg",
+      "src": "/compendium/Creatures/Undead/barrow-wight-3.jpg",
       "portrait": false,
       "square": false,
       "tall": true
+    }
+  ],
+  "corpse-eaters": [
+    {
+      "src": "/compendium/Creatures/Undead/corpse-eaters.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "dark-wraith": [
     {
-      "src": "/compendium/Creatures/Wraiths & Wights/dark-wraith-2.jpg",
+      "src": "/compendium/Creatures/Undead/dark-wraith-2.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Creatures/Wraiths & Wights/dark-wraith-3.jpg",
+      "src": "/compendium/Creatures/Undead/dark-wraith-3.jpg",
       "portrait": true,
       "square": false,
       "tall": false
     },
     {
-      "src": "/compendium/Creatures/Wraiths & Wights/dark-wraith.jpg",
+      "src": "/compendium/Creatures/Undead/dark-wraith.jpg",
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheGatesOfPower/The Forge and Mine/Daz.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheGatesOfPower/The Forge and Mine/Gozer.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "deadmans-hand": [
+    {
+      "src": "/compendium/Creatures/Undead/deadmans-hand.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Nolgor.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "death-knight": [
+    {
+      "src": "/compendium/Creatures/Undead/death-knight.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/HorrorsOfTheDeep/Castle/Baron Boltshield.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Rafael.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "death-wraith": [
     {
-      "src": "/compendium/Creatures/Wraiths & Wights/death-wraith-2.jpg",
+      "src": "/compendium/Creatures/Undead/death-wraith-2.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Creatures/Wraiths & Wights/death-wraith-3.jpg",
+      "src": "/compendium/Creatures/Undead/death-wraith-3.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Creatures/Wraiths & Wights/death-wraith-4.jpg",
+      "src": "/compendium/Creatures/Undead/death-wraith-4.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Creatures/Wraiths & Wights/death-wraith-5.jpg",
+      "src": "/compendium/Creatures/Undead/death-wraith-5.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Creatures/Wraiths & Wights/death-wraith-6.jpg",
+      "src": "/compendium/Creatures/Undead/death-wraith-6.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     },
     {
-      "src": "/compendium/Creatures/Wraiths & Wights/death-wraith-female-1.jpg",
+      "src": "/compendium/Creatures/Undead/death-wraith-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheGatesOfPower/Upper Level/Mogdath.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheHeartOfDarkness/Before/Mogdath.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "ghost": [
+    {
+      "src": "/compendium/Creatures/Undead/ghost-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/ghost-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/ghost-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/ghost.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/ACryFromThePast/Grahall/Dorindalil - Ghost.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/BeautyAndTheBeast/The Drowned Temple/Edvard Eskilsson.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/Cadal.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheNovaStone/The False Trails/Deonor.jpg",
       "portrait": false,
       "square": false,
       "tall": true
     }
   ],
-  "phantom": [
+  "hell-steed": [
     {
-      "src": "/compendium/Creatures/Wraiths & Wights/phantom-2.jpg",
+      "src": "/compendium/Creatures/Undead/hell-steed.jpg",
       "portrait": true,
       "square": false,
       "tall": false
+    }
+  ],
+  "imariot": [
+    {
+      "src": "/compendium/Creatures/Undead/imariot.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/imariot-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/imariot-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/imariot-female-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "living-dead": [
+    {
+      "src": "/compendium/Creatures/Undead/living-dead-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/living-dead-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/living-dead-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/living-dead-female-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/living-dead.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "mara": [
+    {
+      "src": "/compendium/Creatures/Undead/mara.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "mummy": [
+    {
+      "src": "/compendium/Creatures/Undead/mummy.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/mummy-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/mummy-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/mummy-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Cruri/King Ottar.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheHellFort/Ma'tho Fherengi's Vault/Ma'tho.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Grave-Temple/King Aldorg Zeen.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "nightwolf": [
+    {
+      "src": "/compendium/Creatures/Undead/nightwolf-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/nightwolf-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/nightwolf-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/nightwolf.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Eberhard.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheGatesOfPower/The City/Sharch.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "phantom": [
+    {
+      "src": "/compendium/Creatures/Undead/phantom-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "poltergeist": [
+    {
+      "src": "/compendium/Creatures/Undead/poltergeist.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/poltergeist-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "severed-head": [
+    {
+      "src": "/compendium/Creatures/Undead/severed-head.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "skeleton": [
+    {
+      "src": "/compendium/Creatures/Undead/skeleton-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/skeleton-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/skeleton.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "spectre": [
+    {
+      "src": "/compendium/Creatures/Undead/spectre-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/spectre-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/spectre-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/spectre-female-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/spectre.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "vampire": [
+    {
+      "src": "/compendium/Creatures/Undead/vampire-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/vampire-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/vampire-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/vampire-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/vampire-female-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/vampire-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/vampire-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/vampire-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Lerajie.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "will-o-the-wisp": [
+    {
+      "src": "/compendium/Creatures/Undead/will-o-the-wisp-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/will-o-the-wisp-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/will-o-the-wisp.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "zombie": [
+    {
+      "src": "/compendium/Creatures/Undead/zombie.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/zombie-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/zombie-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/zombie-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "furgia": [
@@ -6384,6 +7030,12 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Kestur.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "karkion": [
@@ -6780,6 +7432,24 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Asimund Mogger.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Gizmo Mogger.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Ronald Mogger.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "wolfman": [
@@ -6827,6 +7497,18 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Animal Humanoids/wolfman-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/Jeraz/The Journey/Gr'wf.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The White Eye - Raoga/Rauga.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -6883,6 +7565,12 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Dark Folks/boggart-10.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheHellFort/Ghan-toth/Bartolom.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -7030,6 +7718,12 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/Okvir.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "forest-troll": [
@@ -7142,6 +7836,18 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/HorrorsOfTheDeep/Goblin Cave/Kassits.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/HorrorsOfTheDeep/Goblin Cave/Mustuf.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "mountain-orcs": [
@@ -7251,6 +7957,78 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Dark Folks/ogre-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BeautyAndTheBeast/Lake Anja and the Bandits/Krannish.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Sledgehammer.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Chopblock.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Grumble.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Guard House/Grum.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Cave System/Ghashan.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Cave System/Tahg.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/Jeraz/The Journey/Glub.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/Jeraz/The Journey/Zlika.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/Jeraz/The Journey/Tsuk.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheHellFort/Ghan-toth/Toch.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheHellFort/Ghan-toth/Thord.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -7369,6 +8147,150 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Dark Folks/orc-12.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Brascht.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Littleclink.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Gorm.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Chack.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Gursch.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Syrtan Wilderness/Vrasch.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Guard House/Olb.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Guard House/Sadh.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Guard House/Omer.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Guard House/Torsehk.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Guard House/Kaerk.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Guard House/Jishnak.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Cave System/Janosch.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Cave System/Ork.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Cave System/Rural.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Cave System/Shondor.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Cave System/Tirban.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Cave System/Tork.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/The Sulphur Swamps/Abrelax.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDeadForest/Canyon/Blackhand.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheGatesOfPower/The City/Blacktooth.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheHellFort/Ghan-toth/Gartach.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/El Nhassiv/Orta.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/El Nhassiv/Bagmol.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -7770,6 +8692,12 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheHellFort/Ghan-toth/Fritch.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "ylk-orcs": [
@@ -7923,6 +8851,18 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Elves/cave-elf-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/HorrorsOfTheDeep/Cave of Cave Elves/Garafin.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/HorrorsOfTheDeep/Cave of Cave Elves/Senadi.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -9488,6 +10428,24 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/EnemiesOfTheBeginning/Guazzo.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/HorrorsOfTheDeep/North Hall/Gervar Roarer.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Arhem/Gwellmyn.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "gargant": [
@@ -9501,6 +10459,24 @@ export const entryImagesAll = {
   "giant": [
     {
       "src": "/compendium/Peoples/Stonekin/giant.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Wilderness/Basimor Armstrong.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Wilderness/Big-Thule.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Wilderness/Råbald Nithing.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -9619,6 +10595,30 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Sylvans/faerie-8.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Pipo.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Piso.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Sipo.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheOraclesFourEyes/The Green Eye - Melealina/Siso.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -10038,6 +11038,960 @@ export const entryImagesAll = {
       "tall": false
     }
   ],
+  "greater-demon": [
+    {
+      "src": "/compendium/Adventures/BlackDuel/Tower/Whaisszg.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/Kandra/Scenarios/Ellirind.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Jazeriel.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/Akrae.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/Khaa.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "demon-prince": [
+    {
+      "src": "/compendium/Adventures/DayOfWrath/Teitan.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Târg.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Malkûth.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "caliban": [
+    {
+      "src": "/compendium/Adventures/EnemiesOfTheBeginning/CalibansStonePlates.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "the-oktagon": [
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Hemaquiel.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "diabolin": [
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Diabolin.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "demon-noble": [
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Kirian.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "demons-of-inferno": [
+    {
+      "src": "/compendium/Creatures/Demons/belmon.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Kirian.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/DayOfWrath/Teitan.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Târg.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Malkûth.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Diabolin.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Demons/grazur.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/BlackDuel/Tower/Whaisszg.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/Kandra/Scenarios/Ellirind.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Jazeriel.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/Akrae.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/Khaa.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Demons/pazuzu.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheDemonPrince/Târgkrizt.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Demons/uzorak.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "demonic-creatures": [
+    {
+      "src": "/compendium/Creatures/Demons/black-avenger-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Demons/black-avenger-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Demons/black-avenger.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Demons/black-unicorn-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Demons/black-unicorn-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Demons/black-unicorn.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/MelindorsReturn/Fervidun/Atachan.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Demons/cold-beast-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Demons/cold-beast-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Demons/cold-beast.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Demons/death-angel.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Demons/death-angel-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Demons/death-cherub.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Demons/death-cherub-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Demons/krazzt.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Demons/quetzal.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Demons/servant.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Demons/vampire-butterfly-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Demons/vampire-butterfly-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Demons/vampire-butterfly.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "elemental-lords": [
+    {
+      "src": "/compendium/Creatures/Elementals/black-sultan.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/cyclone.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/desert-lord.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/ice-lord.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/magmani.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/matter-queen.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "elemental-creatures": [
+    {
+      "src": "/compendium/Creatures/Elementals/djinn.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/earth-beetle.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/fire-horse.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/frost-wolf.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/light-bird.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/shadow-beast.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/vulkanti.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/water-wave.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "elemental-spirits": [
+    {
+      "src": "/compendium/Creatures/Elementals/glacial.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/gnom.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/luminal.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/salamander.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/sylf.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/therm.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/umbran.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/undin.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "magical-undead": [
+    {
+      "src": "/compendium/Creatures/Undead/baneman-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/baneman-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/baneman-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/baneman.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/imariot.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/imariot-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/imariot-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/imariot-female-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/living-dead-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/living-dead-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/living-dead-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/living-dead-female-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/living-dead.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/mummy.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/mummy-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/mummy-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/mummy-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/SulphurWinter/Cruri/King Ottar.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheHellFort/Ma'tho Fherengi's Vault/Ma'tho.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheVoiceFromTheAncientPast/Grave-Temple/King Aldorg Zeen.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/nightwolf-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/nightwolf-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/nightwolf-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/nightwolf.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Eberhard.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheGatesOfPower/The City/Sharch.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/skeleton-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/skeleton-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/skeleton.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/zombie.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/zombie-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/zombie-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/zombie-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "wraiths-wights": [
+    {
+      "src": "/compendium/Creatures/Undead/barrow-wight-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/barrow-wight-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/dark-wraith-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/dark-wraith-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/dark-wraith.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheGatesOfPower/The Forge and Mine/Daz.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheGatesOfPower/The Forge and Mine/Gozer.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/death-wraith-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/death-wraith-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/death-wraith-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/death-wraith-5.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/death-wraith-6.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/death-wraith-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheGatesOfPower/Upper Level/Mogdath.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheHeartOfDarkness/Before/Mogdath.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/phantom-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "corporeal-undead": [
+    {
+      "src": "/compendium/Creatures/Undead/corpse-eaters.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/deadmans-hand.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Nolgor.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/death-knight.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/HorrorsOfTheDeep/Castle/Baron Boltshield.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Rafael.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/hell-steed.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/mara.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/severed-head.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/vampire-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/vampire-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/vampire-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/vampire-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/vampire-female-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/vampire-female-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/vampire-female-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/vampire-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/ShadowOfARose/Lerajie.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "spirits": [
+    {
+      "src": "/compendium/Creatures/Undead/ghost-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/ghost-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/ghost-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/ghost.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/ACryFromThePast/Grahall/Dorindalil - Ghost.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/BeautyAndTheBeast/The Drowned Temple/Edvard Eskilsson.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/Cadal.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheNovaStone/The False Trails/Deonor.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/poltergeist.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/poltergeist-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/spectre-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/spectre-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/spectre-female-1.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/spectre-female-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/spectre.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/will-o-the-wisp-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/will-o-the-wisp-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/will-o-the-wisp.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
   "troll": [
     {
       "src": "/compendium/Peoples/Dark Folks/cave-troll-2.jpg",
@@ -10086,6 +12040,12 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
+    },
+    {
+      "src": "/compendium/Adventures/TheMistyIsland/The Misty Island/Okvir.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     },
     {
       "src": "/compendium/Peoples/Dark Folks/forest-troll.jpg",
@@ -10247,6 +12207,18 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Elves/cave-elf-female-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/HorrorsOfTheDeep/Cave of Cave Elves/Garafin.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/HorrorsOfTheDeep/Cave of Cave Elves/Senadi.jpg",
       "portrait": true,
       "square": false,
       "tall": false
