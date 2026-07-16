@@ -1,7 +1,6 @@
 # Reptileman
 
 
-![Reptileman](/compendium/Peoples/Animal Humanoids/reptileman.jpg "Reptileman")
 ![Reptileman](/compendium/Peoples/Animal Humanoids/reptileman-2.jpg "Reptileman")
 ![Reptileman](/compendium/Peoples/Animal Humanoids/reptileman-3.jpg "Reptileman")
 ![Reptileman](/compendium/Peoples/Animal Humanoids/reptileman-4.jpg "Reptileman")

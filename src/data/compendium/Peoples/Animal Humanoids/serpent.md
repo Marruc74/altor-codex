@@ -1,7 +1,6 @@
 # Serpent
 
 
-![Serpent](/compendium/Peoples/Animal Humanoids/serpent.jpg "Serpent")
 ![Serpent](/compendium/Peoples/Animal Humanoids/serpent-2.jpg "Serpent")
 ![Serpent](/compendium/Peoples/Animal Humanoids/serpent-3.jpg "Serpent")
 ![Serpent](/compendium/Peoples/Animal Humanoids/serpent-4.jpg "Serpent")

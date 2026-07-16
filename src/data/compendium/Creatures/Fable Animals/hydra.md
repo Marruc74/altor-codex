@@ -2,7 +2,6 @@
 
 
 ![Hydra](/compendium/Creatures/Fable Animals/hydra-2.jpg "Hydra")
-![Hydra](/compendium/Creatures/Fable Animals/hydra.jpg "Hydra")
 The hydra is a distant relative of the dragon that lacks the power of flight. This many-headed, unintelligent creature is a monster that figures in many a hero-saga, and with which wicked grandmothers frighten their grandchildren by the fireside of an evening.
 
 ## Appearance
