@@ -1,5 +1,11 @@
 # Bronze Discovery
 
+![Bronze Discovery](/compendium/History/Dwarves/bronze-discovery-1.jpg "Bronze Discovery")
+![Bronze Discovery](/compendium/History/Dwarves/bronze-discovery-2.jpg "Bronze Discovery")
+![Bronze Discovery](/compendium/History/Dwarves/bronze-discovery-3.jpg "Bronze Discovery")
+![Bronze Discovery](/compendium/History/Dwarves/bronze-discovery-4.jpg "Bronze Discovery")
+![Bronze Discovery](/compendium/History/Dwarves/bronze-discovery-5.jpg "Bronze Discovery")
+
 The casting of metal was no gift of the gods to humankind but a craft wrested from the deep halls of the dwarves. In Grynnerbergen, where the dwarves delved and laboured, the secrets of copper and bronze were first mastered, and it was from there - by theft rather than by teaching - that the knowledge spread into the wider world.
 
 ## Overview

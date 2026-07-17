@@ -1,5 +1,7 @@
 # Guardian
 
+![Guardian](/compendium/Creatures/Magical Creatures/guardian.jpg "Guardian")
+
 Guardians are powerful magical creatures with a single purpose: to keep other intelligent creatures from passing them. A guardian closely resembles a golem, but the difference is that in a guardian a spirit has been bound by a mighty rune to the petrified creature. The only way to drive out the spirit is to destroy the rune.
 
 ## Appearance

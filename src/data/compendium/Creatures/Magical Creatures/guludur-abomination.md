@@ -1,5 +1,7 @@
 # Guludur Abomination
 
+![Guludur Abomination](/compendium/Creatures/Magical Creatures/guludur-abomination.jpg "Guludur Abomination")
+
 The guludur abominations are magical creatures from an unknown universe. They live by drinking in magical energy, whether from magical items or from the energy released in the casting of spells. They are dreadfully rare, and there are probably no more than a dozen in all of Ereb Altor.
 
 ## Origin

@@ -1,5 +1,7 @@
 # Aryxamast
 
+![Aryxamast](/compendium/Creatures/Heralds of the Apocalypse/aryxamast.jpg "Aryxamast")
+
 When the world ends, four Riders come: Death, Pestilence, Famine and War. No one summons a Rider and sees a world afterward, so those who meddle reach instead for the forerunner that goes before each. Aryxamast is the one that runs ahead of Famine.
 
 ## Appearance

@@ -3,6 +3,8 @@ parent: elemental-lords
 ---
 # Sea King
 
+![Sea King](/compendium/Creatures/Elementals/sea-king.jpg "Sea King")
+
 A sea-king is the elemental lord of water, one of the very powerful elemental beings that come and go between the planes and the human world as they please, bent on spreading water through every world. Like all its kind it appears almost always alone, attended by lesser water-elementals and elemental creatures.
 
 ## Appearance

@@ -3012,6 +3012,14 @@ export const entryImagesAll = {
       "tall": true
     }
   ],
+  "cheetah": [
+    {
+      "src": "/compendium/Creatures/Animals/cheetah.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
   "crocodile": [
     {
       "src": "/compendium/Creatures/Animals/crocodile.jpg",
@@ -3028,9 +3036,25 @@ export const entryImagesAll = {
       "tall": true
     }
   ],
+  "dolphin": [
+    {
+      "src": "/compendium/Creatures/Animals/dolphin.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
   "dwarf-elephant": [
     {
       "src": "/compendium/Creatures/Animals/dwarf-elephant.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "eagle": [
+    {
+      "src": "/compendium/Creatures/Animals/eagle.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -3044,9 +3068,33 @@ export const entryImagesAll = {
       "tall": false
     }
   ],
+  "fox": [
+    {
+      "src": "/compendium/Creatures/Animals/fox.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
   "giant-rhinoceros": [
     {
       "src": "/compendium/Creatures/Animals/giant-rhinoceros.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "giant-shark": [
+    {
+      "src": "/compendium/Creatures/Animals/giant-shark.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "gorilla": [
+    {
+      "src": "/compendium/Creatures/Animals/gorilla.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -3058,6 +3106,14 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
+    }
+  ],
+  "hippopotamus": [
+    {
+      "src": "/compendium/Creatures/Animals/hippopotamus.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "lava-lizard": [
@@ -3628,6 +3684,14 @@ export const entryImagesAll = {
       "tall": false
     }
   ],
+  "sea-king": [
+    {
+      "src": "/compendium/Creatures/Elementals/sea-king.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
   "shadow-beast": [
     {
       "src": "/compendium/Creatures/Elementals/shadow-beast.jpg",
@@ -3682,6 +3746,14 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    }
+  ],
+  "white-pasha": [
+    {
+      "src": "/compendium/Creatures/Elementals/white-pasha.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "acid-lizard": [
@@ -4304,6 +4376,38 @@ export const entryImagesAll = {
       "tall": false
     }
   ],
+  "aryxamast": [
+    {
+      "src": "/compendium/Creatures/Heralds of the Apocalypse/aryxamast.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "evolakasa": [
+    {
+      "src": "/compendium/Creatures/Heralds of the Apocalypse/evolakasa.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "kalembri": [
+    {
+      "src": "/compendium/Creatures/Heralds of the Apocalypse/kalembri.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "stilakor": [
+    {
+      "src": "/compendium/Creatures/Heralds of the Apocalypse/stilakor.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
   "bakemono-sho": [
     {
       "src": "/compendium/Creatures/Jih-Pun/bakemono-sho.jpg",
@@ -4826,6 +4930,30 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
+    }
+  ],
+  "golem": [
+    {
+      "src": "/compendium/Creatures/Magical Creatures/golem.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "guardian": [
+    {
+      "src": "/compendium/Creatures/Magical Creatures/guardian.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "guludur-abomination": [
+    {
+      "src": "/compendium/Creatures/Magical Creatures/guludur-abomination.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "elf-eater": [
@@ -6412,6 +6540,134 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
+    }
+  ],
+  "bronze-discovery": [
+    {
+      "src": "/compendium/History/Dwarves/bronze-discovery-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/History/Dwarves/bronze-discovery-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/History/Dwarves/bronze-discovery-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/History/Dwarves/bronze-discovery-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/History/Dwarves/bronze-discovery-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "palofar": [
+    {
+      "src": "/compendium/History/Golwynda Sea/palofar-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/History/Golwynda Sea/palofar-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/History/Golwynda Sea/palofar-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/History/Golwynda Sea/palofar-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/History/Golwynda Sea/palofar-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "ancient-melukha": [
+    {
+      "src": "/compendium/History/ancient-melukha-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/History/ancient-melukha-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/History/ancient-melukha-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/History/ancient-melukha-4.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/History/ancient-melukha-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/History/ancient-melukha-6.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/History/ancient-melukha-7.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "wood-elves": [
+    {
+      "src": "/compendium/History/wood-elf-1.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/History/wood-elf-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/History/wood-elf-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "hersch": [
@@ -9488,6 +9744,12 @@ export const entryImagesAll = {
       "tall": false
     },
     {
+      "src": "/compendium/Peoples/Elves/wood-elf-ancient-history.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
       "src": "/compendium/Peoples/Elves/wood-elf-female-1.jpg",
       "portrait": true,
       "square": false,
@@ -11372,6 +11634,18 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/sea-king.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Elementals/white-pasha.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "elemental-creatures": [
@@ -12693,6 +12967,12 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Elves/wood-elf-5.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Peoples/Elves/wood-elf-ancient-history.jpg",
       "portrait": true,
       "square": false,
       "tall": false

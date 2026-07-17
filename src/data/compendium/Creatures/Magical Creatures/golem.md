@@ -1,5 +1,7 @@
 # Golem
 
+![Golem](/compendium/Creatures/Magical Creatures/golem.jpg "Golem")
+
 A golem is a constructed creature of stone or clay, given life through various magical rituals and spells. Since they always have rather limited intelligence, they are often used for dull but important tasks, chiefly the guarding of places.
 
 ## The Making

@@ -1,5 +1,9 @@
 # Wood Elves
 
+![Wood Elf](/compendium/History/wood-elf-1.jpg "Wood Elf")
+![Wood Elf](/compendium/History/wood-elf-2.jpg "Wood Elf")
+![Wood Elf](/compendium/History/wood-elf-3.jpg "Wood Elf")
+
 The forest elves, the skogsalver, are the most numerous of all elvenkind, and yet their hand lies lightest upon the chronicles of the world. Theirs is a contemplative and passive way of life, turned inward toward the quiet of the woods rather than outward toward conquest or craft, and so they never shaped the course of history as humans and dwarves did. Their heart and their greatest home is the living forest of Landori, where the elven spirit endures undisturbed by the restless ages of other peoples.
 
 ## Overview

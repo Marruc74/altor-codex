@@ -1,5 +1,7 @@
 # Kalembri
 
+![Kalembri](/compendium/Creatures/Heralds of the Apocalypse/kalembri.jpg "Kalembri")
+
 Kalembri is the forerunner of War, and of the four it is the loudest in its coming. The Riders themselves end the world and cannot be called; the demon that runs ahead of each can be, by a demonologist with the strength and the stomach for it.
 
 ## Appearance

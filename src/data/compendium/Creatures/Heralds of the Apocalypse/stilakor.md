@@ -1,5 +1,7 @@
 # Stilakor
 
+![Stilakor](/compendium/Creatures/Heralds of the Apocalypse/stilakor.jpg "Stilakor")
+
 At the end of all things ride the four - Death, Pestilence, Famine, War - and the world ends with them. The Riders cannot be summoned, but each sends a forerunner ahead, an old demon that waits out the ages on the Riders' own plane. Stilakor goes before Death. What little anyone knows of the four was copied out of a brittle codex found in the grave of Tul the Blood-Sorcerer.
 
 ## Appearance

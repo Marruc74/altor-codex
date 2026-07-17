@@ -1,5 +1,11 @@
 # Palofar
 
+![Palofar](/compendium/History/Golwynda Sea/palofar-1.jpg "Palofar")
+![Palofar](/compendium/History/Golwynda Sea/palofar-2.jpg "Palofar")
+![Palofar](/compendium/History/Golwynda Sea/palofar-3.jpg "Palofar")
+![Palofar](/compendium/History/Golwynda Sea/palofar-4.jpg "Palofar")
+![Palofar](/compendium/History/Golwynda Sea/palofar-5.jpg "Palofar")
+
 Among the tales the Golwynda culture told of itself, none was dearer than the legend of Palofar and the water-god Enki. It is a founding story, a tale meant to explain how a simple farming folk came into their great abundance, and it places at the heart of that abundance not cleverness or conquest but faith - the trust of one man in the gift of a god.
 
 ## Overview

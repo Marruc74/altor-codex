@@ -3,6 +3,8 @@ parent: elemental-lords
 ---
 # White Pasha
 
+![White Pasha](/compendium/Creatures/Elementals/white-pasha.jpg "White Pasha")
+
 A white pasha is the elemental lord of light, one of the very powerful elemental beings that come and go between the planes and the human world as they please, bent on spreading light through every world. Like all its kind it appears almost always alone, attended by lesser light-elementals and elemental creatures.
 
 ## Appearance

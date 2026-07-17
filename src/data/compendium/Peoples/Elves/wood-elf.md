@@ -8,6 +8,7 @@ parent: elves
 ![Wood Elf](/compendium/Peoples/Elves/wood-elf-3.jpg "Wood Elf")
 ![Wood Elf](/compendium/Peoples/Elves/wood-elf-4.jpg "Wood Elf")
 ![Wood Elf](/compendium/Peoples/Elves/wood-elf-5.jpg "Wood Elf")
+![Wood Elf - Ancient History](/compendium/Peoples/Elves/wood-elf-ancient-history.jpg "Wood Elf - Ancient History")
 ![Female Wood Elf](/compendium/Peoples/Elves/wood-elf-female-1.jpg "Female Wood Elf")
 ![Female Wood Elf](/compendium/Peoples/Elves/wood-elf-female-2.jpg "Female Wood Elf")
 ![Female Wood Elf](/compendium/Peoples/Elves/wood-elf-female-3.jpg "Female Wood Elf")

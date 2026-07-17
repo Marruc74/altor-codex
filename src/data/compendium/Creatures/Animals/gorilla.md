@@ -1,5 +1,7 @@
 # Gorilla
 
+![Gorilla](/compendium/Creatures/Animals/gorilla.jpg "Gorilla")
+
 The gorillas of the sagaland are larger and far fiercer than the great apes of the waking world, dwelling in the deep tropical jungles in troops. They are clever for animals, and a wise traveller treats them as more than mere beasts.
 
 ## Behaviour
