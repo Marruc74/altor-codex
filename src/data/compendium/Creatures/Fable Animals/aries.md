@@ -2,6 +2,8 @@
 
 
 ![Aries](/compendium/Creatures/Fable Animals/aries.jpg "Aries")
+![Aries](/compendium/Creatures/Fable Animals/aries-2.jpg "Aries")
+
 The aries is an amphibious predator with the power to turn its hind legs into a long fish-tail when it is in the water. It lives on fish and small rodents and attacks people only when it feels threatened. They are always met alone.
 
 ## Appearance

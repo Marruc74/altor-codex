@@ -1,5 +1,7 @@
 # The Devil's Palace
 
+![The Devil's Palace](/compendium/Lore/Magical Phenomena/the-devils-palace.jpg "The Devil's Palace")
+
 A ruined palace high on the mountain called the Shadow-Watcher, in the Mountains of Darkness. It was here that Colonel Penn of Landori's Demon-Slayer Legion found the White Staff, and it is here that the staff's victims go.
 
 ## Where the Slain Demons Go

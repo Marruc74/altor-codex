@@ -1,5 +1,7 @@
 # The Bane Storm
 
+![The Bane Storm](/compendium/Lore/Magical Phenomena/the-bane-storm.jpg "The Bane Storm")
+
 The Bane Storm is the most dreaded of the magical scourges of Ereb, a vast black thunderstorm that comes on like a dark flood-wave rolling over the land, and leaves behind it nothing but waste and silence. Where it has passed, the fields are dead, the people gone, and the country stands empty for years after.
 
 ## Overview

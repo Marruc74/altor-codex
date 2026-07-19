@@ -2,6 +2,9 @@
 
 
 ![Griffin](/compendium/Creatures/Fable Animals/griffin.jpg "Griffin")
+![Griffin](/compendium/Creatures/Fable Animals/griffin-2.jpg "Griffin")
+![Griffin](/compendium/Creatures/Fable Animals/griffin-3.jpg "Griffin")
+
 Griffins are aggressive and dangerous predators. A captured griffin can fetch a tidy sum at market, and griffin eggs or chicks can make a trapper rich.
 
 ## Appearance

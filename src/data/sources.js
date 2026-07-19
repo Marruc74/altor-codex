@@ -43,6 +43,8 @@ const CURATED = [
   ...from("Krilloan: Kampanjboken", ["ordo-magica", "the-oktagon", "imaria"]),
   ...from("Hjältarnas handbok", ["heroes"]),
   ...from("Krigarens handbok", ["soul-bound-weapons", "weapon-academies", "notable-magic-items"]),
+  // Sourcebook page the group table can't key on.
+  ...from("Monster och Män i Ereb Altor", ["meh-zadrias-pillar"]),
 ];
 
 // Generated first, then curated layered on top; deduped per slug.

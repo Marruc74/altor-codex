@@ -1,5 +1,7 @@
 # Meh-Zadria's Pillar
 
+![Meh-Zadria's Pillar](/compendium/Lore/Magical Phenomena/meh-zadrias-pillar.jpg "Meh-Zadria's Pillar")
+
 A single gigantic pillar of grey marble stands in the wilds among the peaks of the Kardbergen, six metres across and rising a full three kilometres into the sky, its top often lost in cloud. A spiral stair winds the whole of its height to a flat summit ringed by a low parapet, and only the durability magic worked into it holds the impossible thing together.
 
 ## The Pillars of Heaven

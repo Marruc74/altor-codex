@@ -2,6 +2,9 @@
 
 
 ![Ambiorm](/compendium/Creatures/Fable Animals/ambiorm.jpg "Ambiorm")
+![Ambiorm](/compendium/Creatures/Fable Animals/ambiorm-2.jpg "Ambiorm")
+![Ambiorm](/compendium/Creatures/Fable Animals/ambiorm-3.jpg "Ambiorm")
+
 The ambiorm is a rightly feared creature: a great serpent that bears, where its tail ought to be, a second head. What mad turn of evolution or deranged wizard's experiment first produced this monster, no one knows.
 
 ## Appearance

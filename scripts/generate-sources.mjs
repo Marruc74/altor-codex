@@ -52,6 +52,7 @@ const SWEDISH_TITLE = {
   "ereb-altor-kampanjbok-utokad": "Ereb Altor: Kampanjboken (utökad)",
   "ereb-altor-spelledarbok": "Ereb Altor: Spelledarboken",
   "krilloan-kampanjbok": "Krilloan: Kampanjboken", "imperium-jorpagnum": "Imperium Jorpagnum",
+  "monster-och-man-i-ereb-altor": "Monster och Män i Ereb Altor",
   // Adventures
   "den-femte-konfluxen": "Den femte konfluxen", "svavelvinter": "Svavelvinter",
   "doda-skogen": "Döda skogen", "helvetesfortet": "Helvetesfortet", "kristalltjuren": "Kristalltjuren",

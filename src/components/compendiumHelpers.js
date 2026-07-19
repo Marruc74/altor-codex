@@ -284,7 +284,10 @@ export const RELATED_BY_SLUG = {
   "voice-magic": ["harmonism", "the-aspects-of-magic"],
   "spiritism": ["demonology", "necromancy", "the-aspects-of-magic"],
   "alchemy": ["notable-magic-items", "the-aspects-of-magic"],
-  "magic-nodes-and-storms": ["the-bane-storm", "ley-lines-and-magic-dead-lands", "dark-magic"],
+  "ley-lines": ["magic-nodes", "magic-dead-lands", "ley-lines-and-magic-dead-lands"],
+  "magic-nodes": ["ley-lines", "magic-dead-lands", "ley-lines-and-magic-dead-lands"],
+  "magic-dead-lands": ["ley-lines", "magic-nodes", "ley-lines-and-magic-dead-lands"],
+  "mage-storms": ["magic-nodes", "the-bane-storm", "ley-lines-and-magic-dead-lands"],
   "the-shaul-deck": ["ordo-magica", "the-heavenly-bodies"],
   "familiars": ["witchcraft", "spiritism", "animism", "the-ways-of-magicians"],
   // Worldbuilding lore cross-links.

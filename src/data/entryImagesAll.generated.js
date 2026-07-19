@@ -2692,10 +2692,40 @@ export const entryImagesAll = {
       "tall": false
     },
     {
+      "src": "/compendium/Lore/Factions/the-delitha-order-novice.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Lore/Factions/the-delitha-order-initiate.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Lore/Factions/the-delitha-order-life-giver.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Lore/Factions/the-delitha-order-priestess.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
       "src": "/compendium/Adventures/TheUnicornHorn/Kandra/Liva Legast.jpg",
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Adventures/TheUnicornHorn/Kandra/Dimar.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     },
     {
       "src": "/compendium/Adventures/TheUnicornHorn/House 247/Gallahan The Alchemist.jpg",
@@ -2711,6 +2741,48 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Adventures/TheUnicornHorn/House 247/Liella.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Lore/Factions/the-zeeris-order-novice.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Lore/Factions/the-zeeris-order-initiate.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Lore/Factions/the-zeeris-order-shadow-priest.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Lore/Factions/the-zeeris-order-dark-priest.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Lore/Factions/the-zeeris-order-high-priest.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Lore/Factions/the-zeeris-order-black-knight.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Lore/Factions/the-zeeris-order-squire.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -3762,6 +3834,18 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/acid-lizard-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/acid-lizard-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "alfin": [
@@ -3778,11 +3862,29 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/ambiorm-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/ambiorm-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "angyon": [
     {
       "src": "/compendium/Creatures/Fable Animals/angyon.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/angyon-2.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -3799,6 +3901,12 @@ export const entryImagesAll = {
   "aries": [
     {
       "src": "/compendium/Creatures/Fable Animals/aries.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/aries-2.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -3986,6 +4094,18 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/gorgon-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/gorgon-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
     }
   ],
   "grey-mareskunk": [
@@ -3999,6 +4119,18 @@ export const entryImagesAll = {
   "griffin": [
     {
       "src": "/compendium/Creatures/Fable Animals/griffin.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/griffin-2.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/griffin-3.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -6924,6 +7056,76 @@ export const entryImagesAll = {
       "tall": false
     }
   ],
+  "the-delitha-order": [
+    {
+      "src": "/compendium/Lore/Factions/the-delitha-order-novice.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Lore/Factions/the-delitha-order-initiate.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Lore/Factions/the-delitha-order-life-giver.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Lore/Factions/the-delitha-order-priestess.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "the-zeeris-order": [
+    {
+      "src": "/compendium/Lore/Factions/the-zeeris-order-novice.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Lore/Factions/the-zeeris-order-initiate.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Lore/Factions/the-zeeris-order-shadow-priest.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Lore/Factions/the-zeeris-order-dark-priest.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Lore/Factions/the-zeeris-order-high-priest.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Lore/Factions/the-zeeris-order-black-knight.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Lore/Factions/the-zeeris-order-squire.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
   "urgh-grobb": [
     {
       "src": "/compendium/Lore/Factions/urgh-grobb.jpg",
@@ -6945,6 +7147,62 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Lore/Factions/urgh-grobb-drogh.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "khab-hemi": [
+    {
+      "src": "/compendium/Lore/Magical Phenomena/khab-hemi.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "mage-storms": [
+    {
+      "src": "/compendium/Lore/Magical Phenomena/mage-storms.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "meh-zadrias-pillar": [
+    {
+      "src": "/compendium/Lore/Magical Phenomena/meh-zadrias-pillar.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
+  "the-bane-storm": [
+    {
+      "src": "/compendium/Lore/Magical Phenomena/the-bane-storm.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "the-black-water": [
+    {
+      "src": "/compendium/Lore/Magical Phenomena/the-black-water.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "the-city-of-angels": [
+    {
+      "src": "/compendium/Lore/Magical Phenomena/the-city-of-angels.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    }
+  ],
+  "the-devils-palace": [
+    {
+      "src": "/compendium/Lore/Magical Phenomena/the-devils-palace.jpg",
       "portrait": true,
       "square": false,
       "tall": false

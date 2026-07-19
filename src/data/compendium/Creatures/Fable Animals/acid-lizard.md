@@ -2,6 +2,9 @@
 
 
 ![Acid Lizard](/compendium/Creatures/Fable Animals/acid-lizard.jpg "Acid Lizard")
+![Acid Lizard](/compendium/Creatures/Fable Animals/acid-lizard-2.jpg "Acid Lizard")
+![Acid Lizard](/compendium/Creatures/Fable Animals/acid-lizard-3.jpg "Acid Lizard")
+
 Acid lizards are large black predatory lizards that normally live on insects, rodents, fish and bats, but in larger company, more than five of them, will also attack humanoids. At the back of the jaw they have acid-glands that produce a very fiercely corrosive acid, which they use to dig their underground burrows slowly through the earth, and which they can also gather in the mouth and spit at their foes as a ranged weapon.
 
 ## Appearance

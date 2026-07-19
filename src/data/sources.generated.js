@@ -508,7 +508,7 @@ export const generatedSources = {
     "Monsterboken II"
   ],
   "ghertum": [
-    "Monster Och Man I Ereb Altor",
+    "Monster och Män i Ereb Altor",
     "Monsterboken",
     "Monsterboken II",
     "Monsterboxen IV: Legendariska varelser"
@@ -656,7 +656,7 @@ export const generatedSources = {
     "Monsterboken II"
   ],
   "hippogriff": [
-    "Monster Och Man I Ereb Altor",
+    "Monster och Män i Ereb Altor",
     "Monsterboken",
     "Monsterboken II",
     "Monsterboxen IV: Legendariska varelser"
@@ -782,7 +782,7 @@ export const generatedSources = {
     "Trakorien"
   ],
   "kasyr": [
-    "Monster Och Man I Ereb Altor"
+    "Monster och Män i Ereb Altor"
   ],
   "kelpie": [
     "Monsterboken",
@@ -1210,7 +1210,7 @@ export const generatedSources = {
     "Monsterboken II"
   ],
   "sharg": [
-    "Monster Och Man I Ereb Altor",
+    "Monster och Män i Ereb Altor",
     "Monsterboxen II: De humanoida raserna"
   ],
   "shark": [

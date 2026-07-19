@@ -36,12 +36,16 @@ sections:
     npcs:
       - name: Novice
         description: The entry grade of the Delitha order, marked by a yellow robe-band, schooled in basic animism and healing.
+        image: /compendium/Lore/Factions/the-delitha-order-novice.jpg
       - name: Initiate
         description: The initiate grade, marked by a blue band, the highest a man of the order may reach.
+        image: /compendium/Lore/Factions/the-delitha-order-initiate.jpg
       - name: Life-giver
         description: The Life-giver grade, marked by a green band, who can channel healing into others through the unicorn horn.
+        image: /compendium/Lore/Factions/the-delitha-order-life-giver.jpg
       - name: Priestess
         description: The full priestess, marked by a red band, who learns the art of revealing the dark priests of Zeeris.
+        image: /compendium/Lore/Factions/the-delitha-order-priestess.jpg
       - name: Sanctified
         description: The Sanctified, the order's highest grade, marked by a purple band; the aged leader who longs for the lost relics' return holds this rank.
   - title: The Journey to Kandra
@@ -132,6 +136,7 @@ sections:
         description: The dead smith and adventurer on whom the whole quest turns, who long ago saved the order's relic and hid it in catacombs beneath his Kandra house before he died.
       - name: Mäster Dimar
         description: Liva's husband, a goldsmith come to Kandra from Diékar.
+        image: /compendium/Adventures/TheUnicornHorn/Kandra/Dimar.jpg
       - name: Illemnar
         description: The innkeeper of the Falling Sword, an old friend of Larm who remembers him well.
       - name: Didrim the Dwarf
@@ -220,20 +225,27 @@ sections:
     npcs:
       - name: Novice
         description: The first rank of the Zeeris priesthood, in a plain black cloak with no other mark.
+        image: /compendium/Lore/Factions/the-zeeris-order-novice.jpg
       - name: Initiate
         description: The second rank, who adds a silver ring through the left nostril; Gallahan's wife Moira is of this grade.
+        image: /compendium/Lore/Factions/the-zeeris-order-initiate.jpg
       - name: Shadow Priest
         description: The third rank, the shadow-priest, who adds a black-steel brow-band, the highest a woman of the order may reach; the alchemist Gallahan is one.
+        image: /compendium/Lore/Factions/the-zeeris-order-shadow-priest.jpg
       - name: Dark Priest
         description: The fourth rank, the dark-priest, who adds a part shaved through the hair.
+        image: /compendium/Lore/Factions/the-zeeris-order-dark-priest.jpg
       - name: High Priest
         description: The fifth rank, the high priest, his shaved part painted blood-red, who keeps a familiar; the masked master of house 247 is one.
+        image: /compendium/Lore/Factions/the-zeeris-order-high-priest.jpg
       - name: The Perfected
         description: The sixth and highest rank, the Perfected, marked by a blood-drop tattooed on the left palm and a thick gold neck-ring.
       - name: Black Knight
         description: The Left Hand, the order's black knights, landless men with white shields and shaved heads who wield enchanted broadswords that bite doubly deep into elf-folk.
+        image: /compendium/Lore/Factions/the-zeeris-order-black-knight.jpg
       - name: Squire
         description: Squires to the black knights, bearing the same gear but forbidden to shave their heads until they are knighted.
+        image: /compendium/Lore/Factions/the-zeeris-order-squire.jpg
 ---
 
 ## Plot

@@ -1,5 +1,7 @@
 # Khab-Hemi
 
+![Khab-Hemi](/compendium/Lore/Magical Phenomena/khab-hemi.jpg "Khab-Hemi")
+
 Khab-Hemi, the Cauldron of Bitterness, is a shadow-shrouded valley in the wilds of Ereb where darkness and bitterness thrive. It is wrong to call the place evil, for it was not so at the beginning, and a person of clean conscience and strong soul might even find it beautiful for all its bitter weight. But darkness and sorrow keep close company with evil, and over the years the valley has drawn to itself every kind of light-shy creature and every magician with a destructive plan, until it has become, in the world's telling, the abode of wickedness. No one knows its true origin: some say a magical experiment gone to ruin, some a grave at its heart whose dead one's grief and anguish leak out as this, some a thing the gods cast down from heaven, a foretaste of hell.
 
 ## Overview

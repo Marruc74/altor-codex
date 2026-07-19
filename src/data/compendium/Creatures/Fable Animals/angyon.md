@@ -2,6 +2,8 @@
 
 
 ![Angyon](/compendium/Creatures/Fable Animals/angyon.jpg "Angyon")
+![Angyon](/compendium/Creatures/Fable Animals/angyon-2.jpg "Angyon")
+
 The angyon is a large, two-legged beast long bred and broken to the saddle and the pack. Strong and steady, it is valued as a mount and a carrier in the lands where it is kept, and a well-trained one is a costly animal, worth several hundred silver and more.
 
 ## Behaviour

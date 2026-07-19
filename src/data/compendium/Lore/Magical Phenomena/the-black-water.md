@@ -1,5 +1,7 @@
 # The Black Water
 
+![The Black Water](/compendium/Lore/Magical Phenomena/the-black-water.jpg "The Black Water")
+
 Far in the north of the world lies a stretch of water unlike any other: dark and heavy and oil-like, neither freezing in the cold nor moving with the wind, so black that it swallows the light of day. Sailors give it a wide berth, and mages give it wider still, for of all who venture onto the Black Water it is the worker of magic who is least likely to come home.
 
 ## Overview
