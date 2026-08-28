@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef, lazy, Suspense } from "react";
 import Navbar from "./components/Navbar";
+import SideRail from "./components/SideRail";
 import InteractiveMap from "./components/InteractiveMap";
 import LocationPanel from "./components/LocationPanel";
 import VideoModal from "./components/VideoModal";
@@ -133,6 +134,21 @@ export default function App() {
       return () => clearTimeout(t);
     }
   }, [activePage]);
+
+  // The rail is a fixed 76px column on desktop and a bottom bar on a phone, so
+  // the map's container width jumps whenever that breakpoint is crossed. Leaflet
+  // caches container size and will otherwise render into stale bounds - grey
+  // gutters, pins landing in the wrong place. Debounced so a drag-resize doesn't
+  // fire it every frame.
+  useEffect(() => {
+    let t;
+    const onResize = () => {
+      clearTimeout(t);
+      t = setTimeout(() => mapRef.current?.invalidateSize(), 120);
+    };
+    window.addEventListener("resize", onResize);
+    return () => { clearTimeout(t); window.removeEventListener("resize", onResize); };
+  }, []);
 
   const [searchOpen, setSearchOpen] = useState(false);
 
@@ -287,7 +303,13 @@ export default function App() {
 
   return (
     <div className="app">
-      <Navbar activePage={activePage} onNavigate={handleMenuNavigate} onSearchOpen={() => setSearchOpen(true)} />
+      <SideRail
+        activePage={activePage}
+        onNavigate={handleMenuNavigate}
+        onSearchOpen={() => setSearchOpen(true)}
+        onSurprise={handleSurprise}
+      />
+      <Navbar onNavigate={handleMenuNavigate} onSearchOpen={() => setSearchOpen(true)} />
 
       {/* Hero — shown only on home */}
       {activePage === null && (
@@ -332,7 +354,7 @@ export default function App() {
 
           <div className="hero__content">
             <p className="hero__description">
-              A compendium of the known world — its regions, cities, histories, and secrets.
+              A compendium of the known world - its regions, cities, histories, and secrets.
               What you find here may save your life. What you don't find here might end it.
             </p>
             <button className="hero__surprise" onClick={handleSurprise}>
@@ -398,7 +420,7 @@ export default function App() {
         <section id="map" className="map-section">
           <div className="section-header">
             <h2 className="section-title">The Known World</h2>
-            <p className="section-sub">Pan and zoom to explore. Click a marker to open its details.</p>
+            <p className="section-subtitle">Pan and zoom to explore. Click a marker to open its details.</p>
           </div>
           <div className="map-container">
             <InteractiveMap ref={mapRef} onLocationSelect={handleLocationSelect} />

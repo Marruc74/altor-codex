@@ -8,7 +8,9 @@ import { entryImagesAll } from "../data/entryImagesAll.generated";
 import { themes, slugsByTheme, themeLabel } from "../data/compendiumTags";
 import { resolvePage, geoPlaces } from "../data/compendiumPages";
 import { useRecents, useBookmarks, useSeenKeys } from "../lib/library.js";
+import { useModal } from "../lib/useModal";
 import Gazetteer from "./Gazetteer";
+import Icon from "./Icon";
 
 // ── Compendium ────────────────────────────────────────────────────────────
 export default function Compendium({
@@ -20,6 +22,12 @@ export default function Compendium({
   onVideoSelect,
 }) {
   const [query, setQuery] = useState("");
+  // Below 1100px the contents tree becomes a drawer. It used to stack above the
+  // content as a full-width block, which meant scrolling past a tree of ~689
+  // pages to reach the page you had just opened.
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const sidebarRef = useRef(null);
+  useModal(sidebarRef, () => setDrawerOpen(false), drawerOpen);
   // One random salt per Compendium mount, so the landing's section cards show a
   // random representative image (not always the first) and re-roll on reload.
   const [imgSalt] = useState(() => Math.floor(Math.random() * 0x7fffffff));
@@ -394,9 +402,43 @@ export default function Compendium({
 
   return (
     <section id="catalog" className="catalog-section">
+      {/* Drawer handle. Hidden above 1100px, where the contents panel is simply
+          always visible beside the reader. */}
+      <button className="contents-toggle" onClick={() => setDrawerOpen(true)}>
+        <Icon name="contents" size={18} />
+        <span>Contents</span>
+      </button>
+
+      {drawerOpen && (
+        <div className="contents-backdrop" onClick={() => setDrawerOpen(false)} />
+      )}
+
       <div className="compendium-layout">
         {/* ── Left sidebar ── */}
-        <aside className="compendium-sidebar">
+        <aside
+          className={`compendium-sidebar ${drawerOpen ? "compendium-sidebar--open" : ""}`}
+          ref={sidebarRef}
+          tabIndex={-1}
+          /* Any navigation click inside the tree dismisses the drawer. Delegated
+             rather than wired into each of the five open* handlers, so a new kind
+             of nav row can't be added later that leaves the drawer stuck open. */
+          onClick={(e) => {
+            if (!drawerOpen) return;
+            if (e.target.closest(".compendium-nav__item, .compendium-results__item, .compendium-nav__hd-title, .compendium-nav__group-title")) {
+              setDrawerOpen(false);
+            }
+          }}
+        >
+          <div className="compendium-sidebar__bar">
+            <p className="compendium-sidebar__hd">Contents</p>
+            <button
+              className="compendium-sidebar__close"
+              onClick={() => setDrawerOpen(false)}
+              aria-label="Close contents"
+            >
+              <Icon name="close" size={16} />
+            </button>
+          </div>
           <div className="compendium-search-wrap">
             <span className="codex-search-icon">⌕</span>
             <input

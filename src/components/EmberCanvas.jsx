@@ -17,6 +17,12 @@ export default function EmberCanvas() {
   const ref = useRef(null);
 
   useEffect(() => {
+    // A reader who asked the OS for less motion gets no drifting embers. Bail
+    // before starting the rAF loop rather than hiding the canvas, so we aren't
+    // burning a frame's work every 16ms to paint something nobody sees.
+    const calm = window.matchMedia?.("(prefers-reduced-motion: reduce)");
+    if (calm?.matches) return undefined;
+
     const canvas = ref.current;
     const ctx = canvas.getContext("2d");
     let animId;

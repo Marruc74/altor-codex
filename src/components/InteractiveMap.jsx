@@ -258,12 +258,8 @@ const InteractiveMap = forwardRef(function InteractiveMap({ onLocationSelect }, 
     : [];
 
   return (
-    <div className="map-frame">
-      <div className="map-corner map-corner--tl" />
-      <div className="map-corner map-corner--tr" />
-      <div className="map-corner map-corner--bl" />
-      <div className="map-corner map-corner--br" />
-      <div className="map-label-top">ALTOR — KNOWN TERRITORIES</div>
+    <div className="map-frame framed">
+      <div className="map-label-top">ALTOR - KNOWN TERRITORIES</div>
 
       <div className="map-filters">
         {ACTIVE_TYPES.map((type) => {

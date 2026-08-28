@@ -18,8 +18,27 @@ import { crossRefs } from "../data/crossRefs.generated";
 import { themesBySlug, themeLabel } from "../data/compendiumTags";
 import { sourcesBySlug } from "../data/sources";
 import { resolvePage } from "../data/compendiumPages";
-import { extractImages, stripImages } from "../lib/markdown.js";
+import { extractImages, stripImages, extractHeadings, slugifyHeading, headingText } from "../lib/markdown.js";
 import { recordView } from "../lib/library.js";
+import ContextRail from "./ContextRail";
+
+// Section headings get an id so the reader's "On this page" list can link to
+// them. The id comes from the same slugifier the contents list uses, so the two
+// cannot drift apart. See lib/markdown.js for why it is text-only.
+const MD_COMPONENTS = {
+  h2: ({ children, ...p }) => <h2 id={slugifyHeading(headingText(children))} {...p}>{children}</h2>,
+  h3: ({ children, ...p }) => <h3 id={slugifyHeading(headingText(children))} {...p}>{children}</h3>,
+};
+
+// The parchment reading surface. `.reader__leaf` is the page; `.country-detail__body`
+// keeps its existing prose rules so nothing about the typography changes here.
+function Prose({ children }) {
+  return (
+    <div className="country-detail__body">
+      <ReactMarkdown components={MD_COMPONENTS}>{children}</ReactMarkdown>
+    </div>
+  );
+}
 
 // ── Hub view (section / group browse) ───────────────────────────────────────
 // A visual index of a section (its groups as cards) or a group (its pages as
@@ -251,151 +270,83 @@ export function CountryDetail({ country, onPinSelect, onVideoSelect, onOpenPage 
   // The page md may carry a YAML frontmatter block of notable figures/places/items.
   // Parse it (and split the prose body off) only when the markdown changes - not on
   // every render (e.g. opening the lightbox), which would re-run yaml.load each time.
-  const { figures, notablePlaces, notableCreatures, notableItems, images, bodyText } = useMemo(() => {
+  const { figures, notablePlaces, notableCreatures, notableItems, images, bodyText, headings } = useMemo(() => {
     const fm = markdown && markdown.startsWith("---")
       ? markdown.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/)
       : null;
     let meta = {};
     if (fm) { try { meta = yaml.load(fm[1]) ?? {}; } catch { meta = {}; } }
     const body = fm ? fm[2] : (markdown ?? "");
+    const bodyText = body ? stripImages(body).replace(/^#[^\n]*\n/, "").trim() : "";
     return {
       figures: meta.figures ?? [],
       notablePlaces: meta.places ?? [],
       notableCreatures: meta.creatures ?? [],
       notableItems: meta.items ?? [],
       images: body ? extractImages(body) : [],
-      bodyText: body ? stripImages(body).replace(/^#[^\n]*\n/, "").trim() : "",
+      bodyText,
+      headings: extractHeadings(bodyText),
     };
   }, [markdown]);
 
+  const railVideos = [
+    ...(loaded && mainVideo ? [{ id: mainVideo.id, name: mainVideo.title ?? mainVideo.name }] : []),
+    ...(loaded ? relatedVideos : []),
+  ];
+  const adventuresHere = adventuresByPin[country.id] ?? [];
+
   return (
-    <div className="country-detail">
-      <div className="country-detail__header">
-        <div className="country-detail__header-text">
-          <p className="country-detail__eyebrow">{placeKind(country)}</p>
-          <h2 className="country-detail__name">{country.name}</h2>
-          {country.tagline && <p className="country-detail__tagline">"{country.tagline}"</p>}
-        </div>
-        <div className="country-detail__header-actions">
-          <button className="country-detail__map-btn" onClick={() => onPinSelect(country.id)}>
-            View on Map ↗
-          </button>
-          <PageActions target={{ kind: "country", id: country.id, name: country.name }} />
-        </div>
-      </div>
-
-      <div className="country-detail__divider" />
-
-      {!loaded && <p className="country-detail__loading">Consulting the codex…</p>}
-
-      {loaded && images.length > 0 && <ImageGallery images={images} />}
-
-      {loaded && locationData.description && (
-        <p className="country-detail__description">{locationData.description}</p>
-      )}
-
-      {loaded && bodyText && (
-        <div className="country-detail__body">
-          <ReactMarkdown>{bodyText}</ReactMarkdown>
-        </div>
-      )}
-
-      {loaded && <CardGrid label="Notable Figures" items={figures} portrait onOpenPage={onOpenPage} onLightbox={setLightbox} excludeCountryId={country.id} />}
-      {loaded && <CardGrid label="Notable Places" items={notablePlaces} onOpenPage={onOpenPage} onLightbox={setLightbox} excludeCountryId={country.id} />}
-      {loaded && <CardGrid label="Notable Creatures" items={notableCreatures} portrait onOpenPage={onOpenPage} onLightbox={setLightbox} excludeCountryId={country.id} />}
-      {loaded && <CardGrid label="Notable Items" items={notableItems} onOpenPage={onOpenPage} onLightbox={setLightbox} excludeCountryId={country.id} />}
-
-      {(adventuresByPin[country.id] ?? []).length > 0 && onOpenPage && (
-        <div className="country-detail__block">
-          <p className="location-panel__section-label">Adventures set here</p>
-          <div className="country-detail__entries-grid">
-            {adventuresByPin[country.id].map((a) => (
-              <button
-                key={a.id}
-                className="codex-card codex-card--link"
-                onClick={() => onOpenPage({ kind: "adventure", id: a.id })}
-              >
-                <div className="codex-card__body">
-                  <p className="codex-card__title">{a.title}</p>
-                  {a.tagline && <p className="codex-card__summary">{a.tagline}</p>}
-                  <span className="codex-card__entry-link">View more ↗</span>
-                </div>
-              </button>
-            ))}
+    <div className="reader">
+      <article className="reader__leaf framed">
+        <div className="country-detail__header">
+          <div className="country-detail__header-text">
+            <p className="country-detail__eyebrow">{placeKind(country)}</p>
+            <h2 className="country-detail__name">{country.name}</h2>
+            {country.tagline && <p className="country-detail__tagline">"{country.tagline}"</p>}
           </div>
         </div>
-      )}
 
-      {tiedPages.length > 0 && onOpenPage && (
-        <div className="country-detail__block">
-          <p className="location-panel__section-label">People, creatures &amp; lore of this land</p>
-          <div className="country-detail__entries-grid">
-            {tiedPages.map((t) => (
-              <button
-                key={`${t.kind}-${t.id}`}
-                className="codex-card codex-card--link"
-                onClick={() => onOpenPage(t)}
-              >
-                <div className="codex-card__body">
-                  <p className="codex-card__title">{t.name}</p>
-                  <span className="codex-card__entry-link">Lore ↗</span>
-                </div>
+        <div className="country-detail__divider" />
+
+        {!loaded && <p className="country-detail__loading">Consulting the codex…</p>}
+
+        {loaded && images.length > 0 && <ImageGallery images={images} />}
+
+        {loaded && locationData.description && (
+          <p className="country-detail__description">{locationData.description}</p>
+        )}
+
+        {loaded && bodyText && <Prose>{bodyText}</Prose>}
+
+        {loaded && <CardGrid label="Notable Figures" items={figures} portrait onOpenPage={onOpenPage} onLightbox={setLightbox} excludeCountryId={country.id} />}
+        {loaded && <CardGrid label="Notable Places" items={notablePlaces} onOpenPage={onOpenPage} onLightbox={setLightbox} excludeCountryId={country.id} />}
+        {loaded && <CardGrid label="Notable Creatures" items={notableCreatures} portrait onOpenPage={onOpenPage} onLightbox={setLightbox} excludeCountryId={country.id} />}
+        {loaded && <CardGrid label="Notable Items" items={notableItems} onOpenPage={onOpenPage} onLightbox={setLightbox} excludeCountryId={country.id} />}
+
+        {loaded && !mainVideo && relatedVideos.length === 0 && images.length === 0 && !bodyText && (
+          <p className="country-detail__empty">Details coming soon.</p>
+        )}
+      </article>
+
+      <aside className="reader__rail">
+        <ContextRail
+          headings={headings}
+          related={tiedPages}
+          featuredIn={adventuresHere}
+          videos={railVideos}
+          onVideoSelect={onVideoSelect}
+          onOpenPage={onOpenPage}
+          sources={loaded ? (sourcesBySlug[toSlug(country.name)] ?? sourcesBySlug[country.id]) : null}
+          actions={
+            <>
+              <button className="country-detail__map-btn" onClick={() => onPinSelect(country.id)}>
+                View on Map ↗
               </button>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {loaded && mainVideo && (
-        <div className="country-detail__block">
-          <p className="location-panel__section-label">Chronicle</p>
-          <button
-            className="location-panel__watch-btn"
-            onClick={() => onVideoSelect(mainVideo)}
-            aria-label={`Watch ${mainVideo.title}`}
-          >
-            <img
-              src={`https://img.youtube.com/vi/${mainVideo.id}/mqdefault.jpg`}
-              alt={mainVideo.title}
-              loading="lazy"
-            />
-            <div className="location-panel__watch-overlay">
-              <span className="location-panel__watch-play">▶</span>
-              <span className="location-panel__watch-label">Watch</span>
-            </div>
-          </button>
-        </div>
-      )}
-
-      {loaded && relatedVideos.length > 0 && (
-        <div className="country-detail__block">
-          <p className="location-panel__section-label">Related Videos</p>
-          <div className="location-panel__video-strip">
-            {relatedVideos.map((video) => (
-              <button
-                key={video.id}
-                className="location-panel__video-thumb"
-                onClick={() => onVideoSelect(video)}
-                title={video.name}
-              >
-                <img
-                  src={`https://img.youtube.com/vi/${video.id}/mqdefault.jpg`}
-                  alt={video.name}
-                  loading="lazy"
-                />
-                <div className="location-panel__video-thumb-overlay">▶</div>
-                <span className="location-panel__video-thumb-label">{video.name}</span>
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {loaded && !mainVideo && relatedVideos.length === 0 && images.length === 0 && !bodyText && (
-        <p className="country-detail__empty">Details coming soon.</p>
-      )}
-
-      {loaded && <SourceCredit sources={sourcesBySlug[toSlug(country.name)] ?? sourcesBySlug[country.id]} />}
+              <PageActions target={{ kind: "country", id: country.id, name: country.name }} />
+            </>
+          }
+        />
+      </aside>
 
       {lightbox && (
         <Lightbox images={lightbox} startIdx={0} onClose={() => setLightbox(null)} />
@@ -432,16 +383,21 @@ export function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPag
   // Some entry pages (e.g. the flying-island Caranor) carry a YAML frontmatter
   // block of notable figures/places/items, like country pages do. Parse and
   // strip it so the raw YAML never renders, and surface the cards below.
-  const { images, bodyText, figures, notablePlaces, notableItems } = useMemo(() => {
+  const { images, bodyText, headings, figures, notablePlaces, notableItems } = useMemo(() => {
     const fm = markdown && markdown.startsWith("---")
       ? markdown.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/)
       : null;
     let meta = {};
     if (fm) { try { meta = yaml.load(fm[1]) ?? {}; } catch { meta = {}; } }
     const body = fm ? fm[2] : (markdown ?? "");
+    const bodyText = body ? stripImages(body).replace(/^#[^\n]*\n/, "").trim() : "";
     return {
       images: body ? extractImages(body) : [],
-      bodyText: body ? stripImages(body).replace(/^#[^\n]*\n/, "").trim() : "",
+      bodyText,
+      // Derived from the raw text rather than collected while rendering, so the
+      // contents list is ready on the first paint and doesn't depend on render
+      // order or run twice under StrictMode.
+      headings: extractHeadings(bodyText),
       figures: meta.figures ?? [],
       notablePlaces: meta.places ?? [],
       notableItems: meta.items ?? [],
@@ -533,200 +489,90 @@ export function EntryDetail({ entry, onVideoSelect, onBack, backLabel, onOpenPag
     return { featuredIn, myThemes, subPages, related, referencedBy, mapPins };
   }, [entry.id, entry.name]);
 
+  // The chronicle video for this page, plus any related ones, all shown together
+  // in the rail rather than as two separate blocks in the reading flow.
+  const railVideos = [
+    ...(loaded && !entry.noVideo ? [{ id: entry.id, name: `${entry.name} (chronicle)` }] : []),
+    ...relatedVideos,
+  ];
+
   return (
-    <div className="country-detail">
-      {onBack && (
-        <button className="country-detail__back" onClick={onBack}>
-          ← Back to {backLabel}
-        </button>
-      )}
-      <div className="country-detail__header">
-        <div className="country-detail__header-text">
-          <p className="country-detail__eyebrow">{eyebrow}</p>
-          <h2 className="country-detail__name">{entry.name}</h2>
-        </div>
-        <div className="country-detail__header-actions">
-          <PageActions target={{ kind: "entry", id: entry.id, name: entry.name }} />
-        </div>
-      </div>
-
-      <div className="country-detail__divider" />
-
-      {(myThemes.length > 0 || mapPins.length > 0) && (
-        <div className="country-detail__meta">
-          {myThemes.map((id) => (
-            <button key={id} className="codex-tag" onClick={() => onThemeSelect?.(id)}>
-              {themeLabel[id]}
-            </button>
-          ))}
-          {mapPins.map((p) => (
-            <button
-              key={p.id}
-              className="codex-tag codex-tag--map"
-              onClick={() => onPinSelect?.(p.id)}
-            >
-              ◈ {p.name} on the map
-            </button>
-          ))}
-        </div>
-      )}
-
-      {!loaded && <p className="country-detail__loading">Consulting the codex…</p>}
-
-      {loaded && galleryImages.length > 0 && <ImageGallery images={galleryImages} />}
-
-      {loaded && bodyText && (
-        <div className="country-detail__body">
-          <ReactMarkdown>{bodyText}</ReactMarkdown>
-        </div>
-      )}
-
-      {loaded && <CardGrid label="Notable Figures" items={figures} portrait onOpenPage={onOpenPage} onLightbox={setLightbox} />}
-      {loaded && <CardGrid label="Notable Places" items={notablePlaces} onOpenPage={onOpenPage} onLightbox={setLightbox} />}
-      {loaded && <CardGrid label="Notable Items" items={notableItems} onOpenPage={onOpenPage} onLightbox={setLightbox} />}
-
-      {loaded && !bodyText && galleryImages.length === 0 && (
-        <p className="country-detail__empty">
-          {entry.noVideo ? "Lore entry coming soon." : "Lore entry coming soon — watch the chronicle below."}
-        </p>
-      )}
-
-      {loaded && !entry.noVideo && (
-        <div className="country-detail__block">
-          <p className="location-panel__section-label">Chronicle</p>
-          <button
-            className="location-panel__watch-btn"
-            onClick={() => onVideoSelect(entry)}
-            aria-label={`Watch ${entry.name}`}
-          >
-            <img
-              src={`https://img.youtube.com/vi/${entry.id}/mqdefault.jpg`}
-              alt={entry.name}
-              loading="lazy"
-            />
-            <div className="location-panel__watch-overlay">
-              <span className="location-panel__watch-play">▶</span>
-              <span className="location-panel__watch-label">Watch</span>
-            </div>
+    <div className="reader">
+      <article className="reader__leaf framed">
+        {onBack && (
+          <button className="country-detail__back" onClick={onBack}>
+            ← Back to {backLabel}
           </button>
-        </div>
-      )}
-
-      {subPages.length > 0 && onOpenPage && (
-        <div className="country-detail__block">
-          <p className="location-panel__section-label">Sub-pages</p>
-          <div className="country-detail__entries-grid">
-            {subPages.map((t) => {
-              const slug = toSlug(t.name);
-              const choice = pickEntryImage(slug, imgSalt);
-              const img = choice?.src ?? entryImages[slug] ?? null;
-              const cls = `codex-card codex-card--link${choice ? orientClass(choice) : portraitSlugs.has(slug) ? " codex-card--portrait" : ""}`;
-              return (
-                <button key={`${t.kind}-${t.id}`} className={cls} onClick={() => onOpenPage(t)}>
-                  <div className="codex-card__image-wrap">
-                    <CardImage src={img} alt={t.name} />
-                  </div>
-                  <div className="codex-card__body">
-                    <p className="codex-card__title">{t.name}</p>
-                    <span className="codex-card__entry-link">View more ↗</span>
-                  </div>
-                </button>
-              );
-            })}
+        )}
+        <div className="country-detail__header">
+          <div className="country-detail__header-text">
+            <p className="country-detail__eyebrow">{eyebrow}</p>
+            <h2 className="country-detail__name">{entry.name}</h2>
           </div>
         </div>
-      )}
 
-      {related.length > 0 && onOpenPage && (
-        <div className="country-detail__block">
-          <p className="location-panel__section-label">Related</p>
-          <div className="country-detail__entries-grid">
-            {related.map((t) => (
-              <button
-                key={`${t.kind}-${t.id}`}
-                className="codex-card codex-card--link"
-                onClick={() => onOpenPage(t)}
-              >
-                <div className="codex-card__body">
-                  <p className="codex-card__title">{t.name}</p>
-                  <span className="codex-card__entry-link">
-                    {t.kind === "adventure" ? "Adventure" : t.kind === "country" ? "Land" : "Lore"} ↗
-                  </span>
-                </div>
-              </button>
-            ))}
+        <div className="country-detail__divider" />
+
+        {!loaded && <p className="country-detail__loading">Consulting the codex…</p>}
+
+        {loaded && galleryImages.length > 0 && <ImageGallery images={galleryImages} />}
+
+        {loaded && bodyText && <Prose>{bodyText}</Prose>}
+
+        {loaded && <CardGrid label="Notable Figures" items={figures} portrait onOpenPage={onOpenPage} onLightbox={setLightbox} />}
+        {loaded && <CardGrid label="Notable Places" items={notablePlaces} onOpenPage={onOpenPage} onLightbox={setLightbox} />}
+        {loaded && <CardGrid label="Notable Items" items={notableItems} onOpenPage={onOpenPage} onLightbox={setLightbox} />}
+
+        {loaded && !bodyText && galleryImages.length === 0 && (
+          <p className="country-detail__empty">
+            {entry.noVideo ? "Lore entry coming soon." : "Lore entry coming soon - watch the chronicle in the margin."}
+          </p>
+        )}
+
+        {loaded && subPages.length > 0 && onOpenPage && (
+          <div className="country-detail__block">
+            <p className="location-panel__section-label">Sub-pages</p>
+            <div className="country-detail__entries-grid">
+              {subPages.map((t) => {
+                const slug = toSlug(t.name);
+                const choice = pickEntryImage(slug, imgSalt);
+                const img = choice?.src ?? entryImages[slug] ?? null;
+                const cls = `codex-card codex-card--link${choice ? orientClass(choice) : portraitSlugs.has(slug) ? " codex-card--portrait" : ""}`;
+                return (
+                  <button key={`${t.kind}-${t.id}`} className={cls} onClick={() => onOpenPage(t)}>
+                    <div className="codex-card__image-wrap">
+                      <CardImage src={img} alt={t.name} />
+                    </div>
+                    <div className="codex-card__body">
+                      <p className="codex-card__title">{t.name}</p>
+                      <span className="codex-card__entry-link">View more ↗</span>
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </article>
 
-      {featuredIn.length > 0 && onOpenPage && (
-        <div className="country-detail__block">
-          <p className="location-panel__section-label">Featured in adventures</p>
-          <div className="country-detail__entries-grid">
-            {featuredIn.map((a) => (
-              <button
-                key={a.id}
-                className="codex-card codex-card--link"
-                onClick={() => onOpenPage({ kind: "adventure", id: a.id })}
-              >
-                <div className="codex-card__body">
-                  <p className="codex-card__title">{a.title}</p>
-                  {a.tagline && <p className="codex-card__summary">{a.tagline}</p>}
-                  <span className="codex-card__entry-link">View more ↗</span>
-                </div>
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {referencedBy.length > 0 && onOpenPage && (
-        <div className="country-detail__block">
-          <p className="location-panel__section-label">Referenced by</p>
-          <div className="country-detail__entries-grid">
-            {referencedBy.map((t) => (
-              <button
-                key={`${t.kind}-${t.id}`}
-                className="codex-card codex-card--link"
-                onClick={() => onOpenPage(t)}
-              >
-                <div className="codex-card__body">
-                  <p className="codex-card__title">{t.name}</p>
-                  <span className="codex-card__entry-link">
-                    {t.kind === "adventure" ? "Adventure" : t.kind === "country" ? "Land" : "Lore"} ↗
-                  </span>
-                </div>
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {relatedVideos.length > 0 && (
-        <div className="country-detail__block">
-          <p className="location-panel__section-label">Related Videos</p>
-          <div className="location-panel__video-strip">
-            {relatedVideos.map((rv) => (
-              <button
-                key={rv.id}
-                className="location-panel__video-thumb"
-                onClick={() => onVideoSelect(rv)}
-                title={rv.name}
-              >
-                <img
-                  src={`https://img.youtube.com/vi/${rv.id}/mqdefault.jpg`}
-                  alt={rv.name}
-                  loading="lazy"
-                />
-                <div className="location-panel__video-thumb-overlay">▶</div>
-                <span className="location-panel__video-thumb-label">{rv.name}</span>
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {loaded && <SourceCredit sources={sourcesBySlug[toSlug(entry.name)]} />}
+      <aside className="reader__rail">
+        <ContextRail
+          headings={headings}
+          themes={myThemes}
+          themeLabel={themeLabel}
+          onThemeSelect={onThemeSelect}
+          mapPins={mapPins}
+          onPinSelect={onPinSelect}
+          related={related}
+          featuredIn={featuredIn}
+          referencedBy={referencedBy}
+          videos={railVideos}
+          onVideoSelect={onVideoSelect}
+          onOpenPage={onOpenPage}
+          sources={loaded ? sourcesBySlug[toSlug(entry.name)] : null}
+          actions={<PageActions target={{ kind: "entry", id: entry.id, name: entry.name }} />}
+        />
+      </aside>
 
       {lightbox && (
         <Lightbox images={lightbox} startIdx={0} onClose={() => setLightbox(null)} />
@@ -743,6 +589,7 @@ export function AdventureDetail({ adventure, onVideoSelect, onOpenPage }) {
   const images = extractImages(md);
   // Strip only a leading H1 (a redundant "# Title"); keep H2 headings like "## Plot".
   const bodyText = stripImages(md).replace(/^# [^\n]*\n/, "").trim();
+  const headings = extractHeadings(bodyText);
   const characters = adventure.characters ?? [];
   const byName = (a, b) => (a.name ?? "").localeCompare(b.name ?? "");
   const npcs = characters.filter((c) => (c.type ?? "npc") !== "creature").sort(byName);
@@ -791,68 +638,48 @@ export function AdventureDetail({ adventure, onVideoSelect, onOpenPage }) {
   );
 
   return (
-    <div className="country-detail">
-      <div className="country-detail__header">
-        <div className="country-detail__header-text">
-          <p className="country-detail__eyebrow">Adventure</p>
-          <h2 className="country-detail__name">{adventure.title}</h2>
-          {adventure.tagline && <p className="country-detail__tagline">"{adventure.tagline}"</p>}
-        </div>
-        <div className="country-detail__header-actions">
-          <PageActions target={{ kind: "adventure", id: adventure.id, name: adventure.title }} />
-        </div>
-      </div>
-
-      <div className="country-detail__divider" />
-
-      {images.length > 0 && <ImageGallery images={images} />}
-
-      {adventure.summary && (
-        <p className="country-detail__description">{adventure.summary}</p>
-      )}
-
-      {bodyText && (
-        <div className="country-detail__body">
-          <ReactMarkdown>{bodyText}</ReactMarkdown>
-        </div>
-      )}
-
-      {sections.length > 0 ? (
-        sections.map(sectionBlock)
-      ) : (
-        <>
-          {grid("NPCs", npcs, true)}
-          {grid("Creatures", creatures, true)}
-          {grid("Places", places)}
-          {grid("Items", items)}
-        </>
-      )}
-
-      {relatedVideos.length > 0 && (
-        <div className="country-detail__block">
-          <p className="location-panel__section-label">Related Videos</p>
-          <div className="location-panel__video-strip">
-            {relatedVideos.map((rv) => (
-              <button
-                key={rv.id}
-                className="location-panel__video-thumb"
-                onClick={() => onVideoSelect(rv)}
-                title={rv.name}
-              >
-                <img
-                  src={`https://img.youtube.com/vi/${rv.id}/mqdefault.jpg`}
-                  alt={rv.name}
-                  loading="lazy"
-                />
-                <div className="location-panel__video-thumb-overlay">▶</div>
-                <span className="location-panel__video-thumb-label">{rv.name}</span>
-              </button>
-            ))}
+    <div className="reader">
+      <article className="reader__leaf framed">
+        <div className="country-detail__header">
+          <div className="country-detail__header-text">
+            <p className="country-detail__eyebrow">Adventure</p>
+            <h2 className="country-detail__name">{adventure.title}</h2>
+            {adventure.tagline && <p className="country-detail__tagline">"{adventure.tagline}"</p>}
           </div>
         </div>
-      )}
 
-      <SourceCredit sources={sourcesBySlug[toSlug(adventure.title)] ?? sourcesBySlug[adventure.id]} />
+        <div className="country-detail__divider" />
+
+        {images.length > 0 && <ImageGallery images={images} />}
+
+        {adventure.summary && (
+          <p className="country-detail__description">{adventure.summary}</p>
+        )}
+
+        {bodyText && <Prose>{bodyText}</Prose>}
+
+        {sections.length > 0 ? (
+          sections.map(sectionBlock)
+        ) : (
+          <>
+            {grid("NPCs", npcs, true)}
+            {grid("Creatures", creatures, true)}
+            {grid("Places", places)}
+            {grid("Items", items)}
+          </>
+        )}
+      </article>
+
+      <aside className="reader__rail">
+        <ContextRail
+          headings={headings}
+          videos={relatedVideos}
+          onVideoSelect={onVideoSelect}
+          onOpenPage={onOpenPage}
+          sources={sourcesBySlug[toSlug(adventure.title)] ?? sourcesBySlug[adventure.id]}
+          actions={<PageActions target={{ kind: "adventure", id: adventure.id, name: adventure.title }} />}
+        />
+      </aside>
 
       {lightbox && (
         <Lightbox images={lightbox} startIdx={0} onClose={() => setLightbox(null)} />

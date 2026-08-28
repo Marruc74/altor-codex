@@ -1,6 +1,8 @@
 /* ============================================================
    THE ALTOR CODEX — Main Stylesheet
-   Aesthetic: Dark Fantasy Manuscript / Forbidden Library
+   Aesthetic: the reading room of a dark-fantasy archive.
+   A cool navy-slate ground, brass hairlines, parchment for anything
+   meant to be read at length.
    Fonts: Cinzel Decorative (display), Cinzel (headings), EB Garamond (body)
    ============================================================ */
 
@@ -8,27 +10,59 @@
 
 /* ─── Variables ──────────────────────────────────────────── */
 :root {
-  --bg:           #0a0807;
-  --bg-surface:   #130f0c;
-  --bg-raised:    #1c1510;
-  --border:       #3a2a1a;
-  --border-light: #4d3820;
-  --gold:         #c8a951;
-  --gold-light:   #e8d5a3;
-  --gold-dim:     #9e7c38;
-  --crimson:      #7a1c1c;
-  --crimson-light:#a33030;
-  --text:         #d4c5b0;
-  --text-muted:   #9a8878;
-  --text-dim:     #907868;
-  --panel-bg:     #0f0c09;
+  /* Ground. Cool and desaturated, so the warm-toned artwork on nearly every
+     page reads warmer by contrast instead of sinking into the background. */
+  --bg:           #0e1319;
+  --bg-surface:   #131a23;
+  --bg-raised:    #1a222d;
+  --panel-bg:     #10161e;
+  --border:       #2c3a4a;
+  --border-light: #3d5063;
+
+  /* Brass. The one accent that carries the whole interface. */
+  --gold:         #c9a961;
+  --gold-light:   #e6d3a3;
+  --gold-dim:     #9a8144;
+
+  /* Crimson, for the brand subtitle and the rare true warning. */
+  --crimson:      #a8322f;
+  --crimson-light:#c4514d;
+
+  --text:         #cdd6e0;
+  --text-muted:   #8b98a8;
+  --text-dim:     #6f7d8d;
+
+  /* Parchment, for the reading surfaces only. */
+  --parchment:      #ede0c4;
+  --parchment-deep: #ddcba6;
+  --ink:            #2a2118;
+  --ink-soft:       #5a4a35;
+
+  /* Channel triplets, so translucent fills can be built from the tokens
+     instead of hardcoding the base colour at six different alphas. */
+  --bg-rgb:   14 19 25;
+  --gold-rgb: 201 169 97;
+
+  /* Aliases kept because call sites already reference them. */
+  --accent:       var(--gold);
+  --text-primary: var(--gold-light);
 
   --font-display: 'Cinzel Decorative', serif;
   --font-heading: 'Cinzel', serif;
   --font-body:    'EB Garamond', serif;
 
+  /* Letter-spacing scale. Small-caps labels are everywhere in this UI and were
+     previously set at fifteen unrelated values. */
+  --tracking-xs: 0.06em;
+  --tracking-sm: 0.1em;
+  --tracking-md: 0.15em;
+  --tracking-lg: 0.22em;
+  --tracking-xl: 0.3em;
+  --tracking-2xl: 0.35em;
+
   --radius:    4px;
-  --navbar-height: 56px;
+  --rail-w:        82px;
+  --navbar-height: 72px;
   --transition: 0.25s ease;
 }
 
@@ -62,9 +96,353 @@ body {
 }
 
 /* ─── App Shell ──────────────────────────────────────────── */
+/* Every page in this app centres itself with `max-width` + `margin: 0 auto` on
+   an inner wrapper, so insetting the shell here re-centres all of them at once -
+   no per-page edits. Anything `position: fixed` has to be inset by hand though;
+   those are gathered under "Fixed-element insets" below. */
 .app {
   min-height: 100vh;
+  padding-left: var(--rail-w);
 }
+
+/* ─── Framed panel ───────────────────────────────────────────
+   The house frame: a hairline box with brass corner marks. Built from gradients
+   on two pseudo-elements so any element can take it without extra markup (the
+   map used to carry four dedicated corner <div>s for this). `--e` picks which
+   edge each pseudo-element paints. */
+.framed {
+  position: relative;
+  isolation: isolate;
+  border: 1px solid var(--border);
+  background: var(--panel-bg);
+}
+
+.framed::before,
+.framed::after {
+  content: '';
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  height: 20px;
+  pointer-events: none;
+  background:
+    linear-gradient(var(--gold-dim) 0 0) left  var(--e) / 20px 2px no-repeat,
+    linear-gradient(var(--gold-dim) 0 0) left  var(--e) / 2px 20px no-repeat,
+    linear-gradient(var(--gold-dim) 0 0) right var(--e) / 20px 2px no-repeat,
+    linear-gradient(var(--gold-dim) 0 0) right var(--e) / 2px 20px no-repeat;
+}
+
+.framed::before { top: -1px;    --e: top; }
+.framed::after  { bottom: -1px; --e: bottom; }
+
+/* Hairline only. For dense grids, where forty ornamented corners stop reading as
+   ornament and start reading as noise. */
+.framed--quiet::before,
+.framed--quiet::after { content: none; }
+
+/* Shared small-caps panel header, with the gradient hairline the section titles
+   already use. */
+.panel-hd {
+  font-family: var(--font-heading);
+  font-size: 0.62rem;
+  letter-spacing: var(--tracking-xl);
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.85rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ─── Side rail ──────────────────────────────────────────── */
+.rail {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: var(--rail-w);
+  z-index: 120;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.9rem 0 1rem;
+  background: var(--panel-bg);
+  border-right: 1px solid var(--border);
+}
+
+.rail__sigil {
+  color: var(--gold);
+  font-size: 1.05rem;
+  line-height: 1;
+  margin-bottom: 0.9rem;
+  flex-shrink: 0;
+}
+
+.rail__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  width: 100%;
+  /* A short viewport scrolls the destinations rather than crushing them into
+     the utilities below. */
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.rail__list::-webkit-scrollbar { display: none; }
+
+.rail__li { width: 100%; }
+/* "More" is a phone affordance; on the rail every destination already fits. */
+.rail__li--more { display: none; }
+
+.rail__tools {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  border-top: 1px solid var(--border);
+}
+
+.rail__item {
+  width: 100%;
+  background: none;
+  border: none;
+  border-left: 2px solid transparent;
+  cursor: pointer;
+  color: var(--text-dim);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.6rem 0.2rem;
+  transition: color var(--transition), background var(--transition);
+}
+
+.rail__item:hover {
+  color: var(--gold-light);
+  background: rgb(var(--gold-rgb) / 0.06);
+}
+
+.rail__item--active {
+  color: var(--gold-light);
+  border-left-color: var(--gold);
+  background: rgb(var(--gold-rgb) / 0.09);
+}
+
+/* Cinzel is a wide face, so the longest label ("Compendium") sets the size here
+   rather than legibility - anything larger overruns the rail. */
+.rail__label {
+  font-family: var(--font-heading);
+  font-size: 0.44rem;
+  letter-spacing: var(--tracking-xs);
+  text-transform: uppercase;
+  line-height: 1.1;
+  text-align: center;
+  max-width: 100%;
+}
+/* The abbreviated label is a phone-only alternative. */
+.rail__label--short { display: none; }
+
+/* The seal at the foot of the rail: a small crimson stone in a brass setting.
+   Purely ornamental, and the counterweight to the sigil at the top. */
+.rail__seal {
+  flex-shrink: 0;
+  margin-top: 0.9rem;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid var(--gold-dim);
+  background:
+    radial-gradient(circle at 38% 33%, var(--crimson-light), var(--crimson) 62%, #4a1210 100%);
+  box-shadow: 0 0 0 3px rgb(var(--gold-rgb) / 0.08);
+}
+
+/* ─── Top bar ────────────────────────────────────────────── */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: var(--rail-w);
+  right: 0;
+  z-index: 100;
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 1.5rem;
+  background: rgb(var(--bg-rgb) / 0.94);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+}
+
+.topbar__brand-h { margin: 0; font: inherit; font-weight: inherit; }
+
+.topbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  user-select: none;
+  text-align: left;
+}
+
+.topbar__sigil {
+  color: var(--gold);
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.topbar__lockup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+}
+
+.topbar__title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-md);
+  text-transform: uppercase;
+  color: var(--gold-light);
+  line-height: 1.1;
+}
+
+.topbar__edition {
+  font-family: var(--font-heading);
+  font-size: 0.52rem;
+  letter-spacing: var(--tracking-xl);
+  text-transform: uppercase;
+  color: var(--crimson-light);
+  line-height: 1;
+}
+
+.topbar__tagline {
+  font-family: var(--font-heading);
+  font-size: 0.46rem;
+  letter-spacing: var(--tracking-lg);
+  text-transform: uppercase;
+  color: var(--text-dim);
+  line-height: 1;
+}
+
+/* The search pill. Promoted from the old ⌕ icon button: search is how you get
+   anywhere in a 689-page archive, so it earns the middle of the bar. */
+.topbar__search {
+  flex: 1;
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.5rem 0.9rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--text-dim);
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.topbar__search:hover {
+  border-color: var(--gold-dim);
+  background: var(--bg-raised);
+}
+
+.topbar__search-icon { color: var(--gold-dim); flex-shrink: 0; }
+
+.topbar__search-text {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-style: italic;
+  flex: 1;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.topbar__kbd {
+  font-family: var(--font-heading);
+  font-size: 0.55rem;
+  letter-spacing: var(--tracking-sm);
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.2rem 0.4rem;
+  flex-shrink: 0;
+}
+
+/* Icon-only search: a phone affordance, hidden on the desktop bar where the
+   full pill is present. */
+.topbar__search-btn {
+  display: none;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: var(--gold-dim);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.topbar__search-btn:hover { border-color: var(--border); color: var(--gold-light); }
+
+/* ─── Contents drawer (below 1100px) ─────────────────────── */
+.contents-toggle {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  color: var(--gold-light);
+  font-family: var(--font-heading);
+  font-size: 0.62rem;
+  letter-spacing: var(--tracking-lg);
+  text-transform: uppercase;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.25rem;
+  cursor: pointer;
+  min-height: 44px;
+}
+
+.contents-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 190;
+  background: rgb(var(--bg-rgb) / 0.72);
+  backdrop-filter: blur(2px);
+}
+
+.compendium-sidebar__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding-bottom: 0.55rem;
+  margin-bottom: 0.9rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.compendium-sidebar__bar .compendium-sidebar__hd {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+/* Only meaningful while the panel is a drawer. */
+.compendium-sidebar__close {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0.4rem;
+}
+.compendium-sidebar__close:hover { color: var(--gold-light); }
+
 
 /* ─── Shared Section Styles ──────────────────────────────── */
 .section-header {
@@ -116,124 +494,9 @@ body {
   min-height: calc(100vh - var(--navbar-height));
 }
 
-/* ─── Navbar ─────────────────────────────────────────────── */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  transition: background var(--transition), border-bottom var(--transition);
-}
-
-.navbar--scrolled {
-  background: rgba(10, 8, 7, 0.92);
-  border-bottom: 1px solid var(--border);
-  backdrop-filter: blur(8px);
-}
-
-.navbar__brand-h {
-  margin: 0;
-  font: inherit;
-  font-weight: inherit;
-  line-height: 0;
-}
-
-.navbar__brand {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  cursor: pointer;
-  user-select: none;
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  color: inherit;
-  font: inherit;
-}
-
-.navbar__sigil {
-  color: var(--gold);
-  font-size: 1rem;
-  animation: spin-slow 12s linear infinite;
-}
-
 @keyframes spin-slow {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
-}
-
-.navbar__title {
-  font-family: var(--font-heading);
-  font-size: 0.85rem;
-  letter-spacing: 0.15em;
-  color: var(--gold-light);
-  font-weight: 600;
-}
-
-.navbar__links {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-}
-
-.navbar__link {
-  background: none;
-  border: none;
-  font-family: var(--font-heading);
-  font-size: 0.72rem;
-  letter-spacing: 0.2em;
-  color: var(--text-muted);
-  cursor: pointer;
-  text-transform: uppercase;
-  padding: 0.25rem 0;
-  position: relative;
-  transition: color var(--transition);
-}
-
-.navbar__link::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: var(--gold);
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform var(--transition);
-}
-
-.navbar__link:hover,
-.navbar__link--active {
-  color: var(--gold-light);
-}
-
-.navbar__link--active::after,
-.navbar__link:hover::after {
-  transform: scaleX(1);
-}
-
-.navbar__burger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 4px;
-}
-
-.navbar__burger span {
-  display: block;
-  width: 22px;
-  height: 1.5px;
-  background: var(--gold);
 }
 
 /* ─── Hero ───────────────────────────────────────────────── */
@@ -320,11 +583,11 @@ body {
   inset: 0;
   background:
     linear-gradient(to bottom,
-      rgba(10,8,7,0.55) 0%,
-      rgba(10,8,7,0.10) 35%,
-      rgba(10,8,7,0.10) 55%,
-      rgba(10,8,7,0.80) 78%,
-      rgba(10,8,7,0.97) 100%
+      rgb(var(--bg-rgb) / 0.55) 0%,
+      rgb(var(--bg-rgb) / 0.10) 35%,
+      rgb(var(--bg-rgb) / 0.10) 55%,
+      rgb(var(--bg-rgb) / 0.80) 78%,
+      rgb(var(--bg-rgb) / 0.97) 100%
     );
   animation: vignette-breathe 7s ease-in-out infinite;
 }
@@ -401,7 +664,7 @@ body {
   display: block;
   margin: 1rem auto 0;
   background: none;
-  border: 1px solid rgba(200, 169, 81, 0.35);
+  border: 1px solid rgb(var(--gold-rgb) / 0.35);
   border-radius: 2px;
   color: var(--gold-dim);
   font-family: var(--font-heading);
@@ -416,9 +679,8 @@ body {
 .hero__surprise:hover {
   color: var(--gold);
   border-color: var(--gold);
-  background: rgba(200, 169, 81, 0.08);
+  background: rgb(var(--gold-rgb) / 0.08);
 }
-
 
 /* ─── Global Search ─────────────────────────────────────── */
 .gs-backdrop {
@@ -587,22 +849,6 @@ body {
 }
 
 /* Navbar search button */
-.navbar__search {
-  background: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  color: var(--text-muted);
-  cursor: pointer;
-  font-size: 1.1rem;
-  padding: 0.2rem 0.45rem;
-  line-height: 1;
-  transition: color 0.15s, border-color 0.15s;
-  flex-shrink: 0;
-}
-.navbar__search:hover {
-  color: var(--gold-light);
-  border-color: var(--border);
-}
 
 /* ─── Timeline Section ──────────────────────────────────── */
 .timeline-section {
@@ -689,7 +935,7 @@ body {
   height: 14px;
   background: var(--gold-dim);
   border-color: var(--gold);
-  box-shadow: 0 0 0 5px rgba(200, 155, 60, 0.12), 0 0 14px rgba(200, 155, 60, 0.25);
+  box-shadow: 0 0 0 5px rgb(var(--gold-rgb) / 0.12), 0 0 14px rgb(var(--gold-rgb) / 0.25);
 }
 
 .timeline-era__period {
@@ -791,7 +1037,7 @@ body {
 .timeline-event__region:hover {
   border-color: var(--gold-dim);
   color: var(--gold-light);
-  background: rgba(200, 169, 81, 0.08);
+  background: rgb(var(--gold-rgb) / 0.08);
 }
 
 .timeline-event__era {
@@ -968,29 +1214,12 @@ body {
   margin: 0 auto;
 }
 
+/* Box, hairline and corner marks come from .framed; this only adds the padding
+   and the slightly lighter fill the map wants. */
 .map-frame {
-  position: relative;
-  isolation: isolate;
-  border: 1px solid var(--border);
   padding: 2.5rem 2rem 3rem;
   background: var(--bg-surface);
 }
-
-/* Ornamental corners */
-.map-corner {
-  position: absolute;
-  width: 28px;
-  height: 28px;
-}
-
-.map-corner--tl { top: -1px; left: -1px;
-  border-top: 2px solid var(--gold-dim); border-left: 2px solid var(--gold-dim); }
-.map-corner--tr { top: -1px; right: -1px;
-  border-top: 2px solid var(--gold-dim); border-right: 2px solid var(--gold-dim); }
-.map-corner--bl { bottom: -1px; left: -1px;
-  border-bottom: 2px solid var(--gold-dim); border-left: 2px solid var(--gold-dim); }
-.map-corner--br { bottom: -1px; right: -1px;
-  border-bottom: 2px solid var(--gold-dim); border-right: 2px solid var(--gold-dim); }
 
 .map-label-top,
 .map-label-bottom {
@@ -1015,7 +1244,7 @@ body {
   left: 10px;
   width: 160px;
   z-index: 1000;
-  border: 1px solid rgba(200, 169, 81, 0.4);
+  border: 1px solid rgb(var(--gold-rgb) / 0.4);
   border-radius: 2px;
   overflow: hidden;
   pointer-events: none;
@@ -1032,14 +1261,8 @@ body {
 .minimap__rect {
   position: absolute;
   border: 1.5px solid var(--gold);
-  background: rgba(200, 169, 81, 0.12);
+  background: rgb(var(--gold-rgb) / 0.12);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4);
-}
-
-.map-svg {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 /* ─── Map Filters ───────────────────────────────────────── */
@@ -1255,123 +1478,11 @@ body {
   text-transform: uppercase;
 }
 
-/* ─── Lore Section ───────────────────────────────────────── */
-.lore-section {
-  padding: 5rem 2rem;
-  position: relative;
-  border-top: 1px solid var(--border);
-}
-
-.lore-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 180px;
-  background: linear-gradient(to bottom, var(--bg-surface), transparent);
-  pointer-events: none;
-}
-
-.lore-grid {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-
-.lore-card {
-  display: flex;
-  background: var(--bg-surface);
-  border: 1px solid var(--border);
-  position: relative;
-  overflow: hidden;
-  transition: border-color var(--transition), transform var(--transition);
-  animation: fade-up 0.6s ease both;
-}
-
-.lore-card:hover {
-  border-color: var(--gold-dim);
-  transform: translateY(-3px);
-}
-
-.lore-card__category-bar {
-  width: 3px;
-  flex-shrink: 0;
-}
-
-.lore-card__inner {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.lore-card__category {
-  font-family: var(--font-heading);
-  font-size: 0.6rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--gold-dim);
-}
-
-.lore-card__title {
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  color: var(--gold-light);
-  font-weight: 600;
-  letter-spacing: 0.03em;
-}
-
-.lore-card__excerpt {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  font-style: italic;
-  line-height: 1.6;
-  flex: 1;
-}
-
-.lore-card__cta {
-  background: none;
-  border: none;
-  padding: 0;
-  font-family: var(--font-heading);
-  font-size: 0.65rem;
-  letter-spacing: 0.15em;
-  color: var(--gold-dim);
-  cursor: pointer;
-  text-align: left;
-  transition: color var(--transition);
-  margin-top: 0.5rem;
-}
-
-.lore-card__cta:hover {
-  color: var(--gold);
-}
-
-.lore-disclaimer {
-  text-align: center;
-  font-family: var(--font-heading);
-  font-size: 0.65rem;
-  letter-spacing: 0.3em;
-  color: var(--text-dim);
-  margin-top: 3rem;
-}
-
 /* ─── Media Section ──────────────────────────────────────── */
 .media-section {
   padding: 5rem 2rem;
   border-top: 1px solid var(--border);
   background: var(--bg-surface);
-}
-
-.chronicles-sections {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 3.5rem;
 }
 
 /* Chronicles uses the Compendium's sidebar layout (.compendium-layout /
@@ -1527,50 +1638,6 @@ body {
   transform: translateY(-3px);
 }
 
-.media-card__embed {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-  overflow: hidden;
-}
-
-.media-card__embed iframe {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  border: none;
-}
-
-.media-card__placeholder {
-  background: linear-gradient(135deg, #0d1520 0%, #0a0c10 100%);
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  border-bottom: 1px solid var(--border);
-}
-
-.media-card__play-btn {
-  width: 48px;
-  height: 48px;
-  border: 1px solid var(--gold-dim);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--gold-dim);
-  font-size: 1rem;
-  opacity: 0.6;
-}
-
-.media-card__placeholder-text {
-  font-family: var(--font-heading);
-  font-size: 0.65rem;
-  letter-spacing: 0.2em;
-  color: var(--text-dim);
-}
-
 .media-card__info {
   padding: 1.25rem;
   display: flex;
@@ -1591,81 +1658,6 @@ body {
   color: var(--text);
   font-weight: 500;
   line-height: 1.4;
-}
-
-.media-card__note {
-  font-size: 0.75rem;
-  color: var(--text-dim);
-  font-style: italic;
-}
-
-.media-card__note code {
-  font-family: monospace;
-  color: var(--gold-dim);
-  font-size: 0.7rem;
-}
-
-/* ─── Lore cards (Chronicles: Places / Locations / Items) ──── */
-.lore-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-
-.lore-card {
-  background: var(--bg-raised);
-  border: 1px solid var(--border);
-  border-left: 2px solid var(--gold-dim);
-  padding: 1.25rem 1.4rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  transition: border-color var(--transition), transform var(--transition);
-  animation: fade-up 0.6s ease both;
-}
-
-.lore-card:hover {
-  border-color: var(--gold-dim);
-  transform: translateY(-3px);
-}
-
-.lore-card__label {
-  font-family: var(--font-heading);
-  font-size: 0.68rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--gold-dim);
-}
-
-.lore-card__title {
-  font-family: var(--font-heading);
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--gold-light);
-  line-height: 1.3;
-}
-
-.lore-card__desc {
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  line-height: 1.55;
-  color: var(--text-muted);
-}
-
-/* A lore card that links to its Compendium page (Places / Locations). */
-.lore-card--link {
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  font: inherit;
-}
-
-.lore-card--link:hover {
-  border-left-color: var(--gold);
-}
-
-.lore-card--link:hover .lore-card__cta {
-  color: var(--gold);
 }
 
 /* ─── Location Panel ─────────────────────────────────────── */
@@ -1976,32 +1968,6 @@ body {
   color: var(--text-dim);
 }
 
-/* ─── Expanded video card (Compendium) ───────────────────── */
-.video-card-expanded {
-  grid-column: 1 / -1;
-  background: var(--bg-raised);
-  border: 1px solid var(--border-light);
-  overflow: hidden;
-  animation: fade-up 0.2s ease;
-}
-
-.video-card-expanded__collapse {
-  background: none;
-  border: none;
-  font-family: var(--font-heading);
-  font-size: 0.62rem;
-  letter-spacing: 0.15em;
-  color: var(--text-dim);
-  cursor: pointer;
-  padding: 0;
-  margin-top: 0.5rem;
-  transition: color var(--transition);
-}
-
-.video-card-expanded__collapse:hover {
-  color: var(--gold-dim);
-}
-
 /* ─── Video Modal ────────────────────────────────────────── */
 .video-modal {
   position: fixed;
@@ -2092,7 +2058,7 @@ body {
   position: relative;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  background: #0a0c10;
+  background: var(--bg-surface);
 }
 
 .media-card__thumbnail img {
@@ -2160,125 +2126,10 @@ body {
   line-height: 1.3;
 }
 
-.video-modal__description-placeholder {
-  font-size: 0.9rem;
-  color: var(--text-dim);
-  font-style: italic;
-  line-height: 1.7;
-  margin-top: 0.25rem;
-}
-
 /* ─── Video Catalog ──────────────────────────────────────── */
 .catalog-section {
   padding: 5rem 2rem;
   border-top: 1px solid var(--border);
-}
-
-.catalog-sticky {
-  position: sticky;
-  top: var(--navbar-height);
-  z-index: 50;
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 2rem;
-}
-
-.catalog-search-wrap {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0.65rem 2rem;
-}
-
-.catalog-nav {
-  display: flex;
-  align-items: stretch;
-  overflow-x: auto;
-  scrollbar-width: none;
-  border-top: 1px solid var(--border);
-}
-
-.catalog-nav::-webkit-scrollbar { display: none; }
-
-.catalog-nav__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.2rem;
-  flex: 1;
-  min-width: 72px;
-  padding: 0.6rem 0.5rem;
-  background: none;
-  border: none;
-  border-right: 1px solid var(--border);
-  color: var(--text-muted);
-  cursor: pointer;
-  transition: background 0.15s, color 0.15s;
-  white-space: nowrap;
-}
-
-.catalog-nav__item:last-child { border-right: none; }
-
-.catalog-nav__item:hover {
-  background: color-mix(in srgb, var(--gold-dim) 10%, var(--bg-surface));
-  color: var(--gold-light);
-}
-
-.catalog-nav__item--active {
-  color: var(--gold-light);
-  background: color-mix(in srgb, var(--gold-dim) 15%, var(--bg-surface));
-}
-
-.catalog-nav__sigil {
-  font-size: 1rem;
-  line-height: 1;
-}
-
-.catalog-nav__label {
-  font-family: var(--font-heading);
-  font-size: 0.58rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.video-section {
-  scroll-margin-top: calc(var(--navbar-height) + 52px);
-}
-
-.catalog-toolbar {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 0.5rem;
-}
-
-.catalog-toggle-all {
-  background: none;
-  border: none;
-  font-family: var(--font-heading);
-  font-size: 0.72rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  cursor: pointer;
-  padding: 0.25rem 0;
-  transition: color 0.15s;
-}
-
-.catalog-toggle-all:hover {
-  color: var(--gold-light);
-}
-
-.catalog-no-results {
-  color: var(--text-muted);
-  font-style: italic;
-  padding: 2rem 0;
-}
-
-.catalog-body {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 3.5rem;
 }
 
 /* ─── Compendium layout ───────────────────────────────────── */
@@ -2291,8 +2142,13 @@ body {
 }
 
 /* Sidebar */
+/* The document's contents. Deliberately a *panel* - filled, bordered, texted -
+   where the app rail beside it is a solid strip of icons, so the two left
+   columns read as two different things rather than one wide slab.
+   Not .framed: this scrolls internally, and absolutely-positioned corner marks
+   would scroll away with the content instead of holding the panel's edges. */
 .compendium-sidebar {
-  width: 240px;
+  width: 250px;
   flex-shrink: 0;
   position: sticky;
   top: calc(var(--navbar-height) + 1.5rem);
@@ -2300,6 +2156,20 @@ body {
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--border-light) transparent;
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  padding: 1rem 0.9rem 1.25rem;
+}
+
+.compendium-sidebar__hd {
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  letter-spacing: var(--tracking-xl);
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  padding-bottom: 0.55rem;
+  margin-bottom: 0.9rem;
+  border-bottom: 1px solid var(--border);
 }
 
 .compendium-search-wrap {
@@ -2479,16 +2349,6 @@ body {
 .compendium-nav__group-hd .compendium-nav__hd-title:hover { color: var(--gold-light); }
 .compendium-nav__group-hd .compendium-nav__hd-title > span:first-child { flex: 1; }
 
-.compendium-nav__group-label {
-  font-family: var(--font-heading);
-  font-size: 0.6rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--text-dim);
-  padding: 0.25rem 0.5rem 0.15rem;
-  margin: 0;
-}
-
 .compendium-nav__list {
   list-style: none;
   display: flex;
@@ -2552,124 +2412,6 @@ body {
 }
 
 /* ─── Responsive ─────────────────────────────────────────── */
-@media (max-width: 700px) {
-  .compendium-layout {
-    flex-direction: column;
-  }
-
-  .compendium-sidebar {
-    width: 100%;
-    position: static;
-    max-height: none;
-  }
-}
-
-/* Section block */
-.video-section__header {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  width: 100%;
-  padding-bottom: 0.75rem;
-  margin-bottom: 0;
-  border: none;
-  border-bottom: 1px solid var(--border);
-  background: none;
-  color: inherit;
-  font: inherit;
-  text-align: left;
-  cursor: pointer;
-}
-
-.video-section__header:hover {
-  border-bottom-color: var(--gold-dim);
-}
-
-.video-section__groups {
-  margin-top: 1.25rem;
-}
-
-.video-section__toggle {
-  margin-left: auto;
-  font-size: 0.75rem;
-  opacity: 0.5;
-}
-
-.video-section__sigil {
-  color: var(--gold-dim);
-  font-size: 0.9rem;
-}
-
-.video-section__title {
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  color: var(--gold-light);
-  text-transform: uppercase;
-  flex: 1;
-}
-
-.video-section__count {
-  font-family: var(--font-heading);
-  font-size: 0.72rem;
-  letter-spacing: 0.2em;
-  color: var(--text-dim);
-  background: var(--bg-raised);
-  border: 1px solid var(--border);
-  padding: 0.15rem 0.5rem;
-}
-
-/* Sub-groups */
-.video-section__groups {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.video-group__header {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  width: 100%;
-  background: none;
-  border: none;
-  border-bottom: 1px solid var(--border);
-  color: inherit;
-  font: inherit;
-  text-align: left;
-  cursor: pointer;
-  padding: 0 0 0.5rem;
-  margin-bottom: 0.75rem;
-  transition: border-color var(--transition);
-}
-
-.video-group__header:hover {
-  border-bottom-color: var(--gold-dim);
-}
-
-.video-group__label {
-  font-family: var(--font-heading);
-  font-size: 0.75rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--gold-dim);
-}
-
-.video-group__count {
-  font-family: var(--font-heading);
-  font-size: 0.72rem;
-  color: var(--text-dim);
-  border: 1px solid var(--border);
-  padding: 0.1rem 0.4rem;
-}
-
-/* Card grid */
-.video-section__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 0.5rem;
-}
 
 /* Individual card */
 .video-card {
@@ -2706,34 +2448,6 @@ body {
   color: var(--gold-light);
 }
 
-.video-card__sub {
-  font-family: var(--font-heading);
-  font-size: 0.58rem;
-  letter-spacing: 0.15em;
-  color: var(--text-dim);
-  text-transform: uppercase;
-}
-
-/* Show more button */
-.video-section__more {
-  margin-top: 0.75rem;
-  background: none;
-  border: 1px solid var(--border);
-  color: var(--gold-dim);
-  font-family: var(--font-heading);
-  font-size: 0.65rem;
-  letter-spacing: 0.2em;
-  padding: 0.5rem 1.5rem;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: border-color var(--transition), color var(--transition);
-}
-
-.video-section__more:hover {
-  border-color: var(--gold);
-  color: var(--gold);
-}
-
 /* ─── Footer ─────────────────────────────────────────────── */
 .footer {
   padding: 3rem 2rem;
@@ -2763,32 +2477,6 @@ body {
   color: var(--text-dim);
   font-style: italic;
   max-width: 400px;
-}
-
-/* ─── Codex Wiki ─────────────────────────────────────────── */
-.codex-section {
-  padding: 5rem 2rem 6rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.codex-controls {
-  position: sticky;
-  top: var(--navbar-height);
-  z-index: 50;
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  padding: 1rem 0 1.25rem;
-  margin-bottom: 1.5rem;
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-}
-
-/* Search bar */
-.codex-search-wrap {
-  position: relative;
-  max-width: 520px;
 }
 
 .codex-search-icon {
@@ -2845,13 +2533,6 @@ body {
   color: var(--text);
 }
 
-/* Tag cloud */
-.codex-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
 .codex-tag {
   padding: 0.3rem 0.75rem;
   background: var(--bg-raised);
@@ -2876,70 +2557,6 @@ body {
   background: color-mix(in srgb, var(--gold-dim) 25%, var(--bg-raised));
   border-color: var(--gold);
   color: var(--gold-light);
-}
-
-/* Active filter bar */
-.codex-filter-bar {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-  padding: 0.6rem 1rem;
-  background: var(--bg-surface);
-  border: 1px solid var(--border);
-  border-radius: 2px;
-}
-
-.codex-filter-chip {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.2rem 0.5rem 0.2rem 0.75rem;
-  background: color-mix(in srgb, var(--gold-dim) 25%, var(--bg-raised));
-  border: 1px solid var(--gold-dim);
-  border-radius: 2px;
-  color: var(--gold-light);
-  font-size: 0.8rem;
-  font-family: var(--font-body);
-}
-
-.codex-filter-chip button {
-  background: none;
-  border: none;
-  color: var(--gold-dim);
-  cursor: pointer;
-  font-size: 0.7rem;
-  padding: 0;
-  line-height: 1;
-  transition: color 0.15s;
-}
-
-.codex-filter-chip button:hover {
-  color: var(--gold-light);
-}
-
-.codex-filter-clear {
-  margin-left: auto;
-  background: none;
-  border: none;
-  color: var(--text-muted);
-  font-family: var(--font-body);
-  font-size: 0.78rem;
-  cursor: pointer;
-  padding: 0.2rem 0;
-  transition: color 0.15s;
-}
-
-.codex-filter-clear:hover {
-  color: var(--text);
-}
-
-/* Entry grid */
-.codex-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
 }
 
 /* Entry card */
@@ -3062,13 +2679,6 @@ body {
   hyphenate-limit-chars: 6 3 2;
 }
 
-.codex-card__tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-  margin-top: 0.25rem;
-}
-
 /* Cards that deep-link to a Peoples/Creatures codex page */
 .codex-card__entry-link {
   font-family: var(--font-body);
@@ -3104,309 +2714,6 @@ body {
 }
 .codex-card__entry-link--btn:hover {
   color: var(--gold-light);
-}
-
-/* Empty state */
-.codex-empty {
-  text-align: center;
-  padding: 4rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.codex-empty__ornament {
-  font-size: 2.5rem;
-  color: var(--text-dim);
-  margin-bottom: 0.5rem;
-}
-
-.codex-empty__text {
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  color: var(--text-muted);
-  letter-spacing: 0.05em;
-}
-
-.codex-empty__sub {
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-  color: var(--text-dim);
-  font-style: italic;
-}
-
-.codex-empty__reset {
-  margin-top: 1rem;
-  background: none;
-  border: 1px solid var(--border);
-  color: var(--text-muted);
-  font-family: var(--font-body);
-  font-size: 0.8rem;
-  padding: 0.4rem 1rem;
-  cursor: pointer;
-  transition: border-color 0.15s, color 0.15s;
-}
-
-.codex-empty__reset:hover {
-  border-color: var(--gold-dim);
-  color: var(--gold-light);
-}
-
-/* Codex slide-in panel */
-.codex-panel {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: min(520px, 100vw);
-  height: 100vh;
-  background: var(--panel-bg);
-  border-left: 1px solid var(--border);
-  z-index: 200;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  animation: slide-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
-  outline: none;
-}
-
-.codex-panel__header {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 1.5rem 1.5rem 1rem;
-}
-
-.codex-panel__ornament {
-  font-size: 1.4rem;
-  color: var(--gold-dim);
-  flex-shrink: 0;
-  margin-top: 0.2rem;
-}
-
-.codex-panel__header-text {
-  flex: 1;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-
-.codex-panel__tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-}
-
-.codex-panel__title {
-  font-family: var(--font-heading);
-  font-size: 1.35rem;
-  color: var(--gold-light);
-  margin: 0;
-  letter-spacing: 0.04em;
-}
-
-.codex-panel__body {
-  flex: 1;
-  overflow-y: auto;
-  padding: 1rem 1.5rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.codex-panel__image {
-  width: 100%;
-  border-radius: 2px;
-  border: 1px solid var(--border);
-}
-
-/* Image carousel (codex entry detail) — fit within the panel, no overflow */
-.codex-carousel {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-
-.codex-carousel__track {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg-raised);
-  border: 1px solid var(--border);
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.codex-carousel__image {
-  display: block;
-  max-width: 100%;
-  max-height: 58vh;
-  width: auto;
-  height: auto;
-  margin: 0 auto;
-}
-
-.codex-carousel__arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(10, 8, 7, 0.62);
-  color: var(--gold-light);
-  border: 1px solid var(--border);
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 1.2rem;
-  line-height: 1;
-}
-
-.codex-carousel__arrow:hover { border-color: var(--gold-dim); }
-.codex-carousel__arrow:first-of-type { left: 0.5rem; }
-.codex-carousel__arrow:last-of-type { right: 0.5rem; }
-.codex-carousel__arrow:disabled { opacity: 0; pointer-events: none; }
-
-.codex-carousel__footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.codex-carousel__caption {
-  font-family: var(--font-body);
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  text-align: center;
-  margin: 0;
-}
-
-.codex-carousel__dots {
-  display: flex;
-  gap: 0.4rem;
-}
-
-.codex-carousel__dot {
-  width: 7px;
-  height: 7px;
-  padding: 0;
-  border: none;
-  border-radius: 50%;
-  background: var(--border-light);
-  cursor: pointer;
-}
-
-.codex-carousel__dot--active { background: var(--gold); }
-
-.codex-panel__content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-}
-
-/* Markdown content */
-.codex-panel__markdown {
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-}
-
-.codex-panel__h2 {
-  font-family: var(--font-heading);
-  font-size: 0.9rem;
-  color: var(--gold);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin: 3.5rem 0 0;
-  padding-bottom: 0.35rem;
-  border-bottom: 1px solid var(--border);
-}
-
-.codex-panel__h3 {
-  font-family: var(--font-heading);
-  font-size: 0.8rem;
-  color: var(--gold-dim);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin: 0.5rem 0 0;
-}
-
-.codex-panel__para {
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  color: var(--text);
-  line-height: 1.75;
-  margin: 0;
-}
-
-.codex-panel__list {
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  color: var(--text);
-  line-height: 1.7;
-  margin: 0;
-  padding-left: 1.4rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.codex-panel__list--ol {
-  list-style-type: decimal;
-}
-
-.codex-panel__li {
-  line-height: 1.6;
-}
-
-.codex-panel__strong {
-  color: var(--gold-light);
-  font-weight: 600;
-}
-
-.codex-panel__em {
-  color: var(--text-muted);
-  font-style: italic;
-}
-
-.codex-panel__hr {
-  border: none;
-  border-top: 1px solid var(--border);
-  margin: 0.5rem 0;
-}
-
-/* Images with captions */
-.codex-panel__figure {
-  margin: 0.5rem 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.codex-panel__image {
-  width: 100%;
-  border-radius: 2px;
-  border: 1px solid var(--border);
-  display: block;
-}
-
-.codex-panel__caption {
-  font-family: var(--font-body);
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  font-style: italic;
-  text-align: center;
-  padding: 0.4rem 0.75rem 0.5rem;
-  background: var(--bg-raised);
-  border: 1px solid var(--border);
-  border-top: none;
-  line-height: 1.4;
 }
 
 /* Image gallery (thumbnails) */
@@ -3536,7 +2843,7 @@ body {
 }
 
 .lightbox__close:hover {
-  color: var(--text-primary, #e8d8b8);
+  color: var(--text-primary);
 }
 
 .lightbox__track {
@@ -3562,7 +2869,7 @@ body {
 }
 
 .lightbox__arrow:hover:not(:disabled) {
-  color: var(--text-primary, #e8d8b8);
+  color: var(--text-primary);
   background: rgba(0, 0, 0, 0.75);
 }
 
@@ -3626,227 +2933,6 @@ body {
 
 .lightbox__dot:hover:not(.lightbox__dot--active) {
   border-color: var(--text-muted);
-}
-
-/* Related entries */
-.codex-panel__related {
-  margin-top: 0.5rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--border);
-}
-
-.codex-panel__related-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.codex-panel__related-card {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.45rem 0.85rem;
-  background: var(--bg-raised);
-  border: 1px solid var(--border);
-  border-radius: 2px;
-  color: var(--text-muted);
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-  cursor: pointer;
-  transition: border-color 0.15s, color 0.15s, background 0.15s;
-}
-
-.codex-panel__related-card:hover {
-  border-color: var(--gold-dim);
-  color: var(--gold-light);
-  background: color-mix(in srgb, var(--gold-dim) 10%, var(--bg-raised));
-}
-
-.codex-panel__related-ornament {
-  color: var(--gold-dim);
-  font-size: 0.75rem;
-}
-
-/* Related videos in codex panel */
-.codex-panel__video-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  margin-top: 0.5rem;
-}
-
-.codex-panel__video-card {
-  display: flex;
-  align-items: stretch;
-  gap: 0;
-  background: var(--bg-raised);
-  border: 1px solid var(--border);
-  border-radius: 2px;
-  padding: 0;
-  cursor: pointer;
-  text-align: left;
-  width: 100%;
-  overflow: hidden;
-  transition: border-color 0.15s;
-}
-
-.codex-panel__video-card:hover {
-  border-color: var(--gold-dim);
-}
-
-.codex-panel__video-thumb {
-  position: relative;
-  flex-shrink: 0;
-  width: 130px;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-}
-
-.codex-panel__video-thumb img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.2s;
-}
-
-.codex-panel__video-card:hover .codex-panel__video-thumb img {
-  transform: scale(1.05);
-}
-
-.codex-panel__video-play {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.35);
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 0.65rem;
-}
-
-.codex-panel__video-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.25rem;
-  padding: 0.6rem 0.75rem;
-  min-width: 0;
-}
-
-.codex-panel__video-group {
-  font-family: var(--font-heading);
-  font-size: 0.65rem;
-  letter-spacing: 0.15em;
-  color: var(--gold-dim);
-  text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.codex-panel__video-name {
-  font-family: var(--font-heading);
-  font-size: 0.82rem;
-  color: var(--text);
-  line-height: 1.3;
-}
-
-/* ─── Countries Section ──────────────────────────────────── */
-.countries-section {
-  padding: 5rem 2rem 6rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.countries-layout {
-  display: flex;
-  gap: 2.5rem;
-  align-items: flex-start;
-}
-
-.countries-sidebar {
-  width: 200px;
-  flex-shrink: 0;
-  position: sticky;
-  top: calc(var(--navbar-height) + 1.5rem);
-  max-height: calc(100vh - var(--navbar-height) - 3rem);
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: var(--border-light) transparent;
-}
-
-.countries-sidebar__group {
-  margin-bottom: 1.75rem;
-}
-
-.countries-sidebar__continent-label {
-  font-family: var(--font-heading);
-  font-size: 0.6rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 0.6rem;
-  padding-bottom: 0.4rem;
-  border-bottom: 1px solid var(--border);
-}
-
-.countries-sidebar__list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
-}
-
-.countries-sidebar__country {
-  background: none;
-  border: none;
-  cursor: pointer;
-  text-align: left;
-  width: 100%;
-  padding: 0.3rem 0.6rem;
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  border-radius: 2px;
-  transition: color 0.15s, background 0.15s;
-}
-
-.countries-sidebar__country:hover {
-  color: var(--text);
-  background: var(--bg-raised);
-}
-
-.countries-sidebar__country--active {
-  color: var(--gold-light);
-  background: var(--bg-raised);
-  border-left: 2px solid var(--gold-dim);
-  padding-left: calc(0.6rem - 2px);
-}
-
-.countries-main {
-  flex: 1;
-  min-width: 0;
-}
-
-.country-detail__prompt {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  min-height: 300px;
-  color: var(--text-dim);
-  font-family: var(--font-body);
-  font-size: 1rem;
-  font-style: italic;
-  border: 1px dashed var(--border);
-  border-radius: 2px;
-}
-
-.country-detail__prompt-ornament {
-  font-size: 2rem;
-  opacity: 0.3;
 }
 
 .country-detail {
@@ -4060,27 +3146,6 @@ body {
 
 /* ─── Responsive ─────────────────────────────────────────── */
 @media (max-width: 640px) {
-  .navbar__links {
-    display: none;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    right: 0;
-    background: rgba(10,8,7,0.97);
-    border-bottom: 1px solid var(--border);
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    gap: 1.5rem;
-  }
-
-  .navbar__links--open {
-    display: flex;
-  }
-
-  .navbar__burger {
-    display: flex;
-  }
 
   .map-frame {
     padding: 1.5rem 0.75rem 2rem;
@@ -4151,35 +3216,6 @@ body {
     max-width: 100%;
   }
 
-  .codex-section {
-    padding: 2.5rem 1rem 3.5rem;
-  }
-
-  .lore-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .countries-layout {
-    flex-direction: column;
-  }
-
-  .countries-sidebar {
-    position: static;
-    width: 100%;
-    max-height: none;
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 1.5rem;
-    margin-bottom: 2rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem 2rem;
-  }
-
-  .countries-sidebar__list {
-    columns: 1;
-  }
-
   .country-detail__entries-grid {
     grid-template-columns: 1fr;
   }
@@ -4228,12 +3264,6 @@ body {
   html { font-size: 19px; }
   .compendium-layout { max-width: 1700px; }
   .compendium-sidebar { width: 280px; }
-  .codex-section,
-  .countries-section,
-  .catalog-body,
-  .catalog-search-wrap,
-  .lore-grid { max-width: 1560px; }
-  .chronicles-sections { max-width: 1300px; }
 }
 
 @media (min-width: 2560px) {
@@ -4241,12 +3271,6 @@ body {
   html { font-size: 21px; }
   .compendium-layout { max-width: 2040px; }
   .compendium-sidebar { width: 320px; }
-  .codex-section,
-  .countries-section,
-  .catalog-body,
-  .catalog-search-wrap,
-  .lore-grid { max-width: 1860px; }
-  .chronicles-sections { max-width: 1500px; }
 }
 
 /* Hub / section browse cards reuse the standard codex-card layout (the same
@@ -4255,6 +3279,214 @@ body {
 .hub-card:disabled { opacity: 0.5; cursor: default; }
 /* Anchor portrait crops to the top so heads/faces aren't cut. */
 .hub-card .codex-card__image { object-position: center top; }
+
+/* ─── Reader ──────────────────────────────────────────────────
+   A compendium page in three parts: the contents tree (the compendium sidebar,
+   outside this grid), the parchment leaf you read, and a rail of everything the
+   page connects to. The rail lives inside .compendium-main rather than beside
+   it, so the landing, hub and gazetteer views - which want the full width - keep
+   it without any conditional layout logic.
+
+   The document scrolls as a whole and both columns are sticky. An
+   independently-scrolling centre pane would look identical and cost a rewrite of
+   the ten window.scrollTo() calls the Compendium relies on. */
+.reader {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* The parchment leaf. Everything meant to be read at length sits on this;
+   navigation and metadata stay on the dark ground around it. */
+.reader__leaf {
+  background: var(--parchment);
+  color: var(--ink);
+  padding: 3rem 3.25rem 3.5rem;
+  min-width: 0;
+  /* The leaf is sized to its own measure rather than stretched to the column,
+     so the page keeps a book's proportions instead of trailing a wide empty
+     margin on large monitors. Centred in the cell, like a sheet on a desk. */
+  max-width: 46rem;
+  margin-inline: auto;
+  /* Inner rule, a hair inside the frame, the way a printed page is ruled. */
+  box-shadow:
+    inset 0 0 0 1px rgb(0 0 0 / 0.08),
+    inset 0 0 0 6px var(--parchment),
+    inset 0 0 0 7px rgb(var(--gold-rgb) / 0.35),
+    0 18px 50px rgb(0 0 0 / 0.45);
+}
+
+/* Ink, not brass, on the parchment - the dark-ground palette would vanish. */
+.reader__leaf .country-detail__body,
+.reader__leaf .country-detail__description { color: var(--ink); }
+
+/* The prose measure is now set by the leaf's own width (see above); the old
+   uncapped rule let the justified column run ~1700px wide on a 2560px monitor. */
+.reader__leaf .country-detail__body { max-width: none; }
+
+.reader__leaf .country-detail__eyebrow { color: var(--ink-soft); }
+
+.reader__leaf .country-detail__name {
+  color: var(--ink);
+  font-family: var(--font-display);
+}
+
+.reader__leaf .country-detail__divider {
+  background: linear-gradient(90deg, rgb(var(--gold-rgb) / 0.6), transparent);
+}
+
+.reader__leaf .country-detail__body h2,
+.reader__leaf .country-detail__body h3 {
+  color: #6b4f1d;
+  border-bottom-color: rgb(0 0 0 / 0.13);
+  /* Clear the fixed top bar when jumped to from the contents list. */
+  scroll-margin-top: calc(var(--navbar-height) + 1.5rem);
+}
+
+.reader__leaf .country-detail__body strong { color: #5c431a; }
+.reader__leaf .country-detail__body a { color: #7a4a12; }
+
+/* Illuminated initial. `:first-of-type` rather than `:first-child` so it still
+   lands when the page opens with a heading, a blockquote or a list. Pages whose
+   opening paragraph is a short lead-in opt out via --no-dropcap. */
+.reader__leaf .country-detail__body > p:first-of-type::first-letter {
+  float: left;
+  font-family: var(--font-display);
+  font-size: 3.4em;
+  line-height: 0.82;
+  padding: 0.08em 0.12em 0 0;
+  margin-right: 0.04em;
+  color: #6b4f1d;
+}
+
+.reader__leaf .country-detail__back {
+  color: var(--ink-soft);
+  border-color: rgb(0 0 0 / 0.15);
+}
+.reader__leaf .country-detail__back:hover { color: var(--ink); }
+
+/* Cards inside the leaf sit on parchment, so they need their own light skin
+   rather than the dark-ground one. */
+.reader__leaf .codex-card {
+  background: rgb(0 0 0 / 0.035);
+  border-color: rgb(0 0 0 / 0.15);
+}
+.reader__leaf .codex-card:hover { border-color: rgb(var(--gold-rgb) / 0.85); }
+.reader__leaf .codex-card__title { color: var(--ink); }
+.reader__leaf .codex-card__summary { color: var(--ink-soft); }
+.reader__leaf .codex-card__entry-link { color: #7a4a12; }
+.reader__leaf .location-panel__section-label { color: var(--ink-soft); }
+.reader__leaf .country-detail__section-title { color: var(--ink); border-bottom-color: rgb(0 0 0 / 0.13); }
+.reader__leaf .country-detail__empty { color: var(--ink-soft); }
+.reader__leaf .image-gallery__thumb { border-color: rgb(0 0 0 / 0.18); }
+
+/* ─── Reader rail ────────────────────────────────────────── */
+.reader__rail {
+  position: sticky;
+  top: calc(var(--navbar-height) + 1.5rem);
+  max-height: calc(100vh - var(--navbar-height) - 3rem);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-light) transparent;
+}
+
+.rail-ctx { display: flex; flex-direction: column; gap: 1.75rem; }
+/* Wraps: a country page carries "View on Map" as well as Save and Link, which
+   together overrun a 300px rail on one line. */
+.rail-ctx__actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.reader__rail .country-detail__header-actions { flex-direction: row; align-items: center; }
+.rail-group__body { display: flex; flex-direction: column; gap: 0.1rem; }
+
+/* A context link. The page cards used elsewhere are horizontal rows with a
+   220px image; in a 300px rail that leaves no room for the title, so these are
+   text-only. */
+.rail-link {
+  background: none;
+  border: none;
+  border-left: 2px solid transparent;
+  text-align: left;
+  cursor: pointer;
+  padding: 0.45rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.rail-link:hover {
+  background: var(--bg-raised);
+  border-left-color: var(--gold-dim);
+}
+
+.rail-link__name {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  color: var(--text);
+  line-height: 1.35;
+}
+
+.rail-link__kind {
+  font-family: var(--font-heading);
+  font-size: 0.56rem;
+  letter-spacing: var(--tracking-md);
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.rail-toc { display: flex; flex-direction: column; }
+
+.rail-toc__item {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 0.3rem 0.6rem;
+  border-left: 2px solid var(--border);
+  line-height: 1.35;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.rail-toc__item:hover { color: var(--gold-light); border-left-color: var(--gold-dim); }
+.rail-toc__item--h3 { padding-left: 1.4rem; font-size: 0.82rem; }
+
+.rail-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+.rail-videos { display: flex; flex-direction: column; gap: 0.6rem; }
+
+.rail-video {
+  position: relative;
+  background: none;
+  border: 1px solid var(--border);
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border-color var(--transition);
+}
+.rail-video:hover { border-color: var(--gold-dim); }
+.rail-video img { width: 100%; display: block; aspect-ratio: 16 / 9; object-fit: cover; }
+
+.rail-video__play {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.1rem;
+  text-shadow: 0 2px 8px rgb(0 0 0 / 0.8);
+}
+
+.rail-video__name {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  padding: 0.4rem 0.5rem;
+  text-align: left;
+  line-height: 1.3;
+}
+
+.rail-ctx__sources { margin-top: -0.5rem; }
 
 /* ─── Breadcrumbs ─────────────────────────────────────────── */
 .breadcrumbs {
@@ -4510,9 +3742,9 @@ body {
 .hub-note {
   margin: 0 0 1.5rem;
   padding: 0.75rem 1rem;
-  border-left: 3px solid var(--accent, #c8a951);
+  border-left: 3px solid var(--accent);
   background: var(--bg-raised);
-  background: color-mix(in srgb, var(--accent, #c8a951) 8%, transparent);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
   border-radius: 2px;
   font-family: var(--font-body);
   font-size: 0.86rem;
@@ -4537,7 +3769,7 @@ body {
   width: 34px;
   height: 34px;
   border: 2px solid var(--border);
-  border-top-color: var(--accent, #c8a951);
+  border-top-color: var(--accent);
   border-radius: 50%;
   animation: page-loader-spin 0.8s linear infinite;
 }
@@ -4553,7 +3785,32 @@ body {
   to { transform: rotate(360deg); }
 }
 
+/* Honour the OS "reduce motion" setting. The page otherwise runs a handful of
+   permanent animations - the hero's ken-burns pan, its flicker and breathing
+   vignette, the grain shift (which repaints ~11x a second, forever), the drifting
+   motes and the spinning sigil - none of which a reader who asked for less motion
+   should have to sit through. Entrance animations are collapsed to their end
+   state rather than removed, so nothing stays invisible. The spinner keeps
+   turning, slowly, because it is the only thing signalling that work is ongoing.
+   EmberCanvas checks the same query in JS and skips its rAF loop entirely. */
 @media (prefers-reduced-motion: reduce) {
+
+  .hero__content,
+  .hero__surprise,
+  .codex-card,
+  .chron-card,
+  .video-modal {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+  }
+
+  .location-panel,
+  .lightbox {
+    animation: none !important;
+  }
+
+  html { scroll-behavior: auto; }
+
   .page-loader__spinner { animation-duration: 2.4s; }
 }
 
@@ -4595,6 +3852,268 @@ body {
 }
 
 .error-boundary__btn:hover {
-  border-color: var(--accent, #c8a951);
-  color: var(--accent, #c8a951);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+
+/* ─── Responsive ladder ───────────────────────────────────────
+   Four steps, each with one job:
+     >=1400  three columns: contents | leaf | context rail
+     <1400   context rail folds under the prose as <details>
+     <1100   contents becomes a drawer
+      <700   rail becomes a bottom tab bar
+   Below that the existing 640px block trims padding further. */
+
+/* Under 1400px there is no room for a third column, so the rail's contents drop
+   below the leaf as disclosure sections. */
+@media (max-width: 1399px) {
+  .reader {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.75rem;
+  }
+
+  .reader__rail {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    max-width: 46rem;
+    margin-inline: auto;
+    width: 100%;
+  }
+
+  /* Stacked, each group is a <details>; the panel headers above them would be
+     redundant with the summary rows. */
+  .rail-ctx { gap: 0.5rem; }
+
+  .rail-group {
+    border: 1px solid var(--border);
+    background: var(--panel-bg);
+  }
+
+  .rail-group__summary {
+    font-family: var(--font-heading);
+    font-size: 0.62rem;
+    letter-spacing: var(--tracking-xl);
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    padding: 0.85rem 1rem;
+    cursor: pointer;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    /* display:flex already suppresses the default triangle in most engines;
+       these make it consistent so the custom chevron is the only marker. */
+    list-style: none;
+  }
+  .rail-group__summary::-webkit-details-marker { display: none; }
+
+  /* Chevron, rotating on open. */
+  .rail-group__summary::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    transform: rotate(45deg) translate(-2px, -2px);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+  .rail-group[open] > .rail-group__summary::after {
+    transform: rotate(225deg) translate(-2px, -2px);
+  }
+
+  .rail-group__summary:hover { color: var(--gold-light); }
+  .rail-group[open] .rail-group__summary { border-bottom: 1px solid var(--border); }
+  .rail-group .rail-group__body { padding: 0.6rem; }
+  .rail-ctx__actions { padding-bottom: 0.25rem; }
+}
+
+/* Contents becomes a drawer. Rail keeps its icons but drops the labels, so the
+   shell gives the reader back ~26px without losing the wayfinding. */
+@media (max-width: 1099px) {
+  :root { --rail-w: 56px; }
+
+  .rail__label { display: none; }
+  .rail__item { padding: 0.7rem 0.2rem; }
+
+  .contents-toggle { display: inline-flex; }
+  .compendium-sidebar__close { display: block; }
+
+  .compendium-sidebar {
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: min(330px, 86vw);
+    max-height: none;
+    /* Off-canvas rather than display:none, so opening it animates and the
+       scroll position inside the tree survives being closed. */
+    transform: translateX(-102%);
+    transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    border-right: 1px solid var(--border-light);
+    padding-top: 1rem;
+  }
+
+  .compendium-sidebar--open { transform: translateX(0); }
+}
+
+/* Phone. The rail becomes a bottom tab bar: a vertical strip costs a fifth of
+   the width here and puts every target where thumbs don't reach. */
+@media (max-width: 699px) {
+  :root { --rail-w: 0px; --navbar-height: 60px; }
+
+  .app { padding-left: 0; padding-bottom: 64px; }
+
+  .rail {
+    inset: auto 0 0 0;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    gap: 0;
+    padding: 0;
+    border-right: none;
+    border-top: 1px solid var(--border);
+    /* Clear the iOS home indicator. */
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
+
+  /* Ornaments and the desktop utility stack have no room on a tab bar. */
+  .rail__sigil,
+  .rail__seal,
+  .rail__tools { display: none; }
+
+  .rail__list {
+    flex-direction: row;
+    width: 100%;
+    overflow: visible;
+    gap: 0;
+  }
+
+  .rail__li { flex: 1; }
+  .rail__li--overflow { display: none; }   /* folded into "More" */
+  .rail__li--more { display: block; flex: 1; }
+
+  .rail__item {
+    border-left: none;
+    border-top: 2px solid transparent;
+    min-height: 56px;
+    justify-content: center;
+    padding: 0.5rem 0.15rem;
+  }
+
+  /* Active state is not colour alone - the brass edge carries it too. */
+  .rail__item--active {
+    border-left-color: transparent;
+    border-top-color: var(--gold);
+  }
+
+  .rail__label { display: none; }
+  .rail__label--short {
+    display: block;
+    font-size: 0.42rem;
+    letter-spacing: var(--tracking-xs);
+  }
+
+  .topbar { left: 0; padding: 0 0.85rem; gap: 0.75rem; }
+  .topbar__search { display: none; }
+  .topbar__search-btn { display: block; margin-left: auto; }
+  .topbar__sigil { font-size: 1.1rem; }
+  .topbar__title { font-size: 0.8rem; }
+  .topbar__tagline { display: none; }
+
+  /* The "More" sheet: destinations that don't fit the tab bar. */
+  .rail-sheet__backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 210;
+    background: rgb(var(--bg-rgb) / 0.72);
+  }
+
+  .rail-sheet {
+    position: fixed;
+    z-index: 220;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.5rem 0.75rem calc(0.75rem + env(safe-area-inset-bottom, 0));
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .rail-sheet__grip {
+    width: 36px;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--border-light);
+    margin: 0.35rem auto 0.75rem;
+  }
+
+  .rail-sheet__item {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    background: none;
+    border: none;
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    text-align: left;
+    padding: 0.85rem 0.75rem;
+    min-height: 48px;
+    cursor: pointer;
+  }
+
+  .rail-sheet__item--active { color: var(--gold-light); }
+  .rail-sheet__item:hover { background: var(--bg-raised); }
+
+  /* Reading pane. Justified text plus hyphenation at ~34ch produces rivers and
+     stranded words - the single worst thing for phone readability - so the
+     measure gets left-aligned here. The parchment and the drop cap stay: they
+     are what makes it feel like a page. */
+  .reader__leaf {
+    padding: 1.5rem 1.15rem 2rem;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 0.4);
+  }
+
+  .reader__leaf .country-detail__body {
+    text-align: left;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+
+  .reader__leaf .country-detail__name { font-size: 1.9rem; }
+
+  /* Bigger tap targets across the nav tree, chips and crumbs. */
+  .compendium-nav__item,
+  .compendium-results__item { min-height: 44px; }
+  .codex-tag { min-height: 36px; display: inline-flex; align-items: center; }
+  .breadcrumbs__crumb { padding: 0.35rem 0; }
+
+  /* The mini-map is unreadable at this width and costs a fetch. */
+  .minimap { display: none; }
+}
+
+/* Corner marks crowd a ~34ch column; the hairline alone carries the frame. */
+@media (max-width: 559px) {
+  .reader__leaf::before,
+  .reader__leaf::after { content: none; }
+  .reader__leaf { padding: 1.25rem 1rem 1.75rem; }
+}
+
+/* ─── Fixed-element insets ───────────────────────────────────
+   Anything `position: fixed` resolves against the viewport, not the inset .app,
+   so a centred overlay lands half a rail-width to the left of the content it is
+   centred over. Must come after the rules it corrects (.gs is defined up in the
+   Global Search section, .video-modal in its own) or source order wins. */
+.gs,
+.video-modal {
+  left: calc(50% + var(--rail-w) / 2);
 }

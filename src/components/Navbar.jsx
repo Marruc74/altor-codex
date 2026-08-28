@@ -1,59 +1,43 @@
-import { useState } from "react";
+import Icon from "./Icon";
 
-const navLinks = [
-  { id: "about",      label: "About"      },
-  { id: "history",    label: "History"    },
-  { id: "map",        label: "Map"        },
-  { id: "chronicles", label: "Chronicles" },
-  { id: "catalog",    label: "Compendium" },
-];
+// The top bar carries identity and search. Section navigation lives in the rail
+// (SideRail), so this no longer duplicates it - on a phone the bar shrinks to
+// the wordmark plus a search button and the rail becomes the bottom tab bar.
 
-export default function Navbar({ activePage, onNavigate, onSearchOpen }) {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const navigate = (id) => {
-    onNavigate(id);
-    setMenuOpen(false);
-  };
-
+export default function Navbar({ onNavigate, onSearchOpen }) {
   return (
-    <nav className="navbar navbar--scrolled">
-      <h1 className="navbar__brand-h">
-        <button className="navbar__brand" onClick={() => navigate(null)} aria-label="The Altor Codex — home">
-          <span className="navbar__sigil" aria-hidden="true">✦</span>
-          <span className="navbar__title">The Altor Codex</span>
+    <header className="topbar">
+      <h1 className="topbar__brand-h">
+        <button
+          className="topbar__brand"
+          onClick={() => onNavigate(null)}
+          aria-label="The Altor Codex — home"
+        >
+          <span className="topbar__sigil" aria-hidden="true">✦</span>
+          <span className="topbar__lockup">
+            <span className="topbar__title">The Altor Codex</span>
+            <span className="topbar__edition">Ereb Altor</span>
+            <span className="topbar__tagline">a Drakar och Demoner archive</span>
+          </span>
         </button>
       </h1>
 
-      <ul id="navbar-links" className={`navbar__links ${menuOpen ? "navbar__links--open" : ""}`}>
-        {navLinks.map((link) => (
-          <li key={link.id}>
-            <button
-              className={`navbar__link ${activePage === link.id ? "navbar__link--active" : ""}`}
-              onClick={() => navigate(link.id)}
-            >
-              {link.label}
-            </button>
-          </li>
-        ))}
-      </ul>
+      <button className="topbar__search" onClick={onSearchOpen}>
+        <Icon name="search" size={18} className="topbar__search-icon" />
+        <span className="topbar__search-text">
+          Search the archive - places, peoples, creatures, chronicles…
+        </span>
+        <kbd className="topbar__kbd">Ctrl K</kbd>
+      </button>
 
       <button
-        className="navbar__search"
+        className="topbar__search-btn"
         onClick={onSearchOpen}
         aria-label="Search"
         title="Search (Ctrl+K)"
-      >⌕</button>
-
-      <button
-        className="navbar__burger"
-        onClick={() => setMenuOpen((o) => !o)}
-        aria-label="Toggle menu"
-        aria-expanded={menuOpen}
-        aria-controls="navbar-links"
       >
-        <span /><span /><span />
+        <Icon name="search" size={20} />
       </button>
-    </nav>
+    </header>
   );
 }
