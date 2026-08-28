@@ -9,6 +9,7 @@ import { themes, slugsByTheme, themeLabel } from "../data/compendiumTags";
 import { resolvePage, geoPlaces } from "../data/compendiumPages";
 import { useRecents, useBookmarks, useSeenKeys } from "../lib/library.js";
 import { useModal } from "../lib/useModal";
+import { useMediaQuery } from "../lib/useMediaQuery";
 import Gazetteer from "./Gazetteer";
 import Icon from "./Icon";
 import { SavedShelf, RecentList, NeighbourStrip } from "./SidebarShelf";
@@ -32,6 +33,11 @@ export default function Compendium({
   // Which face of the contents panel is showing: the tree, the reader's saved
   // pages, or what they've just been reading.
   const [sidebarTab, setSidebarTab] = useState("contents");
+  // The pinned head costs whatever it contains. On a short window the Nearby
+  // thumbnails (~135px of it) move down into the scrolling body, so the tree
+  // keeps a usable height while the tabs and search stay put. This has to be a
+  // JS decision because it moves the node between parents; CSS cannot.
+  const roomForNearbyInHead = useMediaQuery("(min-height: 760px)");
   // One random salt per Compendium mount, so the landing's section cards show a
   // random representative image (not always the first) and re-roll on reload.
   const [imgSalt] = useState(() => Math.floor(Math.random() * 0x7fffffff));
@@ -454,68 +460,78 @@ export default function Compendium({
             }
           }}
         >
-          <div className="compendium-sidebar__bar">
-            {/* Toggle buttons rather than role="tab": the full tab pattern owes
-                the user arrow-key navigation between tabs and a labelled
-                tabpanel, and announcing "tab" without those is a promise the
-                widget doesn't keep. aria-pressed describes what these actually
-                are. */}
-            <div className="sidebar-tabs">
-              {[
-                ["contents", "Contents"],
-                ["saved", `Saved${bookmarks.length ? ` ${bookmarks.length}` : ""}`],
-                ["recent", "Recent"],
-              ].map(([id, label]) => (
-                <button
-                  key={id}
-                  aria-pressed={sidebarTab === id}
-                  className={`sidebar-tab ${sidebarTab === id ? "sidebar-tab--active" : ""}`}
-                  onClick={() => setSidebarTab(id)}
-                >
-                  {label}
-                </button>
-              ))}
+          {/* Head: pinned. The tab strip, the search box and your position in
+              the run of pages are things you reach for *while* moving through
+              the tree, so they must not scroll away with it. Only the tree
+              below scrolls. */}
+          <div className="compendium-sidebar__head">
+            <div className="compendium-sidebar__bar">
+              {/* Toggle buttons rather than role="tab": the full tab pattern owes
+                  the user arrow-key navigation between tabs and a labelled
+                  tabpanel, and announcing "tab" without those is a promise the
+                  widget doesn't keep. aria-pressed describes what these actually
+                  are. */}
+              <div className="sidebar-tabs">
+                {[
+                  ["contents", "Contents"],
+                  ["saved", `Saved${bookmarks.length ? ` ${bookmarks.length}` : ""}`],
+                  ["recent", "Recent"],
+                ].map(([id, label]) => (
+                  <button
+                    key={id}
+                    aria-pressed={sidebarTab === id}
+                    className={`sidebar-tab ${sidebarTab === id ? "sidebar-tab--active" : ""}`}
+                    onClick={() => setSidebarTab(id)}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+              <button
+                className="compendium-sidebar__close"
+                onClick={() => setDrawerOpen(false)}
+                aria-label="Close contents"
+              >
+                <Icon name="close" size={16} />
+              </button>
             </div>
-            <button
-              className="compendium-sidebar__close"
-              onClick={() => setDrawerOpen(false)}
-              aria-label="Close contents"
-            >
-              <Icon name="close" size={16} />
-            </button>
+
+            {sidebarTab === "contents" && (
+              <div className="compendium-search-wrap">
+                <span className="codex-search-icon">⌕</span>
+                <input
+                  className="codex-search"
+                  type="search"
+                  placeholder="Search…"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  aria-label="Search compendium"
+                />
+                {query && (
+                  <button
+                    className="codex-search-clear"
+                    onClick={() => setQuery("")}
+                    aria-label="Clear"
+                  >✕</button>
+                )}
+              </div>
+            )}
+
+            {sidebarTab === "contents" && !searchResults && roomForNearbyInHead && (
+              <NeighbourStrip neighbours={neighbours} onOpen={openEntry} />
+            )}
           </div>
 
+          {/* Body: the only part that scrolls. */}
+          <div className="compendium-sidebar__body">
+          {sidebarTab === "contents" && !searchResults && !roomForNearbyInHead && (
+            <NeighbourStrip neighbours={neighbours} onOpen={openEntry} />
+          )}
           {sidebarTab === "saved" && (
             <SavedShelf bookmarks={bookmarks} onOpen={openPage} />
           )}
           {sidebarTab === "recent" && (
             <RecentList recents={recents} onOpen={openPage} />
-          )}
-
-          <div className="compendium-search-wrap" hidden={sidebarTab !== "contents"}>
-            <span className="codex-search-icon">⌕</span>
-            <input
-              className="codex-search"
-              type="search"
-              placeholder="Search…"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              aria-label="Search compendium"
-            />
-            {query && (
-              <button
-                className="codex-search-clear"
-                onClick={() => setQuery("")}
-                aria-label="Clear"
-              >✕</button>
-            )}
-          </div>
-
-          {/* Above the tree, not below it: the tree runs to ~2300px with the
-              creature groups open, and a position indicator you have to scroll
-              past 273 rows to find is no indicator at all. */}
-          {sidebarTab === "contents" && !searchResults && (
-            <NeighbourStrip neighbours={neighbours} onOpen={openEntry} />
           )}
 
           {sidebarTab === "contents" && (searchResults ? (
@@ -793,6 +809,7 @@ export default function Compendium({
               })}
             </nav>
           ))}
+          </div>
         </aside>
 
         {/* ── Right panel ── */}
