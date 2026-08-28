@@ -11,6 +11,7 @@ import { useRecents, useBookmarks, useSeenKeys } from "../lib/library.js";
 import { useModal } from "../lib/useModal";
 import Gazetteer from "./Gazetteer";
 import Icon from "./Icon";
+import { SavedShelf, RecentList, NeighbourStrip } from "./SidebarShelf";
 
 // ── Compendium ────────────────────────────────────────────────────────────
 export default function Compendium({
@@ -28,6 +29,9 @@ export default function Compendium({
   const [drawerOpen, setDrawerOpen] = useState(false);
   const sidebarRef = useRef(null);
   useModal(sidebarRef, () => setDrawerOpen(false), drawerOpen);
+  // Which face of the contents panel is showing: the tree, the reader's saved
+  // pages, or what they've just been reading.
+  const [sidebarTab, setSidebarTab] = useState("contents");
   // One random salt per Compendium mount, so the landing's section cards show a
   // random representative image (not always the first) and re-roll on reload.
   const [imgSalt] = useState(() => Math.floor(Math.random() * 0x7fffffff));
@@ -281,6 +285,27 @@ export default function Compendium({
     return [...matchCountries, ...matchEntries, ...matchAdventures];
   }, [query]);
 
+  // The pages either side of the open one, within its own group - so a reader
+  // working through the Undead can step to the next one without going back to
+  // the tree. Only entries have a stable ordered run like this; countries sit in
+  // continent groups built elsewhere and adventures are a flat list, so both
+  // return null rather than showing a misleading position.
+  const neighbours = useMemo(() => {
+    if (!selectedEntry) return null;
+    const groups = videosBySection[selectedEntry.section] ?? [];
+    const g = groups.find((grp) => (grp.group ?? null) === (selectedEntry.group ?? null));
+    if (!g) return null;
+    const i = g.videos.findIndex((v) => v.id === selectedEntry.id);
+    if (i < 0) return null;
+    return {
+      prev: g.videos[i - 1] ?? null,
+      current: g.videos[i],
+      next: g.videos[i + 1] ?? null,
+      index: i,
+      total: g.videos.length,
+    };
+  }, [selectedEntry]);
+
   // Activate a single theme (from an entry page's theme chip): clear the search
   // and any open page, switch the landing to the theme browser, and show it.
   const selectTheme = useCallback((id) => {
@@ -430,7 +455,27 @@ export default function Compendium({
           }}
         >
           <div className="compendium-sidebar__bar">
-            <p className="compendium-sidebar__hd">Contents</p>
+            {/* Toggle buttons rather than role="tab": the full tab pattern owes
+                the user arrow-key navigation between tabs and a labelled
+                tabpanel, and announcing "tab" without those is a promise the
+                widget doesn't keep. aria-pressed describes what these actually
+                are. */}
+            <div className="sidebar-tabs">
+              {[
+                ["contents", "Contents"],
+                ["saved", `Saved${bookmarks.length ? ` ${bookmarks.length}` : ""}`],
+                ["recent", "Recent"],
+              ].map(([id, label]) => (
+                <button
+                  key={id}
+                  aria-pressed={sidebarTab === id}
+                  className={`sidebar-tab ${sidebarTab === id ? "sidebar-tab--active" : ""}`}
+                  onClick={() => setSidebarTab(id)}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
             <button
               className="compendium-sidebar__close"
               onClick={() => setDrawerOpen(false)}
@@ -439,7 +484,15 @@ export default function Compendium({
               <Icon name="close" size={16} />
             </button>
           </div>
-          <div className="compendium-search-wrap">
+
+          {sidebarTab === "saved" && (
+            <SavedShelf bookmarks={bookmarks} onOpen={openPage} />
+          )}
+          {sidebarTab === "recent" && (
+            <RecentList recents={recents} onOpen={openPage} />
+          )}
+
+          <div className="compendium-search-wrap" hidden={sidebarTab !== "contents"}>
             <span className="codex-search-icon">⌕</span>
             <input
               className="codex-search"
@@ -458,7 +511,14 @@ export default function Compendium({
             )}
           </div>
 
-          {searchResults ? (
+          {/* Above the tree, not below it: the tree runs to ~2300px with the
+              creature groups open, and a position indicator you have to scroll
+              past 273 rows to find is no indicator at all. */}
+          {sidebarTab === "contents" && !searchResults && (
+            <NeighbourStrip neighbours={neighbours} onOpen={openEntry} />
+          )}
+
+          {sidebarTab === "contents" && (searchResults ? (
             /* ── Search results ── */
             <div className="compendium-results">
               {searchResults.length === 0 ? (
@@ -732,7 +792,7 @@ export default function Compendium({
                 );
               })}
             </nav>
-          )}
+          ))}
         </aside>
 
         {/* ── Right panel ── */}
