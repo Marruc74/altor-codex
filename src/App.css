@@ -63,6 +63,11 @@
   --radius:    4px;
   --rail-w:        82px;
   --navbar-height: 72px;
+  /* Where page content begins, below the fixed top bar. One token because a
+     sticky panel's offset must equal its own resting position - if the two
+     differ by even a few pixels the panel visibly hops the instant you start
+     scrolling, and hops back when you return to the top. */
+  --page-top: calc(var(--navbar-height) + 1.5rem);
   --transition: 0.25s ease;
 }
 
@@ -2130,9 +2135,12 @@ body {
 /* The bottom padding lives on .compendium-layout instead of here - see the note
    there. Visually identical; structurally it is the difference between the
    sticky panel having room to stand and being shoved under the top bar. */
+/* The top padding is --page-top, not a round 5rem, so the contents panel's
+   resting position matches the offset it sticks to exactly. The border-top this
+   used to carry was never visible - the section starts at y=0, underneath the
+   fixed bar - and its 1px was enough to put the two out of step. */
 .catalog-section {
-  padding: 5rem 2rem 0;
-  border-top: 1px solid var(--border);
+  padding: var(--page-top) 2rem 0;
 }
 
 /* ─── Compendium layout ───────────────────────────────────── */
@@ -2154,8 +2162,8 @@ body {
   width: 250px;
   flex-shrink: 0;
   position: sticky;
-  top: calc(var(--navbar-height) + 1.5rem);
-  max-height: calc(100vh - var(--navbar-height) - 3rem);
+  top: var(--page-top);
+  max-height: calc(100vh - var(--page-top) - 1.5rem);
   background: var(--panel-bg);
   border: 1px solid var(--border);
   /* Two regions, only one of which scrolls - so the padding lives on the
@@ -3596,7 +3604,7 @@ body {
   color: #6b4f1d;
   border-bottom-color: rgb(0 0 0 / 0.13);
   /* Clear the fixed top bar when jumped to from the contents list. */
-  scroll-margin-top: calc(var(--navbar-height) + 1.5rem);
+  scroll-margin-top: var(--page-top);
 }
 
 .reader__leaf .country-detail__body strong { color: #5c431a; }
@@ -3639,8 +3647,8 @@ body {
 /* ─── Reader rail ────────────────────────────────────────── */
 .reader__rail {
   position: sticky;
-  top: calc(var(--navbar-height) + 1.5rem);
-  max-height: calc(100vh - var(--navbar-height) - 3rem);
+  top: var(--page-top);
+  max-height: calc(100vh - var(--page-top) - 1.5rem);
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--border-light) transparent;
