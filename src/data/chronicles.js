@@ -81,7 +81,13 @@ export const LORE_GROUPS = [
       { label: "The cold plot", name: "Liella", link: "The Unicorn Horn", description: "Twelve years old, last of the Delitha founder's bloodline, taken by the Zeeri because she is bound to the relic. She dreams the same cold corridor Kaelene does, though they share no blood, proof the dream runs through the thing on the other side. She refuses the open door from the inside and saves herself." },
       { label: "Kandra", name: "Larm Legast", link: "The Unicorn Horn", description: "The long-dead smith and dwarf-friend who carried the relic out of a burning temple a generation ago and hid it in dwarf-built catacombs beneath his own house in Kandra, behind three scattered keys. Sixteen years in the ground before the story opens." },
       { label: "Kandra", name: "Liva", link: "The Unicorn Horn", description: "Larm's daughter, a gem-cutter in Kandra, who keeps the first key without knowing what it is. The Zeeri seize her to force the trio's hand, and Bram cuts her free at the climax." },
-      { label: "The Zeeri", name: "Sarn", link: "The Unicorn Horn", description: "The Zeeri priest who works the finished Hollow Mark at the foot of the buried pillar to force the door open, the book's antagonist on the ground. He is taken by the door he opened as it shut." },
+      { label: "The Zeeri", name: "Sarn", link: "The Unicorn Horn", image: "/compendium/Chronicles/sarn.jpg", description: "The Zeeri priest who works the finished Hollow Mark at the foot of the buried pillar to force the door open, the book's antagonist on the ground. He is taken by the door he opened as it shut." },
+      // Art wired, text still to come. Label and description are deliberately
+      // left off until the roles are settled; the card renders name + image.
+      { name: "Doran", link: "The Unicorn Horn", image: "/compendium/Chronicles/doran.jpg" },
+      { name: "The Pilgrim", link: "The Unicorn Horn", image: "/compendium/Chronicles/pilgrim.jpg" },
+      { name: "Sered", link: "The Unicorn Horn", image: "/compendium/Chronicles/sered.jpg" },
+      { name: "Talo", link: "The Unicorn Horn", image: "/compendium/Chronicles/talo.jpg" },
     ],
     places: [
       { label: "Berendien", name: "Kandra", link: "The Unicorn Horn", description: "A small free city built where two rivers meet under a golden owl on red, known for its blue-tinted glass. The relic's hiding place and the country's deepest knock-point both lie in the catacombs beneath it." },

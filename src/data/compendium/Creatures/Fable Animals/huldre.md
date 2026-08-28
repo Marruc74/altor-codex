@@ -2,6 +2,9 @@
 
 
 ![Huldre](/compendium/Creatures/Fable Animals/huldre.jpg "Huldre")
+![Huldre](/compendium/Creatures/Fable Animals/huldre-2.jpg "Huldre")
+![Huldre](/compendium/Creatures/Fable Animals/huldre-3.jpg "Huldre")
+![Huldre](/compendium/Creatures/Fable Animals/huldre-4.jpg "Huldre")
 The huldre is an evil nature-spirit that lives by luring lone male woodsmen astray and then absorbing the life-energy of the dying man to sustain her own existence. Just once in her life she lets a man catch her, so that she may bear a child, and the man always dies the moment the deed is done.
 
 ## Appearance

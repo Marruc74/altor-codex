@@ -3,6 +3,8 @@ parent: corporeal-undead
 ---
 # Revenant
 
+
+![Revenant](/compendium/Creatures/Undead/revenant.jpg "Revenant")
 A revenant is among the very few undead that can pass unremarked among the living. It is most often a necromancer who has worked the rite upon himself to cheat death: the body dies in that instant, but the man goes on, deathless, keeping his own mind, his memories and his learning. Unlike the mindless zombie or the bloodthirsty living dead, a revenant reasons and remembers as it did in life, and that is what makes it so hard to know for what it is.
 
 ## A Cold Existence

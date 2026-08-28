@@ -8,7 +8,6 @@ parent: magical-undead
 ![Female Baneman](/compendium/Creatures/Undead/baneman-female-1.jpg "Female Baneman")
 
 
-![Baneman](/compendium/Creatures/Undead/baneman.jpg "Baneman")
 Banemen are a kind of zombie that only a death knight can make, fashioning them from fallen foes and using them as companions and servants.
 
 ## Appearance

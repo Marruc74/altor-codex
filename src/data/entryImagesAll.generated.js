@@ -2728,6 +2728,12 @@ export const entryImagesAll = {
       "tall": true
     },
     {
+      "src": "/compendium/Adventures/TheUnicornHorn/The Catacombs/The Unicorn Horn.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
       "src": "/compendium/Adventures/TheUnicornHorn/House 247/Gallahan The Alchemist.jpg",
       "portrait": true,
       "square": false,
@@ -3402,12 +3408,6 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
-    },
-    {
-      "src": "/compendium/Creatures/Demons/black-avenger.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "black-unicorn": [
@@ -3448,12 +3448,6 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
-    },
-    {
-      "src": "/compendium/Creatures/Demons/cold-beast.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "death-angel": [
@@ -3547,12 +3541,6 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Creatures/Demons/vampire-butterfly-3.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Creatures/Demons/vampire-butterfly.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -3830,12 +3818,6 @@ export const entryImagesAll = {
   ],
   "acid-lizard": [
     {
-      "src": "/compendium/Creatures/Fable Animals/acid-lizard.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
       "src": "/compendium/Creatures/Fable Animals/acid-lizard-2.jpg",
       "portrait": false,
       "square": false,
@@ -3857,12 +3839,6 @@ export const entryImagesAll = {
     }
   ],
   "ambiorm": [
-    {
-      "src": "/compendium/Creatures/Fable Animals/ambiorm.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
     {
       "src": "/compendium/Creatures/Fable Animals/ambiorm-2.jpg",
       "portrait": true,
@@ -3899,12 +3875,6 @@ export const entryImagesAll = {
     }
   ],
   "aries": [
-    {
-      "src": "/compendium/Creatures/Fable Animals/aries.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
     {
       "src": "/compendium/Creatures/Fable Animals/aries-2.jpg",
       "portrait": true,
@@ -4078,6 +4048,36 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/giant-spider-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/giant-spider-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/giant-spider-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/giant-spider-5.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/giant-spider-6.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "giant-turtle": [
@@ -4103,6 +4103,12 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Creatures/Fable Animals/gorgon-3.jpg",
+      "portrait": true,
+      "square": false,
+      "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/gorgon-4.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -4186,6 +4192,18 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/hippogriff-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/hippogriff-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "huldre": [
@@ -4194,6 +4212,24 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/huldre-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/huldre-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/huldre-4.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "hydra": [
@@ -4272,6 +4308,18 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/manticore-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Fable Animals/manticore-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "megas": [
@@ -4322,12 +4370,6 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
-    },
-    {
-      "src": "/compendium/Creatures/Fable Animals/pegasus.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     },
     {
       "src": "/compendium/Adventures/TheHellFort/The Road North/Enulisor.jpg",
@@ -5146,12 +5188,6 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
-    },
-    {
-      "src": "/compendium/Creatures/Undead/baneman.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "barrow-wight": [
@@ -5174,6 +5210,18 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/corpse-eaters-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/corpse-eaters-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "dark-wraith": [
@@ -5216,6 +5264,18 @@ export const entryImagesAll = {
       "tall": false
     },
     {
+      "src": "/compendium/Creatures/Undead/deadmans-hand-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/deadmans-hand-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
       "src": "/compendium/Adventures/ShadowOfARose/Nolgor.jpg",
       "portrait": false,
       "square": false,
@@ -5228,6 +5288,18 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/death-knight-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/death-knight-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     },
     {
       "src": "/compendium/Adventures/HorrorsOfTheDeep/Castle/Baron Boltshield.jpg",
@@ -5292,6 +5364,20 @@ export const entryImagesAll = {
       "tall": false
     }
   ],
+  "ghost-horse": [
+    {
+      "src": "/compendium/Creatures/Undead/ghost-horse.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/ghost-horse-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
   "ghost": [
     {
       "src": "/compendium/Creatures/Undead/ghost-2.jpg",
@@ -5348,6 +5434,18 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/hell-steed-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/hell-steed-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "imariot": [
@@ -5400,12 +5498,6 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
-    },
-    {
-      "src": "/compendium/Creatures/Undead/living-dead.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "mara": [
@@ -5414,15 +5506,21 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/mara-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/mara-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     }
   ],
   "mummy": [
-    {
-      "src": "/compendium/Creatures/Undead/mummy.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
     {
       "src": "/compendium/Creatures/Undead/mummy-2.jpg",
       "portrait": false,
@@ -5480,12 +5578,6 @@ export const entryImagesAll = {
       "tall": true
     },
     {
-      "src": "/compendium/Creatures/Undead/nightwolf.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
       "src": "/compendium/Adventures/ShadowOfARose/Eberhard.jpg",
       "portrait": false,
       "square": false,
@@ -5520,6 +5612,14 @@ export const entryImagesAll = {
       "tall": false
     }
   ],
+  "revenant": [
+    {
+      "src": "/compendium/Creatures/Undead/revenant.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    }
+  ],
   "severed-head": [
     {
       "src": "/compendium/Creatures/Undead/severed-head.jpg",
@@ -5537,12 +5637,6 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Creatures/Undead/skeleton-3.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Creatures/Undead/skeleton.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -5657,12 +5751,6 @@ export const entryImagesAll = {
     }
   ],
   "zombie": [
-    {
-      "src": "/compendium/Creatures/Undead/zombie.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
     {
       "src": "/compendium/Creatures/Undead/zombie-2.jpg",
       "portrait": false,
@@ -9892,12 +9980,6 @@ export const entryImagesAll = {
       "portrait": true,
       "square": false,
       "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Elves/silver-elf.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     }
   ],
   "water-elf": [
@@ -11748,12 +11830,6 @@ export const entryImagesAll = {
       "tall": true
     },
     {
-      "src": "/compendium/Creatures/Demons/black-avenger.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
       "src": "/compendium/Creatures/Demons/black-unicorn-2.jpg",
       "portrait": false,
       "square": false,
@@ -11788,12 +11864,6 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
-    },
-    {
-      "src": "/compendium/Creatures/Demons/cold-beast.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     },
     {
       "src": "/compendium/Creatures/Demons/death-angel.jpg",
@@ -11845,12 +11915,6 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Creatures/Demons/vampire-butterfly-3.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Creatures/Demons/vampire-butterfly.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -12026,12 +12090,6 @@ export const entryImagesAll = {
       "tall": true
     },
     {
-      "src": "/compendium/Creatures/Undead/baneman.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
       "src": "/compendium/Creatures/Undead/imariot.jpg",
       "portrait": false,
       "square": false,
@@ -12078,18 +12136,6 @@ export const entryImagesAll = {
       "portrait": false,
       "square": false,
       "tall": true
-    },
-    {
-      "src": "/compendium/Creatures/Undead/living-dead.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Creatures/Undead/mummy.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
     },
     {
       "src": "/compendium/Creatures/Undead/mummy-2.jpg",
@@ -12146,12 +12192,6 @@ export const entryImagesAll = {
       "tall": true
     },
     {
-      "src": "/compendium/Creatures/Undead/nightwolf.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
       "src": "/compendium/Adventures/ShadowOfARose/Eberhard.jpg",
       "portrait": false,
       "square": false,
@@ -12171,18 +12211,6 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Creatures/Undead/skeleton-3.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Creatures/Undead/skeleton.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Creatures/Undead/zombie.jpg",
       "portrait": true,
       "square": false,
       "tall": false
@@ -12312,10 +12340,34 @@ export const entryImagesAll = {
       "tall": false
     },
     {
+      "src": "/compendium/Creatures/Undead/corpse-eaters-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/corpse-eaters-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
       "src": "/compendium/Creatures/Undead/deadmans-hand.jpg",
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/deadmans-hand-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/deadmans-hand-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     },
     {
       "src": "/compendium/Adventures/ShadowOfARose/Nolgor.jpg",
@@ -12330,6 +12382,18 @@ export const entryImagesAll = {
       "tall": false
     },
     {
+      "src": "/compendium/Creatures/Undead/death-knight-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/death-knight-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
       "src": "/compendium/Adventures/HorrorsOfTheDeep/Castle/Baron Boltshield.jpg",
       "portrait": true,
       "square": false,
@@ -12342,16 +12406,58 @@ export const entryImagesAll = {
       "tall": true
     },
     {
+      "src": "/compendium/Creatures/Undead/ghost-horse.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/ghost-horse-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
       "src": "/compendium/Creatures/Undead/hell-steed.jpg",
       "portrait": true,
       "square": false,
       "tall": false
     },
     {
+      "src": "/compendium/Creatures/Undead/hell-steed-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/hell-steed-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
       "src": "/compendium/Creatures/Undead/mara.jpg",
       "portrait": true,
       "square": false,
       "tall": false
+    },
+    {
+      "src": "/compendium/Creatures/Undead/mara-2.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/mara-3.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
+    },
+    {
+      "src": "/compendium/Creatures/Undead/revenant.jpg",
+      "portrait": false,
+      "square": false,
+      "tall": true
     },
     {
       "src": "/compendium/Creatures/Undead/severed-head.jpg",
@@ -13147,12 +13253,6 @@ export const entryImagesAll = {
     },
     {
       "src": "/compendium/Peoples/Elves/silver-elf-9.jpg",
-      "portrait": true,
-      "square": false,
-      "tall": false
-    },
-    {
-      "src": "/compendium/Peoples/Elves/silver-elf.jpg",
       "portrait": true,
       "square": false,
       "tall": false

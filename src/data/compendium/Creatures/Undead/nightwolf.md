@@ -8,7 +8,6 @@ parent: magical-undead
 ![Nightwolf](/compendium/Creatures/Undead/nightwolf-4.jpg "Nightwolf")
 
 
-![Nightwolf](/compendium/Creatures/Undead/nightwolf.jpg "Nightwolf")
 The nightwolf is a fearsome undead creature, a combination of a constructed body possessed by a ghost. They are most often servants or bodyguards to the necromancer who made them, or else guardians set over something precious.
 
 ## Appearance

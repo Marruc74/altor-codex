@@ -1,7 +1,6 @@
 # Ambiorm
 
 
-![Ambiorm](/compendium/Creatures/Fable Animals/ambiorm.jpg "Ambiorm")
 ![Ambiorm](/compendium/Creatures/Fable Animals/ambiorm-2.jpg "Ambiorm")
 ![Ambiorm](/compendium/Creatures/Fable Animals/ambiorm-3.jpg "Ambiorm")
 

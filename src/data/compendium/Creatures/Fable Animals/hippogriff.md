@@ -2,6 +2,8 @@
 
 
 ![Hippogriff](/compendium/Creatures/Fable Animals/hippogriff.jpg "Hippogriff")
+![Hippogriff](/compendium/Creatures/Fable Animals/hippogriff-2.jpg "Hippogriff")
+![Hippogriff](/compendium/Creatures/Fable Animals/hippogriff-3.jpg "Hippogriff")
 The frolickers of the air, the hippogriffs are called in the southern mountains where they are common; further north they grow far rarer, so that a tame hippogriff is there a very rare and costly thing.
 
 ## Appearance

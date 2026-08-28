@@ -5,6 +5,8 @@ parent: corporeal-undead
 
 
 ![Death Knight](/compendium/Creatures/Undead/death-knight.jpg "Death Knight")
+![Death Knight](/compendium/Creatures/Undead/death-knight-2.jpg "Death Knight")
+![Death Knight](/compendium/Creatures/Undead/death-knight-3.jpg "Death Knight")
 The death knight is a very mighty kind of skeleton, created through evil and mysterious magical rituals.
 
 ## Appearance

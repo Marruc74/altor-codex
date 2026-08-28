@@ -4,7 +4,6 @@ parent: magical-undead
 # Zombie
 
 
-![Zombie](/compendium/Creatures/Undead/zombie.jpg "Zombie")
 ![Zombie](/compendium/Creatures/Undead/zombie-2.jpg "Zombie")
 ![Zombie](/compendium/Creatures/Undead/zombie-3.jpg "Zombie")
 ![Female Zombie](/compendium/Creatures/Undead/zombie-female-1.jpg "Female Zombie")

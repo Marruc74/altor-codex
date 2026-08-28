@@ -5,6 +5,8 @@ parent: corporeal-undead
 
 
 ![Mara](/compendium/Creatures/Undead/mara.jpg "Mara")
+![Mara](/compendium/Creatures/Undead/mara-2.jpg "Mara")
+![Mara](/compendium/Creatures/Undead/mara-3.jpg "Mara")
 A mara is an evil female undead of human origin.
 
 ## Appearance

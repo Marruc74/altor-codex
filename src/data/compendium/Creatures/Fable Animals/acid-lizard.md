@@ -1,7 +1,6 @@
 # Acid Lizard
 
 
-![Acid Lizard](/compendium/Creatures/Fable Animals/acid-lizard.jpg "Acid Lizard")
 ![Acid Lizard](/compendium/Creatures/Fable Animals/acid-lizard-2.jpg "Acid Lizard")
 ![Acid Lizard](/compendium/Creatures/Fable Animals/acid-lizard-3.jpg "Acid Lizard")
 

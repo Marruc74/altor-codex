@@ -175,6 +175,7 @@ sections:
         description: A chest of golden elm holding the unicorn-horn fragment and the spirit-stone, the treasure all this striving turns upon.
       - name: The Unicorn Horn
         description: A freely-given spiral fragment of unicorn horn, faintly rose, that lends a worshipper of Delitha or Ninnave near it greater will and presence and the power to heal wounds, and that, joined with the spirit-stone, pours the foundress's soul into Liella at her touch.
+        image: /compendium/Adventures/TheUnicornHorn/The Catacombs/The Unicorn Horn.jpg
       - name: The Spirit-Stone
         description: A smooth grey-white stone that pulses with a milky light, binding the foundress's soul as the White.
       - name: The Decoy Bone

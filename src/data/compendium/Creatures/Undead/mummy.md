@@ -4,7 +4,6 @@ parent: magical-undead
 # Mummy
 
 
-![Mummy](/compendium/Creatures/Undead/mummy.jpg "Mummy")
 ![Mummy](/compendium/Creatures/Undead/mummy-2.jpg "Mummy")
 ![Mummy](/compendium/Creatures/Undead/mummy-3.jpg "Mummy")
 ![Female Mummy](/compendium/Creatures/Undead/mummy-female-1.jpg "Female Mummy")

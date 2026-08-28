@@ -1355,6 +1355,9 @@ export const generatedSources = {
   "the-dead-forest": [
     "Döda skogen"
   ],
+  "the-delitha-order": [
+    "The Cold That Stays"
+  ],
   "the-demon-prince": [
     "Demonprinsen"
   ],

@@ -32,6 +32,11 @@ for (const a of adventures) {
   const pinIds = new Set();
   const entryIds = new Set();
   for (const c of adventureCards(a)) {
+    // `noLink` marks a card whose name collides with a page slug but is not
+    // that subject (e.g. an NPC named "Mara" who is not the Mara creature).
+    // The render path honors it (compendiumCards.jsx); the reverse indexes
+    // must too, or the unrelated page gets a bogus backlink and borrowed art.
+    if (c.noLink) continue;
     const t = resolvePage(c.entry ?? c.name);
     if (t?.kind === "country") pinIds.add(t.id);
     else if (t?.kind === "entry") {

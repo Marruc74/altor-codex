@@ -2,6 +2,11 @@
 
 
 ![Giant Spider](/compendium/Creatures/Fable Animals/giant-spider.jpg "Giant Spider")
+![Giant Spider](/compendium/Creatures/Fable Animals/giant-spider-2.jpg "Giant Spider")
+![Giant Spider](/compendium/Creatures/Fable Animals/giant-spider-3.jpg "Giant Spider")
+![Giant Spider](/compendium/Creatures/Fable Animals/giant-spider-4.jpg "Giant Spider")
+![Giant Spider](/compendium/Creatures/Fable Animals/giant-spider-5.jpg "Giant Spider")
+![Giant Spider](/compendium/Creatures/Fable Animals/giant-spider-6.jpg "Giant Spider")
 Giant spiders are fearsome, intelligent predators that live either in hidden underground caves or in the canopy of some unusually dark and unpleasant forest.
 
 ## Appearance
