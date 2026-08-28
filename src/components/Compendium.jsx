@@ -1,7 +1,7 @@
 import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import { SECTIONS, videosBySection, allEntries } from "../data/videoData";
 import { adventures, adventureGroups } from "../data/adventures";
-import { orientClass, SECTION_LABEL, CONTINENTS, placeKind, hubFromUrl, PAGE_UNIVERSE, TOTAL_PAGES, geoChildrenByParent, childrenByParentSlug, toSlug, skipGroup, hashStr, pickEntryImage, videoById } from "./compendiumHelpers";
+import { orientClass, SECTION_LABEL, CONTINENTS, hubFromUrl, PAGE_UNIVERSE, TOTAL_PAGES, geoChildrenByParent, childrenByParentSlug, toSlug, skipGroup, hashStr, pickEntryImage, videoById } from "./compendiumHelpers";
 import { CardImage, Breadcrumbs, RefStrip } from "./compendiumCards";
 import { HubView, CountryDetail, EntryDetail, AdventureDetail } from "./compendiumDetails";
 import { entryImagesAll } from "../data/entryImagesAll.generated";
@@ -23,7 +23,6 @@ export default function Compendium({
   onPinSelect,
   onVideoSelect,
 }) {
-  const [query, setQuery] = useState("");
   // Below 1100px the contents tree becomes a drawer. It used to stack above the
   // content as a full-width block, which meant scrolling past a tree of ~689
   // pages to reach the page you had just opened.
@@ -35,8 +34,8 @@ export default function Compendium({
   const [sidebarTab, setSidebarTab] = useState("contents");
   // The pinned head costs whatever it contains. On a short window the Nearby
   // thumbnails (~135px of it) move down into the scrolling body, so the tree
-  // keeps a usable height while the tabs and search stay put. This has to be a
-  // JS decision because it moves the node between parents; CSS cannot.
+  // keeps a usable height while the tab strip stays put. This has to be a JS
+  // decision because it moves the node between parents; CSS cannot.
   const roomForNearbyInHead = useMediaQuery("(min-height: 760px)");
   // One random salt per Compendium mount, so the landing's section cards show a
   // random representative image (not always the first) and re-roll on reload.
@@ -243,54 +242,6 @@ export default function Compendium({
     return () => clearTimeout(t);
   }, [selectedEntry, selectedCountry, selectedAdventure]);
 
-  // Flat search across countries + entries + adventures. Entries cover both
-  // video-backed and markdown-only Peoples/Creatures/Lore pages (via allEntries);
-  // adventures live in their own list, so they are matched separately on title,
-  // tagline, summary and the names of the cards they hold.
-  const searchResults = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    if (!q) return null;
-
-    const matchCountries = geoPlaces
-      .filter((c) => c.name.toLowerCase().includes(q))
-      .map((c) => ({ kind: "country", id: c.id, label: c.name, sub: placeKind(c), pin: c }));
-
-    const matchEntries = allEntries
-      .filter(
-        (v) =>
-          v.section !== "countries" &&
-          v.section !== "episodes" &&
-          (v.name.toLowerCase().includes(q) ||
-          (v.group && v.group.toLowerCase().includes(q)) ||
-          SECTION_LABEL[v.section]?.toLowerCase().includes(q))
-      )
-      .map((v) => ({
-        kind: "entry",
-        id: v.id,
-        label: v.name,
-        sub: v.group ? `${SECTION_LABEL[v.section]} · ${v.group}` : SECTION_LABEL[v.section],
-        entry: v,
-      }));
-
-    const advText = (a) =>
-      [
-        a.title, a.tagline, a.summary,
-        ...(a.characters ?? []).map((c) => c.name),
-        ...(a.creatures ?? []).map((c) => c.name),
-        ...(a.places ?? []).map((c) => c.name),
-        ...(a.items ?? []).map((c) => c.name),
-        ...(a.sections ?? []).flatMap((s) =>
-          [...(s.npcs ?? []), ...(s.creatures ?? []), ...(s.places ?? []), ...(s.items ?? [])].map((c) => c.name)
-        ),
-      ].filter(Boolean).join(" ").toLowerCase();
-
-    const matchAdventures = adventures
-      .filter((a) => advText(a).includes(q))
-      .map((a) => ({ kind: "adventure", id: a.id, label: a.title, sub: "Adventure" }));
-
-    return [...matchCountries, ...matchEntries, ...matchAdventures];
-  }, [query]);
-
   // The pages either side of the open one, within its own group - so a reader
   // working through the Undead can step to the next one without going back to
   // the tree. Only entries have a stable ordered run like this; countries sit in
@@ -312,10 +263,9 @@ export default function Compendium({
     };
   }, [selectedEntry]);
 
-  // Activate a single theme (from an entry page's theme chip): clear the search
-  // and any open page, switch the landing to the theme browser, and show it.
+  // Activate a single theme (from an entry page's theme chip): clear any open
+  // page, switch the landing to the theme browser, and show it.
   const selectTheme = useCallback((id) => {
-    setQuery("");
     setHub(null);
     setSelectedEntry(null);
     onCountrySelect(null);
@@ -455,7 +405,7 @@ export default function Compendium({
              of nav row can't be added later that leaves the drawer stuck open. */
           onClick={(e) => {
             if (!drawerOpen) return;
-            if (e.target.closest(".compendium-nav__item, .compendium-results__item, .compendium-nav__hd-title, .compendium-nav__group-title")) {
+            if (e.target.closest(".compendium-nav__item, .compendium-nav__hd-title, .compendium-nav__group-title")) {
               setDrawerOpen(false);
             }
           }}
@@ -496,35 +446,14 @@ export default function Compendium({
               </button>
             </div>
 
-            {sidebarTab === "contents" && (
-              <div className="compendium-search-wrap">
-                <span className="codex-search-icon">⌕</span>
-                <input
-                  className="codex-search"
-                  type="search"
-                  placeholder="Search…"
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                  aria-label="Search compendium"
-                />
-                {query && (
-                  <button
-                    className="codex-search-clear"
-                    onClick={() => setQuery("")}
-                    aria-label="Clear"
-                  >✕</button>
-                )}
-              </div>
-            )}
-
-            {sidebarTab === "contents" && !searchResults && roomForNearbyInHead && (
+            {sidebarTab === "contents" && roomForNearbyInHead && (
               <NeighbourStrip neighbours={neighbours} onOpen={openEntry} />
             )}
           </div>
 
           {/* Body: the only part that scrolls. */}
           <div className="compendium-sidebar__body">
-          {sidebarTab === "contents" && !searchResults && !roomForNearbyInHead && (
+          {sidebarTab === "contents" && !roomForNearbyInHead && (
             <NeighbourStrip neighbours={neighbours} onOpen={openEntry} />
           )}
           {sidebarTab === "saved" && (
@@ -534,35 +463,7 @@ export default function Compendium({
             <RecentList recents={recents} onOpen={openPage} />
           )}
 
-          {sidebarTab === "contents" && (searchResults ? (
-            /* ── Search results ── */
-            <div className="compendium-results">
-              {searchResults.length === 0 ? (
-                <p className="compendium-results__empty">No results for "{query}"</p>
-              ) : (
-                searchResults.map((r) => (
-                  <button
-                    key={`${r.kind}-${r.id}`}
-                    className={`compendium-results__item${
-                      (r.kind === "country" && selectedCountry === r.id) ||
-                      (r.kind === "adventure" && selectedAdventure === r.id)
-                        ? " compendium-results__item--active"
-                        : ""
-                    }`}
-                    onClick={() => {
-                      if (r.kind === "country") { onAdventureSelect(null); onCountrySelect(r.id); setSelectedEntry(null); }
-                      else if (r.kind === "adventure") { onAdventureSelect(r.id); onCountrySelect(null); setSelectedEntry(null); }
-                      else { onAdventureSelect(null); setSelectedEntry(r.entry); onCountrySelect(null); }
-                      window.scrollTo(0, 0);
-                    }}
-                  >
-                    <span className="compendium-results__label">{r.label}</span>
-                    <span className="compendium-results__sub">{r.sub}</span>
-                  </button>
-                ))
-              )}
-            </div>
-          ) : (
+          {sidebarTab === "contents" && (
             /* ── Full navigation tree ── */
             <nav className="compendium-nav">
               {/* Adventures — campaign pages, not video-driven */}
@@ -808,7 +709,7 @@ export default function Compendium({
                 );
               })}
             </nav>
-          ))}
+          )}
           </div>
         </aside>
 

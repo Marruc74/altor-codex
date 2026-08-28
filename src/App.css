@@ -140,11 +140,6 @@ body {
 .framed::before { top: -1px;    --e: top; }
 .framed::after  { bottom: -1px; --e: bottom; }
 
-/* Hairline only. For dense grids, where forty ornamented corners stop reading as
-   ornament and start reading as noise. */
-.framed--quiet::before,
-.framed--quiet::after { content: none; }
-
 /* Shared small-caps panel header, with the gradient hairline the section titles
    already use. */
 .panel-hd {
@@ -248,18 +243,17 @@ body {
 /* The abbreviated label is a phone-only alternative. */
 .rail__label--short { display: none; }
 
-/* The seal at the foot of the rail: a small crimson stone in a brass setting.
-   Purely ornamental, and the counterweight to the sigil at the top. */
+/* Closing mark at the foot of the rail - the counterweight to the sigil at the
+   top. It was a raised crimson disc, which in a column of icon buttons read as
+   one more button; a flat brass lozenge cannot be mistaken for a control. */
 .rail__seal {
   flex-shrink: 0;
   margin-top: 0.9rem;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  border: 1px solid var(--gold-dim);
-  background:
-    radial-gradient(circle at 38% 33%, var(--crimson-light), var(--crimson) 62%, #4a1210 100%);
-  box-shadow: 0 0 0 3px rgb(var(--gold-rgb) / 0.08);
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  background: var(--gold-dim);
+  opacity: 0.75;
 }
 
 /* ─── Top bar ────────────────────────────────────────────── */
@@ -431,11 +425,7 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
-.compendium-sidebar__bar .compendium-sidebar__hd {
-  padding-bottom: 0;
-  margin-bottom: 0;
-  border-bottom: none;
-}
+.compendium-sidebar__bar 
 
 /* Only meaningful while the panel is a drawer. */
 .compendium-sidebar__close {
@@ -447,7 +437,6 @@ body {
   padding: 0.4rem;
 }
 .compendium-sidebar__close:hover { color: var(--gold-light); }
-
 
 /* ─── Shared Section Styles ──────────────────────────────── */
 .section-header {
@@ -2190,17 +2179,6 @@ body {
   scrollbar-color: var(--border-light) transparent;
 }
 
-.compendium-sidebar__hd {
-  font-family: var(--font-heading);
-  font-size: 0.6rem;
-  letter-spacing: var(--tracking-xl);
-  text-transform: uppercase;
-  color: var(--gold-dim);
-  padding-bottom: 0.55rem;
-  margin-bottom: 0.9rem;
-  border-bottom: 1px solid var(--border);
-}
-
 /* ─── Contents panel tabs ─────────────────────────────────── */
 .sidebar-tabs {
   display: flex;
@@ -2415,23 +2393,6 @@ body {
 
 .neighbour--current .neighbour__name { color: var(--gold-light); }
 
-.compendium-search-wrap {
-  position: relative;
-  margin-bottom: 1.25rem;
-}
-
-.compendium-search-wrap .codex-search {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* Search results */
-.compendium-results {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
-
 /* Theme/map chip rows on the compendium first page and entry pages */
 .country-detail__meta {
   display: flex;
@@ -2442,51 +2403,6 @@ body {
 .codex-tag--map {
   border-color: var(--gold-dim);
   color: var(--gold-light);
-}
-
-.compendium-results__empty {
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-  color: var(--text-dim);
-  font-style: italic;
-  padding: 0.5rem 0.5rem;
-}
-
-.compendium-results__item {
-  background: none;
-  border: none;
-  cursor: pointer;
-  text-align: left;
-  width: 100%;
-  padding: 0.35rem 0.6rem;
-  border-radius: 2px;
-  transition: background 0.15s;
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
-}
-
-.compendium-results__item:hover {
-  background: var(--bg-raised);
-}
-
-.compendium-results__item--active {
-  background: var(--bg-raised);
-  border-left: 2px solid var(--gold-dim);
-  padding-left: calc(0.6rem - 2px);
-}
-
-.compendium-results__label {
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  color: var(--text);
-}
-
-.compendium-results__sub {
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  color: var(--text-dim);
-  letter-spacing: 0.05em;
 }
 
 /* Navigation tree */
@@ -2732,16 +2648,6 @@ body {
   max-width: 400px;
 }
 
-.codex-search-icon {
-  position: absolute;
-  left: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--text-muted);
-  font-size: 1.1rem;
-  pointer-events: none;
-}
-
 .codex-search {
   width: 100%;
   padding: 0.75rem 2.5rem 0.75rem 2.5rem;
@@ -2765,25 +2671,6 @@ body {
 
 .codex-search::-webkit-search-cancel-button {
   display: none;
-}
-
-.codex-search-clear {
-  position: absolute;
-  right: 0.75rem;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  color: var(--text-muted);
-  cursor: pointer;
-  font-size: 0.75rem;
-  padding: 0.25rem;
-  line-height: 1;
-  transition: color 0.15s;
-}
-
-.codex-search-clear:hover {
-  color: var(--text);
 }
 
 .codex-tag {
@@ -3658,7 +3545,7 @@ body {
 /* Wraps: a country page carries "View on Map" as well as Save and Link, which
    together overrun a 300px rail on one line. */
 .rail-ctx__actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.reader__rail .country-detail__header-actions { flex-direction: row; align-items: center; }
+.reader__rail 
 .rail-group__body { display: flex; flex-direction: column; gap: 0.1rem; }
 
 /* A context link. The page cards used elsewhere are horizontal rows with a
@@ -3808,13 +3695,6 @@ body {
 }
 
 /* ─── Page actions (bookmark / copy-link) ─────────────────── */
-.country-detail__header-actions {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.5rem;
-  flex-shrink: 0;
-}
 .page-actions { display: flex; gap: 0.4rem; }
 .page-action {
   background: none;
@@ -4119,7 +3999,6 @@ body {
   color: var(--accent);
 }
 
-
 /* ─── Responsive ladder ───────────────────────────────────────
    Four steps, each with one job:
      >=1400  three columns: contents | leaf | context rail
@@ -4361,8 +4240,7 @@ body {
   .reader__leaf .country-detail__name { font-size: 1.9rem; }
 
   /* Bigger tap targets across the nav tree, chips and crumbs. */
-  .compendium-nav__item,
-  .compendium-results__item { min-height: 44px; }
+  .compendium-nav__item { min-height: 44px; }
   .codex-tag { min-height: 36px; display: inline-flex; align-items: center; }
   .breadcrumbs__crumb { padding: 0.35rem 0; }
 
