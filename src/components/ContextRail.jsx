@@ -1,4 +1,5 @@
 import { SourceCredit } from "./compendiumCards";
+import { useMediaQuery } from "../lib/useMediaQuery";
 
 // The reader's right-hand column: everything *about* the page you are reading,
 // kept out of the reading flow itself. Previously all of this sat below the
@@ -55,7 +56,6 @@ function PageLink({ page, onOpenPage }) {
 }
 
 export default function ContextRail({
-  stacked = false,
   headings = [],
   themes = [],
   themeLabel = {},
@@ -72,6 +72,14 @@ export default function ContextRail({
   sources,
   actions,
 }) {
+  // Below 1400px the rail drops under the prose, where a dozen fully-expanded
+  // groups would be a long scroll past the end of the article. There it becomes
+  // <details> instead - collapsed by default apart from the first two - which
+  // also brings keyboard and screen-reader behaviour for free. Same breakpoint
+  // as the layout change in the stylesheet; kept in sync by hand because the
+  // element type has to change, which CSS cannot do.
+  const stacked = useMediaQuery("(max-width: 1399px)");
+
   const has = (a) => a && a.length > 0;
   const linkable = !!onOpenPage;
 

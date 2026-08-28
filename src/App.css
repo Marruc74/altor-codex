@@ -2127,8 +2127,11 @@ body {
 }
 
 /* ─── Video Catalog ──────────────────────────────────────── */
+/* The bottom padding lives on .compendium-layout instead of here - see the note
+   there. Visually identical; structurally it is the difference between the
+   sticky panel having room to stand and being shoved under the top bar. */
 .catalog-section {
-  padding: 5rem 2rem;
+  padding: 5rem 2rem 0;
   border-top: 1px solid var(--border);
 }
 
@@ -2641,6 +2644,16 @@ body {
 .compendium-main {
   flex: 1;
   min-width: 0;
+  /* This is the page's bottom breathing room, and it has to live here rather
+     than on .catalog-section or .compendium-layout.
+     A sticky element is constrained by its containing block's CONTENT box - for
+     a flex item that is the flex container's content box, whose height is set by
+     the tallest item. Padding on the section or on the layout sits outside that
+     box, so it buys the sticky contents panel nothing: at the end of the page
+     the panel was being pushed up and clipped behind the fixed top bar. Padding
+     on this sibling grows the content box itself, which is what sticky measures.
+     Keep it >= the panel's own bottom gap (the 3rem in its max-height). */
+  padding-bottom: 5rem;
 }
 
 /* ─── Responsive ─────────────────────────────────────────── */
@@ -3525,9 +3538,19 @@ body {
 .reader {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 300px;
-  gap: 2.5rem;
+  /* A spacer row under both columns. A grid item's sticky travel is bounded by
+     its grid area, and the row height is set by the tallest item - so on a page
+     whose rail is longer than its leaf (few paragraphs, many cross-references)
+     the rail's area was exactly its own height, leaving sticky nothing to work
+     with, and at the end of the page it slid up behind the fixed top bar. The
+     rail spans into this row, which gives it the travel. */
+  grid-template-rows: auto 5rem;
+  gap: 0 2.5rem;          /* no row gap - the spacer row is the only one */
   align-items: start;
 }
+
+.reader__leaf { grid-row: 1; }
+.reader__rail { grid-row: 1 / -1; }
 
 /* The parchment leaf. Everything meant to be read at length sits on this;
    navigation and metadata stay on the dark ground around it. */
@@ -4102,8 +4125,14 @@ body {
 @media (max-width: 1399px) {
   .reader {
     grid-template-columns: minmax(0, 1fr);
+    /* Back to normal flow: no spacer row, and the rail must not span rows or it
+       would sit on top of the leaf in a single column. */
+    grid-template-rows: none;
     gap: 1.75rem;
   }
+
+  .reader__leaf,
+  .reader__rail { grid-row: auto; }
 
   .reader__rail {
     position: static;
