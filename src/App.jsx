@@ -306,7 +306,6 @@ export default function App() {
       <SideRail
         activePage={activePage}
         onNavigate={handleMenuNavigate}
-        onSearchOpen={() => setSearchOpen(true)}
         onSurprise={handleSurprise}
       />
       <Navbar onNavigate={handleMenuNavigate} onSearchOpen={() => setSearchOpen(true)} />

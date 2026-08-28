@@ -163,17 +163,9 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 0.25rem;
-  padding: 0.9rem 0 1rem;
+  padding: 0.5rem 0 1rem;
   background: var(--panel-bg);
   border-right: 1px solid var(--border);
-}
-
-.rail__sigil {
-  color: var(--gold);
-  font-size: 1.05rem;
-  line-height: 1;
-  margin-bottom: 0.9rem;
-  flex-shrink: 0;
 }
 
 .rail__list {
@@ -242,19 +234,6 @@ body {
 }
 /* The abbreviated label is a phone-only alternative. */
 .rail__label--short { display: none; }
-
-/* Closing mark at the foot of the rail - the counterweight to the sigil at the
-   top. It was a raised crimson disc, which in a column of icon buttons read as
-   one more button; a flat brass lozenge cannot be mistaken for a control. */
-.rail__seal {
-  flex-shrink: 0;
-  margin-top: 0.9rem;
-  width: 7px;
-  height: 7px;
-  transform: rotate(45deg);
-  background: var(--gold-dim);
-  opacity: 0.75;
-}
 
 /* ─── Top bar ────────────────────────────────────────────── */
 .topbar {
@@ -4129,9 +4108,7 @@ body {
     padding-bottom: env(safe-area-inset-bottom, 0);
   }
 
-  /* Ornaments and the desktop utility stack have no room on a tab bar. */
-  .rail__sigil,
-  .rail__seal,
+  /* The desktop utility stack has no room on a tab bar. */
   .rail__tools { display: none; }
 
   .rail__list {

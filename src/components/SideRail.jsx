@@ -50,7 +50,7 @@ function MoreSheet({ activePage, onNavigate, onSurprise, onClose }) {
   );
 }
 
-export default function SideRail({ activePage, onNavigate, onSearchOpen, onSurprise }) {
+export default function SideRail({ activePage, onNavigate, onSurprise }) {
   const [moreOpen, setMoreOpen] = useState(false);
   // Stable, so the sheet's popstate listener subscribes once rather than on
   // every render of the rail.
@@ -60,8 +60,6 @@ export default function SideRail({ activePage, onNavigate, onSearchOpen, onSurpr
   return (
     <>
       <nav className="rail" aria-label="Sections">
-        <span className="rail__sigil" aria-hidden="true">✦</span>
-
         <ul className="rail__list">
           {DESTINATIONS.map((d) => {
             const active = activePage === d.id;
@@ -95,20 +93,15 @@ export default function SideRail({ activePage, onNavigate, onSearchOpen, onSurpr
           </li>
         </ul>
 
-        {/* Utilities. Desktop rail only - on a phone, search lives in the top
-            bar and Surprise sits in the More sheet. */}
+        {/* Desktop rail only - on a phone Surprise sits in the More sheet.
+            Search is deliberately not here: the top bar's pill and Ctrl+K are
+            already two ways in, and a third only crowds the rail. */}
         <div className="rail__tools">
-          <button className="rail__item" onClick={onSearchOpen} title="Search (Ctrl+K)">
-            <Icon name="search" />
-            <span className="rail__label">Search</span>
-          </button>
           <button className="rail__item" onClick={onSurprise} title="Open something at random">
             <Icon name="surprise" />
             <span className="rail__label">Surprise</span>
           </button>
         </div>
-
-        <span className="rail__seal" aria-hidden="true" />
       </nav>
 
       {moreOpen && (
